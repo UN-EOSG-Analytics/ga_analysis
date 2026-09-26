@@ -1,0 +1,68 @@
+schema_version = "1.0"
+source_manifest = "config/source_manifest.jsonl"
+regional_mapping = "config/un_regional_groups.csv"
+output_directory = "output/pipeline"
+taxonomy_file = "config/theme_taxonomy.json"
+additional_paid_api_allowed = false
+
+[scope]
+years = [2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]
+awaiting_user_sources = [2019, 2026]
+unit = "one Member State main General Debate address per country-year"
+include_external_provisional_sources = false
+
+[discovery]
+provider = "openai"
+model = "text-embedding-3-large"
+dimensions = 3072
+api_key_env = "OPENAI_API_KEY"
+execution_status = "planned_not_executed; OpenAI adapter not yet implemented"
+embedding_scope = "context-verified AI passages plus necessary adjacent context; not full speeches"
+distance = "cosine"
+linkage = "average"
+use_existing_embeddings = true
+cache_compatibility = "same provider/model/dimensions/text/preprocessing only; never reuse MiniLM vectors as OpenAI vectors"
+unit = "semantic passage"
+purpose = "taxonomy discovery only; never final statistical labels"
+passage_scope = "all context-verified AI passages across included years; no one-per-country-year sampling"
+mean_center_before_cosine = true
+candidate_k = [6, 8, 10, 12, 16]
+max_cluster_share = 0.4
+dominant_cluster_action = "re-cluster dominant cluster with same metric/linkage; record split"
+representatives_per_cluster = 5
+boundary_passages_per_cluster = 3
+diagnostics_file = "discovery_diagnostics.json"
+
+[classification]
+values = ["Yes", "No", "Uncertain", "Pending"]
+require_source_review = true
+reuse_existing_reviewed_decisions = true
+unit = "passage"
+passage_labels_file = "paragraph_theme_labels.csv"
+country_year_notes_fill_passage_labels = false
+
+[themes]
+min_N_for_yearly_percentages = 20
+below_threshold = "report counts and cases, not percentages"
+
+[institutions]
+stances_file = "institution_stances.csv"
+mechanisms = ["Dialogue", "Panel", "Fund", "FSB-like", "IAEA-like", "IPCC-like", "CERN-like", "New body/verification regime", "Other model"]
+stances = ["mention", "welcome", "support", "request", "concern", "opposition", "commitment"]
+functions = ["dialogue/convening", "scientific assessment", "capacity building", "financing", "norms/rules/standards", "monitoring/oversight/verification", "coordination", "other"]
+un_role = ["explicit", "generic"]
+
+[aggregation]
+regional_system = "UN regional groups"
+mapping_as_of = "2026-09-25"
+mapping_timezone = "America/New_York"
+fixed_mapping_across_years = true
+unaffiliated_policy = "separate"
+country_theme_rule = "OR of reviewed Yes; No only after complete review; otherwise NA"
+
+[report]
+basename = "UNGA81_AI_Strategic_Review"
+language = "en"
+minimum_pages = 4
+maximum_pages = 6
+sections = ["Key Facts and Figures", "Themes", "Role of UN", "Implications"]

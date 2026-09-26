@@ -1,0 +1,53 @@
+UNGA 79 | SPMU Debate Summary 
+General Themes
+The primary focus of remarks aligned with the UN pillars of work, but the remarks at the 79th session of the General Assembly had a noticeably increased emphasis on digital and technology.
+
+Security, climate, and development: Regional conflicts, particularly in Ukraine, Sudan, and the Middle East, dominated the discussion, with leaders calling for enhanced multilateral efforts and repeated calls for reform to the UN Security Council. Immediate action was urged to address climate change, with a focus on cooperation, sustainable development, and aiding vulnerable regions facing the worst impacts. Leaders stressed the financial challenges faced by developing nations and called for reforms in the global financial system to promote equity, particularly in Africa and underserved regions.
+
+Digital, Science, and Technology: Addressing the digital divide, improving infrastructure, enhancing cybersecurity, and promoting international collaboration on technology transfer were identified as key priorities to ensure equitable development, with the Global Digital Compact (GDC) seen as essential for inclusive development.  Global cooperation was emphasized to manage AI’s development. There was a strong focus among G77 nations on the need to harness existing and frontier technologies to advance development alongside an emphasis from many developed countries on the need for risk mitigation and effective governance of digital and tech.
+Speeches from the Permanent Members of the UNSC
+Remarks from China, France, Russia, United Kingdom, and United States, had four focus areas that were generally aligned to the broader GA context: 
+
+Ongoing conflicts and calls for peace: All addressed the Middle East, Ukraine and Sudan. In Gaza, there were wide calls for an immediate ceasefire and humanitarian aid. On Ukraine, the U.S., U.K., and France supported Ukraine’s sovereignty, China urged peace talks, and Russia criticized Western involvement, labeling the Kyiv government as “illegitimate” and justifying its military intervention.
+Reform of international institutions: Shared calls to update the UN and Security Council. The U.S., U.K., and France advocated expanding permanent membership to potentially include African countries, Germany, Japan, India, and Brazil. China’s Foreign Minister stressed strengthening the UN’s role through mutual respect and cooperation, while Russia called for rebuilding confidence based on “the sovereign equality of all Member States” and criticized unilateral actions that undermine global trust.
+Climate change and sustainable development: The U.K. and France committed to meeting net-zero targets and supporting others in climate action. China advocated for inclusive globalization to help developing countries “leap over the developing divide,” and the U.S. highlighted its significant investments in climate and clean energy. Climate change was not referenced in Russia’s speech. 
+Innovation, Digital Transformation, and AI: The U.S. emphasized the risks and opportunities of AI, calling for global collaboration to ensure its ethical development. The U.K. stressed the need for international rules to manage AI and military technologies. France called for equitable AI access and announced a summit on ethical AI development. China focused broadly on technology for development. Russia did not reference AI.
+
+SPMU Issues in the GA
+Digital Divide and Inclusive 21st Century Development Approaches (widely referenced): 
+Bridging the digital divide remained a priority, with emphasis on ensuring equitable access to technology, especially AI, for developing nations. 
+The importance of capacity building, technology transfer, and financial support was highlighted to enable all countries to benefit from digital advancements.
+Equipping the next generation with digital skills and investing in education systems using digital tools to reduce inequality and foster development.​
+AI Governance 
+Existential Threat and Regulation
+Calls to prevent knowledge oligopolies and advocate for inclusive AI that promotes cultural diversity and human rights (Brazil, Colombia).
+AI acknowledged for its potential, but warnings issued on risks like misinformation and inequality (USA, Latvia).
+AI Action Summit planned to coordinate global efforts on AI governance (France).
+Human-Centered Development
+Ensuring AI aligns with human rights and ethical standards (Czechia, Portugal).
+Preventing misuse of personal data through global regulations (EU).
+Ethical AI Use and Privacy
+Concerns raised about AI perpetuating biases and misuse of personal data (Chile); regulatory frameworks urged to safeguard privacy (many).
+Digital Transformation and Technology
+Digitalization in public services improves lives and supports SDG progress (Ghana, Romania).
+Technology is the key factor widening the gap between rich and poor (Fiji).
+Emphasis on technology transfer to less developed regions (Kyrgyzstan, Tajikistan, Vietnam).
+Governance, International Collaboration, and Digital Infrastructure
+Urgency of implementing the Global Digital Compact emphasized (Philippines, Samoa, Tuvalu).
+Advancing digital infrastructure in less developed countries seen as essential, with a focus on cooperation and knowledge transfer (Australia, DRC).
+International collaboration needed to enhance cybersecurity and protect critical infrastructure (many).
+Cybersecurity and Disinformation Threats
+Cyber threats pose risks to democratic systems and critical infrastructure; international efforts are necessary (Czechia, Tajikistan, Türkiye).
+Disinformation and misinformation threaten democratic stability; open debate, transparency, and media literacy are needed (Estonia, Latvia, Nigeria, Switzerland).
+Space Exploration and Future Technologies
+Peaceful space exploration encouraged to address global challenges (Sweden); cooperation needed to prevent militarization (Philippines) 
+
+Methodology
+
+A five-step process was undertaken to synthesize the remarks during UNGA high-level week.
+
+Scraping Summaries: Scraping speech summaries from the gadebate.un.org website, extracting relevant information such as the speaker, country, and speech content using a Python script.
+Text as Data Analysis: The extracted text is cleaned and preprocessed, followed by analyzing the data using methods like Term Frequency-Inverse Document Frequency (TF-IDF), which identifies key terms based on their frequency and importance within a corpus, Latent Dirichlet Allocation (LDA), a topic modeling technique for uncovering the central topics, and key phrase extraction to uncover prominent themes and keywords.
+Human Interpretation: The final step involves interpreting the results from the text analysis, grouping the identified topics and key phrases into overarching themes that reflect the major points discussed in the speeches.
+SPMU-classification: topics relevant to SPMU (digital, innovation, etc.) were then applied to identify specific references to those topics across remarks.
+Comparison: The summaries were compared against the material produced by dig.watch, the most comprehensive assessor of digital elements for UNGA Member State remarks. 

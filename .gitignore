@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+.venv/
+
+# Windows-only installed packages; recreate with requirements.txt
+.deps/
+
+# Superseded MiniLM model (discovery now uses OpenAI embeddings); keep OCR language data
+models/models--*/
+models/CACHEDIR.TAG
+
+# Superseded report awaiting deletion (see output/cleanup/STATUS.md) and Office lock files
+deliverables/UNGA_AI_Strategic_Report.docx
+~$*

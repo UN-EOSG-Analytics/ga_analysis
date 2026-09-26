@@ -1,0 +1,1143 @@
+{
+  "workspace": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis",
+  "status": "narrowed_file_only_cleanup",
+  "protected": [
+    "data/",
+    "reference/",
+    ".deps/",
+    "models/",
+    "tests/",
+    "cache/",
+    "output/ocr/",
+    "all original extraction, source inventory and review files"
+  ],
+  "targets": [
+    {
+      "path": "scripts/asr_inspect.py",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\scripts\\asr_inspect.py",
+      "sha256": "7080a11d06788835d101636901c310a6cac6f390a24158b3d189cacf116ff2b6",
+      "bytes": 1292,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "scripts/audit_corpus.py",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\scripts\\audit_corpus.py",
+      "sha256": "c1592be26ecfe4a9266f71bd9a9e7cb355c46838c1d182dfaabaf3a6011a9907",
+      "bytes": 6175,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "scripts/audit_source_years.py",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\scripts\\audit_source_years.py",
+      "sha256": "89e8f76864c911a9662fa075948a4959e47e35908f22dd52b920b605aff9a3d5",
+      "bytes": 2160,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "scripts/build_results.py",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\scripts\\build_results.py",
+      "sha256": "76008cc0d4e348da5c23aa725bbe82a0994c12a83008a093a2e52eda3577dfe2",
+      "bytes": 9754,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "scripts/check_reproduction.py",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\scripts\\check_reproduction.py",
+      "sha256": "8dd0270fc4fcdbc194e97e951b19610d326da6c100f548a279e6a6cf5a5fef56",
+      "bytes": 1445,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "scripts/corpus_utils.py",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\scripts\\corpus_utils.py",
+      "sha256": "8bacba67e00de4167e5ac65b7ddf5460d06c90e0a0d9f6d7d1cdf651e86d4fdd",
+      "bytes": 1161,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "scripts/create_report.py",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\scripts\\create_report.py",
+      "sha256": "c73a0ff61fad87c8b59ad8c78740bca6943a45b6e40a2c6e856afa2c3f731fb0",
+      "bytes": 24635,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "scripts/discover_themes.py",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\scripts\\discover_themes.py",
+      "sha256": "0e309912e01958a7388b1626adecd58aee14f6bd12151c30789267cddeeaf63a",
+      "bytes": 5011,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "scripts/estimate_embedding_cost.py",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\scripts\\estimate_embedding_cost.py",
+      "sha256": "b6e4b34a159da6f512e5dccbe9ffb5c9d4630176d0274d57f95d834926f4747e",
+      "bytes": 6455,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "scripts/export_supplements.py",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\scripts\\export_supplements.py",
+      "sha256": "99b811048409a1e884c27bb9caebf205e473af34064775a0aa6ffcc94356214e",
+      "bytes": 6152,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "scripts/export_word_pdf.ps1",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\scripts\\export_word_pdf.ps1",
+      "sha256": "c35c87819e3882d059c600ea2412582485557e9d88512d799abff01b86d81824",
+      "bytes": 976,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "scripts/fetch_public.py",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\scripts\\fetch_public.py",
+      "sha256": "62e3197d7d3a8c5ebaf71fc2e9a6bd2db4bbad6666a2b073dab7a6497720e7bc",
+      "bytes": 783,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "scripts/finalize_review.py",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\scripts\\finalize_review.py",
+      "sha256": "bc7a38ee7d66e77e750141765f41127218a3ef309952760c8e767c583949fb98",
+      "bytes": 2000,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "scripts/ocr_repairs.py",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\scripts\\ocr_repairs.py",
+      "sha256": "7fa60e2e70527c0e846585b02f05f60873260a9d9bbd39abb7de0b7d0d2f69a6",
+      "bytes": 1289,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "scripts/ocr_selected.py",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\scripts\\ocr_selected.py",
+      "sha256": "5ae41d3715040619e0e7e5f05aac24126e7b50b4adda1311c5cf597c11bb5af4",
+      "bytes": 4825,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "scripts/package_results.py",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\scripts\\package_results.py",
+      "sha256": "21fcb2a8ea4343428666090969a3e9e1fde31212831f2748c82defaa7062359a",
+      "bytes": 2983,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "scripts/prepare_2026.py",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\scripts\\prepare_2026.py",
+      "sha256": "d7dd5daa3e95eadc7a1759b24d5bde6ca36d15a0957d79ae7e1fbd1b20cc0892",
+      "bytes": 2194,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "scripts/prepare_corpus.py",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\scripts\\prepare_corpus.py",
+      "sha256": "d66ff7b4e25bef74594dcf231e2f36a288a799e85de2162d1bf7d0a87e455c4f",
+      "bytes": 9507,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "scripts/probe_sources.py",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\scripts\\probe_sources.py",
+      "sha256": "02607199e6c96f2e2937a0cdbcb0dd13355b854792082a82a6970a3ee5e803c1",
+      "bytes": 1666,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "scripts/quality_check.py",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\scripts\\quality_check.py",
+      "sha256": "1b10b20cc5cb910e05cc2c09b5e52642c7e47f649d15eabeb060f5238c075d1c",
+      "bytes": 903,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "scripts/read_review.py",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\scripts\\read_review.py",
+      "sha256": "df611146759c1c23ae11a7de524573df6de57cced242dc23d71f4024d917029d",
+      "bytes": 2160,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "scripts/record_review.py",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\scripts\\record_review.py",
+      "sha256": "9fa99a03fe73eca6f2a5f033fac4068214e3bffd664abb204eab47ec06ec88de",
+      "bytes": 739,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "scripts/revision_discover.py",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\scripts\\revision_discover.py",
+      "sha256": "9d35c0525b580a0ff091a1077d168d2f04ca51bfb368cc563439c169332bb6f5",
+      "bytes": 4910,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "scripts/revision_prepare.py",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\scripts\\revision_prepare.py",
+      "sha256": "1bbc16844dc05ee2aaba852f3e9c829b6b6b84aa33cfd4db4b5e6ad48b808506",
+      "bytes": 6162,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "scripts/show_pages.py",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\scripts\\show_pages.py",
+      "sha256": "e6cb4ef24ea0c58f3082ca68df24df1e9cd863e19c13b374093972070511ec85",
+      "bytes": 786,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "scripts/validate_artifacts.py",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\scripts\\validate_artifacts.py",
+      "sha256": "66df146b5d89f2121aa1f19034e93d4b37f314b4cfc134ed5e7c0e66ae111d20",
+      "bytes": 2759,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "scripts/__pycache__/corpus_utils.cpython-312.pyc",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\scripts\\__pycache__\\corpus_utils.cpython-312.pyc",
+      "sha256": "b2027c19dac063d60a389be936bedb30935b4a01f5cd8f6d8345247fe8bf596d",
+      "bytes": 2719,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "scripts/__pycache__/prepare_corpus.cpython-312.pyc",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\scripts\\__pycache__\\prepare_corpus.cpython-312.pyc",
+      "sha256": "d780c53b4c04495a851fc639c838d813b82efe3841bba4613bbc53e95f4c4600",
+      "bytes": 16162,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "output/repro_verification/scripts/asr_inspect.py",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\scripts\\asr_inspect.py",
+      "sha256": "7080a11d06788835d101636901c310a6cac6f390a24158b3d189cacf116ff2b6",
+      "bytes": 1292,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "output/repro_verification/scripts/audit_corpus.py",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\scripts\\audit_corpus.py",
+      "sha256": "c1592be26ecfe4a9266f71bd9a9e7cb355c46838c1d182dfaabaf3a6011a9907",
+      "bytes": 6175,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "output/repro_verification/scripts/audit_source_years.py",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\scripts\\audit_source_years.py",
+      "sha256": "89e8f76864c911a9662fa075948a4959e47e35908f22dd52b920b605aff9a3d5",
+      "bytes": 2160,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "output/repro_verification/scripts/build_results.py",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\scripts\\build_results.py",
+      "sha256": "76008cc0d4e348da5c23aa725bbe82a0994c12a83008a093a2e52eda3577dfe2",
+      "bytes": 9754,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "output/repro_verification/scripts/corpus_utils.py",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\scripts\\corpus_utils.py",
+      "sha256": "8bacba67e00de4167e5ac65b7ddf5460d06c90e0a0d9f6d7d1cdf651e86d4fdd",
+      "bytes": 1161,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "output/repro_verification/scripts/create_report.py",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\scripts\\create_report.py",
+      "sha256": "c73a0ff61fad87c8b59ad8c78740bca6943a45b6e40a2c6e856afa2c3f731fb0",
+      "bytes": 24635,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "output/repro_verification/scripts/discover_themes.py",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\scripts\\discover_themes.py",
+      "sha256": "0e309912e01958a7388b1626adecd58aee14f6bd12151c30789267cddeeaf63a",
+      "bytes": 5011,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "output/repro_verification/scripts/export_supplements.py",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\scripts\\export_supplements.py",
+      "sha256": "99b811048409a1e884c27bb9caebf205e473af34064775a0aa6ffcc94356214e",
+      "bytes": 6152,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "output/repro_verification/scripts/export_word_pdf.ps1",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\scripts\\export_word_pdf.ps1",
+      "sha256": "c35c87819e3882d059c600ea2412582485557e9d88512d799abff01b86d81824",
+      "bytes": 976,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "output/repro_verification/scripts/fetch_public.py",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\scripts\\fetch_public.py",
+      "sha256": "62e3197d7d3a8c5ebaf71fc2e9a6bd2db4bbad6666a2b073dab7a6497720e7bc",
+      "bytes": 783,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "output/repro_verification/scripts/finalize_review.py",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\scripts\\finalize_review.py",
+      "sha256": "bc7a38ee7d66e77e750141765f41127218a3ef309952760c8e767c583949fb98",
+      "bytes": 2000,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "output/repro_verification/scripts/ocr_repairs.py",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\scripts\\ocr_repairs.py",
+      "sha256": "7fa60e2e70527c0e846585b02f05f60873260a9d9bbd39abb7de0b7d0d2f69a6",
+      "bytes": 1289,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "output/repro_verification/scripts/ocr_selected.py",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\scripts\\ocr_selected.py",
+      "sha256": "5ae41d3715040619e0e7e5f05aac24126e7b50b4adda1311c5cf597c11bb5af4",
+      "bytes": 4825,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "output/repro_verification/scripts/package_results.py",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\scripts\\package_results.py",
+      "sha256": "21fcb2a8ea4343428666090969a3e9e1fde31212831f2748c82defaa7062359a",
+      "bytes": 2983,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "output/repro_verification/scripts/prepare_2026.py",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\scripts\\prepare_2026.py",
+      "sha256": "d7dd5daa3e95eadc7a1759b24d5bde6ca36d15a0957d79ae7e1fbd1b20cc0892",
+      "bytes": 2194,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "output/repro_verification/scripts/prepare_corpus.py",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\scripts\\prepare_corpus.py",
+      "sha256": "e647837ab7f3d6b5b5ba0a17c6e899eafeaa72719a64ce528bbc7253b570d68e",
+      "bytes": 9528,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "output/repro_verification/scripts/probe_sources.py",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\scripts\\probe_sources.py",
+      "sha256": "02607199e6c96f2e2937a0cdbcb0dd13355b854792082a82a6970a3ee5e803c1",
+      "bytes": 1666,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "output/repro_verification/scripts/quality_check.py",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\scripts\\quality_check.py",
+      "sha256": "1b10b20cc5cb910e05cc2c09b5e52642c7e47f649d15eabeb060f5238c075d1c",
+      "bytes": 903,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "output/repro_verification/scripts/read_review.py",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\scripts\\read_review.py",
+      "sha256": "df611146759c1c23ae11a7de524573df6de57cced242dc23d71f4024d917029d",
+      "bytes": 2160,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "output/repro_verification/scripts/record_review.py",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\scripts\\record_review.py",
+      "sha256": "9fa99a03fe73eca6f2a5f033fac4068214e3bffd664abb204eab47ec06ec88de",
+      "bytes": 739,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "output/repro_verification/scripts/show_pages.py",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\scripts\\show_pages.py",
+      "sha256": "e6cb4ef24ea0c58f3082ca68df24df1e9cd863e19c13b374093972070511ec85",
+      "bytes": 786,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "output/repro_verification/scripts/validate_artifacts.py",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\scripts\\validate_artifacts.py",
+      "sha256": "66df146b5d89f2121aa1f19034e93d4b37f314b4cfc134ed5e7c0e66ae111d20",
+      "bytes": 2759,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "output/repro_verification/scripts/__pycache__/corpus_utils.cpython-312.pyc",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\scripts\\__pycache__\\corpus_utils.cpython-312.pyc",
+      "sha256": "c8775f624775ee22705c79e06ffcc6d6ea3a8ef5896fd66c8f548893d7b16b14",
+      "bytes": 2745,
+      "reason": "Obsolete execution path or its duplicate; current implementation is unga_analysis/"
+    },
+    {
+      "path": "unga_analysis/legacy.py",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\unga_analysis\\legacy.py",
+      "sha256": "4f01affa66053f556de284d5ca37c90e6b3858d05c2b7804ed28e76532621cbf",
+      "bytes": 3725,
+      "reason": "Imports obsolete pre-instruction results; removed from CLI"
+    },
+    {
+      "path": "unga_analysis/__pycache__/legacy.cpython-312.pyc",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\unga_analysis\\__pycache__\\legacy.cpython-312.pyc",
+      "sha256": "d4408577cb1e3c370c2fd56f19bb68566c1a4958fd78d9972b237e8856b20d84",
+      "bytes": 6098,
+      "reason": "Bytecode for removed legacy importer"
+    },
+    {
+      "path": "deliverables/DISCOVERY_MEMO.md",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\deliverables\\DISCOVERY_MEMO.md",
+      "sha256": "40172c74ddfae1af11cb12e5078cce294962a115f16a559bdf468a6dc56430b2",
+      "bytes": 3382,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "deliverables/manifest_sha256.csv",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\deliverables\\manifest_sha256.csv",
+      "sha256": "aeb80833f80a1252d53d219fb033f5e6f3851ddd6b0c63f56553f75fa27b7cc7",
+      "bytes": 11093,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "deliverables/METHOD.md",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\deliverables\\METHOD.md",
+      "sha256": "5dae593ad11ba73fcd4e6db6c78eb91ed2c9cad45c24bae79670fa6d95c1b6d9",
+      "bytes": 10203,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "deliverables/README.md",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\deliverables\\README.md",
+      "sha256": "51535efd69310f4a1f4d33f52ed29cea8bb1e374544e08488d40e08fefaec574",
+      "bytes": 4617,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "deliverables/README_STATUS.md",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\deliverables\\README_STATUS.md",
+      "sha256": "bf43d5f8f9a25c4342130049f33fed2adccde514570983a75c73f7881074d6d6",
+      "bytes": 592,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "deliverables/report_text.txt",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\deliverables\\report_text.txt",
+      "sha256": "68b8fbe474d96f76d1a51345bd3530a03eb8c4dec59655494d22cbf5aed68110",
+      "bytes": 15369,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "deliverables/requirements.txt",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\deliverables\\requirements.txt",
+      "sha256": "91986fa8046978d410f3242a6dcc39686f1f49d2a3338d1421f3c49c4b06cb25",
+      "bytes": 198,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "deliverables/statistics.json",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\deliverables\\statistics.json",
+      "sha256": "aaa8332ed99d5d44aeeff23b0bb509276c9114e323306685696baef7c6718ede",
+      "bytes": 2979,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "deliverables/UNGA_AI_Report_and_Reproducibility.zip",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\deliverables\\UNGA_AI_Report_and_Reproducibility.zip",
+      "sha256": "160fa857bb2e32d1da772774ac1c576fc17678b7699ad2b74fe507331f9c6837",
+      "bytes": 16959667,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "deliverables/UNGA_AI_Strategic_Report.docx",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\deliverables\\UNGA_AI_Strategic_Report.docx",
+      "sha256": "45fd00b7919ef3a298e8e706b36a6e95834db28d4b22ee0db5c561b612f9bf1a",
+      "bytes": 50496,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "deliverables/UNGA_AI_Strategic_Report.pdf",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\deliverables\\UNGA_AI_Strategic_Report.pdf",
+      "sha256": "8050fa9c39ca674b0a0b4a7cd75a335d41a61a8c7ff57839c02c18b544f576b4",
+      "bytes": 361157,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "deliverables/~$GA_AI_Strategic_Report.docx",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\deliverables\\~$GA_AI_Strategic_Report.docx",
+      "sha256": "45714898768d3c777b3da8f32cf48f585e24ac100ba50636a3e73df12fdb7ab1",
+      "bytes": 162,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "deliverables/evidence/annual_summary.csv",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\deliverables\\evidence\\annual_summary.csv",
+      "sha256": "8d117829cba368b4d12bf043444c691a98adc8bafa667f6f4d978ddaa8a3675f",
+      "bytes": 682,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "deliverables/evidence/artifact_validation.json",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\deliverables\\evidence\\artifact_validation.json",
+      "sha256": "2fac9814d1345fb02a7a2766f63c8bfb346aede44bc8775361f7b6337fba41b5",
+      "bytes": 539,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "deliverables/evidence/cooccurrence_matrix_2023.csv",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\deliverables\\evidence\\cooccurrence_matrix_2023.csv",
+      "sha256": "daf9cac8f127ea955d34337795274d0eb0a9535cb9a7040d2b0901b467092e11",
+      "bytes": 352,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "deliverables/evidence/cooccurrence_matrix_2024.csv",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\deliverables\\evidence\\cooccurrence_matrix_2024.csv",
+      "sha256": "020460b1fb28358e2d333ded9984c3c64d25da72bccae1402f7697280f7fd271",
+      "bytes": 358,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "deliverables/evidence/cooccurrence_matrix_2025.csv",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\deliverables\\evidence\\cooccurrence_matrix_2025.csv",
+      "sha256": "8b633e5f514eb0cf66ea61d2eaeca6bff556851c21f6b7d44b9728092cae992f",
+      "bytes": 366,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "deliverables/evidence/cooccurrence_matrix_2026.csv",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\deliverables\\evidence\\cooccurrence_matrix_2026.csv",
+      "sha256": "ada8bf301088a617f43c37912ab44027694a3dab0a179121f7726197b01fb237",
+      "bytes": 395,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "deliverables/evidence/cooccurrence_pairs.csv",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\deliverables\\evidence\\cooccurrence_pairs.csv",
+      "sha256": "2b8d82d39a2093581bc027932dea275577647e9a8ed5a6036741c7e2f44b1ce8",
+      "bytes": 14263,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "deliverables/evidence/country_policy_requests.csv",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\deliverables\\evidence\\country_policy_requests.csv",
+      "sha256": "90bc8dfae2a84debf6c18f3ae46b060bdfe6d0ea466917f54d971b385b03e946",
+      "bytes": 82768,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "deliverables/evidence/country_theme_matrix.csv",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\deliverables\\evidence\\country_theme_matrix.csv",
+      "sha256": "249a5ae81570fee7b9f4a5ee896a7a791ec56ccbca0156f7828596da182371d2",
+      "bytes": 174928,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "deliverables/evidence/coverage_grid_193.csv",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\deliverables\\evidence\\coverage_grid_193.csv",
+      "sha256": "2f8362ea326822da1836cd7428a79450e018c4035984a8ababa5466e9102bc32",
+      "bytes": 111557,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "deliverables/evidence/governance_models.csv",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\deliverables\\evidence\\governance_models.csv",
+      "sha256": "8ac75387960a75950fb270292374016b61b2df55640a1676e6b2363f6c46c721",
+      "bytes": 4309,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "deliverables/evidence/institution_stances.csv",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\deliverables\\evidence\\institution_stances.csv",
+      "sha256": "2afdcb754a1f2cf601ed9a154eaddc73f492921f938ac7a888ae6cb8efa59ca0",
+      "bytes": 9475,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "deliverables/evidence/matched_country_comparisons.csv",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\deliverables\\evidence\\matched_country_comparisons.csv",
+      "sha256": "4d9e4a852acafde145c881f787b547cdcbdfea0bb556c8fe9077a128f3c50354",
+      "bytes": 3156,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "deliverables/evidence/regional_summary.csv",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\deliverables\\evidence\\regional_summary.csv",
+      "sha256": "8839758ac04642eeb8369b78f9bc08c876e9807ba6414ee2011a504eb2cbfc2f",
+      "bytes": 1284,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "deliverables/evidence/reproduction_check.json",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\deliverables\\evidence\\reproduction_check.json",
+      "sha256": "787884f5efad65e26469ca77745e754260ea520ff8940fef9f1cf50729e007ef",
+      "bytes": 558,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "deliverables/evidence/secondary_context.csv",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\deliverables\\evidence\\secondary_context.csv",
+      "sha256": "993c351179ebe3027aafc2d909e11e6351ed1cc6d51b89783b9d947b99c1c60e",
+      "bytes": 47654,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "deliverables/evidence/theme_prevalence.csv",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\deliverables\\evidence\\theme_prevalence.csv",
+      "sha256": "8b3d4fadc1ad0c8c99c73f9b4063c3623a577d747097ccbe8f6f9a78dc0fec89",
+      "bytes": 18144,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "deliverables/evidence/validation.json",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\deliverables\\evidence\\validation.json",
+      "sha256": "cfb2512f500e0c463deb7985746811b73b16cd66341fbe68f68177ac2d65498f",
+      "bytes": 425,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "output/repro_verification/deliverables/DISCOVERY_MEMO.md",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\deliverables\\DISCOVERY_MEMO.md",
+      "sha256": "40172c74ddfae1af11cb12e5078cce294962a115f16a559bdf468a6dc56430b2",
+      "bytes": 3382,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "output/repro_verification/deliverables/manifest_sha256.csv",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\deliverables\\manifest_sha256.csv",
+      "sha256": "4ddcc71edcfdd3b79731051af607b090ce15c0c3c0cc560820d33edf58f463d0",
+      "bytes": 10876,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "output/repro_verification/deliverables/METHOD.md",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\deliverables\\METHOD.md",
+      "sha256": "5dae593ad11ba73fcd4e6db6c78eb91ed2c9cad45c24bae79670fa6d95c1b6d9",
+      "bytes": 10203,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "output/repro_verification/deliverables/README.md",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\deliverables\\README.md",
+      "sha256": "51535efd69310f4a1f4d33f52ed29cea8bb1e374544e08488d40e08fefaec574",
+      "bytes": 4617,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "output/repro_verification/deliverables/requirements.txt",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\deliverables\\requirements.txt",
+      "sha256": "91986fa8046978d410f3242a6dcc39686f1f49d2a3338d1421f3c49c4b06cb25",
+      "bytes": 198,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "output/repro_verification/deliverables/statistics.json",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\deliverables\\statistics.json",
+      "sha256": "aaa8332ed99d5d44aeeff23b0bb509276c9114e323306685696baef7c6718ede",
+      "bytes": 2979,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "output/repro_verification/deliverables/UNGA_AI_Strategic_Report.docx",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\deliverables\\UNGA_AI_Strategic_Report.docx",
+      "sha256": "45fd00b7919ef3a298e8e706b36a6e95834db28d4b22ee0db5c561b612f9bf1a",
+      "bytes": 50496,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "output/repro_verification/deliverables/UNGA_AI_Strategic_Report.pdf",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\deliverables\\UNGA_AI_Strategic_Report.pdf",
+      "sha256": "8050fa9c39ca674b0a0b4a7cd75a335d41a61a8c7ff57839c02c18b544f576b4",
+      "bytes": 361157,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "output/repro_verification/deliverables/evidence/annual_summary.csv",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\deliverables\\evidence\\annual_summary.csv",
+      "sha256": "8d117829cba368b4d12bf043444c691a98adc8bafa667f6f4d978ddaa8a3675f",
+      "bytes": 682,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "output/repro_verification/deliverables/evidence/artifact_validation.json",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\deliverables\\evidence\\artifact_validation.json",
+      "sha256": "2fac9814d1345fb02a7a2766f63c8bfb346aede44bc8775361f7b6337fba41b5",
+      "bytes": 539,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "output/repro_verification/deliverables/evidence/cooccurrence_matrix_2023.csv",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\deliverables\\evidence\\cooccurrence_matrix_2023.csv",
+      "sha256": "daf9cac8f127ea955d34337795274d0eb0a9535cb9a7040d2b0901b467092e11",
+      "bytes": 352,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "output/repro_verification/deliverables/evidence/cooccurrence_matrix_2024.csv",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\deliverables\\evidence\\cooccurrence_matrix_2024.csv",
+      "sha256": "020460b1fb28358e2d333ded9984c3c64d25da72bccae1402f7697280f7fd271",
+      "bytes": 358,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "output/repro_verification/deliverables/evidence/cooccurrence_matrix_2025.csv",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\deliverables\\evidence\\cooccurrence_matrix_2025.csv",
+      "sha256": "8b633e5f514eb0cf66ea61d2eaeca6bff556851c21f6b7d44b9728092cae992f",
+      "bytes": 366,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "output/repro_verification/deliverables/evidence/cooccurrence_matrix_2026.csv",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\deliverables\\evidence\\cooccurrence_matrix_2026.csv",
+      "sha256": "ada8bf301088a617f43c37912ab44027694a3dab0a179121f7726197b01fb237",
+      "bytes": 395,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "output/repro_verification/deliverables/evidence/cooccurrence_pairs.csv",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\deliverables\\evidence\\cooccurrence_pairs.csv",
+      "sha256": "2b8d82d39a2093581bc027932dea275577647e9a8ed5a6036741c7e2f44b1ce8",
+      "bytes": 14263,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "output/repro_verification/deliverables/evidence/country_policy_requests.csv",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\deliverables\\evidence\\country_policy_requests.csv",
+      "sha256": "90bc8dfae2a84debf6c18f3ae46b060bdfe6d0ea466917f54d971b385b03e946",
+      "bytes": 82768,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "output/repro_verification/deliverables/evidence/country_theme_matrix.csv",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\deliverables\\evidence\\country_theme_matrix.csv",
+      "sha256": "249a5ae81570fee7b9f4a5ee896a7a791ec56ccbca0156f7828596da182371d2",
+      "bytes": 174928,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "output/repro_verification/deliverables/evidence/coverage_grid_193.csv",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\deliverables\\evidence\\coverage_grid_193.csv",
+      "sha256": "2f8362ea326822da1836cd7428a79450e018c4035984a8ababa5466e9102bc32",
+      "bytes": 111557,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "output/repro_verification/deliverables/evidence/governance_models.csv",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\deliverables\\evidence\\governance_models.csv",
+      "sha256": "8ac75387960a75950fb270292374016b61b2df55640a1676e6b2363f6c46c721",
+      "bytes": 4309,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "output/repro_verification/deliverables/evidence/institution_stances.csv",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\deliverables\\evidence\\institution_stances.csv",
+      "sha256": "2afdcb754a1f2cf601ed9a154eaddc73f492921f938ac7a888ae6cb8efa59ca0",
+      "bytes": 9475,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "output/repro_verification/deliverables/evidence/matched_country_comparisons.csv",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\deliverables\\evidence\\matched_country_comparisons.csv",
+      "sha256": "4d9e4a852acafde145c881f787b547cdcbdfea0bb556c8fe9077a128f3c50354",
+      "bytes": 3156,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "output/repro_verification/deliverables/evidence/regional_summary.csv",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\deliverables\\evidence\\regional_summary.csv",
+      "sha256": "8839758ac04642eeb8369b78f9bc08c876e9807ba6414ee2011a504eb2cbfc2f",
+      "bytes": 1284,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "output/repro_verification/deliverables/evidence/secondary_context.csv",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\deliverables\\evidence\\secondary_context.csv",
+      "sha256": "993c351179ebe3027aafc2d909e11e6351ed1cc6d51b89783b9d947b99c1c60e",
+      "bytes": 47654,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "output/repro_verification/deliverables/evidence/theme_prevalence.csv",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\deliverables\\evidence\\theme_prevalence.csv",
+      "sha256": "8b3d4fadc1ad0c8c99c73f9b4063c3623a577d747097ccbe8f6f9a78dc0fec89",
+      "bytes": 18144,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "output/repro_verification/deliverables/evidence/validation.json",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\deliverables\\evidence\\validation.json",
+      "sha256": "cfb2512f500e0c463deb7985746811b73b16cd66341fbe68f68177ac2d65498f",
+      "bytes": 425,
+      "reason": "Superseded report, interpretation, aggregate or release metadata; source evidence retained"
+    },
+    {
+      "path": "output/repro_verification/ANALYSIS_PROTOCOL.md",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\ANALYSIS_PROTOCOL.md",
+      "sha256": "39eb40f5f4fa21bcec838529032dec139b080253a5f95986a6cd9d5fe28c7e0d",
+      "bytes": 5213,
+      "reason": "Duplicate obsolete instructions/environment for removed reproduction scripts"
+    },
+    {
+      "path": "output/repro_verification/README.md",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\README.md",
+      "sha256": "51535efd69310f4a1f4d33f52ed29cea8bb1e374544e08488d40e08fefaec574",
+      "bytes": 4617,
+      "reason": "Duplicate obsolete instructions/environment for removed reproduction scripts"
+    },
+    {
+      "path": "output/repro_verification/requirements.txt",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\requirements.txt",
+      "sha256": "91986fa8046978d410f3242a6dcc39686f1f49d2a3338d1421f3c49c4b06cb25",
+      "bytes": 198,
+      "reason": "Duplicate obsolete instructions/environment for removed reproduction scripts"
+    },
+    {
+      "path": "output/discovery/cluster_reading_order.jsonl",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\discovery\\cluster_reading_order.jsonl",
+      "sha256": "b8b150a00095a572c1b405713eb47e912da2b475f97a545eec158bd4fbbdb507",
+      "bytes": 1053831,
+      "reason": "Obsolete embedding/clustering/report output or derived statistics"
+    },
+    {
+      "path": "output/discovery/embeddings_35b3b734db8a.npy",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\discovery\\embeddings_35b3b734db8a.npy",
+      "sha256": "06ee83acfec780c04a8febb88d474a71ace0acdd0f7b3b878cf0f23fff9d95e5",
+      "bytes": 1345664,
+      "reason": "Obsolete embedding/clustering/report output or derived statistics"
+    },
+    {
+      "path": "output/discovery/embeddings_50841f39cdda.npy",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\discovery\\embeddings_50841f39cdda.npy",
+      "sha256": "b0136c401abe636a0c03a4e5eaa6e023ff18d56d2d1eb93c4bf398083ea8c65b",
+      "bytes": 952448,
+      "reason": "Obsolete embedding/clustering/report output or derived statistics"
+    },
+    {
+      "path": "output/discovery/embeddings_87b62b765ce2.npy",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\discovery\\embeddings_87b62b765ce2.npy",
+      "sha256": "bf07eec66e6fdd5a9f67563a8731b380796cd98a0471790701de91b7875751bf",
+      "bytes": 1342592,
+      "reason": "Obsolete embedding/clustering/report output or derived statistics"
+    },
+    {
+      "path": "output/discovery/linkage.csv",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\discovery\\linkage.csv",
+      "sha256": "cb147a83a15e8f7dfe4c68761f30583929fc643f4ab6c9a4b344fc9ea1908446",
+      "bytes": 44059,
+      "reason": "Obsolete embedding/clustering/report output or derived statistics"
+    },
+    {
+      "path": "output/discovery/linkage.npy",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\discovery\\linkage.npy",
+      "sha256": "de5c601faebfeb43a2af75a6e692add23d0f97b8b6fdba0d79940c7b2df1a6e4",
+      "bytes": 14080,
+      "reason": "Obsolete embedding/clustering/report output or derived statistics"
+    },
+    {
+      "path": "output/discovery/memberships.csv",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\discovery\\memberships.csv",
+      "sha256": "c97156560daedce1dbf58c89f78e56fc45b37bec39f979d706313e2d16ee8eda",
+      "bytes": 22659,
+      "reason": "Obsolete embedding/clustering/report output or derived statistics"
+    },
+    {
+      "path": "output/discovery/method.json",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\discovery\\method.json",
+      "sha256": "449938e8add4e18617b8a941fe1a5985eeef51e52b692106054edf243d6dcaab",
+      "bytes": 855,
+      "reason": "Obsolete embedding/clustering/report output or derived statistics"
+    },
+    {
+      "path": "output/repro_verification/output/discovery/cluster_reading_order.jsonl",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\output\\discovery\\cluster_reading_order.jsonl",
+      "sha256": "b8b150a00095a572c1b405713eb47e912da2b475f97a545eec158bd4fbbdb507",
+      "bytes": 1053831,
+      "reason": "Obsolete embedding/clustering/report output or derived statistics"
+    },
+    {
+      "path": "output/repro_verification/output/discovery/embeddings_87b62b765ce2.npy",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\output\\discovery\\embeddings_87b62b765ce2.npy",
+      "sha256": "bf07eec66e6fdd5a9f67563a8731b380796cd98a0471790701de91b7875751bf",
+      "bytes": 1342592,
+      "reason": "Obsolete embedding/clustering/report output or derived statistics"
+    },
+    {
+      "path": "output/repro_verification/output/discovery/linkage.csv",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\output\\discovery\\linkage.csv",
+      "sha256": "cb147a83a15e8f7dfe4c68761f30583929fc643f4ab6c9a4b344fc9ea1908446",
+      "bytes": 44059,
+      "reason": "Obsolete embedding/clustering/report output or derived statistics"
+    },
+    {
+      "path": "output/repro_verification/output/discovery/linkage.npy",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\output\\discovery\\linkage.npy",
+      "sha256": "de5c601faebfeb43a2af75a6e692add23d0f97b8b6fdba0d79940c7b2df1a6e4",
+      "bytes": 14080,
+      "reason": "Obsolete embedding/clustering/report output or derived statistics"
+    },
+    {
+      "path": "output/repro_verification/output/discovery/memberships.csv",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\output\\discovery\\memberships.csv",
+      "sha256": "c97156560daedce1dbf58c89f78e56fc45b37bec39f979d706313e2d16ee8eda",
+      "bytes": 22659,
+      "reason": "Obsolete embedding/clustering/report output or derived statistics"
+    },
+    {
+      "path": "output/repro_verification/output/discovery/method.json",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\output\\discovery\\method.json",
+      "sha256": "449938e8add4e18617b8a941fe1a5985eeef51e52b692106054edf243d6dcaab",
+      "bytes": 855,
+      "reason": "Obsolete embedding/clustering/report output or derived statistics"
+    },
+    {
+      "path": "output/report_render/page-1.png",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\report_render\\page-1.png",
+      "sha256": "d7aa225d4865b3be561fa4fafae74db85e875cab1e1bea7eec6f2b9e25344ea3",
+      "bytes": 259960,
+      "reason": "Obsolete embedding/clustering/report output or derived statistics"
+    },
+    {
+      "path": "output/report_render/page-2.png",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\report_render\\page-2.png",
+      "sha256": "49d889ca38d0b4d0bcfc4ef27357dcf443ed0816be1677e9fd8b2c9f35960f1b",
+      "bytes": 296359,
+      "reason": "Obsolete embedding/clustering/report output or derived statistics"
+    },
+    {
+      "path": "output/report_render/page-3.png",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\report_render\\page-3.png",
+      "sha256": "7ffdabaaef88a41fa7cb69ccd64050bc09be6b8887aba17ed96ddea89b591887",
+      "bytes": 276995,
+      "reason": "Obsolete embedding/clustering/report output or derived statistics"
+    },
+    {
+      "path": "output/report_render/page-4.png",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\report_render\\page-4.png",
+      "sha256": "db2780781a2bfd04ada63e823b0bc114c9f2087a4ede5518e4e6440f55ebe552",
+      "bytes": 309564,
+      "reason": "Obsolete embedding/clustering/report output or derived statistics"
+    },
+    {
+      "path": "output/report_render/page-5.png",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\report_render\\page-5.png",
+      "sha256": "0ef5c346fbc3afa2e95677aba854e36b359a11bf544132c505362c38e8a6d39f",
+      "bytes": 308507,
+      "reason": "Obsolete embedding/clustering/report output or derived statistics"
+    },
+    {
+      "path": "output/report_render/page-6.png",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\report_render\\page-6.png",
+      "sha256": "3700f362128aa03b8ae5ea7e6f087323e3e9712c45dd254dcd9789c81677e8a5",
+      "bytes": 348319,
+      "reason": "Obsolete embedding/clustering/report output or derived statistics"
+    },
+    {
+      "path": "output/qa/djibouti_page9.png",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\qa\\djibouti_page9.png",
+      "sha256": "f1299c8a18d7a8d66bc923127edd8855b80c4fb1ee38379ffd4795966222ad51",
+      "bytes": 274220,
+      "reason": "Obsolete embedding/clustering/report output or derived statistics"
+    },
+    {
+      "path": "output/pipeline/group_statistics/country_year_theme_matrix.csv",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\pipeline\\group_statistics\\country_year_theme_matrix.csv",
+      "sha256": "2d2b57f4465495423557087e2b84b1c73b6cbc9fce339d609fce793209f56371",
+      "bytes": 164382,
+      "reason": "Obsolete embedding/clustering/report output or derived statistics"
+    },
+    {
+      "path": "output/pipeline/group_statistics/key_facts_by_group.csv",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\pipeline\\group_statistics\\key_facts_by_group.csv",
+      "sha256": "0b48ec789f26fb5562161539e99a223a4d0604872684326bb1fe5e2945b5fb12",
+      "bytes": 2995,
+      "reason": "Obsolete embedding/clustering/report output or derived statistics"
+    },
+    {
+      "path": "output/pipeline/group_statistics/theme_cooccurrence_by_group.csv",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\pipeline\\group_statistics\\theme_cooccurrence_by_group.csv",
+      "sha256": "2c0c5d3d097cc6f86aabe5d5a6d26d7bd6e36cba9f23bf8ccd3b7e58ff2f086e",
+      "bytes": 142202,
+      "reason": "Obsolete embedding/clustering/report output or derived statistics"
+    },
+    {
+      "path": "output/pipeline/group_statistics/theme_prevalence_by_group.csv",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\pipeline\\group_statistics\\theme_prevalence_by_group.csv",
+      "sha256": "78a0c9143f0394805037b0db1935e2a89c7da45545fe09c0bced612ad7702f6f",
+      "bytes": 52771,
+      "reason": "Obsolete embedding/clustering/report output or derived statistics"
+    },
+    {
+      "path": "output/analysis/candidates.jsonl",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\analysis\\candidates.jsonl",
+      "sha256": "984ebef863fc58ce2e6984aea757ef39be7b6c7ee3692c52d63a54587187a59a",
+      "bytes": 1368237,
+      "reason": "Old screening/taxonomy output inconsistent with selected EN/OpenAI pipeline; source extraction and review retained"
+    },
+    {
+      "path": "output/analysis/context_candidates.jsonl",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\analysis\\context_candidates.jsonl",
+      "sha256": "502af32fffd0a41b2bc41ef148661d98168b01e3de14b736069a45e2a4b72ccd",
+      "bytes": 47583,
+      "reason": "Old screening/taxonomy output inconsistent with selected EN/OpenAI pipeline; source extraction and review retained"
+    },
+    {
+      "path": "output/analysis/codebook.json",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\analysis\\codebook.json",
+      "sha256": "695189935ee73f09f569627d08e7576e75f71f701917cf7525478bd7d3c91c70",
+      "bytes": 2287,
+      "reason": "Old screening/taxonomy output inconsistent with selected EN/OpenAI pipeline; source extraction and review retained"
+    },
+    {
+      "path": "output/analysis/screening_summary.json",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\analysis\\screening_summary.json",
+      "sha256": "de24074c181461452d83b8ba10c245a1547d623532eb0ac70b8955a07838b813",
+      "bytes": 915,
+      "reason": "Old screening/taxonomy output inconsistent with selected EN/OpenAI pipeline; source extraction and review retained"
+    },
+    {
+      "path": "output/repro_verification/output/analysis/candidates.jsonl",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\output\\analysis\\candidates.jsonl",
+      "sha256": "984ebef863fc58ce2e6984aea757ef39be7b6c7ee3692c52d63a54587187a59a",
+      "bytes": 1368237,
+      "reason": "Old screening/taxonomy output inconsistent with selected EN/OpenAI pipeline; source extraction and review retained"
+    },
+    {
+      "path": "output/repro_verification/output/analysis/context_candidates.jsonl",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\output\\analysis\\context_candidates.jsonl",
+      "sha256": "502af32fffd0a41b2bc41ef148661d98168b01e3de14b736069a45e2a4b72ccd",
+      "bytes": 47583,
+      "reason": "Old screening/taxonomy output inconsistent with selected EN/OpenAI pipeline; source extraction and review retained"
+    },
+    {
+      "path": "output/repro_verification/output/analysis/codebook.json",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\output\\analysis\\codebook.json",
+      "sha256": "695189935ee73f09f569627d08e7576e75f71f701917cf7525478bd7d3c91c70",
+      "bytes": 2287,
+      "reason": "Old screening/taxonomy output inconsistent with selected EN/OpenAI pipeline; source extraction and review retained"
+    },
+    {
+      "path": "output/repro_verification/output/analysis/screening_summary.json",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\output\\analysis\\screening_summary.json",
+      "sha256": "de24074c181461452d83b8ba10c245a1547d623532eb0ac70b8955a07838b813",
+      "bytes": 915,
+      "reason": "Old screening/taxonomy output inconsistent with selected EN/OpenAI pipeline; source extraction and review retained"
+    },
+    {
+      "path": "output/revision/average_cosine_linkage.csv",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\revision\\average_cosine_linkage.csv",
+      "sha256": "b7b1e13a3f0823af251b387a30d825566c97baf693bf5c2aba6bdb785be7eb3b",
+      "bytes": 18203,
+      "reason": "Superseded MiniLM/provisional-ASR discovery outputs; not reusable OpenAI vectors"
+    },
+    {
+      "path": "output/revision/average_cosine_linkage.npy",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\revision\\average_cosine_linkage.npy",
+      "sha256": "0e5769cec696f30f41d5b19866d88e4f016b4cfbb3a502624a8f03cb13e5b9ae",
+      "bytes": 5888,
+      "reason": "Superseded MiniLM/provisional-ASR discovery outputs; not reusable OpenAI vectors"
+    },
+    {
+      "path": "output/revision/discovery_memberships.csv",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\revision\\discovery_memberships.csv",
+      "sha256": "f90a2fd423abecaef55018f4264c7e688ae687335026cb246ab853b655580f2b",
+      "bytes": 16048,
+      "reason": "Superseded MiniLM/provisional-ASR discovery outputs; not reusable OpenAI vectors"
+    },
+    {
+      "path": "output/revision/discovery_method.json",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\revision\\discovery_method.json",
+      "sha256": "3e12ebbf2cc2a33514efc2b5524759148dc60095388af2a97740832a7a6ed185",
+      "bytes": 1715,
+      "reason": "Superseded MiniLM/provisional-ASR discovery outputs; not reusable OpenAI vectors"
+    },
+    {
+      "path": "output/revision/discovery_representatives.csv",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\revision\\discovery_representatives.csv",
+      "sha256": "136babf7e78c2aebed5da86856b09346c0c236d579af19940fd0e64f0e6989c1",
+      "bytes": 41778,
+      "reason": "Superseded MiniLM/provisional-ASR discovery outputs; not reusable OpenAI vectors"
+    },
+    {
+      "path": "output/revision/embeddings_d3c9d8dce472.npy",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\revision\\embeddings_d3c9d8dce472.npy",
+      "sha256": "fd01e145064d04df71438d815f10f7b85cb1a3b292501951f59fee85466eec87",
+      "bytes": 1130624,
+      "reason": "Superseded MiniLM/provisional-ASR discovery outputs; not reusable OpenAI vectors"
+    },
+    {
+      "path": "output/revision/semantic_chunks.jsonl",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\revision\\semantic_chunks.jsonl",
+      "sha256": "e8b86a1e3b6921dbc87e4f269fa147b4804dfd7ec18d8f8d8c72b541baf1b19f",
+      "bytes": 630618,
+      "reason": "Superseded MiniLM/provisional-ASR discovery outputs; not reusable OpenAI vectors"
+    },
+    {
+      "path": "output/revision/expanded_dictionary_candidates.jsonl",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\revision\\expanded_dictionary_candidates.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "reason": "Superseded MiniLM/provisional-ASR discovery outputs; not reusable OpenAI vectors"
+    },
+    {
+      "path": "output/revision/screen_negative_sample.jsonl",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\revision\\screen_negative_sample.jsonl",
+      "sha256": "86d41821d1acc4d5552807021630610b4e210227d67b7c2440065b4441eb52ab",
+      "bytes": 26075,
+      "reason": "Superseded MiniLM/provisional-ASR discovery outputs; not reusable OpenAI vectors"
+    },
+    {
+      "path": "output/cost_estimate/embedding_cost_estimate.json",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\cost_estimate\\embedding_cost_estimate.json",
+      "sha256": "8b5fe9599656982f2472bffb1802399201a35119e2a8b99a8a6f99fe45a0b760",
+      "bytes": 5840,
+      "reason": "Superseded Gemini/full-text cost document; current model guidance remains in docs/"
+    },
+    {
+      "path": "output/cost_estimate/embedding_cost_estimate_ko.md",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\cost_estimate\\embedding_cost_estimate_ko.md",
+      "sha256": "fa1f47ef7d33915a77ea5102d0202fcd11c6280f45b4a1340b177fd53a5f756a",
+      "bytes": 8348,
+      "reason": "Superseded Gemini/full-text cost document; current model guidance remains in docs/"
+    },
+    {
+      "path": "output/supplementary_2026/ai_review.txt",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\supplementary_2026\\ai_review.txt",
+      "sha256": "5d3b2e85fca534d7013efb8898c2654676ebe3d45911908d53c136cb8292242a",
+      "bytes": 187297,
+      "reason": "Obsolete external-2026 derived analysis; retrieved source JSON remains cached only"
+    },
+    {
+      "path": "output/supplementary_2026/statements.jsonl",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\supplementary_2026\\statements.jsonl",
+      "sha256": "97e6b0d5c821d1ae27131705bd4c8b5b3d6f945126f9fb30cdaad86b22493213",
+      "bytes": 3064152,
+      "reason": "Obsolete external-2026 derived analysis; retrieved source JSON remains cached only"
+    },
+    {
+      "path": "output/repro_verification/output/supplementary_2026/ai_review.txt",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\output\\supplementary_2026\\ai_review.txt",
+      "sha256": "5d3b2e85fca534d7013efb8898c2654676ebe3d45911908d53c136cb8292242a",
+      "bytes": 187297,
+      "reason": "Obsolete external-2026 derived analysis; retrieved source JSON remains cached only"
+    },
+    {
+      "path": "output/repro_verification/output/supplementary_2026/statements.jsonl",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\repro_verification\\output\\supplementary_2026\\statements.jsonl",
+      "sha256": "97e6b0d5c821d1ae27131705bd4c8b5b3d6f945126f9fb30cdaad86b22493213",
+      "bytes": 3064152,
+      "reason": "Obsolete external-2026 derived analysis; retrieved source JSON remains cached only"
+    },
+    {
+      "path": "output/pipeline/speeches.jsonl",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\pipeline\\speeches.jsonl",
+      "sha256": "b7f9e7a6fb92c233e709c3ffc2122d9ee36ec6454412f8bfdf26ade8c7625e74",
+      "bytes": 40584,
+      "reason": "Temporary normalization output with old cache paths; source input and extraction retained"
+    },
+    {
+      "path": "output/pipeline/ingestion_issues.jsonl",
+      "absolute_path": "C:\\Users\\PC\\Desktop\\mypython\\ga_analysis\\output\\pipeline\\ingestion_issues.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "reason": "Temporary normalization output with old cache paths; source input and extraction retained"
+    }
+  ]
+}

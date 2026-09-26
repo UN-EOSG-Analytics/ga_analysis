@@ -1,0 +1,3 @@
+# Store every file byte-for-byte. Extraction caches and the source manifest are
+# validated by SHA-256, so line-ending conversion on another machine would break them.
+* -text

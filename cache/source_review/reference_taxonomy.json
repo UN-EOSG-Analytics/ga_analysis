@@ -1,0 +1,28 @@
+{
+  "version": "1.0-source-reviewed-2026-09-25",
+  "unit": "country-session; nonexclusive themes",
+  "codes": {
+    "DEV": "AI benefits or applications for development, SDGs, public services, productivity or innovation",
+    "ACCESS": "Unequal access or benefits; capacity, infrastructure, data, compute, finance or technology transfer",
+    "GOV": "International AI rules, governance institutions, coordination, treaties, standards or inclusive rule-making",
+    "SAFETY": "AI risks, safety, trustworthiness or human oversight, including existential risks",
+    "RIGHTS": "AI ethics, human rights, discrimination, dignity, privacy or protection of children",
+    "SECURITY": "Military AI, autonomous weapons, peace and security, AI-enabled crime or cyber threats",
+    "INFO": "AI misinformation, manipulation, deepfakes, truth or democratic information integrity",
+    "WORK": "AI effects on jobs, workers, skills or education specifically preparing people to use AI",
+    "ENV": "AI's environmental footprint or explicit AI applications to climate or environmental problems",
+    "POWER": "AI concentration, technological sovereignty, dependence or geopolitical competition"
+  },
+  "rules": [
+    "Themes require a demonstrated AI connection. Nearby generic digital or SDG content is insufficient.",
+    "A speech may receive any number of themes, including zero for a passing AI reference.",
+    "GOV is not automatically assigned whenever UN is mentioned.",
+    "National programme announcements alone are not international policy demands.",
+    "Institutional references are separately coded; generic international cooperation does not imply support for named mechanisms.",
+    "Only reviewed source decisions feed final theme statistics. Preserve provisional ASR results separately.",
+    "Cluster memberships are not thematic codes.",
+    "A theme records attention, including explicit opposition or rejection of a risk narrative; it does not measure support.",
+    "Head means incumbent head of state or government; deputies, crown princes and foreign ministers are other. Unknown is retained when identity is not securely established.",
+    "Physical PDF pages are one-based; ASR paragraphs are one-based source blocks, not invented PDF pages."
+  ]
+}

@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "unga-ai-analysis"
+version = "0.2.0"
+description = "Source-aware UN General Debate analysis pipeline"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+pdf = ["PyMuPDF>=1.28,<2"]
+analysis = ["numpy", "scipy", "scikit-learn", "country_converter", "lxml"]
+report = ["python-docx", "matplotlib"]
+embeddings = ["openai"]
+
+[project.scripts]
+unga-analysis = "unga_analysis.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["unga_analysis*"]
