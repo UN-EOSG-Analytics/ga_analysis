@@ -16,3 +16,10 @@
 - 수정: 비교할 때만 NFKC·따옴표·하이픈/대시·공백을 정규화한다. 원문과 저장된 인용은 그대로 둔다. 대소문자 변경·단어 생략·재배열·의역·불연속 인용은 허용하지 않는다.
 - 테스트: `test_typographic_variants_match_without_changing_inputs`, `test_nfkc_dashes_and_whitespace_are_comparison_only`, `test_normalization_does_not_allow_paraphrases_or_discontinuous_quotes`.
 - 한계: 정확 일치는 이제 명시된 문자 정규화 후의 연속 일치이다. 내용이 다른 인용은 여전히 검증 실패하며 이를 근거로 No를 채우지 않는다.
+
+## 3. 잘린 응답의 반복 과금 — 확인됨
+
+- 재현: 가짜 client가 `max_output_tokens` incomplete를 반환하도록 했다. 같은 `json` 요청 두 번과 같은 `review_speech` 두 번 모두 ValueError, 총 4회 요청·모의 정산 $0.1083. 실제 비용은 발생하지 않았다.
+- 수정: 잘림·거부 결과도 요청 해시로 캐시하고 정산은 한 번만 한다. 텍스트 검토 묶음은 문맥을 유지하며 재귀적으로 이등분한다. 한 구절에서도 잘리거나 거부되면 인용을 꾸미지 않고 미검토 Uncertain으로 남긴다. 분류 단계의 구절별 잘림·거부도 Uncertain이며 키워드 검토 완료로 오인하지 않는다. 모르는 실패 이유·네트워크 오류·예산 초과는 숨기지 않는다.
+- 테스트: `test_incomplete_request_is_cached_and_charged_once_across_resume`, `test_truncation_splits_with_context_and_resume_reuses_all_requests`, `test_single_passage_truncation_or_refusal_is_uncertain_not_no`, `test_unclassified_refusal_does_not_become_empty_keyword_negative`, `test_unknown_incomplete_reason_stops_without_inventing_verdict`.
+- 한계: 실패도 비용이 발생할 수 있다. 캐시된 실패는 같은 요청으로 재결제하지 않으며 모델·설정·입력이 바뀌면 새 요청이 된다. fallback Uncertain은 분석 근거 인용이 아니라 API 검토 실패 기록이다. `all_passages_attempted`와 `all_passages_reviewed`를 구분한다.

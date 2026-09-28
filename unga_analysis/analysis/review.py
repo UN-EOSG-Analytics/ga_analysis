@@ -4,6 +4,7 @@ from collections import Counter
 
 from ..io import write_jsonl, stable_hash
 from .common import obj, arr, STR, BOOL, quote_in, ask, SYSTEM, save
+from .provider import ResponseUnavailable
 
 SCHEMA = obj(complete=BOOL, reviewed_passage_ids=arr(STR), findings=arr(obj(
     passage_id=STR, status={'type':'string','enum':['Yes','Uncertain']},
@@ -14,14 +15,14 @@ def review_speech(speech, provider, cfg):
     passages = speech['passages']
     results = []
     size = cfg['execution']['review_batch_passages']
-    for start in range(0,len(passages),size):
-        batch = passages[start:start+size]
+    def review_batch(start,end,pass_no):
+        batch = passages[start:end]
         by_id = {p['passage_id']:p for p in batch}
         payload = dict(speech_id=speech['speech_id'], source_sha256=speech['sha256'],
                        source_type=speech['source_type'], source_review_notes=speech.get('source_review_notes'),
                        passages=[{'passage_id':p['passage_id'],'text':p['text']} for p in batch],
                        preceding_context=passages[start-1]['text'] if start else '',
-                       following_context=passages[start+size]['text'] if start+size<len(passages) else '')
+                       following_context=passages[end]['text'] if end<len(passages) else '')
 
         def validate(result):
             ids = result['reviewed_passage_ids']
@@ -35,18 +36,28 @@ def review_speech(speech, provider, cfg):
                     raise ValueError('Every finding must quote a contiguous exact span from its identified passage')
                 if not f['rationale'].strip():
                     raise ValueError('Missing rationale')
-        reviews=[]
-        for pass_no in (1,2):
-            instructions=SYSTEM+('Review EVERY passage for substantive AI discussion, including variants such as superintelligence, '
-                'machine learning, AI systems and AI governance institutions. Generic digitalization, military intelligence, '
-                'ordinary algorithms or autonomous weapons without an AI link are not sufficient. The list of reviewed IDs '
-                'must cover all passages. Return findings for Yes or Uncertain ONLY; omission from findings means you '
-                'reviewed that passage and found No AI evidence. Never omit an unreviewed passage. Use exact quotes of at most 80 words. '
-                'A source-review note is a limitation, not evidence of delivered wording. ')
-            instructions += ('First reviewer: inspect full context and detect indirect but unambiguous AI discussions.' if pass_no==1 else
-                             'Second reviewer: independently audit the full text, including possible keyword misses and ambiguous abbreviations. Do not assume a prior verdict.')
+        instructions=SYSTEM+('Review EVERY passage for substantive AI discussion, including variants such as superintelligence, '
+            'machine learning, AI systems and AI governance institutions. Generic digitalization, military intelligence, '
+            'ordinary algorithms or autonomous weapons without an AI link are not sufficient. The list of reviewed IDs '
+            'must cover all passages. Return findings for Yes or Uncertain ONLY; omission from findings means you '
+            'reviewed that passage and found No AI evidence. Never omit an unreviewed passage. Use exact quotes of at most 80 words. '
+            'A source-review note is a limitation, not evidence of delivered wording. ')
+        instructions += ('First reviewer: inspect full context and detect indirect but unambiguous AI discussions.' if pass_no==1 else
+                         'Second reviewer: independently audit the full text, including possible keyword misses and ambiguous abbreviations. Do not assume a prior verdict.')
+        try:
             value=ask(provider, f'review_{pass_no}', payload, SCHEMA, instructions, validate)
-            reviews.append({f['passage_id']:f for f in value['findings']})
+            return {f['passage_id']:f for f in value['findings']}
+        except ResponseUnavailable as exc:
+            if exc.reason not in ('max_output_tokens','refusal','content_filter'):raise
+            if end-start>1:
+                middle=(start+end)//2
+                return {**review_batch(start,middle,pass_no),**review_batch(middle,end,pass_no)}
+            return {batch[0]['passage_id']:dict(status='Uncertain',mention_type='uncertain',quote='',
+                rationale='Automated review unavailable; no source judgement made.',reviewed=False,review_failure=exc.reason)}
+
+    for start in range(0,len(passages),size):
+        batch=passages[start:start+size]
+        reviews=[review_batch(start,min(start+size,len(passages)),pass_no) for pass_no in (1,2)]
         for local_index,p in enumerate(batch):
             absolute_index=start+local_index
             a=reviews[0].get(p['passage_id'],{'status':'No','mention_type':'none','quote':'','rationale':'Entire supplied passage reviewed; no substantive AI discussion identified.'})
@@ -73,7 +84,7 @@ def review_all(speeches, provider, cfg, out):
                 print(f'Text review {i}/{len(speeches)} speeches (cached calls reused)',flush=True)
     write_jsonl(out/'passage_ai_review.jsonl',records)
     summary=dict(passages=len(records), counts=dict(Counter(r['ai_status'] for r in records)),
-                 all_passages_reviewed=True, human_reviewed=False, corpus_fingerprint=stable_hash([(s['source_id'],s['sha256']) for s in speeches]))
+                 all_passages_attempted=True, all_passages_reviewed=all(v.get('reviewed',True) for r in records for v in r['reviews']), human_reviewed=False, corpus_fingerprint=stable_hash([(s['source_id'],s['sha256']) for s in speeches]))
     save(out/'ai_review_summary.json',summary)
     return records
 

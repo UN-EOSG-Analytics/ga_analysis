@@ -3,6 +3,7 @@ from concurrent.futures import ThreadPoolExecutor
 
 from ..io import stable_hash, write_jsonl
 from .common import obj, arr, STR, BOOL, LABEL, SYSTEM, ask, quote_in, table
+from .provider import ResponseUnavailable
 
 
 def schema(cfg,codes):
@@ -49,7 +50,11 @@ def classify_one(record,provider,taxonomy,cfg,cluster_id):
             'If the codebook misses a substantive theme, describe it in uncovered_concept, otherwise use an empty string. '
             'Source-review notes never authorize importing prepared-only words into the delivered passage. ')
         instructions+=f'Independent automated classification pass {pass_no}; read the source afresh.'
-        passes.append(ask(provider,f'classify_{pass_no}',payload,contract,instructions,validate,max_tokens=9000))
+        try:passes.append(ask(provider,f'classify_{pass_no}',payload,contract,instructions,validate,max_tokens=9000))
+        except ResponseUnavailable as exc:
+            if exc.reason not in ('max_output_tokens','refusal','content_filter'):raise
+            passes.append(dict(themes=[dict(code=c,value='Uncertain',quote='',rationale='Automated classification unavailable.') for c in codes],
+                institutions=[],keywords=[],uncovered_concept='',review_failure=exc.reason))
     a,b=passes
     aa={x['code']:x for x in a['themes']};bb={x['code']:x for x in b['themes']}
     labels={c:aa[c]['value'] if aa[c]['value']==bb[c]['value'] else 'Uncertain' for c in codes}
@@ -74,7 +79,7 @@ def classify_one(record,provider,taxonomy,cfg,cluster_id):
     return dict(record, themes=labels,evidence=evidence,taxonomy_sha256=stable_hash(taxonomy),
         review_status='reviewed' if all(v!='Uncertain' for v in labels.values()) and not issue else 'uncertain',
         classification_complete=all(v!='Uncertain' for v in labels.values()) and not issue,
-        keyword_review_complete=set(left)==set(right) and not issue,
+        keyword_review_complete=set(left)==set(right) and not issue and not any(v.get('review_failure') for v in passes),
         institutions=institutions,keywords=keywords,classification_reviews=passes,
         uncovered_concepts=list(dict.fromkeys(v for v in [a['uncovered_concept'],b['uncovered_concept']] if v)),
         discovery_cluster_id=cluster_id,human_reviewed=False)

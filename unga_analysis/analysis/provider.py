@@ -13,6 +13,16 @@ class BudgetExceeded(ValueError):
     pass
 
 
+class ResponseUnavailable(ValueError):
+    def __init__(self,reason):
+        self.reason=reason
+        super().__init__('Model response unavailable: '+reason)
+
+
+def field(value,name,default=None):
+    return value.get(name,default) if isinstance(value,dict) else getattr(value,name,default)
+
+
 class OpenAIProvider:
     def __init__(self, root, cfg, execute=False, budget=None, client=None):
         if not execute:
@@ -56,7 +66,9 @@ class OpenAIProvider:
         key = stable_hash(request)
         path = self.path/(key+'.json')
         if path.exists():
-            value = json.loads(path.read_text(encoding='utf-8'))['value']
+            cached=json.loads(path.read_text(encoding='utf-8'))
+            if 'failure' in cached:raise ResponseUnavailable(cached['failure']['reason'])
+            value = cached['value']
             check_schema(value, schema)
             return value
         encoded = json.dumps(payload, ensure_ascii=False)
@@ -84,8 +96,12 @@ class OpenAIProvider:
             usage = response.usage
             cost = (usage.input_tokens*self.settings['review_input_usd_per_million'] + usage.output_tokens*self.settings['review_output_usd_per_million'])/1e6
             self.log(key, stage, cost-upper, state='settled', input_tokens=usage.input_tokens, output_tokens=usage.output_tokens, actual_cost_usd=cost, response_id=response.id, model=model)
-            if response.status != 'completed':
-                raise ValueError('OpenAI response incomplete/refused; no analytical labels published')
+            refused=any(field(c,'type')=='refusal' for item in field(response,'output',[]) for c in field(item,'content',[]))
+            reason='refusal' if refused else field(field(response,'incomplete_details'),'reason',response.status) if response.status!='completed' else None
+            if reason:
+                save(path,dict(failure={'reason':reason},request_hash=key,model=model,response_id=response.id,
+                    usage={'input':usage.input_tokens,'output':usage.output_tokens}))
+                raise ResponseUnavailable(reason)
             value = json.loads(response.output_text)
             check_schema(value, schema)
             save(path, dict(value=value, request_hash=key, model=model, usage={'input':usage.input_tokens,'output':usage.output_tokens}))
