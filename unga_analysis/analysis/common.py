@@ -4,6 +4,7 @@ import csv
 import json
 import re
 import os
+import unicodedata
 
 
 def now():
@@ -44,8 +45,16 @@ def key_from_env(root, name='OPENAI_API_KEY'):
     return value.strip()
 
 
+def quote_comparison(text):
+    """Comparison only: preserve original source and model quote in stored evidence."""
+    punctuation=str.maketrans({**dict.fromkeys('\u2018\u2019\u201a\u201b\u02bc',"'"),
+        **dict.fromkeys('\u201c\u201d\u201e\u201f','"'),**dict.fromkeys('\u2010\u2011\u2012\u2013\u2014\u2015\u2212','-')})
+    return ' '.join(unicodedata.normalize('NFKC',text).translate(punctuation).split())
+
+
 def quote_in(quote, text):
-    return bool(quote.strip()) and ' '.join(quote.split()) in ' '.join(text.split())
+    normalized=quote_comparison(quote)
+    return bool(normalized) and normalized in quote_comparison(text)
 
 
 def obj(**properties):

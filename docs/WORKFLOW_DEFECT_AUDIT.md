@@ -9,3 +9,10 @@
 - 수정 후: 불일치 코드 N=0, 나머지 19개 코드 N=24. 다른 코드의 불일치가 확정 No까지 무효화하지 않는다. 한 구절이 Uncertain이어도 다른 구절의 확정 Yes는 유지한다.
 - 테스트: `test_one_disputed_code_preserves_other_code_denominators`, `test_zero_requires_only_its_code_no_and_complete_ai_review`, `test_uncovered_concept_is_queued_without_invalidating_codes`, `test_matched_panel_uses_each_codes_common_resolved_countries`.
 - 프로토콜: `ANALYSIS_PROTOCOL.md`의 분모 정의를 명시적으로 변경했다. **세 번째 조정 판정은 구현·활성화하지 않았다.** 불일치는 그대로 Uncertain이며 자동 검토는 인간 검증이 아니다. 코드별 표본이 달라지는 만큼 N과 unknown을 함께 해석해야 한다.
+
+## 2. 인용 부호 차이 — 확인됨
+
+- 재현: `quote_in("Secretary-General's", "the Secretary‑General’s report")`는 기존 코드에서 False였다.
+- 수정: 비교할 때만 NFKC·따옴표·하이픈/대시·공백을 정규화한다. 원문과 저장된 인용은 그대로 둔다. 대소문자 변경·단어 생략·재배열·의역·불연속 인용은 허용하지 않는다.
+- 테스트: `test_typographic_variants_match_without_changing_inputs`, `test_nfkc_dashes_and_whitespace_are_comparison_only`, `test_normalization_does_not_allow_paraphrases_or_discontinuous_quotes`.
+- 한계: 정확 일치는 이제 명시된 문자 정규화 후의 연속 일치이다. 내용이 다른 인용은 여전히 검증 실패하며 이를 근거로 No를 채우지 않는다.
