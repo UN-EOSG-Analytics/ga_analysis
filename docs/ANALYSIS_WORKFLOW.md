@@ -52,6 +52,8 @@ Day 6 없이 실행하면 전체 연도 보고서를 만들기 전에 차단한�
 
 `config/theme_taxonomy.json`은 실행 전에는 비어 있어도 정상이다. `discover`가 실제 데이터에서 생성하고 원문 검토 근거와 버전을 저장한다. 미리 정한 주제를 임의로 채우지 않는다.
 
+taxonomy 통합·재검토에는 제안의 예시에 인용된 구절 원문만 전달한다. JSON payload는 `discovery.taxonomy_payload_max_chars`(기본 120,000자)로 제한하며, 큰 제안 묶음은 여러 번 나누어 통합한다. 단일 제안도 너무 크거나 통합이 수렴하지 않으면 원문을 임의 삭제하지 않고 중단 사유를 남긴다.
+
 ## 비용·재개·출처
 
 - OpenAI Embeddings: `text-embedding-3-large`, 3,072차원. 문맥·분류·보고서: `gpt-5.4-mini`.

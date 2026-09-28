@@ -99,8 +99,10 @@ def safe_code(code):
     return bool(re.fullmatch('[A-Z][A-Z0-9_]{1,39}', code))
 
 
-def ask(provider, stage, payload, schema, instructions, validate, max_tokens=None):
+def ask(provider, stage, payload, schema, instructions, validate, max_tokens=None, max_payload_chars=None):
     for attempt in range(3):
+        if max_payload_chars and len(json.dumps(payload,ensure_ascii=False))>max_payload_chars:
+            raise ValueError('Model payload exceeds configured character limit, including validation feedback')
         result = provider.json(stage, payload, schema, instructions, max_tokens=max_tokens)
         try:
             validate(result)

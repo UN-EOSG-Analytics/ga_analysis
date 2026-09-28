@@ -48,6 +48,7 @@ dominant_cluster_action = "re-cluster dominant cluster with same metric/linkage;
 representatives_per_cluster = 5
 boundary_passages_per_cluster = 3
 diagnostics_file = "discovery_diagnostics.json"
+taxonomy_payload_max_chars = 120000
 
 [classification]
 values = ["Yes", "No", "Uncertain", "Pending"]

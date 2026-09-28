@@ -1,5 +1,6 @@
 """OpenAI vectors, cosine/average hierarchical discovery and grounded taxonomy."""
 from collections import Counter
+import json
 import numpy as np
 from scipy.cluster.hierarchy import linkage, fcluster, cophenet
 from scipy.spatial.distance import pdist, squareform
@@ -12,6 +13,56 @@ from .common import obj, arr, STR, quote_in, safe_code, ask, SYSTEM, save, table
 THEME = obj(code=STR, label=STR, definition=STR, inclusion=STR, exclusion=STR,
             boundary_cases=STR, examples=arr(obj(passage_id=STR, quote=STR)))
 TAXONOMY = obj(themes=arr(THEME), rationale=STR)
+
+
+def taxonomy_payload(themes,source,audit=False):
+    ids=sorted({e['passage_id'] for t in themes for e in t['examples']})
+    examples=[dict(passage_id=p,text=source[p]) for p in ids]
+    return dict(proposed={'themes':themes,'rationale':'Audit this codebook subset.'},examples=examples) if audit else dict(proposals=themes,examples=examples)
+
+
+def proposal_batches(themes,source,limit,audit=False):
+    batches=[];batch=[]
+    for theme in themes:
+        if len(json.dumps(taxonomy_payload(batch+[theme],source,audit),ensure_ascii=False))>limit:
+            if not batch:raise ValueError('A single taxonomy proposal exceeds taxonomy_payload_max_chars; inspect its evidence/definition or raise the configured limit')
+            batches.append(batch);batch=[]
+        if len(json.dumps(taxonomy_payload([theme],source,audit),ensure_ascii=False))>limit:
+            raise ValueError('A single taxonomy proposal exceeds taxonomy_payload_max_chars')
+        batch.append(theme)
+    if batch:batches.append(batch)
+    return batches
+
+
+def consolidate(proposals,source,provider,cfg,diagnostics):
+    limit=cfg['discovery'].get('taxonomy_payload_max_chars',120000)
+    if limit<=0:raise ValueError('taxonomy_payload_max_chars must be positive')
+    requests=diagnostics.setdefault('taxonomy_requests',[])
+    def request(batch,audit=False):
+        payload=taxonomy_payload(batch,source,audit)
+        subset={r['passage_id']:r['text'] for r in payload['examples']}
+        stage='taxonomy_audit' if audit else 'taxonomy_merge'
+        requests.append(dict(stage=stage,characters=len(json.dumps(payload,ensure_ascii=False)),source_passages=len(subset)))
+        instruction=('Audit and correct this codebook subset against the supplied source examples. Keep code identifiers stable and review each definition. '
+            if audit else 'Consolidate redundant proposals into a common multilabel codebook across years. Preserve distinct minority concepts and uppercase stable codes. ')
+        return ask(provider,stage,payload,TAXONOMY,SYSTEM+instruction+
+            'Use only supplied passage IDs and exact source examples. Keep definitions compact and at most two examples per theme. '
+            'Do not infer endorsement from mention. This is automated source review, not human approval.',
+            lambda v:validate_taxonomy(v,subset),max_tokens=14000,max_payload_chars=limit)
+    current=proposals;seen=set()
+    for _ in range(8):
+        fingerprint=stable_hash(current)
+        if fingerprint in seen:raise ValueError('Bounded taxonomy consolidation did not converge; inspect proposals before retrying')
+        seen.add(fingerprint)
+        batches=proposal_batches(current,source,limit)
+        results=[request(batch) for batch in batches]
+        current=[theme for result in results for theme in result['themes']]
+        if len(batches)==1:break
+    else:raise ValueError('Bounded taxonomy consolidation exceeded eight rounds')
+    audits=[request(batch,audit=True) for batch in proposal_batches(current,source,limit,audit=True)]
+    checked=dict(themes=[t for result in audits for t in result['themes']],rationale=' '.join(r['rationale'] for r in audits))
+    validate_taxonomy(checked,{p:source[p] for p in {e['passage_id'] for t in current for e in t['examples']}})
+    return checked
 
 
 def clusters(vectors, records, cfg):
@@ -123,15 +174,9 @@ def discover(records, provider, cfg, out):
             'Separate technical AI safety from military/security concerns when warranted. Include minority positions; do not force '
             'one theme per cluster or a predetermined number. Every theme needs exact source examples, inclusion/exclusion and boundary cases.',validate,max_tokens=9000)
         proposals.extend(proposal['themes'])
-    value=ask(provider,'taxonomy_merge',{'proposals':proposals,'examples':[{'passage_id':k,'text':v} for k,v in all_samples.items()]},
-        TAXONOMY,SYSTEM+'Consolidate redundant proposed themes into ONE common multilabel codebook across all years. '
-        'Preserve distinct minority concepts. Do not infer endorsement from mention. Keep uppercase stable codes and exact evidence examples. '
-        'This is an automated source review, not human approval.',lambda v:validate_taxonomy(v,all_samples),max_tokens=14000)
-    # A second call reviews definitions against source excerpts rather than accepting cluster names.
-    checked=ask(provider,'taxonomy_audit',{'proposed':value,'examples':[{'passage_id':k,'text':v} for k,v in all_samples.items()]},
-        TAXONOMY,SYSTEM+'Audit and, if necessary, correct this common codebook against every supplied source example. '
-        'Avoid unsupported categories and merge only semantically redundant definitions. Return the reviewed full codebook.',
-        lambda v:validate_taxonomy(v,all_samples),max_tokens=14000)
+    cited={e['passage_id'] for t in proposals for e in t['examples']}
+    try:checked=consolidate(proposals,{p:all_samples[p] for p in cited},provider,cfg,diagnostics)
+    finally:save(out/'discovery_diagnostics.json',diagnostics)
     codes={t['code']:{k:v for k,v in t.items() if k!='code'} for t in checked['themes']}
     taxonomy=dict(status='automated_source_reviewed',human_reviewed=False,version=stable_hash(codes)[:16],codes=codes,
                   rationale=checked['rationale'],source_passage_hash=stable_hash([(r['passage_id'],r['source_sha256']) for r in records]))

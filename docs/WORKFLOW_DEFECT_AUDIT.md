@@ -23,3 +23,11 @@
 - 수정: 잘림·거부 결과도 요청 해시로 캐시하고 정산은 한 번만 한다. 텍스트 검토 묶음은 문맥을 유지하며 재귀적으로 이등분한다. 한 구절에서도 잘리거나 거부되면 인용을 꾸미지 않고 미검토 Uncertain으로 남긴다. 분류 단계의 구절별 잘림·거부도 Uncertain이며 키워드 검토 완료로 오인하지 않는다. 모르는 실패 이유·네트워크 오류·예산 초과는 숨기지 않는다.
 - 테스트: `test_incomplete_request_is_cached_and_charged_once_across_resume`, `test_truncation_splits_with_context_and_resume_reuses_all_requests`, `test_single_passage_truncation_or_refusal_is_uncertain_not_no`, `test_unclassified_refusal_does_not_become_empty_keyword_negative`, `test_unknown_incomplete_reason_stops_without_inventing_verdict`.
 - 한계: 실패도 비용이 발생할 수 있다. 캐시된 실패는 같은 요청으로 재결제하지 않으며 모델·설정·입력이 바뀌면 새 요청이 된다. fallback Uncertain은 분석 근거 인용이 아니라 API 검토 실패 기록이다. `all_passages_attempted`와 `all_passages_reviewed`를 구분한다.
+
+## 4. taxonomy 통합 요청 폭증 — 확인됨
+
+- 재현: 1,500자 구절 900개·사용 불가능한 군집 구조에서 merge **1,450,105자**, audit **1,384,173자**, 각각 원문 900개가 들어갔다.
+- 수정: 각 제안이 실제 인용한 passage_id의 원문만 보내고 해당 요청에 보낸 원문만으로 검증한다. `discovery.taxonomy_payload_max_chars=120000`을 추가했다. 초과하면 제안을 나눠 통합하고 다시 통합한다. audit도 필요한 원문만 포함하며 분할 가능하다. 재시도의 검증 피드백까지 문자 상한을 검사한다.
+- 수정 후 같은 입력: merge **119,537자 / 6,669자 / 6,665자**, audit **3,400자**. 참조 원문은 각각 36/2/2/1개였다. 전체 900개에 대한 앞단 원문 검토는 유지한다.
+- 테스트: `test_900_passage_fallback_bounds_merge_and_audit_to_cited_sources`, `test_uncited_source_is_rejected_even_if_present_in_original_corpus`, `test_single_oversize_proposal_stops_before_any_request`, `test_nonshrinking_merge_cannot_loop_forever`.
+- 한계: 단일 제안 하나가 상한을 넘거나 통합이 수렴하지 않으면 근거를 잘라내지 않고 설명과 함께 중단한다. 상한은 JSON payload 문자 수이며 시스템 지시·schema·출력 토큰은 별도다. 군집은 최종 주제 판정으로 사용하지 않는다.
