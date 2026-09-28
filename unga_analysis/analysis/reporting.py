@@ -70,6 +70,7 @@ def draft_report(stats,evidence,institutions,taxonomy,reference_facts,provider,o
         'Distinguish institutional background, Member State positions and your analytical proposals. '
         'Do not imply endorsement, causation, alignment, treaty mandates or completed commitments without evidence. '
         'Treat theme percentages with N<20 as unavailable; discuss counts instead. Partial years are interim, not completed annual trends. '
+        'Theme N is code-specific: AI-positive country-years with resolved 1/0 for that code. Co-mention N requires both codes resolved; matched panels are code-specific. Never assume equal denominators across themes. '
         'Account for automated-review limits and official-versus-ASR changes. Preserve any disagreement or draft status in background sources. '
         'Do not claim current institutional status from undated or draft documents. No rhetorical filler.')
     report=ask(provider,'report_draft',payload,REPORT,instructions,validate,max_tokens=7000)
@@ -99,11 +100,11 @@ def charts(stats,destination):
     trend=destination/'annual_trend.png';fig.savefig(trend,dpi=180);plt.close(fig)
     themes=sorted([r for r in stats['theme_prevalence'] if r['year']==year],key=lambda r:r['n'],reverse=True)[:8]
     fig,ax=plt.subplots(figsize=(7.2,2.7),layout='constrained')
-    percent=bool(themes and themes[0]['pct'] is not None)
+    percent=bool(themes and all(r['pct'] is not None for r in themes))
     if themes:
-        ax.barh([r['theme'] for r in themes][::-1],[r['pct'] if percent else r['n'] for r in themes][::-1],color='#247e87')
-    else:ax.text(.5,.5,'No fully classified AI-positive speeches',ha='center',va='center',transform=ax.transAxes)
-    ax.set_xlabel('Share of fully classified AI-positive countries (%)' if percent else 'Country count (N below percentage threshold)')
+        ax.barh([f"{r['theme']} ({r['n']}/{r['N']})" for r in themes][::-1],[r['pct'] if percent else r['n'] for r in themes][::-1],color='#247e87')
+    else:ax.text(.5,.5,'No resolved theme observations',ha='center',va='center',transform=ax.transAxes)
+    ax.set_xlabel('Share of AI-positive countries resolved for each code (%)' if percent else 'Country count; code-specific n/N shown')
     ax.spines[['top','right']].set_visible(False)
     theme=destination/'theme_prevalence.png';fig.savefig(theme,dpi=180);plt.close(fig)
     return trend,theme
@@ -132,7 +133,7 @@ def pages(report,stats,institutions,reference_facts,reference_inventory,figures)
     if top:second.append(('table',[['Theme pair','Joint n / N','P(B|A) / P(A|B)']]+[[r['theme_a']+' + '+r['theme_b'],f"{r['n_both']} / {r['N']}",f"{r['p_b_given_a']:.2f} / {r['p_a_given_b']:.2f}"] for r in top]))
     terms=sorted([r for r in stats['keywords'] if r['year']==year],key=lambda r:r['n'],reverse=True)[:4]
     if terms:second.append(('table',[['Reviewed expression','Countries n/N','First observed']]+[[r['term'],f"{r['n']}/{r['N']}",str(r['first_observed_year'])] for r in terms]))
-    second.append(('small','Theme denominator: AI-positive countries with completed thematic review. Multiple labels may sum above 100%. Co-mention is within the same country-year, not evidence of alignment or a sentence-level link. Full tables include baselines and matched-country comparisons.'))
+    second.append(('small','Theme N: AI-positive country-years resolved for that code; denominators differ by code. Co-mention N requires both codes resolved. Matched-country panels are code-specific. Unknowns remain NA. Multiple labels may sum above 100%. Co-mention is not alignment or a sentence-level link. Full tables include denominators and baselines.'))
     third=[('title',TITLES[2])]+prose(TITLES[2])
     stances=[r for r in stats['institution_stance_counts'] if r['year']==year]
     if stances:third.append(('table',[['Mechanism / stance','n','Countries']]+[[r['mechanism']+' / '+r['stance'],str(r['n']),', '.join(r['countries'][:10])+(f" +{len(r['countries'])-10} (see CSV)" if len(r['countries'])>10 else '')] for r in stances[:9]]))

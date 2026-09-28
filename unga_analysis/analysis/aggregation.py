@@ -36,12 +36,12 @@ def aggregate(speeches,reviews,classified,taxonomy,cfg,out,allow_partial=False):
         ai='Yes' if any(r['ai_status']=='Yes' for r in rr) else 'No' if all(r['ai_status']=='No' for r in rr) else 'Uncertain'
         source_pending=(s.get('source_review_notes') or {}).get('status')=='pending_delivery_verification'
         if source_pending and ai=='No':ai='Uncertain'
-        review_complete=all(r['ai_status']!='Uncertain' for r in rr) and not source_pending
-        complete=ai=='Yes' and review_complete and all(r['classification_complete'] for r in cc)
+        review_complete=all(r['ai_status'] in ('Yes','No') for r in rr) and not source_pending
         keyword_complete=ai=='Yes' and review_complete and all(r['keyword_review_complete'] for r in cc)
         values={}
         for code in codes:
-            values[code]=1 if any(r['themes'][code]=='Yes' for r in cc) else 0 if complete or (ai=='No' and review_complete) else None
+            values[code]=1 if any(r['themes'][code]=='Yes' for r in cc) else 0 if review_complete and all(r['themes'][code]=='No' for r in cc) else None
+        complete=ai=='Yes' and all(v is not None for v in values.values())
         matrix.append(dict(speech_id=s['speech_id'],year=s['year'],country_iso3=s['country_iso3'],region=s['analytical_group'],
             ai_status=ai,ai_review_complete=review_complete,theme_review_complete=complete,keyword_review_complete=keyword_complete,
             source_type=s['source_type'],text_accuracy=s.get('text_accuracy'),partial_year=coverage[str(s['year'])]['partial'],**values))
@@ -64,18 +64,23 @@ def aggregate(speeches,reviews,classified,taxonomy,cfg,out,allow_partial=False):
         annual.append(dict(year=year,**ai_counts(rr)))
         for region in sorted({s['analytical_group'] for s in speeches}):
             regional.append(dict(year=year,region=region,**ai_counts([r for r in rr if r['region']==region])))
-        eligible=[r for r in rr if r['theme_review_complete']];N=len(eligible)
-        counts={code:sum(r[code]==1 for r in eligible) for code in codes}
         for code in codes:
-            prevalence.append(dict(year=year,code=code,theme=codes[code]['label'],n=counts[code],N=N,
-                pct=100*counts[code]/N if N>=cfg['themes']['min_N_for_yearly_percentages'] else None,
+            eligible=[r for r in rr if r['ai_status']=='Yes' and r[code] is not None];N=len(eligible)
+            n=sum(r[code]==1 for r in eligible)
+            prevalence.append(dict(year=year,code=code,theme=codes[code]['label'],n=n,N=N,
+                denominator='AI-positive country-years with a resolved value for this code',
+                unknown=sum(r['ai_status']=='Yes' and r[code] is None for r in rr),
+                pct=100*n/N if N>=cfg['themes']['min_N_for_yearly_percentages'] else None,
                 below_threshold=N<cfg['themes']['min_N_for_yearly_percentages'],partial=coverage[str(year)]['partial'],
                 countries=[r['country_iso3'] for r in eligible if r[code]==1]))
         for a,b in combinations(codes,2):
+            eligible=[r for r in rr if r['ai_status']=='Yes' and r[a] is not None and r[b] is not None];N=len(eligible)
+            na=sum(r[a]==1 for r in eligible);nb=sum(r[b]==1 for r in eligible)
             both=sum(r[a]==1 and r[b]==1 for r in eligible)
-            cooccurrence.append(dict(year=year,theme_a=a,theme_b=b,n_both=both,n_a=counts[a],n_b=counts[b],N=N,
-                p_b_given_a=both/counts[a] if counts[a] else None,p_a_given_b=both/counts[b] if counts[b] else None,
-                baseline_a=counts[a]/N if N else None,baseline_b=counts[b]/N if N else None,partial=coverage[str(year)]['partial']))
+            cooccurrence.append(dict(year=year,theme_a=a,theme_b=b,n_both=both,n_a=na,n_b=nb,N=N,
+                denominator='AI-positive country-years resolved for both codes',
+                p_b_given_a=both/na if na else None,p_a_given_b=both/nb if nb else None,
+                baseline_a=na/N if N else None,baseline_b=nb/N if N else None,partial=coverage[str(year)]['partial']))
         word_eligible={r['speech_id'] for r in rr if r['keyword_review_complete']}
         words=defaultdict(set)
         for w in keywords:
@@ -96,10 +101,10 @@ def aggregate(speeches,reviews,classified,taxonomy,cfg,out,allow_partial=False):
         row['first_recurring_year']=min(recurring_years) if recurring_years else None
     years=sorted({r['year'] for r in matrix})
     for first,second in zip(years,years[1:]):
-        a={r['country_iso3']:r for r in matrix if r['year']==first and r['theme_review_complete']}
-        b={r['country_iso3']:r for r in matrix if r['year']==second and r['theme_review_complete']}
-        common=set(a)&set(b)
         for code in codes:
+            a={r['country_iso3']:r for r in matrix if r['year']==first and r['ai_status']=='Yes' and r[code] is not None}
+            b={r['country_iso3']:r for r in matrix if r['year']==second and r['ai_status']=='Yes' and r[code] is not None}
+            common=set(a)&set(b)
             matched.append(dict(year_from=first,year_to=second,code=code,N=len(common),
                 n_from=sum(a[c][code]==1 for c in common),n_to=sum(b[c][code]==1 for c in common),
                 countries=sorted(common),partial=coverage[str(second)]['partial']))

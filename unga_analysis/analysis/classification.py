@@ -72,8 +72,8 @@ def classify_one(record,provider,taxonomy,cfg,cluster_id):
     note=record.get('source_review_notes')
     issue=note and note.get('status')=='pending_delivery_verification'
     return dict(record, themes=labels,evidence=evidence,taxonomy_sha256=stable_hash(taxonomy),
-        review_status='reviewed' if all(v!='Uncertain' for v in labels.values()) and not issue and not a['uncovered_concept'] and not b['uncovered_concept'] else 'uncertain',
-        classification_complete=all(v!='Uncertain' for v in labels.values()) and not issue and not a['uncovered_concept'] and not b['uncovered_concept'],
+        review_status='reviewed' if all(v!='Uncertain' for v in labels.values()) and not issue else 'uncertain',
+        classification_complete=all(v!='Uncertain' for v in labels.values()) and not issue,
         keyword_review_complete=set(left)==set(right) and not issue,
         institutions=institutions,keywords=keywords,classification_reviews=passes,
         uncovered_concepts=list(dict.fromkeys(v for v in [a['uncovered_concept'],b['uncovered_concept']] if v)),

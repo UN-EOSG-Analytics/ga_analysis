@@ -192,6 +192,7 @@ def ancillary(root,out,speeches,reviewed,classified,taxonomy,stats,readiness,cfg
     table(out/'source_inventory.csv',[{k:s.get(k) for k in ('speech_id','year','country_iso3','analytical_group','source_type','text_accuracy','path','sha256','origin_file','origin_sha256','speech_date')} for s in speeches])
     issues=[dict(speech_id=r['speech_id'],passage_id=r['passage_id'],issue='AI review uncertain') for r in reviewed if r['ai_status']=='Uncertain']
     issues.extend(dict(speech_id=r['speech_id'],passage_id=r['passage_id'],issue='Theme, keyword, uncovered-concept or source-note review unresolved') for r in classified if not r['classification_complete'] or not r['keyword_review_complete'])
+    issues.extend(dict(speech_id=r['speech_id'],passage_id=r['passage_id'],issue='Uncovered concept: '+concept) for r in classified for concept in r.get('uncovered_concepts',[]))
     issues.extend(dict(speech_id=s['speech_id'],passage_id='',issue='Prepared-versus-delivered source note awaits delivery verification') for s in speeches if (s.get('source_review_notes') or {}).get('status')=='pending_delivery_verification')
     table(out/'review_queue.csv',issues)
     missing=root/'output/corpus_preparation/missing_country_years.csv'
@@ -209,7 +210,7 @@ def ancillary(root,out,speeches,reviewed,classified,taxonomy,stats,readiness,cfg
         '전사 DB를 변경하지 않고 국가–연도 단위로 분석했다. 전체 연설 텍스트를 두 번 자동 검토하며 검색 미적중을 자동 No로 채우지 않는다. 판정 불일치는 Uncertain이다.',
         f"문맥·분류·보고서 모델: {cfg['execution']['review_model']}. 임베딩: {cfg['discovery']['model']}, {cfg['discovery']['dimensions']}차원.",
         '임베딩은 AI Yes 구절과 필요한 문맥에만 적용한다. 로컬 평균 중심화·cosine 거리·average linkage를 사용하고 여러 절단과 군집별 대표/경계 구절을 검토해 공통 taxonomy를 만든다. 군집 ID를 최종 주제값으로 쓰지 않는다.',
-        '분류는 구절별 복수 판정이며 국가–연도별 OR로 집계한다. 분모는 검토 범위를 표시하며 미검토·미확보를 0으로 바꾸지 않는다. 지역은 고정 UN 매핑을 사용한다.',
+        '분류는 구절별 복수 판정이며 국가–연도·코드별 OR로 집계한다. 해당 코드에 Yes가 있으면 1, AI 검토가 완료되고 모든 AI 구절에서 해당 코드가 No이면 0, 그 밖에는 NA이다. 주제별 N은 AI 양성 국가 중 해당 코드가 확정된 국가 수이며 공동 언급은 두 코드가 모두 확정된 국가를 분모로 한다. 같은 국가의 연도 비교도 코드별 공통 표본을 사용한다. 미검토·미확보를 0으로 바꾸지 않는다. 새 개념은 검토 대기표에 남기며 기존 코드의 분류 완료를 막지 않는다. 지역은 고정 UN 매핑을 사용한다.',
         '동일 모델의 별도 호출은 자동 재검토이며 사람 간 일치도가 아니다. 원음 검증과 인간 검토 완료를 주장하지 않는다. 자동 검토 보고서는 이 한계를 표시한다.',
         f"사용량·비용 원장: {cfg['execution']['output_directory']}/api_cache/usage.jsonl. 실제 응답 토큰 사용량에 기록된 단가를 적용한다. 불명확한 전송 실패는 비용 예약분을 유지한다. 단가 확인일: {cfg['execution']['pricing_checked']}.",
         '무임베딩 방식은 가능하나 별도 주제 발견 절차가 필요하며, 이전 MiniLM 결과는 재사용하지 않는다. 이번 경로는 사용자가 지정한 OpenAI 임베딩과 근거 검토를 연결한다.',
