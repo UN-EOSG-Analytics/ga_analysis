@@ -6,7 +6,6 @@ from .selection import language_code
 FORMATS={'pdf','txt','json','jsonl','docx'}
 SOURCE_TYPES={'submitted_statement','official_transcript','automatic_transcript'}
 STATUSES={'accepted','pending','quarantined','external_provisional'}
-RANKS={'head_of_state','head_of_government','minister','other','head_unspecified','unknown'}
 
 def validate_source(r):
  required=['source_id','speech_id','country_iso3','year','path','format','source_type','speech_kind','entity_type','status','representative']
@@ -19,7 +18,6 @@ def validate_source(r):
  if r['source_type'] not in SOURCE_TYPES:raise ValueError('Unknown source type')
  if r['status'] not in STATUSES:raise ValueError('Unknown source status')
  if type(r['representative']) is not bool:raise ValueError('representative must be boolean')
- if r.get('speaker_rank','unknown') not in RANKS:raise ValueError('Invalid speaker rank')
  if r.get('speech_date'):date.fromisoformat(r['speech_date'])
  if r['status']=='accepted' and (r['speech_kind']!='main_general_debate' or r['entity_type']!='member_state'):
   raise ValueError('Accepted statistical inputs must be Member State main General Debate addresses')

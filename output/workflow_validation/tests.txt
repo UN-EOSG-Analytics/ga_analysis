@@ -1,0 +1,52 @@
+test_bad_embedding_dimension_rejected (test_analysis_workflow.WorkflowTests.test_bad_embedding_dimension_rejected) ... ok
+test_bad_taxonomy_quote_rejected (test_analysis_workflow.WorkflowTests.test_bad_taxonomy_quote_rejected) ... ok
+test_degenerate_discovery_reads_every_source (test_analysis_workflow.WorkflowTests.test_degenerate_discovery_reads_every_source) ... ok
+test_embedding_adapter_maps_indices_and_reuses_cache (test_analysis_workflow.WorkflowTests.test_embedding_adapter_maps_indices_and_reuses_cache) ... ok
+test_env_file_wins_and_quotes_supported (test_analysis_workflow.WorkflowTests.test_env_file_wins_and_quotes_supported) ... ok
+test_execute_flag_required_even_with_client (test_analysis_workflow.WorkflowTests.test_execute_flag_required_even_with_client) ... ok
+test_full_workflow_renders_without_changing_corpus (test_analysis_workflow.WorkflowTests.test_full_workflow_renders_without_changing_corpus) ... ok
+test_generic_requests_do_not_count_as_requests_to_un (test_analysis_workflow.WorkflowTests.test_generic_requests_do_not_count_as_requests_to_un) ... ok
+test_missing_review_coverage_cannot_be_aggregated (test_analysis_workflow.WorkflowTests.test_missing_review_coverage_cannot_be_aggregated) ... ok
+test_negative_review_disagreement_is_unknown (test_analysis_workflow.WorkflowTests.test_negative_review_disagreement_is_unknown) ... ok
+test_no_ai_is_reviewed_no_not_a_taxonomy_error (test_analysis_workflow.WorkflowTests.test_no_ai_is_reviewed_no_not_a_taxonomy_error) ... ok
+test_no_execution_means_no_model_calls (test_analysis_workflow.WorkflowTests.test_no_execution_means_no_model_calls) ... ok
+test_partial_execution_stops_before_model_calls (test_analysis_workflow.WorkflowTests.test_partial_execution_stops_before_model_calls) ... ok
+test_partial_report_blocked_but_explicit_interim_allowed (test_analysis_workflow.WorkflowTests.test_partial_report_blocked_but_explicit_interim_allowed) ... ok
+test_pending_delivery_note_prevents_negative_country_verdict (test_analysis_workflow.WorkflowTests.test_pending_delivery_note_prevents_negative_country_verdict) ... ok
+test_provider_budget_and_cache (test_analysis_workflow.WorkflowTests.test_provider_budget_and_cache) ... ok
+test_six_received_days_unlocks_session_report (test_analysis_workflow.WorkflowTests.test_six_received_days_unlocks_session_report) ... ok
+test_english_wins_even_when_french_has_more_text (test_language_selection.LanguageSelectionTests.test_english_wins_even_when_french_has_more_text) ... ok
+test_existing_non_english_is_quarantined_without_reprocessing (test_language_selection.LanguageSelectionTests.test_existing_non_english_is_quarantined_without_reprocessing) ... ok
+test_manifest_rejects_french_representative_with_pending_english (test_language_selection.LanguageSelectionTests.test_manifest_rejects_french_representative_with_pending_english) ... ok
+test_unreadable_english_does_not_fall_back (test_language_selection.LanguageSelectionTests.test_unreadable_english_does_not_fall_back) ... ok
+test_without_english_exactly_one_version_is_selected (test_language_selection.LanguageSelectionTests.test_without_english_exactly_one_version_is_selected) ... ok
+test_changed_source_rejected (test_pipeline.PipelineTests.test_changed_source_rejected) ... ok
+test_docx_paragraph_locations (test_pipeline.PipelineTests.test_docx_paragraph_locations) ... ok
+test_duplicate_versions_blocked (test_pipeline.PipelineTests.test_duplicate_versions_blocked) ... ok
+test_empty_source_unresolved (test_pipeline.PipelineTests.test_empty_source_unresolved) ... ok
+test_institution_records (test_pipeline.PipelineTests.test_institution_records) ... ok
+test_json_mixed_speakers_rejected (test_pipeline.PipelineTests.test_json_mixed_speakers_rejected) ... ok
+test_json_pointer_and_timestamps (test_pipeline.PipelineTests.test_json_pointer_and_timestamps) ... ok
+test_jsonl_unicode_separator_preserved (test_pipeline.PipelineTests.test_jsonl_unicode_separator_preserved) ... ok
+test_labels_need_evidence (test_pipeline.PipelineTests.test_labels_need_evidence) ... ok
+test_no_automatic_NA_to_zero (test_pipeline.PipelineTests.test_no_automatic_NA_to_zero) ... ok
+test_path_escape_rejected (test_pipeline.PipelineTests.test_path_escape_rejected) ... ok
+test_pdf_reuses_verified_text_cache (test_pipeline.PipelineTests.test_pdf_reuses_verified_text_cache) ... ok
+test_pending_year_blocked (test_pipeline.PipelineTests.test_pending_year_blocked) ... ok
+test_regional_edge_cases (test_pipeline.PipelineTests.test_regional_edge_cases) ... ok
+test_right_of_reply_rejected (test_pipeline.PipelineTests.test_right_of_reply_rejected) ... ok
+test_text_lines_and_cache (test_pipeline.PipelineTests.test_text_lines_and_cache) ... ok
+test_yearly_share_threshold (test_pipeline.PipelineTests.test_yearly_share_threshold) ... ok
+test_boundary_search_preserves_input_and_review_note (test_screening.ScreeningTests.test_boundary_search_preserves_input_and_review_note) ... ok
+test_duplicate_normalized_rows_rejected (test_screening.ScreeningTests.test_duplicate_normalized_rows_rejected) ... ok
+test_no_match_remains_pending (test_screening.ScreeningTests.test_no_match_remains_pending) ... ok
+test_pdf_and_transcript_representative_conflict_rejected (test_screening.ScreeningTests.test_pdf_and_transcript_representative_conflict_rejected) ... ok
+test_related_terms_and_context_are_distinct (test_screening.ScreeningTests.test_related_terms_and_context_are_distinct) ... ok
+test_requested_variants (test_screening.ScreeningTests.test_requested_variants) ... ok
+test_substrings_and_military_intelligence_are_not_ai (test_screening.ScreeningTests.test_substrings_and_military_intelligence_are_not_ai) ... ok
+test_unicode_and_line_breaks_preserve_offsets (test_screening.ScreeningTests.test_unicode_and_line_breaks_preserve_offsets) ... ok
+
+----------------------------------------------------------------------
+Ran 47 tests in 3.127s
+
+OK

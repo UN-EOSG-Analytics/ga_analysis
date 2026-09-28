@@ -4,7 +4,7 @@ from functools import lru_cache
 from pathlib import Path
 from xml.etree import ElementTree as ET
 from .io import read_jsonl,workspace_path
-ADAPTER_VERSION='1.0'
+ADAPTER_VERSION='1.2-canonical-transcript-locators'
 
 @lru_cache(maxsize=2)
 def _cached_pages(path,mtime_ns):
@@ -55,16 +55,21 @@ def _segments(obj,source):
   if not isinstance(text,str):raise ValueError('Transcript segment has no text')
   loc={'paragraph':n}
   if statement_start is not None:loc['statement_start']=statement_start
-  for key in ['start','end','timestamp','line','jsonl_record']: # preserve supplied time units, do not invent conversions
+  for key in ['start','end','timestamp','line','line_start','line_end','speaker_line','statement_timestamp','transcript_block','jsonl_record','statement_start','pdf_page','pdf_block','bbox','origin_file','origin_sha256','json_pointer']:
    if key in part:loc[key]=part[key]
   yield text,loc
 
 def extract(root,source):
  path=workspace_path(root,source['path']);fmt=source['format'];selector=source.get('selector',{})
  if fmt=='txt':
-  encoding=source.get('encoding','utf-8-sig');return list(_blocks(path.read_text(encoding=encoding)))
+  encoding=source.get('encoding','utf-8-sig');text=path.read_text(encoding=encoding)
+  if re.search(r'^Transcript: https://transcripts\.un\.org/',text,re.M):raise ValueError('Meeting transcript TXT must first be split into country speeches with prepare')
+  return list(_blocks(text))
  if fmt=='json':
   obj=json.loads(path.read_text(encoding='utf-8-sig'));obj=_pointer(obj,selector.get('json_pointer',''))
+  if isinstance(obj,dict):
+   for key in ('speech_id','country_iso3','year','source_type','origin_file','origin_sha256'):
+    if key in obj and key in source and obj[key]!=source[key]:raise ValueError(f'Derived speech/manifest mismatch: {key}')
   return list(_segments(obj,source))
  if fmt=='jsonl':
   items=list(read_jsonl(path))

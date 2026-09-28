@@ -5,12 +5,13 @@ from unga_analysis.contracts import validate_manifest
 from unga_analysis.pipeline import normalize_source,config,group_mapping,status,register,ingest
 from unga_analysis.aggregate import country_theme_value,classification_complete,yearly_theme_share,requests_to_un
 from unga_analysis.labels import validate_label_record,validate_institution_record
+from tests.helpers import TemporaryWorkspace
 
 PROJECT=Path(__file__).resolve().parents[1]
 
 class PipelineTests(unittest.TestCase):
  def setUp(self):
-  self.temp=tempfile.TemporaryDirectory();self.root=Path(self.temp.name)
+  self.temp=TemporaryWorkspace();self.root=Path(self.temp.name)
   (self.root/'config').mkdir();(self.root/'data').mkdir()
   for n in ['analysis.toml','un_regional_groups.csv']:shutil.copy2(PROJECT/'config'/n,self.root/'config'/n)
   self.cfg=config(self.root);self.cfg['scope']['awaiting_user_sources']=[]
@@ -22,7 +23,7 @@ class PipelineTests(unittest.TestCase):
   return dict(source_id='test_2026_KIR',speech_id='2026_KIR',country_iso3='KIR',year=2026,path=path.relative_to(self.root).as_posix(),format=fmt,source_type='official_transcript',speech_kind='main_general_debate',entity_type='member_state',status='accepted',representative=True,sha256=digest(path),speaker_name=None,speaker_rank='unknown')
  def test_text_lines_and_cache(self):
   s=self.source();r=normalize_source(self.root,s,self.cfg)
-  self.assertEqual(len(r['passages']),2);self.assertEqual(r['passages'][1]['locator'],{'line_start':3,'line_end':3})
+  self.assertEqual(len(r['passages']),2);self.assertEqual(r['passages'][1]['locator'],{'line_start':3,'line_end':3,'extracted_block':2,'char_start':0,'char_end':17})
   self.assertEqual(r['passages'][0]['ai_status'],'Pending');self.assertFalse(r['extraction_cache_hit'])
   self.assertTrue(normalize_source(self.root,s,self.cfg)['extraction_cache_hit'])
  def test_json_pointer_and_timestamps(self):
@@ -42,7 +43,7 @@ class PipelineTests(unittest.TestCase):
   s=self.source('docx',b'');path=self.root/s['path']
   with zipfile.ZipFile(path,'w') as z:z.writestr('word/document.xml','<w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"><w:body><w:p><w:r><w:t>Example text.</w:t></w:r></w:p></w:body></w:document>')
   s['sha256']=digest(path);p=normalize_source(self.root,s,self.cfg)['passages'][0]
-  self.assertEqual(p['locator'],{'paragraph':1})
+  self.assertEqual(p['locator'],{'paragraph':1,'extracted_block':1,'char_start':0,'char_end':13})
  def test_pdf_reuses_verified_text_cache(self):
   s=self.source('pdf',b'%PDF test stub; extraction intentionally cached');s['source_type']='submitted_statement';s['cached_pages']='data/pages.jsonl';s['cache_file_key']='example.pdf'
   write_jsonl(self.root/s['cached_pages'],[dict(file='example.pdf',pdf_page=7,text='Previously extracted source text.',method='tesseract')]);s['cached_pages_sha256']=digest(self.root/s['cached_pages'])
@@ -56,6 +57,8 @@ class PipelineTests(unittest.TestCase):
   with self.assertRaisesRegex(ValueError,'No readable'):normalize_source(self.root,s,self.cfg)
  def test_pending_year_blocked(self):
   s=self.source()
+  cfg_path=self.root/'config/analysis.toml'
+  cfg_path.write_text(cfg_path.read_text(encoding='utf-8').replace('awaiting_user_sources = []','awaiting_user_sources = [2026]'),encoding='utf-8')
   with self.assertRaisesRegex(ValueError,'awaiting user'):normalize_source(self.root,s)
   write_jsonl(self.root/'config/source_manifest.jsonl',[])
   with self.assertRaisesRegex(ValueError,'awaiting user'):ingest(self.root,year=2026)

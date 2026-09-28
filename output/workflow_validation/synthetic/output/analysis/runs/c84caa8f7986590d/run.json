@@ -1,0 +1,52 @@
+{
+  "run_id": "c84caa8f7986590d",
+  "completed_stage": "report",
+  "state": "complete",
+  "output": "C:\\Users\\JPARK143\\Desktop\\MyPython\\ga_analysis\\ga_analysis\\output\\workflow_validation\\synthetic\\output\\analysis\\runs\\c84caa8f7986590d",
+  "usage_ledger": "C:\\Users\\JPARK143\\Desktop\\MyPython\\ga_analysis\\ga_analysis\\output\\workflow_validation\\synthetic\\output\\analysis\\api_cache\\usage.jsonl",
+  "human_reviewed": false,
+  "publication": {
+    "pdf": "C:\\Users\\JPARK143\\Desktop\\MyPython\\ga_analysis\\ga_analysis\\output\\workflow_validation\\synthetic\\deliverables\\c84caa8f7986590d\\UNGA81_AI_Strategic_Review.pdf",
+    "docx": "C:\\Users\\JPARK143\\Desktop\\MyPython\\ga_analysis\\ga_analysis\\output\\workflow_validation\\synthetic\\deliverables\\c84caa8f7986590d\\UNGA81_AI_Strategic_Review.docx",
+    "pdf_pages": 4,
+    "pdf_layout_bounds_checked": true,
+    "docx_has_explicit_page_breaks": true,
+    "docx_render_verified": false,
+    "human_visual_review": false,
+    "font_sizes": [
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  "coverage": {
+    "2017": {
+      "obtained_speeches": 2,
+      "days_received": [],
+      "partial": false,
+      "participation_roster": "not_independently_reconciled",
+      "collection_status": "available_session_records",
+      "source_types": {
+        "official_transcript": 2
+      }
+    },
+    "2026": {
+      "obtained_speeches": 6,
+      "days_received": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "partial": false,
+      "participation_roster": "not_independently_reconciled",
+      "collection_status": "available_session_records",
+      "source_types": {
+        "automatic_transcript": 6
+      }
+    }
+  }
+}

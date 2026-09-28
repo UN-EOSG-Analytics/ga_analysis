@@ -1,0 +1,68 @@
+{
+  "checked_at_utc": "2026-09-28T19:05:26.885162+00:00",
+  "workflow_implemented": true,
+  "dependencies": {
+    "openai": "2.36.0",
+    "numpy": "2.3.1",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.8.0",
+    "python-docx": "1.2.0",
+    "matplotlib": "3.10.8",
+    "PyMuPDF": "1.26.3",
+    "reportlab": "4.4.10"
+  },
+  "api_key_present": false,
+  "api_access_verified": false,
+  "problems": [
+    "OPENAI_API_KEY missing from .env/environment"
+  ],
+  "ready_for_execution": false,
+  "ready_after_final_day": false,
+  "partial_years": [],
+  "coverage": {
+    "2017": {
+      "obtained_speeches": 2,
+      "days_received": [],
+      "partial": false,
+      "participation_roster": "not_independently_reconciled",
+      "collection_status": "available_session_records",
+      "source_types": {
+        "official_transcript": 2
+      }
+    },
+    "2026": {
+      "obtained_speeches": 6,
+      "days_received": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "partial": false,
+      "participation_roster": "not_independently_reconciled",
+      "collection_status": "available_session_records",
+      "source_types": {
+        "automatic_transcript": 6
+      }
+    }
+  },
+  "day6_files_awaiting_preparation": [],
+  "speeches": 8,
+  "passages": 16,
+  "stages": [
+    "review",
+    "discover",
+    "classify",
+    "aggregate",
+    "report"
+  ],
+  "review_all_speeches": true,
+  "estimated_review_cost_usd": 0.07,
+  "estimate_scope": "Two full-text passes only; classification, taxonomy, report and embeddings are additional. Character/token and output assumptions are estimates.",
+  "default_cost_limit_usd": 50.0,
+  "paid_calls_performed": 0,
+  "price_date": "2026-09-28",
+  "code_only_validation": "Actual API/model/account availability requires an authorized live run."
+}

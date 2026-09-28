@@ -1,0 +1,161 @@
+{
+  "status": "discovered",
+  "mean_centered": true,
+  "zero_centered_vectors": 0,
+  "metric": "cosine",
+  "linkage": "average",
+  "cuts": [
+    {
+      "cut": "k=5",
+      "sizes": {
+        "3": 2,
+        "1": 1,
+        "2": 1,
+        "4": 1,
+        "5": 1
+      },
+      "silhouette": 0.06189680041782366,
+      "usable": false
+    },
+    {
+      "cut": "distance=0.7",
+      "sizes": {
+        "3": 1,
+        "1": 1,
+        "2": 1,
+        "5": 1,
+        "6": 1,
+        "4": 1
+      },
+      "silhouette": null,
+      "usable": false
+    }
+  ],
+  "dominant_splits": [],
+  "cophenetic_correlation": 0.6940543839067144,
+  "clusters": [
+    {
+      "cluster": 1,
+      "size": 1,
+      "top_terms": [
+        "support governance",
+        "support",
+        "intelligence",
+        "governance artificial",
+        "governance",
+        "artificial intelligence",
+        "artificial"
+      ],
+      "speech_contributions": {
+        "2026_CAN": 1
+      },
+      "samples": [
+        {
+          "passage_id": "fixture_2026_CAN:1",
+          "speech_id": "2026_CAN",
+          "text": "We support governance of artificial intelligence."
+        }
+      ]
+    },
+    {
+      "cluster": 2,
+      "size": 1,
+      "top_terms": [
+        "support governance",
+        "support",
+        "intelligence",
+        "governance artificial",
+        "governance",
+        "artificial intelligence",
+        "artificial"
+      ],
+      "speech_contributions": {
+        "2026_FRA": 1
+      },
+      "samples": [
+        {
+          "passage_id": "fixture_2026_FRA:1",
+          "speech_id": "2026_FRA",
+          "text": "We support governance of artificial intelligence."
+        }
+      ]
+    },
+    {
+      "cluster": 3,
+      "size": 2,
+      "top_terms": [
+        "support governance",
+        "support",
+        "intelligence",
+        "governance artificial",
+        "governance",
+        "artificial intelligence",
+        "artificial"
+      ],
+      "speech_contributions": {
+        "2017_CAN": 1,
+        "2026_BRA": 1
+      },
+      "samples": [
+        {
+          "passage_id": "fixture_2017_CAN:1",
+          "speech_id": "2017_CAN",
+          "text": "We support governance of artificial intelligence."
+        },
+        {
+          "passage_id": "fixture_2026_BRA:1",
+          "speech_id": "2026_BRA",
+          "text": "We support governance of artificial intelligence."
+        }
+      ]
+    },
+    {
+      "cluster": 4,
+      "size": 1,
+      "top_terms": [
+        "support governance",
+        "support",
+        "intelligence",
+        "governance artificial",
+        "governance",
+        "artificial intelligence",
+        "artificial"
+      ],
+      "speech_contributions": {
+        "2026_GBR": 1
+      },
+      "samples": [
+        {
+          "passage_id": "fixture_2026_GBR:1",
+          "speech_id": "2026_GBR",
+          "text": "We support governance of artificial intelligence."
+        }
+      ]
+    },
+    {
+      "cluster": 5,
+      "size": 1,
+      "top_terms": [
+        "support governance",
+        "support",
+        "intelligence",
+        "governance artificial",
+        "governance",
+        "artificial intelligence",
+        "artificial"
+      ],
+      "speech_contributions": {
+        "2026_KOR": 1
+      },
+      "samples": [
+        {
+          "passage_id": "fixture_2026_KOR:1",
+          "speech_id": "2026_KOR",
+          "text": "We support governance of artificial intelligence."
+        }
+      ]
+    }
+  ],
+  "unresolved_geometry": false,
+  "caution": "Clusters aid discovery only; no cluster directly determines a theme label."
+}

@@ -3,6 +3,7 @@ import tempfile
 from pathlib import Path
 from unga_analysis.selection import select_pdf_version, quarantine_non_english_alternatives
 from unga_analysis.contracts import validate_manifest
+from tests.helpers import TemporaryWorkspace
 
 
 class LanguageSelectionTests(unittest.TestCase):
@@ -31,7 +32,7 @@ class LanguageSelectionTests(unittest.TestCase):
             validate_manifest([fr, en])
 
     def test_existing_non_english_is_quarantined_without_reprocessing(self):
-        with tempfile.TemporaryDirectory() as folder:
+        with TemporaryWorkspace() as folder:
             root = Path(folder)
             (root / 'france__fr_en.pdf').touch()
             row = dict(source_id='legacy_pdf_2025_FRA', path='france__fr_fr.pdf',

@@ -1,0 +1,45 @@
+{
+  "reviewed_at_utc": "2026-09-28T17:15:28.275778+00:00",
+  "speeches": 1888,
+  "passages": 49912,
+  "counts_by_year": {
+    "2017": 193,
+    "2018": 193,
+    "2019": 192,
+    "2020": 190,
+    "2021": 191,
+    "2022": 190,
+    "2023": 189,
+    "2024": 190,
+    "2025": 189,
+    "2026": 171
+  },
+  "source_types": {
+    "official_transcript": 1528,
+    "automatic_transcript": 360
+  },
+  "origin_formats": {
+    "pdf": 1528,
+    "json": 343,
+    "txt": 17
+  },
+  "unique_origin_files": 112,
+  "pdf_paragraphs_compared_to_original": 47321,
+  "issues": [],
+  "language_screen_flags": 4,
+  "missing_country_years": 42,
+  "legacy_language_gap_counts": {
+    "English_transcript_prepared": 416,
+    "excluded_non_member_state": 1
+  },
+  "legacy_gap_scope": "historical_filename_language_audit; not a claim that non-English and English wordings were independently translated and compared",
+  "language_screen_scope": "English source designation plus English/French/Spanish/Portuguese function-word and script heuristic on whole speeches and paragraphs of at least 40 words; not certified language identification",
+  "limitations": [
+    "No ASR audio verification",
+    "No independent complete participation roster audit for every year",
+    "No translation-equivalence validation of historical non-English submissions",
+    "No exhaustive semantic or speaker-attribution review"
+  ],
+  "language_exception_source_review": "output/corpus_preparation/language_exception_review.json",
+  "assessment": "structural_checks_pass; prior_member_state_language_gaps_have_English_transcripts; four_foreign_language_passages_and_42_unrepresented_country_years_remain_explicit"
+}

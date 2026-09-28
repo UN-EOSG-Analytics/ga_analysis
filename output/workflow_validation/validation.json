@@ -1,0 +1,63 @@
+{
+  "checked_at_utc": "2026-09-28T19:25:54.866417+00:00",
+  "tests": {
+    "command": "python -m unittest discover -s tests -v",
+    "run": 47,
+    "failures": 0,
+    "errors": 0,
+    "passed": true,
+    "log": "tests.txt"
+  },
+  "canonical_db": {
+    "path": "output/pipeline/speeches.jsonl",
+    "before_sha256": "e78fc96b4666cdd5125d640ec814a736301f530d89bba91491695734f60c2eb0",
+    "after_sha256": "e78fc96b4666cdd5125d640ec814a736301f530d89bba91491695734f60c2eb0",
+    "unchanged": true,
+    "speeches": 1888,
+    "passages": 49912
+  },
+  "synthetic_end_to_end": {
+    "stages": [
+      "review",
+      "discover",
+      "classify",
+      "aggregate",
+      "report"
+    ],
+    "verified": true,
+    "uses_real_data": false,
+    "provider": "deterministic offline fixture"
+  },
+  "publication": {
+    "actual_microsoft_word_render_verified": true,
+    "word_pdf_pages": 4,
+    "stress_word_pdf_pages": 4,
+    "stress_common_layout_pdf_pages": 4,
+    "stress_docx": "layout_stress/synthetic_layout_stress.docx",
+    "stress_word_pdf": "layout_stress/word_render.pdf",
+    "assistant_visual_inspection": true,
+    "human_visual_review": false
+  },
+  "api": {
+    "model_metadata_access": true,
+    "diagnostic": "output/diagnostics/model_access.json",
+    "paid_requests": 0,
+    "corpus_sent": false,
+    "paid_inference_verified": false
+  },
+  "ready_after_final_day": true,
+  "pending_input": "2026 Day 6 English transcript",
+  "code_hashes": {
+    "unga_analysis/analysis/__init__.py": "59d31cd37166ab70c23835e496607e0c1bfcefc817976c76c773ffad5b04e2a0",
+    "unga_analysis/analysis/aggregation.py": "cab2afa0081173c473ef85441e5e2c156a6b6e4bb001a5a4c34b5c52404993db",
+    "unga_analysis/analysis/classification.py": "34d0dca5de385ff541f8cdefaab0b260b3ff99b3fa07642ff03c928c213d8e80",
+    "unga_analysis/analysis/common.py": "d0ae69eb91385f7001e6ec0182c9f20038f396078a9cdff80c0c8982ffff05bd",
+    "unga_analysis/analysis/discovery.py": "2fb303956b55cd40a0da082365c6b828c7f040713508fab0421ca57c4d69984b",
+    "unga_analysis/analysis/provider.py": "f130b1218ea0e7efc2082c6282f19f3a587a56941044db3872ef53fce864de86",
+    "unga_analysis/analysis/references.py": "fc86d1f2ded34dd1d1f0fdedffb5f4cbfcb151d7b2efb150cf4896defea03e62",
+    "unga_analysis/analysis/render_word.ps1": "caa8aff438f25dbaae1f1f3a24d0c016d51a92731dcfea4d3170530f5a7123e4",
+    "unga_analysis/analysis/reporting.py": "1087b2d2e9f30d688e89d350482b27faa06ab3e83c140aff780a639e87a1a687",
+    "unga_analysis/analysis/review.py": "13561d036f22fccf0b241fb3099305993e02b4131b6c52f8f6c06550403c6f6e",
+    "unga_analysis/analysis/workflow.py": "c357ec74cb2a6d431a53c8bed906e4bd383f2085ac25e3cf2af1c4575cad8655"
+  }
+}

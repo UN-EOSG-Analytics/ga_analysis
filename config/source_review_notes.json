@@ -1,0 +1,11 @@
+{
+  "2025_VCT": {
+    "status": "pending_delivery_verification",
+    "issue": "prepared_PDF_AI_governance_paragraph_absent_from_ASR",
+    "review_report": "output/corpus_preparation/pdf_2025_review.md",
+    "evidence_file": "output/corpus_preparation/pdf_2025_review_evidence.json",
+    "evidence_id": "2025_VCT_PDF_PAGE_16_AI",
+    "required_action": "Before finalizing this country's AI governance and UN-role themes, verify whether the bracketed PDF paragraph was delivered using audio or an official verbatim record. Keep the decision Uncertain/Pending if unresolved. The ASR already contains a separate artificial intelligence mention.",
+    "text_policy": "Retain canonical ASR text; do not automatically merge prepared-only wording or count the PDF as a second speech."
+  }
+}

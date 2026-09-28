@@ -1,0 +1,42 @@
+{
+  "evidence_id": "2025_VCT_PDF_PAGE_16_AI",
+  "speech_id": "2025_VCT",
+  "status": "pending_delivery_verification",
+  "PDF": {
+    "filename": "saint-vincent-and-grenadines__vc_en.pdf",
+    "sha256": "afdff7c269327b1a8eedd33f24706d4709e1e4ba260bc300af51187a37c086ac",
+    "archive": "archive/retired_materials.zip",
+    "archive_member": "data/UNGA80_General_Debate_2025_statements/UNGA80_General_Debate_2025/saint-vincent-and-grenadines__vc_en.pdf",
+    "extraction_method": "hash_verified_archived_extraction"
+  },
+  "physical_pdf_page": 16,
+  "printed_page": 15,
+  "PDF_quote": "[Looming, too, Excellencies, are the rising challenges of Artificial Intelligence (AI). This august Assembly must take the lead, urgently, in advancing a global compact to regulate AI so as to secure the benefits to be derived therefrom, but at the same time to prevent its very harmful possibilities. The central question to be answered proactively is this: Will humanity control AI or will we allow AI to control us? Our humanity must always be prioritised.]",
+  "ASR_file": "data/unga_general_debate_verbatim_en/automatic_transcripts_unofficial/UNGA2025_day4_EN_ASR.json",
+  "ASR_sha256": "c8692911ed43efa9b2a58a9bdc9039d775619b12c0dd3077dd97f9cf543a8821",
+  "ASR_excerpts": [
+    {
+      "locator": {
+        "start": 6989.98,
+        "end": 7199.87,
+        "json_pointer": "/transcript/data/9/paragraphs/0",
+        "statement_start": 6989.98,
+        "origin_file": "data/unga_general_debate_verbatim_en/automatic_transcripts_unofficial/UNGA2025_day4_EN_ASR.json",
+        "origin_sha256": "c8692911ed43efa9b2a58a9bdc9039d775619b12c0dd3077dd97f9cf543a8821"
+      },
+      "excerpt": "teralism is required to address satisfactorily rampaging climate change in the age of the Anthropocene. To resolve the threats posed by nuclear weapons and their further spread. To pursue peaceful coexistence rather than conflict, terrorism, and war. To reform the system of financing for development, inclusive of a just climate financing. To tackle successfully the growing challenges of artificial intelligence. To achieve the 17 Sustainable Development Goals by 2030. be guided by the global digital compact and the pact for the future and to reshape global governance more inclusively. It is thus of the highest importance for this august body, the United Nations, and the overwhelming majority of nation states within it, to continue our efforts to persuade the powerful to act equitably, honorably, and multilaterally to tackl"
+    },
+    {
+      "locator": {
+        "start": 7200.75,
+        "end": 7977.99,
+        "json_pointer": "/transcript/data/9/paragraphs/1",
+        "statement_start": 6989.98,
+        "origin_file": "data/unga_general_debate_verbatim_en/automatic_transcripts_unofficial/UNGA2025_day4_EN_ASR.json",
+        "origin_sha256": "c8692911ed43efa9b2a58a9bdc9039d775619b12c0dd3077dd97f9cf543a8821"
+      },
+      "excerpt": "n the great nation of Brazil. The issue of climate change is urgent and existential. The science is clear. And there has been a growing, even overwhelming, global consensus as to what is required to be done. But sadly, some powerful and other influential countries are backsliding and reneging on their earlier commitments. Excellencies, just over a year ago, on July 1, 2024, a category 4 hurricane, Beryl, devastated my country. Lives were lost, and damage and loss among the one third of our gross domestic product was incurred. In particular, 20% of our houses were either severely damaged or destroyed. We have been rebuilding and recovering stronger and better than ever. We thank our regional and international partners, including worthy non-governmental entities, for their solidarity, without which our tasks o"
+    }
+  ],
+  "finding": "A bracketed AI governance paragraph is present in the prepared PDF and absent from ASR. The ASR transitions from climate commitments to Hurricane Beryl without this paragraph; it contains a separate earlier AI mention. Omitted delivery versus ASR omission is unresolved. Do not count this paragraph as delivered evidence without verification."
+}

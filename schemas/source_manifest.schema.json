@@ -2,24 +2,126 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "One registered speech source version per JSONL line",
   "type": "object",
-  "required": ["source_id", "speech_id", "country_iso3", "year", "path", "format", "source_type", "speech_kind", "entity_type", "status", "representative"],
+  "required": [
+    "source_id",
+    "speech_id",
+    "country_iso3",
+    "year",
+    "path",
+    "format",
+    "source_type",
+    "speech_kind",
+    "entity_type",
+    "status",
+    "representative"
+  ],
   "properties": {
-    "source_id": {"type": "string"},
-    "speech_id": {"type": "string", "pattern": "^[0-9]{4}_[A-Z]{3}$"},
-    "country_iso3": {"type": "string", "pattern": "^[A-Z]{3}$"},
-    "year": {"type": "integer", "minimum": 2017},
-    "path": {"type": "string", "description": "Path inside project; original remains unchanged"},
-    "format": {"enum": ["pdf", "txt", "json", "jsonl", "docx"]},
-    "source_type": {"enum": ["submitted_statement", "official_transcript", "automatic_transcript"]},
-    "speech_kind": {"type": "string"},
-    "entity_type": {"type": "string"},
-    "status": {"enum": ["accepted", "pending", "quarantined", "external_provisional"]},
-    "representative": {"type": "boolean"},
-    "speech_date": {"type": ["string", "null"], "format": "date"},
-    "speaker_name": {"type": ["string", "null"]},
-    "speaker_rank": {"enum": ["head_of_state", "head_of_government", "minister", "other", "head_unspecified", "unknown"]},
-    "language": {"type": "string"},
-    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
-    "selector": {"type": "object", "description": "Explicit json_pointer or one-based JSONL record_start/record_end; never infer country from a mixed meeting"}
+    "source_id": {
+      "type": "string"
+    },
+    "speech_id": {
+      "type": "string",
+      "pattern": "^[0-9]{4}_[A-Z]{3}$"
+    },
+    "country_iso3": {
+      "type": "string",
+      "pattern": "^[A-Z]{3}$"
+    },
+    "year": {
+      "type": "integer",
+      "minimum": 2017
+    },
+    "path": {
+      "type": "string",
+      "description": "Path inside project; original remains unchanged"
+    },
+    "format": {
+      "enum": [
+        "pdf",
+        "txt",
+        "json",
+        "jsonl",
+        "docx"
+      ]
+    },
+    "source_type": {
+      "enum": [
+        "submitted_statement",
+        "official_transcript",
+        "automatic_transcript"
+      ]
+    },
+    "speech_kind": {
+      "type": "string"
+    },
+    "entity_type": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "accepted",
+        "pending",
+        "quarantined",
+        "external_provisional"
+      ]
+    },
+    "representative": {
+      "type": "boolean"
+    },
+    "speech_date": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "speaker_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "language": {
+      "type": "string"
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "origin_file": {
+      "type": "string",
+      "description": "Immutable original official PDF or automatic transcript JSON/TXT behind a derived country speech"
+    },
+    "origin_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "preprocessing_version": {
+      "type": "string"
+    },
+    "readiness_issue": {
+      "type": "string"
+    },
+    "selector": {
+      "type": "object",
+      "description": "Explicit json_pointer or one-based JSONL record_start/record_end; never infer country from a mixed meeting"
+    },
+    "origin_format": {
+      "enum": [
+        "pdf",
+        "json",
+        "txt"
+      ]
+    },
+    "source_acceptance": {
+      "type": "string",
+      "description": "user_confirmed_primary for explicitly accepted automatic transcripts; official_verbatim_primary for official records"
+    },
+    "text_accuracy": {
+      "enum": [
+        "official_record",
+        "unverified_automatic_transcription"
+      ]
+    }
   }
 }

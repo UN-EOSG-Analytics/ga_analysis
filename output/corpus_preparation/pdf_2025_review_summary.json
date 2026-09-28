@@ -1,0 +1,56 @@
+{
+  "PDF_files": 218,
+  "statuses": {
+    "non_English_statement": 87,
+    "unreadable_cached_extraction": 1,
+    "English_comparison_available": 121,
+    "excluded_non_member": 9
+  },
+  "English_comparison_countries": 121,
+  "member_countries_with_PDF": 176,
+  "day6_English_comparisons": [
+    "2025_PRK",
+    "2025_DNK",
+    "2025_ERI",
+    "2025_MWI",
+    "2025_NPL",
+    "2025_NIC",
+    "2025_MDA",
+    "2025_LCA",
+    "2025_TLS",
+    "2025_VUT",
+    "2025_ZMB"
+  ],
+  "PDF_AI_candidate_countries": 44,
+  "new_country_speeches": 0,
+  "canonical_text_changes": 0,
+  "metadata_changes": {
+    "config/source_manifest.jsonl": 1,
+    "data/analysis_ready_en/source_manifest.jsonl": 1,
+    "output/pipeline/speeches.jsonl": 1
+  },
+  "unresolved_material_discrepancy": [
+    "2025_VCT"
+  ],
+  "limitation": "Automated five-word overlap and AI-term screening plus targeted passage/header review; not exhaustive semantic or audio verification. Archived extraction integrity is hash-checked but its text can contain OCR errors.",
+  "post_update_integrity": {
+    "config/source_manifest.jsonl": {
+      "rows": 1888,
+      "2025_rows": 189,
+      "VCT_review_note_present": true,
+      "all_2025_derived_hashes_match": true
+    },
+    "data/analysis_ready_en/source_manifest.jsonl": {
+      "rows": 1888,
+      "2025_rows": 189,
+      "VCT_review_note_present": true,
+      "all_2025_derived_hashes_match": true
+    },
+    "output/pipeline/speeches.jsonl": {
+      "rows": 1888,
+      "2025_rows": 189,
+      "VCT_review_note_present": true,
+      "passages": 49912
+    }
+  }
+}

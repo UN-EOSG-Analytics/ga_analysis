@@ -4,14 +4,15 @@
 __pycache__/
 *.py[cod]
 .venv/
+.test-workflow-*/
+.screening-test-*/
 
 # Windows-only installed packages; recreate with requirements.txt
 .deps/
 
-# Superseded MiniLM model (discovery now uses OpenAI embeddings); keep OCR language data
-models/models--*/
-models/CACHEDIR.TAG
-
-# Superseded report awaiting deletion (see output/cleanup/STATUS.md) and Office lock files
-deliverables/UNGA_AI_Strategic_Report.docx
+# Office lock files
 ~$*
+
+# Local recovery snapshots; exceed the GitHub 100 MB file limit.
+# Retired statement PDFs and extraction caches remain in commit 4c4f453.
+archive/*.zip

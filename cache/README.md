@@ -1,10 +1,7 @@
-# 재사용 자료 캐시
+# Current reusable caches
 
-사용자가 이미 추출·검토한 자료의 재처리를 피하도록 요청했으므로 원문과 근거를 보존한다. 이 폴더는 확정 분석 결과나 실행 코드가 아니다.
+- `verbatim_blocks/`: source-hash-keyed, column-aware extraction from official PDF meeting records. Used by `python -m unga_analysis prepare`.
+- `reference/`: extraction of the background documents in `reference/`.
+- Normalized input extraction is cached separately in `output/pipeline/cache/text/`.
 
-- `extraction/`: PDF 추출·OCR·파일 감사·연도 검증 기록. 현재 `config/source_manifest.jsonl`에서 선택한 원본 해시와 일치하는 자료만 사용한다. 다른 언어판이 캐시에 있어도 EN이 있으면 분석 입력에서 제외한다.
-- `source_review/`: 이전 PDF 원문 검토 기록과 당시 정의를 설명하는 reference taxonomy. 현재 확정 분류로 자동 수입하지 않는다. 원문 선택·새 taxonomy·검토 상태를 대조한 경우에만 근거를 재사용한다.
-- `reference/`: 사용자가 준 배경 문서의 추출 텍스트. 국가의 General Debate 지지·요구를 입증하는 발언으로 세지 않는다.
-- `retained_inputs/`: 삭제하지 않은 원본 추출·OCR·조회·검토 기록의 원래 묶음. 일부에는 외부 2026 원문과 이전 메타데이터가 남아 있지만 현재 분석 대상으로 등록되지 않는다. 코드·보고서·통계 결과는 제거했다. 현재 실행 경로는 이 폴더를 자동 읽지 않는다.
-
-OpenAI 임베딩은 아직 없다. `models/`와 `.deps/`는 다운로드한 도구 자산이며 현재 분석을 실행했다는 증거가 아니다. 복사본 해시와 이동 내역은 `output/cleanup/`에서 확인할 수 있다.
+Historical statement extraction/OCR, retained external inputs and earlier country-level review notes are recoverable through `archive/cleanup_manifest.json`. They are not read by the current analysis input workflow.

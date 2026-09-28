@@ -12,7 +12,7 @@ dependencies = []
 [project.optional-dependencies]
 pdf = ["PyMuPDF>=1.28,<2"]
 analysis = ["numpy", "scipy", "scikit-learn", "country_converter", "lxml"]
-report = ["python-docx", "matplotlib"]
+report = ["python-docx", "matplotlib", "reportlab", "PyMuPDF"]
 embeddings = ["openai"]
 
 [project.scripts]
@@ -20,3 +20,6 @@ unga-analysis = "unga_analysis.cli:main"
 
 [tool.setuptools.packages.find]
 include = ["unga_analysis*"]
+
+[tool.setuptools.package-data]
+"unga_analysis.analysis" = ["*.ps1"]

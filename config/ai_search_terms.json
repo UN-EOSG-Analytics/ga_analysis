@@ -1,0 +1,18 @@
+{
+  "version": "1.1",
+  "policy": "High-recall candidate screening only. Every match needs context review; no match is not a reviewed negative. Related concepts and generic context cues are not literal synonyms for AI.",
+  "rules": [
+    {"id": "artificial_intelligence", "tier": "explicit_ai", "pattern": "\\bartificial[\\s-]*(?:general[\\s-]+|super[\\s-]*)?intelligences?\\b"},
+    {"id": "ai_abbreviation", "tier": "explicit_ai", "pattern": "\\ba[.\\s]*i\\b(?:\\.)?", "spaced_acronym_requires_uppercase": true},
+    {"id": "superintelligence", "tier": "explicit_ai", "pattern": "\\b(?:artificial[\\s-]+)?super[\\s-]*intelligen(?:ce|t)(?:s)?\\b"},
+    {"id": "agi_asi", "tier": "context_required", "pattern": "\\ba[.\\s]*[gs][.\\s]*i\\b(?:\\.)?", "spaced_acronym_requires_uppercase": true},
+    {"id": "human_level_intelligence", "tier": "ai_related", "pattern": "\\b(?:super[\\s-]*human|human[\\s-]+level)[\\s-]+intelligence\\b"},
+    {"id": "generative_ai", "tier": "explicit_ai", "pattern": "\\bgen[\\s-]*ai\\b|\\bgenerative[\\s-]+(?:ai|artificial[\\s-]+intelligence)\\b"},
+    {"id": "machine_learning", "tier": "ai_related", "pattern": "\\b(?:machine|deep|reinforcement)[\\s-]+learning\\b|\\bneural[\\s-]+networks?\\b"},
+    {"id": "language_foundation_models", "tier": "ai_related", "pattern": "\\b(?:large[\\s-]+language|foundation|frontier|generative|multimodal)[\\s-]+models?\\b"},
+    {"id": "related_abbreviations", "tier": "context_required", "pattern": "\\b(?:llms?|ml|dl|nlp|si)\\b"},
+    {"id": "named_systems", "tier": "context_required", "pattern": "\\b(?:chat[\\s-]*gpt|gpt(?:[\\s-]*[0-9]+[a-z]*)?|deep[\\s-]*seek|openai|gemini|claude)\\b"},
+    {"id": "ai_applications", "tier": "ai_related", "pattern": "\\b(?:deep[\\s-]*fakes?|chat[\\s-]*bots?|machine[\\s-]+intelligence|expert[\\s-]+systems?|cognitive[\\s-]+computing|natural[\\s-]+language[\\s-]+processing|computer[\\s-]+vision|intelligent[\\s-]+(?:systems?|machines?|agents?))\\b"},
+    {"id": "indirect_context", "tier": "context_only", "pattern": "\\b(?:algorithms?|algorithmic|automation|robotics|automated[\\s-]+decision[\\s-]*making|autonomous[\\s-]+(?:weapons?|systems?)|digital[\\s-]+(?:technolog(?:y|ies)|compact)|emerging[\\s-]+technolog(?:y|ies))\\b"}
+  ]
+}

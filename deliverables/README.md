@@ -1,5 +1,12 @@
-# 최종 산출물 대기
+# 분석 보고서
 
-현재 지침을 적용한 `UNGA81_AI_Strategic_Review.docx`와 PDF는 아직 생성하지 않았다. 이 폴더는 실행 재개 후 원문 검증·공통 taxonomy·복수 주제 분류와 시각 검수를 마친 결과만 담는다.
+실제 DB 분석은 시작 지시를 기다리고 있다. 2026 Day 6 자료를 받은 뒤 `python -m unga_analysis analyze --execute --max-cost-usd 50`을 실행하면 이 폴더에 결과가 생성된다.
 
-이전 보고서·지역별 통계·재현 ZIP은 정리 대상이다. 삭제 여부와 파일 잠금 등 남은 문제는 `output/cleanup/removal_results.json` 및 `output/cleanup/STATUS.md`에 기록한다. 재사용 원문 추출·검토 근거는 `cache/`에 보존한다.
+- `<run-id>/UNGA81_AI_Strategic_Review.docx` 및 `.pdf`: 영어 4–6페이지 보고서.
+- `<run-id>/publication_checks.json`: 페이지 수, 섹션, Word 렌더링 확인 결과.
+- `<run-id>/report_page_*.png`: 최종 페이지 시각 검토용 이미지.
+- `latest.json`: 최신 보고서와 근거 자료 위치.
+
+자동 검토와 인간 검수는 구분한다. 최종 전달 전 생성된 페이지를 확인한다. 가상 자료로 만든 실행 검증 결과는 `output/workflow_validation/`에 있으며 실제 분석 보고서가 아니다.
+
+실행 방법과 비용·재개 안내: [ANALYSIS_WORKFLOW.md](../docs/ANALYSIS_WORKFLOW.md).

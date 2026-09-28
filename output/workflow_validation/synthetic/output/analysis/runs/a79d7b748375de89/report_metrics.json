@@ -1,0 +1,116 @@
+{
+  "annual:1": {
+    "year": 2017,
+    "n": 1,
+    "N": 2,
+    "pct": 50.0,
+    "obtained": 2,
+    "uncertain": 0,
+    "partial": false
+  },
+  "annual:2": {
+    "year": 2026,
+    "n": 5,
+    "N": 6,
+    "pct": 83.33333333333333,
+    "obtained": 6,
+    "uncertain": 0,
+    "partial": false
+  },
+  "regional:1": {
+    "year": 2017,
+    "region": "Fixture region",
+    "n": 1,
+    "N": 2,
+    "pct": 50.0,
+    "obtained": 2,
+    "uncertain": 0,
+    "partial": false
+  },
+  "regional:2": {
+    "year": 2026,
+    "region": "Fixture region",
+    "n": 5,
+    "N": 6,
+    "pct": 83.33333333333333,
+    "obtained": 6,
+    "uncertain": 0,
+    "partial": false
+  },
+  "theme_prevalence:1": {
+    "year": 2017,
+    "code": "GOV",
+    "theme": "AI governance",
+    "n": 1,
+    "N": 1,
+    "pct": null,
+    "below_threshold": true,
+    "partial": false,
+    "countries": [
+      "CAN"
+    ]
+  },
+  "theme_prevalence:2": {
+    "year": 2026,
+    "code": "GOV",
+    "theme": "AI governance",
+    "n": 5,
+    "N": 5,
+    "pct": null,
+    "below_threshold": true,
+    "partial": false,
+    "countries": [
+      "CAN",
+      "FRA",
+      "GBR",
+      "KOR",
+      "BRA"
+    ]
+  },
+  "keywords:1": {
+    "year": 2017,
+    "term": "artificial intelligence",
+    "n": 1,
+    "N": 1,
+    "countries": [
+      "CAN"
+    ],
+    "pct": 100.0,
+    "first_observed_year": 2017,
+    "recurring": false,
+    "partial": false,
+    "caveat": "First observed in available corpus; source and collection differences remain.",
+    "first_recurring_year": 2026
+  },
+  "keywords:2": {
+    "year": 2026,
+    "term": "artificial intelligence",
+    "n": 5,
+    "N": 5,
+    "countries": [
+      "BRA",
+      "CAN",
+      "FRA",
+      "GBR",
+      "KOR"
+    ],
+    "pct": 100.0,
+    "first_observed_year": 2017,
+    "recurring": true,
+    "partial": false,
+    "caveat": "First observed in available corpus; source and collection differences remain.",
+    "first_recurring_year": 2026
+  },
+  "matched_panel:1": {
+    "year_from": 2017,
+    "year_to": 2026,
+    "code": "GOV",
+    "N": 1,
+    "n_from": 1,
+    "n_to": 1,
+    "countries": [
+      "CAN"
+    ],
+    "partial": false
+  }
+}

@@ -7,16 +7,32 @@ additional_paid_api_allowed = false
 
 [scope]
 years = [2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]
-awaiting_user_sources = [2019, 2026]
+awaiting_user_sources = []
+partial_years = [2026]
+coverage_file = "output/corpus_preparation/country_year_coverage.csv"
 unit = "one Member State main General Debate address per country-year"
+position_attribution = "The main address delivered on behalf of a Member State represents that country's position for the given year"
+analyze_speaker_rank = false
 include_external_provisional_sources = false
+
+[sources]
+policy = "English verbatim primary; 2025 and 2026 automatic transcripts accepted by user as canonical originals"
+accepted_automatic_transcript_years = [2025, 2026]
+acceptance_basis = "user instruction: supplied transcripts are the original corpus; PDF counterparts are not required"
+preserve_automatic_transcription_quality_flags = true
+minimum_expected_speeches = { "2017" = 193, "2018" = 193, "2019" = 192, "2020" = 190, "2021" = 191, "2022" = 190, "2023" = 189, "2024" = 190, "2025" = 189, "2026" = 171 }
+
+[preprocessing]
+passage_max_words = 350
+passage_max_chars = 3000
+passage_rule = "bounded contiguous spans of extracted source paragraphs; no overlap or rewriting"
 
 [discovery]
 provider = "openai"
 model = "text-embedding-3-large"
 dimensions = 3072
 api_key_env = "OPENAI_API_KEY"
-execution_status = "planned_not_executed; OpenAI adapter not yet implemented"
+execution_status = "implemented; awaiting explicit analysis execution"
 embedding_scope = "context-verified AI passages plus necessary adjacent context; not full speeches"
 distance = "cosine"
 linkage = "average"
@@ -61,8 +77,28 @@ unaffiliated_policy = "separate"
 country_theme_rule = "OR of reviewed Yes; No only after complete review; otherwise NA"
 
 [report]
+render_with_word = true
 basename = "UNGA81_AI_Strategic_Review"
 language = "en"
 minimum_pages = 4
 maximum_pages = 6
 sections = ["Key Facts and Figures", "Themes", "Role of UN", "Implications"]
+
+[execution]
+review_model = "gpt-5.4-mini"
+reasoning_effort = "low"
+max_output_tokens = 6000
+request_timeout_seconds = 120
+default_cost_limit_usd = 50.0
+require_execute_flag = true
+automatic_review_passes = 2
+review_batch_passages = 40
+workers = 4
+max_discovery_passages = 5000
+embedding_batch_size = 32
+output_directory = "output/analysis"
+pricing_checked = "2026-09-28"
+review_input_usd_per_million = 0.75
+review_output_usd_per_million = 4.50
+embedding_usd_per_million = 0.13
+pricing_sources = ["https://developers.openai.com/api/docs/models/gpt-5.4-mini", "https://developers.openai.com/api/docs/models/text-embedding-3-large"]

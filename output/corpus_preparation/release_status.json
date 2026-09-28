@@ -1,0 +1,158 @@
+{
+  "prepared_at_utc": "2026-09-28T16:56:14.149227+00:00",
+  "ingestion": {
+    "selected": 1888,
+    "normalized": 1888,
+    "cache_hits": 1729,
+    "unresolved": 0,
+    "output": "C:\\Users\\JPARK143\\Desktop\\MyPython\\ga_analysis\\ga_analysis\\output\\pipeline\\speeches.jsonl"
+  },
+  "status": {
+    "years": [
+      {
+        "year": 2017,
+        "state": "registered",
+        "accepted_representatives": 193,
+        "quarantined": 0,
+        "pending_sources": 0,
+        "provisional_sources": 0,
+        "accepted_automatic_transcripts": 0,
+        "coverage_status": "see_country_year_coverage"
+      },
+      {
+        "year": 2018,
+        "state": "registered",
+        "accepted_representatives": 193,
+        "quarantined": 0,
+        "pending_sources": 0,
+        "provisional_sources": 0,
+        "accepted_automatic_transcripts": 0,
+        "coverage_status": "see_country_year_coverage"
+      },
+      {
+        "year": 2019,
+        "state": "registered",
+        "accepted_representatives": 192,
+        "quarantined": 0,
+        "pending_sources": 0,
+        "provisional_sources": 0,
+        "accepted_automatic_transcripts": 0,
+        "coverage_status": "see_country_year_coverage"
+      },
+      {
+        "year": 2020,
+        "state": "registered",
+        "accepted_representatives": 190,
+        "quarantined": 0,
+        "pending_sources": 0,
+        "provisional_sources": 0,
+        "accepted_automatic_transcripts": 0,
+        "coverage_status": "see_country_year_coverage"
+      },
+      {
+        "year": 2021,
+        "state": "registered",
+        "accepted_representatives": 191,
+        "quarantined": 0,
+        "pending_sources": 0,
+        "provisional_sources": 0,
+        "accepted_automatic_transcripts": 0,
+        "coverage_status": "see_country_year_coverage"
+      },
+      {
+        "year": 2022,
+        "state": "registered",
+        "accepted_representatives": 190,
+        "quarantined": 0,
+        "pending_sources": 0,
+        "provisional_sources": 0,
+        "accepted_automatic_transcripts": 0,
+        "coverage_status": "see_country_year_coverage"
+      },
+      {
+        "year": 2023,
+        "state": "registered",
+        "accepted_representatives": 189,
+        "quarantined": 0,
+        "pending_sources": 0,
+        "provisional_sources": 0,
+        "accepted_automatic_transcripts": 0,
+        "coverage_status": "see_country_year_coverage"
+      },
+      {
+        "year": 2024,
+        "state": "registered",
+        "accepted_representatives": 190,
+        "quarantined": 0,
+        "pending_sources": 0,
+        "provisional_sources": 0,
+        "accepted_automatic_transcripts": 0,
+        "coverage_status": "see_country_year_coverage"
+      },
+      {
+        "year": 2025,
+        "state": "registered",
+        "accepted_representatives": 189,
+        "quarantined": 0,
+        "pending_sources": 0,
+        "provisional_sources": 0,
+        "accepted_automatic_transcripts": 189,
+        "coverage_status": "see_country_year_coverage"
+      },
+      {
+        "year": 2026,
+        "state": "registered",
+        "accepted_representatives": 171,
+        "quarantined": 0,
+        "pending_sources": 0,
+        "provisional_sources": 0,
+        "accepted_automatic_transcripts": 171,
+        "coverage_status": "partial"
+      }
+    ],
+    "external_provisional_enabled": false,
+    "regional_system": "UN regional groups",
+    "mapping_as_of": "2026-09-25",
+    "report_status": "English corpus preprocessing prepared; see readiness exceptions; embeddings, taxonomy and final report not yet produced"
+  },
+  "manifest": "config/source_manifest.jsonl",
+  "analysis_input": "output/pipeline/speeches.jsonl",
+  "counts_by_year": {
+    "2017": 193,
+    "2018": 193,
+    "2019": 192,
+    "2020": 190,
+    "2021": 191,
+    "2022": 190,
+    "2023": 189,
+    "2024": 190,
+    "2025": 189,
+    "2026": 171
+  },
+  "source_counts": {
+    "official_transcript": 1528,
+    "automatic_transcript": 360
+  },
+  "source_policy": "All selected English transcripts are canonical originals; retain official/automatic source identity.",
+  "partial_years": [
+    2026
+  ],
+  "integrity_issues": 0,
+  "paid_api_calls": 0,
+  "classification_performed": false,
+  "cleanup": {
+    "files_archived": 8490,
+    "bytes_archived": 1344380710,
+    "removal_complete": true,
+    "manifest": "archive/cleanup_manifest.json"
+  },
+  "metadata_update": {
+    "updated_at_utc": "2026-09-28T17:07:51.527916+00:00",
+    "speeches": 1888,
+    "removed_field": "speaker_rank",
+    "speech_text_changed": false,
+    "raw_originals_changed": false,
+    "source_hashes_and_cache_keys_updated": true,
+    "policy": "Member State main addresses represent country-year positions; no speaker-rank analysis"
+  }
+}

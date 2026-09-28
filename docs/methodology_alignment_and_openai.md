@@ -1,56 +1,32 @@
-# Methodology 대조와 OpenAI 임베딩 연결 안내
+# OpenAI 분석 연결과 방법
 
-확인일: 2026-09-25, America/New_York. 지침·설정 갱신만 수행했다. API 연결 구현, 임베딩, 재분류, 보고서 작성은 실행하지 않았다.
+최신 실행 안내는 [ANALYSIS_WORKFLOW.md](ANALYSIS_WORKFLOW.md)이다. 이전의 “연결 코드 미구현”, “환경변수만 가능” 안내는 현재 상태에 해당하지 않는다.
 
-## 대조 결과
+## 구현된 경로
 
-제시된 Methodology의 핵심 설계는 현재 ANALYSIS_PROTOCOL.md와 일치한다. 국가–연도당 주요 연설 한 건, 회원국과 맥락 자료 분리, 검토한 연설을 분모로 하는 AI 비율, 공식 UN regional groups 고정 매핑, 임베딩을 통한 주제 탐색, 원문 검토에 따른 복수 분류, 분류 완료 AI 언급 국가를 분모로 하는 주제 비율, 방향별 조건부 공동 언급, 불확실성 표기가 동일하다. 이는 계획의 일치이며 기존 UNGA_AI_Strategic_Report가 이 방법을 모두 수행했다는 의미는 아니다.
+`.env` → 전체 연설 문맥 검토 → AI Yes 구절과 필요한 문맥의 임베딩 → 로컬 cosine/average 계층적 군집 → 원문 예시 기반 공통 taxonomy → 구절별 복수 분류·재검토 → 국가–연도 OR 집계 → Word/PDF 보고서.
 
-현재 지침에는 commitments의 독립 판정 기준, 전 연도 공통 taxonomy 적용과 변경 시 과거 분류 조정, 복수 주제 비율 합계의 100% 초과 가능성, 명시적인 권고 대상(UN/SPMU/Tech Envoy/Panel/Dialogue)을 보완했다.
+- 임베딩: `text-embedding-3-large`, 3,072차원.
+- 문맥 검토·분류·taxonomy·보고서: `gpt-5.4-mini`, 구조화 JSON 출력.
+- OpenAI 어댑터: `unga_analysis/analysis/provider.py`.
+- 전체 실행: `unga_analysis/analysis/workflow.py`.
+- 키: 프로젝트 루트 `.env`의 `OPENAI_API_KEY=` 뒤에 저장. 키는 Git·로그·보고서에 포함하지 않는다.
 
-제시된 영문 Methodology에는 다음 표현을 추가·조정하면 자료와 사용자 지시를 더 정확히 반영한다.
+기존 canonical DB는 유지하며 분석 결과는 `output/analysis/`에 별도로 저장한다. 모델·입력·프롬프트·출처·taxonomy가 같은 경우에만 관련 캐시를 재사용한다. 지역 매핑 변경만으로 임베딩을 다시 계산하지 않는다. 이전 MiniLM 벡터와 OpenAI 벡터를 혼합하지 않는다.
 
-1. EN 우선: “Where multiple language versions are available, only the English version is analysed; if English is unavailable, one alternative-language version is selected.” 읽히지 않는 EN과 다른 연도에 해당하는 파일은 출처 확인 단계에서 보류한다.
-2. 실제 발언과 제출본 구분: 현재 모든 PDF의 실제 전달 내용을 확인한 것은 아니므로 첫 문장을 “The review analyses available texts of Member State General Debate statements, distinguishing submitted statements from as-delivered transcripts.”로 조정한다. 주요 연설 범위 자체는 유지한다.
-3. 임베딩: “Context-verified AI-related passages, together with necessary adjacent context, are embedded using OpenAI text-embedding-3-large and explored through agglomerative hierarchical clustering with cosine distance and average linkage.” 전체 연설문을 임베딩하는 계획이 아니다. 모델·차원·API 사용량은 실제 실행 후 확정 기록한다.
-4. 근거 위치: “Key findings and quotations are traceable to source files and PDF pages or transcript paragraphs, lines or timestamps.” transcript에 가상의 PDF 페이지를 만들지 않는다.
-5. 새 표현 추세: “Annual comparisons also identify substantively important AI terms and expressions that newly recur across countries, distinguishing first observation in the available corpus from actual historical emergence.” 누락 연도는 0으로 처리하지 않는다.
-6. UN 배경: “Reports and notes in the reference folder inform institutional context; they are kept separate from Member State speech evidence and endorsement counts.” 초안·최종본·채택 결정의 지위를 구분한다.
+## 실행과 검증의 차이
 
-## 사용할 모델과 API 단계
+`python -m unga_analysis analyze`는 무과금 사전 점검이다. `--execute`를 붙인 실제 실행은 시작 지시와 비용 상한을 전제로 한다. 기본 한도는 워크스페이스 누적 US$50이며 예상 청구액이 아니다. `additional_paid_api_allowed=false`는 무인·자동 유료 실행을 허용하지 않는 기존 기본값이다. 새 실행기의 명시적 `--execute` 승인은 해당 실행에만 적용되고 이 값을 자동 변경하지 않는다.
 
-공식 [임베딩 가이드](https://developers.openai.com/api/docs/guides/embeddings)는 최신 계열로 `text-embedding-3-small`과 `text-embedding-3-large`를 안내한다. 이 프로젝트에는 영어 외 언어도 남으므로, 공식 [모델 설명](https://developers.openai.com/api/docs/models/text-embedding-3-large)이 영어·비영어 작업에서 가장 높은 역량으로 소개하는 `text-embedding-3-large`를 계획 설정으로 기록했다. 공식 설명을 바탕으로 한 선택이며 이 데이터에서 별도 품질 비교를 수행한 것은 아니다. 기본 차원은 3072이다.
+로컬 테스트와 가짜 자료의 전체 실행, Word/PDF 렌더링을 확인했다. 무료 모델 조회로 키와 모델 접근을 확인했지만 실제 코퍼스의 유료 검토·임베딩은 아직 실행하지 않았다. 자동 두 번째 검토를 인간 검수나 사람 간 일치도로 표현하지 않는다.
 
-흐름: EN 단일 판본 선택 → 로컬 추출/OCR → 넓은 AI 키워드 검색 → 원문 문맥 확인 → AI 구절과 필요 문맥만 **OpenAI Embeddings API** → 로컬 cosine/average 계층적 군집화·TF-IDF → taxonomy → 복수 주제 분류·원문 검토 → 집계.
+## 공식 API 근거와 기록 단가
 
-검색 탈락 문단의 표본 검토는 누락 점검에 사용한다. 새 표현을 발견하면 사전을 보완하되, 일반적인 디지털 발언을 모두 AI로 간주하지 않는다. 임베딩은 지지/우려 판정이나 최종 주제 분류 결과를 반환하지 않는다. 분류용 LLM API는 별도 선택·비용이며 이번 모델 선택으로 함께 실행되지 않는다.
+2026-09-28 공식 문서를 확인했다.
 
-텍스트 벡터화의 호출 위치는 `POST https://api.openai.com/v1/embeddings` / Python SDK의 `client.embeddings.create(...)`다. 아래는 향후 연결을 설명하는 예시이며 실행 명령이 아니다.
+- [OpenAI 임베딩 가이드](https://developers.openai.com/api/docs/guides/embeddings): Embeddings API와 차원 설정.
+- [text-embedding-3-large](https://developers.openai.com/api/docs/models/text-embedding-3-large): 입력 100만 토큰당 $0.13.
+- [GPT-5.4 mini](https://developers.openai.com/api/docs/models/gpt-5.4-mini): 입력 100만 토큰당 $0.75, 출력 $4.50.
+- [구조화 출력](https://developers.openai.com/api/docs/guides/structured-outputs): Responses의 `text.format` JSON schema.
 
-```python
-from openai import OpenAI
-
-client = OpenAI()  # OPENAI_API_KEY 환경변수 사용
-response = client.embeddings.create(
-    model="text-embedding-3-large",
-    input=verified_ai_passages,  # 검증한 구절 문자열 목록
-    dimensions=3072,
-    encoding_format="float",
-)
-```
-
-실제 연결 시 토큰 제한, 배치 크기, 재시도, 사용량/비용 기록, 입력 순서와 근거 ID의 연결 및 캐시를 구현해야 한다. OpenAI SDK 설치·연결 코드는 아직 만들거나 실행하지 않았다. 이전 로컬 임베딩·보고서 생성 스크립트는 제거했으므로 현재 설정만으로 자동 분석이 시작되지 않는다.
-
-## API 키를 넣는 위치
-
-키 발급: [OpenAI Platform API keys](https://platform.openai.com/api-keys).
-
-Windows에서 **환경 변수 편집 → 사용자 변수 → 새로 만들기**를 열어 이름에 `OPENAI_API_KEY`, 값에 발급한 키를 넣는다. 저장 후 VS Code와 터미널을 다시 열어 새 환경변수를 상속받게 한다. [OpenAI 공식 Quickstart](https://developers.openai.com/api/docs/quickstart)에 따라 SDK가 이 환경변수를 읽는다. `ANALYSIS_PROTOCOL.md`, `analysis.toml`, Python 소스나 채팅에 키를 적을 필요는 없다.
-
-모델·차원·환경변수 이름은 `config/analysis.toml`에 있고, 비밀 키 자체는 환경변수에만 둔다. `additional_paid_api_allowed = false`와 실행 중단 상태를 유지했다. 키 등록만으로 프로그램이 실행되거나 과금되지는 않는다. 현재 코드는 `.env` 자동 로딩을 구현하지 않았으므로 `.env`에만 적으면 된다고 안내하지 않는다.
-
-## 캐시와 비용
-
-MiniLM(384차원) 벡터와 OpenAI(3072차원) 벡터를 섞지 않는다. 모델·차원·구절·전처리가 같을 때만 벡터를 재사용한다. 기존 원문·추출·검토 근거는 재사용할 수 있지만 새 모델을 택하면 분석 대상 AI 구절의 OpenAI 벡터를 전 연도에 걸쳐 새로 만들어야 한다. 기존 분류도 새 taxonomy와 선택 원문에 맞는지 확인한다.
-
-확인일의 공식 모델 페이지 일반 이용료는 입력 100만 토큰당 $0.13이다. 예를 들어 실제 선택 구절이 10만 토큰이면 벡터화 입력료는 $0.013이다. 이는 설명용 산술 예시이며 현재 선택 구절의 확정 토큰 수가 아니다. EN 선택 보류 10건과 향후 2019·2026 입력을 반영한 AI 구절 목록으로 실제 실행 전에 토큰량과 최신 요금을 확인한다. 추가 유료 호출은 없었다.
+실제 비용은 응답 사용량과 기록 단가로 계산한다. 요청 전 보수적인 비용을 예약하고, 응답 사용량으로 정산한다. 연결 실패로 과금 여부가 불명확하면 예약분을 유지한다. `cost_summary.json`과 `api_cache/usage.jsonl`은 분석의 사용량 기록이며 공급자의 최종 청구서를 대체하지 않는다.
