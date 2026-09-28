@@ -29,7 +29,7 @@ flowchart TD
 
 ## 실행과 모듈
 
-**전체 분석 워크플로우는 구현되어 있다.** 준비 확인은 `python -m unga_analysis analyze`, 실행은 `python -m unga_analysis analyze --execute --max-cost-usd 50`이다. Day 6가 새로 들어오면 필요한 전처리만 먼저 수행하고 이어서 분석한다. [실행·비용·재개 안내](docs/ANALYSIS_WORKFLOW.md).
+**임베딩 API + Codex 구독 방식이다.** 준비 확인은 `python -m unga_analysis analyze`, 시작 지시 후 실행·재개는 `python -m unga_analysis analyze --execute --max-cost-usd 1`이다. `analysis/subscription.py`가 텍스트 작업을 구독 세션에 파일로 전달하며 `awaiting_subscription_review` 상태에서 Codex가 답을 작성하고 재개한다. API는 임베딩만 허용한다. 군집·집계·출력은 로컬이다. Day 6가 새로 들어오면 필요한 전처리부터 수행한다. [실행·비용·재개 안내](docs/ANALYSIS_WORKFLOW.md).
 
 ```powershell
 python -m unga_analysis prepare

@@ -18,7 +18,9 @@
 OPENAI_API_KEY=여기에_실제_API_키
 ```
 
-준비 확인: `python -m unga_analysis analyze`. 유료 요청 없이 키 존재·패키지·자료 범위를 확인한다. 실제 임베딩·분류·보고서 실행은 `python -m unga_analysis analyze --execute --max-cost-usd 50`으로 연결되어 있다. Day 6 제공과 실행 방법은 [분석 워크플로우](docs/ANALYSIS_WORKFLOW.md)를 따른다.
+**API는 임베딩에만 사용한다.** 문맥 검토·주제 해석·분류·보고서는 구독으로 로그인한 Codex(Astra High 선택 가능 시)에서 처리하고, 군집·집계·파일 생성은 로컬 Python에서 수행한다. 현재 후보 기준 직접 API 비용은 약 $0.05이며 기본 누적 상한은 $1이다.
+
+준비 확인: `python -m unga_analysis analyze`. 시작 지시 후 Codex가 `python -m unga_analysis analyze --execute --max-cost-usd 1`을 사용한다. Python이 검토 요청을 파일로 넘기면 Codex 세션이 읽고 답을 저장한 뒤 재개한다. 생성 API로 자동 전환하지 않는다. Day 6 제공·구독 인증·재개 절차는 [분석 워크플로우](docs/ANALYSIS_WORKFLOW.md)를 따른다.
 
 ### 데이터 준비
 

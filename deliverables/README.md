@@ -1,6 +1,6 @@
 # 분석 보고서
 
-실제 DB 분석은 시작 지시를 기다리고 있다. 2026 Day 6 자료를 받은 뒤 `python -m unga_analysis analyze --execute --max-cost-usd 50`을 실행하면 이 폴더에 결과가 생성된다.
+실제 DB 분석은 시작 지시를 기다리고 있다. 2026 Day 6 자료를 받은 뒤 Codex 구독 세션이 `python -m unga_analysis analyze --execute --max-cost-usd 1`로 시작하고, 파일로 전달된 검토·분류·보고서 요청을 처리하며 재개한다. API는 임베딩만 사용하고 완료된 결과를 이 폴더에 저장한다.
 
 - `<run-id>/UNGA81_AI_Strategic_Review.docx` 및 `.pdf`: 영어 4–6페이지 보고서.
 - `<run-id>/publication_checks.json`: 페이지 수, 섹션, Word 렌더링 확인 결과.

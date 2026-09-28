@@ -12,7 +12,7 @@ def main():
  q=sub.add_parser('ingest');q.add_argument('--year',type=int);q.add_argument('--source-id')
  for name in ('analyze','review','discover','classify','aggregate','report'):
   q=sub.add_parser(name,help='Analysis workflow; without --execute performs a local readiness check only')
-  q.add_argument('--execute',action='store_true',help='Explicitly authorize API calls within the cost cap')
+  q.add_argument('--execute',action='store_true',help='Run local steps and subscription handoffs; authorize embeddings API only under the current scope and cap')
   q.add_argument('--max-cost-usd',type=float,help='Cumulative API cost cap; default is in config/analysis.toml')
   q.add_argument('--allow-partial',action='store_true',help='Generate an explicitly interim report from a partial session')
   q.add_argument('--final-day',type=Path,help='Path to the 2026 Day 6 English TXT/JSON; copied as an immutable source on execution')

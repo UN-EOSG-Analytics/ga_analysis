@@ -86,11 +86,16 @@ maximum_pages = 6
 sections = ["Key Facts and Figures", "Themes", "Role of UN", "Implications"]
 
 [execution]
+text_backend = "codex_subscription"
+api_scope = "embeddings_only"
+subscription_model_preference = "gpt-6-astra"
+subscription_reasoning_preference = "high"
+subscription_pending_limit = 16
 review_model = "gpt-5.4-mini"
 reasoning_effort = "low"
 max_output_tokens = 6000
 request_timeout_seconds = 120
-default_cost_limit_usd = 50.0
+default_cost_limit_usd = 1.0
 require_execute_flag = true
 automatic_review_passes = 2
 review_batch_passages = 40

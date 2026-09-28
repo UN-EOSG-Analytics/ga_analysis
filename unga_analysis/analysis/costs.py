@@ -85,6 +85,14 @@ def estimate_costs(root,speeches,cfg):
     web=settings['assumed_web_reference_chunks']
     stage('references',reference_calls,reference_calls+web,reference_chars,reference_chars+web*(22000+other))
     stage('report',2,2,2*(settings['assumed_report_input_chars']+other),2*(settings['assumed_report_input_chars']+other))
+    subscription=cfg['execution'].get('text_backend')=='codex_subscription'
+    for name,details in stages.items():
+        direct_api=name=='embeddings' or not subscription
+        details['billing']='direct_api' if direct_api else 'codex_subscription'
+        details['direct_api_requests_lower']=details['requests_lower'] if direct_api else 0
+        details['direct_api_requests_upper']=details['requests_upper'] if direct_api else 0
+        if not direct_api:
+            details['scenarios']={str(t):dict(lower_usd=0.0,upper_usd=0.0) for t in scenarios}
     totals={str(t):dict(lower_usd=round(sum(s['scenarios'][str(t)]['lower_usd'] for s in stages.values()),4),
                        upper_usd=round(sum(s['scenarios'][str(t)]['upper_usd'] for s in stages.values()),4)) for t in scenarios}
     return dict(stages=stages,total_scenarios=totals,
@@ -96,4 +104,5 @@ def estimate_costs(root,speeches,cfg):
             cache_savings_assumed=False,semantic_or_transport_retries_included=False,batch_splitting_included=False,
             discovery_request_range='Largest configured cluster cut versus all-source batches of 24; later splits can add calls',
             taxonomy_request_range='2-4 synthesis/audit calls; nonconvergence and extra hierarchy rounds are not a guaranteed bound'),
-        pricing_checked=cfg['execution']['pricing_checked'],scope='Planning scenarios, not a billing guarantee or a hard upper bound. Actual AI passage count, codebook, reasoning, retries, splits and model usage can increase cost.')
+        pricing_checked=cfg['execution']['pricing_checked'],scope=('Direct API spending only: embeddings. Text review, classification and reporting consume Codex subscription usage; they are not unlimited and are not Python API calls. Candidate passage counts remain estimates.' if subscription else
+            'Planning scenarios, not a billing guarantee or a hard upper bound. Actual AI passage count, codebook, reasoning, retries, splits and model usage can increase cost.'))

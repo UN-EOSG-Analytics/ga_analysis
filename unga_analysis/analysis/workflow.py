@@ -74,7 +74,9 @@ def preflight(root,allow_partial=False):
         stamp=datetime.fromisoformat(access['checked_at'])
         recent=(datetime.now(timezone.utc)-stamp).total_seconds()<86400
         if (root/'.env').exists() and (root/'.env').stat().st_mtime>stamp.timestamp():recent=False
-    access_ok=recent and all(access.get('models',{}).get(model,{}).get('accessible') for model in [cfg['discovery']['model'],cfg['execution']['review_model']])
+    subscription=cfg['execution'].get('text_backend')=='codex_subscription'
+    models=[cfg['discovery']['model']] if subscription else [cfg['discovery']['model'],cfg['execution']['review_model']]
+    access_ok=recent and all(access.get('models',{}).get(model,{}).get('accessible') for model in models)
     coverage=coverage_guard(rows,cfg,allow_partial=True)
     partial=[int(y) for y,v in coverage.items() if v['partial']]
     source_dir=root/'data/unga_general_debate_verbatim_en/automatic_transcripts_unofficial'
@@ -85,6 +87,8 @@ def preflight(root,allow_partial=False):
     costs=estimate_costs(root,rows,cfg)
     rough_review=min(v['lower_usd'] for v in costs['stages']['review']['scenarios'].values())
     result=dict(checked_at_utc=now(),workflow_implemented=True,dependencies=packages,api_key_present=api_key_present,
+        text_backend=cfg['execution'].get('text_backend','openai_api'),api_scope=cfg['execution'].get('api_scope','embeddings_only'),
+        subscription_session_required=subscription,subscription_model_preference=cfg['execution'].get('subscription_model_preference'),
         api_access_verified=bool(access_ok),api_verification_scope='Model metadata access only; no paid inference',
         paid_inference_verified=False,problems=problems,ready_for_execution=not problems and (not partial or allow_partial),
         ready_after_final_day=not problems,partial_years=partial,coverage=coverage,day6_files_awaiting_preparation=unprocessed,
@@ -131,11 +135,16 @@ def run(root,execute=False,budget=None,allow_partial=False,final_day=None,stop_a
             code={p.name:digest(p) for p in Path(__file__).parent.glob('*.py')},allow_partial=allow_partial))[:16]
         out=base/'runs'/fingerprint;out.mkdir(parents=True,exist_ok=True)
         if provider is None:
-            from .provider import OpenAIProvider
-            provider=OpenAIProvider(root,cfg,execute=True,budget=budget)
+            if cfg['execution'].get('text_backend')=='codex_subscription':
+                from .subscription import SubscriptionProvider
+                provider=SubscriptionProvider(root,cfg,budget=budget)
+            else:
+                if cfg['execution'].get('api_scope')!='text_and_embeddings':raise ValueError('Text API is disabled; select codex_subscription')
+                from .provider import OpenAIProvider
+                provider=OpenAIProvider(root,cfg,execute=True,budget=budget)
         initial_spend=getattr(provider,'used',0.0)
         save(out/'run.json',dict(run_id=fingerprint,started_at=now(),state='running',stop_after=stop_after,allow_partial=allow_partial,
-             input_sha256=digest(root/cfg['output_directory']/'speeches.jsonl'),models={'review':cfg['execution']['review_model'],'embedding':cfg['discovery']['model']},human_reviewed=False))
+             input_sha256=digest(root/cfg['output_directory']/'speeches.jsonl'),models={'review':cfg['execution'].get('text_backend','openai_api'),'embedding':cfg['discovery']['model']},human_reviewed=False))
         def finish(stage,extra=None):
             costs=dict(new_run_charged_or_reserved_usd=getattr(provider,'used',0.0)-initial_spend,
                        cumulative_charged_or_reserved_usd=getattr(provider,'used',0.0),
@@ -145,7 +154,7 @@ def run(root,execute=False,budget=None,allow_partial=False,final_day=None,stop_a
             memo=out/'methodology_and_cost.md'
             if memo.exists():
                 with memo.open('a',encoding='utf-8') as handle:
-                    handle.write(f"\n\n## 실행 비용\n\n사전 전체 단계 시나리오: US${readiness['cost_estimate']['lower_usd']:.2f}–${readiness['cost_estimate']['upper_usd']:.2f}. 출력·추론 900/2000/3000토큰 등의 가정이며 보장 상한이 아니다. "
+                    handle.write(f"\n\n## 실행 비용\n\n현재 실행 경로의 직접 API 추정: US${readiness['cost_estimate']['lower_usd']:.2f}–${readiness['cost_estimate']['upper_usd']:.2f}. 구독 경로는 임베딩만 API 비용에 포함하며 상세 가정은 cost_estimate.json을 따른다. 보장 상한이 아니다. "
                         f"이번 실행의 정산/예약 증가분: US${costs['new_run_charged_or_reserved_usd']:.4f}. "
                         f"워크스페이스 누적 정산/예약: US${costs['cumulative_charged_or_reserved_usd']:.4f}. "
                         "실제 사용 토큰과 미확정 예약분은 cost_summary.json 및 usage.jsonl 참조. 청구서 금액으로 확정한 값은 아니다.\n")
@@ -183,6 +192,14 @@ def run(root,execute=False,budget=None,allow_partial=False,final_day=None,stop_a
             save(root/'deliverables/latest.json',dict(run_id=fingerprint,**publication,evidence_directory=str(out)))
             return finish('report',dict(publication=publication,coverage=stats['coverage']))
         except Exception as exc:
+            from .subscription import AwaitingSubscriptionWork
+            if isinstance(exc,AwaitingSubscriptionWork):
+                result=dict(run_id=fingerprint,state='awaiting_subscription_review',output=str(out),
+                    pending=list(provider.pending.values()),text_api_calls=0,subscription_session_required=True,
+                    cumulative_api_charged_or_reserved_usd=provider.used,
+                    resume='Codex reads each request, saves a response envelope with actual model metadata, and repeats the command. No automatic text API fallback.')
+                save(out/'run.json',result);save(base/'latest.json',result)
+                return result
             save(out/'run.json',dict(run_id=fingerprint,state='stopped',exception_type=type(exc).__name__,message=str(exc),
                  resume='Repeat the same command; exact model requests and vectors are cached. Input changes create a new run.',updated_at=now()))
             raise
@@ -208,7 +225,7 @@ def ancillary(root,out,speeches,reviewed,classified,taxonomy,stats,readiness,cfg
     (out/'theme_taxonomy.md').write_text('\n\n'.join(lines)+'\n',encoding='utf-8')
     memo=['# 방법과 비용', '',
         '전사 DB를 변경하지 않고 국가–연도 단위로 분석했다. 전체 연설 텍스트를 두 번 자동 검토하며 검색 미적중을 자동 No로 채우지 않는다. 판정 불일치는 Uncertain이다.',
-        f"문맥·분류·보고서 모델: {cfg['execution']['review_model']}. 임베딩: {cfg['discovery']['model']}, {cfg['discovery']['dimensions']}차원.",
+        f"문맥·분류·보고서 실행 경로: {cfg['execution'].get('text_backend','openai_api')}. 구독 경로의 실제 모델은 subscription_queue 응답별 reviewer 메타데이터에 기록한다. 임베딩: {cfg['discovery']['model']}, {cfg['discovery']['dimensions']}차원.",
         '임베딩은 AI Yes 구절과 필요한 문맥에만 적용한다. 로컬 평균 중심화·cosine 거리·average linkage를 사용하고 여러 절단과 군집별 대표/경계 구절을 검토해 공통 taxonomy를 만든다. 군집 ID를 최종 주제값으로 쓰지 않는다.',
         '분류는 구절별 복수 판정이며 국가–연도·코드별 OR로 집계한다. 해당 코드에 Yes가 있으면 1, AI 검토가 완료되고 모든 AI 구절에서 해당 코드가 No이면 0, 그 밖에는 NA이다. 주제별 N은 AI 양성 국가 중 해당 코드가 확정된 국가 수이며 공동 언급은 두 코드가 모두 확정된 국가를 분모로 한다. 같은 국가의 연도 비교도 코드별 공통 표본을 사용한다. 미검토·미확보를 0으로 바꾸지 않는다. 새 개념은 검토 대기표에 남기며 기존 코드의 분류 완료를 막지 않는다. 지역은 고정 UN 매핑을 사용한다.',
         '동일 모델의 별도 호출은 자동 재검토이며 사람 간 일치도가 아니다. 원음 검증과 인간 검토 완료를 주장하지 않는다. 자동 검토 보고서는 이 한계를 표시한다.',

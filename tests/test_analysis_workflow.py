@@ -54,7 +54,8 @@ def fixture(root):
         shutil.copy2(PROJECT/'config'/file,root/'config'/file)
     import re
     cp=root/'config/analysis.toml'
-    cp.write_text(re.sub(r'^minimum_expected_speeches = .*$', 'minimum_expected_speeches = {}',cp.read_text(encoding='utf-8'),flags=re.M).replace('render_with_word = true','render_with_word = false'),encoding='utf-8')
+    # Legacy transport tests use fake clients only; production remains embeddings-only.
+    cp.write_text(re.sub(r'^minimum_expected_speeches = .*$', 'minimum_expected_speeches = {}',cp.read_text(encoding='utf-8'),flags=re.M).replace('render_with_word = true','render_with_word = false').replace('text_backend = "codex_subscription"','text_backend = "openai_api"').replace('api_scope = "embeddings_only"','api_scope = "text_and_embeddings"'),encoding='utf-8')
     (root/'reference').mkdir(exist_ok=True)
     cfg=config(root)
     rows=[]

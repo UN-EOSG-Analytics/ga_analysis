@@ -59,6 +59,8 @@ class OpenAIProvider:
             self.log(key, stage, upper, state='reserved')
 
     def json(self, stage, payload, schema, instructions, max_tokens=None):
+        if self.settings.get('api_scope','embeddings_only')!='text_and_embeddings':
+            raise ValueError('Text-generation API is disabled: use the Codex subscription review queue; only embeddings may use the API')
         cap = max_tokens or self.settings['max_output_tokens']
         model = self.settings['review_model']
         request = dict(model=model, stage=stage, payload=payload, schema=schema,

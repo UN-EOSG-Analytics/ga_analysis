@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-09-28T20:52:35.536072+00:00",
+  "checked_at_utc": "2026-09-28T22:02:57.526710+00:00",
   "workflow_implemented": true,
   "dependencies": {
     "openai": "2.36.0",
@@ -12,6 +12,10 @@
     "reportlab": "4.4.10"
   },
   "api_key_present": true,
+  "text_backend": "codex_subscription",
+  "api_scope": "embeddings_only",
+  "subscription_session_required": true,
+  "subscription_model_preference": "gpt-6-astra",
   "api_access_verified": true,
   "api_verification_scope": "Model metadata access only; no paid inference",
   "paid_inference_verified": false,
@@ -148,7 +152,7 @@
   ],
   "corpus_sha256": "e78fc96b4666cdd5125d640ec814a736301f530d89bba91491695734f60c2eb0",
   "review_all_speeches": true,
-  "estimated_review_cost_usd": 30.02,
+  "estimated_review_cost_usd": 0.0,
   "cost_estimate": {
     "stages": {
       "review": {
@@ -160,18 +164,21 @@
         "input_tokens_upper": 16432742,
         "scenarios": {
           "900": {
-            "lower_usd": 30.023056,
-            "upper_usd": 30.023056
+            "lower_usd": 0.0,
+            "upper_usd": 0.0
           },
           "2000": {
-            "lower_usd": 51.654556,
-            "upper_usd": 51.654556
+            "lower_usd": 0.0,
+            "upper_usd": 0.0
           },
           "3000": {
-            "lower_usd": 71.319556,
-            "upper_usd": 71.319556
+            "lower_usd": 0.0,
+            "upper_usd": 0.0
           }
-        }
+        },
+        "billing": "codex_subscription",
+        "direct_api_requests_lower": 0,
+        "direct_api_requests_upper": 0
       },
       "embeddings": {
         "requests_lower": 21,
@@ -193,7 +200,10 @@
             "lower_usd": 0.048887,
             "upper_usd": 0.048887
           }
-        }
+        },
+        "billing": "direct_api",
+        "direct_api_requests_lower": 21,
+        "direct_api_requests_upper": 21
       },
       "discovery": {
         "requests_lower": 16,
@@ -204,18 +214,21 @@
         "input_tokens_upper": 460096,
         "scenarios": {
           "900": {
-            "lower_usd": 0.139108,
-            "upper_usd": 0.458472
+            "lower_usd": 0.0,
+            "upper_usd": 0.0
           },
           "2000": {
-            "lower_usd": 0.218308,
-            "upper_usd": 0.597072
+            "lower_usd": 0.0,
+            "upper_usd": 0.0
           },
           "3000": {
-            "lower_usd": 0.290308,
-            "upper_usd": 0.723072
+            "lower_usd": 0.0,
+            "upper_usd": 0.0
           }
-        }
+        },
+        "billing": "codex_subscription",
+        "direct_api_requests_lower": 0,
+        "direct_api_requests_upper": 0
       },
       "taxonomy": {
         "requests_lower": 2,
@@ -226,18 +239,21 @@
         "input_tokens_upper": 124012,
         "scenarios": {
           "900": {
-            "lower_usd": 0.02578,
-            "upper_usd": 0.109209
+            "lower_usd": 0.0,
+            "upper_usd": 0.0
           },
           "2000": {
-            "lower_usd": 0.03568,
-            "upper_usd": 0.129009
+            "lower_usd": 0.0,
+            "upper_usd": 0.0
           },
           "3000": {
-            "lower_usd": 0.04468,
-            "upper_usd": 0.147009
+            "lower_usd": 0.0,
+            "upper_usd": 0.0
           }
-        }
+        },
+        "billing": "codex_subscription",
+        "direct_api_requests_lower": 0,
+        "direct_api_requests_upper": 0
       },
       "classification": {
         "requests_lower": 1332,
@@ -248,18 +264,21 @@
         "input_tokens_upper": 6879344,
         "scenarios": {
           "900": {
-            "lower_usd": 10.554108,
-            "upper_usd": 10.554108
+            "lower_usd": 0.0,
+            "upper_usd": 0.0
           },
           "2000": {
-            "lower_usd": 17.147508,
-            "upper_usd": 17.147508
+            "lower_usd": 0.0,
+            "upper_usd": 0.0
           },
           "3000": {
-            "lower_usd": 23.141508,
-            "upper_usd": 23.141508
+            "lower_usd": 0.0,
+            "upper_usd": 0.0
           }
-        }
+        },
+        "billing": "codex_subscription",
+        "direct_api_requests_lower": 0,
+        "direct_api_requests_upper": 0
       },
       "references": {
         "requests_lower": 12,
@@ -270,18 +289,21 @@
         "input_tokens_upper": 96240,
         "scenarios": {
           "900": {
-            "lower_usd": 0.106148,
-            "upper_usd": 0.13293
+            "lower_usd": 0.0,
+            "upper_usd": 0.0
           },
           "2000": {
-            "lower_usd": 0.165548,
-            "upper_usd": 0.20718
+            "lower_usd": 0.0,
+            "upper_usd": 0.0
           },
           "3000": {
-            "lower_usd": 0.219548,
-            "upper_usd": 0.27468
+            "lower_usd": 0.0,
+            "upper_usd": 0.0
           }
-        }
+        },
+        "billing": "codex_subscription",
+        "direct_api_requests_lower": 0,
+        "direct_api_requests_upper": 0
       },
       "report": {
         "requests_lower": 2,
@@ -292,36 +314,39 @@
         "input_tokens_upper": 62006,
         "scenarios": {
           "900": {
-            "lower_usd": 0.054605,
-            "upper_usd": 0.054605
+            "lower_usd": 0.0,
+            "upper_usd": 0.0
           },
           "2000": {
-            "lower_usd": 0.064505,
-            "upper_usd": 0.064505
+            "lower_usd": 0.0,
+            "upper_usd": 0.0
           },
           "3000": {
-            "lower_usd": 0.073505,
-            "upper_usd": 0.073505
+            "lower_usd": 0.0,
+            "upper_usd": 0.0
           }
-        }
+        },
+        "billing": "codex_subscription",
+        "direct_api_requests_lower": 0,
+        "direct_api_requests_upper": 0
       }
     },
     "total_scenarios": {
       "900": {
-        "lower_usd": 40.9517,
-        "upper_usd": 41.3813
+        "lower_usd": 0.0489,
+        "upper_usd": 0.0489
       },
       "2000": {
-        "lower_usd": 69.335,
-        "upper_usd": 69.8487
+        "lower_usd": 0.0489,
+        "upper_usd": 0.0489
       },
       "3000": {
-        "lower_usd": 95.138,
-        "upper_usd": 95.7282
+        "lower_usd": 0.0489,
+        "upper_usd": 0.0489
       }
     },
-    "lower_usd": 40.9517,
-    "upper_usd": 95.7282,
+    "lower_usd": 0.0489,
+    "upper_usd": 0.0489,
     "measured": {
       "speeches": 1888,
       "passages": 49912,
@@ -358,11 +383,11 @@
       "taxonomy_request_range": "2-4 synthesis/audit calls; nonconvergence and extra hierarchy rounds are not a guaranteed bound"
     },
     "pricing_checked": "2026-09-28",
-    "scope": "Planning scenarios, not a billing guarantee or a hard upper bound. Actual AI passage count, codebook, reasoning, retries, splits and model usage can increase cost."
+    "scope": "Direct API spending only: embeddings. Text review, classification and reporting consume Codex subscription usage; they are not unlimited and are not Python API calls. Candidate passage counts remain estimates."
   },
-  "estimate_scope": "Planning scenarios, not a billing guarantee or a hard upper bound. Actual AI passage count, codebook, reasoning, retries, splits and model usage can increase cost.",
-  "estimated_total_exceeds_default_cap": true,
-  "default_cost_limit_usd": 50.0,
+  "estimate_scope": "Direct API spending only: embeddings. Text review, classification and reporting consume Codex subscription usage; they are not unlimited and are not Python API calls. Candidate passage counts remain estimates.",
+  "estimated_total_exceeds_default_cap": false,
+  "default_cost_limit_usd": 1.0,
   "paid_calls_performed": 0,
   "price_date": "2026-09-28",
   "code_only_validation": "Actual API/model/account availability requires an authorized live run."
