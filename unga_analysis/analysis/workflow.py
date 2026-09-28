@@ -81,10 +81,9 @@ def preflight(root,allow_partial=False):
     raw_day6=list(source_dir.glob('UNGA2026_day6_EN_ASR.*'))
     active_origins={r.get('origin_file') for r in rows}
     unprocessed=[p.relative_to(root).as_posix() for p in raw_day6 if p.suffix in ('.txt','.json') and p.relative_to(root).as_posix() not in active_origins]
-    chars=sum(len(p['text']) for r in rows for p in r['passages'])
-    review_tokens=2*chars/4 # Planning estimate only, separate from conservative request reservations.
-    batches=sum((len(r['passages'])+cfg['execution']['review_batch_passages']-1)//cfg['execution']['review_batch_passages'] for r in rows)
-    rough_review=(review_tokens*cfg['execution']['review_input_usd_per_million']+2*batches*900*cfg['execution']['review_output_usd_per_million'])/1e6
+    from .costs import estimate_costs
+    costs=estimate_costs(root,rows,cfg)
+    rough_review=min(v['lower_usd'] for v in costs['stages']['review']['scenarios'].values())
     result=dict(checked_at_utc=now(),workflow_implemented=True,dependencies=packages,api_key_present=api_key_present,
         api_access_verified=bool(access_ok),api_verification_scope='Model metadata access only; no paid inference',
         paid_inference_verified=False,problems=problems,ready_for_execution=not problems and (not partial or allow_partial),
@@ -92,7 +91,8 @@ def preflight(root,allow_partial=False):
         speeches=len(rows),passages=sum(len(r['passages']) for r in rows),stages=STAGES,
         corpus_sha256=digest(root/cfg['output_directory']/'speeches.jsonl'),
         review_all_speeches=True,estimated_review_cost_usd=round(rough_review,2),
-        estimate_scope='Two full-text passes only; classification, taxonomy, report and embeddings are additional. Character/token and output assumptions are estimates.',
+        cost_estimate=costs,estimate_scope=costs['scope'],
+        estimated_total_exceeds_default_cap=costs['upper_usd']>cfg['execution']['default_cost_limit_usd'],
         default_cost_limit_usd=cfg['execution']['default_cost_limit_usd'],paid_calls_performed=0,
         price_date=cfg['execution']['pricing_checked'],code_only_validation='Actual API/model/account availability requires an authorized live run.')
     save(root/'output/workflow_readiness.json',result)
@@ -145,7 +145,7 @@ def run(root,execute=False,budget=None,allow_partial=False,final_day=None,stop_a
             memo=out/'methodology_and_cost.md'
             if memo.exists():
                 with memo.open('a',encoding='utf-8') as handle:
-                    handle.write(f"\n\n## 실행 비용\n\n사전 추정: 전체 텍스트 2회 검토 약 US${readiness['estimated_review_cost_usd']:.2f}; 임베딩·분류·보고서 비용 별도. "
+                    handle.write(f"\n\n## 실행 비용\n\n사전 전체 단계 시나리오: US${readiness['cost_estimate']['lower_usd']:.2f}–${readiness['cost_estimate']['upper_usd']:.2f}. 출력·추론 900/2000/3000토큰 등의 가정이며 보장 상한이 아니다. "
                         f"이번 실행의 정산/예약 증가분: US${costs['new_run_charged_or_reserved_usd']:.4f}. "
                         f"워크스페이스 누적 정산/예약: US${costs['cumulative_charged_or_reserved_usd']:.4f}. "
                         "실제 사용 토큰과 미확정 예약분은 cost_summary.json 및 usage.jsonl 참조. 청구서 금액으로 확정한 값은 아니다.\n")
@@ -217,4 +217,5 @@ def ancillary(root,out,speeches,reviewed,classified,taxonomy,stats,readiness,cfg
         '원문·프롬프트·모델·taxonomy가 바뀌면 관련 캐시 키가 바뀐다. Word와 PDF는 같은 내용으로 생성하며 PDF 페이지 경계와 섹션을 검사한다. Word의 실제 렌더링 검증 여부는 publication_checks.json을 따른다.']
     (out/'methodology_and_cost.md').write_text('\n\n'.join(memo)+'\n',encoding='utf-8')
     save(out/'environment.json',readiness['dependencies'])
+    if 'cost_estimate' in readiness:save(out/'cost_estimate.json',readiness['cost_estimate'])
     save(out/'analysis_config.json',cfg)

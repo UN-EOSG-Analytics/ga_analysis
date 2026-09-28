@@ -26,9 +26,9 @@ def classify_one(record,provider,taxonomy,cfg,cluster_id):
         if len(value['themes'])!=len(codes) or {t['code'] for t in value['themes']}!=set(codes):
             raise ValueError('Every taxonomy code requires exactly one explicit label')
         for theme in value['themes']:
-            if theme['value']=='Yes' and (len(theme['quote'].split())>80 or not quote_in(theme['quote'],record['text'])):
-                raise ValueError('Yes needs an exact quote from this passage')
-            if not theme['rationale'].strip():raise ValueError('Theme rationale missing')
+            if theme['value'] in ('Yes','Uncertain') and (len(theme['quote'].split())>80 or not quote_in(theme['quote'],record['text'])):
+                raise ValueError('Yes/Uncertain needs an exact quote from this passage')
+            if theme['value']!='No' and not theme['rationale'].strip():raise ValueError('Theme rationale missing')
         if len({v['mechanism'] for v in value['institutions']})!=len(value['institutions']):
             raise ValueError('Return one combined record per mechanism for this passage')
         for institution in value['institutions']:
@@ -42,6 +42,7 @@ def classify_one(record,provider,taxonomy,cfg,cluster_id):
     for pass_no in (1,2):
         instructions=SYSTEM+('Apply every code independently to this AI passage; allow multiple Yes labels. '
             'Use exact quotes of at most 80 words and do not infer themes from a cluster, country identity or frequency. '
+            'For No, use empty quote and rationale strings to avoid repetitive output. Yes and Uncertain require a source quote and concise rationale. '
             'Extract every AI governance institution/model and distinguish mention, welcome, support, request, concern, opposition and commitment. '
             'A named model (FSB/IAEA/IPCC/CERN) must actually relate to AI. Record requested functions exactly. '
             'Return one record per mechanism in this passage; adjacent context may resolve references but quotations must come from the focal text. '

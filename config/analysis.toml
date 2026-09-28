@@ -103,3 +103,14 @@ review_input_usd_per_million = 0.75
 review_output_usd_per_million = 4.50
 embedding_usd_per_million = 0.13
 pricing_sources = ["https://developers.openai.com/api/docs/models/gpt-5.4-mini", "https://developers.openai.com/api/docs/models/text-embedding-3-large"]
+
+[cost_estimation]
+chars_per_token = 4.0
+output_tokens_per_request = [900, 2000, 3000]
+assumed_theme_codes = 12
+assumed_taxonomy_chars = 12000
+classification_instruction_chars = 2200
+other_instruction_schema_chars = 3500
+protocol_overhead_tokens_per_request = 128
+assumed_report_input_chars = 120000
+assumed_web_reference_chunks = 3

@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-09-28T19:29:10.673593+00:00",
+  "checked_at_utc": "2026-09-28T20:52:35.536072+00:00",
   "workflow_implemented": true,
   "dependencies": {
     "openai": "2.36.0",
@@ -16,7 +16,7 @@
   "api_verification_scope": "Model metadata access only; no paid inference",
   "paid_inference_verified": false,
   "problems": [],
-  "ready_for_execution": true,
+  "ready_for_execution": false,
   "ready_after_final_day": true,
   "partial_years": [
     2026
@@ -148,8 +148,220 @@
   ],
   "corpus_sha256": "e78fc96b4666cdd5125d640ec814a736301f530d89bba91491695734f60c2eb0",
   "review_all_speeches": true,
-  "estimated_review_cost_usd": 26.87,
-  "estimate_scope": "Two full-text passes only; classification, taxonomy, report and embeddings are additional. Character/token and output assumptions are estimates.",
+  "estimated_review_cost_usd": 30.02,
+  "cost_estimate": {
+    "stages": {
+      "review": {
+        "requests_lower": 4370,
+        "requests_upper": 4370,
+        "input_characters_lower": 63493527,
+        "input_characters_upper": 63493527,
+        "input_tokens_lower": 16432742,
+        "input_tokens_upper": 16432742,
+        "scenarios": {
+          "900": {
+            "lower_usd": 30.023056,
+            "upper_usd": 30.023056
+          },
+          "2000": {
+            "lower_usd": 51.654556,
+            "upper_usd": 51.654556
+          },
+          "3000": {
+            "lower_usd": 71.319556,
+            "upper_usd": 71.319556
+          }
+        }
+      },
+      "embeddings": {
+        "requests_lower": 21,
+        "requests_upper": 21,
+        "input_characters_lower": 1504205,
+        "input_characters_upper": 1504205,
+        "input_tokens_lower": 376051,
+        "input_tokens_upper": 376051,
+        "scenarios": {
+          "900": {
+            "lower_usd": 0.048887,
+            "upper_usd": 0.048887
+          },
+          "2000": {
+            "lower_usd": 0.048887,
+            "upper_usd": 0.048887
+          },
+          "3000": {
+            "lower_usd": 0.048887,
+            "upper_usd": 0.048887
+          }
+        }
+      },
+      "discovery": {
+        "requests_lower": 16,
+        "requests_upper": 28,
+        "input_characters_lower": 388117,
+        "input_characters_upper": 1826046,
+        "input_tokens_lower": 99077,
+        "input_tokens_upper": 460096,
+        "scenarios": {
+          "900": {
+            "lower_usd": 0.139108,
+            "upper_usd": 0.458472
+          },
+          "2000": {
+            "lower_usd": 0.218308,
+            "upper_usd": 0.597072
+          },
+          "3000": {
+            "lower_usd": 0.290308,
+            "upper_usd": 0.723072
+          }
+        }
+      },
+      "taxonomy": {
+        "requests_lower": 2,
+        "requests_upper": 4,
+        "input_characters_lower": 93272,
+        "input_characters_upper": 494000,
+        "input_tokens_lower": 23574,
+        "input_tokens_upper": 124012,
+        "scenarios": {
+          "900": {
+            "lower_usd": 0.02578,
+            "upper_usd": 0.109209
+          },
+          "2000": {
+            "lower_usd": 0.03568,
+            "upper_usd": 0.129009
+          },
+          "3000": {
+            "lower_usd": 0.04468,
+            "upper_usd": 0.147009
+          }
+        }
+      },
+      "classification": {
+        "requests_lower": 1332,
+        "requests_upper": 1332,
+        "input_characters_lower": 26835390,
+        "input_characters_upper": 26835390,
+        "input_tokens_lower": 6879344,
+        "input_tokens_upper": 6879344,
+        "scenarios": {
+          "900": {
+            "lower_usd": 10.554108,
+            "upper_usd": 10.554108
+          },
+          "2000": {
+            "lower_usd": 17.147508,
+            "upper_usd": 17.147508
+          },
+          "3000": {
+            "lower_usd": 23.141508,
+            "upper_usd": 23.141508
+          }
+        }
+      },
+      "references": {
+        "requests_lower": 12,
+        "requests_upper": 15,
+        "input_characters_lower": 300781,
+        "input_characters_upper": 377281,
+        "input_tokens_lower": 76731,
+        "input_tokens_upper": 96240,
+        "scenarios": {
+          "900": {
+            "lower_usd": 0.106148,
+            "upper_usd": 0.13293
+          },
+          "2000": {
+            "lower_usd": 0.165548,
+            "upper_usd": 0.20718
+          },
+          "3000": {
+            "lower_usd": 0.219548,
+            "upper_usd": 0.27468
+          }
+        }
+      },
+      "report": {
+        "requests_lower": 2,
+        "requests_upper": 2,
+        "input_characters_lower": 247000,
+        "input_characters_upper": 247000,
+        "input_tokens_lower": 62006,
+        "input_tokens_upper": 62006,
+        "scenarios": {
+          "900": {
+            "lower_usd": 0.054605,
+            "upper_usd": 0.054605
+          },
+          "2000": {
+            "lower_usd": 0.064505,
+            "upper_usd": 0.064505
+          },
+          "3000": {
+            "lower_usd": 0.073505,
+            "upper_usd": 0.073505
+          }
+        }
+      }
+    },
+    "total_scenarios": {
+      "900": {
+        "lower_usd": 40.9517,
+        "upper_usd": 41.3813
+      },
+      "2000": {
+        "lower_usd": 69.335,
+        "upper_usd": 69.8487
+      },
+      "3000": {
+        "lower_usd": 95.138,
+        "upper_usd": 95.7282
+      }
+    },
+    "lower_usd": 40.9517,
+    "upper_usd": 95.7282,
+    "measured": {
+      "speeches": 1888,
+      "passages": 49912,
+      "review_requests": 4370,
+      "review_input_characters": 63493527,
+      "max_reviewed_id_list_characters": 1101,
+      "candidate_matches": 1349,
+      "candidate_unique_passages": 666,
+      "candidate_status": "unique_screening_evidence_passage_ids",
+      "candidate_text_characters": 864023,
+      "reference_status": "local_documents_measured_no_network",
+      "local_reference_requests": 12
+    },
+    "assumptions": {
+      "chars_per_token": 4.0,
+      "output_tokens_per_request": [
+        900,
+        2000,
+        3000
+      ],
+      "assumed_theme_codes": 12,
+      "assumed_taxonomy_chars": 12000,
+      "classification_instruction_chars": 2200,
+      "other_instruction_schema_chars": 3500,
+      "protocol_overhead_tokens_per_request": 128,
+      "assumed_report_input_chars": 120000,
+      "assumed_web_reference_chunks": 3,
+      "output_tokens_include_reasoning": true,
+      "screening_candidates_are_proxy_not_verified_AI": true,
+      "cache_savings_assumed": false,
+      "semantic_or_transport_retries_included": false,
+      "batch_splitting_included": false,
+      "discovery_request_range": "Largest configured cluster cut versus all-source batches of 24; later splits can add calls",
+      "taxonomy_request_range": "2-4 synthesis/audit calls; nonconvergence and extra hierarchy rounds are not a guaranteed bound"
+    },
+    "pricing_checked": "2026-09-28",
+    "scope": "Planning scenarios, not a billing guarantee or a hard upper bound. Actual AI passage count, codebook, reasoning, retries, splits and model usage can increase cost."
+  },
+  "estimate_scope": "Planning scenarios, not a billing guarantee or a hard upper bound. Actual AI passage count, codebook, reasoning, retries, splits and model usage can increase cost.",
+  "estimated_total_exceeds_default_cap": true,
   "default_cost_limit_usd": 50.0,
   "paid_calls_performed": 0,
   "price_date": "2026-09-28",

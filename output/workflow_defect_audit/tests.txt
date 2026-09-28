@@ -1,0 +1,98 @@
+Text review 8/8 speeches (cached calls reused)
+Classification 6/6 AI passages
+Text review 8/8 speeches (cached calls reused)
+Classification 6/6 AI passages
+Text review 1/1 speeches (cached calls reused)
+Text review 8/8 speeches (cached calls reused)
+Text review 8/8 speeches (cached calls reused)
+Classification 6/6 AI passages
+Text review 1/1 speeches (cached calls reused)
+Text review 1/1 speeches (cached calls reused)
+Text review 2/2 speeches (cached calls reused)
+Classification 2/2 AI passages
+Text review 10/24 speeches (cached calls reused)
+Text review 20/24 speeches (cached calls reused)
+Text review 24/24 speeches (cached calls reused)
+Classification 20/24 AI passages
+Classification 24/24 AI passages
+Text review 1/1 speeches (cached calls reused)
+Classification 1/1 AI passages
+Text review 2/2 speeches (cached calls reused)
+Classification 2/2 AI passages
+
+test_bad_embedding_dimension_rejected (test_analysis_workflow.WorkflowTests.test_bad_embedding_dimension_rejected) ... ok
+test_bad_taxonomy_quote_rejected (test_analysis_workflow.WorkflowTests.test_bad_taxonomy_quote_rejected) ... ok
+test_degenerate_discovery_reads_every_source (test_analysis_workflow.WorkflowTests.test_degenerate_discovery_reads_every_source) ... ok
+test_embedding_adapter_maps_indices_and_reuses_cache (test_analysis_workflow.WorkflowTests.test_embedding_adapter_maps_indices_and_reuses_cache) ... ok
+test_env_file_wins_and_quotes_supported (test_analysis_workflow.WorkflowTests.test_env_file_wins_and_quotes_supported) ... ok
+test_execute_flag_required_even_with_client (test_analysis_workflow.WorkflowTests.test_execute_flag_required_even_with_client) ... ok
+test_full_workflow_renders_without_changing_corpus (test_analysis_workflow.WorkflowTests.test_full_workflow_renders_without_changing_corpus) ... <frozen importlib._bootstrap>:488: DeprecationWarning: builtin type SwigPyPacked has no __module__ attribute
+<frozen importlib._bootstrap>:488: DeprecationWarning: builtin type SwigPyObject has no __module__ attribute
+<frozen importlib._bootstrap>:488: DeprecationWarning: builtin type swigvarlink has no __module__ attribute
+ok
+test_generic_requests_do_not_count_as_requests_to_un (test_analysis_workflow.WorkflowTests.test_generic_requests_do_not_count_as_requests_to_un) ... ok
+test_missing_review_coverage_cannot_be_aggregated (test_analysis_workflow.WorkflowTests.test_missing_review_coverage_cannot_be_aggregated) ... ok
+test_negative_review_disagreement_is_unknown (test_analysis_workflow.WorkflowTests.test_negative_review_disagreement_is_unknown) ... ok
+test_no_ai_is_reviewed_no_not_a_taxonomy_error (test_analysis_workflow.WorkflowTests.test_no_ai_is_reviewed_no_not_a_taxonomy_error) ... ok
+test_no_execution_means_no_model_calls (test_analysis_workflow.WorkflowTests.test_no_execution_means_no_model_calls) ... ok
+test_partial_execution_stops_before_model_calls (test_analysis_workflow.WorkflowTests.test_partial_execution_stops_before_model_calls) ... ok
+test_partial_report_blocked_but_explicit_interim_allowed (test_analysis_workflow.WorkflowTests.test_partial_report_blocked_but_explicit_interim_allowed) ... ok
+test_pending_delivery_note_prevents_negative_country_verdict (test_analysis_workflow.WorkflowTests.test_pending_delivery_note_prevents_negative_country_verdict) ... ok
+test_provider_budget_and_cache (test_analysis_workflow.WorkflowTests.test_provider_budget_and_cache) ... ok
+test_six_received_days_unlocks_session_report (test_analysis_workflow.WorkflowTests.test_six_received_days_unlocks_session_report) ... ok
+test_missing_screening_does_not_estimate_zero_classification (test_cost_estimates.CostEstimateTests.test_missing_screening_does_not_estimate_zero_classification) ... ok
+test_no_can_omit_rationale_but_yes_and_uncertain_need_evidence (test_cost_estimates.CostEstimateTests.test_no_can_omit_rationale_but_yes_and_uncertain_need_evidence) ... ok
+test_preflight_measures_exact_review_payload_and_does_not_call_client (test_cost_estimates.CostEstimateTests.test_preflight_measures_exact_review_payload_and_does_not_call_client) ... ok
+test_unique_screening_passages_and_all_stages_are_counted (test_cost_estimates.CostEstimateTests.test_unique_screening_passages_and_all_stages_are_counted) ... ok
+test_900_passage_fallback_bounds_merge_and_audit_to_cited_sources (test_discovery_bounds.DiscoveryBoundsTests.test_900_passage_fallback_bounds_merge_and_audit_to_cited_sources) ... ok
+test_nonshrinking_merge_cannot_loop_forever (test_discovery_bounds.DiscoveryBoundsTests.test_nonshrinking_merge_cannot_loop_forever) ... ok
+test_single_oversize_proposal_stops_before_any_request (test_discovery_bounds.DiscoveryBoundsTests.test_single_oversize_proposal_stops_before_any_request) ... ok
+test_uncited_source_is_rejected_even_if_present_in_original_corpus (test_discovery_bounds.DiscoveryBoundsTests.test_uncited_source_is_rejected_even_if_present_in_original_corpus) ... ok
+test_english_wins_even_when_french_has_more_text (test_language_selection.LanguageSelectionTests.test_english_wins_even_when_french_has_more_text) ... ok
+test_existing_non_english_is_quarantined_without_reprocessing (test_language_selection.LanguageSelectionTests.test_existing_non_english_is_quarantined_without_reprocessing) ... ok
+test_manifest_rejects_french_representative_with_pending_english (test_language_selection.LanguageSelectionTests.test_manifest_rejects_french_representative_with_pending_english) ... ok
+test_unreadable_english_does_not_fall_back (test_language_selection.LanguageSelectionTests.test_unreadable_english_does_not_fall_back) ... ok
+test_without_english_exactly_one_version_is_selected (test_language_selection.LanguageSelectionTests.test_without_english_exactly_one_version_is_selected) ... ok
+test_changed_source_rejected (test_pipeline.PipelineTests.test_changed_source_rejected) ... ok
+test_docx_paragraph_locations (test_pipeline.PipelineTests.test_docx_paragraph_locations) ... ok
+test_duplicate_versions_blocked (test_pipeline.PipelineTests.test_duplicate_versions_blocked) ... ok
+test_empty_source_unresolved (test_pipeline.PipelineTests.test_empty_source_unresolved) ... ok
+test_institution_records (test_pipeline.PipelineTests.test_institution_records) ... ok
+test_json_mixed_speakers_rejected (test_pipeline.PipelineTests.test_json_mixed_speakers_rejected) ... ok
+test_json_pointer_and_timestamps (test_pipeline.PipelineTests.test_json_pointer_and_timestamps) ... ok
+test_jsonl_unicode_separator_preserved (test_pipeline.PipelineTests.test_jsonl_unicode_separator_preserved) ... ok
+test_labels_need_evidence (test_pipeline.PipelineTests.test_labels_need_evidence) ... ok
+test_no_automatic_NA_to_zero (test_pipeline.PipelineTests.test_no_automatic_NA_to_zero) ... ok
+test_path_escape_rejected (test_pipeline.PipelineTests.test_path_escape_rejected) ... ok
+test_pdf_reuses_verified_text_cache (test_pipeline.PipelineTests.test_pdf_reuses_verified_text_cache) ... ok
+test_pending_year_blocked (test_pipeline.PipelineTests.test_pending_year_blocked) ... ok
+test_regional_edge_cases (test_pipeline.PipelineTests.test_regional_edge_cases) ... ok
+test_right_of_reply_rejected (test_pipeline.PipelineTests.test_right_of_reply_rejected) ... ok
+test_text_lines_and_cache (test_pipeline.PipelineTests.test_text_lines_and_cache) ... ok
+test_yearly_share_threshold (test_pipeline.PipelineTests.test_yearly_share_threshold) ... ok
+test_nfkc_dashes_and_whitespace_are_comparison_only (test_quote_comparison.QuoteComparisonTests.test_nfkc_dashes_and_whitespace_are_comparison_only) ... ok
+test_normalization_does_not_allow_paraphrases_or_discontinuous_quotes (test_quote_comparison.QuoteComparisonTests.test_normalization_does_not_allow_paraphrases_or_discontinuous_quotes) ... ok
+test_typographic_variants_match_without_changing_inputs (test_quote_comparison.QuoteComparisonTests.test_typographic_variants_match_without_changing_inputs) ... ok
+test_incomplete_request_is_cached_and_charged_once_across_resume (test_response_recovery.ResponseRecoveryTests.test_incomplete_request_is_cached_and_charged_once_across_resume) ... ok
+test_single_passage_truncation_or_refusal_is_uncertain_not_no (test_response_recovery.ResponseRecoveryTests.test_single_passage_truncation_or_refusal_is_uncertain_not_no) ... ok
+test_truncation_splits_with_context_and_resume_reuses_all_requests (test_response_recovery.ResponseRecoveryTests.test_truncation_splits_with_context_and_resume_reuses_all_requests) ... ok
+test_unclassified_refusal_does_not_become_empty_keyword_negative (test_response_recovery.ResponseRecoveryTests.test_unclassified_refusal_does_not_become_empty_keyword_negative) ... ok
+test_unknown_incomplete_reason_stops_without_inventing_verdict (test_response_recovery.ResponseRecoveryTests.test_unknown_incomplete_reason_stops_without_inventing_verdict) ... ok
+test_boundary_search_preserves_input_and_review_note (test_screening.ScreeningTests.test_boundary_search_preserves_input_and_review_note) ... ok
+test_duplicate_normalized_rows_rejected (test_screening.ScreeningTests.test_duplicate_normalized_rows_rejected) ... ok
+test_no_match_remains_pending (test_screening.ScreeningTests.test_no_match_remains_pending) ... ok
+test_pdf_and_transcript_representative_conflict_rejected (test_screening.ScreeningTests.test_pdf_and_transcript_representative_conflict_rejected) ... ok
+test_related_terms_and_context_are_distinct (test_screening.ScreeningTests.test_related_terms_and_context_are_distinct) ... ok
+test_requested_variants (test_screening.ScreeningTests.test_requested_variants) ... ok
+test_substrings_and_military_intelligence_are_not_ai (test_screening.ScreeningTests.test_substrings_and_military_intelligence_are_not_ai) ... ok
+test_unicode_and_line_breaks_preserve_offsets (test_screening.ScreeningTests.test_unicode_and_line_breaks_preserve_offsets) ... ok
+test_matched_panel_uses_each_codes_common_resolved_countries (test_theme_denominators.ThemeDenominatorTests.test_matched_panel_uses_each_codes_common_resolved_countries) ... ok
+test_one_disputed_code_preserves_other_code_denominators (test_theme_denominators.ThemeDenominatorTests.test_one_disputed_code_preserves_other_code_denominators) ... ok
+test_uncovered_concept_is_queued_without_invalidating_codes (test_theme_denominators.ThemeDenominatorTests.test_uncovered_concept_is_queued_without_invalidating_codes) ... ok
+test_zero_requires_only_its_code_no_and_complete_ai_review (test_theme_denominators.ThemeDenominatorTests.test_zero_requires_only_its_code_no_and_complete_ai_review) ... ok
+
+----------------------------------------------------------------------
+Ran 67 tests in 4.208s
+
+OK
+<sys>:0: DeprecationWarning: builtin type swigvarlink has no __module__ attribute

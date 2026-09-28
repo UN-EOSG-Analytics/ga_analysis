@@ -63,8 +63,9 @@ def reference_blocks(root,out,fetch_current=True):
                 inventory.append(dict(file=url,sha256=content_hash,status='retrieved',retrieved_at=now()))
             except Exception as exc:
                 inventory.append(dict(file=url,status='not_verified_at_run',reason=type(exc).__name__,retrieved_at=now()))
-    save(out/'reference_inventory.json',inventory)
-    save(out/'reference_blocks.json',blocks)
+    if out is not None:
+        save(out/'reference_inventory.json',inventory)
+        save(out/'reference_blocks.json',blocks)
     return blocks,inventory
 
 

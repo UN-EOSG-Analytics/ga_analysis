@@ -1,0 +1,31 @@
+{
+  "checked_at": "2026-09-28T20:57:19.858980+00:00",
+  "baseline_commit": "4cf6ad8",
+  "test_command": "python -m unittest discover -s tests -v",
+  "tests_passed": 67,
+  "tests_failed": 0,
+  "paid_requests": 0,
+  "real_openai_clients_created": 0,
+  "execute_cli_used": false,
+  "protected_integrity": {
+    "protected_files": 2009,
+    "changed": [],
+    "speeches_before": "e78fc96b4666cdd5125d640ec814a736301f530d89bba91491695734f60c2eb0",
+    "speeches_after": "e78fc96b4666cdd5125d640ec814a736301f530d89bba91491695734f60c2eb0",
+    "source_manifest_before": "93571cc9402306f3cb0b104a8c3460b51219ad6c18d23f212c3b2925b2403021",
+    "source_manifest_after": "93571cc9402306f3cb0b104a8c3460b51219ad6c18d23f212c3b2925b2403021"
+  },
+  "code_hashes": {
+    "unga_analysis/analysis/__init__.py": "59d31cd37166ab70c23835e496607e0c1bfcefc817976c76c773ffad5b04e2a0",
+    "unga_analysis/analysis/aggregation.py": "28d3819d5246509b519b4a9e0933837fc8d27adf1329ce6339d77772af3b6558",
+    "unga_analysis/analysis/classification.py": "54ffc95a5894487a7ccbc696e958b4c58dc56347a76c456426cf5d160d6f5967",
+    "unga_analysis/analysis/common.py": "23a9cac1bec2c438a56bb6a4c6a371dadbe5c643a9683ce1d3823980890ceda2",
+    "unga_analysis/analysis/costs.py": "92e4dd484e89ad57213ca1fe356cb13afc37d1aaa344731f0acbe8d665847775",
+    "unga_analysis/analysis/discovery.py": "d4d0235fb73ec00db9a41fd180a273f4029e4c242517d384f390a8259c41eafb",
+    "unga_analysis/analysis/provider.py": "b4eaa40cbbfec6b9937dd1c10740012660deb7a72542638890f214be65b0ca10",
+    "unga_analysis/analysis/references.py": "0408e62e3ed4ac15b31ec2f61b74fab5549bb473d7938ae10107ef0485ae830f",
+    "unga_analysis/analysis/reporting.py": "7db3cc55ad84206b8d3345102a5a7a1ff8ec2282e0ff191618342521c4b57ded",
+    "unga_analysis/analysis/review.py": "e850e67409f06bf73d94c5f1988e08602b5da765df995331263fc5aad2d0f1f3",
+    "unga_analysis/analysis/workflow.py": "21960892edcd886c51a5629d40f1a3fee076f157698371b01e335affc45641ce"
+  }
+}

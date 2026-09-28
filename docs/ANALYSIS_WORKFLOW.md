@@ -2,9 +2,9 @@
 
 ## 현재 상태
 
-**분석 실행 경로 구현 완료. 실제 DB 분석은 아직 실행하지 않았다.** 기존 DB는 유지했다. 로컬 테스트 47개, 가상 자료의 전체 실행, 최대 분량의 4페이지 PDF 생성, 실제 Microsoft Word의 DOCX→PDF 렌더링을 확인했다. `.env`를 읽는 무료 모델 조회에서 `text-embedding-3-large`와 `gpt-5.4-mini` 접근에 성공했다. 유료 임베딩·생성 요청으로 검증한 것은 아니다.
+**실행 전 결함 수정 완료. 실제 DB 분석은 아직 실행하지 않았다.** 기존 47개 테스트가 놓친 분모·문자 인용·응답 잘림·요청 크기·비용 추정 문제를 재현하고 수정했으며, 현재 테스트 67개가 통과했다. 보호 대상 2,009개 파일은 전후 SHA256이 같다. 이번 검증에서는 실제 OpenAI 클라이언트와 유료 호출을 사용하지 않았다. 앞선 모델 메타데이터 접근 및 Word/PDF 렌더링 기록은 유료 추론 검증과 구분한다.
 
-최신 기계 판독 결과: `output/workflow_readiness.json`. 검증 근거: `output/workflow_validation/validation.json`. 가짜 결과는 `output/workflow_validation/`에 있으며 실제 분석 결과로 사용하지 않는다.
+최신 기계 판독 결과: `output/workflow_readiness.json`. 결함별 재현·수정 근거: [WORKFLOW_DEFECT_AUDIT.md](WORKFLOW_DEFECT_AUDIT.md) 및 `output/workflow_defect_audit/`. 이전 가상 보고서와 Word 렌더링 기록은 `output/workflow_validation/`에 있으며 실제 분석 결과가 아니다.
 
 ## 사용자가 할 일
 
@@ -34,7 +34,30 @@ python -m unga_analysis analyze --execute --max-cost-usd 50
 python -m unga_analysis analyze --execute --max-cost-usd 50 --final-day "C:\경로\2026_day6_en.txt"
 ```
 
-`--execute`는 API 실행 승인이다. 기본 누적 비용 상한은 **US$50**이며 이는 예상 청구액이 아니다. 현재 사전 계산의 전체 텍스트 2회 검토 비용은 약 **$27**이고, 분류·주제 도출·임베딩·보고서 비용은 추가된다. 문자→토큰 및 출력 길이 가정에 따른 추정이며 실제 토큰 사용량을 기록한다. 가격 근거는 `config/analysis.toml`에 있다. 시작 지시 전 유료 요청은 하지 않는다.
+`--execute`는 API 실행 승인이다. 기본 누적 비용 상한은 **US$50**이며 자동으로 올리지 않는다. 기존 약 $27 추정은 전체 검토 두 번만 포함하고 요청 구성 비용도 빠져 있어 폐기했다. 현재 DB의 실제 검토 요청은 **4,370회**, payload·지시·schema 합계 **63,493,527자**이다. 고유 스크리닝 후보 **666구절**을 분류 대상의 대용값으로 쓰며(매칭 1,349건과 다름), 실제 AI 판정 수는 실행 후에 알 수 있다.
+
+출력·추론 합계가 요청당 900/2,000/3,000토큰인 시나리오의 **전체 단계** 추정은 각각 **$40.95–41.38 / $69.34–69.85 / $95.14–95.73**이다. 상세 단계별 표는 결함 검증 문서와 `output/workflow_defect_audit/cost_scenarios.csv`에 있다. 4자/토큰, 주제 12개·taxonomy 12,000자 등의 가정은 `config/analysis.toml`의 `[cost_estimation]`에 있다. 입력 크기는 단계별로 실측과 가정을 구분하며, 요약 대상 로컬 참고자료도 읽어서 계산한다. 분류 재시도·잘림으로 인한 분할·추가 통합·3,000토큰 초과 출력은 범위에 포함하지 않아 **보장 상한이 아니다**. 단가는 기존 설정에 기록된 값을 사용했으며 이번 작업에서 재조회하지 않았다.
+
+## 소액 시범 실행 — 사용자 승인 후에만
+
+아래 명령은 절차 안내이며 이번 검증에서 실행하지 않았다. 예산을 승인한 뒤 문맥 검토부터 소액으로 측정할 수 있다.
+
+```powershell
+python -m unga_analysis review --execute --allow-partial --max-cost-usd 3
+```
+
+상한에서 멈추어도 요청 캐시는 보존된다. 상한은 워크스페이스 **누적** 기준이라 이미 사용한 금액에 $3를 추가하는 옵션이 아니다. 실제 응답당 비용은 다음처럼 확인한다.
+
+```powershell
+$usage = Get-Content output/analysis/api_cache/usage.jsonl | ConvertFrom-Json
+$usage | Where-Object state -eq 'settled' | Group-Object stage | ForEach-Object {
+    $cost = $_.Group | Measure-Object actual_cost_usd -Sum -Average
+    [pscustomobject]@{ stage = $_.Name; requests = $_.Count; total_usd = $cost.Sum; mean_usd = $cost.Average }
+}
+$usage | Measure-Object charged_or_reserved_usd -Sum
+```
+
+실제 정산과 미확정 예약을 분리해서 본다. 초기 연도 위주의 review 시범 결과만으로 AI 언급이 많은 연설·분류·보고서 비용까지 확정하지 않는다. 사용자가 전체 상한을 정한 뒤 같은 명령을 새 상한으로 재개한다. 세 번째 조정 판정은 추가하지 않았으며 불일치는 Uncertain을 유지한다.
 
 Day 6 없이 실행하면 전체 연도 보고서를 만들기 전에 차단한다. 사용자가 부분 집계를 원할 때만 `--allow-partial`을 추가한다. 6일분이 정상적으로 분리·입력되면 수집 조건은 충족된 것으로 처리하되, 모든 회원국의 참가 명단 대조 완료를 주장하지 않는다.
 

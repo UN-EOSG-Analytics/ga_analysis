@@ -11,6 +11,26 @@ SCHEMA = obj(complete=BOOL, reviewed_passage_ids=arr(STR), findings=arr(obj(
     mention_type={'type':'string','enum':['explicit','contextual','uncertain']}, quote=STR, rationale=STR)))
 
 
+
+def review_request(speech,start,end,pass_no):
+    passages=speech['passages'];batch=passages[start:end]
+    payload = dict(speech_id=speech['speech_id'], source_sha256=speech['sha256'],
+                   source_type=speech['source_type'], source_review_notes=speech.get('source_review_notes'),
+                   passages=[{'passage_id':p['passage_id'],'text':p['text']} for p in batch],
+                   preceding_context=passages[start-1]['text'] if start else '',
+                   following_context=passages[end]['text'] if end<len(passages) else '')
+
+    instructions=SYSTEM+('Review EVERY passage for substantive AI discussion, including variants such as superintelligence, '
+        'machine learning, AI systems and AI governance institutions. Generic digitalization, military intelligence, '
+        'ordinary algorithms or autonomous weapons without an AI link are not sufficient. The list of reviewed IDs '
+        'must cover all passages. Return findings for Yes or Uncertain ONLY; omission from findings means you '
+        'reviewed that passage and found No AI evidence. Never omit an unreviewed passage. Use exact quotes of at most 80 words. '
+        'A source-review note is a limitation, not evidence of delivered wording. ')
+    instructions += ('First reviewer: inspect full context and detect indirect but unambiguous AI discussions.' if pass_no==1 else
+                     'Second reviewer: independently audit the full text, including possible keyword misses and ambiguous abbreviations. Do not assume a prior verdict.')
+    return payload,instructions
+
+
 def review_speech(speech, provider, cfg):
     passages = speech['passages']
     results = []
@@ -18,11 +38,7 @@ def review_speech(speech, provider, cfg):
     def review_batch(start,end,pass_no):
         batch = passages[start:end]
         by_id = {p['passage_id']:p for p in batch}
-        payload = dict(speech_id=speech['speech_id'], source_sha256=speech['sha256'],
-                       source_type=speech['source_type'], source_review_notes=speech.get('source_review_notes'),
-                       passages=[{'passage_id':p['passage_id'],'text':p['text']} for p in batch],
-                       preceding_context=passages[start-1]['text'] if start else '',
-                       following_context=passages[end]['text'] if end<len(passages) else '')
+        payload,instructions=review_request(speech,start,end,pass_no)
 
         def validate(result):
             ids = result['reviewed_passage_ids']
@@ -36,14 +52,6 @@ def review_speech(speech, provider, cfg):
                     raise ValueError('Every finding must quote a contiguous exact span from its identified passage')
                 if not f['rationale'].strip():
                     raise ValueError('Missing rationale')
-        instructions=SYSTEM+('Review EVERY passage for substantive AI discussion, including variants such as superintelligence, '
-            'machine learning, AI systems and AI governance institutions. Generic digitalization, military intelligence, '
-            'ordinary algorithms or autonomous weapons without an AI link are not sufficient. The list of reviewed IDs '
-            'must cover all passages. Return findings for Yes or Uncertain ONLY; omission from findings means you '
-            'reviewed that passage and found No AI evidence. Never omit an unreviewed passage. Use exact quotes of at most 80 words. '
-            'A source-review note is a limitation, not evidence of delivered wording. ')
-        instructions += ('First reviewer: inspect full context and detect indirect but unambiguous AI discussions.' if pass_no==1 else
-                         'Second reviewer: independently audit the full text, including possible keyword misses and ambiguous abbreviations. Do not assume a prior verdict.')
         try:
             value=ask(provider, f'review_{pass_no}', payload, SCHEMA, instructions, validate)
             return {f['passage_id']:f for f in value['findings']}
