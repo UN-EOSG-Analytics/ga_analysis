@@ -1,0 +1,56 @@
+{
+  "request_hash": "73af0fd32e70f36b64f970b8d5be20a242f0bdbf5e26f80e3292e28c8ec24fc7",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "root"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2024_SVN:1",
+      "verbatim_en_2024_SVN:2",
+      "verbatim_en_2024_SVN:3",
+      "verbatim_en_2024_SVN:4",
+      "verbatim_en_2024_SVN:5",
+      "verbatim_en_2024_SVN:6",
+      "verbatim_en_2024_SVN:7",
+      "verbatim_en_2024_SVN:8",
+      "verbatim_en_2024_SVN:9",
+      "verbatim_en_2024_SVN:10",
+      "verbatim_en_2024_SVN:11",
+      "verbatim_en_2024_SVN:12",
+      "verbatim_en_2024_SVN:13",
+      "verbatim_en_2024_SVN:14",
+      "verbatim_en_2024_SVN:15",
+      "verbatim_en_2024_SVN:16",
+      "verbatim_en_2024_SVN:17",
+      "verbatim_en_2024_SVN:18",
+      "verbatim_en_2024_SVN:19",
+      "verbatim_en_2024_SVN:20",
+      "verbatim_en_2024_SVN:21",
+      "verbatim_en_2024_SVN:22",
+      "verbatim_en_2024_SVN:23",
+      "verbatim_en_2024_SVN:24",
+      "verbatim_en_2024_SVN:25"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2024_SVN:15",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "As catastrophic floods devastated my home country last year, we initiated the development of an advanced digital solution linking Earth observation with supercomputing and artificial intelligence. The system will help us predict floods and droughts and improve our resilience. We are ready to share that solution with our partners globally.",
+        "rationale": "Describes AI-assisted climate disaster prediction and offers international sharing in connection with the UN Early Warnings for All initiative."
+      },
+      {
+        "passage_id": "verbatim_en_2024_SVN:16",
+        "status": "Yes",
+        "mention_type": "contextual",
+        "quote": "I call upon all to form a global partnership around Early Warnings for All to help overcome those challenges.",
+        "rationale": "Continues the preceding AI-enabled early warning system discussion, addressing monitoring capacity and access gaps through international partnership."
+      }
+    ]
+  }
+}

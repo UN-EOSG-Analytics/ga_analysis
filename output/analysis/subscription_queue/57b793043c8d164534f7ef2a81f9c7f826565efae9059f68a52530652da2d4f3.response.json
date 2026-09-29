@@ -1,0 +1,31 @@
+{
+  "request_hash": "57b793043c8d164534f7ef2a81f9c7f826565efae9059f68a52530652da2d4f3",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_c"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2025_DMA:1",
+      "verbatim_en_2025_DMA:2",
+      "verbatim_en_2025_DMA:3",
+      "verbatim_en_2025_DMA:4",
+      "verbatim_en_2025_DMA:5",
+      "verbatim_en_2025_DMA:6",
+      "verbatim_en_2025_DMA:7"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2025_DMA:1",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "They are at the frontier of the artificial intelligence and other emerging technologies with expanding digital infrastructure and rising standards of living.",
+        "rationale": "Uses unequal participation in AI development to illustrate the global divide in opportunity and prosperity."
+      }
+    ]
+  }
+}

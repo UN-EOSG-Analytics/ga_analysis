@@ -1,0 +1,59 @@
+{
+  "request_hash": "127c8ab994f2dedc16b9abf4779d3e2a0cd7467177842185caffdf9ef30a2989",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_a"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2024_NGA:1",
+      "verbatim_en_2024_NGA:2",
+      "verbatim_en_2024_NGA:3",
+      "verbatim_en_2024_NGA:4",
+      "verbatim_en_2024_NGA:5",
+      "verbatim_en_2024_NGA:6",
+      "verbatim_en_2024_NGA:7",
+      "verbatim_en_2024_NGA:8",
+      "verbatim_en_2024_NGA:9",
+      "verbatim_en_2024_NGA:10",
+      "verbatim_en_2024_NGA:11",
+      "verbatim_en_2024_NGA:12",
+      "verbatim_en_2024_NGA:13",
+      "verbatim_en_2024_NGA:14",
+      "verbatim_en_2024_NGA:15",
+      "verbatim_en_2024_NGA:16",
+      "verbatim_en_2024_NGA:17",
+      "verbatim_en_2024_NGA:18",
+      "verbatim_en_2024_NGA:19",
+      "verbatim_en_2024_NGA:20",
+      "verbatim_en_2024_NGA:21",
+      "verbatim_en_2024_NGA:22",
+      "verbatim_en_2024_NGA:23",
+      "verbatim_en_2024_NGA:24",
+      "verbatim_en_2024_NGA:25",
+      "verbatim_en_2024_NGA:26",
+      "verbatim_en_2024_NGA:27",
+      "verbatim_en_2024_NGA:28"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2024_NGA:21",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "With the evolution of artificial intelligence, that divide risks becoming wider still.",
+        "rationale": "Identifies AI development as a risk of widening the North-South digital divide."
+      },
+      {
+        "passage_id": "verbatim_en_2024_NGA:22",
+        "status": "Yes",
+        "mention_type": "contextual",
+        "quote": "eliminating barriers to the digital economy in Africa, such as the high costs of Internet services and intellectual property rights.",
+        "rationale": "Completes the preceding proposal for UN action responding to the digital divide that AI could widen; the later cryptocurrency discussion is separate."
+      }
+    ]
+  }
+}

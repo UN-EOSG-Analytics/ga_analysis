@@ -1,0 +1,43 @@
+{
+  "request_hash": "873f5c9110f678c1f5f7d4cd1a738070923f13c09d9710c9af20137155623a7e",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_a"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_COD:1",
+      "verbatim_en_2026_COD:2",
+      "verbatim_en_2026_COD:3",
+      "verbatim_en_2026_COD:4",
+      "verbatim_en_2026_COD:5",
+      "verbatim_en_2026_COD:6",
+      "verbatim_en_2026_COD:7",
+      "verbatim_en_2026_COD:8",
+      "verbatim_en_2026_COD:9",
+      "verbatim_en_2026_COD:10",
+      "verbatim_en_2026_COD:11",
+      "verbatim_en_2026_COD:12"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_COD:2",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "The DRC supports the UN global dialogue on AI governance, as well as the creation of a global capacity building fund. digital divide must not become an intelligence divide.",
+        "rationale": "Supports inclusive AI governance and capacity building for developing countries."
+      },
+      {
+        "passage_id": "verbatim_en_2026_COD:6",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "The energy transition, the electrification of transport, energy storage, as well as the expansion of digital and AI infrastructure are accelerating demand for copper, cobalt, lithium, nickel, and other critical minerals.",
+        "rationale": "Links AI infrastructure expansion to critical mineral demand and equitable resource governance."
+      }
+    ]
+  }
+}

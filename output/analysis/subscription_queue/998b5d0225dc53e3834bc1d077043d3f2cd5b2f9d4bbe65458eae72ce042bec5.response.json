@@ -1,0 +1,30 @@
+{
+  "request_hash": "998b5d0225dc53e3834bc1d077043d3f2cd5b2f9d4bbe65458eae72ce042bec5",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_b"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_BWA:1",
+      "verbatim_en_2026_BWA:2",
+      "verbatim_en_2026_BWA:3",
+      "verbatim_en_2026_BWA:4",
+      "verbatim_en_2026_BWA:5",
+      "verbatim_en_2026_BWA:6"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_BWA:5",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "We also call on the United Nations to continue to explore the creation of an inclusive international framework on emerging technologies, including artificial intelligence.",
+        "rationale": "Advocates inclusive AI standards and safeguards with meaningful developing-country participation and rights protection."
+      }
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "request_hash": "85c9141e24d01c46879becb0c1d7c755cfc2696104e3a5fa519abbce0d9315bc",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_c"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_MNE:1",
+      "verbatim_en_2026_MNE:2",
+      "verbatim_en_2026_MNE:3",
+      "verbatim_en_2026_MNE:4",
+      "verbatim_en_2026_MNE:5",
+      "verbatim_en_2026_MNE:6",
+      "verbatim_en_2026_MNE:7",
+      "verbatim_en_2026_MNE:8"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_MNE:4",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Climate change is testing the resilience of states and of societies, and artificial intelligence and other emerging technologies are creating risks at a speed that national frameworks alone cannot adequately address.",
+        "rationale": "Argues that AI risks require effective multilateral responses."
+      },
+      {
+        "passage_id": "verbatim_en_2026_MNE:6",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "And artificial intelligence will increasingly shape those possibilities.",
+        "rationale": "Links AI to the preceding discussion of young people's educational and economic opportunities."
+      },
+      {
+        "passage_id": "verbatim_en_2026_MNE:7",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "But AI presents not only an extraordinary opportunity, it also creates a responsibility to ensure that technological transformation remains human-centered and rights-based.",
+        "rationale": "Calls for AI development centered on people and rights."
+      }
+    ]
+  }
+}

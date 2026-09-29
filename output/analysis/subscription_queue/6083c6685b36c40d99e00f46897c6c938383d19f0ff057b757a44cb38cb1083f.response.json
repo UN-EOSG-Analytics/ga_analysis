@@ -1,0 +1,33 @@
+{
+  "request_hash": "6083c6685b36c40d99e00f46897c6c938383d19f0ff057b757a44cb38cb1083f",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_c"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2025_SAU:1",
+      "verbatim_en_2025_SAU:2",
+      "verbatim_en_2025_SAU:3",
+      "verbatim_en_2025_SAU:4",
+      "verbatim_en_2025_SAU:5",
+      "verbatim_en_2025_SAU:6",
+      "verbatim_en_2025_SAU:7",
+      "verbatim_en_2025_SAU:8",
+      "verbatim_en_2025_SAU:9"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2025_SAU:4",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "The Kingdom also warns of the dangers of the military uses of artificial intelligence applications and autonomous weapons. and the need to enact international laws regulating them.",
+        "rationale": "Warns about military AI and calls for international regulation."
+      }
+    ]
+  }
+}

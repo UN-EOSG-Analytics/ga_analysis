@@ -1,0 +1,31 @@
+{
+  "request_hash": "e92a3328e9f57f1379a76a7c9e9707c66dadc8c9c94b13bb861a2e92fad5d8da",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_c"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_CYP:1",
+      "verbatim_en_2026_CYP:2",
+      "verbatim_en_2026_CYP:3",
+      "verbatim_en_2026_CYP:4",
+      "verbatim_en_2026_CYP:5",
+      "verbatim_en_2026_CYP:6",
+      "verbatim_en_2026_CYP:7"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_CYP:1",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Technology, including artificial intelligence, is advancing at rapid speed.",
+        "rationale": "Identifies rapid AI development among transformations requiring multilateral institutions to adapt."
+      }
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "request_hash": "ddbce54d40294a1d4d1051922e754ef8643f731ea272510c2ae1acd4cd9740c6",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_b"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_GBR:1",
+      "verbatim_en_2026_GBR:2",
+      "verbatim_en_2026_GBR:3",
+      "verbatim_en_2026_GBR:4",
+      "verbatim_en_2026_GBR:5",
+      "verbatim_en_2026_GBR:6",
+      "verbatim_en_2026_GBR:7",
+      "verbatim_en_2026_GBR:8",
+      "verbatim_en_2026_GBR:9",
+      "verbatim_en_2026_GBR:10"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_GBR:2",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "On top of that, we have seen cyber attacks on companies and institutions, and we know that AI will multiply the threat.",
+        "rationale": "Identifies AI as amplifying cyber and information threats."
+      },
+      {
+        "passage_id": "verbatim_en_2026_GBR:4",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "It is already speeding up cancer diagnosis in the UK, but AI has the potential to go further, not just to help prevent and treat cancer, but to help cure it.",
+        "rationale": "Introduces frontier AI as a priority and describes health applications."
+      },
+      {
+        "passage_id": "verbatim_en_2026_GBR:5",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "I am announcing today that we are developing a new AI defense partnership with the United States to protect our critical national infrastructure.",
+        "rationale": "Announces AI security cooperation and a G20 AI focus while addressing AI risks, jobs, education and governance."
+      },
+      {
+        "passage_id": "verbatim_en_2026_GBR:6",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "we will work towards agreeing a single set of global principles and standards to ensure the transparency and access we need to increase our preparedness and to ensure that AI development is safe.",
+        "rationale": "Proposes global AI safety standards and possible domestic legislation."
+      }
+    ]
+  }
+}

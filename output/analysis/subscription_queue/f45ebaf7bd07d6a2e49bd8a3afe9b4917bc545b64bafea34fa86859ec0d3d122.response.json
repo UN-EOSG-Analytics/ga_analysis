@@ -1,0 +1,30 @@
+{
+  "request_hash": "f45ebaf7bd07d6a2e49bd8a3afe9b4917bc545b64bafea34fa86859ec0d3d122",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_b"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_NGA:1",
+      "verbatim_en_2026_NGA:2",
+      "verbatim_en_2026_NGA:3",
+      "verbatim_en_2026_NGA:4",
+      "verbatim_en_2026_NGA:5",
+      "verbatim_en_2026_NGA:6"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_NGA:3",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "We can deploy artificial intelligence to wage war or use it to transform healthcare, education, agriculture, governance, and economic productivity.",
+        "rationale": "Contrasts AI's harmful and beneficial uses and calls for investment and cooperation to direct it toward human development."
+      }
+    ]
+  }
+}

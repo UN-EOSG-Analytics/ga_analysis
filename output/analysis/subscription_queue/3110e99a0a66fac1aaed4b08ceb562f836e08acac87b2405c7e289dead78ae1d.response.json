@@ -1,0 +1,32 @@
+{
+  "request_hash": "3110e99a0a66fac1aaed4b08ceb562f836e08acac87b2405c7e289dead78ae1d",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_b"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_MOZ:1",
+      "verbatim_en_2026_MOZ:2",
+      "verbatim_en_2026_MOZ:3",
+      "verbatim_en_2026_MOZ:4",
+      "verbatim_en_2026_MOZ:5",
+      "verbatim_en_2026_MOZ:6",
+      "verbatim_en_2026_MOZ:7",
+      "verbatim_en_2026_MOZ:8"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_MOZ:7",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "We need to have investment in connectivity, computing capacity, scientific research, training of young people in Africa, technology transfer, governance, ethics for AI",
+        "rationale": "Calls for AI governance and ethics alongside African technical capacity and equitable technology partnerships."
+      }
+    ]
+  }
+}

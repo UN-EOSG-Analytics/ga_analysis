@@ -1,0 +1,32 @@
+{
+  "request_hash": "5a2f183c55066369b7bc616b7578cbd9cc6859e80ec96d3811692e76bcbd29a0",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_b"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_BRA:1",
+      "verbatim_en_2026_BRA:2",
+      "verbatim_en_2026_BRA:3",
+      "verbatim_en_2026_BRA:4",
+      "verbatim_en_2026_BRA:5",
+      "verbatim_en_2026_BRA:6",
+      "verbatim_en_2026_BRA:7",
+      "verbatim_en_2026_BRA:8"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_BRA:5",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "it would be an unforgivable historical omission not to address the challenge of regulating the big techs and artificial intelligence.",
+        "rationale": "Calls for AI regulation and ethical accountability, criticizing companies for bypassing UN AI governance."
+      }
+    ]
+  }
+}

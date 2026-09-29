@@ -1,0 +1,30 @@
+{
+  "request_hash": "800e47b202f393441b49093cc1a9e6f46f394c72e9a2242c40618a5bd0161e4e",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "root"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2025_FSM:1",
+      "verbatim_en_2025_FSM:2",
+      "verbatim_en_2025_FSM:3",
+      "verbatim_en_2025_FSM:4",
+      "verbatim_en_2025_FSM:5",
+      "verbatim_en_2025_FSM:6"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2025_FSM:5",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "While AI holds great promise for economic development, it also carries the risk that must be carefully managed. The inclusive and constructive dialogue that shaped this resolution offers a model for future discussions including those on peace, security, and the responsible military use of AI.",
+        "rationale": "Supports UN-led inclusive AI dialogue, economic opportunities, risk management, safe trustworthy systems and responsible military use; notes co-sponsorship of the first UN AI resolution."
+      }
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "request_hash": "1111a469260cd6912a8cdcd391e5284e71954dcf0be82a5f537211b855d79a48",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_c"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2025_BGD:1",
+      "verbatim_en_2025_BGD:2",
+      "verbatim_en_2025_BGD:3",
+      "verbatim_en_2025_BGD:4",
+      "verbatim_en_2025_BGD:5",
+      "verbatim_en_2025_BGD:6",
+      "verbatim_en_2025_BGD:7",
+      "verbatim_en_2025_BGD:8",
+      "verbatim_en_2025_BGD:9",
+      "verbatim_en_2025_BGD:10",
+      "verbatim_en_2025_BGD:11",
+      "verbatim_en_2025_BGD:12",
+      "verbatim_en_2025_BGD:13",
+      "verbatim_en_2025_BGD:14"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2025_BGD:6",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "We are investing in their skills in information technology, artificial intelligence, renewable energy, and green innovation.",
+        "rationale": "AI skills investment is part of youth development policy."
+      },
+      {
+        "passage_id": "verbatim_en_2025_BGD:7",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Quantum computing, artificial intelligence, large language models, modern communication systems, these must not be biased, and their benefits must be shared fairly with all.",
+        "rationale": "Calls for fair access and freedom from bias in AI and language models."
+      },
+      {
+        "passage_id": "verbatim_en_2025_BGD:11",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "The problem has been compounded by the deliberate use of fake news and artificial intelligence-driven deepfakes, which make the situation even more dangerous.",
+        "rationale": "Identifies AI deepfakes as worsening disinformation."
+      },
+      {
+        "passage_id": "verbatim_en_2025_BGD:12",
+        "status": "Yes",
+        "mention_type": "contextual",
+        "quote": "We must work together to confront these distortions before they erode trust among people and weaken the bonds of social harmony.",
+        "rationale": "Continues the preceding explicit AI deepfake discussion with a call for collective action."
+      }
+    ]
+  }
+}

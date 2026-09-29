@@ -1,0 +1,31 @@
+{
+  "request_hash": "5f6b56a1a5038cd5328a1b302e59afb8c38b4e7ab4327ca4e4e48dd7a1d46336",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_c"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2025_EGY:1",
+      "verbatim_en_2025_EGY:2",
+      "verbatim_en_2025_EGY:3",
+      "verbatim_en_2025_EGY:4",
+      "verbatim_en_2025_EGY:5",
+      "verbatim_en_2025_EGY:6",
+      "verbatim_en_2025_EGY:7"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2025_EGY:6",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "We also look forward to enhancing efforts for developing countries to have access to AI and digital technologies.",
+        "rationale": "Calls for enhanced access to AI for developing countries."
+      }
+    ]
+  }
+}

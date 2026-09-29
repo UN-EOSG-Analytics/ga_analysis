@@ -1,0 +1,31 @@
+{
+  "request_hash": "c9e0be04f8e566ebaf13d343c12b0daa693da80441de00bd28c7c26c71417858",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_b"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_TUV:1",
+      "verbatim_en_2026_TUV:2",
+      "verbatim_en_2026_TUV:3",
+      "verbatim_en_2026_TUV:4",
+      "verbatim_en_2026_TUV:5",
+      "verbatim_en_2026_TUV:6",
+      "verbatim_en_2026_TUV:7"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_TUV:2",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Artificial intelligence is changing the way economies and society function.",
+        "rationale": "Identifies AI-driven transformation and calls for managing change to protect people and national self-determination."
+      }
+    ]
+  }
+}

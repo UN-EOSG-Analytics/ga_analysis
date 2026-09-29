@@ -5,7 +5,8 @@ import math
 
 from ..io import read_jsonl,digest
 from .review import review_request,SCHEMA
-from .classification import schema as classification_schema
+from .classification import schema as classification_schema,classification_batches
+from .scope import review_plan
 
 
 def estimate_costs(root,speeches,cfg):
@@ -23,15 +24,16 @@ def estimate_costs(root,speeches,cfg):
             candidates=list(read_jsonl(candidate_path));ids={e['passage_id'] for r in candidates for e in r['evidence']}
             if ids.issubset(all_ids):candidate_ids=ids;candidate_status='unique_screening_evidence_passage_ids';matches=len(candidates)
     review_chars=0;review_calls=0;max_id_output_chars=0;batch=cfg['execution']['review_batch_passages']
+    plan=review_plan(speeches,cfg,root);selection={r['speech_id']:r for r in plan['rows']}
     schema_chars=len(json.dumps(SCHEMA))
     for speech in speeches:
         for start in range(0,len(speech['passages']),batch):
-            for pass_no in (1,2):
+            for pass_no in range(1,selection[speech['speech_id']]['passes']+1):
                 payload,instructions=review_request(speech,start,min(start+batch,len(speech['passages'])),pass_no)
                 review_chars+=len(json.dumps(payload,ensure_ascii=False))+len(instructions)+schema_chars
                 max_id_output_chars=max(max_id_output_chars,len(json.dumps([p['passage_id'] for p in payload['passages']])))
                 review_calls+=1
-    focal_chars=0;classify_chars=0;embedding_chars=0
+    focal_chars=0;classify_chars=0;embedding_chars=0;classification_records=[]
     codes=[f'THEME{i:02}' for i in range(settings['assumed_theme_codes'])]
     classification_overhead=settings['assumed_taxonomy_chars']+settings['classification_instruction_chars']+len(json.dumps(classification_schema(cfg,codes)))
     for speech in speeches:
@@ -41,6 +43,7 @@ def estimate_costs(root,speeches,cfg):
             before=passages[i-1]['text'] if i else '';after=passages[i+1]['text'] if i+1<len(passages) else ''
             payload=dict(passage_id=p['passage_id'],source_sha256=speech['sha256'],text=p['text'],preceding_context=before,following_context=after,source_review_notes=speech.get('source_review_notes'))
             classify_chars+=2*(len(json.dumps(payload,ensure_ascii=False))+classification_overhead)
+            classification_records.append(dict(payload,context_before=before,context_after=after))
             text='\n'.join([before[-600:],p['text'],after[:600]]).strip()
             if len(text.encode('utf-8'))>8000:text=p['text']
             embedding_chars+=len(text);focal_chars+=len(p['text'])
@@ -67,7 +70,12 @@ def estimate_costs(root,speeches,cfg):
     stage('discovery',lo,hi,min(normal_chars,fallback_chars),max(normal_chars,fallback_chars))
     merge_chars=min(cfg['discovery']['taxonomy_payload_max_chars'],settings['assumed_taxonomy_chars']+2*len(codes)*(focal_chars/n if n else 0))
     stage('taxonomy',2 if n else 0,4 if n else 0,2*(merge_chars+other) if n else 0,4*(cfg['discovery']['taxonomy_payload_max_chars']+other) if n else 0)
-    stage('classification',2*n,2*n,classify_chars,classify_chars)
+    classify_calls=2*n
+    if cfg['classification'].get('batch_passages',1)>1:
+        groups=classification_batches(classification_records,{'planning_placeholder':'x'*settings['assumed_taxonomy_chars']},cfg)
+        classify_calls=2*len(groups)
+        classify_chars=2*sum(len(json.dumps(payload,ensure_ascii=False))+settings['classification_instruction_chars']+len(json.dumps(classification_schema(cfg,codes))) for _,payload in groups)
+    stage('classification',classify_calls,classify_calls,classify_chars,classify_chars)
     reference_calls=0;reference_chars=0;reference_status='local_documents_measured_no_network'
     try:
         from .references import reference_blocks
@@ -99,9 +107,11 @@ def estimate_costs(root,speeches,cfg):
         lower_usd=min(v['lower_usd'] for v in totals.values()),upper_usd=max(v['upper_usd'] for v in totals.values()),
         measured=dict(speeches=len(speeches),passages=len(all_ids),review_requests=review_calls,review_input_characters=review_chars,
             max_reviewed_id_list_characters=max_id_output_chars,candidate_matches=matches,candidate_unique_passages=n,candidate_status=candidate_status,
-            candidate_text_characters=focal_chars,reference_status=reference_status,local_reference_requests=reference_calls),
+            candidate_text_characters=focal_chars,reference_status=reference_status,local_reference_requests=reference_calls,
+            review_selected_speeches=plan['selected_speeches'],review_unselected_speeches=plan['unselected_speeches'],review_scope=plan['scope']),
         assumptions=dict(settings,output_tokens_include_reasoning=True,screening_candidates_are_proxy_not_verified_AI=True,
             cache_savings_assumed=False,semantic_or_transport_retries_included=False,batch_splitting_included=False,
+            negative_audit_expansion_included=False,classification_batch_passages=cfg['classification'].get('batch_passages',1),
             discovery_request_range='Largest configured cluster cut versus all-source batches of 24; later splits can add calls',
             taxonomy_request_range='2-4 synthesis/audit calls; nonconvergence and extra hierarchy rounds are not a guaranteed bound'),
         pricing_checked=cfg['execution']['pricing_checked'],scope=('Direct API spending only: embeddings. Text review, classification and reporting consume Codex subscription usage; they are not unlimited and are not Python API calls. Candidate passage counts remain estimates.' if subscription else

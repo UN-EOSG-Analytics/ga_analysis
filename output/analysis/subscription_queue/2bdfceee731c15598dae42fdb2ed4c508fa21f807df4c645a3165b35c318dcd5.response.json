@@ -1,0 +1,39 @@
+{
+  "request_hash": "2bdfceee731c15598dae42fdb2ed4c508fa21f807df4c645a3165b35c318dcd5",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_c"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_VEN:1",
+      "verbatim_en_2026_VEN:2",
+      "verbatim_en_2026_VEN:3",
+      "verbatim_en_2026_VEN:4",
+      "verbatim_en_2026_VEN:5",
+      "verbatim_en_2026_VEN:6",
+      "verbatim_en_2026_VEN:7",
+      "verbatim_en_2026_VEN:8"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_VEN:1",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "These are peace, development, equality, the climate crisis, free trade, energy security and, more recently, artificial intelligence.",
+        "rationale": "Introduces AI among global policy challenges and national positions developed in the next passage."
+      },
+      {
+        "passage_id": "verbatim_en_2026_VEN:2",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Governments, the technology sector, and the scientific community have the overwhelming responsibility to ensure that we do not stray from the constructive and vital purposes of IA. the AI rather, it must benefit the citizens.",
+        "rationale": "Calls for AI serving citizens while avoiding a wider digital divide."
+      }
+    ]
+  }
+}

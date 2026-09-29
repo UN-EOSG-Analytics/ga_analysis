@@ -1,0 +1,30 @@
+{
+  "request_hash": "4b902c668f64db1ff3cb3076d00b6439d0c521f9e5f29cc50a463619332a9486",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_b"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_LCA:1",
+      "verbatim_en_2026_LCA:2",
+      "verbatim_en_2026_LCA:3",
+      "verbatim_en_2026_LCA:4",
+      "verbatim_en_2026_LCA:5",
+      "verbatim_en_2026_LCA:6"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_LCA:5",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Saint Lucia therefore calls for strong global standards on data protection, privacy and artificial intelligence, equitable access to digital infrastructure, cybersecurity and affordable connectivity.",
+        "rationale": "Calls for inclusive AI governance and equitable access to prevent concentrated power, exploitation and wider inequality."
+      }
+    ]
+  }
+}

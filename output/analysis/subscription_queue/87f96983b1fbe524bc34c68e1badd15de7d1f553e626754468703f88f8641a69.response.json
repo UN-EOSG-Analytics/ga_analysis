@@ -1,0 +1,30 @@
+{
+  "request_hash": "87f96983b1fbe524bc34c68e1badd15de7d1f553e626754468703f88f8641a69",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_b"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2025_FSM:1",
+      "verbatim_en_2025_FSM:2",
+      "verbatim_en_2025_FSM:3",
+      "verbatim_en_2025_FSM:4",
+      "verbatim_en_2025_FSM:5",
+      "verbatim_en_2025_FSM:6"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2025_FSM:5",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "global cooperation is essential to ensure that AI systems remain safe, secure, and trustworthy.",
+        "rationale": "Highlights co-sponsorship of the UN AI resolution, economic benefits, risk management and responsible military AI use."
+      }
+    ]
+  }
+}

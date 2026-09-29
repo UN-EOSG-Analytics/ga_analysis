@@ -1,0 +1,64 @@
+{
+  "request_hash": "bc85f202a27ea1a4c801a0bc8ebd9a954d2a6544d1f2a107e9b2106566fc5f35",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_a"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2019_ESP:1",
+      "verbatim_en_2019_ESP:2",
+      "verbatim_en_2019_ESP:3",
+      "verbatim_en_2019_ESP:4",
+      "verbatim_en_2019_ESP:5",
+      "verbatim_en_2019_ESP:6",
+      "verbatim_en_2019_ESP:7",
+      "verbatim_en_2019_ESP:8",
+      "verbatim_en_2019_ESP:9",
+      "verbatim_en_2019_ESP:10",
+      "verbatim_en_2019_ESP:11",
+      "verbatim_en_2019_ESP:12",
+      "verbatim_en_2019_ESP:13",
+      "verbatim_en_2019_ESP:14",
+      "verbatim_en_2019_ESP:15",
+      "verbatim_en_2019_ESP:16",
+      "verbatim_en_2019_ESP:17",
+      "verbatim_en_2019_ESP:18",
+      "verbatim_en_2019_ESP:19",
+      "verbatim_en_2019_ESP:20",
+      "verbatim_en_2019_ESP:21",
+      "verbatim_en_2019_ESP:22",
+      "verbatim_en_2019_ESP:23",
+      "verbatim_en_2019_ESP:24",
+      "verbatim_en_2019_ESP:25",
+      "verbatim_en_2019_ESP:26",
+      "verbatim_en_2019_ESP:27",
+      "verbatim_en_2019_ESP:28",
+      "verbatim_en_2019_ESP:29",
+      "verbatim_en_2019_ESP:30",
+      "verbatim_en_2019_ESP:31",
+      "verbatim_en_2019_ESP:32",
+      "verbatim_en_2019_ESP:33",
+      "verbatim_en_2019_ESP:34",
+      "verbatim_en_2019_ESP:35",
+      "verbatim_en_2019_ESP:36",
+      "verbatim_en_2019_ESP:37",
+      "verbatim_en_2019_ESP:38",
+      "verbatim_en_2019_ESP:39",
+      "verbatim_en_2019_ESP:40"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2019_ESP:2",
+        "status": "Uncertain",
+        "mention_type": "uncertain",
+        "quote": "a robot is operating with pinpoint accuracy on a patient in a Tokyo hospital, saving him from what years ago would have been a certain death.",
+        "rationale": "Describes beneficial robotic surgery, but the supplied text does not establish whether the robot uses AI or is controlled by a human surgeon."
+      }
+    ]
+  }
+}

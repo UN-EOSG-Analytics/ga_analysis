@@ -1,0 +1,39 @@
+{
+  "request_hash": "5899052c68751e71d57a0a1d4a48290738b9cbabef96c86d23d54ffbc0064429",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_c"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_JAM:1",
+      "verbatim_en_2026_JAM:2",
+      "verbatim_en_2026_JAM:3",
+      "verbatim_en_2026_JAM:4",
+      "verbatim_en_2026_JAM:5",
+      "verbatim_en_2026_JAM:6",
+      "verbatim_en_2026_JAM:7",
+      "verbatim_en_2026_JAM:8"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_JAM:1",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "New technologies, including artificial intelligence, offer extraordinary promise while presenting risks we have not yet fully understood.",
+        "rationale": "Recognizes AI benefits and incompletely understood risks as a global governance challenge."
+      },
+      {
+        "passage_id": "verbatim_en_2026_JAM:5",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Jamaica sees digital transformation and responsible artificial intelligence as powerful tools. They can enhance productivity, innovation, and sustainable development for our people. Indeed, they can be an equalizing force for the world. We must therefore not allow AI to deepen old inequalities and create an entirely new global divide.",
+        "rationale": "Advocates responsible AI for development, equitable capacity and governance safeguards."
+      }
+    ]
+  }
+}

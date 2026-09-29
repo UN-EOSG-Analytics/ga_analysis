@@ -1,0 +1,30 @@
+{
+  "request_hash": "8f67d4d5de27c5169ad130e6cca5289e0ae149b25280cc8f227406990cbe9dac",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_c"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2025_BLZ:1",
+      "verbatim_en_2025_BLZ:2",
+      "verbatim_en_2025_BLZ:3",
+      "verbatim_en_2025_BLZ:4",
+      "verbatim_en_2025_BLZ:5",
+      "verbatim_en_2025_BLZ:6"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2025_BLZ:4",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Taiwan is a thriving democracy with global leadership in high-tech innovation, semiconductors, AI, biotechnology, renewable energy, all vital to global supply chain security and sustainable development.",
+        "rationale": "Attributes AI leadership to Taiwan and links it to supply chains and sustainable development."
+      }
+    ]
+  }
+}

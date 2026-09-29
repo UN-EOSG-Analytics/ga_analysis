@@ -1,0 +1,30 @@
+{
+  "request_hash": "c2b9e5d86d6929cec0a7c303a7ed0aba1dc6cf33ee12ecb19abda7e67ab16ad7",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "root"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2025_PHL:1",
+      "verbatim_en_2025_PHL:2",
+      "verbatim_en_2025_PHL:3",
+      "verbatim_en_2025_PHL:4",
+      "verbatim_en_2025_PHL:5",
+      "verbatim_en_2025_PHL:6"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2025_PHL:4",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Artificial intelligence offers promise, but carries profound risks. We must help build digital societies that bridges development divides rather than widen them, conforming with safeguards against misuse.",
+        "rationale": "Calls for AI-related development benefits, closing divides and safeguards against misuse."
+      }
+    ]
+  }
+}

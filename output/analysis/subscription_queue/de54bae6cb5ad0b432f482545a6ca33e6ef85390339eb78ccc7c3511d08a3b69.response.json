@@ -1,0 +1,37 @@
+{
+  "request_hash": "de54bae6cb5ad0b432f482545a6ca33e6ef85390339eb78ccc7c3511d08a3b69",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_b"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2025_BHR:1",
+      "verbatim_en_2025_BHR:2",
+      "verbatim_en_2025_BHR:3",
+      "verbatim_en_2025_BHR:4",
+      "verbatim_en_2025_BHR:5",
+      "verbatim_en_2025_BHR:6"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2025_BHR:4",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "We also seek to promote digital innovation and artificial intelligence with the aim of providing a safe, stable, prosperous, and sustainable environment.",
+        "rationale": "Promotes AI through international partnerships for security, prosperity and sustainability."
+      },
+      {
+        "passage_id": "verbatim_en_2025_BHR:5",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "called for the adoption of an international convention to regulate and govern the development of AI.",
+        "rationale": "Recalls Bahrain's proposal for an international AI governance convention."
+      }
+    ]
+  }
+}

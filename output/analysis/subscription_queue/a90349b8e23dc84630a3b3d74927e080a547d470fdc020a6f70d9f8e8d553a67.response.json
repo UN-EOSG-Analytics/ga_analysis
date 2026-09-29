@@ -1,0 +1,39 @@
+{
+  "request_hash": "a90349b8e23dc84630a3b3d74927e080a547d470fdc020a6f70d9f8e8d553a67",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_c"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_SMR:1",
+      "verbatim_en_2026_SMR:2",
+      "verbatim_en_2026_SMR:3",
+      "verbatim_en_2026_SMR:4",
+      "verbatim_en_2026_SMR:5",
+      "verbatim_en_2026_SMR:6",
+      "verbatim_en_2026_SMR:7",
+      "verbatim_en_2026_SMR:8"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_SMR:6",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "The modernization and expansion of nuclear arsenal, together with growing military expenditure and the rapid development of artificial intelligences and cyber capabilities, increase the risk of escalation.",
+        "rationale": "Links AI capability growth to nuclear escalation risk."
+      },
+      {
+        "passage_id": "verbatim_en_2026_SMR:7",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Artificial intelligence and emerging technology offer enormous opportunity, but they also create new risks. Technology must serve humanity. It must not be used to undermine human rights. international peace or international humanitarian law.",
+        "rationale": "Discusses AI opportunities, risks and the need for rules protecting rights and peace."
+      }
+    ]
+  }
+}

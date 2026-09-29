@@ -1,0 +1,30 @@
+{
+  "request_hash": "6f4c5d8d1adf73463a2df2bf5d491de439e77a0a0f8496c7c77bd2b39f1b8ebb",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_c"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2025_ECU:1",
+      "verbatim_en_2025_ECU:2",
+      "verbatim_en_2025_ECU:3",
+      "verbatim_en_2025_ECU:4",
+      "verbatim_en_2025_ECU:5",
+      "verbatim_en_2025_ECU:6"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2025_ECU:4",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Emerging technologies, in particular artificial intelligence, offer up unprecedented opportunities for human progress. However, they also offer up significant risks for security, equity and human rights.",
+        "rationale": "Advocates ethical multilateral AI governance and inclusive access to manage benefits and rights risks."
+      }
+    ]
+  }
+}

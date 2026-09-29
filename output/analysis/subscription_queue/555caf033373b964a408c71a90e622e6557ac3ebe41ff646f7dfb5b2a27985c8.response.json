@@ -1,0 +1,70 @@
+{
+  "request_hash": "555caf033373b964a408c71a90e622e6557ac3ebe41ff646f7dfb5b2a27985c8",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_a"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2024_CHL:1",
+      "verbatim_en_2024_CHL:2",
+      "verbatim_en_2024_CHL:3",
+      "verbatim_en_2024_CHL:4",
+      "verbatim_en_2024_CHL:5",
+      "verbatim_en_2024_CHL:6",
+      "verbatim_en_2024_CHL:7",
+      "verbatim_en_2024_CHL:8",
+      "verbatim_en_2024_CHL:9",
+      "verbatim_en_2024_CHL:10",
+      "verbatim_en_2024_CHL:11",
+      "verbatim_en_2024_CHL:12",
+      "verbatim_en_2024_CHL:13",
+      "verbatim_en_2024_CHL:14",
+      "verbatim_en_2024_CHL:15",
+      "verbatim_en_2024_CHL:16",
+      "verbatim_en_2024_CHL:17",
+      "verbatim_en_2024_CHL:18",
+      "verbatim_en_2024_CHL:19",
+      "verbatim_en_2024_CHL:20",
+      "verbatim_en_2024_CHL:21",
+      "verbatim_en_2024_CHL:22",
+      "verbatim_en_2024_CHL:23",
+      "verbatim_en_2024_CHL:24",
+      "verbatim_en_2024_CHL:25",
+      "verbatim_en_2024_CHL:26",
+      "verbatim_en_2024_CHL:27",
+      "verbatim_en_2024_CHL:28",
+      "verbatim_en_2024_CHL:29",
+      "verbatim_en_2024_CHL:30",
+      "verbatim_en_2024_CHL:31",
+      "verbatim_en_2024_CHL:32"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2024_CHL:24",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Chile is also committed to the development of regulations for guiding the progress of artificial intelligence in an ethical, transparent and responsible manner, respecting human rights, protecting personal data and promoting the integrity of information and its use in the digital era.",
+        "rationale": "Advocates AI regulation and identifies training-data bias and inadequate corporate self-regulation."
+      },
+      {
+        "passage_id": "verbatim_en_2024_CHL:25",
+        "status": "Yes",
+        "mention_type": "contextual",
+        "quote": "If we do not take action now, for example by demanding algorithm traceability, data audits and corrective human interventions, we might see a new kind of extermination in a few years",
+        "rationale": "Continues the preceding AI bias discussion with specific safeguards against exclusion of cultures."
+      },
+      {
+        "passage_id": "verbatim_en_2024_CHL:26",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Artificial intelligence and new technologies can be a significant contribution to the world.",
+        "rationale": "Discusses AI benefits and invokes the first law of robotics to prevent human harm."
+      }
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "request_hash": "bff847b2f5a1bd6e179460caeb4e5ffa5fc0ff0dd6508847c1d85a2c21a69cb0",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_b"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2025_MKD:1",
+      "verbatim_en_2025_MKD:2",
+      "verbatim_en_2025_MKD:3",
+      "verbatim_en_2025_MKD:4",
+      "verbatim_en_2025_MKD:5",
+      "verbatim_en_2025_MKD:6"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2025_MKD:1",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "urgent challenges such as peace and security, climate change and environmental destruction, artificial intelligence and growing inequalities",
+        "rationale": "Identifies AI among urgent global challenges requiring collective action."
+      },
+      {
+        "passage_id": "verbatim_en_2025_MKD:5",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "my country and I support the proposal to make artificial intelligence a priority of the 80th session.",
+        "rationale": "Supports prioritizing AI at the UN because of its transformative opportunities and civilizational risks."
+      }
+    ]
+  }
+}

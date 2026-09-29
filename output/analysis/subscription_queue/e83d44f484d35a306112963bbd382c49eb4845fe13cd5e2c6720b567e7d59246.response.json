@@ -1,0 +1,55 @@
+{
+  "request_hash": "e83d44f484d35a306112963bbd382c49eb4845fe13cd5e2c6720b567e7d59246",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "root"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2023_CHN:1",
+      "verbatim_en_2023_CHN:2",
+      "verbatim_en_2023_CHN:3",
+      "verbatim_en_2023_CHN:4",
+      "verbatim_en_2023_CHN:5",
+      "verbatim_en_2023_CHN:6",
+      "verbatim_en_2023_CHN:7",
+      "verbatim_en_2023_CHN:8",
+      "verbatim_en_2023_CHN:9",
+      "verbatim_en_2023_CHN:10",
+      "verbatim_en_2023_CHN:11",
+      "verbatim_en_2023_CHN:12",
+      "verbatim_en_2023_CHN:13",
+      "verbatim_en_2023_CHN:14",
+      "verbatim_en_2023_CHN:15",
+      "verbatim_en_2023_CHN:16",
+      "verbatim_en_2023_CHN:17",
+      "verbatim_en_2023_CHN:18",
+      "verbatim_en_2023_CHN:19",
+      "verbatim_en_2023_CHN:20",
+      "verbatim_en_2023_CHN:21",
+      "verbatim_en_2023_CHN:22",
+      "verbatim_en_2023_CHN:23",
+      "verbatim_en_2023_CHN:24"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2023_CHN:8",
+        "status": "Yes",
+        "mention_type": "contextual",
+        "quote": "China supports the United Nations in serving as",
+        "rationale": "Begins a sentence completed immediately afterward supporting the UN as the principal channel for AI governance."
+      },
+      {
+        "passage_id": "verbatim_en_2023_CHN:9",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "the main channel to create a widely accepted artificial intelligence governance framework, standards and norms, on the basis of full respect for the governance principles and practices of all countries.",
+        "rationale": "Supports UN-led AI governance frameworks, standards and norms respecting national governance approaches."
+      }
+    ]
+  }
+}

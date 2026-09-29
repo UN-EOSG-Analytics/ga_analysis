@@ -1,0 +1,31 @@
+{
+  "request_hash": "d40c08c4143e8887cd39bb5b84d2aad07100f98c6bba8997e1616267dc1b2bb6",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_c"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_VCT:1",
+      "verbatim_en_2026_VCT:2",
+      "verbatim_en_2026_VCT:3",
+      "verbatim_en_2026_VCT:4",
+      "verbatim_en_2026_VCT:5",
+      "verbatim_en_2026_VCT:6",
+      "verbatim_en_2026_VCT:7"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_VCT:7",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "and when the benefits of new technology, such as artificial intelligence, is shared rather than hoarded and priced out of reach.",
+        "rationale": "Calls for accessible, equitably shared AI benefits to rebuild trust in international cooperation."
+      }
+    ]
+  }
+}

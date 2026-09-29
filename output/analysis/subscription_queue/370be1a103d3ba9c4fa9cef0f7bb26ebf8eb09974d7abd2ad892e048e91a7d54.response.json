@@ -1,0 +1,31 @@
+{
+  "request_hash": "370be1a103d3ba9c4fa9cef0f7bb26ebf8eb09974d7abd2ad892e048e91a7d54",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_a"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2025_GUY:1",
+      "verbatim_en_2025_GUY:2",
+      "verbatim_en_2025_GUY:3",
+      "verbatim_en_2025_GUY:4",
+      "verbatim_en_2025_GUY:5",
+      "verbatim_en_2025_GUY:6",
+      "verbatim_en_2025_GUY:7"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2025_GUY:6",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "We recognize the indispensable nature of AI in our collective future. However, while there are immense benefits, there is no clarity on equity, access, and applicability. regulations, ethical standards, and governance mechanisms are urgently needed.",
+        "rationale": "Discusses AI energy demand, a national hyperscale data center, benefits and equitable AI governance."
+      }
+    ]
+  }
+}

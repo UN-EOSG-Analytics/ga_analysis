@@ -1,0 +1,31 @@
+{
+  "request_hash": "f6095c67ea2299983169fab708a7503f3eb6fd2fffab96b5e39b39b2ffba18bf",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_c"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2025_ESP:1",
+      "verbatim_en_2025_ESP:2",
+      "verbatim_en_2025_ESP:3",
+      "verbatim_en_2025_ESP:4",
+      "verbatim_en_2025_ESP:5",
+      "verbatim_en_2025_ESP:6",
+      "verbatim_en_2025_ESP:7"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2025_ESP:5",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "There are other just as important challenges, including managing the impact of the transformative revolution known as artificial intelligence which can accelerate progress on the 2030 agenda if we know how to direct it towards a fair and equitable digital transformation",
+        "rationale": "Calls for managing AI transformation to advance equitable development and the 2030 agenda."
+      }
+    ]
+  }
+}

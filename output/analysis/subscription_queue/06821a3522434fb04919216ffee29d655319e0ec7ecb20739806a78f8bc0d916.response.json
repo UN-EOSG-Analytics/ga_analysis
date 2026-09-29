@@ -1,0 +1,30 @@
+{
+  "request_hash": "06821a3522434fb04919216ffee29d655319e0ec7ecb20739806a78f8bc0d916",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "root"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_LSO:1",
+      "verbatim_en_2026_LSO:2",
+      "verbatim_en_2026_LSO:3",
+      "verbatim_en_2026_LSO:4",
+      "verbatim_en_2026_LSO:5",
+      "verbatim_en_2026_LSO:6"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_LSO:3",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "As the first member state to pilot the UN Blueprint for National AI and Data Strategies from design into national implementation, Lesotho stands ready to share the lessons of that journey with fellow developing countries, particularly across Africa and among least developed and landlocked developing countries.",
+        "rationale": "Describes national UN-supported AI strategy implementation, coordinated country-owned support, sharing with developing countries, and willingness to contribute to the proposed Global Fund for AI capacity building."
+      }
+    ]
+  }
+}

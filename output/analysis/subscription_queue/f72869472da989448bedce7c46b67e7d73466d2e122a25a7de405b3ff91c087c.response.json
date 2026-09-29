@@ -1,0 +1,40 @@
+{
+  "request_hash": "f72869472da989448bedce7c46b67e7d73466d2e122a25a7de405b3ff91c087c",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_a"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_JPN:1",
+      "verbatim_en_2026_JPN:2",
+      "verbatim_en_2026_JPN:3",
+      "verbatim_en_2026_JPN:4",
+      "verbatim_en_2026_JPN:5",
+      "verbatim_en_2026_JPN:6",
+      "verbatim_en_2026_JPN:7",
+      "verbatim_en_2026_JPN:8",
+      "verbatim_en_2026_JPN:9"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_JPN:7",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Japan took the initiative to launch the Hiroshima AI Process, establishing the world's first international world's first international principles and code of conduct to govern generative AI.",
+        "rationale": "Discusses AI opportunities, security and misinformation risks, and the Hiroshima AI governance process."
+      },
+      {
+        "passage_id": "verbatim_en_2026_JPN:8",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "In parallel, Japan has been working with like-minded partners and Global South partners to co-create a safe, secure, and trustworthy AI ecosystem and will enhance cooperation on safety to respond to the risks of highly capable frontier AI.",
+        "rationale": "Commits to international frontier AI safety cooperation and hosting an AI summit."
+      }
+    ]
+  }
+}

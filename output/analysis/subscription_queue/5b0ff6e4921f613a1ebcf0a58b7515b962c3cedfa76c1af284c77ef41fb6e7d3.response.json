@@ -1,0 +1,30 @@
+{
+  "request_hash": "5b0ff6e4921f613a1ebcf0a58b7515b962c3cedfa76c1af284c77ef41fb6e7d3",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_b"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2025_BRA:1",
+      "verbatim_en_2025_BRA:2",
+      "verbatim_en_2025_BRA:3",
+      "verbatim_en_2025_BRA:4",
+      "verbatim_en_2025_BRA:5",
+      "verbatim_en_2025_BRA:6"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2025_BRA:3",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "To mitigate the risks of artificial intelligence, we are committed to building multilateral governance in line with the global digital compact that was approved in this plenary last year.",
+        "rationale": "Commits to multilateral AI governance under the Global Digital Compact to mitigate risks."
+      }
+    ]
+  }
+}

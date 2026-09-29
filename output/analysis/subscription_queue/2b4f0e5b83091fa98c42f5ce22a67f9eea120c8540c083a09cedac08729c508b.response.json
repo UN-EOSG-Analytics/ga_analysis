@@ -1,0 +1,37 @@
+{
+  "request_hash": "2b4f0e5b83091fa98c42f5ce22a67f9eea120c8540c083a09cedac08729c508b",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "root"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2025_MNE:1",
+      "verbatim_en_2025_MNE:2",
+      "verbatim_en_2025_MNE:3",
+      "verbatim_en_2025_MNE:4",
+      "verbatim_en_2025_MNE:5",
+      "verbatim_en_2025_MNE:6"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2025_MNE:4",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Dear colleagues, rapid technological change, and particularly the rise of the artificial intelligence, must be harnessed in a safe, responsible, and inclusive manner.",
+        "rationale": "Advocates safe, responsible and inclusive development and use of AI."
+      },
+      {
+        "passage_id": "verbatim_en_2025_MNE:5",
+        "status": "Yes",
+        "mention_type": "contextual",
+        "quote": "Technology should be an evolutionary gift to humanity, developed, founded, and guided with social responsibility, serving the greater good.",
+        "rationale": "Direct continuation of the preceding AI statement, specifying social responsibility and public benefit; subsequent human rights and UN reform topics are broader."
+      }
+    ]
+  }
+}

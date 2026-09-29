@@ -1,0 +1,56 @@
+{
+  "request_hash": "cf2fda22688685628277441d9da2ca647d66ef0584cf50b991d01fe54026a9fb",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_c"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_PRY:1",
+      "verbatim_en_2026_PRY:2",
+      "verbatim_en_2026_PRY:3",
+      "verbatim_en_2026_PRY:4",
+      "verbatim_en_2026_PRY:5",
+      "verbatim_en_2026_PRY:6",
+      "verbatim_en_2026_PRY:7",
+      "verbatim_en_2026_PRY:8",
+      "verbatim_en_2026_PRY:9",
+      "verbatim_en_2026_PRY:10",
+      "verbatim_en_2026_PRY:11"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_PRY:4",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "It affects the microchips that power industry, defense, and artificial intelligence.",
+        "rationale": "Links Taiwan Strait security to semiconductor supplies supporting AI."
+      },
+      {
+        "passage_id": "verbatim_en_2026_PRY:6",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "No force in our time is as profound as artificial intelligence. We can already see its power in warfare, in the economy, and in our everyday lives. Unlike tools that merely transmitted what we said, these systems are part and parcel of the decisions that we make.",
+        "rationale": "Describes AI transformation of warfare, the economy and decision making."
+      },
+      {
+        "passage_id": "verbatim_en_2026_PRY:7",
+        "status": "Yes",
+        "mention_type": "contextual",
+        "quote": "However, we're not blind to the risks, but we",
+        "rationale": "Continues the preceding AI discussion and introduces risks elaborated in the following passage."
+      },
+      {
+        "passage_id": "verbatim_en_2026_PRY:8",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Artificial intelligence must serve human dignity and not replace it.",
+        "rationale": "Calls for AI aligned with human dignity, freedom and democratic accountability."
+      }
+    ]
+  }
+}

@@ -30,6 +30,7 @@ def aggregate(speeches,reviews,classified,taxonomy,cfg,out,allow_partial=False):
     if {r['passage_id'] for r in classified}!=positives or len(classified)!=len(positives):raise ValueError('Classification must cover each verified AI passage exactly once')
     for r in reviews:by_speech[r['speech_id']].append(r)
     for r in classified:labels[r['speech_id']].append(r)
+    scoped=any(r['ai_status']=='Pending' for r in reviews)
     codes=taxonomy['codes'];matrix=[];evidence=[];institutions=[];keywords=[]
     for s in speeches:
         rr=by_speech[s['speech_id']];cc=labels[s['speech_id']]
@@ -59,8 +60,13 @@ def aggregate(speeches,reviews,classified,taxonomy,cfg,out,allow_partial=False):
     for year in sorted({s['year'] for s in speeches}):
         rr=[r for r in matrix if r['year']==year]
         def ai_counts(group):
-            n=sum(r['ai_status']=='Yes' for r in group);N=sum(r['ai_status'] in ('Yes','No') for r in group)
-            return dict(n=n,N=N,pct=100*n/N if N else None,obtained=len(group),uncertain=len(group)-N,partial=coverage[str(year)]['partial'])
+            n=sum(r['ai_status']=='Yes' for r in group);resolved=sum(r['ai_status'] in ('Yes','No') for r in group)
+            N=len(group) if scoped else resolved
+            return dict(n=n,N=N,pct=100*n/N if N else None,obtained=len(group),uncertain=len(group)-resolved,
+                resolved_N=resolved,fully_reviewed=sum(r['ai_review_complete'] for r in group),
+                measure='verified_detection_lower_bound' if scoped else 'resolved_speech_share',
+                denominator='all obtained addresses; unreviewed remain unknown, not No' if scoped else 'AI-resolved addresses',
+                partial=coverage[str(year)]['partial'])
         annual.append(dict(year=year,**ai_counts(rr)))
         for region in sorted({s['analytical_group'] for s in speeches}):
             regional.append(dict(year=year,region=region,**ai_counts([r for r in rr if r['region']==region])))
@@ -117,6 +123,8 @@ def aggregate(speeches,reviews,classified,taxonomy,cfg,out,allow_partial=False):
                  institution_stance_counts=stance_counts,keywords=keyword_trends,matched_panel=matched,
                  unresolved_ai_speeches=sum(r['ai_status']=='Uncertain' for r in matrix),
                  incomplete_theme_speeches=sum(r['ai_status']=='Yes' and not r['theme_review_complete'] for r in matrix),
-                 review_method='two automated source-grounded reviews; no claim of human verification',human_reviewed=False)
+                 review_scope='screened candidate speeches plus stratified negative audit; expansion after audit hits' if scoped else 'all speeches attempted',
+                 annual_measure='verified_detection_lower_bound' if scoped else 'resolved_speech_share',
+                 review_method='automated full-speech review; second review on an identified sample; two classification passes; no human verification',human_reviewed=False)
     save(out/'aggregates.json',summary)
     return summary,evidence,institutions,matrix

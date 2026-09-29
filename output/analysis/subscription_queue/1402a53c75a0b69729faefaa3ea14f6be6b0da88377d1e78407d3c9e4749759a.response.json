@@ -1,0 +1,30 @@
+{
+  "request_hash": "1402a53c75a0b69729faefaa3ea14f6be6b0da88377d1e78407d3c9e4749759a",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "root"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_URY:1",
+      "verbatim_en_2026_URY:2",
+      "verbatim_en_2026_URY:3",
+      "verbatim_en_2026_URY:4",
+      "verbatim_en_2026_URY:5",
+      "verbatim_en_2026_URY:6"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_URY:3",
+        "status": "Uncertain",
+        "mention_type": "uncertain",
+        "quote": "While we discuss growth, technology, artificial intelligence, the energy transition or new forms of production, there are millions of people who continue to ask themselves far more basic questions.",
+        "rationale": "Explicit AI is one item in a contrast between global policy debates and unmet basic needs. The passage advocates people-centered technology generally but gives no AI-specific action or effect, making substantive AI relevance uncertain."
+      }
+    ]
+  }
+}

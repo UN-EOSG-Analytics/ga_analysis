@@ -1,0 +1,30 @@
+{
+  "request_hash": "d1be98759ce7ff0a37783801c14082fdc4955868bd867b78ecfa262f9fdfe03f",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_c"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_KAZ:1",
+      "verbatim_en_2026_KAZ:2",
+      "verbatim_en_2026_KAZ:3",
+      "verbatim_en_2026_KAZ:4",
+      "verbatim_en_2026_KAZ:5",
+      "verbatim_en_2026_KAZ:6"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_KAZ:6",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "AI must remain human-centered, safe, and subject to meaningful human oversight. These risks are particularly serious in the military domain, where the use of AI in warfare, and cyber operations could have far-reaching consequences for international stability.",
+        "rationale": "Describes domestic AI capacity and legislation, and calls for international governance of inequality and military risks."
+      }
+    ]
+  }
+}

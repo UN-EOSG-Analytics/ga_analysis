@@ -1,0 +1,43 @@
+{
+  "request_hash": "184b4aaeb86f180674f0ee1e1ff3cd0423dc575da8154e444bc8280b632dbde5",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "root"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_CHE:1",
+      "verbatim_en_2026_CHE:2",
+      "verbatim_en_2026_CHE:3",
+      "verbatim_en_2026_CHE:4",
+      "verbatim_en_2026_CHE:5"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_CHE:1",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "technological upheavals, notably artificial intelligence, which are often advancing faster than our collective ability to assess their implications.",
+        "rationale": "Identifies rapid AI-related transformations and insufficient collective assessment capacity."
+      },
+      {
+        "passage_id": "verbatim_en_2026_CHE:3",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "AI is the most obvious illustration of this. It offers considerable new possibilities in science, the economy, medicine, education, and the management of resources.",
+        "rationale": "Discusses AI benefits and a skills/infrastructure divide, urging progress to broaden opportunities without widening gaps."
+      },
+      {
+        "passage_id": "verbatim_en_2026_CHE:4",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "This means that as many countries and societies as possible must be able to benefit from advances in AI, develop their skills and contribute to the debate on the rules that will govern its development and use.",
+        "rationale": "Supports inclusive AI benefit sharing, capacity and governance participation, announces a Geneva AI summit, and calls for responsible innovation and multilateral institutions."
+      }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "request_hash": "1fa2506807b0cfc0e7d049c6511e7fe0d5f7a589fcb0402e903044950c02b4db",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_c"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_EGY:1",
+      "verbatim_en_2026_EGY:2",
+      "verbatim_en_2026_EGY:3",
+      "verbatim_en_2026_EGY:4",
+      "verbatim_en_2026_EGY:5",
+      "verbatim_en_2026_EGY:6",
+      "verbatim_en_2026_EGY:7",
+      "verbatim_en_2026_EGY:8",
+      "verbatim_en_2026_EGY:9"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_EGY:6",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Artificial intelligence should also reflect the linguistic and cultural diversity of the world. Arab and African languages and communities should receive fair representation in data and models.",
+        "rationale": "Calls for inclusive AI governance, representative data and models, and describes Egypt's national AI strategy."
+      }
+    ]
+  }
+}

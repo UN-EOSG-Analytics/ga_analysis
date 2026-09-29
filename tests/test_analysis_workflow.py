@@ -22,6 +22,8 @@ class FixtureProvider:
     def __init__(self):self.calls=[]
     def json(self,stage,payload,schema,instructions,max_tokens=None):
         self.calls.append(stage)
+        if stage.startswith('classify_batch_'):
+            return dict(results=[dict(passage_id=p['passage_id'],classification=self.json('classify_'+stage[-1],dict(p,taxonomy=payload['taxonomy']),{},instructions)) for p in payload['passages']])
         if stage.startswith('review_'):
             findings=[]
             for p in payload['passages']:
@@ -56,6 +58,8 @@ def fixture(root):
     cp=root/'config/analysis.toml'
     # Legacy transport tests use fake clients only; production remains embeddings-only.
     cp.write_text(re.sub(r'^minimum_expected_speeches = .*$', 'minimum_expected_speeches = {}',cp.read_text(encoding='utf-8'),flags=re.M).replace('render_with_word = true','render_with_word = false').replace('text_backend = "codex_subscription"','text_backend = "openai_api"').replace('api_scope = "embeddings_only"','api_scope = "text_and_embeddings"'),encoding='utf-8')
+    # Legacy tests retain exhaustive two-pass semantics; scoped/batched tests opt in explicitly.
+    cp.write_text(cp.read_text(encoding='utf-8').replace('scope = "screened_speeches"','scope = "full"').replace('primary_passes = 1','primary_passes = 2').replace('batch_passages = 8','batch_passages = 1'),encoding='utf-8')
     (root/'reference').mkdir(exist_ok=True)
     cfg=config(root)
     rows=[]

@@ -1,0 +1,48 @@
+{
+  "request_hash": "ac5d86dab64636d2ea09e1411fd2cb268ecc13a6890bd13c2cf6ec64a6472952",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_c"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2023_SVN:1",
+      "verbatim_en_2023_SVN:2",
+      "verbatim_en_2023_SVN:3",
+      "verbatim_en_2023_SVN:4",
+      "verbatim_en_2023_SVN:5",
+      "verbatim_en_2023_SVN:6",
+      "verbatim_en_2023_SVN:7",
+      "verbatim_en_2023_SVN:8",
+      "verbatim_en_2023_SVN:9",
+      "verbatim_en_2023_SVN:10",
+      "verbatim_en_2023_SVN:11",
+      "verbatim_en_2023_SVN:12",
+      "verbatim_en_2023_SVN:13",
+      "verbatim_en_2023_SVN:14",
+      "verbatim_en_2023_SVN:15",
+      "verbatim_en_2023_SVN:16",
+      "verbatim_en_2023_SVN:17"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2023_SVN:11",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Artificial intelligence can be useful, but it can also be dangerous.",
+        "rationale": "Recognizes AI benefits and risks and endorses the UN advisory body."
+      },
+      {
+        "passage_id": "verbatim_en_2023_SVN:12",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "We need to find a way to govern the development of new technologies, including artificial intelligence, in a way that does not impede economic, development, social and research opportunities and does not put us at risk.",
+        "rationale": "Calls for AI governance centered on human rights throughout the technology lifecycle."
+      }
+    ]
+  }
+}

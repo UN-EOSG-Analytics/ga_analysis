@@ -1,0 +1,53 @@
+{
+  "request_hash": "f8407d5f584a877b5965dcad6cff2eccc64b7058ecfeae6352da4333e214859c",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_c"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_SGP:1",
+      "verbatim_en_2026_SGP:2",
+      "verbatim_en_2026_SGP:3",
+      "verbatim_en_2026_SGP:4",
+      "verbatim_en_2026_SGP:5",
+      "verbatim_en_2026_SGP:6",
+      "verbatim_en_2026_SGP:7",
+      "verbatim_en_2026_SGP:8"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_SGP:4",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "AI offers extraordinary potential, but its capability is advancing faster than our appreciation of its risks.",
+        "rationale": "Discusses AI loss of control, misuse and social disruption risks alongside benefits."
+      },
+      {
+        "passage_id": "verbatim_en_2026_SGP:5",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "We need rigorous testing and evaluation before deployment. We need clear limits on what autonomous systems can do. and mechanisms to intervene when they behave in ways we do not intend.",
+        "rationale": "Calls for AI safeguards, human control and international coordination."
+      },
+      {
+        "passage_id": "verbatim_en_2026_SGP:6",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "We must explore all options, including the idea of a UN framework convention on AI safeguards.",
+        "rationale": "Proposes international AI safeguards and institutions, building on existing UN AI bodies."
+      },
+      {
+        "passage_id": "verbatim_en_2026_SGP:7",
+        "status": "Yes",
+        "mention_type": "contextual",
+        "quote": "We will continue to contribute through platforms such as the digital pillar for the Forum of Small States and by making our governance frameworks and testing tools available to all.",
+        "rationale": "Continues the preceding AI governance discussion with commitments to share frameworks and testing tools."
+      }
+    ]
+  }
+}

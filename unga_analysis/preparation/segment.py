@@ -193,6 +193,8 @@ def parse_pdf(path):
 
 def parse_asr(path):
     obj=json.loads(path.read_text(encoding='utf8'));year=int(re.search(r'UNGA(\d{4})',path.name)[1]);date=obj['video']['date'][:10]
+    if int(date[:4])!=year:raise ValueError(f'{path.name}: filename/date conflict')
+    if obj['transcript'].get('language')!='en':raise ValueError(f'{path.name}: English transcript required')
     overrides=json.loads((ROOT/'config/verbatim_attribution_overrides.json').read_text(encoding='utf8')).get(path.name,{})
     results=[];issues=[];reply=False
     for si,s in enumerate(obj['transcript']['data']):

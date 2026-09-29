@@ -1,0 +1,36 @@
+{
+  "request_hash": "24020ae8485d458e39ffcf445e90efe71cec28758b793f177c6f71daae3bf00c",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_a"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_TLS:1",
+      "verbatim_en_2026_TLS:2",
+      "verbatim_en_2026_TLS:3",
+      "verbatim_en_2026_TLS:4",
+      "verbatim_en_2026_TLS:5",
+      "verbatim_en_2026_TLS:6",
+      "verbatim_en_2026_TLS:7",
+      "verbatim_en_2026_TLS:8",
+      "verbatim_en_2026_TLS:9",
+      "verbatim_en_2026_TLS:10",
+      "verbatim_en_2026_TLS:11",
+      "verbatim_en_2026_TLS:12"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_TLS:7",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Artificial intelligence and other emerging technologies reshape our societies. Developing countries must actively participate in their governance and development.",
+        "rationale": "Calls for developing-country participation in AI governance and development."
+      }
+    ]
+  }
+}

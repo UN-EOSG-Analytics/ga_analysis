@@ -1,0 +1,30 @@
+{
+  "request_hash": "860e47d9e5709c0de030b542c2b8310cca1557cc8027887409545ef2610edd03",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_c"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2025_CYP:1",
+      "verbatim_en_2025_CYP:2",
+      "verbatim_en_2025_CYP:3",
+      "verbatim_en_2025_CYP:4",
+      "verbatim_en_2025_CYP:5",
+      "verbatim_en_2025_CYP:6"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2025_CYP:1",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "We are faced with the challenge of the uncontrolled expansion of technology and AI threatening our security and the well-being of our children.",
+        "rationale": "Warns that uncontrolled AI development threatens security and children's welfare."
+      }
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "request_hash": "ca0519da1a201725fc5aca08e66bd3ff4cdae444ea415db16e27007935991a50",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_a"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_BLZ:1",
+      "verbatim_en_2026_BLZ:2",
+      "verbatim_en_2026_BLZ:3",
+      "verbatim_en_2026_BLZ:4",
+      "verbatim_en_2026_BLZ:5",
+      "verbatim_en_2026_BLZ:6",
+      "verbatim_en_2026_BLZ:7",
+      "verbatim_en_2026_BLZ:8"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_BLZ:1",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Artificial intelligence adds a further layer. Well-governed, it can widen access to knowledge and improve public services.",
+        "rationale": "Identifies AI governance as necessary to realize knowledge and public-service benefits."
+      },
+      {
+        "passage_id": "verbatim_en_2026_BLZ:2",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "And we have a global dialogue under this organization on the governance of artificial intelligence.",
+        "rationale": "Continues the AI discussion with risks to equality, workers and developing countries, and calls for cross-border governance."
+      },
+      {
+        "passage_id": "verbatim_en_2026_BLZ:6",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "She's a serious presence in artificial intelligence and the other technologies that will shape this century, and she has said plainly, that she is ready to share that expertise and those resources with the wider international community.",
+        "rationale": "Describes Taiwan as an AI contributor able to share expertise internationally."
+      }
+    ]
+  }
+}

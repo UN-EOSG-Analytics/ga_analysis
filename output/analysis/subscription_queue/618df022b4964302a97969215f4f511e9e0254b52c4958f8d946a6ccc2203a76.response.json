@@ -1,0 +1,39 @@
+{
+  "request_hash": "618df022b4964302a97969215f4f511e9e0254b52c4958f8d946a6ccc2203a76",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_b"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_KNA:1",
+      "verbatim_en_2026_KNA:2",
+      "verbatim_en_2026_KNA:3",
+      "verbatim_en_2026_KNA:4",
+      "verbatim_en_2026_KNA:5",
+      "verbatim_en_2026_KNA:6",
+      "verbatim_en_2026_KNA:7",
+      "verbatim_en_2026_KNA:8"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_KNA:5",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "St. Kitts and Nevis welcomes the Independent International Scientific Panel on Artificial Intelligence and the Global Dialogue on AI Governance.",
+        "rationale": "Advocates inclusive AI governance, national and regional adoption, infrastructure, skills and rights safeguards."
+      },
+      {
+        "passage_id": "verbatim_en_2026_KNA:7",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "AI, the green transition, and climate change are reshaping their future jobs. We must prepare them.",
+        "rationale": "Identifies AI-driven changes to youth employment and the need for preparation."
+      }
+    ]
+  }
+}

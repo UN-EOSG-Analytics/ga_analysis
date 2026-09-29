@@ -29,6 +29,16 @@ class SubscriptionProvider:
     @property
     def used(self):return getattr(self.embedding_provider,'used',self.initial_used)
 
+    def collect(self,jobs):
+        """Export every independent request before yielding to the subscription session."""
+        original=self.pending_limit;self.pending_limit=float('inf')
+        try:
+            for stage,payload,schema,instructions,max_tokens in jobs:
+                try:self.json(stage,payload,schema,instructions,max_tokens)
+                except AwaitingSubscriptionWork:pass
+        finally:self.pending_limit=original
+        if self.pending:raise AwaitingSubscriptionWork('Complete the stage request manifest, then resume')
+
     def json(self,stage,payload,schema,instructions,max_tokens=None):
         request=dict(backend='codex_subscription',stage=stage,payload=payload,schema=schema,instructions=instructions,
             model_preference=self.cfg['execution'].get('subscription_model_preference','gpt-6-astra'),

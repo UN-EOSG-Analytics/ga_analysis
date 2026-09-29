@@ -1,0 +1,51 @@
+{
+  "request_hash": "1558a1b96366049a83c26d0c63b898ae0cd05d438a08beb81d8dff20432542f7",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_a"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_BRB:1",
+      "verbatim_en_2026_BRB:2",
+      "verbatim_en_2026_BRB:3",
+      "verbatim_en_2026_BRB:4",
+      "verbatim_en_2026_BRB:5",
+      "verbatim_en_2026_BRB:6",
+      "verbatim_en_2026_BRB:7",
+      "verbatim_en_2026_BRB:8",
+      "verbatim_en_2026_BRB:9",
+      "verbatim_en_2026_BRB:10",
+      "verbatim_en_2026_BRB:11",
+      "verbatim_en_2026_BRB:12",
+      "verbatim_en_2026_BRB:13"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_BRB:1",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Artificial intelligence is opening extraordinary possibilities in health, education, science, and productivity, while also creating new risk of exclusion, exploitation, surveillance, and the distortion of truth.",
+        "rationale": "Explicitly discusses AI opportunities and societal risks."
+      },
+      {
+        "passage_id": "verbatim_en_2026_BRB:2",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "We equally now understand enough about the rapid development of AI to know that as we welcome its promise, we must anchor its development in a universal humanizing framework that does not imperil our existence as human beings.",
+        "rationale": "Calls for a universal framework to guide AI development and existential safety."
+      },
+      {
+        "passage_id": "verbatim_en_2026_BRB:6",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "In the growing age of AI, governance cannot be left to voluntary corporate practices or to a small number of technologically advanced states. We need globally agreed rules that protect human dignity, preserve meaningful human oversight, and ensure that the benefits of AI are shared widely and equitably.",
+        "rationale": "Discusses AI applications, risks, international scientific oversight and inclusive global rules."
+      }
+    ]
+  }
+}

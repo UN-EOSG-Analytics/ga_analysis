@@ -1,0 +1,32 @@
+{
+  "request_hash": "0fa703acdcc1629b1998b650901c3c7a4396d9cead770d593f435d4029092a14",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_b"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2025_CAF:1",
+      "verbatim_en_2025_CAF:2",
+      "verbatim_en_2025_CAF:3",
+      "verbatim_en_2025_CAF:4",
+      "verbatim_en_2025_CAF:5",
+      "verbatim_en_2025_CAF:6",
+      "verbatim_en_2025_CAF:7",
+      "verbatim_en_2025_CAF:8"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2025_CAF:8",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "We propose also the establishment of a global charter for digital governance and ethical artificial intelligence so that human rights are protected in the digital sphere.",
+        "rationale": "Proposes an international charter for ethical AI governance and human rights protection."
+      }
+    ]
+  }
+}

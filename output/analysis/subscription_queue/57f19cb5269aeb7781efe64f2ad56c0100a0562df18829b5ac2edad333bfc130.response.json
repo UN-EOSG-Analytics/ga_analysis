@@ -1,0 +1,45 @@
+{
+  "request_hash": "57f19cb5269aeb7781efe64f2ad56c0100a0562df18829b5ac2edad333bfc130",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_c"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_ITA:1",
+      "verbatim_en_2026_ITA:2",
+      "verbatim_en_2026_ITA:3",
+      "verbatim_en_2026_ITA:4",
+      "verbatim_en_2026_ITA:5",
+      "verbatim_en_2026_ITA:6",
+      "verbatim_en_2026_ITA:7"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_ITA:1",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Ukraine, the Middle East, the Gulf, Sudan, the Sahel are not separate crises, nor are trade wars, AI competition, hybrid attacks, and their economic and social repercussions, nor is terrorism in all of its many forms, which we continue to fight in every corner of the world.",
+        "rationale": "Frames AI competition and its repercussions as part of an interconnected transformation of the world order."
+      },
+      {
+        "passage_id": "verbatim_en_2026_ITA:5",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Artificial intelligence is doing so in a matter of years. Those who control these technologies will enjoy an enormous advantage over those who are left behind. The risk is that new inequalities, new dependencies, and new concentrations of power, or even new forms of domination, will emerge.",
+        "rationale": "Discusses AI benefits, labor disruption, manipulation, dangerous automated decisions and concentration of power."
+      },
+      {
+        "passage_id": "verbatim_en_2026_ITA:6",
+        "status": "Yes",
+        "mention_type": "contextual",
+        "quote": "We need a balance between transparency, oversight, security, and the protection of intellectual property. We need to share the benefits of innovation and build mechanisms of mutual oversight.",
+        "rationale": "Continues the preceding AI governance proposal, assigning the UN a role in common rules and oversight."
+      }
+    ]
+  }
+}

@@ -1,5 +1,14 @@
 import hashlib,json
+import time
 from pathlib import Path
+
+def atomic_replace(source,destination):
+ # Windows indexers/Office may hold a completed output briefly; never delete it first.
+ for attempt in range(6):
+  try:return Path(source).replace(destination)
+  except PermissionError:
+   if attempt==5:raise
+   time.sleep(.05*2**attempt)
 
 def read_jsonl(path):
  with Path(path).open(encoding='utf-8-sig') as f:
@@ -14,7 +23,7 @@ def write_jsonl(path,rows):
  tmp=path.with_suffix(path.suffix+'.tmp')
  with tmp.open('w',encoding='utf8') as f:
   for r in rows:f.write(json.dumps(r,ensure_ascii=False,sort_keys=True)+'\n')
- tmp.replace(path)
+ atomic_replace(tmp,path)
 
 def digest(path):
  h=hashlib.sha256()

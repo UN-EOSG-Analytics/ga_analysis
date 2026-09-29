@@ -1,0 +1,42 @@
+{
+  "request_hash": "8e8e6b452dada74967db222721c3f2aa2c9eb0259c6f5c3c9f675fb87cb933d7",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_a"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_POL:1",
+      "verbatim_en_2026_POL:2",
+      "verbatim_en_2026_POL:3",
+      "verbatim_en_2026_POL:4",
+      "verbatim_en_2026_POL:5",
+      "verbatim_en_2026_POL:6",
+      "verbatim_en_2026_POL:7",
+      "verbatim_en_2026_POL:8",
+      "verbatim_en_2026_POL:9",
+      "verbatim_en_2026_POL:10",
+      "verbatim_en_2026_POL:11"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_POL:10",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "That is why we need a serious conversation about the limits of artificial intelligence development. We need rules that will actually be enforced and that clearly define where innovation ends and a threat to humanity begins. Artificial intelligence must not be used as a tool for destabilization, manipulation, or undermining the international order.",
+        "rationale": "Discusses superintelligence, human agency, AI risks and enforceable development limits."
+      },
+      {
+        "passage_id": "verbatim_en_2026_POL:11",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "It must mean real effectiveness and accountability, including in the face of new challenges such as the demographic crisis or the development of artificial intelligence, which is outpacing existing rules and testing the limits of our responsibility.",
+        "rationale": "Calls for effective UN accountability as AI develops faster than existing rules."
+      }
+    ]
+  }
+}

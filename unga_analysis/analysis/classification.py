@@ -1,5 +1,6 @@
 """Multilabel and institutional review; exact quotes and cross-pass agreement."""
 from concurrent.futures import ThreadPoolExecutor
+import json
 
 from ..io import stable_hash, write_jsonl
 from .common import obj, arr, STR, BOOL, LABEL, SYSTEM, ask, quote_in, table
@@ -17,40 +18,46 @@ def schema(cfg,codes):
         keywords=arr(obj(normalized_term=STR,original_term=STR,quote=STR)),uncovered_concept=STR)
 
 
+def validate_classification(value,record,codes):
+    if len(value['themes'])!=len(codes) or {t['code'] for t in value['themes']}!=set(codes):
+        raise ValueError('Every taxonomy code requires exactly one explicit label')
+    for theme in value['themes']:
+        if theme['value'] in ('Yes','Uncertain') and (len(theme['quote'].split())>80 or not quote_in(theme['quote'],record['text'])):
+            raise ValueError('Yes/Uncertain needs an exact quote from this passage')
+        if theme['value']!='No' and not theme['rationale'].strip():raise ValueError('Theme rationale missing')
+    if len({v['mechanism'] for v in value['institutions']})!=len(value['institutions']):
+        raise ValueError('Return one combined record per mechanism for this passage')
+    for institution in value['institutions']:
+        if len(institution['quote'].split())>80 or not quote_in(institution['quote'],record['text']):raise ValueError('Institution quote must be an exact span of at most 80 words')
+        if institution['stances']['commitment'] and not institution['commitment_detail'].strip():
+            raise ValueError('Commitment requires actor/action detail')
+    for word in value['keywords']:
+        if not word['normalized_term'].strip() or not quote_in(word['quote'],record['text']) or not quote_in(word['original_term'],word['quote']):
+            raise ValueError('Keyword must have original wording in a source quote')
+
+def classification_instructions(pass_no):
+    instructions=SYSTEM+('Apply every code independently to this AI passage; allow multiple Yes labels. '
+        'Use exact quotes of at most 80 words and do not infer themes from a cluster, country identity or frequency. '
+        'For No, use empty quote and rationale strings to avoid repetitive output. Yes and Uncertain require a source quote and concise rationale. '
+        'Extract every AI governance institution/model and distinguish mention, welcome, support, request, concern, opposition and commitment. '
+        'A named model (FSB/IAEA/IPCC/CERN) must actually relate to AI. Record requested functions exactly. '
+        'Return one record per mechanism in this passage; adjacent context may resolve references but quotations must come from the focal text. '
+        'Commitment needs this State as actor and a concrete undertaking, not a generic request or completed action inferred from support. '
+        'Identify distinctive AI-related original terms, including institutional names, without merging substantively different concepts. '
+        'If the codebook misses a substantive theme, describe it in uncovered_concept, otherwise use an empty string. '
+        'Source-review notes never authorize importing prepared-only words into the delivered passage. ')
+    instructions+=f'Independent automated classification pass {pass_no}; read the source afresh.'
+    return instructions
+
 def classify_one(record,provider,taxonomy,cfg,cluster_id):
     codes=taxonomy['codes'];contract=schema(cfg,codes)
     payload=dict(passage_id=record['passage_id'],source_sha256=record['source_sha256'],text=record['text'],
                  preceding_context=record.get('context_before',''),following_context=record.get('context_after',''),
                  taxonomy=taxonomy,source_review_notes=record.get('source_review_notes'))
-    def validate(value):
-        if len(value['themes'])!=len(codes) or {t['code'] for t in value['themes']}!=set(codes):
-            raise ValueError('Every taxonomy code requires exactly one explicit label')
-        for theme in value['themes']:
-            if theme['value'] in ('Yes','Uncertain') and (len(theme['quote'].split())>80 or not quote_in(theme['quote'],record['text'])):
-                raise ValueError('Yes/Uncertain needs an exact quote from this passage')
-            if theme['value']!='No' and not theme['rationale'].strip():raise ValueError('Theme rationale missing')
-        if len({v['mechanism'] for v in value['institutions']})!=len(value['institutions']):
-            raise ValueError('Return one combined record per mechanism for this passage')
-        for institution in value['institutions']:
-            if len(institution['quote'].split())>80 or not quote_in(institution['quote'],record['text']):raise ValueError('Institution quote must be an exact span of at most 80 words')
-            if institution['stances']['commitment'] and not institution['commitment_detail'].strip():
-                raise ValueError('Commitment requires actor/action detail')
-        for word in value['keywords']:
-            if not word['normalized_term'].strip() or not quote_in(word['quote'],record['text']) or not quote_in(word['original_term'],word['quote']):
-                raise ValueError('Keyword must have original wording in a source quote')
+    def validate(value):validate_classification(value,record,codes)
     passes=[]
     for pass_no in (1,2):
-        instructions=SYSTEM+('Apply every code independently to this AI passage; allow multiple Yes labels. '
-            'Use exact quotes of at most 80 words and do not infer themes from a cluster, country identity or frequency. '
-            'For No, use empty quote and rationale strings to avoid repetitive output. Yes and Uncertain require a source quote and concise rationale. '
-            'Extract every AI governance institution/model and distinguish mention, welcome, support, request, concern, opposition and commitment. '
-            'A named model (FSB/IAEA/IPCC/CERN) must actually relate to AI. Record requested functions exactly. '
-            'Return one record per mechanism in this passage; adjacent context may resolve references but quotations must come from the focal text. '
-            'Commitment needs this State as actor and a concrete undertaking, not a generic request or completed action inferred from support. '
-            'Identify distinctive AI-related original terms, including institutional names, without merging substantively different concepts. '
-            'If the codebook misses a substantive theme, describe it in uncovered_concept, otherwise use an empty string. '
-            'Source-review notes never authorize importing prepared-only words into the delivered passage. ')
-        instructions+=f'Independent automated classification pass {pass_no}; read the source afresh.'
+        instructions=classification_instructions(pass_no)
         try:passes.append(ask(provider,f'classify_{pass_no}',payload,contract,instructions,validate,max_tokens=9000))
         except ResponseUnavailable as exc:
             if exc.reason not in ('max_output_tokens','refusal','content_filter'):raise
@@ -86,14 +93,68 @@ def classify_one(record,provider,taxonomy,cfg,cluster_id):
         discovery_cluster_id=cluster_id,human_reviewed=False)
 
 
+def classification_batches(records,taxonomy,cfg):
+    size=cfg['classification'].get('batch_passages',1);limit=cfg['classification'].get('batch_max_chars',28000)
+    if size<1 or limit<1:raise ValueError('Invalid classification batch limits')
+    groups=[];group=[]
+    codebook=dict(taxonomy)
+    if 'codes' in taxonomy:
+        codebook={'version':taxonomy.get('version','unspecified'),'codes':{code:{k:v for k,v in theme.items() if k in ('label','definition','inclusion','exclusion','boundary_cases')} for code,theme in taxonomy['codes'].items()}}
+    def payload(rows):
+        return dict(taxonomy=codebook,passages=[dict(passage_id=r['passage_id'],source_sha256=r['source_sha256'],text=r['text'],
+            preceding_context=r.get('context_before','')[-600:],following_context=r.get('context_after','')[:600],
+            source_review_notes=r.get('source_review_notes')) for r in rows])
+    for record in records:
+        if group and (len(group)>=size or len(json.dumps(payload(group+[record]),ensure_ascii=False))>limit):groups.append(group);group=[]
+        group.append(record)
+        if len(json.dumps(payload(group),ensure_ascii=False))>limit:raise ValueError('Single classification payload exceeds batch_max_chars; increase explicit bound')
+    if group:groups.append(group)
+    return [(group,payload(group)) for group in groups]
+
+
+def classify_batched(records,taxonomy,membership,provider,cfg):
+    groups=classification_batches(records,taxonomy,cfg);codes=taxonomy['codes']
+    contract=obj(results=arr(obj(passage_id=STR,classification=schema(cfg,codes))))
+    def instructions(n):return classification_instructions(n)+' Return exactly one classification for each supplied passage_id, preserving source boundaries.'
+    if hasattr(provider,'collect'):
+        provider.collect([(f'classify_batch_{n}',payload,contract,instructions(n),12000) for group,payload in groups for n in (1,2)])
+    answers={}
+    def run_batch(group,payload,n):
+        by_id={r['passage_id']:r for r in group}
+        def validate(value):
+            rows=value['results']
+            if len(rows)!=len(by_id) or {r['passage_id'] for r in rows}!=set(by_id):raise ValueError('Batch must cover each passage exactly once')
+            for r in rows:validate_classification(r['classification'],by_id[r['passage_id']],codes)
+        try:
+            value=ask(provider,f'classify_batch_{n}',payload,contract,instructions(n),validate,max_tokens=12000,
+                max_payload_chars=cfg['classification'].get('batch_max_chars',28000)+2000)
+            for r in value['results']:answers[(r['passage_id'],n)]=r['classification']
+        except ResponseUnavailable as exc:
+            if exc.reason not in ('max_output_tokens','refusal','content_filter'):raise
+            if len(group)>1:
+                middle=len(group)//2
+                for part in (group[:middle],group[middle:]):
+                    for rows,body in classification_batches(part,taxonomy,cfg):run_batch(rows,body,n)
+            else:answers[(group[0]['passage_id'],n)]=exc
+    for group,payload in groups:
+        for n in (1,2):run_batch(group,payload,n)
+    class Collected:
+        def json(self,stage,payload,*args,**kwargs):
+            value=answers[(payload['passage_id'],int(stage[-1]))]
+            if isinstance(value,ResponseUnavailable):raise value
+            return value
+    return [classify_one(r,Collected(),taxonomy,cfg,membership.get(r['passage_id'])) for r in records]
+
+
 def classify_all(reviews,taxonomy,membership,provider,cfg,out):
     records=[r for r in reviews if r['ai_status']=='Yes']
     if records and not taxonomy['codes']:raise ValueError('Cannot classify AI passages without a source-grounded taxonomy')
     classified=[]
-    with ThreadPoolExecutor(max_workers=cfg['execution']['workers']) as pool:
-        for i,r in enumerate(pool.map(lambda r:classify_one(r,provider,taxonomy,cfg,membership.get(r['passage_id'])),records),1):
-            classified.append(r)
-            if i%20==0 or i==len(records):print(f'Classification {i}/{len(records)} AI passages',flush=True)
+    if cfg['classification'].get('batch_passages',1)>1:
+        classified=classify_batched(records,taxonomy,membership,provider,cfg)
+    else:
+        with ThreadPoolExecutor(max_workers=cfg['execution']['workers']) as pool:
+            for r in pool.map(lambda r:classify_one(r,provider,taxonomy,cfg,membership.get(r['passage_id'])),records):classified.append(r)
     write_jsonl(out/'classified_passages.jsonl',classified)
     table(out/'paragraph_theme_labels.csv',[{k:r[k] for k in ['passage_id','speech_id','source_file','source_sha256','locator','taxonomy_sha256','themes','evidence','review_status','classification_complete','discovery_cluster_id','human_reviewed']} for r in classified])
     return classified

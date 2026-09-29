@@ -1,0 +1,30 @@
+{
+  "request_hash": "2acc041ee43ba3e244445f8eb12de727edfc1212d4bf52c6138a0ddce75de0bf",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_c"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2025_SGP:1",
+      "verbatim_en_2025_SGP:2",
+      "verbatim_en_2025_SGP:3",
+      "verbatim_en_2025_SGP:4",
+      "verbatim_en_2025_SGP:5",
+      "verbatim_en_2025_SGP:6"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2025_SGP:6",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Early and constructive and inclusive multilateral engagement is essential, and AI's transformative force can aid conflict prevention, peacekeeping and humanitarian options.",
+        "rationale": "Advocates UN use and inclusive governance of AI for peace and humanitarian work with safeguards against risks."
+      }
+    ]
+  }
+}

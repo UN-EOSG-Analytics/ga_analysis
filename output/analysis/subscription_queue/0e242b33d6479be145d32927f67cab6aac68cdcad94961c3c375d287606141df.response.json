@@ -1,0 +1,40 @@
+{
+  "request_hash": "0e242b33d6479be145d32927f67cab6aac68cdcad94961c3c375d287606141df",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_c"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_UKR:1",
+      "verbatim_en_2026_UKR:2",
+      "verbatim_en_2026_UKR:3",
+      "verbatim_en_2026_UKR:4",
+      "verbatim_en_2026_UKR:5",
+      "verbatim_en_2026_UKR:6",
+      "verbatim_en_2026_UKR:7",
+      "verbatim_en_2026_UKR:8",
+      "verbatim_en_2026_UKR:9"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_UKR:8",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "We need to slow it down before we reach the next stage, because as early as next year, there is already a real possibility that AI, not only people, will begin will begin decide what happens on the battlefield. And we need peace before we reach that point.",
+        "rationale": "Warns about AI deciding battlefield outcomes and urges peace before that development."
+      },
+      {
+        "passage_id": "verbatim_en_2026_UKR:9",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "If you listen to some of the biggest believers in the development of AI, they say today AI still remains mostly digital, but one day AI will move from the digital world to shaping atoms. And when that happens, we had better be at peace.",
+        "rationale": "Discusses AI expansion into the physical world and the urgency of ending wars."
+      }
+    ]
+  }
+}

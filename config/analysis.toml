@@ -51,6 +51,8 @@ diagnostics_file = "discovery_diagnostics.json"
 taxonomy_payload_max_chars = 120000
 
 [classification]
+batch_passages = 8
+batch_max_chars = 28000
 values = ["Yes", "No", "Uncertain", "Pending"]
 require_source_review = true
 reuse_existing_reviewed_decisions = true
@@ -61,6 +63,14 @@ country_year_notes_fill_passage_labels = false
 [themes]
 min_N_for_yearly_percentages = 20
 below_threshold = "report counts and cases, not percentages"
+
+[review]
+scope = "screened_speeches"
+primary_passes = 1
+negative_sample_per_stratum = 2
+sample_seed = "unga-review-v1"
+second_review_percent = 10
+expand_on_audit_hit = true
 
 [institutions]
 stances_file = "institution_stances.csv"
@@ -97,7 +107,6 @@ max_output_tokens = 6000
 request_timeout_seconds = 120
 default_cost_limit_usd = 1.0
 require_execute_flag = true
-automatic_review_passes = 2
 review_batch_passages = 40
 workers = 4
 max_discovery_passages = 5000

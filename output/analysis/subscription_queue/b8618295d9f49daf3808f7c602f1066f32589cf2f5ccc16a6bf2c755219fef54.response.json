@@ -1,0 +1,31 @@
+{
+  "request_hash": "b8618295d9f49daf3808f7c602f1066f32589cf2f5ccc16a6bf2c755219fef54",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_c"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_ESP:1",
+      "verbatim_en_2026_ESP:2",
+      "verbatim_en_2026_ESP:3",
+      "verbatim_en_2026_ESP:4",
+      "verbatim_en_2026_ESP:5",
+      "verbatim_en_2026_ESP:6",
+      "verbatim_en_2026_ESP:7"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_ESP:4",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "We must impose strict regulations on the tech oligarchs who control the functioning of social networks and the development of artificial intelligence.",
+        "rationale": "Calls for strict regulation of corporate actors controlling AI development to protect children."
+      }
+    ]
+  }
+}

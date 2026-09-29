@@ -1,0 +1,38 @@
+{
+  "request_hash": "f934838281777620a4f573fc8eb8579ac6c9a526c9c4191cbf33416fda72d2a0",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_a"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_KOR:1",
+      "verbatim_en_2026_KOR:2",
+      "verbatim_en_2026_KOR:3",
+      "verbatim_en_2026_KOR:4",
+      "verbatim_en_2026_KOR:5",
+      "verbatim_en_2026_KOR:6",
+      "verbatim_en_2026_KOR:7"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_KOR:2",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "The artificial intelligence revolution is both a massive opportunity and a crisis for humanity. While it can be a core driver of new prosperity and sustainable development, it will only deepen inequality and imbalance unless we are properly prepared for it.",
+        "rationale": "Frames AI opportunity and inequality risks and proposes universal access to its benefits."
+      },
+      {
+        "passage_id": "verbatim_en_2026_KOR:3",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "The Republic of Korea will build the global AI hub platform to share this vision with the international community in collaboration with international organizations, multilateral development banks, the business sector, and academia.",
+        "rationale": "Describes inclusive AI transformation, public health applications and a global AI hub platform."
+      }
+    ]
+  }
+}

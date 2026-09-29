@@ -1,0 +1,33 @@
+{
+  "request_hash": "6b1c27e69c30508a2eaa861ef62ca3e626780bedb88ccd2971cd3e49a6eb7f03",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_a"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2025_TLS:1",
+      "verbatim_en_2025_TLS:2",
+      "verbatim_en_2025_TLS:3",
+      "verbatim_en_2025_TLS:4",
+      "verbatim_en_2025_TLS:5",
+      "verbatim_en_2025_TLS:6",
+      "verbatim_en_2025_TLS:7",
+      "verbatim_en_2025_TLS:8",
+      "verbatim_en_2025_TLS:9"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2025_TLS:5",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Promoting AI research and innovation, cultivating talent, and establishing a policy framework are also pivotal for fostering growth. Nonetheless, international cooperation remains essential to establish comprehensive regulations governing the use and development of AI.",
+        "rationale": "Advocates AI capacity, research and talent in least developed countries alongside international regulation."
+      }
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "request_hash": "3ae8d1ae60b1358d931ba06cb9b0c35b39832b6d83f0aa9470adc7933614fc42",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_b"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2025_GRD:1",
+      "verbatim_en_2025_GRD:2",
+      "verbatim_en_2025_GRD:3",
+      "verbatim_en_2025_GRD:4",
+      "verbatim_en_2025_GRD:5",
+      "verbatim_en_2025_GRD:6",
+      "verbatim_en_2025_GRD:7",
+      "verbatim_en_2025_GRD:8"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2025_GRD:1",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "In another, children are using artificial intelligence in their lessons.",
+        "rationale": "Uses AI in education to illustrate unequal access to opportunity."
+      },
+      {
+        "passage_id": "verbatim_en_2025_GRD:3",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "we are considering the teaching, understanding, and use of AI and AI related skills to enhance education access, delivery, and outcome.",
+        "rationale": "Describes planned AI skills and applications to improve education."
+      }
+    ]
+  }
+}

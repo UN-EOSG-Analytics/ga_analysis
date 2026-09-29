@@ -1,0 +1,30 @@
+{
+  "request_hash": "1d2af4e7bae084fa5f3fc78221958cb1f7ef3b66e56885c8688cb8c3f75f681d",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "root"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2025_HRV:1",
+      "verbatim_en_2025_HRV:2",
+      "verbatim_en_2025_HRV:3",
+      "verbatim_en_2025_HRV:4",
+      "verbatim_en_2025_HRV:5",
+      "verbatim_en_2025_HRV:6"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2025_HRV:5",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Artificial intelligence, cyber capabilities, space technologies, robotics, each can be a threat or a solution. The choice is ours. We need to rethink security, not only nationally but globally. Rules, safeguards, and cooperation must keep pace with innovation.",
+        "rationale": "Calls for global security rules, safeguards and cooperation for emerging technologies explicitly including AI, balancing threats with resilience and stability."
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "request_hash": "8b1ffd5ab655c4d545f49d882eed05c6d67fa64b6d884fd56a42cac1bfb229da",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_a"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2025_KOR:1",
+      "verbatim_en_2025_KOR:2",
+      "verbatim_en_2025_KOR:3",
+      "verbatim_en_2025_KOR:4",
+      "verbatim_en_2025_KOR:5",
+      "verbatim_en_2025_KOR:6",
+      "verbatim_en_2025_KOR:7",
+      "verbatim_en_2025_KOR:8"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2025_KOR:5",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "We will strive to ensure that the vision of AI for all, where advances in cutting-edge technology contribute to the universal values of humanity, becomes a new normal for the international community. AI-driven technological innovations will be an important new tool for solving global challenges like the climate crisis.",
+        "rationale": "Discusses AI security and rights risks, productivity, responsible use, APEC cooperation and climate applications."
+      }
+    ]
+  }
+}

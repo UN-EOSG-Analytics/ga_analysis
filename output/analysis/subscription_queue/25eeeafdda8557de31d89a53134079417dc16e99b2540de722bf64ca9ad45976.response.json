@@ -1,0 +1,31 @@
+{
+  "request_hash": "25eeeafdda8557de31d89a53134079417dc16e99b2540de722bf64ca9ad45976",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_c"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_BHS:1",
+      "verbatim_en_2026_BHS:2",
+      "verbatim_en_2026_BHS:3",
+      "verbatim_en_2026_BHS:4",
+      "verbatim_en_2026_BHS:5",
+      "verbatim_en_2026_BHS:6",
+      "verbatim_en_2026_BHS:7"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_BHS:5",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "It means building artificial intelligence that understands our languages and our lives, and not only the lives of those in the wealthy North, dominating languages and dominating cultures.",
+        "rationale": "Calls for locally representative AI, data sovereignty and participation of small states in digital governance."
+      }
+    ]
+  }
+}

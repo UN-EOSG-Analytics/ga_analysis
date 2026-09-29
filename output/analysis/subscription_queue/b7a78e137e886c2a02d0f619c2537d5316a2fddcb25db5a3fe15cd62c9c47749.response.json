@@ -1,0 +1,40 @@
+{
+  "request_hash": "b7a78e137e886c2a02d0f619c2537d5316a2fddcb25db5a3fe15cd62c9c47749",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_b"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_FIN:1",
+      "verbatim_en_2026_FIN:2",
+      "verbatim_en_2026_FIN:3",
+      "verbatim_en_2026_FIN:4",
+      "verbatim_en_2026_FIN:5",
+      "verbatim_en_2026_FIN:6",
+      "verbatim_en_2026_FIN:7",
+      "verbatim_en_2026_FIN:8",
+      "verbatim_en_2026_FIN:9"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_FIN:3",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "We need multilateralism in order to address our shared agenda, ranging from conflicts and climate change to sustainable development and artificial intelligence.",
+        "rationale": "Places AI on the shared agenda requiring multilateral cooperation."
+      },
+      {
+        "passage_id": "verbatim_en_2026_FIN:8",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "launched a call for companies, governments, regional organizations, and the UN to develop mechanisms to control frontier AI models.",
+        "rationale": "Advocates international cooperation to retain human control over consequential frontier AI systems."
+      }
+    ]
+  }
+}

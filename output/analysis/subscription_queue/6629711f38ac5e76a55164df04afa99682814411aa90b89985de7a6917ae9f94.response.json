@@ -1,0 +1,37 @@
+{
+  "request_hash": "6629711f38ac5e76a55164df04afa99682814411aa90b89985de7a6917ae9f94",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "root"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_VNM:1",
+      "verbatim_en_2026_VNM:2",
+      "verbatim_en_2026_VNM:3",
+      "verbatim_en_2026_VNM:4",
+      "verbatim_en_2026_VNM:5",
+      "verbatim_en_2026_VNM:6"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_VNM:3",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Science, technology, digital transformation, and artificial intelligence are opening up unprecedented opportunities. but they're also presenting new challenges.",
+        "rationale": "Introduces technology governance, explicitly including AI, as a priority for human progress and common development."
+      },
+      {
+        "passage_id": "verbatim_en_2026_VNM:4",
+        "status": "Yes",
+        "mention_type": "contextual",
+        "quote": "We need to develop inclusive, safe, transparent, and accountable principles and governance frameworks to ensure that technologies will be in service of the people, while respecting national sovereignty, digital sovereignty, and the right to development.",
+        "rationale": "Directly continues the preceding AI-inclusive governance priority, calling for accountable inclusive frameworks, developing-country rule-making participation, capacity and equitable benefits; later UN reform text is broader."
+      }
+    ]
+  }
+}

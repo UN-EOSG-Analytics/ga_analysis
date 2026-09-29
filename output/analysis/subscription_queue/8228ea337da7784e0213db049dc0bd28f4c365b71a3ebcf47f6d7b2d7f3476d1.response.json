@@ -1,0 +1,30 @@
+{
+  "request_hash": "8228ea337da7784e0213db049dc0bd28f4c365b71a3ebcf47f6d7b2d7f3476d1",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_c"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_HRV:1",
+      "verbatim_en_2026_HRV:2",
+      "verbatim_en_2026_HRV:3",
+      "verbatim_en_2026_HRV:4",
+      "verbatim_en_2026_HRV:5",
+      "verbatim_en_2026_HRV:6"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_HRV:3",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Artificial intelligence can accelerate development, but its use must remain consistent with legal frameworks, human dignity and democratic accountability.",
+        "rationale": "Supports AI for development within legal and democratic safeguards."
+      }
+    ]
+  }
+}

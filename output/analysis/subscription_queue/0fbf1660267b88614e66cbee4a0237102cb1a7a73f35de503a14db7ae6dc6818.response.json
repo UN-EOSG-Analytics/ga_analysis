@@ -1,0 +1,36 @@
+{
+  "request_hash": "0fbf1660267b88614e66cbee4a0237102cb1a7a73f35de503a14db7ae6dc6818",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "root"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_TJK:1",
+      "verbatim_en_2026_TJK:2",
+      "verbatim_en_2026_TJK:3",
+      "verbatim_en_2026_TJK:4",
+      "verbatim_en_2026_TJK:5"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_TJK:3",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Artificial intelligence is transforming our economies, our societies, and the way we approach development.",
+        "rationale": "Argues for widely shared AI as an accelerator of development and reduced inequality, citing the Secretary-General."
+      },
+      {
+        "passage_id": "verbatim_en_2026_TJK:4",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Last year, at the initiative of Tajikistan, the General Assembly adopted the resolution on the role of artificial intelligence in creating new opportunities for sustainable development in Central Asia.",
+        "rationale": "Reports Tajik-sponsored UN AI development and safe/trustworthy AI day initiatives, emphasizing innovation serving humanity; these are speech claims, not external verification of adoption details."
+      }
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "request_hash": "1a774e2ce50677f28cadbf86f46c92dc29db38fbbb9d2dc8e761c2d964cac323",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_a"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_AUS:1",
+      "verbatim_en_2026_AUS:2",
+      "verbatim_en_2026_AUS:3",
+      "verbatim_en_2026_AUS:4",
+      "verbatim_en_2026_AUS:5",
+      "verbatim_en_2026_AUS:6",
+      "verbatim_en_2026_AUS:7",
+      "verbatim_en_2026_AUS:8"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_AUS:2",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Whether it is climate change or artificial intelligence, there is always the temptation to say that our generation is being confronted by issues that our predecessors could not possibly have imagined while dealing with the world they would not recognise.",
+        "rationale": "Frames AI as a collective challenge requiring international dialogue and cooperation."
+      },
+      {
+        "passage_id": "verbatim_en_2026_AUS:3",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "emerging technology, including artificial intelligence, which is evolving at a furious pace",
+        "rationale": "Identifies rapid AI development among new issues requiring multilateral reform and cooperation."
+      },
+      {
+        "passage_id": "verbatim_en_2026_AUS:5",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "But leaders of AI companies themselves have warned of the potential risks to allow frontier AI to develop too fast without guardrails. Recently, an artificial intelligence agent infiltrated an Australian government website.",
+        "rationale": "Discusses AI benefits and risks, autonomous agent intrusion, national standards and coordinated international action."
+      }
+    ]
+  }
+}

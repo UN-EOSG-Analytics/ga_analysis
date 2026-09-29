@@ -1,0 +1,32 @@
+{
+  "request_hash": "44050ddc4ba63db62ab660e9ad34a58fb8ee8acc8035fdc1b5522df29b6b0a61",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_b"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2025_NGA:1",
+      "verbatim_en_2025_NGA:2",
+      "verbatim_en_2025_NGA:3",
+      "verbatim_en_2025_NGA:4",
+      "verbatim_en_2025_NGA:5",
+      "verbatim_en_2025_NGA:6",
+      "verbatim_en_2025_NGA:7",
+      "verbatim_en_2025_NGA:8"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2025_NGA:2",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "As our friend, the Secretary General, has said, AI must turn for Africa, included.",
+        "rationale": "Invokes AI inclusion for Africa as a policy priority in closing the digital divide."
+      }
+    ]
+  }
+}

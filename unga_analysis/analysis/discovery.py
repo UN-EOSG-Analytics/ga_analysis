@@ -38,16 +38,18 @@ def consolidate(proposals,source,provider,cfg,diagnostics):
     limit=cfg['discovery'].get('taxonomy_payload_max_chars',120000)
     if limit<=0:raise ValueError('taxonomy_payload_max_chars must be positive')
     requests=diagnostics.setdefault('taxonomy_requests',[])
-    def request(batch,audit=False):
+    def request(batch,audit=False,job_only=False):
         payload=taxonomy_payload(batch,source,audit)
         subset={r['passage_id']:r['text'] for r in payload['examples']}
         stage='taxonomy_audit' if audit else 'taxonomy_merge'
-        requests.append(dict(stage=stage,characters=len(json.dumps(payload,ensure_ascii=False)),source_passages=len(subset)))
         instruction=('Audit and correct this codebook subset against the supplied source examples. Keep code identifiers stable and review each definition. '
             if audit else 'Consolidate redundant proposals into a common multilabel codebook across years. Preserve distinct minority concepts and uppercase stable codes. ')
-        return ask(provider,stage,payload,TAXONOMY,SYSTEM+instruction+
+        instruction=SYSTEM+instruction+(
             'Use only supplied passage IDs and exact source examples. Keep definitions compact and at most two examples per theme. '
-            'Do not infer endorsement from mention. This is automated source review, not human approval.',
+            'Do not infer endorsement from mention. This is automated source review, not human approval.')
+        if job_only:return (stage,payload,TAXONOMY,instruction,14000)
+        requests.append(dict(stage=stage,characters=len(json.dumps(payload,ensure_ascii=False)),source_passages=len(subset)))
+        return ask(provider,stage,payload,TAXONOMY,instruction,
             lambda v:validate_taxonomy(v,subset),max_tokens=14000,max_payload_chars=limit)
     current=proposals;seen=set()
     for _ in range(8):
@@ -55,11 +57,14 @@ def consolidate(proposals,source,provider,cfg,diagnostics):
         if fingerprint in seen:raise ValueError('Bounded taxonomy consolidation did not converge; inspect proposals before retrying')
         seen.add(fingerprint)
         batches=proposal_batches(current,source,limit)
+        if hasattr(provider,'collect'):provider.collect([request(batch,job_only=True) for batch in batches])
         results=[request(batch) for batch in batches]
         current=[theme for result in results for theme in result['themes']]
         if len(batches)==1:break
     else:raise ValueError('Bounded taxonomy consolidation exceeded eight rounds')
-    audits=[request(batch,audit=True) for batch in proposal_batches(current,source,limit,audit=True)]
+    batches=proposal_batches(current,source,limit,audit=True)
+    if hasattr(provider,'collect'):provider.collect([request(batch,audit=True,job_only=True) for batch in batches])
+    audits=[request(batch,audit=True) for batch in batches]
     checked=dict(themes=[t for result in audits for t in result['themes']],rationale=' '.join(r['rationale'] for r in audits))
     validate_taxonomy(checked,{p:source[p] for p in {e['passage_id'] for t in current for e in t['examples']}})
     return checked
@@ -163,16 +168,19 @@ def discover(records, provider, cfg, out):
         diagnostics['taxonomy_sampling']='representative_and_boundary_passages'
     save(out/'discovery_diagnostics.json',diagnostics)
     table(out/'discovery_membership.csv',[dict(passage_id=r['passage_id'],speech_id=r['speech_id'],cluster_id=c) for r,c in zip(records,labels)])
+    instruction=SYSTEM+(
+        'Read every representative and boundary passage. Propose analytical theme definitions grounded in these statements. '
+        'Separate technical AI safety from military/security concerns when warranted. Include minority positions; do not force '
+        'one theme per cluster or a predetermined number. Every theme needs exact source examples, inclusion/exclusion and boundary cases.')
+    if hasattr(provider,'collect'):
+        provider.collect([('discover_cluster',{'cluster':g,'samples':g.get('samples') or [dict(passage_id=r['passage_id'],speech_id=r['speech_id'],text=r['text']) for r in records]},TAXONOMY,instruction,9000) for g in groups])
     proposals=[];all_samples={}
     for group in groups:
         samples=group.get('samples') or [dict(passage_id=r['passage_id'],speech_id=r['speech_id'],text=r['text']) for r in records]
         source={r['passage_id']:r['text'] for r in samples};all_samples.update(source)
         def validate(value,source=source):
             validate_taxonomy(value,source)
-        proposal=ask(provider,'discover_cluster',{'cluster':group,'samples':samples},TAXONOMY,SYSTEM+
-            'Read every representative and boundary passage. Propose analytical theme definitions grounded in these statements. '
-            'Separate technical AI safety from military/security concerns when warranted. Include minority positions; do not force '
-            'one theme per cluster or a predetermined number. Every theme needs exact source examples, inclusion/exclusion and boundary cases.',validate,max_tokens=9000)
+        proposal=ask(provider,'discover_cluster',{'cluster':group,'samples':samples},TAXONOMY,instruction,validate,max_tokens=9000)
         proposals.extend(proposal['themes'])
     cited={e['passage_id'] for t in proposals for e in t['examples']}
     try:checked=consolidate(proposals,{p:all_samples[p] for p in cited},provider,cfg,diagnostics)

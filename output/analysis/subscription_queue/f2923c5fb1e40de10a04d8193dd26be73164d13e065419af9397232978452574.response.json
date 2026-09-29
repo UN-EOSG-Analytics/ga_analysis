@@ -1,0 +1,50 @@
+{
+  "request_hash": "f2923c5fb1e40de10a04d8193dd26be73164d13e065419af9397232978452574",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_b"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2022_GBR:1",
+      "verbatim_en_2022_GBR:2",
+      "verbatim_en_2022_GBR:3",
+      "verbatim_en_2022_GBR:4",
+      "verbatim_en_2022_GBR:5",
+      "verbatim_en_2022_GBR:6",
+      "verbatim_en_2022_GBR:7",
+      "verbatim_en_2022_GBR:8",
+      "verbatim_en_2022_GBR:9",
+      "verbatim_en_2022_GBR:10",
+      "verbatim_en_2022_GBR:11",
+      "verbatim_en_2022_GBR:12",
+      "verbatim_en_2022_GBR:13",
+      "verbatim_en_2022_GBR:14",
+      "verbatim_en_2022_GBR:15",
+      "verbatim_en_2022_GBR:16",
+      "verbatim_en_2022_GBR:17",
+      "verbatim_en_2022_GBR:18",
+      "verbatim_en_2022_GBR:19"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2022_GBR:5",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "A country where artificial intelligence acts as",
+        "rationale": "Introduces criticism of AI acting as judge and jury, completed in the following passage."
+      },
+      {
+        "passage_id": "verbatim_en_2022_GBR:6",
+        "status": "Yes",
+        "mention_type": "contextual",
+        "quote": "judge and jury and where there are no human rights and no fundamental freedoms",
+        "rationale": "Completes the preceding AI reference, rejecting AI-based authoritarian adjudication without rights or freedoms."
+      }
+    ]
+  }
+}

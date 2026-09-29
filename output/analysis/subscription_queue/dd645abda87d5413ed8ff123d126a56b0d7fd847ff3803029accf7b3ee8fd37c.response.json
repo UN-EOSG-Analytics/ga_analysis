@@ -1,0 +1,31 @@
+{
+  "request_hash": "dd645abda87d5413ed8ff123d126a56b0d7fd847ff3803029accf7b3ee8fd37c",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_c"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2025_ITA:1",
+      "verbatim_en_2025_ITA:2",
+      "verbatim_en_2025_ITA:3",
+      "verbatim_en_2025_ITA:4",
+      "verbatim_en_2025_ITA:5",
+      "verbatim_en_2025_ITA:6",
+      "verbatim_en_2025_ITA:7"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2025_ITA:5",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "As is happening with the opening of the AI hub for sustainable development, involving hundreds of African startups in the development of artificial intelligence.",
+        "rationale": "Describes an AI development partnership and startup hub as part of Italian cooperation with Africa."
+      }
+    ]
+  }
+}

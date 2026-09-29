@@ -1,0 +1,30 @@
+{
+  "request_hash": "a93fe2326f8445b5ba988d72714c621d0b31f64ed3b955c34ed3314b688e9714",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_b"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_ZWE:1",
+      "verbatim_en_2026_ZWE:2",
+      "verbatim_en_2026_ZWE:3",
+      "verbatim_en_2026_ZWE:4",
+      "verbatim_en_2026_ZWE:5",
+      "verbatim_en_2026_ZWE:6"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_ZWE:4",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Zimbabwe's National Artificial Intelligence Strategy 2026-2030 promotes human-centered, ethical, and responsible innovation.",
+        "rationale": "Describes a national AI strategy, equitable development benefits and human control over military and nuclear AI uses."
+      }
+    ]
+  }
+}

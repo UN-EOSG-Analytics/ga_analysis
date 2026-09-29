@@ -1,0 +1,31 @@
+{
+  "request_hash": "12a3d89b25d06749989c03dab0348fd7849ac8018d520737373110f1d2d823b3",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_b"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2025_UKR:1",
+      "verbatim_en_2025_UKR:2",
+      "verbatim_en_2025_UKR:3",
+      "verbatim_en_2025_UKR:4",
+      "verbatim_en_2025_UKR:5",
+      "verbatim_en_2025_UKR:6",
+      "verbatim_en_2025_UKR:7"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2025_UKR:4",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "We need global rules now for how AI can be used in weapons, and this is just as urgent as preventing the spread of nuclear weapons.",
+        "rationale": "Warns of AI-enabled autonomous drones and an accelerating arms race, demanding global weapons rules."
+      }
+    ]
+  }
+}

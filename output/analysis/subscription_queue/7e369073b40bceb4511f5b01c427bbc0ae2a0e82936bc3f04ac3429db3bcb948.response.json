@@ -1,0 +1,44 @@
+{
+  "request_hash": "7e369073b40bceb4511f5b01c427bbc0ae2a0e82936bc3f04ac3429db3bcb948",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_b"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2025_MWI:1",
+      "verbatim_en_2025_MWI:2",
+      "verbatim_en_2025_MWI:3",
+      "verbatim_en_2025_MWI:4",
+      "verbatim_en_2025_MWI:5",
+      "verbatim_en_2025_MWI:6"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2025_MWI:3",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "harness the transformative potential of science, technology, artificial intelligence, and private sector development for national and global development.",
+        "rationale": "Advocates using AI to advance inclusive national and global development."
+      },
+      {
+        "passage_id": "verbatim_en_2025_MWI:4",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "We therefore call for a global framework that ensures AI is ethical, inclusive, and accessible to all nations",
+        "rationale": "Calls for AI governance to enable benefits while preventing inequality and security harms."
+      },
+      {
+        "passage_id": "verbatim_en_2025_MWI:5",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "The Republic of Malawi is optimistic that AI will usher in a new era of enhanced productivity for its citizens, helping to propel the country's development trajectory.",
+        "rationale": "Expects AI to improve productivity and national development."
+      }
+    ]
+  }
+}

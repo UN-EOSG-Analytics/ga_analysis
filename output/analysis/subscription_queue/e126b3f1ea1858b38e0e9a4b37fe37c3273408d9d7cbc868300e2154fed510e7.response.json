@@ -1,0 +1,30 @@
+{
+  "request_hash": "e126b3f1ea1858b38e0e9a4b37fe37c3273408d9d7cbc868300e2154fed510e7",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_c"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_BGR:1",
+      "verbatim_en_2026_BGR:2",
+      "verbatim_en_2026_BGR:3",
+      "verbatim_en_2026_BGR:4",
+      "verbatim_en_2026_BGR:5",
+      "verbatim_en_2026_BGR:6"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_BGR:4",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Artificial intelligence must be developed in keeping with international law and under effective human control, and outer space must remain the realm of peaceful and safe operations.",
+        "rationale": "Calls for legal compliance and human control of AI in the context of security and military applications."
+      }
+    ]
+  }
+}

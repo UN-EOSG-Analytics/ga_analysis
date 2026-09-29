@@ -1,0 +1,38 @@
+{
+  "request_hash": "51b5d4dcc7831e343089c2a26c5e929ae9e2fe70d41f56d66d365d9433cb70ca",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "root"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2025_KAZ:1",
+      "verbatim_en_2025_KAZ:2",
+      "verbatim_en_2025_KAZ:3",
+      "verbatim_en_2025_KAZ:4",
+      "verbatim_en_2025_KAZ:5",
+      "verbatim_en_2025_KAZ:6",
+      "verbatim_en_2025_KAZ:7"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2025_KAZ:5",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Kazakhstan views artificial intelligence not as one more technological advancement, but as a major breakthrough that can be a true engine of human progress.",
+        "rationale": "Sets out AI development potential alongside divides, ethics, fairness, accountability, individual rights and collective benefit sharing."
+      },
+      {
+        "passage_id": "verbatim_en_2025_KAZ:6",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Kazakhstan welcomes the establishment under UN auspices of the Global Dialogue on AI Governance. We stand ready to actively contribute to this platform to help ensure that AI remains safe, inclusive, and human-centered.",
+        "rationale": "Endorses the UN AI governance dialogue and describes national AI integration, infrastructure, automation-related job risks and professional education."
+      }
+    ]
+  }
+}

@@ -13,6 +13,9 @@ __pycache__/
 # Office lock files
 ~$*
 
+# Machine-local runtime lock
+output/analysis/execution.lock
+
 # Local recovery snapshots; exceed the GitHub 100 MB file limit.
 # Retired statement PDFs and extraction caches remain in commit 4c4f453.
 archive/*.zip

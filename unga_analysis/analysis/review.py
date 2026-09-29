@@ -1,4 +1,4 @@
-"""Two complete text reviews, including keyword-negative speeches; immutable DB."""
+"""Whole selected speeches, stratified negative audits and explicit unreviewed rows."""
 from concurrent.futures import ThreadPoolExecutor
 from collections import Counter
 
@@ -31,7 +31,7 @@ def review_request(speech,start,end,pass_no):
     return payload,instructions
 
 
-def review_speech(speech, provider, cfg):
+def review_speech(speech, provider, cfg,pass_count=2):
     passages = speech['passages']
     results = []
     size = cfg['execution']['review_batch_passages']
@@ -65,11 +65,11 @@ def review_speech(speech, provider, cfg):
 
     for start in range(0,len(passages),size):
         batch=passages[start:start+size]
-        reviews=[review_batch(start,min(start+size,len(passages)),pass_no) for pass_no in (1,2)]
+        reviews=[review_batch(start,min(start+size,len(passages)),pass_no) for pass_no in range(1,pass_count+1)]
         for local_index,p in enumerate(batch):
             absolute_index=start+local_index
             a=reviews[0].get(p['passage_id'],{'status':'No','mention_type':'none','quote':'','rationale':'Entire supplied passage reviewed; no substantive AI discussion identified.'})
-            b=reviews[1].get(p['passage_id'],{'status':'No','mention_type':'none','quote':'','rationale':'Independent complete text review found no substantive AI discussion.'})
+            b=reviews[1].get(p['passage_id'],{'status':'No','mention_type':'none','quote':'','rationale':'Independent complete text review found no substantive AI discussion.'}) if pass_count==2 else a
             status=a['status'] if a['status']==b['status'] else 'Uncertain'
             results.append(dict(passage_id=p['passage_id'], speech_id=speech['speech_id'], year=speech['year'],
                 country_iso3=speech['country_iso3'], region=speech['analytical_group'], source_sha256=speech['sha256'],
@@ -78,21 +78,52 @@ def review_speech(speech, provider, cfg):
                 context_before=passages[absolute_index-1]['text'] if absolute_index else '',
                 context_after=passages[absolute_index+1]['text'] if absolute_index+1<len(passages) else '',
                 ai_status=status, review_status='reviewed' if status!='Uncertain' else 'uncertain',
-                review_method='two_automated_full_text_reviews_exact_quote_checked', human_reviewed=False,
-                reviews=[a,b], source_review_notes=speech.get('source_review_notes')))
+                review_method=f'{pass_count}_automated_full_text_review_passes_exact_quote_checked', human_reviewed=False,
+                reviews=[a,b] if pass_count==2 else [a], source_review_notes=speech.get('source_review_notes')))
     return results
 
 
-def review_all(speeches, provider, cfg, out):
-    records=[]
-    with ThreadPoolExecutor(max_workers=cfg['execution']['workers']) as pool:
-        for i,result in enumerate(pool.map(lambda s:review_speech(s,provider,cfg),speeches),1):
-            records.extend(result)
-            if i%10==0 or i==len(speeches):
-                print(f'Text review {i}/{len(speeches)} speeches (cached calls reused)',flush=True)
+def review_all(speeches, provider, cfg, out,plan=None):
+    from .scope import review_plan,stratum
+    plan=plan or review_plan(speeches,cfg,getattr(provider,'root',None))
+    selection={r['speech_id']:r for r in plan['rows']};size=cfg['execution']['review_batch_passages']
+    save(out/'review_selection.json',plan)
+    def execute(selected):
+        if hasattr(provider,'collect'):
+            jobs=[]
+            for s in selected:
+                for start in range(0,len(s['passages']),size):
+                    for n in range(1,selection[s['speech_id']]['passes']+1):
+                        payload,instructions=review_request(s,start,min(start+size,len(s['passages'])),n)
+                        jobs.append((f'review_{n}',payload,SCHEMA,instructions,None))
+            provider.collect(jobs)
+        records=[]
+        with ThreadPoolExecutor(max_workers=cfg['execution']['workers']) as pool:
+            for result in pool.map(lambda s:review_speech(s,provider,cfg,selection[s['speech_id']]['passes']),selected):records.extend(result)
+        for r in records:r['review_selection']=selection[r['speech_id']]['selection']
+        return records
+    records=execute([s for s in speeches if selection[s['speech_id']]['passes']])
+    hits={r['speech_id'] for r in records if r['review_selection']=='negative_audit_sample' and r['ai_status'] in ('Yes','Uncertain')}
+    strata={stratum(s) for s in speeches if s['speech_id'] in hits}
+    expansion=[s for s in speeches if not selection[s['speech_id']]['passes'] and stratum(s) in strata] if cfg.get('review',{}).get('expand_on_audit_hit',True) else []
+    for s in expansion:selection[s['speech_id']].update(selection='audit_hit_expansion',passes=cfg.get('review',{}).get('primary_passes',2))
+    plan.update(audit_hit_speeches=sorted(hits),expanded_speeches=len(expansion),rows=list(selection.values()),
+        selected_speeches=sum(bool(r['passes']) for r in selection.values()),unselected_speeches=sum(not r['passes'] for r in selection.values()))
+    save(out/'review_selection.json',plan)
+    records.extend(execute(expansion))
+    for s in speeches:
+        if selection[s['speech_id']]['passes']:continue
+        for p in s['passages']:
+            records.append(dict(passage_id=p['passage_id'],speech_id=s['speech_id'],year=s['year'],country_iso3=s['country_iso3'],
+                ai_status='Pending',review_status='not_reviewed',review_selection='not_selected',reviews=[],human_reviewed=False))
+    order={p['passage_id']:i for i,p in enumerate(p for s in speeches for p in s['passages'])}
+    records.sort(key=lambda r:order[r['passage_id']])
     write_jsonl(out/'passage_ai_review.jsonl',records)
     summary=dict(passages=len(records), counts=dict(Counter(r['ai_status'] for r in records)),
-                 all_passages_attempted=True, all_passages_reviewed=all(v.get('reviewed',True) for r in records for v in r['reviews']), human_reviewed=False, corpus_fingerprint=stable_hash([(s['source_id'],s['sha256']) for s in speeches]))
+                 all_passages_attempted=not any(r['ai_status']=='Pending' for r in records),
+                 all_passages_reviewed=all(r['reviews'] and all(v.get('reviewed',True) for v in r['reviews']) for r in records),
+                 review_scope=plan['scope'],audit_hit_speeches=sorted(hits),expanded_speeches=len(expansion),
+                 human_reviewed=False, corpus_fingerprint=stable_hash([(s['source_id'],s['sha256']) for s in speeches]))
     save(out/'ai_review_summary.json',summary)
     return records
 

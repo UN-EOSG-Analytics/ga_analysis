@@ -1,0 +1,41 @@
+{
+  "request_hash": "0511f5049a1914258811149094e6a29d1fdeec738552a8c03098d50270f49074",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_a"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2025_GHA:1",
+      "verbatim_en_2025_GHA:2",
+      "verbatim_en_2025_GHA:3",
+      "verbatim_en_2025_GHA:4",
+      "verbatim_en_2025_GHA:5",
+      "verbatim_en_2025_GHA:6",
+      "verbatim_en_2025_GHA:7",
+      "verbatim_en_2025_GHA:8",
+      "verbatim_en_2025_GHA:9",
+      "verbatim_en_2025_GHA:10"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2025_GHA:4",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "We live in a world of cryptocurrency, artificial intelligence, social media, the internet and its dark hidden dungeon of the dark web, all of which carry a potential threat to global peace and security.",
+        "rationale": "Identifies AI among modern technologies posing threats to peace and security."
+      },
+      {
+        "passage_id": "verbatim_en_2025_GHA:6",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "The internet, social media platforms, and artificial intelligence offer us the illusion of connectivity, when in fact, what they do is reinforce isolation by using algorithms that ensure that we do not receive new ideas and perspectives, but rather more of the same content.",
+        "rationale": "Explicitly links AI-driven content selection to isolation, manipulation and disinformation."
+      }
+    ]
+  }
+}

@@ -15,6 +15,10 @@ OFFICIAL_URLS = [
 ]
 
 
+def reference_files(root):
+    return sorted(p for p in (Path(root)/'reference').glob('*') if p.is_file() and not p.name.startswith('~$') and p.suffix.lower() in ('.pdf','.docx','.txt','.md'))
+
+
 class TextHTML(HTMLParser):
     def __init__(self):
         super().__init__();self.skip=0;self.parts=[]
@@ -28,8 +32,7 @@ class TextHTML(HTMLParser):
 
 def reference_blocks(root,out,fetch_current=True):
     blocks=[];inventory=[]
-    for index,path in enumerate(sorted((Path(root)/'reference').glob('*')),1):
-        if path.suffix.lower() not in ('.pdf','.docx','.txt','.md'):continue
+    for index,path in enumerate(reference_files(root),1):
         role='draft' if 'draft' in path.name.lower() else 'supplied_background'
         entry=dict(file=path.relative_to(root).as_posix(),sha256=digest(path),role=role)
         extracted=[]
@@ -76,6 +79,12 @@ def summarize_references(blocks,provider,out):
         if current and length+len(b['text'])>22000:groups.append(current);current=[];length=0
         current.append(b);length+=len(b['text'])
     if current:groups.append(current)
+    instructions=SYSTEM+('Read all supplied background blocks. Summarize at most six relevant facts on institutional mandate/status, chronology, '
+        'developing-country capacity needs or SPMU framing. Distinguish drafts, proposals, preliminary scientific reports, adopted decisions '
+        'and dated website statements. Older SPMU country counts are historical style context, never current speech evidence. '
+        'No supplied or retrieved document proves that an unspecified later event happened. Each fact needs an exact short source quote.')
+    if hasattr(provider,'collect'):
+        provider.collect([('reference_context',{'blocks':[{k:v for k,v in b.items() if k!='locator'} for b in group]},contract,instructions,None) for group in groups])
     facts=[]
     for group in groups:
         source={b['reference_id']:b['text'] for b in group}
@@ -83,11 +92,7 @@ def summarize_references(blocks,provider,out):
             for f in result['facts']:
                 if f['reference_id'] not in source or not quote_in(f['quote'],source[f['reference_id']]):
                     raise ValueError('Background fact requires an exact supplied quote')
-        value=ask(provider,'reference_context',{'blocks':[{k:v for k,v in b.items() if k!='locator'} for b in group]},contract,
-            SYSTEM+'Read all supplied background blocks. Summarize at most six relevant facts on institutional mandate/status, chronology, '
-            'developing-country capacity needs or SPMU framing. Distinguish drafts, proposals, preliminary scientific reports, adopted decisions '
-            'and dated website statements. Older SPMU country counts are historical style context, never current speech evidence. '
-            'No supplied or retrieved document proves that an unspecified later event happened. Each fact needs an exact short source quote.',validate)
+        value=ask(provider,'reference_context',{'blocks':[{k:v for k,v in b.items() if k!='locator'} for b in group]},contract,instructions,validate)
         facts.extend(value['facts'])
     save(out/'reference_context.json',facts)
     return facts

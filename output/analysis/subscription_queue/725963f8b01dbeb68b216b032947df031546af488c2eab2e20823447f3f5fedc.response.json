@@ -1,0 +1,31 @@
+{
+  "request_hash": "725963f8b01dbeb68b216b032947df031546af488c2eab2e20823447f3f5fedc",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_c"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_RUS:1",
+      "verbatim_en_2026_RUS:2",
+      "verbatim_en_2026_RUS:3",
+      "verbatim_en_2026_RUS:4",
+      "verbatim_en_2026_RUS:5",
+      "verbatim_en_2026_RUS:6",
+      "verbatim_en_2026_RUS:7"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_RUS:6",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "The UN shoulders a special responsibility given the fast-paced development of AI technologies. Generally recognized rules for the use of AI should be underpinned on an equal foundation with the participation of all countries.",
+        "rationale": "Supports inclusive UN AI governance institutions and China's proposed AI cooperation organization."
+      }
+    ]
+  }
+}

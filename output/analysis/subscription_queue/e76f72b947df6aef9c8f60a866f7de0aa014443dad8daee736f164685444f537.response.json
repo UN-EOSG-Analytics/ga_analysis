@@ -1,0 +1,34 @@
+{
+  "request_hash": "e76f72b947df6aef9c8f60a866f7de0aa014443dad8daee736f164685444f537",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_b"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_TUN:1",
+      "verbatim_en_2026_TUN:2",
+      "verbatim_en_2026_TUN:3",
+      "verbatim_en_2026_TUN:4",
+      "verbatim_en_2026_TUN:5",
+      "verbatim_en_2026_TUN:6",
+      "verbatim_en_2026_TUN:7",
+      "verbatim_en_2026_TUN:8",
+      "verbatim_en_2026_TUN:9",
+      "verbatim_en_2026_TUN:10"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_TUN:8",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "My country stresses that the rapid development of artificial intelligence offers great opportunities to accelerate development goals.",
+        "rationale": "Advocates equitable global AI governance, capacity building and financing to share AI's development benefits."
+      }
+    ]
+  }
+}

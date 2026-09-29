@@ -1,0 +1,64 @@
+{
+  "request_hash": "600af50b081ecf1b855f6e9a14cc2fa850f296ec042e840650458de9cc30b664",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_b"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2022_PHL:1",
+      "verbatim_en_2022_PHL:2",
+      "verbatim_en_2022_PHL:3",
+      "verbatim_en_2022_PHL:4",
+      "verbatim_en_2022_PHL:5",
+      "verbatim_en_2022_PHL:6",
+      "verbatim_en_2022_PHL:7",
+      "verbatim_en_2022_PHL:8",
+      "verbatim_en_2022_PHL:9",
+      "verbatim_en_2022_PHL:10",
+      "verbatim_en_2022_PHL:11",
+      "verbatim_en_2022_PHL:12",
+      "verbatim_en_2022_PHL:13",
+      "verbatim_en_2022_PHL:14",
+      "verbatim_en_2022_PHL:15",
+      "verbatim_en_2022_PHL:16",
+      "verbatim_en_2022_PHL:17",
+      "verbatim_en_2022_PHL:18",
+      "verbatim_en_2022_PHL:19",
+      "verbatim_en_2022_PHL:20",
+      "verbatim_en_2022_PHL:21",
+      "verbatim_en_2022_PHL:22",
+      "verbatim_en_2022_PHL:23",
+      "verbatim_en_2022_PHL:24",
+      "verbatim_en_2022_PHL:25",
+      "verbatim_en_2022_PHL:26",
+      "verbatim_en_2022_PHL:27",
+      "verbatim_en_2022_PHL:28",
+      "verbatim_en_2022_PHL:29",
+      "verbatim_en_2022_PHL:30",
+      "verbatim_en_2022_PHL:31",
+      "verbatim_en_2022_PHL:32",
+      "verbatim_en_2022_PHL:33"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2022_PHL:30",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "forming legal rules that will prevent the weaponization of artificial intelligence.",
+        "rationale": "Calls for international legal rules against AI weaponization."
+      },
+      {
+        "passage_id": "verbatim_en_2022_PHL:31",
+        "status": "Uncertain",
+        "mention_type": "uncertain",
+        "quote": "Our development agenda must consider the possible displacement of human labour as a result of advances in automation.",
+        "rationale": "Discusses labour displacement immediately after AI governance, but does not specify whether the automation is AI-based."
+      }
+    ]
+  }
+}

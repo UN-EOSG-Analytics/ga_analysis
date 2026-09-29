@@ -1,0 +1,47 @@
+{
+  "request_hash": "bf5b949b465a6eed4dd4daf2d373fdc95c6ae74d1b96b7788d8077ed2e538dd4",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_c"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_GRC:1",
+      "verbatim_en_2026_GRC:2",
+      "verbatim_en_2026_GRC:3",
+      "verbatim_en_2026_GRC:4",
+      "verbatim_en_2026_GRC:5",
+      "verbatim_en_2026_GRC:6",
+      "verbatim_en_2026_GRC:7",
+      "verbatim_en_2026_GRC:8",
+      "verbatim_en_2026_GRC:9"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_GRC:7",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "However, it is simply impossible to ignore the fact that at present, the risks of an unchecked and unregulated advance in artificial intelligence could greatly outweigh its potential benefits.",
+        "rationale": "Warns that unregulated AI risks may outweigh its benefits."
+      },
+      {
+        "passage_id": "verbatim_en_2026_GRC:8",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "AI companies need to be licensed based on specific requirements, adherence to human values, transparency, and most importantly, safety.",
+        "rationale": "Calls for AI licensing after discussing loss of control, jobs and concentration of wealth."
+      },
+      {
+        "passage_id": "verbatim_en_2026_GRC:9",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "At the same time, I take the call by leading AI executives for a voluntary pause in the development of their models very seriously, but only, I repeat, only as a temporary measure to buy time for a powerful regulatory authority to be set up.",
+        "rationale": "Supports a temporary AI development pause and a strong regulatory authority."
+      }
+    ]
+  }
+}

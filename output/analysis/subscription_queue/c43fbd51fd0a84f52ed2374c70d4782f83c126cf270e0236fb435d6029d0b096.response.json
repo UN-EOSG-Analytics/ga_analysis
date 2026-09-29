@@ -1,0 +1,31 @@
+{
+  "request_hash": "c43fbd51fd0a84f52ed2374c70d4782f83c126cf270e0236fb435d6029d0b096",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_a"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_CUB:1",
+      "verbatim_en_2026_CUB:2",
+      "verbatim_en_2026_CUB:3",
+      "verbatim_en_2026_CUB:4",
+      "verbatim_en_2026_CUB:5",
+      "verbatim_en_2026_CUB:6",
+      "verbatim_en_2026_CUB:7"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_CUB:7",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "What we need to do is to promote governance that is more inclusive in the use of the new ICTs and telecommunications, particularly the disruptive technologies such as artificial intelligence.",
+        "rationale": "Advocates inclusive governance of AI and other disruptive technologies."
+      }
+    ]
+  }
+}

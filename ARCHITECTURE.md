@@ -78,3 +78,7 @@ python -m unga_analysis screen
 지역 매핑은 `config/un_regional_groups.csv`의 193개 회원국에 대해 2026-09-25 기준을 고정 적용한다. 미국은 정식 그룹 비회원으로 분리하고, 튀르키예는 UN 선거상 관례에 따라 WEOG에 한 번 배정한다. 키리바시는 현재 명단의 Asia-Pacific 분류를 따른다. 근거 HTML은 `output/primary_sources/`에 보존한다.
 
 로컬 AI 후보 검색은 실제 자료에서 실행했다. 후속 분석 경로도 구현하고 가짜 자료로 전체 실행·보고서 생성까지 검증했다. 실제 자료의 유료 문맥 검토·임베딩·분류는 시작 지시 전이다. 모델 검토와 사람 검증을 구분하고, 미해결 판정은 불확실로 내보낸다. 최신 워크플로우 상태는 `output/workflow_readiness.json`과 [실행 안내](docs/ANALYSIS_WORKFLOW.md)를 따른다.
+
+## Subscription execution update (2026-09-29)
+
+`analysis/scope.py` selects whole candidate speeches and deterministic year/region/source negative audits. `review.py` expands audit-hit strata and retains unselected passages as Pending. `SubscriptionProvider.collect` exports every independent stage job before pausing. Classification batches carry taxonomy once; both source-grounded passes remain separate. Annual detection lower bounds use obtained speeches while theme denominators retain full-speech code-specific resolution. `reporting.py` flows sections over 4-6 pages and writes numbered source notes. `workflow.validate_final_day` checks internal year/session/language/day before source ingestion. No intake file becomes a 2026 observation by renaming alone.

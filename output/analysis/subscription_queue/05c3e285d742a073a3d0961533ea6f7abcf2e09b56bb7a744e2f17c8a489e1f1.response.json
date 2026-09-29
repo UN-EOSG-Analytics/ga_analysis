@@ -1,0 +1,40 @@
+{
+  "request_hash": "05c3e285d742a073a3d0961533ea6f7abcf2e09b56bb7a744e2f17c8a489e1f1",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_a"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_CHL:1",
+      "verbatim_en_2026_CHL:2",
+      "verbatim_en_2026_CHL:3",
+      "verbatim_en_2026_CHL:4",
+      "verbatim_en_2026_CHL:5",
+      "verbatim_en_2026_CHL:6",
+      "verbatim_en_2026_CHL:7",
+      "verbatim_en_2026_CHL:8",
+      "verbatim_en_2026_CHL:9"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_CHL:7",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Artificial intelligence is not only a technical matter that we can delegate to experts. It is an ethical challenge and a geopolitical issue.",
+        "rationale": "Calls for AI governance that reconciles innovation with responsibility."
+      },
+      {
+        "passage_id": "verbatim_en_2026_CHL:8",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "our country AI can amount to and mean growth of between 10% and 20%. As such, we are choosing the path that we call responsible, one of responsible pace.",
+        "rationale": "Discusses potential AI growth, regulation, investment, assessments and UN deliberation."
+      }
+    ]
+  }
+}

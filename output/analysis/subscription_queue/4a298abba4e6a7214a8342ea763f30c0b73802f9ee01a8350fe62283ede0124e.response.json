@@ -1,0 +1,34 @@
+{
+  "request_hash": "4a298abba4e6a7214a8342ea763f30c0b73802f9ee01a8350fe62283ede0124e",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_c"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_BEL:1",
+      "verbatim_en_2026_BEL:2",
+      "verbatim_en_2026_BEL:3",
+      "verbatim_en_2026_BEL:4",
+      "verbatim_en_2026_BEL:5",
+      "verbatim_en_2026_BEL:6",
+      "verbatim_en_2026_BEL:7",
+      "verbatim_en_2026_BEL:8",
+      "verbatim_en_2026_BEL:9",
+      "verbatim_en_2026_BEL:10"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_BEL:6",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "I'm thinking in particular of children who are growing up in a world where AI can open extraordinary possibilities but also creates new vulnerabilities. We must neither hold back innovation out of fear, nor assume that it will regulate itself.",
+        "rationale": "Discusses AI benefits and vulnerabilities for children and the need for regulation."
+      }
+    ]
+  }
+}

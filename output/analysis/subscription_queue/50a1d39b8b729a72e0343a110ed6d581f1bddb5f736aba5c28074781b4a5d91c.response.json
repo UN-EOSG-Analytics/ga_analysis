@@ -1,0 +1,49 @@
+{
+  "request_hash": "50a1d39b8b729a72e0343a110ed6d581f1bddb5f736aba5c28074781b4a5d91c",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_c"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2025_GRC:1",
+      "verbatim_en_2025_GRC:2",
+      "verbatim_en_2025_GRC:3",
+      "verbatim_en_2025_GRC:4",
+      "verbatim_en_2025_GRC:5",
+      "verbatim_en_2025_GRC:6",
+      "verbatim_en_2025_GRC:7",
+      "verbatim_en_2025_GRC:8",
+      "verbatim_en_2025_GRC:9",
+      "verbatim_en_2025_GRC:10",
+      "verbatim_en_2025_GRC:11"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2025_GRC:2",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "And this trend is strengthening at a time when global challenges continue to multiply. Climate change, migration, the advent of artificial intelligence.",
+        "rationale": "Frames the advent of AI as a growing global challenge."
+      },
+      {
+        "passage_id": "verbatim_en_2025_GRC:9",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Today, Greece is pursuing a visionary yet practical AI strategy through pilot programs in areas such as education, healthcare, and natural disaster prevention. Teachers and students will soon engage with custom designated AI teaching assistants.",
+        "rationale": "Describes national AI deployment and applications; the passage also discusses risks and international AI institutions."
+      },
+      {
+        "passage_id": "verbatim_en_2025_GRC:10",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "We don't want our kids to share their intimate thoughts and feelings with an AI chatbot.",
+        "rationale": "Raises concern about children using AI chatbots in a discussion of mental health protections."
+      }
+    ]
+  }
+}

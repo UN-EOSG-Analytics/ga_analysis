@@ -7,6 +7,7 @@ import importlib.metadata
 import json
 import shutil
 import os
+import re
 from datetime import datetime,timezone
 
 from ..io import read_jsonl,digest,stable_hash,write_jsonl
@@ -81,6 +82,10 @@ def preflight(root,allow_partial=False):
     partial=[int(y) for y,v in coverage.items() if v['partial']]
     source_dir=root/'data/unga_general_debate_verbatim_en/automatic_transcripts_unofficial'
     raw_day6=list(source_dir.glob('UNGA2026_day6_EN_ASR.*'))
+    for path in raw_day6:
+        if path.suffix in ('.txt','.json'):
+            try:validate_final_day(path)
+            except ValueError as exc:problems.append(str(exc))
     active_origins={r.get('origin_file') for r in rows}
     unprocessed=[p.relative_to(root).as_posix() for p in raw_day6 if p.suffix in ('.txt','.json') and p.relative_to(root).as_posix() not in active_origins]
     from .costs import estimate_costs
@@ -91,10 +96,13 @@ def preflight(root,allow_partial=False):
         subscription_session_required=subscription,subscription_model_preference=cfg['execution'].get('subscription_model_preference'),
         api_access_verified=bool(access_ok),api_verification_scope='Model metadata access only; no paid inference',
         paid_inference_verified=False,problems=problems,ready_for_execution=not problems and (not partial or allow_partial),
-        ready_after_final_day=not problems,partial_years=partial,coverage=coverage,day6_files_awaiting_preparation=unprocessed,
+        ready_after_final_day=not problems,readiness_scope='Offline implementation/dependency checks; source ingestion and actual subscription execution remain required',
+        blockers=problems+([f'Validated final-day sources missing for years {partial}'] if partial and not allow_partial else []),
+        partial_years=partial,coverage=coverage,day6_files_awaiting_preparation=unprocessed,
         speeches=len(rows),passages=sum(len(r['passages']) for r in rows),stages=STAGES,
         corpus_sha256=digest(root/cfg['output_directory']/'speeches.jsonl'),
-        review_all_speeches=True,estimated_review_cost_usd=round(rough_review,2),
+        review_all_speeches=costs['measured']['review_unselected_speeches']==0,review_scope=cfg.get('review',{}),
+        estimated_review_cost_usd=round(rough_review,2),
         cost_estimate=costs,estimate_scope=costs['scope'],
         estimated_total_exceeds_default_cap=costs['upper_usd']>cfg['execution']['default_cost_limit_usd'],
         default_cost_limit_usd=cfg['execution']['default_cost_limit_usd'],paid_calls_performed=0,
@@ -103,9 +111,32 @@ def preflight(root,allow_partial=False):
     return result
 
 
-def receive_final_day(root,path):
-    path=Path(path).resolve(strict=True)
+def validate_final_day(path,year=2026):
+    path=Path(path)
     if path.suffix.lower() not in ('.txt','.json'):raise ValueError('Day 6 must be an English transcript TXT or JSON')
+    text=path.read_text(encoding='utf-8-sig')
+    if path.suffix.lower()=='.json':
+        value=json.loads(text);video=value.get('video',{});transcript=value.get('transcript',{})
+        title=video.get('title','');date=video.get('date','');language=transcript.get('language','')
+        identity=' '.join(str(x) for x in [title,video.get('pv_symbol',''),value.get('url','')])
+        dates=re.findall(r'\b(20\d{2})-\d{2}-\d{2}',date)
+        if not transcript.get('data'):raise ValueError('Day 6 JSON contains no transcript statements')
+    else:
+        header=text.split('---',1)[0][:2000];title=header
+        date=re.search(r'^Date:\s*(.+)$',header,re.M);dates=re.findall(r'\b20\d{2}\b',date.group(1)) if date else []
+        language='en' if re.search(r'Language:\s*English',header,re.I) else ''
+        identity=header
+    sessions=[int(value) for group in re.findall(r'(\d+)(?:st|nd|rd|th) session|A/(\d+)/PV|/ga/(\d+)/',identity) for value in group if value]
+    if not dates or any(int(y)!=year for y in dates) or any(s!=year-1945 for s in sessions):
+        raise ValueError(f'Day 6 source year/session does not match {year}: dates={dates}, sessions={sessions}; source not ingested')
+    if language!='en' or not re.search(r'Day\s*6\b',title,re.I):raise ValueError('Expected an explicitly English Day 6 transcript')
+    return dict(year=year,session=year-1945,language=language,sha256=digest(path))
+
+
+def receive_final_day(root,path):
+    root=Path(root).resolve()
+    path=Path(path).resolve(strict=True)
+    validate_final_day(path)
     destination=root/'data/unga_general_debate_verbatim_en/automatic_transcripts_unofficial'/('UNGA2026_day6_EN_ASR'+path.suffix.lower())
     destination=destination.resolve()
     if not destination.is_relative_to(root):raise ValueError('Final-day destination leaves workspace')
@@ -130,8 +161,11 @@ def run(root,execute=False,budget=None,allow_partial=False,final_day=None,stop_a
         if readiness['problems'] and provider is None:raise ValueError('; '.join(readiness['problems']))
         speeches=inputs(root,cfg)
         coverage_guard(speeches,cfg,allow_partial)
+        from .references import reference_files
         fingerprint=stable_hash(dict(input_sha256=digest(root/cfg['output_directory']/'speeches.jsonl'),
-            discovery=cfg['discovery'],classification=cfg['classification'],execution={k:v for k,v in cfg['execution'].items() if k not in ('default_cost_limit_usd','workers')},
+            discovery=cfg['discovery'],classification=cfg['classification'],review=cfg.get('review',{}),report=cfg['report'],
+            references={p.name:digest(p) for p in reference_files(root)},
+            execution={k:v for k,v in cfg['execution'].items() if k not in ('default_cost_limit_usd','workers')},
             code={p.name:digest(p) for p in Path(__file__).parent.glob('*.py')},allow_partial=allow_partial))[:16]
         out=base/'runs'/fingerprint;out.mkdir(parents=True,exist_ok=True)
         if provider is None:
@@ -164,7 +198,8 @@ def run(root,execute=False,budget=None,allow_partial=False,final_day=None,stop_a
             return result
         try:
             from .review import review_all,ai_chunks
-            reviewed=review_all(speeches,provider,cfg,out)
+            from .scope import review_plan
+            reviewed=review_all(speeches,provider,cfg,out,review_plan(speeches,cfg,root))
             if stop_after=='review':return finish('review')
             chunks,duplicates=ai_chunks(speeches,reviewed)
             write_jsonl(out/'discovery_chunks.jsonl',chunks);table(out/'discovery_duplicates.csv',duplicates)
@@ -181,13 +216,23 @@ def run(root,execute=False,budget=None,allow_partial=False,final_day=None,stop_a
             ancillary(root,out,speeches,reviewed,classified,taxonomy,stats,readiness,cfg)
             if stop_after=='aggregate':return finish('aggregate')
             from .references import reference_blocks,summarize_references
-            blocks,inventory=reference_blocks(root,out,fetch_current=fetch_current)
+            if (out/'reference_blocks.json').exists() and (out/'reference_inventory.json').exists():
+                blocks=json.loads((out/'reference_blocks.json').read_text(encoding='utf-8'));inventory=json.loads((out/'reference_inventory.json').read_text(encoding='utf-8'))
+            else:blocks,inventory=reference_blocks(root,out,fetch_current=fetch_current)
             facts=summarize_references(blocks,provider,out)
-            from .reporting import draft_report,charts,pages,render
+            from .reporting import draft_report,charts,pages,render,source_notes
             content=draft_report(stats,evidence,institutions,taxonomy,facts,provider,out)
             destination=root/'deliverables'/fingerprint;destination.mkdir(parents=True,exist_ok=True)
             figures=charts(stats,destination)
-            publication=render(pages(content,stats,institutions,facts,inventory,figures),destination,cfg['report']['basename'],use_word=cfg['report'].get('render_with_word',True))
+            for attempt in range(3):
+                try:
+                    publication=render(pages(content,stats,institutions,facts,inventory,figures),destination,cfg['report']['basename'],use_word=cfg['report'].get('render_with_word',True))
+                    break
+                except ValueError as exc:
+                    if 'page' not in str(exc).lower() or attempt==2:raise
+                    content=draft_report(stats,evidence,institutions,taxonomy,facts,provider,out,layout_feedback=dict(attempt=attempt+1,reason=str(exc)))
+            notes=source_notes(content,destination)
+            publication['source_notes']=notes
             save(destination/'publication_checks.json',publication)
             save(root/'deliverables/latest.json',dict(run_id=fingerprint,**publication,evidence_directory=str(out)))
             return finish('report',dict(publication=publication,coverage=stats['coverage']))
@@ -195,9 +240,11 @@ def run(root,execute=False,budget=None,allow_partial=False,final_day=None,stop_a
             from .subscription import AwaitingSubscriptionWork
             if isinstance(exc,AwaitingSubscriptionWork):
                 result=dict(run_id=fingerprint,state='awaiting_subscription_review',output=str(out),
-                    pending=list(provider.pending.values()),text_api_calls=0,subscription_session_required=True,
+                    pending=list(provider.pending.values()),pending_count=len(provider.pending),text_api_calls=0,subscription_session_required=True,
                     cumulative_api_charged_or_reserved_usd=provider.used,
                     resume='Codex reads each request, saves a response envelope with actual model metadata, and repeats the command. No automatic text API fallback.')
+                save(out/'pending_requests.json',result['pending'])
+                result['pending_manifest']=str(out/'pending_requests.json')
                 save(out/'run.json',result);save(base/'latest.json',result)
                 return result
             save(out/'run.json',dict(run_id=fingerprint,state='stopped',exception_type=type(exc).__name__,message=str(exc),
@@ -207,7 +254,7 @@ def run(root,execute=False,budget=None,allow_partial=False,final_day=None,stop_a
 
 def ancillary(root,out,speeches,reviewed,classified,taxonomy,stats,readiness,cfg):
     table(out/'source_inventory.csv',[{k:s.get(k) for k in ('speech_id','year','country_iso3','analytical_group','source_type','text_accuracy','path','sha256','origin_file','origin_sha256','speech_date')} for s in speeches])
-    issues=[dict(speech_id=r['speech_id'],passage_id=r['passage_id'],issue='AI review uncertain') for r in reviewed if r['ai_status']=='Uncertain']
+    issues=[dict(speech_id=r['speech_id'],passage_id=r['passage_id'],issue='AI review '+r['ai_status']) for r in reviewed if r['ai_status'] in ('Uncertain','Pending')]
     issues.extend(dict(speech_id=r['speech_id'],passage_id=r['passage_id'],issue='Theme, keyword, uncovered-concept or source-note review unresolved') for r in classified if not r['classification_complete'] or not r['keyword_review_complete'])
     issues.extend(dict(speech_id=r['speech_id'],passage_id=r['passage_id'],issue='Uncovered concept: '+concept) for r in classified for concept in r.get('uncovered_concepts',[]))
     issues.extend(dict(speech_id=s['speech_id'],passage_id='',issue='Prepared-versus-delivered source note awaits delivery verification') for s in speeches if (s.get('source_review_notes') or {}).get('status')=='pending_delivery_verification')
@@ -224,7 +271,8 @@ def ancillary(root,out,speeches,reviewed,classified,taxonomy,stats,readiness,cfg
         lines += [f"## {code}: {t['label']}",t['definition'],'Include: '+t['inclusion'],'Exclude: '+t['exclusion'],'Boundary cases: '+t['boundary_cases'],json.dumps(t['examples'],ensure_ascii=False)]
     (out/'theme_taxonomy.md').write_text('\n\n'.join(lines)+'\n',encoding='utf-8')
     memo=['# 방법과 비용', '',
-        '전사 DB를 변경하지 않고 국가–연도 단위로 분석했다. 전체 연설 텍스트를 두 번 자동 검토하며 검색 미적중을 자동 No로 채우지 않는다. 판정 불일치는 Uncertain이다.',
+        '전사 DB를 변경하지 않고 국가–연도 단위로 분석했다. 검색 후보가 있는 연설의 전체 문맥과 연도·지역·출처별 검색 미적중 표본을 검토했다. 기본 1회, 음성 점검 표본 및 고정 해시로 선정한 10%는 2회 자동 검토한다. 표본에서 Yes/Uncertain이 발견되면 해당 집단으로 검토를 확대한다. 실제 선정 내역·횟수·확대는 review_selection.json에 기록한다. 미검토는 Pending, 불일치는 Uncertain이다.',
+        '미검토 연설이 있으면 연도·지역별 n/N은 확인된 AI 양성 국가 / 확보한 국가 연설의 최소 확인 비율이다. 모집단 언급률 추정치가 아니며 미검토를 No로 간주하지 않는다. resolved_N과 fully_reviewed를 별도로 제공한다. 검색·표본 선택의 편향과 연도별 검토 범위 차이 때문에 비율 변화를 정책적 변화로 단정하지 않는다. 주제별 비율도 발견·검토된 AI 양성 연설 내 결과이며 미발견 AI 발언에 일반화하지 않는다.',
         f"문맥·분류·보고서 실행 경로: {cfg['execution'].get('text_backend','openai_api')}. 구독 경로의 실제 모델은 subscription_queue 응답별 reviewer 메타데이터에 기록한다. 임베딩: {cfg['discovery']['model']}, {cfg['discovery']['dimensions']}차원.",
         '임베딩은 AI Yes 구절과 필요한 문맥에만 적용한다. 로컬 평균 중심화·cosine 거리·average linkage를 사용하고 여러 절단과 군집별 대표/경계 구절을 검토해 공통 taxonomy를 만든다. 군집 ID를 최종 주제값으로 쓰지 않는다.',
         '분류는 구절별 복수 판정이며 국가–연도·코드별 OR로 집계한다. 해당 코드에 Yes가 있으면 1, AI 검토가 완료되고 모든 AI 구절에서 해당 코드가 No이면 0, 그 밖에는 NA이다. 주제별 N은 AI 양성 국가 중 해당 코드가 확정된 국가 수이며 공동 언급은 두 코드가 모두 확정된 국가를 분모로 한다. 같은 국가의 연도 비교도 코드별 공통 표본을 사용한다. 미검토·미확보를 0으로 바꾸지 않는다. 새 개념은 검토 대기표에 남기며 기존 코드의 분류 완료를 막지 않는다. 지역은 고정 UN 매핑을 사용한다.',

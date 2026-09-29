@@ -1,0 +1,33 @@
+{
+  "request_hash": "971f4e2110109c2fcf39e447a087a5df860e0ec7a24bff8f12c22b4c5b043ed6",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_b"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2025_SMR:1",
+      "verbatim_en_2025_SMR:2",
+      "verbatim_en_2025_SMR:3",
+      "verbatim_en_2025_SMR:4",
+      "verbatim_en_2025_SMR:5",
+      "verbatim_en_2025_SMR:6",
+      "verbatim_en_2025_SMR:7",
+      "verbatim_en_2025_SMR:8",
+      "verbatim_en_2025_SMR:9"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2025_SMR:7",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Artificial intelligence has been used in conflict to select target and make decision over life or death.",
+        "rationale": "Supports UN AI governance institutions and calls for meaningful human control of military AI targeting and life-or-death decisions."
+      }
+    ]
+  }
+}
