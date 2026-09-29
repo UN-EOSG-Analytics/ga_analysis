@@ -13,6 +13,10 @@ Run `982ee8fb3de51100` completed on 29 September 2026.
 - Direct API cost: $0.0394 cumulative, for embeddings only.
 - Reading, classification and drafting were automated AI reviews with source-quote validation. Nothing was human-reviewed (`human_reviewed=false`). Who performed each stage is recorded in [handoff_provenance.md](output/analysis/runs/982ee8fb3de51100/handoff_provenance.md).
 
+## Dashboard
+
+An interactive dashboard of the results is published at https://un-eosg-analytics.github.io/ga_analysis/. Its source, rules and config are in [dashboard/](dashboard/README.md); the analysis run is not modified.
+
 ## Documentation
 
 - [ANALYSIS_PROTOCOL.md](ANALYSIS_PROTOCOL.md): analytical rules, denominators, the original brief and the required deliverables.

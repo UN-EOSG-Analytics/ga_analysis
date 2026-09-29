@@ -1,0 +1,12 @@
+{
+  "note": "Dashboard theme groups. Edit this file to regroup the 26 taxonomy codes; the analysis run is not affected. A group is Yes if any of its codes is Yes, No if all are No, and blank otherwise.",
+  "groups": [
+    {"name": "Common rules", "codes": ["AI_GLOBAL_GOVERNANCE", "AI_UN_ROLE"]},
+    {"name": "Fair access", "codes": ["AI_DIGITAL_DIVIDE", "AI_CAPACITY_BUILDING", "AI_DEVELOPMENT_SDGS", "AI_BIAS_CULTURAL_DIVERSITY", "AI_YOUTH_EDUCATION"]},
+    {"name": "Human rights and human control", "codes": ["AI_HUMAN_RIGHTS_ETHICS", "AI_HUMAN_CONTROL", "AI_CHILD_PROTECTION"]},
+    {"name": "Power and voice", "codes": ["AI_INCLUSIVE_GOVERNANCE", "AI_SOVEREIGNTY_CONCENTRATION", "AI_GEOPOLITICAL_RIVALRY"]},
+    {"name": "Security", "codes": ["AI_MILITARY_WEAPONS", "AI_CYBER_SECURITY", "AI_DISINFORMATION", "AI_SAFETY_EXISTENTIAL"]},
+    {"name": "Counter-current", "codes": ["AI_GOVERNANCE_SKEPTICISM"]},
+    {"name": "Other", "codes": ["AI_PEACE_APPLICATIONS", "AI_RESOURCE_FOOTPRINT", "AI_ECONOMY_LABOR", "AI_NATIONAL_STRATEGY", "AI_OPPORTUNITY_RISK_DUALITY", "AI_TRANSFORMATIVE_ERA", "AI_TECH_LIST_MENTION", "AI_THREAT_LIST_MENTION"]}
+  ]
+}
