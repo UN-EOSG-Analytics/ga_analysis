@@ -1,0 +1,107 @@
+{
+  "request_hash": "4646cb8bc184d98f3bcdccbdfeb3d9e79351dbcecd4d340d9d80e1dd36b6688b",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Most powerful technology, ungoverned",
+        "definition": "Alarm that AI, the most powerful technology ever, has no one governing it, and that it is an ethical and geopolitical rather than merely technical issue.",
+        "inclusion": "Include statements that AI lacks governance or must be governed collectively as a political/ethical matter.",
+        "exclusion": "Exclude national regulatory choices described as domestic policy (AI_NATIONAL_STRATEGY).",
+        "boundary_cases": "Framing AI as 'an ethical challenge' can also be coded AI_HUMAN_RIGHTS_ETHICS.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_CHL:7",
+            "quote": "we're seeing the emergence of the most powerful technology that humankind has ever known, and no one is governing it"
+          },
+          {
+            "passage_id": "verbatim_en_2026_CHL:7",
+            "quote": "It is an ethical challenge and a geopolitical issue."
+          }
+        ]
+      },
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "Rejecting innovation-versus-responsibility dilemma",
+        "definition": "Positioning AI policy between fear and recklessness: neither rushing nor turning away from AI's opportunities, a 'responsible pace'.",
+        "inclusion": "Include passages that reject a trade-off between innovation and responsibility or describe balancing speed against capacity to manage.",
+        "exclusion": "Exclude purely promotional or purely alarmist statements.",
+        "boundary_cases": "Domestic regulatory balance described as 'responsible pace' also counts under AI_NATIONAL_STRATEGY.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_CHL:7",
+            "quote": "We reject the false dilemma between innovation and responsibility."
+          },
+          {
+            "passage_id": "verbatim_en_2026_CHL:8",
+            "quote": "We want to lead from a position of knowledge and not fear."
+          }
+        ]
+      },
+      {
+        "code": "AI_NATIONAL_STRATEGY",
+        "label": "National AI growth and responsible pace",
+        "definition": "The speaker's own country's AI approach: expected growth gains, enabling regulation, investment in talent and energy.",
+        "inclusion": "Include descriptions of domestic AI regulation, investment and expected national growth.",
+        "exclusion": "Exclude generic global claims about AI's economic potential.",
+        "boundary_cases": "National food production projections enabled by AI may be coded AI_DEVELOPMENT_SDGS instead.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_CHL:8",
+            "quote": "We have regulations that make things possible that do not hamper progress. We have investment in talent and in energy"
+          }
+        ]
+      },
+      {
+        "code": "AI_UN_ROLE",
+        "label": "UN as forum on AI's fate",
+        "definition": "The UN presented as the place to bring humankind together to discuss AI.",
+        "inclusion": "Include claims that the UN must convene or lead discussion on AI.",
+        "exclusion": "Exclude UN reform statements not linked to AI.",
+        "boundary_cases": "Contrasting slow UN reform with fast AI emergence counts only if the UN is assigned an AI role.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_CHL:8",
+            "quote": "The United Nations must be able to bring humankind together to discuss a technology that will decide the fate of this century."
+          }
+        ]
+      },
+      {
+        "code": "AI_EPOCHAL_TRANSFORMATION",
+        "label": "AI as defining force of the era",
+        "definition": "AI framed as the defining transformation of the age, comparable to steam or the transistor, and embedded in decision-making across warfare, economy and daily life.",
+        "inclusion": "Include historical-epochal framings of AI as the driving force or great transformation of our time.",
+        "exclusion": "Exclude brief listings of AI among technologies without epochal framing (AI_TECH_LIST_MENTION).",
+        "boundary_cases": "Epochal framing followed by specific benefits should also be coded with the benefit theme.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_PRY:6",
+            "quote": "Steam powered the industrial revolution. The transistor powered the digital age. No force in our time is as profound as artificial intelligence."
+          }
+        ]
+      },
+      {
+        "code": "AI_DEVELOPMENT_SDGS",
+        "label": "AI multiplying food production",
+        "definition": "AI's potential to accelerate development, e.g. vastly expanding food production.",
+        "inclusion": "Include concrete claims of AI enabling development outcomes like food security or faster progress.",
+        "exclusion": "Exclude generic growth percentages for the national economy (AI_NATIONAL_STRATEGY).",
+        "boundary_cases": "Inclusion demands ('no one should be left out') accompanying benefits may also be AI_DIGITAL_DIVIDE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_PRY:6",
+            "quote": "Paraguay today feeds 100 million people, and with this tool, it could feed 1 billion."
+          }
+        ]
+      }
+    ],
+    "rationale": "Chile and Paraguay (2026) both treat AI as the era's decisive transformation within UN-reform arguments; Chile stresses ungoverned power, ethics and a responsible national pace, while Paraguay stresses epochal significance and development potential."
+  }
+}

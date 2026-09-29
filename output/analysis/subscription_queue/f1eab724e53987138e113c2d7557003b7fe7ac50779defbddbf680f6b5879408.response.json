@@ -1,0 +1,57 @@
+{
+  "request_hash": "f1eab724e53987138e113c2d7557003b7fe7ac50779defbddbf680f6b5879408",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_SOVEREIGNTY_CONCENTRATION",
+        "label": "Technological power concentrated in few hands",
+        "definition": "Concern that technological and AI power is concentrated among a few corporations and nations, raising questions of control and exclusion.",
+        "inclusion": "Include passages naming concentration of AI or technological power in a few firms or states.",
+        "exclusion": "Exclude access-gap arguments without reference to who holds power.",
+        "boundary_cases": "When concentration is the premise for a governance call, also code AI_GLOBAL_GOVERNANCE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_BOL:6",
+            "quote": "a world where technological power is concentrated in the hands of a few corporations and nations"
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Global governance for equitable, ethical AI",
+        "definition": "Global governance must adapt so AI and new technologies are used equitably, ethically and for human well-being.",
+        "inclusion": "Include calls for global governance to adapt to AI or ensure its equitable/ethical use.",
+        "exclusion": "Exclude descriptive statements about AI transforming daily life without a governance call.",
+        "boundary_cases": "Ethical-use language within a governance call is coded here rather than AI_HUMAN_RIGHTS_ETHICS unless rights are named.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_BOL:6",
+            "quote": "Global governance must adapt to ensure that those technologies are used equitably, ethically and in the service of the well-being of humankind"
+          }
+        ]
+      },
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "Avoiding deeper inequalities and exclusion",
+        "definition": "Warning that AI could deepen inequalities or create new forms of exclusion and control.",
+        "inclusion": "Include warnings that AI will widen inequalities or exclude groups or countries.",
+        "exclusion": "Exclude concentration claims without an inequality outcome.",
+        "boundary_cases": "'New forms of control' may overlap with surveillance concerns; code here when paired with inequality.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_BOL:6",
+            "quote": "rather than deepening inequalities or generating new forms of exclusion and control"
+          }
+        ]
+      }
+    ],
+    "rationale": "The single Bolivia 2024 passage frames AI as a transformative revolution whose power is concentrated among a few corporations and nations, calling for adapted global governance to prevent deeper inequality and exclusion."
+  }
+}

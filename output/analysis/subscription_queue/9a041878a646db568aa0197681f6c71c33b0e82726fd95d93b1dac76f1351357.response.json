@@ -1,0 +1,58 @@
+{
+  "request_hash": "9a041878a646db568aa0197681f6c71c33b0e82726fd95d93b1dac76f1351357",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_b"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_DEU:1",
+      "verbatim_en_2026_DEU:2",
+      "verbatim_en_2026_DEU:3",
+      "verbatim_en_2026_DEU:4",
+      "verbatim_en_2026_DEU:5",
+      "verbatim_en_2026_DEU:6"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_DEU:1",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "I am, of course, talking about artificial intelligence.",
+        "rationale": "Introduces AI power, corporate control, rule setting and accountability by comparison with nuclear weapons."
+      },
+      {
+        "passage_id": "verbatim_en_2026_DEU:2",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "This is precisely what makes AI so powerful, for better or for worse.",
+        "rationale": "Discusses AI risks, benefits, concentrated ownership and global responsibility."
+      },
+      {
+        "passage_id": "verbatim_en_2026_DEU:3",
+        "status": "Yes",
+        "mention_type": "contextual",
+        "quote": "How do we enable our international institutions to keep pace with the technologies that are reshaping our world?",
+        "rationale": "Continues the AI technological revolution discussion by asking how international institutions can keep pace and reform."
+      },
+      {
+        "passage_id": "verbatim_en_2026_DEU:5",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "That is why Germany calls on UN member states to work towards common safety requirements for the most capable AI models.",
+        "rationale": "Proposes common AI safety requirements, pre-release testing, incident reporting and inclusive governance."
+      },
+      {
+        "passage_id": "verbatim_en_2026_DEU:6",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "How we address AI together is one of the clearest tests whether we have the strength and the will to build a United Nations for today's world.",
+        "rationale": "Continues AI oversight and industry accountability proposals and emphasizes UN cooperation."
+      }
+    ]
+  }
+}

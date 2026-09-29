@@ -1,0 +1,93 @@
+{
+  "request_hash": "51cd2ccf7c51cbc5177409aa6cfdd3df2b63315d2ef9c2aac8f62a130b45bd31",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Shaping inclusive technology governance frameworks",
+        "definition": "Calls to proactively shape inclusive, safe, transparent and accountable governance frameworks for AI and technology, with developing countries participating in rule-making.",
+        "inclusion": "Include calls for governance principles/frameworks for AI and technology and inclusive rule-making.",
+        "exclusion": "Exclude cybercrime convention references (AI_CYBER_SECURITY) unless tied to AI governance.",
+        "boundary_cases": "Governance framed around sovereignty is also coded AI_SOVEREIGNTY_CONCENTRATION.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_VNM:3",
+            "quote": "we must proactively shape technology governance so that progress serves humanity in our common development"
+          },
+          {
+            "passage_id": "verbatim_en_2026_VNM:4",
+            "quote": "We need to develop inclusive, safe, transparent, and accountable principles and governance frameworks"
+          }
+        ]
+      },
+      {
+        "code": "AI_SOVEREIGNTY_CONCENTRATION",
+        "label": "Digital sovereignty and avoiding dependency",
+        "definition": "Insistence that technology not create new dependencies and that governance respect national and digital sovereignty and the right to development.",
+        "inclusion": "Include references to digital sovereignty, avoiding technological dependency, or right to development in technology governance.",
+        "exclusion": "Exclude access-gap statements without sovereignty/dependency framing.",
+        "boundary_cases": "'Narrow divides' within the same sentence is also coded AI_DIGITAL_DIVIDE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_VNM:4",
+            "quote": "rather than creating new forms of dependency or new sources of conflict"
+          },
+          {
+            "passage_id": "verbatim_en_2026_VNM:4",
+            "quote": "respecting national sovereignty, digital sovereignty, and the right to development"
+          }
+        ]
+      },
+      {
+        "code": "AI_CAPACITY_BUILDING",
+        "label": "Infrastructure support and equitable access",
+        "definition": "Developing countries receiving support for infrastructure and digital capacity and equitable access to technological benefits.",
+        "inclusion": "Include calls for infrastructure support, digital capacity-building and equitable access for developing countries.",
+        "exclusion": "Exclude domestic national programmes.",
+        "boundary_cases": "Capacity-building in combating cybercrime counts under AI_CYBER_SECURITY.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_VNM:4",
+            "quote": "receive support for infrastructure and digital capacity, and enjoy equitable access to the benefits of scientific and technological progress"
+          }
+        ]
+      },
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "Unprecedented opportunities and new challenges",
+        "definition": "Framing AI and digital transformation as opening unprecedented opportunities while presenting new challenges.",
+        "inclusion": "Include explicit opportunity/challenge pairings about AI.",
+        "exclusion": "Exclude one-sided statements.",
+        "boundary_cases": "When followed by governance proposals, code both.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_VNM:3",
+            "quote": "artificial intelligence are opening up unprecedented opportunities. but they're also presenting new challenges"
+          }
+        ]
+      },
+      {
+        "code": "AI_CYBER_SECURITY",
+        "label": "Cybercrime cooperation for safe technology",
+        "definition": "International cooperation and capacity to prevent cybercrime so people can benefit safely from technological progress.",
+        "inclusion": "Include references to cybercrime conventions and cooperation against cybercrime in a technology context.",
+        "exclusion": "Exclude military uses of technology.",
+        "boundary_cases": "Hosting treaty signings is coded here even if AI is not named in that sentence, when within the AI/technology discussion.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_VNM:4",
+            "quote": "build capacity in preventing and combating cyber crime so that people may live safely and benefit from technological progress"
+          }
+        ]
+      }
+    ],
+    "rationale": "Both Vietnam passages come from one development-focused technology segment: AI as opportunity and challenge, requiring inclusive governance that respects digital sovereignty, provides capacity support, and addresses cybercrime."
+  }
+}

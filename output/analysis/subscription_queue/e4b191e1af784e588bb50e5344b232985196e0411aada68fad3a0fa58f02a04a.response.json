@@ -1,0 +1,43 @@
+{
+  "request_hash": "e4b191e1af784e588bb50e5344b232985196e0411aada68fad3a0fa58f02a04a",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_b"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_TTO:1",
+      "verbatim_en_2026_TTO:2",
+      "verbatim_en_2026_TTO:3",
+      "verbatim_en_2026_TTO:4",
+      "verbatim_en_2026_TTO:5"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_TTO:3",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Today, I want to agree with President Trump that we are now talking about a call for practical AI to be renamed super intelligence, SI.",
+        "rationale": "Explicit AI/superintelligence discussion covers security risks, beneficial applications and inclusive rules."
+      },
+      {
+        "passage_id": "verbatim_en_2026_TTO:4",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Whether in technology and SI, super intelligence, a global economy, or energy development countries must have the opportunity and the capacity to help in shaping those changes.",
+        "rationale": "Calls for developing countries to shape technological changes including superintelligence."
+      },
+      {
+        "passage_id": "verbatim_en_2026_TTO:5",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "his efforts to bring superintelligence and the risks posed by nuclear weapons more firmly into the international agenda.",
+        "rationale": "Commends the Secretary-General for bringing superintelligence into international policy."
+      }
+    ]
+  }
+}

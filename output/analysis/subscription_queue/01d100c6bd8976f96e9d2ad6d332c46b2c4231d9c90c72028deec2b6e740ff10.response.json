@@ -1,0 +1,29 @@
+{
+  "request_hash": "01d100c6bd8976f96e9d2ad6d332c46b2c4231d9c90c72028deec2b6e740ff10",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_c"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_DJI:1",
+      "verbatim_en_2026_DJI:2",
+      "verbatim_en_2026_DJI:3",
+      "verbatim_en_2026_DJI:4",
+      "verbatim_en_2026_DJI:5"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_DJI:5",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "The digital transition and artificial intelligence also offer new opportunities to accelerate development and improve the capacities of our states. Their potential, however, will only be fully realized if we are able to bridge the digital divide, facilitate technology sharing, and build the capacities of developing countries.",
+        "rationale": "Links AI development gains to equitable technology access and capacity-building."
+      }
+    ]
+  }
+}

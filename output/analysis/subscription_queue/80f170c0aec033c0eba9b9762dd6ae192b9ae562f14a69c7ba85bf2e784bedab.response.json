@@ -1,0 +1,452 @@
+{
+  "request_hash": "80f170c0aec033c0eba9b9762dd6ae192b9ae562f14a69c7ba85bf2e784bedab",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "results": [
+      {
+        "passage_id": "verbatim_en_2025_SMR:7",
+        "classification": {
+          "themes": [
+            {
+              "code": "AI_GLOBAL_GOVERNANCE",
+              "value": "Uncertain",
+              "quote": "to ensure inclusive multi-stakeholder discussion on this matter",
+              "rationale": "Governance discussion via UN mechanisms."
+            },
+            {
+              "code": "AI_INCLUSIVE_GOVERNANCE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_GOVERNANCE_SKEPTICISM",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_UN_ROLE",
+              "value": "Yes",
+              "quote": "the establishment of an independent international science panel on AI and on the global dialogue on artificial intelligence governance are fundamental to promote scientific understanding of AI",
+              "rationale": "UN Panel, Dialogue and GDC."
+            },
+            {
+              "code": "AI_MILITARY_WEAPONS",
+              "value": "Yes",
+              "quote": "Artificial intelligence has been used in conflict to select target and make decision over life or death. San Marino believe that meaningful human control must be retained over such decision",
+              "rationale": "Military AI targeting; meaningful human control."
+            },
+            {
+              "code": "AI_PEACE_APPLICATIONS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_SAFETY_EXISTENTIAL",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_HUMAN_CONTROL",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_HUMAN_RIGHTS_ETHICS",
+              "value": "Uncertain",
+              "quote": "San Marino believe it is essential to safeguard the human right and digital age.",
+              "rationale": "Human rights in digital age."
+            },
+            {
+              "code": "AI_BIAS_CULTURAL_DIVERSITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DISINFORMATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CYBER_SECURITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DIGITAL_DIVIDE",
+              "value": "Uncertain",
+              "quote": "the global digital compact is an important tool that underscore our collective commitment to branding the digital divide and promoting digital inclusion",
+              "rationale": "Digital divide via GDC; AI link indirect."
+            },
+            {
+              "code": "AI_CAPACITY_BUILDING",
+              "value": "Yes",
+              "quote": "it will contribute to building the UN membership capacity by fostering shared knowledge, common understanding, and pooled experience, equally benefiting the stakeholders, particularly from developing countries.",
+              "rationale": "Capacity building for developing countries."
+            },
+            {
+              "code": "AI_DEVELOPMENT_SDGS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_RESOURCE_FOOTPRINT",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_ECONOMY_LABOR",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_YOUTH_EDUCATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CHILD_PROTECTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_NATIONAL_STRATEGY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_SOVEREIGNTY_CONCENTRATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_GEOPOLITICAL_RIVALRY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_OPPORTUNITY_RISK_DUALITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_TRANSFORMATIVE_ERA",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_TECH_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_THREAT_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            }
+          ],
+          "institutions": [
+            {
+              "commitment_detail": "",
+              "rationale": "Supports Scientific Panel.",
+              "mechanism": "Panel",
+              "reference_type": "name variant",
+              "stances": {
+                "mention": true,
+                "welcome": false,
+                "support": true,
+                "request": false,
+                "concern": false,
+                "opposition": false,
+                "commitment": false
+              },
+              "requested_functions": [
+                "scientific assessment",
+                "capacity building"
+              ],
+              "un_role": "explicit",
+              "quote": "the establishment of an independent international science panel on AI and on the global dialogue on artificial intelligence governance are fundamental to promote scientific understanding of AI"
+            },
+            {
+              "commitment_detail": "",
+              "rationale": "Supports Global Dialogue.",
+              "mechanism": "Dialogue",
+              "reference_type": "explicit name",
+              "stances": {
+                "mention": true,
+                "welcome": false,
+                "support": true,
+                "request": false,
+                "concern": false,
+                "opposition": false,
+                "commitment": false
+              },
+              "requested_functions": [
+                "dialogue/convening",
+                "capacity building"
+              ],
+              "un_role": "explicit",
+              "quote": "the global dialogue on artificial intelligence governance are fundamental to promote scientific understanding of AI and to ensure inclusive multi-stakeholder discussion on this matter"
+            },
+            {
+              "commitment_detail": "",
+              "rationale": "Global Digital Compact supported.",
+              "mechanism": "Other model",
+              "reference_type": "explicit name",
+              "stances": {
+                "mention": true,
+                "welcome": false,
+                "support": true,
+                "request": false,
+                "concern": false,
+                "opposition": false,
+                "commitment": false
+              },
+              "requested_functions": [
+                "coordination"
+              ],
+              "un_role": "explicit",
+              "quote": "the global digital compact is an important tool that underscore our collective commitment to branding the digital divide and promoting digital inclusion"
+            }
+          ],
+          "keywords": [
+            {
+              "normalized_term": "meaningful human control",
+              "original_term": "meaningful human control",
+              "quote": "meaningful human control must be retained over such decision"
+            },
+            {
+              "normalized_term": "independent international scientific panel on ai",
+              "original_term": "independent international science panel on AI",
+              "quote": "an independent international science panel on AI"
+            },
+            {
+              "normalized_term": "global digital compact",
+              "original_term": "global digital compact",
+              "quote": "the global digital compact is an important tool"
+            }
+          ],
+          "uncovered_concept": ""
+        }
+      },
+      {
+        "passage_id": "verbatim_en_2025_SVK:4",
+        "classification": {
+          "themes": [
+            {
+              "code": "AI_GLOBAL_GOVERNANCE",
+              "value": "Yes",
+              "quote": "We need a responsible approach from all international institutions, the private sector, and also the governments.",
+              "rationale": "Governance must keep pace; responsible approach."
+            },
+            {
+              "code": "AI_INCLUSIVE_GOVERNANCE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_GOVERNANCE_SKEPTICISM",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_UN_ROLE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_MILITARY_WEAPONS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_PEACE_APPLICATIONS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_SAFETY_EXISTENTIAL",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_HUMAN_CONTROL",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_HUMAN_RIGHTS_ETHICS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_BIAS_CULTURAL_DIVERSITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DISINFORMATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CYBER_SECURITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DIGITAL_DIVIDE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CAPACITY_BUILDING",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DEVELOPMENT_SDGS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_RESOURCE_FOOTPRINT",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_ECONOMY_LABOR",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_YOUTH_EDUCATION",
+              "value": "Yes",
+              "quote": "the Summit on Education and AI in Bratislava",
+              "rationale": "Education and AI."
+            },
+            {
+              "code": "AI_CHILD_PROTECTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_NATIONAL_STRATEGY",
+              "value": "Yes",
+              "quote": "by hosting all the actors at the Summit on Education and AI in Bratislava, in our capital, in November this year.",
+              "rationale": "Hosting AI summit."
+            },
+            {
+              "code": "AI_SOVEREIGNTY_CONCENTRATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_GEOPOLITICAL_RIVALRY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_OPPORTUNITY_RISK_DUALITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_TRANSFORMATIVE_ERA",
+              "value": "Yes",
+              "quote": "we must get ready for the new era, the unstoppable revolution.",
+              "rationale": "AI as new era."
+            },
+            {
+              "code": "AI_TECH_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_THREAT_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            }
+          ],
+          "institutions": [
+            {
+              "commitment_detail": "Slovakia hosts the Summit on Education and AI in Bratislava, November 2025.",
+              "rationale": "AI summit hosted by Slovakia.",
+              "mechanism": "Other model",
+              "reference_type": "explicit name",
+              "stances": {
+                "mention": true,
+                "welcome": false,
+                "support": true,
+                "request": false,
+                "concern": false,
+                "opposition": false,
+                "commitment": true
+              },
+              "requested_functions": [
+                "dialogue/convening"
+              ],
+              "un_role": "generic",
+              "quote": "My country wants to contribute and to steer the debates and find solution by hosting all the actors at the Summit on Education and AI in Bratislava, in our capital, in November this year."
+            }
+          ],
+          "keywords": [
+            {
+              "normalized_term": "summit on education and ai",
+              "original_term": "Summit on Education and AI",
+              "quote": "the Summit on Education and AI in Bratislava"
+            }
+          ],
+          "uncovered_concept": ""
+        }
+      }
+    ]
+  }
+}

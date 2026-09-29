@@ -1,0 +1,378 @@
+{
+  "request_hash": "81597b0ca356c8499fa53f4c20511b86f53c530cefe90195105081b1b3469f3a",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "results": [
+      {
+        "passage_id": "verbatim_en_2026_PHL:3",
+        "classification": {
+          "themes": [
+            {
+              "code": "AI_GLOBAL_GOVERNANCE",
+              "value": "Yes",
+              "quote": "Effective governance must also address deep developmental asymmetries.",
+              "rationale": "Calls for AI governance that addresses asymmetries."
+            },
+            {
+              "code": "AI_INCLUSIVE_GOVERNANCE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_GOVERNANCE_SKEPTICISM",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_UN_ROLE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_MILITARY_WEAPONS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_PEACE_APPLICATIONS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_SAFETY_EXISTENTIAL",
+              "value": "Uncertain",
+              "quote": "Advanced capabilities must never be allowed to pose unacceptable risks to human lives",
+              "rationale": "Advanced-capability risks to lives, briefly."
+            },
+            {
+              "code": "AI_HUMAN_CONTROL",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_HUMAN_RIGHTS_ETHICS",
+              "value": "Yes",
+              "quote": "Advanced capabilities must never be allowed to pose unacceptable risks to human lives, human rights, or democratic integrity.",
+              "rationale": "AI risks framed around human rights and democracy."
+            },
+            {
+              "code": "AI_BIAS_CULTURAL_DIVERSITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DISINFORMATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CYBER_SECURITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DIGITAL_DIVIDE",
+              "value": "Yes",
+              "quote": "We are not entering the AI era from the same starting point.",
+              "rationale": "Unequal starting points; developing countries risk being left behind."
+            },
+            {
+              "code": "AI_CAPACITY_BUILDING",
+              "value": "Yes",
+              "quote": "Managing this revolution requires closing critical gaps in digital infrastructure, computing resources, and technical expertise so that developing countries are not left behind.",
+              "rationale": "Calls for closing gaps in infrastructure, compute and expertise."
+            },
+            {
+              "code": "AI_DEVELOPMENT_SDGS",
+              "value": "Uncertain",
+              "quote": "We need AI systems that uplift the vulnerable, strengthen national resilience, promote gender equality",
+              "rationale": "AI for social development goals, brief."
+            },
+            {
+              "code": "AI_RESOURCE_FOOTPRINT",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_ECONOMY_LABOR",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_YOUTH_EDUCATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CHILD_PROTECTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_NATIONAL_STRATEGY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_SOVEREIGNTY_CONCENTRATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_GEOPOLITICAL_RIVALRY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_OPPORTUNITY_RISK_DUALITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_TRANSFORMATIVE_ERA",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_TECH_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_THREAT_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            }
+          ],
+          "institutions": [],
+          "keywords": [
+            {
+              "normalized_term": "developmental asymmetries",
+              "original_term": "developmental asymmetries",
+              "quote": "address deep developmental asymmetries"
+            },
+            {
+              "normalized_term": "computing resources",
+              "original_term": "computing resources",
+              "quote": "closing critical gaps in digital infrastructure, computing resources, and technical expertise"
+            },
+            {
+              "normalized_term": "human-centered partnerships",
+              "original_term": "human-centered partnerships",
+              "quote": "foster human-centered partnerships, not exclusion and fragmentation"
+            }
+          ],
+          "uncovered_concept": ""
+        }
+      },
+      {
+        "passage_id": "verbatim_en_2026_POL:10",
+        "classification": {
+          "themes": [
+            {
+              "code": "AI_GLOBAL_GOVERNANCE",
+              "value": "Yes",
+              "quote": "We need rules that will actually be enforced and that clearly define where innovation ends and a threat to humanity begins.",
+              "rationale": "Calls for enforceable rules and limits on AI development."
+            },
+            {
+              "code": "AI_INCLUSIVE_GOVERNANCE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_GOVERNANCE_SKEPTICISM",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_UN_ROLE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_MILITARY_WEAPONS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_PEACE_APPLICATIONS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_SAFETY_EXISTENTIAL",
+              "value": "Yes",
+              "quote": "if they begin to imitate humans in their thinking, a natural consequence may be the drive to surpass them",
+              "rationale": "Warns of machines surpassing humans and threats to humanity."
+            },
+            {
+              "code": "AI_HUMAN_CONTROL",
+              "value": "Yes",
+              "quote": "This raises the question of whether, in a world of advancing artificial intelligence, humans will remain subjects or become merely objects of algorithmic influence.",
+              "rationale": "Concern that humans remain subjects rather than objects of algorithms."
+            },
+            {
+              "code": "AI_HUMAN_RIGHTS_ETHICS",
+              "value": "Yes",
+              "quote": "New technologies, such as artificial intelligence or superintelligence, should always serve humanity as they develop, rather than exploit people or their weaknesses.",
+              "rationale": "AI framed as a threat to human dignity requiring accountability."
+            },
+            {
+              "code": "AI_BIAS_CULTURAL_DIVERSITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DISINFORMATION",
+              "value": "Uncertain",
+              "quote": "Artificial intelligence must not be used as a tool for destabilization, manipulation, or undermining the international order.",
+              "rationale": "Manipulation mentioned without explicit falsehood content."
+            },
+            {
+              "code": "AI_CYBER_SECURITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DIGITAL_DIVIDE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CAPACITY_BUILDING",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DEVELOPMENT_SDGS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_RESOURCE_FOOTPRINT",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_ECONOMY_LABOR",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_YOUTH_EDUCATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CHILD_PROTECTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_NATIONAL_STRATEGY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_SOVEREIGNTY_CONCENTRATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_GEOPOLITICAL_RIVALRY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_OPPORTUNITY_RISK_DUALITY",
+              "value": "Yes",
+              "quote": "groundbreaking technologies bring not only enormous opportunities, but also certain risks",
+              "rationale": "Pairs opportunities with risks."
+            },
+            {
+              "code": "AI_TRANSFORMATIVE_ERA",
+              "value": "Uncertain",
+              "quote": "It is precisely the development of technology that is playing a decisive role in co-shaping the realities of the 21st century.",
+              "rationale": "Technology shaping the century; AI implied."
+            },
+            {
+              "code": "AI_TECH_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_THREAT_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            }
+          ],
+          "institutions": [],
+          "keywords": [
+            {
+              "normalized_term": "superintelligence",
+              "original_term": "superintelligence",
+              "quote": "such as artificial intelligence or superintelligence"
+            },
+            {
+              "normalized_term": "algorithmic influence",
+              "original_term": "algorithmic influence",
+              "quote": "become merely objects of algorithmic influence"
+            },
+            {
+              "normalized_term": "limits of artificial intelligence development",
+              "original_term": "limits of artificial intelligence development",
+              "quote": "a serious conversation about the limits of artificial intelligence development"
+            }
+          ],
+          "uncovered_concept": ""
+        }
+      }
+    ]
+  }
+}

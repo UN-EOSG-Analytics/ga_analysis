@@ -1,0 +1,560 @@
+{
+  "request_hash": "7ac98a568515e071bbc34734febf7d040cac06ca8087a383374aed7ee9fbfca4",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "results": [
+      {
+        "passage_id": "verbatim_en_2024_PRY:1",
+        "classification": {
+          "themes": [
+            {
+              "code": "AI_GLOBAL_GOVERNANCE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_INCLUSIVE_GOVERNANCE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_GOVERNANCE_SKEPTICISM",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_UN_ROLE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_MILITARY_WEAPONS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_PEACE_APPLICATIONS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_SAFETY_EXISTENTIAL",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_HUMAN_CONTROL",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_HUMAN_RIGHTS_ETHICS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_BIAS_CULTURAL_DIVERSITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DISINFORMATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CYBER_SECURITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DIGITAL_DIVIDE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CAPACITY_BUILDING",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DEVELOPMENT_SDGS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_RESOURCE_FOOTPRINT",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_ECONOMY_LABOR",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_YOUTH_EDUCATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CHILD_PROTECTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_NATIONAL_STRATEGY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_SOVEREIGNTY_CONCENTRATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_GEOPOLITICAL_RIVALRY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_OPPORTUNITY_RISK_DUALITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_TRANSFORMATIVE_ERA",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_TECH_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_THREAT_LIST_MENTION",
+              "value": "Yes",
+              "quote": "risks of cyberwarfare and the inappropriate application of artificial intelligence",
+              "rationale": "AI misuse listed among global challenges."
+            }
+          ],
+          "institutions": [],
+          "keywords": [],
+          "uncovered_concept": ""
+        }
+      },
+      {
+        "passage_id": "verbatim_en_2024_PRY:22",
+        "classification": {
+          "themes": [
+            {
+              "code": "AI_GLOBAL_GOVERNANCE",
+              "value": "Uncertain",
+              "quote": "require us to create new regulatory schemes to protect people",
+              "rationale": "New regulation called for; level unspecified."
+            },
+            {
+              "code": "AI_INCLUSIVE_GOVERNANCE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_GOVERNANCE_SKEPTICISM",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_UN_ROLE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_MILITARY_WEAPONS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_PEACE_APPLICATIONS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_SAFETY_EXISTENTIAL",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_HUMAN_CONTROL",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_HUMAN_RIGHTS_ETHICS",
+              "value": "Yes",
+              "quote": "the question of the ethical application of artificial intelligence and of advances in technology in general stands out here.",
+              "rationale": "Ethical AI application as a key challenge."
+            },
+            {
+              "code": "AI_BIAS_CULTURAL_DIVERSITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DISINFORMATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CYBER_SECURITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DIGITAL_DIVIDE",
+              "value": "Uncertain",
+              "quote": "the responsible use of emerging technologies and the equitable application thereof.",
+              "rationale": "Equitable application, general."
+            },
+            {
+              "code": "AI_CAPACITY_BUILDING",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DEVELOPMENT_SDGS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_RESOURCE_FOOTPRINT",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_ECONOMY_LABOR",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_YOUTH_EDUCATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CHILD_PROTECTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_NATIONAL_STRATEGY",
+              "value": "Uncertain",
+              "quote": "Those new techniques, such as sandboxes and co-regulation, must have as their ultimate goal the responsible use of emerging technologies",
+              "rationale": "Regulatory techniques, possibly national."
+            },
+            {
+              "code": "AI_SOVEREIGNTY_CONCENTRATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_GEOPOLITICAL_RIVALRY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_OPPORTUNITY_RISK_DUALITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_TRANSFORMATIVE_ERA",
+              "value": "Uncertain",
+              "quote": "a challenge that is approaching with a speed that is difficult to grasp.",
+              "rationale": "Exponential pace of technological change."
+            },
+            {
+              "code": "AI_TECH_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_THREAT_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            }
+          ],
+          "institutions": [],
+          "keywords": [
+            {
+              "normalized_term": "regulatory sandboxes",
+              "original_term": "sandboxes",
+              "quote": "Those new techniques, such as sandboxes and co-regulation"
+            },
+            {
+              "normalized_term": "co-regulation",
+              "original_term": "co-regulation",
+              "quote": "such as sandboxes and co-regulation"
+            },
+            {
+              "normalized_term": "moore's law",
+              "original_term": "Moore's Law",
+              "quote": "Moore’s Law postulates an exponential growth in the development of new technologies"
+            }
+          ],
+          "uncovered_concept": ""
+        }
+      },
+      {
+        "passage_id": "verbatim_en_2024_RUS:7",
+        "classification": {
+          "themes": [
+            {
+              "code": "AI_GLOBAL_GOVERNANCE",
+              "value": "Yes",
+              "quote": "determination of legal frameworks to use artificial intelligence technologies.",
+              "rationale": "Legal frameworks for AI."
+            },
+            {
+              "code": "AI_INCLUSIVE_GOVERNANCE",
+              "value": "Yes",
+              "quote": "Those issues touch upon the future of all humankind and must be considered on a universal basis, without discrimination or aspirations to achieve unilateral benefits.",
+              "rationale": "Demands universal, inclusive AI rule-making."
+            },
+            {
+              "code": "AI_GOVERNANCE_SKEPTICISM",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_UN_ROLE",
+              "value": "Yes",
+              "quote": "actions of the West — in circumvention of the United Nations — to create subordinate, narrow formats to resolve crucial issues, such as control over the Internet or determination of legal frameworks to use artificial intelligence technologies.",
+              "rationale": "AI frameworks should be set in the UN."
+            },
+            {
+              "code": "AI_MILITARY_WEAPONS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_PEACE_APPLICATIONS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_SAFETY_EXISTENTIAL",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_HUMAN_CONTROL",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_HUMAN_RIGHTS_ETHICS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_BIAS_CULTURAL_DIVERSITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DISINFORMATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CYBER_SECURITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DIGITAL_DIVIDE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CAPACITY_BUILDING",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DEVELOPMENT_SDGS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_RESOURCE_FOOTPRINT",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_ECONOMY_LABOR",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_YOUTH_EDUCATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CHILD_PROTECTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_NATIONAL_STRATEGY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_SOVEREIGNTY_CONCENTRATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_GEOPOLITICAL_RIVALRY",
+              "value": "Yes",
+              "quote": "trust is instead being undermined, including by actions of the West",
+              "rationale": "Frames AI rule-setting as Western bloc action."
+            },
+            {
+              "code": "AI_OPPORTUNITY_RISK_DUALITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_TRANSFORMATIVE_ERA",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_TECH_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_THREAT_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            }
+          ],
+          "institutions": [
+            {
+              "commitment_detail": "",
+              "rationale": "Criticises the Pact for the Future process as Western-controlled.",
+              "mechanism": "Other model",
+              "reference_type": "explicit name",
+              "stances": {
+                "mention": true,
+                "welcome": false,
+                "support": false,
+                "request": false,
+                "concern": true,
+                "opposition": true,
+                "commitment": false
+              },
+              "requested_functions": [
+                "norms/rules/standards"
+              ],
+              "un_role": "explicit",
+              "quote": "not how the socalled Pact for the Future (resolution 79/1) was drafted, without a single plenary round of talks attended by all countries."
+            }
+          ],
+          "keywords": [
+            {
+              "normalized_term": "pact for the future",
+              "original_term": "Pact for the Future",
+              "quote": "the socalled Pact for the Future (resolution 79/1)"
+            },
+            {
+              "normalized_term": "legal frameworks for ai",
+              "original_term": "legal frameworks to use artificial intelligence technologies",
+              "quote": "determination of legal frameworks to use artificial intelligence technologies."
+            }
+          ],
+          "uncovered_concept": ""
+        }
+      }
+    ]
+  }
+}

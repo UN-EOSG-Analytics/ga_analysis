@@ -1,0 +1,107 @@
+{
+  "request_hash": "7cc188f7db8446524cf901cdf26df4f50f2f3dfdf96637e69b162362953c463f",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_UN_ROLE",
+        "label": "UN as main channel for AI governance",
+        "definition": "The UN is endorsed as the main channel for creating AI governance frameworks, standards and norms.",
+        "inclusion": "Include passages naming the UN as the principal venue or channel for global AI governance.",
+        "exclusion": "Exclude calls for international rules that do not specify the UN.",
+        "boundary_cases": "A passage fragment that completes a sentence about the UN serving as the main channel counts even if split across passages.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_CHN:9",
+            "quote": "the main channel to create a widely accepted artificial intelligence governance framework, standards and norms"
+          },
+          {
+            "passage_id": "verbatim_en_2024_CHN:22",
+            "quote": "China supports the United Nations role as the main channel for global AI governance"
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "International AI rules and governance initiatives",
+        "definition": "Calls for widely recognized international AI rules, faster governance rules, and national proposals such as a Global AI Governance Initiative or world AI cooperation organization, respecting all countries' practices.",
+        "inclusion": "Include calls for international AI rules/standards or proposals for new international AI governance institutions.",
+        "exclusion": "Exclude purely domestic AI regulation.",
+        "boundary_cases": "Emphasis on respecting each country's governance principles may also indicate AI_SOVEREIGNTY_CONCENTRATION concerns.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_CHN:5",
+            "quote": "China has proposed the Global AI Governance Initiative and advocated the establishment of a world AI cooperation organization."
+          },
+          {
+            "passage_id": "verbatim_en_2023_CHN:9",
+            "quote": "on the basis of full respect for the governance principles and practices of all countries"
+          }
+        ]
+      },
+      {
+        "code": "AI_HUMAN_RIGHTS_ETHICS",
+        "label": "People-centred AI for good",
+        "definition": "AI should follow a people-centred approach, be developed 'for good', and balance development and security.",
+        "inclusion": "Include passages invoking people-centred, human-centred or 'AI for good' principles.",
+        "exclusion": "Exclude passages focused solely on institutions without normative principles.",
+        "boundary_cases": "Principles like 'equitable benefits' also overlap with AI_DIGITAL_DIVIDE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_CHN:22",
+            "quote": "China is committed to taking a people-centred approach, developing AI for good and putting equal emphasis on development and security"
+          }
+        ]
+      },
+      {
+        "code": "AI_CAPACITY_BUILDING",
+        "label": "AI capacity-building for developing countries",
+        "definition": "Commitments to international cooperation on AI capacity-building, e.g., an AI Capacity-Building Action Plan.",
+        "inclusion": "Include offers or plans for AI capacity-building cooperation.",
+        "exclusion": "Exclude general development cooperation not tied to AI.",
+        "boundary_cases": "Training programs in non-AI fields (culture) are excluded.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_CHN:22",
+            "quote": "China has put forth the AI Capacity-Building Action Plan for Good and for All"
+          }
+        ]
+      },
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "Narrowing digital divide for universal benefit",
+        "definition": "AI development should narrow the digital divide and deliver universally beneficial development.",
+        "inclusion": "Include calls to narrow the digital divide or ensure equitable AI benefits.",
+        "exclusion": "Exclude development agenda passages with no AI or digital reference.",
+        "boundary_cases": "Global South support framed without AI belongs elsewhere.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_CHN:2",
+            "quote": "narrow the digital divide, and promote development that is universally beneficial"
+          }
+        ]
+      },
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "Emerging tech brings benefits and risks",
+        "definition": "AI and other emerging technologies framed as bringing benefits along with potential risks.",
+        "inclusion": "Include explicit benefit-and-risk framings of AI.",
+        "exclusion": "Exclude one-sided framings.",
+        "boundary_cases": "If AI appears alongside biomanufacturing and network communications, still code here when duality is explicit.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_CHN:5",
+            "quote": "Along with the benefits, they also bring potential risks."
+          }
+        ]
+      }
+    ],
+    "rationale": "China's passages consistently support the UN as the main channel for AI governance, people-centred 'AI for good', capacity-building and narrowing the digital divide, plus its own governance initiatives; one 2023 passage is arms-control context leading into the AI sentence."
+  }
+}

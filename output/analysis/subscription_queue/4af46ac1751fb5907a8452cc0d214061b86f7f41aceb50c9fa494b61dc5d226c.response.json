@@ -1,0 +1,580 @@
+{
+  "request_hash": "4af46ac1751fb5907a8452cc0d214061b86f7f41aceb50c9fa494b61dc5d226c",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "results": [
+      {
+        "passage_id": "verbatim_en_2023_SVK:10",
+        "classification": {
+          "themes": [
+            {
+              "code": "AI_GLOBAL_GOVERNANCE",
+              "value": "Uncertain",
+              "quote": "That is why we cannot postpone their democratic regulation.",
+              "rationale": "Calls for regulation; level unspecified."
+            },
+            {
+              "code": "AI_INCLUSIVE_GOVERNANCE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_GOVERNANCE_SKEPTICISM",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_UN_ROLE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_MILITARY_WEAPONS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_PEACE_APPLICATIONS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_SAFETY_EXISTENTIAL",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_HUMAN_CONTROL",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_HUMAN_RIGHTS_ETHICS",
+              "value": "Yes",
+              "quote": "Any technology must be used with one goal in mind — ensuring the dignity and rights of every individual.",
+              "rationale": "Rights and dignity as goal of technology."
+            },
+            {
+              "code": "AI_BIAS_CULTURAL_DIVERSITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DISINFORMATION",
+              "value": "Yes",
+              "quote": "The rapid rise of social media platforms and the related flood of disinformation and hate speech prove that.",
+              "rationale": "Disinformation linked to platforms and AI as crisis amplifiers."
+            },
+            {
+              "code": "AI_CYBER_SECURITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DIGITAL_DIVIDE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CAPACITY_BUILDING",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DEVELOPMENT_SDGS",
+              "value": "Uncertain",
+              "quote": "new technologies promise to unlock huge potential in areas such as public health, connectivity and addressing climate change",
+              "rationale": "Generic new technologies for health and climate."
+            },
+            {
+              "code": "AI_RESOURCE_FOOTPRINT",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_ECONOMY_LABOR",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_YOUTH_EDUCATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CHILD_PROTECTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_NATIONAL_STRATEGY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_SOVEREIGNTY_CONCENTRATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_GEOPOLITICAL_RIVALRY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_OPPORTUNITY_RISK_DUALITY",
+              "value": "Yes",
+              "quote": "social media platforms, artificial intelligence and other emerging technologies can act like steroids on our current crises",
+              "rationale": "Potential of new technologies paired with amplified crises."
+            },
+            {
+              "code": "AI_TRANSFORMATIVE_ERA",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_TECH_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_THREAT_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            }
+          ],
+          "institutions": [],
+          "keywords": [
+            {
+              "normalized_term": "democratic regulation",
+              "original_term": "democratic regulation",
+              "quote": "their democratic regulation"
+            },
+            {
+              "normalized_term": "hate speech",
+              "original_term": "hate speech",
+              "quote": "disinformation and hate speech"
+            }
+          ],
+          "uncovered_concept": ""
+        }
+      },
+      {
+        "passage_id": "verbatim_en_2023_SVN:11",
+        "classification": {
+          "themes": [
+            {
+              "code": "AI_GLOBAL_GOVERNANCE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_INCLUSIVE_GOVERNANCE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_GOVERNANCE_SKEPTICISM",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_UN_ROLE",
+              "value": "Yes",
+              "quote": "I applaud the Secretary- General’s resolve to form a high-level advisory body on",
+              "rationale": "Welcomes the SG's AI Advisory Body."
+            },
+            {
+              "code": "AI_MILITARY_WEAPONS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_PEACE_APPLICATIONS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_SAFETY_EXISTENTIAL",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_HUMAN_CONTROL",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_HUMAN_RIGHTS_ETHICS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_BIAS_CULTURAL_DIVERSITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DISINFORMATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CYBER_SECURITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DIGITAL_DIVIDE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CAPACITY_BUILDING",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DEVELOPMENT_SDGS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_RESOURCE_FOOTPRINT",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_ECONOMY_LABOR",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_YOUTH_EDUCATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CHILD_PROTECTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_NATIONAL_STRATEGY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_SOVEREIGNTY_CONCENTRATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_GEOPOLITICAL_RIVALRY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_OPPORTUNITY_RISK_DUALITY",
+              "value": "Yes",
+              "quote": "Artificial intelligence can be useful, but it can also be dangerous.",
+              "rationale": "Useful and dangerous."
+            },
+            {
+              "code": "AI_TRANSFORMATIVE_ERA",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_TECH_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_THREAT_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            }
+          ],
+          "institutions": [
+            {
+              "commitment_detail": "",
+              "rationale": "High-level Advisory Body on AI welcomed.",
+              "mechanism": "Other model",
+              "reference_type": "explicit name",
+              "stances": {
+                "mention": true,
+                "welcome": true,
+                "support": false,
+                "request": false,
+                "concern": false,
+                "opposition": false,
+                "commitment": false
+              },
+              "requested_functions": [],
+              "un_role": "explicit",
+              "quote": "I applaud the Secretary- General’s resolve to form a high-level advisory body on"
+            }
+          ],
+          "keywords": [
+            {
+              "normalized_term": "high-level advisory body on ai",
+              "original_term": "high-level advisory body",
+              "quote": "a high-level advisory body on"
+            }
+          ],
+          "uncovered_concept": ""
+        }
+      },
+      {
+        "passage_id": "verbatim_en_2023_SVN:12",
+        "classification": {
+          "themes": [
+            {
+              "code": "AI_GLOBAL_GOVERNANCE",
+              "value": "Yes",
+              "quote": "We need to find a way to govern the development of new technologies, including artificial intelligence",
+              "rationale": "Calls for AI governance."
+            },
+            {
+              "code": "AI_INCLUSIVE_GOVERNANCE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_GOVERNANCE_SKEPTICISM",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_UN_ROLE",
+              "value": "Yes",
+              "quote": "The Global Digital Compact should be centred on that notion.",
+              "rationale": "GDC reference."
+            },
+            {
+              "code": "AI_MILITARY_WEAPONS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_PEACE_APPLICATIONS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_SAFETY_EXISTENTIAL",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_HUMAN_CONTROL",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_HUMAN_RIGHTS_ETHICS",
+              "value": "Yes",
+              "quote": "The answer should be a humancentric and human rights-based approach to the full life cycle of technologies",
+              "rationale": "Human rights-based approach."
+            },
+            {
+              "code": "AI_BIAS_CULTURAL_DIVERSITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DISINFORMATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CYBER_SECURITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DIGITAL_DIVIDE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CAPACITY_BUILDING",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DEVELOPMENT_SDGS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_RESOURCE_FOOTPRINT",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_ECONOMY_LABOR",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_YOUTH_EDUCATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CHILD_PROTECTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_NATIONAL_STRATEGY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_SOVEREIGNTY_CONCENTRATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_GEOPOLITICAL_RIVALRY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_OPPORTUNITY_RISK_DUALITY",
+              "value": "Yes",
+              "quote": "in a way that does not impede economic, development, social and research opportunities and does not put us at risk",
+              "rationale": "Balances opportunities and risks."
+            },
+            {
+              "code": "AI_TRANSFORMATIVE_ERA",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_TECH_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_THREAT_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            }
+          ],
+          "institutions": [
+            {
+              "commitment_detail": "",
+              "rationale": "Asks that the GDC be centred on a human rights-based approach.",
+              "mechanism": "Other model",
+              "reference_type": "explicit name",
+              "stances": {
+                "mention": true,
+                "welcome": false,
+                "support": false,
+                "request": true,
+                "concern": false,
+                "opposition": false,
+                "commitment": false
+              },
+              "requested_functions": [
+                "norms/rules/standards"
+              ],
+              "un_role": "explicit",
+              "quote": "The Global Digital Compact should be centred on that notion."
+            }
+          ],
+          "keywords": [
+            {
+              "normalized_term": "global digital compact",
+              "original_term": "Global Digital Compact",
+              "quote": "The Global Digital Compact"
+            },
+            {
+              "normalized_term": "human rights-based approach",
+              "original_term": "human rights-based approach",
+              "quote": "human rights-based approach to the full life cycle of technologies"
+            }
+          ],
+          "uncovered_concept": ""
+        }
+      }
+    ]
+  }
+}

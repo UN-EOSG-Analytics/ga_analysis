@@ -1,0 +1,47 @@
+{
+  "request_hash": "a1f97883c3a684ced5d09946fe50efabe2131cecaf8f39b657ada3c945be2709",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Difficulty agreeing on new AI rules",
+        "definition": "Observation that states struggle to agree on rules for new areas including AI.",
+        "inclusion": "Passages lamenting failure or difficulty in agreeing rules for AI and new technologies.",
+        "exclusion": "Fairness/power critiques of rules (use AI_SOVEREIGNTY_CONCENTRATION).",
+        "boundary_cases": "AI named only in a list of rule-less domains still counts here since the point concerns rule-making.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2019_SVK:3",
+            "quote": "we have serious difficulties in agreeing on new rules. Often, we cannot agree at all."
+          },
+          {
+            "passage_id": "verbatim_en_2019_SVK:3",
+            "quote": "new technologies, cybernetics or artificial intelligence"
+          }
+        ]
+      },
+      {
+        "code": "AI_SOVEREIGNTY_CONCENTRATION",
+        "label": "AI rules written to favour some nations",
+        "definition": "Concern that AI regulation is being written to empower some nations with unfair advantages, requiring fair competition and enforceable fair rules.",
+        "inclusion": "Passages alleging AI rules favour powerful nations or calling for rules that foster fair competition.",
+        "exclusion": "Generic calls for rules without fairness critique.",
+        "boundary_cases": "Calls for fair access to technology and education may also take AI_DIGITAL_DIVIDE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_MWI:11",
+            "quote": "the rules for regulating that arena are already being written to empower some nations and give them unfair advantages over others"
+          }
+        ]
+      }
+    ],
+    "rationale": "Both passages concern AI rule-making: Slovakia notes the inability to agree rules for AI and other new areas, while Malawi warns that emerging AI rules are being written to advantage some nations."
+  }
+}

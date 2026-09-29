@@ -1,0 +1,29 @@
+{
+  "request_hash": "d8217440fe669be0d808bfb1f26160efa122f45900ff655d8bf3beec9d783f58",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "root"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_KHM:1",
+      "verbatim_en_2026_KHM:2",
+      "verbatim_en_2026_KHM:3",
+      "verbatim_en_2026_KHM:4",
+      "verbatim_en_2026_KHM:5"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_KHM:4",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Artificial intelligence and digital innovation can accelerate development and expand opportunities, but their misuse can also deepen inequality, insecurity, and transnational crime.",
+        "rationale": "Balances AI development benefits against inequality, insecurity and criminal misuse, linking those risks to international cooperation against online scams."
+      }
+    ]
+  }
+}

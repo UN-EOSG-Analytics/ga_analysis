@@ -1,0 +1,75 @@
+{
+  "request_hash": "97da5aecc339b268153fea45bb97c01a4eb3174cbd021245e58c2956e71f2616",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_ECONOMY_LABOR",
+        "label": "AI replacing human intellect and jobs",
+        "definition": "Concern that AI, unlike earlier automation of physical tasks, replaces intellectual work with devastating job-market consequences.",
+        "inclusion": "Include passages about AI replacing human intellectual capacities or labour and resulting unemployment.",
+        "exclusion": "Exclude general poverty/unemployment statements not linked to AI.",
+        "boundary_cases": "Job-loss arguments that end in wealth-concentration claims are also coded AI_SOVEREIGNTY_CONCENTRATION.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_ITA:20",
+            "quote": "today the human intellect risks being replaced, with consequences that could be devastating, particularly for the job market"
+          }
+        ]
+      },
+      {
+        "code": "AI_SOVEREIGNTY_CONCENTRATION",
+        "label": "Concentration of power and wealth",
+        "definition": "Concern that AI-driven change concentrates power and wealth in the hands of a few, making people unnecessary.",
+        "inclusion": "Include statements linking AI to concentration of power or wealth among few actors.",
+        "exclusion": "Exclude inter-state access gaps without concentration language (AI_DIGITAL_DIVIDE).",
+        "boundary_cases": "Domestic-inequality framing still counts if concentration of power/wealth is explicit.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_ITA:20",
+            "quote": "a world ever-dominated by disparities and by the concentration of power and wealth in the hands of the few"
+          }
+        ]
+      },
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "Great opportunities, enormous inherent risks",
+        "definition": "AI presented as seemingly beneficial but carrying enormous inherent risks, with development outpacing capacity to manage it.",
+        "inclusion": "Include passages explicitly contrasting AI's opportunities with its inherent risks or pace outstripping management.",
+        "exclusion": "Exclude one-sided statements.",
+        "boundary_cases": "Pace-of-change concerns without opportunity framing may go to AI_SAFETY_EXISTENTIAL if loss of control is implied.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_ITA:19",
+            "quote": "may offer great opportunities in many fields, but we cannot pretend to not understand its enormous inherent risks"
+          },
+          {
+            "passage_id": "verbatim_en_2023_ITA:19",
+            "quote": "whose pace is much faster than our capacity to manage its effects"
+          }
+        ]
+      },
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "Widening gap between possibility and reality",
+        "definition": "AI's promise for human well-being contrasted with peoples facing starvation and war, as if living in two different eras.",
+        "inclusion": "Include passages contrasting AI's possibilities with global deprivation and inequality between peoples.",
+        "exclusion": "Exclude labour-market arguments within one country.",
+        "boundary_cases": "AI named with genetics as a frontier of possibility, if not contrasted with deprivation, is AI_TECH_LIST_MENTION.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_QAT:5",
+            "quote": "In areas such as genetics and artificial intelligence, the possibilities for realizing the well-being of all humanity are increasing. But the gap between possibility and reality is also widening."
+          }
+        ]
+      }
+    ],
+    "rationale": "These 2023 passages are reflective and cautionary: Italy on AI replacing intellectual labour and concentrating wealth, Qatar on AI's promise contrasted with deep global inequalities."
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "request_hash": "b0906e97f743b3294d0d6ac52ee101af89b882858543aef2110a44244379e195",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "International rules to secure public confidence",
+        "definition": "International rules grounded in international law are called for so the public can trust that AI will enhance rather than destroy humanity.",
+        "inclusion": "Include calls for international AI rules framed around public trust or international law.",
+        "exclusion": "Exclude digital security threats (cyber attacks, cable cutting) that are not linked to AI.",
+        "boundary_cases": "The phrase 'enhance and not destroy humanity' alludes to catastrophic fears but the passage's claim is about rules, so code here rather than AI_SAFETY_EXISTENTIAL.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_MLT:6",
+            "quote": "If we are to stand any chance of securing public confidence that AI can enhance and not destroy humanity, we need a set of international rules that reflect international law."
+          }
+        ]
+      },
+      {
+        "code": "AI_UN_ROLE",
+        "label": "Support for Global Digital Compact implementation",
+        "definition": "Support for implementing the Global Digital Compact and wider UN digital cooperation efforts.",
+        "inclusion": "Include endorsements of the Global Digital Compact or UN digital cooperation in an AI context.",
+        "exclusion": "Exclude general UN reform appeals without digital/AI content.",
+        "boundary_cases": "Cyber resilience and cable protection within the same passage are generic digital security and not coded as AI unless AI is named.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_MLT:6",
+            "quote": "Malta, my country, wholeheartedly supports the implementation of the Global Digital Compact and wider UN efforts to strengthen international digital cooperation"
+          }
+        ]
+      }
+    ],
+    "rationale": "The single Malta 2026 passage briefly calls for international AI rules to build public confidence and endorses the Global Digital Compact, then moves to general digital security threats (cyber, cables, disinformation) not explicitly tied to AI."
+  }
+}

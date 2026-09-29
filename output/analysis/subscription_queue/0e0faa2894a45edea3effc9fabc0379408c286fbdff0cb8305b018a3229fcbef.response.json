@@ -1,0 +1,83 @@
+{
+  "request_hash": "0e0faa2894a45edea3effc9fabc0379408c286fbdff0cb8305b018a3229fcbef",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "Closing AI gaps for developing countries",
+        "definition": "AI discussed in terms of developmental asymmetries: developing countries entering the AI era from unequal starting points, needing infrastructure, compute and expertise so they are not left behind.",
+        "inclusion": "Include passages urging that AI/digital societies bridge rather than widen development divides, or naming gaps in infrastructure, computing or expertise.",
+        "exclusion": "Exclude maritime, migration or ocean passages that do not touch technology.",
+        "boundary_cases": "Explicit lists of needed resources (compute, infrastructure, expertise) could also be coded AI_CAPACITY_BUILDING.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_PHL:3",
+            "quote": "We are not entering the AI era from the same starting point."
+          },
+          {
+            "passage_id": "verbatim_en_2025_PHL:4",
+            "quote": "We must help build digital societies that bridges development divides rather than widen them, conforming with safeguards against misuse."
+          }
+        ]
+      },
+      {
+        "code": "AI_HUMAN_RIGHTS_ETHICS",
+        "label": "Human-centred AI protecting rights and democracy",
+        "definition": "AI governance framed around preventing unacceptable risks to human lives, rights and democratic integrity, and around human-centred, inclusive AI.",
+        "inclusion": "Include passages requiring that AI not endanger human rights or democracy, or calling for human-centred, gender-equal AI.",
+        "exclusion": "Exclude generic migrant or seafarer rights passages without AI.",
+        "boundary_cases": "'Unacceptable risks to human lives' could also touch AI_SAFETY_EXISTENTIAL; code there only if loss of control or catastrophe is explicit.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_PHL:3",
+            "quote": "Advanced capabilities must never be allowed to pose unacceptable risks to human lives, human rights, or democratic integrity."
+          },
+          {
+            "passage_id": "verbatim_en_2026_PHL:3",
+            "quote": "We need AI systems that uplift the vulnerable, strengthen national resilience, promote gender equality, and foster human-centered partnerships"
+          }
+        ]
+      },
+      {
+        "code": "AI_CHILD_PROTECTION",
+        "label": "Protecting children in the AI world",
+        "definition": "Concern that AI creates new vulnerabilities for children and that regulation must keep pace with innovation to protect people.",
+        "inclusion": "Include passages singling out children's vulnerabilities from AI or the need for rules to protect them.",
+        "exclusion": "Exclude AI education/skills passages without a protection concern.",
+        "boundary_cases": "General 'freedom needs rules' regulatory language counts here only when tied to protecting children; otherwise AI_GLOBAL_GOVERNANCE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_BEL:6",
+            "quote": "I'm thinking in particular of children who are growing up in a world where AI can open extraordinary possibilities but also creates new vulnerabilities."
+          }
+        ]
+      },
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "Innovation without outpacing protection",
+        "definition": "AI framed as both promise and profound risk, with a balance between not holding back innovation and not assuming self-regulation.",
+        "inclusion": "Include passages pairing AI's promise with risk, or rejecting both fear-driven restriction and laissez-faire.",
+        "exclusion": "Exclude one-sided mentions.",
+        "boundary_cases": "Calls that 'freedom needs rules' fit here when framed as balancing innovation and protection.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_PHL:4",
+            "quote": "Artificial intelligence offers promise, but carries profound risks."
+          },
+          {
+            "passage_id": "verbatim_en_2026_BEL:6",
+            "quote": "We must neither hold back innovation out of fear, nor assume that it will regulate itself."
+          }
+        ]
+      }
+    ],
+    "rationale": "Passages are mostly about oceans, seafarers and undersea infrastructure, with AI appearing as a transition to technology governance. The AI content stresses development divides and human rights (Philippines) and child vulnerability plus balanced regulation (Belgium)."
+  }
+}

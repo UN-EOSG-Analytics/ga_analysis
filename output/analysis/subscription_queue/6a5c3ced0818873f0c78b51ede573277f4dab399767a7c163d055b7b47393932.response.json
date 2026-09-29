@@ -1,0 +1,43 @@
+{
+  "request_hash": "6a5c3ced0818873f0c78b51ede573277f4dab399767a7c163d055b7b47393932",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_TECH_LIST_MENTION",
+        "label": "AI listed among domestic reform tools",
+        "definition": "AI is named briefly in a list of technologies or reform measures within a national economic narrative, with no further discussion of AI.",
+        "inclusion": "Include passages where AI appears only as one item among digitization, crypto, IT or other reform tools.",
+        "exclusion": "Exclude passages that elaborate on AI policy, risks, or governance.",
+        "boundary_cases": "If the list item specifies a concrete national AI programme, code AI_NATIONAL_STRATEGY instead.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_PAK:11",
+            "quote": "embraced digitization, AI, and crypto as the tools of the future"
+          }
+        ]
+      },
+      {
+        "code": "AI_YOUTH_EDUCATION",
+        "label": "Equipping youth with AI skills",
+        "definition": "National efforts to equip young people with AI and IT skills as part of economic revival.",
+        "inclusion": "Include mentions of training youth or students in AI skills.",
+        "exclusion": "Exclude youth passages without AI.",
+        "boundary_cases": "A brief list item on youth AI skills is coded here as well as AI_TECH_LIST_MENTION when no further detail is given.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_PAK:5",
+            "quote": "equipping our youth with modern AI and IT skills"
+          }
+        ]
+      }
+    ],
+    "rationale": "Both Pakistan passages mention AI only in passing inside a domestic economic reform narrative, alongside digitization, crypto and IT skills; neither discusses AI risks or governance."
+  }
+}

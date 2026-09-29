@@ -1,0 +1,35 @@
+{
+  "request_hash": "184beea444de8257e296c57163304661a5226a6227c4378d7bdec9ecbddcfe40",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_a"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_UZB:1",
+      "verbatim_en_2026_UZB:2",
+      "verbatim_en_2026_UZB:3",
+      "verbatim_en_2026_UZB:4"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_UZB:3",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Artificial intelligence must be inseparable from human rights, security, equal opportunity, and accountability.",
+        "rationale": "Advocates human-centered AI and international dialogue on rights, security, and accountability."
+      },
+      {
+        "passage_id": "verbatim_en_2026_UZB:4",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Today, in an era when social networks and artificial intelligence are spreading hatred and stereotypes at a rapid pace, it is important to remind this truth once again.",
+        "rationale": "Identifies AI spreading hatred and stereotypes while promoting intercultural dialogue."
+      }
+    ]
+  }
+}

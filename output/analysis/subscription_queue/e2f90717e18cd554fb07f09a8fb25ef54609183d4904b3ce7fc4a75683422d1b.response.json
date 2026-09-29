@@ -1,0 +1,89 @@
+{
+  "request_hash": "e2f90717e18cd554fb07f09a8fb25ef54609183d4904b3ce7fc4a75683422d1b",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_NATIONAL_STRATEGY",
+        "label": "AI-driven national economic transformation",
+        "definition": "Speaker describes the country's own plans to digitize and make its economy AI-driven, and current national deployment of AI systems in services and environmental monitoring.",
+        "inclusion": "Include descriptions of national AI deployment, AI-driven economic visions, or domestic AI investments.",
+        "exclusion": "Exclude calls for global AI rules without domestic content.",
+        "boundary_cases": "Domestic AI use in health, education and environment may also be coded AI_DEVELOPMENT_SDGS.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_MDV:6",
+            "quote": "transforming its economy into one that is fully digitized and driven by artificial intelligence (AI)"
+          },
+          {
+            "passage_id": "verbatim_en_2024_MDV:7",
+            "quote": "We are using and expanding artificial intelligence systems to deliver essential services such as healthcare, education and social welfare."
+          }
+        ]
+      },
+      {
+        "code": "AI_YOUTH_EDUCATION",
+        "label": "Digital literacy for an AI generation",
+        "definition": "Investing in digital literacy from a young age so a generation can use AI to deliver services and compete in the digital economy.",
+        "inclusion": "Include passages on building AI-related skills or literacy among young people.",
+        "exclusion": "Exclude general education reforms without AI linkage.",
+        "boundary_cases": "Domestic regulatory and start-up measures in the same passage belong to AI_NATIONAL_STRATEGY.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_MDV:8",
+            "quote": "invest in people’s digital literacy from a young age to build a generation that can use artificial intelligence"
+          }
+        ]
+      },
+      {
+        "code": "AI_SMALL_STATES_OPPORTUNITY",
+        "label": "AI overcoming distance and scale for small states",
+        "definition": "AI is framed as especially valuable for small and island states by closing distance and overcoming scale in service delivery.",
+        "inclusion": "Include passages linking AI benefits to small-state or island geographic constraints.",
+        "exclusion": "Exclude general AI development benefits not tied to smallness or dispersion.",
+        "boundary_cases": "Generic health/education benefits without the small-state framing go to AI_DEVELOPMENT_SDGS.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_MDV:4",
+            "quote": "For small states, AI can close distance. It can help overcome scale."
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Every country's voice in AI rules",
+        "definition": "Call that all countries have a voice in shaping global AI rules and that the digital future not create dependence.",
+        "inclusion": "Include calls for inclusive participation in global AI rule-making.",
+        "exclusion": "Exclude domestic regulatory framework statements.",
+        "boundary_cases": "Warnings about dependence also fit AI_SOVEREIGNTY_CONCENTRATION.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_MDV:4",
+            "quote": "Every country must have a voice in shaping the global rules for AI."
+          }
+        ]
+      },
+      {
+        "code": "AI_SOVEREIGNTY_CONCENTRATION",
+        "label": "Avoiding new forms of technological dependence",
+        "definition": "Concern that the AI/digital transformation should not create new dependence for small states.",
+        "inclusion": "Include warnings about dependence on external technology or partners in the AI context.",
+        "exclusion": "Exclude generic access-gap statements.",
+        "boundary_cases": "Paired with calls for a voice in rules, also code AI_GLOBAL_GOVERNANCE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_MDV:4",
+            "quote": "The digital future should strengthen our ability to serve our people better, not create new forms of dependence."
+          }
+        ]
+      }
+    ],
+    "rationale": "Maldives 2024 passages describe a domestic AI-driven economic vision, deployment and skills; 2026 shifts to a small-state framing of AI benefits plus demands for a voice in global rules and avoidance of dependence."
+  }
+}

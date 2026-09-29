@@ -1,0 +1,44 @@
+{
+  "request_hash": "85e2ddb155dcc4ed45472a403c8e6cb4d17d675f6b6ac7bc21b5e9a1728363b0",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_b"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2025_GBR:1",
+      "verbatim_en_2025_GBR:2",
+      "verbatim_en_2025_GBR:3",
+      "verbatim_en_2025_GBR:4",
+      "verbatim_en_2025_GBR:5",
+      "verbatim_en_2025_GBR:6"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2025_GBR:4",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "AI is the most powerful new lever we have to advance the Charter's vision of social progress, better standards of life.",
+        "rationale": "Describes transformative AI, national growth strategy and applications in fraud detection and healthcare."
+      },
+      {
+        "passage_id": "verbatim_en_2025_GBR:5",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Only by cooperation together can we set artificial intelligence on the right millennia-defining course.",
+        "rationale": "Examines AI healthcare benefits, inequality, disinformation and criminal misuse and urges cooperation."
+      },
+      {
+        "passage_id": "verbatim_en_2025_GBR:6",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "And I welcome the new global dialogue on AI governance.",
+        "rationale": "Supports UN AI governance bodies, AI security research and international development applications."
+      }
+    ]
+  }
+}

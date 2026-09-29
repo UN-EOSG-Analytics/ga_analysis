@@ -1,0 +1,119 @@
+{
+  "request_hash": "688b1a21538af16a5e77364c1561263a6434e4bb51b097a2f6b0059e96328fb5",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "AI as both benefit and threat",
+        "definition": "Explicit framing of AI (alone or with other emerging technologies) as capable of great benefit and serious harm, depending on human choices.",
+        "inclusion": "Passages stating AI can bring enormous benefits but also inequality, manipulation or security risks, or that it 'can be a threat or a solution'.",
+        "exclusion": "Passages that only list AI's effects without contrasting benefit and harm.",
+        "boundary_cases": "Statements that AI 'can accelerate development, but' must remain within legal limits lean toward rights/governance unless harms are explicitly named.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_SRB:8",
+            "quote": "It can bring enormous benefits to humanity, it can also deepen existing inequalities enable new forms of manipulation, and create security risks"
+          },
+          {
+            "passage_id": "verbatim_en_2025_HRV:5",
+            "quote": "Artificial intelligence, cyber capabilities, space technologies, robotics, each can be a threat or a solution. The choice is ours."
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Rules and cooperation keeping pace with AI",
+        "definition": "Calls for rules, safeguards, declarations or international cooperation to guide AI development.",
+        "inclusion": "Passages urging rules and safeguards for AI or citing multilateral AI initiatives such as the Global Partnership on AI and ministerial declarations.",
+        "exclusion": "UN-reform passages that do not connect to AI or technology governance.",
+        "boundary_cases": "Security-focused emerging-technology governance without specific weapons references stays here rather than military.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_HRV:5",
+            "quote": "Rules, safeguards, and cooperation must keep pace with innovation."
+          },
+          {
+            "passage_id": "verbatim_en_2026_SRB:9",
+            "quote": "The Belgrade Ministerial Declaration received the support of 44 member states in the European Union and affirmed the need for safe, sustainable, and human-centered artificial intelligence."
+          }
+        ]
+      },
+      {
+        "code": "AI_HUMAN_RIGHTS_ETHICS",
+        "label": "AI bound by law, dignity, accountability",
+        "definition": "AI use must respect human rights, human dignity, legal frameworks and democratic accountability; human-centred AI.",
+        "inclusion": "Passages conditioning AI use on legal frameworks, human dignity, human rights or accountability.",
+        "exclusion": "Passages about geopolitical rules of the international order unrelated to AI's own conduct.",
+        "boundary_cases": "A chairmanship priority list including human rights and the digital divide may be coded here and with governance.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_HRV:3",
+            "quote": "its use must remain consistent with legal frameworks, human dignity and democratic accountability"
+          },
+          {
+            "passage_id": "verbatim_en_2026_SRB:9",
+            "quote": "technological progress remained connected with security, human rights, the rule of law, accountability, and bridging the digital divide"
+          }
+        ]
+      },
+      {
+        "code": "AI_TECH_VS_POLITICAL_ORDER",
+        "label": "Technological power without political wisdom",
+        "definition": "Argument that AI-driven technological advancement will not by itself make the world safer unless international order and principles are upheld.",
+        "inclusion": "Passages contrasting advanced AI capability with a deteriorating or unpredictable political/international order.",
+        "exclusion": "Passages about AI regulation specifically rather than the broader international order.",
+        "boundary_cases": "Future-looking passages listing AI among forces reshaping the world count here when they pivot to the need for a stable international order.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_SRB:9",
+            "quote": "It will merely make us more technologically advanced in a world that is becoming politically less predictable."
+          },
+          {
+            "passage_id": "verbatim_en_2026_MKD:1",
+            "quote": "technological capability does not automatically produce political wisdom"
+          }
+        ]
+      },
+      {
+        "code": "AI_ECONOMY_LABOR",
+        "label": "AI transforming professions and industries",
+        "definition": "AI described as transforming the economy, professions, labour markets and decision-making.",
+        "inclusion": "Passages stating AI will change professions, industries, the labour market or how states function.",
+        "exclusion": "Passages naming AI only as a symbol of technological advancement.",
+        "boundary_cases": "Broad lists of AI's effects across economy, education and medicine can be coded here when labour/professions are named.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_MKD:1",
+            "quote": "Artificial intelligence will transform professions, industries, and the ways in which decisions are made."
+          },
+          {
+            "passage_id": "verbatim_en_2026_SRB:8",
+            "quote": "Artificial intelligence is already changing the economy, education, medicine, security, the labor market, and the way states function."
+          }
+        ]
+      },
+      {
+        "code": "AI_TECH_LIST_MENTION",
+        "label": "Passing, incidental AI reference",
+        "definition": "AI is mentioned only incidentally or in passing, without substantive discussion of AI.",
+        "inclusion": "Fragmentary or incidental references (e.g. naming an AI institute) where the passage's argument is about something else.",
+        "exclusion": "Any passage that discusses AI's effects, risks or governance.",
+        "boundary_cases": "If the mention is followed by any claim about AI's impact, code the substantive theme instead.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_SRB:10",
+            "quote": "the artificial intelligence institute, because it is a natural thing that I protect its interests"
+          }
+        ]
+      }
+    ],
+    "rationale": "Balkan speeches place AI within broader arguments about UN reform and respect for international principles; most frame AI as dual-use and needing rules, dignity and accountability, while Serbia 2023 contains only an incidental reference."
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "request_hash": "99603d08a67702da65b21af197ab87f42e74b23c4febd87fce65b2d7ff062446",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "root"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2025_NAM:1",
+      "verbatim_en_2025_NAM:2",
+      "verbatim_en_2025_NAM:3",
+      "verbatim_en_2025_NAM:4",
+      "verbatim_en_2025_NAM:5"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2025_NAM:3",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "artificial intelligence must not be a substitute for human judgment or responsibility.",
+        "rationale": "Demands ethical boundaries, retained human responsibility and global standards for transparent and fair AI."
+      }
+    ]
+  }
+}

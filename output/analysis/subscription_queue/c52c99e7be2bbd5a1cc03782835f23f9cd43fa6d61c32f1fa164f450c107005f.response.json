@@ -1,0 +1,69 @@
+{
+  "request_hash": "c52c99e7be2bbd5a1cc03782835f23f9cd43fa6d61c32f1fa164f450c107005f",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_SOVEREIGNTY_CONCENTRATION",
+        "label": "Transnational tech domination and algorithmic control",
+        "definition": "Critique that a few (mostly US) transnational companies control platforms, content and algorithms, producing cultural domination and manipulation of behaviour.",
+        "inclusion": "Passages on dictatorship of the algorithm, few transnationals imposing systems and controlling content.",
+        "exclusion": "Inclusive governance calls without a domination critique (use AI_GLOBAL_GOVERNANCE).",
+        "boundary_cases": "Anti-capitalist critiques of AI misuse can take this code if concentration of power is explicit.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_CUB:4",
+            "quote": "A few transnationals, almost all of them from the US, impose their operating systems and control the content that is seen, read and heard"
+          },
+          {
+            "passage_id": "verbatim_en_2025_CUB:4",
+            "quote": "We are suffering from the dictatorship of the algorithm."
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Inclusive UN-based AI governance for all",
+        "definition": "Calls for common norms and more inclusive global governance of AI, including voice for developing regions like Africa in AI governance decisions.",
+        "inclusion": "Passages calling for UN common norms on AI, inclusive governance of disruptive technologies, or African voice in global AI governance.",
+        "exclusion": "Critiques of corporate concentration without a governance call.",
+        "boundary_cases": "Demands that Africa be heard in global AI governance take this and AI_DIGITAL_DIVIDE if inequality is also raised.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_CUB:4",
+            "quote": "establish at the UN as soon as possible common norms in order to unlock the transformative potential of new technologies, especially artificial intelligence"
+          },
+          {
+            "passage_id": "verbatim_en_2026_CUB:7",
+            "quote": "promote governance that is more inclusive in the use of the new ICTs and telecommunications, particularly the disruptive technologies such as artificial intelligence"
+          },
+          {
+            "passage_id": "verbatim_en_2026_AGO:6",
+            "quote": "climate issues and global governance of artificial intelligence"
+          }
+        ]
+      },
+      {
+        "code": "AI_CAPITALISM_CIVILIZATIONAL_THREAT",
+        "label": "AI misuse under capitalism threatening humanity",
+        "definition": "AI misuse, driven by capitalism, portrayed as a systemic threat that could worsen climate change and render most people unnecessary.",
+        "inclusion": "Passages linking AI misuse to capitalism, planetary destruction or mass human redundancy.",
+        "exclusion": "Technical loss-of-control safety concerns (use AI_SAFETY_EXISTENTIAL) or narrow job loss (use AI_ECONOMY_LABOR).",
+        "boundary_cases": "If the passage focuses on job displacement without systemic critique, use AI_ECONOMY_LABOR instead.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_BOL:2",
+            "quote": "the unstoppable force of capitalism with the misuse of artificial intelligence would increase the climate change, would liquidate the planet"
+          }
+        ]
+      }
+    ],
+    "rationale": "Passages come from Global South speeches embedding AI in critiques of unequal world order: Cuba targets US tech domination and calls for inclusive UN norms, Angola demands African voice in AI governance, and Bolivia frames AI misuse under capitalism as a civilizational threat."
+  }
+}

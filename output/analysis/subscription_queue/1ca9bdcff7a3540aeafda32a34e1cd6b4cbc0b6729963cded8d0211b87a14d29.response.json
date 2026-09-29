@@ -1,0 +1,47 @@
+{
+  "request_hash": "1ca9bdcff7a3540aeafda32a34e1cd6b4cbc0b6729963cded8d0211b87a14d29",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Anticipatory international rules and accountability",
+        "definition": "AI must develop within a framework of international rules, common standards, public oversight and accountability, established before harms occur rather than after the fact.",
+        "inclusion": "Include calls for international AI rules, standards, oversight or accountability mechanisms, including arguments that governance must be proactive.",
+        "exclusion": "Exclude climate or general multilateralism arguments without AI.",
+        "boundary_cases": "Historical analogies (e.g. the Manhattan Project) used to argue for timely AI rules are coded here.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_CZE:4",
+            "quote": "Governance that comes only after the fact may come too late. If AI is to serve humanity, it must develop within a framework of international rules."
+          },
+          {
+            "passage_id": "verbatim_en_2026_CZE:4",
+            "quote": "We need common standards, meaningful public oversight, and clear mechanisms of accountability."
+          }
+        ]
+      },
+      {
+        "code": "AI_RACE_DYNAMICS",
+        "label": "Rules versus the logic of the race",
+        "definition": "AI development framed as driven by a competitive race among countries and companies, contrasted with rule-governed innovation.",
+        "inclusion": "Include passages critiquing race dynamics in AI development or framing rules versus race as the core choice.",
+        "exclusion": "Exclude concentration-of-power claims that do not refer to competitive racing (AI_SOVEREIGNTY_CONCENTRATION).",
+        "boundary_cases": "'No country and no company can meet this challenge alone' alone is a governance claim; code race dynamics only when the race is named.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_CZE:4",
+            "quote": "It is between innovation governed by rules and innovation governed by the logic of the race."
+          }
+        ]
+      }
+    ],
+    "rationale": "The single Czech passage is a focused argument for proactive international AI governance, using the Manhattan Project analogy and contrasting rule-governed innovation with race dynamics."
+  }
+}

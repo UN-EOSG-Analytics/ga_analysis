@@ -1,0 +1,105 @@
+{
+  "request_hash": "28e2e901218c5a28b60b8b018e712bbcea51c1eea54a1d3273cb75bf2f37c60a",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_MILITARY_WEAPONS",
+        "label": "Binding rules on autonomous weapons",
+        "definition": "Speaker calls for prohibitions and regulation of autonomous weapons systems and military AI, stressing meaningful human control over life-or-death decisions.",
+        "inclusion": "Include references to autonomous weapons, military automation, militarization of new technologies, or human control over lethal force.",
+        "exclusion": "Exclude civilian AI governance calls without any military dimension.",
+        "boundary_cases": "Calls for governance frameworks covering both military and civilian AI should be coded here and in AI_GLOBAL_GOVERNANCE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_CRI:4",
+            "quote": "No algorithm should ever make life or death decisions."
+          },
+          {
+            "passage_id": "verbatim_en_2023_CRI:6",
+            "quote": "The militarization of new technologies poses specific problems."
+          },
+          {
+            "passage_id": "verbatim_en_2024_CRI:13",
+            "quote": "governance frameworks for artificial intelligence in both the military and civilian spheres"
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "AI governance as a defining global challenge",
+        "definition": "AI governance is presented as one of the major global challenges requiring new international frameworks.",
+        "inclusion": "Include passages naming AI governance as a key global challenge or calling for new governance frameworks for AI.",
+        "exclusion": "Exclude passages about domestic AI use only.",
+        "boundary_cases": "Governance calls tied to cybersecurity and cybercrime may also be coded AI_CYBER_SECURITY.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_CRI:1",
+            "quote": "nuclear weapons, the triple planetary crisis, and the governance of artificial intelligence"
+          },
+          {
+            "passage_id": "verbatim_en_2023_CRI:6",
+            "quote": "we urgently need new governance frameworks on cybersecurity, cybercrime and artificial intelligence"
+          }
+        ]
+      },
+      {
+        "code": "AI_UN_ROLE",
+        "label": "Leading UN AI panel and dialogue",
+        "definition": "Speaker highlights UN mechanisms for AI such as the Global Digital Compact, the Independent International Scientific Panel and the Global Dialogue on AI Governance, including its own role in establishing them.",
+        "inclusion": "Include explicit references to UN AI processes, bodies or resolutions.",
+        "exclusion": "Exclude generic multilateralism without a specific UN AI mechanism.",
+        "boundary_cases": "Draft General Assembly resolutions on autonomous weapons are primarily AI_MILITARY_WEAPONS but may be coded here too.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_CRI:5",
+            "quote": "has led the process that established the independent international scientific panel and the global dialogue on AI governance"
+          },
+          {
+            "passage_id": "verbatim_en_2024_CRI:13",
+            "quote": "The recently adopted Global Digital Compact (resolution 79/1, annex I) sets the multilateral system in motion to address artificial intelligence"
+          }
+        ]
+      },
+      {
+        "code": "AI_CYBER_SECURITY",
+        "label": "AI enabling cyberattacks, terrorism and disinformation",
+        "definition": "AI is framed as a threat to peace and security via cyberattacks on infrastructure, cyber terrorism, crime and mass disinformation.",
+        "inclusion": "Include passages linking AI to cyberattacks, cyber terrorism, crime or attacks on democratic institutions.",
+        "exclusion": "Exclude military weapons uses, which belong to AI_MILITARY_WEAPONS.",
+        "boundary_cases": "Mentions of AI-driven mass disinformation should also be coded AI_DISINFORMATION.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_CRI:2",
+            "quote": "Artificial intelligence can boost cyber terrorism and other crimes that we cannot yet envisage."
+          },
+          {
+            "passage_id": "verbatim_en_2025_CRI:4",
+            "quote": "It can become a vector of mass disinformation and enable cyber attacks that paralyze critical infrastructure."
+          }
+        ]
+      },
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "AI benefits versus access divide",
+        "definition": "AI is framed as able to strengthen economies and knowledge access while also dividing those with and without access.",
+        "inclusion": "Include passages that explicitly contrast AI's development benefits with its risks, including a digital divide.",
+        "exclusion": "Exclude one-sided risk or benefit statements.",
+        "boundary_cases": "If the risk emphasized is access inequality, also code AI_DIGITAL_DIVIDE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_CRI:4",
+            "quote": "But it can also divide us between those who have access and those who do not."
+          }
+        ]
+      }
+    ],
+    "rationale": "Costa Rica's passages consistently treat AI governance as a top global challenge, with a strong focus on autonomous weapons and meaningful human control, plus leadership in UN AI processes; 2026 shifts toward AI-enabled cyber crime and terrorism."
+  }
+}

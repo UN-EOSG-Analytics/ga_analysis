@@ -1,0 +1,97 @@
+{
+  "request_hash": "df8671afa88f04c455136e5e4e2454f1471938a581297bae6a3447661e59ec96",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_MILITARY_WEAPONS",
+        "label": "AI-powered weapons and human decision",
+        "definition": "Concern over AI-powered weapons and autonomous systems, with calls for international frameworks analogous to WMD regimes.",
+        "inclusion": "Include references to AI-powered weapons, autonomous systems on the battlefield, or machines making life-or-death decisions.",
+        "exclusion": "Exclude AI security challenges unrelated to weapons.",
+        "boundary_cases": "Calls for frameworks modelled on nuclear/chemical/biological weapons rules are coded here and AI_GLOBAL_GOVERNANCE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_SVK:2",
+            "quote": "machines should never be allowed to make life-or-death decisions on their own"
+          }
+        ]
+      },
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "AI concentrated among few creates divisions",
+        "definition": "Unequal access to AI risks benefiting only the strongest economies and biggest companies and leaving communities behind.",
+        "inclusion": "Include warnings that AI access inequality will create new divisions between countries or communities.",
+        "exclusion": "Exclude statements about concentration of power without access consequences (code AI_SOVEREIGNTY_CONCENTRATION).",
+        "boundary_cases": "Mentions of 'biggest companies' capturing benefits may also be coded AI_SOVEREIGNTY_CONCENTRATION.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_SVK:2",
+            "quote": "If AI is available only to a few, new divisions will appear."
+          }
+        ]
+      },
+      {
+        "code": "AI_YOUTH_EDUCATION",
+        "label": "AI harming education and youth",
+        "definition": "AI is framed as already negatively affecting education and a generation of young people, and as a topic for education-focused summits.",
+        "inclusion": "Include passages on AI's impact on learning, test scores, youth, or AI-and-education initiatives.",
+        "exclusion": "Exclude general education passages without AI.",
+        "boundary_cases": "Hosting an education-and-AI summit also reflects AI_NATIONAL_STRATEGY leadership.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_SVK:2",
+            "quote": "It is already having a negative impact on society, especially in education."
+          },
+          {
+            "passage_id": "verbatim_en_2025_SVK:4",
+            "quote": "hosting all the actors at the Summit on Education and AI in Bratislava"
+          }
+        ]
+      },
+      {
+        "code": "AI_PEACE_DIPLOMACY",
+        "label": "AI as tool for peace and prevention",
+        "definition": "AI is presented as a potential tool for diplomacy, mediation and conflict prevention through analysis, pattern recognition and translation.",
+        "inclusion": "Include passages proposing AI use for peacebuilding, mediation, early warning or conflict prevention.",
+        "exclusion": "Exclude generic development benefits of AI (code AI_DEVELOPMENT_SDGS).",
+        "boundary_cases": "Passages that use AI only as a metaphor for institutional reform are not coded here.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_SVK:2",
+            "quote": "It can be also a tool for peace. It can help us analyze information, identify patterns, and overcome language barriers in real time."
+          },
+          {
+            "passage_id": "verbatim_en_2026_SVK:3",
+            "quote": "we can move this technology away from the battlefield and towards diplomacy, mediation, and conflict prevention"
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Responsible approach and international frameworks",
+        "definition": "Calls for strong international frameworks and a responsible multi-stakeholder approach to fast-moving AI, with a UN lead role.",
+        "inclusion": "Include calls for international AI rules or responsible approaches by institutions, private sector and governments.",
+        "exclusion": "Exclude passages only mentioning AI as a metaphor.",
+        "boundary_cases": "Statements that the UN should lead may also be coded AI_UN_ROLE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_SVK:2",
+            "quote": "We also need strong international frameworks for these new technologies. The United Nations can and should play a leading role in this effort."
+          },
+          {
+            "passage_id": "verbatim_en_2025_SVK:4",
+            "quote": "We need a responsible approach from all international institutions, the private sector, and also the governments."
+          }
+        ]
+      }
+    ],
+    "rationale": "Slovakia's passages offer a multi-faceted AI discussion: access inequality, AI weapons, harm to education, and AI as a tool for peace, alongside calls for international frameworks; one passage uses AI mainly as a metaphor for institutional reform."
+  }
+}

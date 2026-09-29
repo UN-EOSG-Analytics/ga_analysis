@@ -1,0 +1,38 @@
+{
+  "request_hash": "f19685b1ef201ce49bd7f713873a25a9fbe4795a851b1238637ec08f25339659",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_b"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2025_MUS:1",
+      "verbatim_en_2025_MUS:2",
+      "verbatim_en_2025_MUS:3",
+      "verbatim_en_2025_MUS:4",
+      "verbatim_en_2025_MUS:5",
+      "verbatim_en_2025_MUS:6",
+      "verbatim_en_2025_MUS:7"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2025_MUS:2",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Persistent conflicts, climate emergencies, environmental degradation, growing inequalities, cyber criminality exacerbated by artificial intelligence.",
+        "rationale": "Identifies AI as amplifying cybercrime within global crises."
+      },
+      {
+        "passage_id": "verbatim_en_2025_MUS:5",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "There is need to build a global governance architecture through multilateral negotiations that will ensure safe, secure, ethical, and inclusive use of AI.",
+        "rationale": "Supports multilateral AI governance, developing-country capacity and UN AI bodies."
+      }
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "request_hash": "1abf9255d531bcddf6faa55cb7633ec24b0c72cb086d195bba762e04246be038",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_UN_ROLE",
+        "label": "Tribute to Secretary-General's AI governance leadership",
+        "definition": "Opening-section tributes crediting the UN Secretary-General with championing global AI governance or international AI cooperation.",
+        "inclusion": "Include passages praising the SG or UN initiatives specifically for work on AI governance or AI cooperation.",
+        "exclusion": "Exclude tributes to the SG that do not mention AI.",
+        "boundary_cases": "A tribute listing AI among many SG initiatives still counts if AI is explicitly named as an SG effort.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_AGO:1",
+            "quote": "a champion of the global debate on global governance of artificial intelligence"
+          },
+          {
+            "passage_id": "verbatim_en_2026_KWT:1",
+            "quote": "to strengthen international cooperation on artificial intelligence"
+          }
+        ]
+      },
+      {
+        "code": "AI_SAFETY_EXISTENTIAL",
+        "label": "Uncontrolled AI as survival risk",
+        "definition": "Framing uncontrolled or ungoverned AI development as a risk to the survival of humanity or an existential-scale threat.",
+        "inclusion": "Include passages describing AI as a risk to humanity's survival or as an existential threat due to lack of control or governance.",
+        "exclusion": "Exclude military-specific AI risks and generic references to challenges of technology.",
+        "boundary_cases": "'Un-governed AI' listed among existential threats is borderline between this and AI_CRISIS_LIST_MENTION; code both if the passage uses existential language.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_CIV:1",
+            "quote": "the very real risks to the survival of humanity posed by the uncontrolled development of artificial intelligence"
+          }
+        ]
+      },
+      {
+        "code": "AI_CRISIS_LIST_MENTION",
+        "label": "AI listed among global crises",
+        "definition": "AI named briefly in a catalogue of global challenges or crises (climate, pandemics, conflict) without further discussion.",
+        "inclusion": "Include passages where AI appears only as one item in a list of global threats or challenges motivating UN reform.",
+        "exclusion": "Exclude lists of technologies or achievements (AI_TECH_LIST_MENTION) and passages that elaborate AI's risks.",
+        "boundary_cases": "If the list item carries a qualifier like 'uncontrolled' with explicit survival language, code AI_SAFETY_EXISTENTIAL instead.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_TZA:1",
+            "quote": "a range of challenges, including climate change, pandemics, un-governed artificial intelligence, and energy insecurity"
+          }
+        ]
+      },
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "Two worlds: AI advance versus poverty",
+        "definition": "Contrasting a world advancing into AI and the fourth industrial revolution with a world left in poverty and marginalization, and calling to narrow the gap.",
+        "inclusion": "Include passages depicting a widening gap between AI-advanced and marginalized countries.",
+        "exclusion": "Exclude passages about inequality that do not reference AI or technology.",
+        "boundary_cases": "A follow-on passage calling to narrow 'this gap' without naming AI counts only when read with the preceding AI reference.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_MRT:1",
+            "quote": "One is rapidly advancing toward the fourth industrial revolution and artificial intelligence, while the other remains hostage to poverty and marginalization."
+          },
+          {
+            "passage_id": "verbatim_en_2025_MRT:2",
+            "quote": "It requires us to unite our efforts to devise solutions that are capable of narrowing this gap"
+          }
+        ]
+      }
+    ],
+    "rationale": "All passages are speech openings with protocol tributes and surveys of global conditions; AI appears briefly as an SG achievement, a survival risk, a listed challenge, or a marker of the development divide."
+  }
+}

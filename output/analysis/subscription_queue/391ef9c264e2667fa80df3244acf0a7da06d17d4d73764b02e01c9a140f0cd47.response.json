@@ -1,0 +1,35 @@
+{
+  "request_hash": "391ef9c264e2667fa80df3244acf0a7da06d17d4d73764b02e01c9a140f0cd47",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_a"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2023_URY:1",
+      "verbatim_en_2023_URY:2",
+      "verbatim_en_2023_URY:3",
+      "verbatim_en_2023_URY:4",
+      "verbatim_en_2023_URY:5",
+      "verbatim_en_2023_URY:6",
+      "verbatim_en_2023_URY:7",
+      "verbatim_en_2023_URY:8",
+      "verbatim_en_2023_URY:9",
+      "verbatim_en_2023_URY:10",
+      "verbatim_en_2023_URY:11"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2023_URY:4",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "We are convinced that globalization, information technology, artificial intelligence and real-time communication are tools that help the integration and development of our peoples",
+        "rationale": "Identifies AI as a tool for integration and development when used responsibly."
+      }
+    ]
+  }
+}

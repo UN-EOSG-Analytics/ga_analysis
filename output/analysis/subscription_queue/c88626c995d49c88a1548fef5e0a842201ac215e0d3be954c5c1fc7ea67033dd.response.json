@@ -1,0 +1,29 @@
+{
+  "request_hash": "c88626c995d49c88a1548fef5e0a842201ac215e0d3be954c5c1fc7ea67033dd",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_TECH_LIST_MENTION",
+        "label": "AI listed among climate-adaptation sectors",
+        "definition": "AI named as one sector in a list of areas where climate adaptation is embedded, without further discussion.",
+        "inclusion": "Passages where AI appears as one list item among sectors (agriculture, energy, mining) in a climate or development narrative.",
+        "exclusion": "Passages explaining how AI contributes to climate action or development.",
+        "boundary_cases": "If the passage specifies an AI application for climate (e.g. forecasting), code AI_DEVELOPMENT_SDGS instead.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_KEN:6",
+            "quote": "from agriculture and energy to infrastructure and livelihoods, to sustainable mining and artificial intelligence"
+          }
+        ]
+      }
+    ],
+    "rationale": "Single Kenyan passage focused on Middle East, Sudan and climate action; AI appears only as a list item among sectors where climate adaptation is embedded."
+  }
+}

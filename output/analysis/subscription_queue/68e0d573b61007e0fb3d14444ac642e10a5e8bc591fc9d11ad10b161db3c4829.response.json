@@ -1,0 +1,400 @@
+{
+  "request_hash": "68e0d573b61007e0fb3d14444ac642e10a5e8bc591fc9d11ad10b161db3c4829",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "results": [
+      {
+        "passage_id": "verbatim_en_2025_FSM:5",
+        "classification": {
+          "themes": [
+            {
+              "code": "AI_GLOBAL_GOVERNANCE",
+              "value": "Yes",
+              "quote": "global cooperation is essential to ensure that AI systems remain safe, secure, and trustworthy.",
+              "rationale": "Calls for global cooperation to govern AI."
+            },
+            {
+              "code": "AI_INCLUSIVE_GOVERNANCE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_GOVERNANCE_SKEPTICISM",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_UN_ROLE",
+              "value": "Yes",
+              "quote": "Micronesia co-sponsored the first-ever UN resolution on AI, alongside 120 member states.",
+              "rationale": "Supports and co-sponsored a UN General Assembly resolution on AI."
+            },
+            {
+              "code": "AI_MILITARY_WEAPONS",
+              "value": "Yes",
+              "quote": "offers a model for future discussions including those on peace, security, and the responsible military use of AI.",
+              "rationale": "Calls for discussions on responsible military use of AI."
+            },
+            {
+              "code": "AI_PEACE_APPLICATIONS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_SAFETY_EXISTENTIAL",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_HUMAN_CONTROL",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_HUMAN_RIGHTS_ETHICS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_BIAS_CULTURAL_DIVERSITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DISINFORMATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CYBER_SECURITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DIGITAL_DIVIDE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CAPACITY_BUILDING",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DEVELOPMENT_SDGS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_RESOURCE_FOOTPRINT",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_ECONOMY_LABOR",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_YOUTH_EDUCATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CHILD_PROTECTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_NATIONAL_STRATEGY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_SOVEREIGNTY_CONCENTRATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_GEOPOLITICAL_RIVALRY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_OPPORTUNITY_RISK_DUALITY",
+              "value": "Yes",
+              "quote": "While AI holds great promise for economic development, it also carries the risk that must be carefully managed.",
+              "rationale": "Pairs AI promise with risk."
+            },
+            {
+              "code": "AI_TRANSFORMATIVE_ERA",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_TECH_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_THREAT_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            }
+          ],
+          "institutions": [
+            {
+              "commitment_detail": "",
+              "rationale": "UN GA resolution on AI co-sponsored and held up as a model for inclusive dialogue.",
+              "mechanism": "Other model",
+              "reference_type": "inferred description",
+              "stances": {
+                "mention": true,
+                "welcome": false,
+                "support": true,
+                "request": false,
+                "concern": false,
+                "opposition": false,
+                "commitment": false
+              },
+              "requested_functions": [
+                "dialogue/convening",
+                "norms/rules/standards"
+              ],
+              "un_role": "explicit",
+              "quote": "Micronesia co-sponsored the first-ever UN resolution on AI, alongside 120 member states."
+            }
+          ],
+          "keywords": [
+            {
+              "normalized_term": "un resolution on ai",
+              "original_term": "UN resolution on AI",
+              "quote": "Micronesia co-sponsored the first-ever UN resolution on AI, alongside 120 member states."
+            },
+            {
+              "normalized_term": "responsible military use of ai",
+              "original_term": "responsible military use of AI",
+              "quote": "offers a model for future discussions including those on peace, security, and the responsible military use of AI."
+            },
+            {
+              "normalized_term": "safe, secure and trustworthy ai",
+              "original_term": "safe, secure, and trustworthy",
+              "quote": "global cooperation is essential to ensure that AI systems remain safe, secure, and trustworthy."
+            }
+          ],
+          "uncovered_concept": ""
+        }
+      },
+      {
+        "passage_id": "verbatim_en_2025_GBR:4",
+        "classification": {
+          "themes": [
+            {
+              "code": "AI_GLOBAL_GOVERNANCE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_INCLUSIVE_GOVERNANCE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_GOVERNANCE_SKEPTICISM",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_UN_ROLE",
+              "value": "Uncertain",
+              "quote": "the United Nations and its reform are vital because we need our United Nations more than ever to confront these tragedies and to face our historic opportunity.",
+              "rationale": "UN linked to the technological opportunity, but AI not explicitly assigned to UN."
+            },
+            {
+              "code": "AI_MILITARY_WEAPONS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_PEACE_APPLICATIONS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_SAFETY_EXISTENTIAL",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_HUMAN_CONTROL",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_HUMAN_RIGHTS_ETHICS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_BIAS_CULTURAL_DIVERSITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DISINFORMATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CYBER_SECURITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DIGITAL_DIVIDE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CAPACITY_BUILDING",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DEVELOPMENT_SDGS",
+              "value": "Yes",
+              "quote": "AI is the most powerful new lever we have to advance the Charter's vision of social progress, better standards of life.",
+              "rationale": "AI as tool for social progress and health (AI stethoscope)."
+            },
+            {
+              "code": "AI_RESOURCE_FOOTPRINT",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_ECONOMY_LABOR",
+              "value": "Uncertain",
+              "quote": "I believe that by embracing artificial intelligence, We can all build better businesses.",
+              "rationale": "Brief economic benefit claim."
+            },
+            {
+              "code": "AI_YOUTH_EDUCATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CHILD_PROTECTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_NATIONAL_STRATEGY",
+              "value": "Yes",
+              "quote": "This is why it is at the very heart of my own country's growth plan.",
+              "rationale": "UK growth plan centred on AI; national examples and UK-hosted summit."
+            },
+            {
+              "code": "AI_SOVEREIGNTY_CONCENTRATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_GEOPOLITICAL_RIVALRY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_OPPORTUNITY_RISK_DUALITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_TRANSFORMATIVE_ERA",
+              "value": "Yes",
+              "quote": "This is a lightning strike of change, a technological revolution which our leading scientists think could only be compared to the industrial revolution, compressed into a decade.",
+              "rationale": "Frames AI as epochal revolution comparable to the industrial revolution."
+            },
+            {
+              "code": "AI_TECH_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_THREAT_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            }
+          ],
+          "institutions": [],
+          "keywords": [
+            {
+              "normalized_term": "super powerful ai",
+              "original_term": "super powerful AI",
+              "quote": "and now the dawn of super powerful AI."
+            },
+            {
+              "normalized_term": "technological revolution",
+              "original_term": "technological revolution",
+              "quote": "This is a lightning strike of change, a technological revolution which our leading scientists think could only be compared to the industrial revolution, compressed into a decade."
+            },
+            {
+              "normalized_term": "ai stethoscope",
+              "original_term": "AI stethoscope",
+              "quote": "At Imperial College, a new AI stethoscope detects major heart conditions in seconds."
+            }
+          ],
+          "uncovered_concept": "AI used by governments to detect fraud and illicit finance (AI for law enforcement)."
+        }
+      }
+    ]
+  }
+}

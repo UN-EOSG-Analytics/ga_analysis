@@ -1,0 +1,71 @@
+{
+  "request_hash": "56fbf68a2d2b3c07bbb30a08faeb447444c628d8ea9298817ccda241280445a5",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_DEVELOPMENT_SDGS",
+        "label": "AI accelerating development goals",
+        "definition": "AI's rapid development framed as offering great opportunities to accelerate development goals, conditional on proper governance.",
+        "inclusion": "Passages stating AI can accelerate SDGs or development.",
+        "exclusion": "Capacity/transfer demands (use AI_CAPACITY_BUILDING).",
+        "boundary_cases": "Conditional opportunity statements tied to governance also take AI_GLOBAL_GOVERNANCE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_TUN:8",
+            "quote": "the rapid development of artificial intelligence offers great opportunities to accelerate development goals"
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Equitable global AI governance",
+        "definition": "Calls for comprehensive and equitable global governance ensuring responsible AI use.",
+        "inclusion": "Passages calling for comprehensive, equitable or inclusive global AI governance.",
+        "exclusion": "National AI policies.",
+        "boundary_cases": "Governance framed around North-South equity also takes AI_DIGITAL_DIVIDE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_TUN:8",
+            "quote": "accompanied by comprehensive and equitable global governance that ensure that responsible use"
+          }
+        ]
+      },
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "Preventing North-South AI divide",
+        "definition": "Concern that AI widens the digital divide between North and South.",
+        "inclusion": "Passages on preventing a North-South digital or AI divide.",
+        "exclusion": "Specific support measures alone (use AI_CAPACITY_BUILDING).",
+        "boundary_cases": "When remedies are listed, also code AI_CAPACITY_BUILDING.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_TUN:8",
+            "quote": "prevents the widening of the digital divide between North and South"
+          }
+        ]
+      },
+      {
+        "code": "AI_CAPACITY_BUILDING",
+        "label": "Capacity building, transfer and financing",
+        "definition": "Remedies for AI inequality through capacity building, technology transfer, adequate financing, and fairer access to finance for digital transformation.",
+        "inclusion": "Passages naming capacity building, technology transfer or financing for AI/digital development.",
+        "exclusion": "Abstract inequality statements (use AI_DIGITAL_DIVIDE).",
+        "boundary_cases": "Financial architecture reform enabling technology investment counts when linked to AI.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_TUN:8",
+            "quote": "through capacity building, technology transfer, and adequate financing"
+          }
+        ]
+      }
+    ],
+    "rationale": "The single Tunisian passage embeds AI in a development-finance argument: AI can accelerate development only with equitable global governance, preventing a North-South divide through capacity building, technology transfer and financing."
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "request_hash": "3e0dd2576dc31750fa48b52f98ba1ace0d748672b83e660425a25d19fe449e86",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "AI access for developing countries",
+        "definition": "Demand that developing countries gain access to safe and secure digital technology including AI, rather than technology being reserved for a select few.",
+        "inclusion": "Include passages demanding developing-country access to AI or objecting to technology being exclusive to a few.",
+        "exclusion": "Exclude climate-finance-only demands.",
+        "boundary_cases": "Technology transfer demands from developed countries could also fit AI_CAPACITY_BUILDING.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_IDN:10",
+            "quote": "Technology and innovation should not be exclusively for the select few."
+          },
+          {
+            "passage_id": "verbatim_en_2023_IDN:10",
+            "quote": "Access to safe and secure digital technology for developing countries, including artificial intelligence, is crucial for future sustainable growth."
+          }
+        ]
+      },
+      {
+        "code": "AI_CAPACITY_BUILDING",
+        "label": "Developed-country responsibility for technology transfer",
+        "definition": "Call on developed countries to fulfil obligations including transfer of technology to developing countries.",
+        "inclusion": "Include passages demanding technology transfer or support from developed countries in the context of AI/digital technology.",
+        "exclusion": "Exclude passages focused only on access inequality without a support demand.",
+        "boundary_cases": "If technology transfer is framed only for climate, code only when AI/digital is in the same argument.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_IDN:10",
+            "quote": "We also need developed countries to fulfil their responsibility, including on climate financing, green investment and the transfer of technology."
+          }
+        ]
+      }
+    ],
+    "rationale": "Single Indonesian passage framing AI within North-South development obligations: developing countries need access to safe AI and technology transfer for sustainable growth."
+  }
+}

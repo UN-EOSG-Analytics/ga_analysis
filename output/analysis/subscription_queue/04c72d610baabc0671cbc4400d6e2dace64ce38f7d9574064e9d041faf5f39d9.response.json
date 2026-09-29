@@ -1,0 +1,36 @@
+{
+  "request_hash": "04c72d610baabc0671cbc4400d6e2dace64ce38f7d9574064e9d041faf5f39d9",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "root"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2025_ALB:1",
+      "verbatim_en_2025_ALB:2",
+      "verbatim_en_2025_ALB:3",
+      "verbatim_en_2025_ALB:4",
+      "verbatim_en_2025_ALB:5"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2025_ALB:1",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Albania believes that global challenges from conflicts and terrorism to climate change, artificial intelligence and economic insecurity are not only complex, but also deeply interconnected. Humanity, therefore, needs more multilateral cooperation.",
+        "rationale": "Calls for greater multilateral cooperation to address interconnected challenges including AI."
+      },
+      {
+        "passage_id": "verbatim_en_2025_ALB:4",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "The problems of this world cannot be solved by artificial intelligence alone. but by human intelligence and compassion.",
+        "rationale": "Emphasizes human judgment and compassion alongside AI and calls for international cooperation, ethical standards and human rights in digital development."
+      }
+    ]
+  }
+}

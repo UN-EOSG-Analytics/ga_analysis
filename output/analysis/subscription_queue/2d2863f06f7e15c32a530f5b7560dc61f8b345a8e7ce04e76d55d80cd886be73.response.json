@@ -1,0 +1,79 @@
+{
+  "request_hash": "2d2863f06f7e15c32a530f5b7560dc61f8b345a8e7ce04e76d55d80cd886be73",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_NATIONAL_STRATEGY",
+        "label": "National AI investment as modernization showcase",
+        "definition": "The speaker's country showcases its investments in AI alongside space, energy and other advanced fields as evidence of national development and regional leadership.",
+        "inclusion": "Passages naming national investment in AI, or national ambitions to become an AI or technology hub.",
+        "exclusion": "Passages about AI's global governance or risks.",
+        "boundary_cases": "When AI is only one entry in a list of national investment fields, also code AI_TECH_LIST_MENTION.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_ARE:4",
+            "quote": "The UAE continues to expand its investments in artificial intelligence, emerging technologies, healthcare, and education."
+          },
+          {
+            "passage_id": "verbatim_en_2018_ARE:19",
+            "quote": "My country focuses on anticipating challenges and on investing in advanced fields, such as artificial intelligence, space technology and renewable energy."
+          }
+        ]
+      },
+      {
+        "code": "AI_TECH_LIST_MENTION",
+        "label": "AI listed among advanced fields",
+        "definition": "AI is named in a list of technologies or sectors without further elaboration.",
+        "inclusion": "Passages where AI appears alongside space, renewable energy, science or healthcare as list items.",
+        "exclusion": "Passages that describe what AI does or should do.",
+        "boundary_cases": "A regional vision of AI 'thriving' in a list remains a list mention.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2019_ARE:19",
+            "quote": "where new technology, science, renewable energy and artificial intelligence will thrive"
+          }
+        ]
+      },
+      {
+        "code": "AI_DEVELOPMENT_SDGS",
+        "label": "AI for sustainable development and services",
+        "definition": "AI presented as a tool for sustainable development, innovative solutions and government services, deserving international investment.",
+        "inclusion": "Passages urging use of or investment in AI to accelerate sustainable development or improve business, lives and government services.",
+        "exclusion": "Mere naming of AI as an investment sector without development purpose.",
+        "boundary_cases": "Support to other countries' AI capacity should additionally be coded capacity building.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_ARE:27",
+            "quote": "international attention and investments should be directed towards those technologies in order to accelerate sustainable development"
+          },
+          {
+            "passage_id": "verbatim_en_2025_ARE:4",
+            "quote": "my country has sought to harness these tools to advance sustainable development around the world"
+          }
+        ]
+      },
+      {
+        "code": "AI_CAPACITY_BUILDING",
+        "label": "Supporting other countries' AI capacities",
+        "definition": "Support for other (often Global South) countries in building technological and AI capacity, with responsible and ethical use.",
+        "inclusion": "Passages offering support to build other states' technological/AI capacity.",
+        "exclusion": "Domestic-only AI investment.",
+        "boundary_cases": "Ethics qualifiers attached to capacity support stay here unless ethics is the main point.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_ARE:4",
+            "quote": "We support countries to build their technological capacities while respecting their national values and priorities"
+          }
+        ]
+      }
+    ],
+    "rationale": "All UAE passages across 2018-2026 treat AI as a national investment and modernization priority, typically listed among advanced fields, with later years adding AI-for-sustainable-development and capacity-support framings; no risk discussion appears."
+  }
+}

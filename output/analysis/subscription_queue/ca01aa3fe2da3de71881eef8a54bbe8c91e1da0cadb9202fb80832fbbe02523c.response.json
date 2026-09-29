@@ -1,0 +1,61 @@
+{
+  "request_hash": "ca01aa3fe2da3de71881eef8a54bbe8c91e1da0cadb9202fb80832fbbe02523c",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_SOVEREIGNTY_CONCENTRATION",
+        "label": "AI knowledge oligopoly concentration",
+        "definition": "Concern about unprecedented concentration of AI in a few people, companies and countries, forming a knowledge oligopoly.",
+        "inclusion": "Include passages about AI asymmetries, oligopoly, or concentration in few companies/countries.",
+        "exclusion": "Exclude pure access requests without a concentration argument.",
+        "boundary_cases": "Calls for AI 'with the face of the global South' fit here and in AI_DIGITAL_DIVIDE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_BRA:16",
+            "quote": "we are experiencing the consolidation of asymmetries that could lead to a true knowledge oligopoly"
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Intergovernmental AI governance with all states",
+        "definition": "Call for an intergovernmental AI governance system in which all states participate.",
+        "inclusion": "Include passages demanding inclusive intergovernmental AI governance.",
+        "exclusion": "Exclude multistakeholder or national-only governance.",
+        "boundary_cases": "Emphasis on 'all States have a seat' also reflects AI_DIGITAL_DIVIDE concerns.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_BRA:16",
+            "quote": "We need a system of intergovernmental governance of artificial intelligence, in which all States have a seat."
+          }
+        ]
+      },
+      {
+        "code": "AI_HUMAN_RIGHTS_ETHICS",
+        "label": "Emancipatory AI respecting rights and data",
+        "definition": "Vision of emancipatory AI that respects human rights, cultural diversity, personal data and information integrity, and serves peace not war.",
+        "inclusion": "Include passages setting normative values for AI such as rights, data protection, cultural diversity, peace.",
+        "exclusion": "Exclude concentration or governance-structure claims.",
+        "boundary_cases": "'Tool for peace, not war' is normative here unless military systems are discussed (AI_MILITARY_WEAPONS).",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_BRA:16",
+            "quote": "strengthens cultural diversity, respects human rights, protects personal data and promotes information integrity"
+          },
+          {
+            "passage_id": "verbatim_en_2024_BRA:16",
+            "quote": "Above all, it must be a tool for peace, not war."
+          }
+        ]
+      }
+    ],
+    "rationale": "Single Brazilian passage offering a substantive Global South critique of AI concentration, a normative vision of emancipatory rights-respecting AI, and a call for intergovernmental governance with universal participation."
+  }
+}

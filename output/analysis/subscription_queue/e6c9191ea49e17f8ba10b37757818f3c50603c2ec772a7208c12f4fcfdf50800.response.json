@@ -1,0 +1,93 @@
+{
+  "request_hash": "e6c9191ea49e17f8ba10b37757818f3c50603c2ec772a7208c12f4fcfdf50800",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_TECH_LIST_MENTION",
+        "label": "AI among exciting new technologies",
+        "definition": "AI is named within a list of emerging technologies (robotics, 3D printing, Internet of Things) as a source of possible solutions, without further discussion.",
+        "inclusion": "Include passages where AI appears only as one item among listed technologies or trends.",
+        "exclusion": "Exclude passages that develop an argument specifically about AI.",
+        "boundary_cases": "If the list is used to make an inequality point, code AI_DIGITAL_DIVIDE as well.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2018_MLT:15",
+            "quote": "from advanced robotics and artificial intelligence to 3D printing and the Internet of things"
+          }
+        ]
+      },
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "Technological inequality in access to AI",
+        "definition": "AI and related technologies are experienced by only part of the world; fighting technological inequality is framed as a development goal.",
+        "inclusion": "Include statements that only some countries or people can access AI and related technologies.",
+        "exclusion": "Exclude pure technology lists with no inequality claim.",
+        "boundary_cases": "Link to the SDGs is coded here rather than AI_DEVELOPMENT_SDGS when the focus is inequality.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2019_ESP:44",
+            "quote": "big data, artificial intelligence, the Internet of Things are concepts — terms — that only a part of the world can experience"
+          },
+          {
+            "passage_id": "verbatim_en_2019_ESP:44",
+            "quote": "Inequality includes technological inequality."
+          }
+        ]
+      },
+      {
+        "code": "AI_PUBLIC_FEAR_REASSURANCE",
+        "label": "Countering public fear of AI",
+        "definition": "Acknowledges public anxiety about AI (machines taking over, job loss, loss of control) and counters it by asserting that right leadership decisions can make AI's impact positive.",
+        "inclusion": "Include passages that address public fear, media alarmism or anxiety about AI and offer reassurance.",
+        "exclusion": "Exclude passages that themselves warn of catastrophic AI risk (AI_SAFETY_EXISTENTIAL).",
+        "boundary_cases": "Mentions of job-loss fears framed as media alarmism are coded here, not AI_ECONOMY_LABOR, unless labour impacts are analysed.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_MLT:30",
+            "quote": "lurid media headlines about the machines taking over, spreading fear about AI taking jobs and rendering human effort obsolete"
+          },
+          {
+            "passage_id": "verbatim_en_2023_MLT:31",
+            "quote": "harness the power of AI for the public and common good, not fear it as a coming catastrophe"
+          }
+        ]
+      },
+      {
+        "code": "AI_NATIONAL_STRATEGY",
+        "label": "National AI pilots in public services",
+        "definition": "The speaker describes its own AI pilot projects enhancing public services such as health care and traffic management.",
+        "inclusion": "Include descriptions of the speaker country's AI projects or leadership.",
+        "exclusion": "Exclude calls for global action without national detail.",
+        "boundary_cases": "Small-state framing of limited national capacity leading to global cooperation calls is also coded AI_GLOBAL_GOVERNANCE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_MLT:31",
+            "quote": "We have six pilot projects covering areas from health care to traffic management."
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Global action to make AI global good",
+        "definition": "Calls for enhanced international cooperation on AI because no single country can manage it alone.",
+        "inclusion": "Include calls for international cooperation or global action on AI.",
+        "exclusion": "Exclude national pilot descriptions.",
+        "boundary_cases": "Cooperation calls without regulatory content still count here.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_MLT:31",
+            "quote": "To make AI a global good, we need global action."
+          }
+        ]
+      }
+    ],
+    "rationale": "Malta 2018 and Spain 2019 mention AI briefly in technology lists, with Spain using it to highlight technological inequality. Malta 2023 engages substantively, countering public fear of AI, showcasing national pilots, and calling for international cooperation."
+  }
+}

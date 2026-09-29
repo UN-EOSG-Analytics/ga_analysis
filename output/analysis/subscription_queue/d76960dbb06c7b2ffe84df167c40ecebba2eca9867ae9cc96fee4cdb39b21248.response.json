@@ -1,0 +1,57 @@
+{
+  "request_hash": "d76960dbb06c7b2ffe84df167c40ecebba2eca9867ae9cc96fee4cdb39b21248",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Multilateral governance to mitigate AI risks",
+        "definition": "Commitment to build multilateral AI governance to mitigate AI risks, aligned with the Global Digital Compact.",
+        "inclusion": "Include passages pledging multilateral AI governance as a risk-mitigation measure.",
+        "exclusion": "Exclude domestic digital regulation that does not address AI governance internationally.",
+        "boundary_cases": "Explicit reference to the Global Digital Compact also fits AI_UN_ROLE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_BRA:3",
+            "quote": "To mitigate the risks of artificial intelligence, we are committed to building multilateral governance in line with the global digital compact"
+          }
+        ]
+      },
+      {
+        "code": "AI_UN_ROLE",
+        "label": "Global Digital Compact as reference framework",
+        "definition": "UN Global Digital Compact invoked as the framework for AI governance.",
+        "inclusion": "Include passages anchoring AI governance in the GDC or other UN instruments.",
+        "exclusion": "Exclude non-UN frameworks.",
+        "boundary_cases": "Brief GDC mention inside a national digital-policy passage still counts.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_BRA:3",
+            "quote": "in line with the global digital compact that was approved in this plenary last year"
+          }
+        ]
+      },
+      {
+        "code": "AI_NATIONAL_DIGITAL_REGULATION",
+        "label": "Domestic digital laws around AI",
+        "definition": "National legislative measures in the digital sphere adjacent to AI: child online protection, digital market competition and sustainable data centres.",
+        "inclusion": "Include passages describing national laws or bills on digital markets, data centres or online child protection presented alongside AI policy.",
+        "exclusion": "Exclude national AI investment boasts without regulatory content (AI_NATIONAL_STRATEGY).",
+        "boundary_cases": "Child online-protection laws also fit AI_CHILD_PROTECTION if AI harms are explicit.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_BRA:3",
+            "quote": "we sent draft bills to the National Congress to foster competition and digital markets and to encourage the installation of sustainable data centers"
+          }
+        ]
+      }
+    ],
+    "rationale": "Single Brazilian passage: AI appears briefly within a digital-policy paragraph, pairing domestic digital regulation with a commitment to multilateral AI governance under the Global Digital Compact, before moving to regional security."
+  }
+}

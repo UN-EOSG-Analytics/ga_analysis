@@ -1,0 +1,28 @@
+{
+  "request_hash": "266f610bc51346f3872e2dee2d7de8b751227a44a2ba7438e4e28018098c6497",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_b"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2025_OMN:1",
+      "verbatim_en_2025_OMN:2",
+      "verbatim_en_2025_OMN:3",
+      "verbatim_en_2025_OMN:4"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2025_OMN:3",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "We also place high importance on digital transformation, artificial intelligence applications, innovation, industrial development, and strengthening social protection, justice, and job security.",
+        "rationale": "Identifies AI applications as a national development priority."
+      }
+    ]
+  }
+}

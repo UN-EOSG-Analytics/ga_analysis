@@ -1,0 +1,61 @@
+{
+  "request_hash": "b074b9f337faa2b54aeff8d11696d0405351e2239b8e944ba4f5d944b3915dbe",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_SOVEREIGNTY_CONCENTRATION",
+        "label": "Concentrated AI rule-making widens inequality",
+        "definition": "Concern that AI infrastructure, knowledge and rule-making concentrated in a few countries will widen inequality, with developing nations demanding a role in setting standards.",
+        "inclusion": "Passages warning about AI concentration in a few countries or demanding developing-country participation in AI standard-setting.",
+        "exclusion": "General statements of AI benefit without concentration or participation claims.",
+        "boundary_cases": "Overlaps with digital divide; code here when concentration of rule-making or infrastructure is explicit.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_SLE:5",
+            "quote": "It can also widen the inequality if infrastructure, knowledge, and rule-making remains concentrated in a few countries."
+          },
+          {
+            "passage_id": "verbatim_en_2026_SLE:5",
+            "quote": "Developing nations must help shape the standards that will govern technologies affecting their people."
+          }
+        ]
+      },
+      {
+        "code": "AI_DEVELOPMENT_SDGS",
+        "label": "AI improving education, health, agriculture",
+        "definition": "AI presented as able to improve sectors such as education, health, agriculture and public administration, and to accelerate development.",
+        "inclusion": "Passages listing development sectors AI can improve or opportunities to accelerate development.",
+        "exclusion": "Passages only about risk or governance.",
+        "boundary_cases": "Development benefit framed within a GDC principle may also be coded AI_UN_ROLE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_SLE:5",
+            "quote": "Artificial intelligence can improve, of course, education, health, agriculture, and public administration."
+          }
+        ]
+      },
+      {
+        "code": "AI_UN_ROLE",
+        "label": "Global Digital Compact principles on AI",
+        "definition": "Endorsement of the Global Digital Compact's principles on safe, secure and trustworthy AI for development.",
+        "inclusion": "Passages welcoming Global Digital Compact or Pact for the Future provisions on AI.",
+        "exclusion": "Non-UN governance references.",
+        "boundary_cases": "If the GDC is named without any AI or technology content, do not code.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_SLE:12",
+            "quote": "We welcome the Global Digital Compact’s principle of ensuring safe, secure and trustworthy emerging technologies, including artificial intelligence"
+          }
+        ]
+      }
+    ],
+    "rationale": "Sierra Leone passages frame AI as a development opportunity whose benefits depend on inclusive governance; 2026 stresses concentration of AI rule-making in a few countries, while 2024 endorses the Global Digital Compact."
+  }
+}

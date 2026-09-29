@@ -1,0 +1,75 @@
+{
+  "request_hash": "4b285ac33fe1b73480739b3754bb166353babe6a7bbfedbda6cce77c4a7df777",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_CAPACITY_BUILDING",
+        "label": "Access, infrastructure and skills for developing countries",
+        "definition": "Calls for international cooperation giving developing countries/LDCs access to AI technology, knowledge, infrastructure, financing, digital literacy and talent.",
+        "inclusion": "Passages requesting technology access, financing, digital infrastructure, literacy or research capacity for AI in developing countries or LDCs.",
+        "exclusion": "Statements only about unequal access without concrete support measures (use AI_DIGITAL_DIVIDE).",
+        "boundary_cases": "Equitable access framed through the Global Digital Compact takes AI_DIGITAL_DIVIDE and AI_UN_ROLE instead.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_STP:4",
+            "quote": "calls for international cooperation that enables developing countries to access the technology, knowledge, infrastructure, and financing they need"
+          },
+          {
+            "passage_id": "verbatim_en_2025_TLS:5",
+            "quote": "It is also imperative to advance AI and digital capabilities in LDCs while concurrently safeguarding cybersecurity."
+          }
+        ]
+      },
+      {
+        "code": "AI_HUMAN_RIGHTS_ETHICS",
+        "label": "Rights-centred responsible AI governance",
+        "definition": "Advocacy of responsible AI governance centred on human dignity, transparency and fundamental rights.",
+        "inclusion": "Passages calling for AI governance centred on dignity, transparency or rights.",
+        "exclusion": "Governance calls with no rights/ethics content (use AI_GLOBAL_GOVERNANCE).",
+        "boundary_cases": "Rights-based governance calls combined with international cooperation may also take AI_GLOBAL_GOVERNANCE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_STP:4",
+            "quote": "We advocate responsible technology governance centered on human dignity, transparency, and fundamental rights."
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "International regulation of AI use",
+        "definition": "Calls for international cooperation to establish comprehensive regulations for AI use and development.",
+        "inclusion": "Passages urging international rules or regulations governing AI.",
+        "exclusion": "National AI policy frameworks alone (use AI_NATIONAL_STRATEGY).",
+        "boundary_cases": "A passage listing both domestic policy frameworks and international regulation takes this code for the latter.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_TLS:5",
+            "quote": "international cooperation remains essential to establish comprehensive regulations governing the use and development of AI"
+          }
+        ]
+      },
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "Equitable access via Global Digital Compact",
+        "definition": "Emphasis on equitable access to digital technologies and AI, often referencing the Global Digital Compact.",
+        "inclusion": "Passages stressing equitable access to AI or recognising the Compact for that purpose.",
+        "exclusion": "Concrete capacity measures (use AI_CAPACITY_BUILDING).",
+        "boundary_cases": "Brief endorsement of the Compact for equitable AI access also takes AI_UN_ROLE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_CPV:1",
+            "quote": "the Global Compact for Digitalization for equitable access to digital technologies and artificial intelligence"
+          }
+        ]
+      }
+    ],
+    "rationale": "Passages from small developing states (Sao Tome, Cape Verde, Timor-Leste) frame AI through inclusion: access, capacity and financing for developing countries, rights-centred governance and international regulation, with Cape Verde offering only a brief equitable-access reference."
+  }
+}

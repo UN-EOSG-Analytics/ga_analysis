@@ -1,0 +1,93 @@
+{
+  "request_hash": "cf373519784dde2b469f89e95eb8d838bcc0bbe114bc7707c0016219aef078af",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "Developing countries as passive AI consumers",
+        "definition": "Concern that developing countries remain passive consumers of AI designed elsewhere and that the digital divide becomes a development divide.",
+        "inclusion": "Passages warning that developing countries are mere consumers of foreign technology/algorithms or that AI opportunity without inclusion deepens inequality.",
+        "exclusion": "Passages about AI benefits without an inequality dimension.",
+        "boundary_cases": "Calls for 'digital sovereignty' framed around being left behind fit here; if framed as dependence on dominant powers, also code sovereignty.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_GMB:7",
+            "quote": "The digital divide must not become the next development divide. Developing countries must not remain passive consumers of technologies designed elsewhere."
+          },
+          {
+            "passage_id": "verbatim_en_2026_LBR:3",
+            "quote": "Developing nations must not be left behind as mere consumers or algorithms designed elsewhere."
+          }
+        ]
+      },
+      {
+        "code": "AI_CAPACITY_BUILDING",
+        "label": "Building capacity to co-create technology",
+        "definition": "Calls for capacity in research, innovation and youth skills so developing countries become co-creators of technology.",
+        "inclusion": "Passages calling for capacity to participate in research/innovation or for STEM and digital training to make youth co-creators.",
+        "exclusion": "Generic education statements unrelated to technology.",
+        "boundary_cases": "Youth STEM training in a digital-economy context may also be coded AI_YOUTH_EDUCATION.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_GMB:7",
+            "quote": "We need the capacity to participate in research, innovation, entrepreneurship, and global technology governance."
+          },
+          {
+            "passage_id": "verbatim_en_2026_LBR:3",
+            "quote": "We must equip our youth with STEM education, digital literacy, and technical training so they become co-creators in the global digital economy"
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Inclusive, responsible AI governance",
+        "definition": "Calls for inclusive, responsible, cooperative governance and greater regulation of AI.",
+        "inclusion": "Passages demanding inclusive AI governance, ethical norms or greater regulation.",
+        "exclusion": "Passages only about national capacity.",
+        "boundary_cases": "Support for the SG's scientific panel should also be coded AI_UN_ROLE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_GMB:7",
+            "quote": "the governance of artificial intelligence must be inclusive responsible, and grounded international cooperation"
+          }
+        ]
+      },
+      {
+        "code": "AI_UN_ROLE",
+        "label": "Support for UN scientific panel on AI",
+        "definition": "Welcoming UN-specific AI governance mechanisms such as the SG's Independent International Scientific Panel on AI.",
+        "inclusion": "Passages naming UN AI bodies or processes approvingly.",
+        "exclusion": "Generic calls for regulation without UN reference.",
+        "boundary_cases": "Mentions of UN reform unrelated to AI do not count.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_LBR:3",
+            "quote": "Liberia welcomes global effort to govern new technologies including the Secretary General's independent international scientific panel on artificial intelligence."
+          }
+        ]
+      },
+      {
+        "code": "AI_MILITARY_WEAPONS",
+        "label": "Regulating AI in warfare",
+        "definition": "Calls to regulate AI in warfare to prevent automated destruction.",
+        "inclusion": "Passages referring to AI in warfare or automated destruction.",
+        "exclusion": "Civilian AI regulation.",
+        "boundary_cases": "General ethics calls that single out warfare count here.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_LBR:3",
+            "quote": "greater regulation of artificial intelligence, particularly in warfare. Innovation must protect human development, not automate human destruction."
+          }
+        ]
+      }
+    ],
+    "rationale": "Two African 2026 speeches framing AI mainly through Global South inclusion: fear of remaining passive consumers, calls for capacity and inclusive governance, with Liberia adding UN panel support and military AI regulation."
+  }
+}

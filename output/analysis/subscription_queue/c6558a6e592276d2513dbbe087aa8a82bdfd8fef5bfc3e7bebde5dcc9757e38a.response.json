@@ -1,0 +1,83 @@
+{
+  "request_hash": "c6558a6e592276d2513dbbe087aa8a82bdfd8fef5bfc3e7bebde5dcc9757e38a",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_UNESCO_RESEARCH_CENTRE",
+        "label": "Hosting UNESCO AI research centre",
+        "definition": "Promotion of a nationally hosted, UNESCO-backed international AI research centre focused on AI governance and policy.",
+        "inclusion": "Include passages proposing, seeking support for or announcing the launch of an international AI centre under UNESCO auspices.",
+        "exclusion": "Exclude calls for UN governance bodies not tied to a hosted centre.",
+        "boundary_cases": "This is both a national initiative and a UN-system contribution; code AI_UN_ROLE additionally if broader UN processes are discussed.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2020_SVN:13",
+            "quote": "the very first UNESCO global center for artificial intelligence established in Ljubljana last November"
+          },
+          {
+            "passage_id": "verbatim_en_2019_SVN:21",
+            "quote": "The aim of the centre will be to provide an open environment, focusing on the governance and policies surrounding artificial intelligence."
+          },
+          {
+            "passage_id": "verbatim_en_2021_SVN:11",
+            "quote": "the International Research Centre on Artificial Intelligence, in Ljubljana, the capital of Slovenia, in March 2021"
+          }
+        ]
+      },
+      {
+        "code": "AI_HUMAN_RIGHTS_ETHICS",
+        "label": "Algocracy and regulating AI for rights",
+        "definition": "Concern about 'algocracy' and the need to regulate AI's impact on human rights and frame technology in service of humankind.",
+        "inclusion": "Include passages on regulating AI's human rights impact or ensuring technology serves humankind.",
+        "exclusion": "Exclude pure benefit descriptions.",
+        "boundary_cases": "'Frame them in service of humankind' counts here when referring to AI.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2019_SVN:20",
+            "quote": "We need to be better prepared for the challenge of algocracy, including by regulating the impact of artificial intelligence on human rights protection."
+          }
+        ]
+      },
+      {
+        "code": "AI_ECONOMY_LABOR",
+        "label": "AI transforming work and daily life",
+        "definition": "AI described as transforming work, productivity and daily life, and as the backbone of business and public services.",
+        "inclusion": "Include passages on AI's role in future work, productivity, or as infrastructure of daily economic life.",
+        "exclusion": "Exclude governance or rights passages.",
+        "boundary_cases": "Statements that AI is part of daily life without economic content may be AI_TECH_LIST_MENTION.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2019_SVN:19",
+            "quote": "According to estimates, as much as 80 per cent of future work will be done using artificial intelligence."
+          },
+          {
+            "passage_id": "verbatim_en_2020_SVN:12",
+            "quote": "New technologies and artificial intelligence have already become the backbone of our daily lives that keep businesses and essential public services running."
+          }
+        ]
+      },
+      {
+        "code": "AI_DEVELOPMENT_SDGS",
+        "label": "Emerging technologies for climate and agriculture",
+        "definition": "Responsible use of new technologies to address climate change, agriculture, mobility and education.",
+        "inclusion": "Include passages listing AI/new technology applications for development and sustainability.",
+        "exclusion": "Exclude labour/productivity-only claims.",
+        "boundary_cases": "Where AI is implied only through 'new technologies', code if the passage links to an AI initiative.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2021_SVN:11",
+            "quote": "New technologies offer numerous opportunities to mitigate climate change, support sustainable agriculture, introduce smarter mobility, offer better education"
+          }
+        ]
+      }
+    ],
+    "rationale": "Slovenian passages (2019-2021) center on promoting the UNESCO-backed AI research centre in Ljubljana, framed by rights concerns (algocracy), AI's transformation of work and daily life, and its development applications."
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "request_hash": "1cfd1b994364df88adebfdfbb2eaac96ed41922a840adf789a20bacd67f2c7cc",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_b"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2022_RWA:1",
+      "verbatim_en_2022_RWA:2",
+      "verbatim_en_2022_RWA:3",
+      "verbatim_en_2022_RWA:4",
+      "verbatim_en_2022_RWA:5",
+      "verbatim_en_2022_RWA:6",
+      "verbatim_en_2022_RWA:7",
+      "verbatim_en_2022_RWA:8",
+      "verbatim_en_2022_RWA:9",
+      "verbatim_en_2022_RWA:10",
+      "verbatim_en_2022_RWA:11",
+      "verbatim_en_2022_RWA:12"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2022_RWA:9",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "To ensure that the benefits are equally shared, we must continue to invest equitably in emerging technologies, such as artificial intelligence.",
+        "rationale": "Calls for equitable investment in AI so the gains of digital transformation and jobs are shared."
+      }
+    ]
+  }
+}

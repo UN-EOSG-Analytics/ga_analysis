@@ -1,0 +1,373 @@
+{
+  "request_hash": "89b761caf817bc4bc797f14111530d5664e6866e42e374e7e9ade91a47e3d4f4",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "results": [
+      {
+        "passage_id": "verbatim_en_2026_TTO:3",
+        "classification": {
+          "themes": [
+            {
+              "code": "AI_GLOBAL_GOVERNANCE",
+              "value": "Yes",
+              "quote": "Trinidad and Tobago will advocate for an approach that safeguards international security without closing off innovation, development, and opportunity,",
+              "rationale": "Balancing security safeguards with innovation in international approach."
+            },
+            {
+              "code": "AI_INCLUSIVE_GOVERNANCE",
+              "value": "Yes",
+              "quote": "ensures developing countries have a meaningful role in shaping the rules for this new technological era.",
+              "rationale": "Developing countries' role in rule-making."
+            },
+            {
+              "code": "AI_GOVERNANCE_SKEPTICISM",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_UN_ROLE",
+              "value": "Yes",
+              "quote": "On the priority area of superintelligence and global security, Shrinanta Bager will encourage a greater consideration of the implications of SI and emerging technologies for international peace and security,",
+              "rationale": "Proposes Security Council consideration of AI as priority during its tenure."
+            },
+            {
+              "code": "AI_MILITARY_WEAPONS",
+              "value": "Yes",
+              "quote": "including cyber attacks, disinformation and deepfakes, autonomous weapons, criminal misuse of AI, and threats to critical infrastructure.",
+              "rationale": "Autonomous weapons among SI implications for international security."
+            },
+            {
+              "code": "AI_PEACE_APPLICATIONS",
+              "value": "Yes",
+              "quote": "We acknowledge that these technologies can support conflict prevention, early warning, peacekeeping, and protection of civilians.",
+              "rationale": "AI for conflict prevention and peacekeeping."
+            },
+            {
+              "code": "AI_SAFETY_EXISTENTIAL",
+              "value": "Uncertain",
+              "quote": "we are now talking about a call for practical AI to be renamed super intelligence, SI. We commit to that.",
+              "rationale": "Refers to superintelligence, but as a renaming rather than a catastrophic-risk claim."
+            },
+            {
+              "code": "AI_HUMAN_CONTROL",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_HUMAN_RIGHTS_ETHICS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_BIAS_CULTURAL_DIVERSITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DISINFORMATION",
+              "value": "Yes",
+              "quote": "including cyber attacks, disinformation and deepfakes, autonomous weapons, criminal misuse of AI, and threats to critical infrastructure.",
+              "rationale": "Disinformation and deepfakes named as implications of SI for security."
+            },
+            {
+              "code": "AI_CYBER_SECURITY",
+              "value": "Yes",
+              "quote": "including cyber attacks, disinformation and deepfakes, autonomous weapons, criminal misuse of AI, and threats to critical infrastructure.",
+              "rationale": "Cyberattacks, criminal misuse of AI, critical infrastructure threats."
+            },
+            {
+              "code": "AI_DIGITAL_DIVIDE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CAPACITY_BUILDING",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DEVELOPMENT_SDGS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_RESOURCE_FOOTPRINT",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_ECONOMY_LABOR",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_YOUTH_EDUCATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CHILD_PROTECTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_NATIONAL_STRATEGY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_SOVEREIGNTY_CONCENTRATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_GEOPOLITICAL_RIVALRY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_OPPORTUNITY_RISK_DUALITY",
+              "value": "Yes",
+              "quote": "We acknowledge that these technologies can support conflict prevention, early warning, peacekeeping, and protection of civilians.",
+              "rationale": "Pairs security risks with beneficial uses."
+            },
+            {
+              "code": "AI_TRANSFORMATIVE_ERA",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_TECH_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_THREAT_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            }
+          ],
+          "institutions": [],
+          "keywords": [
+            {
+              "normalized_term": "superintelligence",
+              "original_term": "super intelligence",
+              "quote": "we are now talking about a call for practical AI to be renamed super intelligence, SI."
+            },
+            {
+              "normalized_term": "deepfakes",
+              "original_term": "deepfakes",
+              "quote": "including cyber attacks, disinformation and deepfakes, autonomous weapons, criminal misuse of AI, and threats to critical infrastructure."
+            },
+            {
+              "normalized_term": "autonomous weapons",
+              "original_term": "autonomous weapons",
+              "quote": "including cyber attacks, disinformation and deepfakes, autonomous weapons, criminal misuse of AI, and threats to critical infrastructure."
+            },
+            {
+              "normalized_term": "criminal misuse of ai",
+              "original_term": "criminal misuse of AI",
+              "quote": "including cyber attacks, disinformation and deepfakes, autonomous weapons, criminal misuse of AI, and threats to critical infrastructure."
+            }
+          ],
+          "uncovered_concept": ""
+        }
+      },
+      {
+        "passage_id": "verbatim_en_2026_TTO:4",
+        "classification": {
+          "themes": [
+            {
+              "code": "AI_GLOBAL_GOVERNANCE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_INCLUSIVE_GOVERNANCE",
+              "value": "Yes",
+              "quote": "Whether in technology and SI, super intelligence, a global economy, or energy development countries must have the opportunity and the capacity to help in shaping those changes.",
+              "rationale": "Developing countries must help shape changes including SI rather than adjust to decisions made elsewhere."
+            },
+            {
+              "code": "AI_GOVERNANCE_SKEPTICISM",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_UN_ROLE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_MILITARY_WEAPONS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_PEACE_APPLICATIONS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_SAFETY_EXISTENTIAL",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_HUMAN_CONTROL",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_HUMAN_RIGHTS_ETHICS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_BIAS_CULTURAL_DIVERSITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DISINFORMATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CYBER_SECURITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DIGITAL_DIVIDE",
+              "value": "Uncertain",
+              "quote": "the transformation should create greater opportunity, strengthen security, and support development. rather than deepen inequality, indebtedness or dependence.",
+              "rationale": "Concern about inequality from transformation, AI only one element."
+            },
+            {
+              "code": "AI_CAPACITY_BUILDING",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DEVELOPMENT_SDGS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_RESOURCE_FOOTPRINT",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_ECONOMY_LABOR",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_YOUTH_EDUCATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CHILD_PROTECTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_NATIONAL_STRATEGY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_SOVEREIGNTY_CONCENTRATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_GEOPOLITICAL_RIVALRY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_OPPORTUNITY_RISK_DUALITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_TRANSFORMATIVE_ERA",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_TECH_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_THREAT_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            }
+          ],
+          "institutions": [],
+          "keywords": [
+            {
+              "normalized_term": "superintelligence",
+              "original_term": "super intelligence",
+              "quote": "Whether in technology and SI, super intelligence, a global economy, or energy development countries must have the opportunity and the capacity to help in shaping those changes."
+            }
+          ],
+          "uncovered_concept": ""
+        }
+      }
+    ]
+  }
+}

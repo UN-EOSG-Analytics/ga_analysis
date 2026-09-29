@@ -1,0 +1,167 @@
+{
+  "speeches": 1908,
+  "passages": 50055,
+  "counts_by_year": {
+    "2017": 193,
+    "2018": 193,
+    "2019": 192,
+    "2020": 190,
+    "2021": 191,
+    "2022": 190,
+    "2023": 189,
+    "2024": 190,
+    "2025": 189,
+    "2026": 191
+  },
+  "new_ids": [
+    "2026_ARE",
+    "2026_ATG",
+    "2026_BEN",
+    "2026_BFA",
+    "2026_COG",
+    "2026_CRI",
+    "2026_DNK",
+    "2026_DZA",
+    "2026_ERI",
+    "2026_GRD",
+    "2026_LKA",
+    "2026_MLI",
+    "2026_MWI",
+    "2026_NZL",
+    "2026_PRK",
+    "2026_SDN",
+    "2026_SLV",
+    "2026_SSD",
+    "2026_TKM",
+    "2026_VUT"
+  ],
+  "changed_existing_speeches": [],
+  "duplicate_country_years": [],
+  "missing_original_files": [],
+  "changed_files": [
+    "data/analysis_ready_en/README.md",
+    "data/analysis_ready_en/source_manifest.jsonl",
+    "output/pipeline/speeches.jsonl",
+    "config/source_manifest.jsonl",
+    "config/analysis.toml"
+  ],
+  "coverage": {
+    "2017": {
+      "obtained_speeches": 193,
+      "days_received": [],
+      "partial": false,
+      "participation_roster": "not_independently_reconciled",
+      "collection_status": "available_session_records",
+      "source_types": {
+        "official_transcript": 193
+      }
+    },
+    "2018": {
+      "obtained_speeches": 193,
+      "days_received": [],
+      "partial": false,
+      "participation_roster": "not_independently_reconciled",
+      "collection_status": "available_session_records",
+      "source_types": {
+        "official_transcript": 193
+      }
+    },
+    "2019": {
+      "obtained_speeches": 192,
+      "days_received": [],
+      "partial": false,
+      "participation_roster": "not_independently_reconciled",
+      "collection_status": "available_session_records",
+      "source_types": {
+        "official_transcript": 192
+      }
+    },
+    "2020": {
+      "obtained_speeches": 190,
+      "days_received": [],
+      "partial": false,
+      "participation_roster": "not_independently_reconciled",
+      "collection_status": "available_session_records",
+      "source_types": {
+        "official_transcript": 190
+      }
+    },
+    "2021": {
+      "obtained_speeches": 191,
+      "days_received": [],
+      "partial": false,
+      "participation_roster": "not_independently_reconciled",
+      "collection_status": "available_session_records",
+      "source_types": {
+        "official_transcript": 191
+      }
+    },
+    "2022": {
+      "obtained_speeches": 190,
+      "days_received": [],
+      "partial": false,
+      "participation_roster": "not_independently_reconciled",
+      "collection_status": "available_session_records",
+      "source_types": {
+        "official_transcript": 190
+      }
+    },
+    "2023": {
+      "obtained_speeches": 189,
+      "days_received": [],
+      "partial": false,
+      "participation_roster": "not_independently_reconciled",
+      "collection_status": "available_session_records",
+      "source_types": {
+        "official_transcript": 189
+      }
+    },
+    "2024": {
+      "obtained_speeches": 190,
+      "days_received": [],
+      "partial": false,
+      "participation_roster": "not_independently_reconciled",
+      "collection_status": "available_session_records",
+      "source_types": {
+        "official_transcript": 190
+      }
+    },
+    "2025": {
+      "obtained_speeches": 189,
+      "days_received": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "partial": false,
+      "participation_roster": "not_independently_reconciled",
+      "collection_status": "available_session_records",
+      "source_types": {
+        "automatic_transcript": 189
+      }
+    },
+    "2026": {
+      "obtained_speeches": 191,
+      "days_received": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "partial": false,
+      "participation_roster": "not_independently_reconciled",
+      "collection_status": "available_session_records",
+      "source_types": {
+        "automatic_transcript": 191
+      }
+    }
+  },
+  "input_sha256": "5e5fcd5658bda710154ecfde9544a4a3e3b78ca4541079ff40910f8ab2d1345b",
+  "manifest_sha256": "2e08f485588d5146bc3bec0899fb119ac59a081d16f7f24dd32f6cf21757d394",
+  "old_2025_json_active": 0
+}

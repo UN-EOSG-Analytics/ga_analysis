@@ -1,0 +1,29 @@
+{
+  "request_hash": "2ffb3c2a877db3d54c5527a2769b2ed8eb359778d060396bbbb586f3455a14ac",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "root"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_ARE:1",
+      "verbatim_en_2026_ARE:2",
+      "verbatim_en_2026_ARE:3",
+      "verbatim_en_2026_ARE:4",
+      "verbatim_en_2026_ARE:5"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_ARE:4",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "The UAE continues to expand its investments in artificial intelligence, emerging technologies, healthcare, and education.",
+        "rationale": "Identifies expanding AI investment as part of national innovation and economic development strategy."
+      }
+    ]
+  }
+}

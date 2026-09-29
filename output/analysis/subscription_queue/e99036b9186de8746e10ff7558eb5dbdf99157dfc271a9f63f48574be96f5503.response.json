@@ -1,0 +1,461 @@
+{
+  "request_hash": "e99036b9186de8746e10ff7558eb5dbdf99157dfc271a9f63f48574be96f5503",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "results": [
+      {
+        "passage_id": "verbatim_en_2026_SGP:6",
+        "classification": {
+          "themes": [
+            {
+              "code": "AI_GLOBAL_GOVERNANCE",
+              "value": "Yes",
+              "quote": "We must urgently establish common rules and safeguards for AI. And we should build on the many ongoing discussions in different formats and groupings.",
+              "rationale": "Calls for common international rules and safeguards and an international institution."
+            },
+            {
+              "code": "AI_INCLUSIVE_GOVERNANCE",
+              "value": "Yes",
+              "quote": "Any durable international approach must give all states a meaningful stake, not only those who already have the most advanced models or the deepest pockets or the largest set of armaments.",
+              "rationale": "Demands all states have a meaningful stake in AI governance."
+            },
+            {
+              "code": "AI_GOVERNANCE_SKEPTICISM",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_UN_ROLE",
+              "value": "Yes",
+              "quote": "The UN, the United Nations, has a critical role to play in building convergence because this is the only apex international institution with universal membership. We must explore all options, including the idea of a UN framework convention on AI safeguards.",
+              "rationale": "Supports UN Scientific Panel, Global Dialogue and a possible UN framework convention."
+            },
+            {
+              "code": "AI_MILITARY_WEAPONS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_PEACE_APPLICATIONS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_SAFETY_EXISTENTIAL",
+              "value": "Yes",
+              "quote": "to collectively understand the capabilities and risk of AI models, to develop comparable methods for testing and evaluation, and to report serious incidents quickly across borders.",
+              "rationale": "Model risk evaluation, testing and incident reporting; frontier AI safety call."
+            },
+            {
+              "code": "AI_HUMAN_CONTROL",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_HUMAN_RIGHTS_ETHICS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_BIAS_CULTURAL_DIVERSITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DISINFORMATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CYBER_SECURITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DIGITAL_DIVIDE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CAPACITY_BUILDING",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DEVELOPMENT_SDGS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_RESOURCE_FOOTPRINT",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_ECONOMY_LABOR",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_YOUTH_EDUCATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CHILD_PROTECTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_NATIONAL_STRATEGY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_SOVEREIGNTY_CONCENTRATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_GEOPOLITICAL_RIVALRY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_OPPORTUNITY_RISK_DUALITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_TRANSFORMATIVE_ERA",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_TECH_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_THREAT_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            }
+          ],
+          "institutions": [
+            {
+              "commitment_detail": "",
+              "rationale": "Positively cites the Panel as establishing evidence-based common understanding.",
+              "mechanism": "Panel",
+              "reference_type": "explicit name",
+              "stances": {
+                "mention": true,
+                "welcome": false,
+                "support": true,
+                "request": false,
+                "concern": false,
+                "opposition": false,
+                "commitment": false
+              },
+              "requested_functions": [
+                "scientific assessment"
+              ],
+              "un_role": "explicit",
+              "quote": "the UN's independent international scientific panel on AI, already helps to establish a common understanding based on evidence."
+            },
+            {
+              "commitment_detail": "",
+              "rationale": "Supports the Global Dialogue as translating understanding into objectives.",
+              "mechanism": "Dialogue",
+              "reference_type": "explicit name",
+              "stances": {
+                "mention": true,
+                "welcome": false,
+                "support": true,
+                "request": false,
+                "concern": false,
+                "opposition": false,
+                "commitment": false
+              },
+              "requested_functions": [
+                "dialogue/convening"
+              ],
+              "un_role": "explicit",
+              "quote": "The global dialogue on AI governance can help to translate that common understanding into common objectives."
+            },
+            {
+              "commitment_detail": "",
+              "rationale": "Suggests an international AI institution with standard-setting and IAEA-style verification functions.",
+              "mechanism": "IAEA-like",
+              "reference_type": "inferred description",
+              "stances": {
+                "mention": true,
+                "welcome": false,
+                "support": false,
+                "request": true,
+                "concern": false,
+                "opposition": false,
+                "commitment": false
+              },
+              "requested_functions": [
+                "norms/rules/standards",
+                "monitoring/oversight/verification"
+              ],
+              "un_role": "generic",
+              "quote": "We may also need an international institution that can perform for AI. Some of the functions that currently exist for institutions that perform this function of setting common technical standards, and the examples are the International Telecommunications Union, which provides all the International Atomic Energy Agency, which provides verification."
+            },
+            {
+              "commitment_detail": "Singapore commits to contribute and joined the Finland/Norway-led call for greater safety and security of frontier AI models.",
+              "rationale": "Covers the ITU AI for Good Global Commission (cited positively), the proposed UN framework convention on AI safeguards (option to explore) and the frontier AI call Singapore joined.",
+              "mechanism": "Other model",
+              "reference_type": "explicit name",
+              "stances": {
+                "mention": true,
+                "welcome": false,
+                "support": true,
+                "request": true,
+                "concern": false,
+                "opposition": false,
+                "commitment": true
+              },
+              "requested_functions": [
+                "norms/rules/standards",
+                "dialogue/convening"
+              ],
+              "un_role": "explicit",
+              "quote": "We must explore all options, including the idea of a UN framework convention on AI safeguards."
+            }
+          ],
+          "keywords": [
+            {
+              "normalized_term": "independent international scientific panel on ai",
+              "original_term": "independent international scientific panel on AI",
+              "quote": "the UN's independent international scientific panel on AI, already helps to establish a common understanding based on evidence."
+            },
+            {
+              "normalized_term": "global dialogue on ai governance",
+              "original_term": "global dialogue on AI governance",
+              "quote": "The global dialogue on AI governance can help to translate that common understanding into common objectives."
+            },
+            {
+              "normalized_term": "ai for good global commission",
+              "original_term": "AI for Good Global Commission",
+              "quote": "And the ITU's AI for Good Global Commission brings together leaders from government, industry, and international institutions"
+            },
+            {
+              "normalized_term": "un framework convention on ai safeguards",
+              "original_term": "UN framework convention on AI safeguards",
+              "quote": "including the idea of a UN framework convention on AI safeguards."
+            },
+            {
+              "normalized_term": "frontier ai",
+              "original_term": "frontier AI models",
+              "quote": "we joined a call for greater safety and security of frontier AI models"
+            }
+          ],
+          "uncovered_concept": ""
+        }
+      },
+      {
+        "passage_id": "verbatim_en_2026_SGP:7",
+        "classification": {
+          "themes": [
+            {
+              "code": "AI_GLOBAL_GOVERNANCE",
+              "value": "Yes",
+              "quote": "Ultimately, powerful engines and good brakes and common rules do not stop us or slow us down. They give us the assurance and the confidence so that we can move faster",
+              "rationale": "Argues common rules and global cooperation enable innovation."
+            },
+            {
+              "code": "AI_INCLUSIVE_GOVERNANCE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_GOVERNANCE_SKEPTICISM",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_UN_ROLE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_MILITARY_WEAPONS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_PEACE_APPLICATIONS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_SAFETY_EXISTENTIAL",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_HUMAN_CONTROL",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_HUMAN_RIGHTS_ETHICS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_BIAS_CULTURAL_DIVERSITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DISINFORMATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CYBER_SECURITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DIGITAL_DIVIDE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CAPACITY_BUILDING",
+              "value": "Yes",
+              "quote": "We will continue to contribute through platforms such as the digital pillar for the Forum of Small States and by making our governance frameworks and testing tools available to all.",
+              "rationale": "Offers national AI governance frameworks and testing tools to others."
+            },
+            {
+              "code": "AI_DEVELOPMENT_SDGS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_RESOURCE_FOOTPRINT",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_ECONOMY_LABOR",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_YOUTH_EDUCATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CHILD_PROTECTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_NATIONAL_STRATEGY",
+              "value": "Yes",
+              "quote": "by making our governance frameworks and testing tools available to all.",
+              "rationale": "Refers to Singapore's own AI governance frameworks and testing tools offered abroad."
+            },
+            {
+              "code": "AI_SOVEREIGNTY_CONCENTRATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_GEOPOLITICAL_RIVALRY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_OPPORTUNITY_RISK_DUALITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_TRANSFORMATIVE_ERA",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_TECH_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_THREAT_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            }
+          ],
+          "institutions": [],
+          "keywords": [
+            {
+              "normalized_term": "testing tools",
+              "original_term": "testing tools",
+              "quote": "by making our governance frameworks and testing tools available to all."
+            }
+          ],
+          "uncovered_concept": ""
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "request_hash": "a35388fabb24175fd3db15785ba87551858ee5c4d3ed6af8a4ac5635a7ebfb26",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_MILITARY_WEAPONS",
+        "label": "Military AI challenging arms control",
+        "definition": "AI in the military domain and autonomous weapons presented as new challenges for arms control and international regulation.",
+        "inclusion": "Include passages explicitly naming military AI or autonomous weapons as arms-control or security challenges.",
+        "exclusion": "Exclude passages where AI is only named in a list of rivalries without military specification (AI_THREAT_LIST_MENTION).",
+        "boundary_cases": "'Rivalry in artificial intelligence' as part of an arms race narrative is borderline; code here only if military use is explicit.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_KEN:5",
+            "quote": "the proliferation of advanced technologies, such as artificial intelligence in the military domain and autonomous weapons systems, has introduced new challenges for arms control and international regulations"
+          }
+        ]
+      },
+      {
+        "code": "AI_THREAT_LIST_MENTION",
+        "label": "AI listed among global threats",
+        "definition": "AI is named briefly within a list of security threats, rivalries or drivers of global crisis, without elaboration.",
+        "inclusion": "Include passages where AI appears as one item in a catalogue of threats, crises or rivalries.",
+        "exclusion": "Exclude neutral or positive technology lists (AI_TECH_LIST_MENTION) and passages with substantive AI discussion.",
+        "boundary_cases": "A list item with an evaluative adjective (e.g. 'uncontrollable') remains a list mention unless the speaker develops the point.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2019_KAZ:5",
+            "quote": "an intense rivalry in space, cybertechnology and artificial intelligence"
+          },
+          {
+            "passage_id": "verbatim_en_2023_VCT:8",
+            "quote": "the seemingly uncontrollable chariots of artificial intelligence"
+          }
+        ]
+      },
+      {
+        "code": "AI_GREAT_POWER_RIVALRY",
+        "label": "AI as arena of strategic rivalry",
+        "definition": "AI framed as a domain of geopolitical rivalry contributing to erosion of trust and a renewed arms race.",
+        "inclusion": "Include passages describing competition or rivalry among powers over AI as a security problem.",
+        "exclusion": "Exclude corporate concentration concerns (AI_SOVEREIGNTY_CONCENTRATION).",
+        "boundary_cases": "If rivalry is only listed without link to security, code AI_THREAT_LIST_MENTION alone.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2019_KAZ:5",
+            "quote": "Those challenges are aggravated by restrictive sanctions, trade wars, an intense rivalry in space, cybertechnology and artificial intelligence."
+          }
+        ]
+      }
+    ],
+    "rationale": "All three passages place AI within security-threat framings. Kenya is the only one to specify military AI and autonomous weapons; Kazakhstan and Saint Vincent list AI briefly as a rivalry domain or uncontrolled threat among many."
+  }
+}

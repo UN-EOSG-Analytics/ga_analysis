@@ -1,0 +1,28 @@
+{
+  "request_hash": "9500c444aad3155cce38d6bcac12930d8ce518e3740dfc46bafb6be532f87fc5",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_b"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_LBR:1",
+      "verbatim_en_2026_LBR:2",
+      "verbatim_en_2026_LBR:3",
+      "verbatim_en_2026_LBR:4"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_LBR:3",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "We join calls abiding ethical norms and greater regulation of artificial intelligence, particularly in warfare.",
+        "rationale": "Supports UN AI scientific panel, developing-country digital sovereignty and AI regulation including warfare."
+      }
+    ]
+  }
+}

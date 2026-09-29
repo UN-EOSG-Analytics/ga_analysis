@@ -1,0 +1,181 @@
+{
+  "request_hash": "28d3d89a56d4b46312264a7430eef9b7cd03cd05d46110bc478240f5f794d51f",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_DEVELOPMENT_SDGS",
+        "label": "AI benefits for health and development",
+        "definition": "AI presented as delivering concrete benefits in health, science and development, including partnerships to share these benefits with developing countries.",
+        "inclusion": "Passages citing AI speeding cancer diagnosis, drug discovery, AI for development partnerships in Africa or SDG ecosystems.",
+        "exclusion": "Economic growth/productivity framing without health or development content (use AI_ECONOMY_LABOR).",
+        "boundary_cases": "Donor-funded AI ecosystem programmes abroad count here and may also count as AI_CAPACITY_BUILDING.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_GBR:5",
+            "quote": "In our National Health Service, AI mammogram trials double the speed of diagnosis."
+          },
+          {
+            "passage_id": "verbatim_en_2025_GBR:6",
+            "quote": "working with 10 African partners creating AI ecosystems that empower thousands of communities to meet the sustainable development goals"
+          },
+          {
+            "passage_id": "verbatim_en_2026_GBR:4",
+            "quote": "not just to help prevent and treat cancer, but to help cure it"
+          }
+        ]
+      },
+      {
+        "code": "AI_ECONOMY_LABOR",
+        "label": "AI growth, jobs and worker disruption",
+        "definition": "AI as a driver of productivity and growth and as a source of labour disruption requiring support for workers, including industrial-revolution analogies.",
+        "inclusion": "Passages on AI productivity gains, reindustrialisation, jobs of the future, or protecting workers through disruption.",
+        "exclusion": "Health or SDG applications (use AI_DEVELOPMENT_SDGS).",
+        "boundary_cases": "National investment in AI industries to create jobs counts here and in AI_NATIONAL_STRATEGY.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_GBR:5",
+            "quote": "AI will also be a source of disruption to the way we live and work, a multiplier of risk."
+          },
+          {
+            "passage_id": "verbatim_en_2018_GBR:11",
+            "quote": "we are driving investment in industries of the future to create new jobs, from low-carbon technologies to artificial intelligence"
+          }
+        ]
+      },
+      {
+        "code": "AI_DISINFORMATION",
+        "label": "AI-enabled disinformation and propaganda",
+        "definition": "AI used by hostile states and actors to spread propaganda, manipulate information and amplify disinformation.",
+        "inclusion": "Passages on AI fuelling disinformation, chatbots manipulated to repeat propaganda, or AI multiplying information threats.",
+        "exclusion": "AI-enabled financial scams and crime without an information-manipulation focus (use AI_CYBER_SECURITY).",
+        "boundary_cases": "A passage where AI is said to multiply the threat of disinformation and cyber attacks together can take both codes.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_GBR:5",
+            "quote": "Authoritarian states, notably Russia, are manipulating large-scale, large model language models so that chatbots answer in the voice of their propaganda"
+          },
+          {
+            "passage_id": "verbatim_en_2026_GBR:2",
+            "quote": "we have seen cyber attacks on companies and institutions, and we know that AI will multiply the threat"
+          }
+        ]
+      },
+      {
+        "code": "AI_CYBER_SECURITY",
+        "label": "AI misuse by criminals and security threats",
+        "definition": "AI used for crime, scams, repression, or threats to critical infrastructure, and AI as a security tool to defend against them.",
+        "inclusion": "Passages on criminals using AI for scams, AI empowering crime, or AI defence partnerships to protect critical infrastructure.",
+        "exclusion": "Autonomous weapons or battlefield AI (use AI_MILITARY_WEAPONS).",
+        "boundary_cases": "Defensive AI for national infrastructure counts here rather than military weapons.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_GBR:5",
+            "quote": "Organised crime is using AI to supercharge their scams, deceiving victims on an unprecedented scale."
+          },
+          {
+            "passage_id": "verbatim_en_2026_GBR:5",
+            "quote": "we are developing a new AI defense partnership with the United States to protect our critical national infrastructure"
+          }
+        ]
+      },
+      {
+        "code": "AI_SAFETY_EXISTENTIAL",
+        "label": "Frontier AI safety and preparedness",
+        "definition": "Concern with frontier AI safety, investing in AI safety/security institutes, and global standards to ensure safe AI development.",
+        "inclusion": "Passages mentioning AI Security/Safety Institutes, safe AI development, frontier AI risks and preparedness.",
+        "exclusion": "Crime or disinformation misuse (use those codes).",
+        "boundary_cases": "Calls for global safety standards take both this and AI_GLOBAL_GOVERNANCE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_GBR:5",
+            "quote": "we have our world-leading AI Security Institute, working hand in glove with the US and the leading labs on AI safety"
+          },
+          {
+            "passage_id": "verbatim_en_2026_GBR:6",
+            "quote": "to ensure that AI development is safe"
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Global AI principles via G20 and UN",
+        "definition": "Calls for shared global principles and standards on AI through G20, UN processes and cooperation, including endorsement of UN AI bodies.",
+        "inclusion": "Passages proposing global AI principles/standards, putting AI at the heart of a G20 presidency, or welcoming UN AI governance dialogue and scientific panel.",
+        "exclusion": "Purely domestic regulation (use AI_NATIONAL_STRATEGY).",
+        "boundary_cases": "Welcoming the UN Scientific Panel and Global Dialogue should also be coded AI_UN_ROLE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_GBR:6",
+            "quote": "we will work towards agreeing a single set of global principles and standards"
+          },
+          {
+            "passage_id": "verbatim_en_2025_GBR:6",
+            "quote": "I commend the new independent international scientific panel on AI"
+          }
+        ]
+      },
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "Sharing AI benefits to avoid inequality",
+        "definition": "Concern that AI benefits are concentrated and must be shared globally to prevent deeper inequality.",
+        "inclusion": "Passages urging investment and partnership so AI benefits reach those who need them, or warning technological change could deepen inequality.",
+        "exclusion": "Concentration of power framed as sovereignty/dependence (use AI_SOVEREIGNTY_CONCENTRATION).",
+        "boundary_cases": "Digital access programmes narrowing the technological divide count here.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_GBR:5",
+            "quote": "we risk a world of ever deeper inequality, where the benefits of this technology fail to reach those who need it most"
+          },
+          {
+            "passage_id": "verbatim_en_2018_GBR:11",
+            "quote": "the risk that technological change could become a source of inequality and division rather than the greatest opportunity in history"
+          }
+        ]
+      },
+      {
+        "code": "AI_NATIONAL_STRATEGY",
+        "label": "Own-country AI leadership and investment",
+        "definition": "Speaker showcases own country's AI talent, institutions, investment and national leadership role.",
+        "inclusion": "Passages boasting national AI talent, institutes, datasets or national-level AI investments and initiatives.",
+        "exclusion": "International proposals for common rules (use AI_GLOBAL_GOVERNANCE).",
+        "boundary_cases": "Announcing a national G20 agenda on AI counts as both national positioning and global governance.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_GBR:5",
+            "quote": "The UK has some of the best tech and AI talent anywhere in the world."
+          },
+          {
+            "passage_id": "verbatim_en_2025_GBR:6",
+            "quote": "we invest so heavily in the AI Security Institute, with more dedicated researchers than anywhere else in the world"
+          }
+        ]
+      },
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "AI can empower freedom or repression",
+        "definition": "Explicit framing of AI as both a defining opportunity and a profound challenge whose direction depends on choices.",
+        "inclusion": "Passages contrasting AI's potential to empower good versus harm.",
+        "exclusion": "One-sided benefit or risk passages.",
+        "boundary_cases": "Describing frontier AI as one of the most significant challenges and opportunities counts.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_GBR:5",
+            "quote": "AI can empower freedom or it can entrench repression. AI can empower truth or it can entrench lies."
+          },
+          {
+            "passage_id": "verbatim_en_2026_GBR:4",
+            "quote": "one of the most significant challenges and opportunities of our age, frontier AI"
+          }
+        ]
+      }
+    ],
+    "rationale": "All passages are UK speeches; they substantively cover AI health/development benefits, growth and labour disruption, disinformation and crime misuse, frontier safety, and global principles, framed as dual-edged, with earlier years (2018, 2022) only briefly referencing AI as an industry of the future."
+  }
+}

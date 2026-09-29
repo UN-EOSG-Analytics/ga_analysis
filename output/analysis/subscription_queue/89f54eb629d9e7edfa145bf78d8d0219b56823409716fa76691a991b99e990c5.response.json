@@ -1,0 +1,43 @@
+{
+  "request_hash": "89f54eb629d9e7edfa145bf78d8d0219b56823409716fa76691a991b99e990c5",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_YOUTH_EDUCATION",
+        "label": "AI transforming education systems",
+        "definition": "AI presented as changing how people learn and as a tool education systems can use for management, teaching and learning.",
+        "inclusion": "Include passages on using AI in education systems or preparing education for AI.",
+        "exclusion": "Exclude generic education statements without AI.",
+        "boundary_cases": "Broad claims that AI changes how people work may additionally be coded AI_ECONOMY_LABOR.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2019_URY:32",
+            "quote": "Education systems could use artificial intelligence to change their management, teaching and learning."
+          }
+        ]
+      },
+      {
+        "code": "AI_SOCIETAL_TRANSFORMATION",
+        "label": "AI transforming how societies live",
+        "definition": "AI described as a rapid force transforming societies, including how people learn, work and live together.",
+        "inclusion": "Include passages describing AI as broadly transforming society or daily life without specifying benefits or harms.",
+        "exclusion": "Exclude passages focused on specific sectors only.",
+        "boundary_cases": "If AI appears only in a list of trends, use AI_TECH_LIST_MENTION instead.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2019_URY:32",
+            "quote": "Rapid technological advances in artificial intelligence are transforming societies by changing the way people learn, work and live together."
+          }
+        ]
+      }
+    ],
+    "rationale": "Uruguay's education-focused passage describes AI as transforming society and proposes using AI in education management, teaching and learning."
+  }
+}

@@ -1,0 +1,409 @@
+{
+  "request_hash": "d76a2448d7530d23c851a77ca6df5e2018c0d886ea5c5e35a67a2a407cb8bf22",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "results": [
+      {
+        "passage_id": "verbatim_en_2026_LTU:3",
+        "classification": {
+          "themes": [
+            {
+              "code": "AI_GLOBAL_GOVERNANCE",
+              "value": "Yes",
+              "quote": "advancing the Vilnius Convention, the world's first legally binding international treaty on artificial intelligence.",
+              "rationale": "Binding international AI treaty."
+            },
+            {
+              "code": "AI_INCLUSIVE_GOVERNANCE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_GOVERNANCE_SKEPTICISM",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_UN_ROLE",
+              "value": "Yes",
+              "quote": "we hope to contribute significantly to the United Nations global dialogue on AI governance.",
+              "rationale": "UN Global Dialogue."
+            },
+            {
+              "code": "AI_MILITARY_WEAPONS",
+              "value": "Uncertain",
+              "quote": "Whole sectors, including those related to defense and security, might get radically changed",
+              "rationale": "Defence sector transformation; not explicit military use."
+            },
+            {
+              "code": "AI_PEACE_APPLICATIONS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_SAFETY_EXISTENTIAL",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_HUMAN_CONTROL",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_HUMAN_RIGHTS_ETHICS",
+              "value": "Yes",
+              "quote": "the future of AI must not be determined by authoritarian control, technological coercion, or the malicious use of data.",
+              "rationale": "Democratic values against authoritarian AI."
+            },
+            {
+              "code": "AI_BIAS_CULTURAL_DIVERSITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DISINFORMATION",
+              "value": "Yes",
+              "quote": "This risk is further enhanced by the development of artificial intelligence.",
+              "rationale": "AI amplifying disinformation and information manipulation."
+            },
+            {
+              "code": "AI_CYBER_SECURITY",
+              "value": "Yes",
+              "quote": "As any instrument, AI is also increasingly used by those seeking to cause harm and destruction.",
+              "rationale": "Malicious use by hostile actors."
+            },
+            {
+              "code": "AI_DIGITAL_DIVIDE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CAPACITY_BUILDING",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DEVELOPMENT_SDGS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_RESOURCE_FOOTPRINT",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_ECONOMY_LABOR",
+              "value": "Yes",
+              "quote": "AI has a huge potential for transformation, especially in the field of economy. Whole sectors, including those related to defense and security, might get radically changed or destroyed almost overnight.",
+              "rationale": "Economic transformation of sectors."
+            },
+            {
+              "code": "AI_YOUTH_EDUCATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CHILD_PROTECTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_NATIONAL_STRATEGY",
+              "value": "Yes",
+              "quote": "We are therefore investing in trusted AI capabilities, promoting responsible AI deployment",
+              "rationale": "National AI investment."
+            },
+            {
+              "code": "AI_SOVEREIGNTY_CONCENTRATION",
+              "value": "Uncertain",
+              "quote": "the future of AI must not be determined by authoritarian control, technological coercion, or the malicious use of data.",
+              "rationale": "Opposes coercive/authoritarian control of AI."
+            },
+            {
+              "code": "AI_GEOPOLITICAL_RIVALRY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_OPPORTUNITY_RISK_DUALITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_TRANSFORMATIVE_ERA",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_TECH_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_THREAT_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            }
+          ],
+          "institutions": [
+            {
+              "commitment_detail": "Lithuania advances the Vilnius Convention on AI.",
+              "rationale": "Binding AI treaty promoted by Lithuania.",
+              "mechanism": "Other model",
+              "reference_type": "explicit name",
+              "stances": {
+                "mention": true,
+                "welcome": false,
+                "support": true,
+                "request": false,
+                "concern": false,
+                "opposition": false,
+                "commitment": true
+              },
+              "requested_functions": [
+                "norms/rules/standards"
+              ],
+              "un_role": "generic",
+              "quote": "advancing the Vilnius Convention, the world's first legally binding international treaty on artificial intelligence."
+            },
+            {
+              "commitment_detail": "",
+              "rationale": "Intends to contribute to the Global Dialogue.",
+              "mechanism": "Dialogue",
+              "reference_type": "explicit name",
+              "stances": {
+                "mention": true,
+                "welcome": false,
+                "support": true,
+                "request": false,
+                "concern": false,
+                "opposition": false,
+                "commitment": false
+              },
+              "requested_functions": [
+                "dialogue/convening"
+              ],
+              "un_role": "explicit",
+              "quote": "we hope to contribute significantly to the United Nations global dialogue on AI governance."
+            }
+          ],
+          "keywords": [
+            {
+              "normalized_term": "vilnius convention",
+              "original_term": "Vilnius Convention",
+              "quote": "advancing the Vilnius Convention"
+            },
+            {
+              "normalized_term": "trusted ai",
+              "original_term": "trusted AI capabilities",
+              "quote": "investing in trusted AI capabilities"
+            },
+            {
+              "normalized_term": "information integrity",
+              "original_term": "information integrity",
+              "quote": "attacks on information integrity pose an especially troubling challenge to every society."
+            }
+          ],
+          "uncovered_concept": ""
+        }
+      },
+      {
+        "passage_id": "verbatim_en_2026_LTU:4",
+        "classification": {
+          "themes": [
+            {
+              "code": "AI_GLOBAL_GOVERNANCE",
+              "value": "Yes",
+              "quote": "the time is ripe for collective action.",
+              "rationale": "Collective action on AI."
+            },
+            {
+              "code": "AI_INCLUSIVE_GOVERNANCE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_GOVERNANCE_SKEPTICISM",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_UN_ROLE",
+              "value": "Yes",
+              "quote": "the credibility of the United Nations depends on its ability to respond firmly to aggression, unlawful conquest, forced deportations, and crimes against humanity. and also to coordinate the global response to the growth of AI.",
+              "rationale": "UN coordinating AI response."
+            },
+            {
+              "code": "AI_MILITARY_WEAPONS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_PEACE_APPLICATIONS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_SAFETY_EXISTENTIAL",
+              "value": "Yes",
+              "quote": "With even major technology companies sending warning signals that control of AI might slip out of humanity's hands, the time is ripe for collective action.",
+              "rationale": "Loss of control risk."
+            },
+            {
+              "code": "AI_HUMAN_CONTROL",
+              "value": "Yes",
+              "quote": "At any cost, human accountability, international law, and the peace and security must be safeguarded.",
+              "rationale": "Human accountability."
+            },
+            {
+              "code": "AI_HUMAN_RIGHTS_ETHICS",
+              "value": "Yes",
+              "quote": "we must ensure that AI serves human dignity, sustainable development, and international security",
+              "rationale": "Human dignity."
+            },
+            {
+              "code": "AI_BIAS_CULTURAL_DIVERSITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DISINFORMATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CYBER_SECURITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DIGITAL_DIVIDE",
+              "value": "Uncertain",
+              "quote": "rather than becoming a new instrument of inequality, manipulation, or conflict.",
+              "rationale": "Inequality risk, brief."
+            },
+            {
+              "code": "AI_CAPACITY_BUILDING",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DEVELOPMENT_SDGS",
+              "value": "Uncertain",
+              "quote": "we must ensure that AI serves human dignity, sustainable development, and international security",
+              "rationale": "Brief development mention."
+            },
+            {
+              "code": "AI_RESOURCE_FOOTPRINT",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_ECONOMY_LABOR",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_YOUTH_EDUCATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CHILD_PROTECTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_NATIONAL_STRATEGY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_SOVEREIGNTY_CONCENTRATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_GEOPOLITICAL_RIVALRY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_OPPORTUNITY_RISK_DUALITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_TRANSFORMATIVE_ERA",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_TECH_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_THREAT_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            }
+          ],
+          "institutions": [],
+          "keywords": [
+            {
+              "normalized_term": "human accountability",
+              "original_term": "human accountability",
+              "quote": "At any cost, human accountability, international law, and the peace and security must be safeguarded."
+            }
+          ],
+          "uncovered_concept": ""
+        }
+      }
+    ]
+  }
+}

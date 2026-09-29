@@ -1,0 +1,65 @@
+{
+  "request_hash": "710428fb5302f77450c995a85f03ee5439f37b9f98074de8054dcf951ef53d89",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_CULTURAL_LINGUISTIC_DIVERSITY",
+        "label": "AI preserving multilingualism and cultural diversity",
+        "definition": "Concern that AI and the digital revolution could cause cultural homogenization and make less-spoken languages invisible, with calls for governance respecting multilingualism.",
+        "inclusion": "Include passages demanding that AI/digital tools reflect linguistic and cultural diversity or warning of homogenization.",
+        "exclusion": "Exclude general UN multilingualism advocacy not linked to AI or digital tools.",
+        "boundary_cases": "Calls for fair representation of specific languages in AI data and models also fit here.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_AND:6",
+            "quote": "The digital revolution must not lead to cultural homogenization that condemns languages with fewer speakers to invisibility."
+          },
+          {
+            "passage_id": "verbatim_en_2026_AND:6",
+            "quote": "we advocate for global digital governance that fully incorporates respect for multilingualism, cultural diversity, and equal access to knowledge"
+          }
+        ]
+      },
+      {
+        "code": "AI_HUMAN_RIGHTS_ETHICS",
+        "label": "Keeping technological progress human progress",
+        "definition": "Human-centred framing: AI must protect human rights, strengthen democracy and expand opportunity rather than inequality.",
+        "inclusion": "Include passages stating AI should protect rights and democracy or asking how technological progress remains human progress.",
+        "exclusion": "Exclude pure opportunity lists.",
+        "boundary_cases": "Inequality language inside a rights list stays here unless the passage focuses on access gaps.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_AND:6",
+            "quote": "How can we ensure that technological progress remains human progress?"
+          },
+          {
+            "passage_id": "verbatim_en_2026_AND:6",
+            "quote": "that it protects human rights rather than putting them at risk, that it strengthens our democracies rather than weakening them"
+          }
+        ]
+      },
+      {
+        "code": "AI_DEVELOPMENT_SDGS",
+        "label": "AI opportunities for science, medicine, climate",
+        "definition": "AI presented as a profound transformation opening opportunities in science, medicine, education and climate action.",
+        "inclusion": "Include passages listing AI's beneficial applications for development goals.",
+        "exclusion": "Exclude passages focused on risks.",
+        "boundary_cases": "When immediately followed by a risk question, also code AI_OPPORTUNITY_RISK_DUALITY.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_AND:5",
+            "quote": "It opens extraordinary opportunities for scientific progress, medicine, education, and the fight against climate change."
+          }
+        ]
+      }
+    ],
+    "rationale": "Both Andorran passages form one argument: AI is a profound transformation with benefits for science and climate, but must remain human-centred, rights-protecting and respectful of linguistic and cultural diversity, which matters for a small country."
+  }
+}

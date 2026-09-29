@@ -1,0 +1,43 @@
+{
+  "request_hash": "75477b39a688e114af13e243d6b7616d78c0fc76ff4fc84a5fe802a87bec1d18",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "AI as concern of a privileged minority",
+        "definition": "AI invoked as a topic of a fortunate minority, contrasted with global poverty and hunger to highlight inequality.",
+        "inclusion": "Passages contrasting rich-world AI or technology debates with poverty, hunger or illiteracy elsewhere.",
+        "exclusion": "Passages about unequal access to AI tools or capacity (still digital divide but with access framing).",
+        "boundary_cases": "AI listed among rich-world concerns with no evaluation of AI itself should also be coded as a list mention.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2019_TUR:8",
+            "quote": "while a fortunate minority in the world is discussing such issues as digital technology, robotics, artificial intelligence and obesity"
+          }
+        ]
+      },
+      {
+        "code": "AI_TECH_LIST_MENTION",
+        "label": "AI listed among rich-world topics",
+        "definition": "AI named in a list with digital technology, robotics and obesity without discussion of AI itself.",
+        "inclusion": "Passages where AI is a list item illustrating a broader argument.",
+        "exclusion": "Passages elaborating AI effects or governance.",
+        "boundary_cases": "Code with AI_DIGITAL_DIVIDE when the list serves an inequality contrast.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2019_TUR:8",
+            "quote": "digital technology, robotics, artificial intelligence and obesity"
+          }
+        ]
+      }
+    ],
+    "rationale": "Single Turkish 2019 passage where AI is a list item used rhetorically to contrast privileged-minority concerns with mass poverty and hunger."
+  }
+}

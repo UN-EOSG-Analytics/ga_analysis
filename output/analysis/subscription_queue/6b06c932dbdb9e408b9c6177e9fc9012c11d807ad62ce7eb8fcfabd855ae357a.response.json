@@ -1,0 +1,79 @@
+{
+  "request_hash": "6b06c932dbdb9e408b9c6177e9fc9012c11d807ad62ce7eb8fcfabd855ae357a",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_YOUTH_EDUCATION",
+        "label": "AI in education and future skills",
+        "definition": "AI appears in the context of schooling and skills: AI in lessons, teaching AI skills, and preparing young people to use, question and govern AI.",
+        "inclusion": "Include passages about AI in classrooms, AI-related curricula or skills, or equipping youth to lead technological transformation.",
+        "exclusion": "Exclude general education passages that mention only digital literacy without AI.",
+        "boundary_cases": "The rhetorical contrast of children using AI versus lacking schools is also an AI_DIGITAL_DIVIDE illustration.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_GRD:3",
+            "quote": "we are considering the teaching, understanding, and use of AI and AI related skills to enhance education access, delivery, and outcome"
+          },
+          {
+            "passage_id": "verbatim_en_2026_GRD:5",
+            "quote": "We must prepare young people not only to use new technologies, but to question them, govern them, and deploy them ethically."
+          }
+        ]
+      },
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "Unequal access to AI between countries",
+        "definition": "AI is used to illustrate or warn against a divide between those who can access and afford innovation and those who cannot.",
+        "inclusion": "Include passages contrasting AI-enabled and deprived populations or insisting that AI access be equitable.",
+        "exclusion": "Exclude passages about AI benefits that do not raise access inequality.",
+        "boundary_cases": "Rhetorical paradox framings (children using AI vs walking miles for water) count here even without policy demands.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_GRD:1",
+            "quote": "In another, children are using artificial intelligence in their lessons. a further paradox."
+          },
+          {
+            "passage_id": "verbatim_en_2026_GRD:5",
+            "quote": "must not create another divide between those countries that can afford to innovate and those that cannot"
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Governance frameworks balancing innovation and protection",
+        "definition": "Call for credible AI governance frameworks that encourage innovation while protecting privacy, security, democratic values and public trust.",
+        "inclusion": "Include calls for AI governance frameworks, whether national or international, balancing innovation and protection.",
+        "exclusion": "Exclude passages only about AI education.",
+        "boundary_cases": "Protection of privacy and democratic values may also be coded AI_HUMAN_RIGHTS_ETHICS.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_GRD:5",
+            "quote": "we must develop credible AI governance frameworks that encourage innovation while protecting people, privacy, security, democratic values, and public trust"
+          }
+        ]
+      },
+      {
+        "code": "AI_DEVELOPMENT_SDGS",
+        "label": "AI possibilities for sectors of development",
+        "definition": "AI is framed as offering possibilities for education, health, agriculture, public administration and economic development.",
+        "inclusion": "Include listings of development sectors that AI can benefit.",
+        "exclusion": "Exclude passages focused solely on risk.",
+        "boundary_cases": "If paired immediately with an equity caveat, also code AI_DIGITAL_DIVIDE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_GRD:5",
+            "quote": "offer enormous possibilities for education, healthcare, agriculture, public administration, and economic development"
+          }
+        ]
+      }
+    ],
+    "rationale": "Grenada's passages centre AI within an education agenda, from the rhetorical paradox of AI-using classrooms versus deprived children to teaching AI skills; 2026 adds development opportunities, equitable access and governance frameworks."
+  }
+}

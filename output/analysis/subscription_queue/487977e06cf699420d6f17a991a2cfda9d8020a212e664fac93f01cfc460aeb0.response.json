@@ -1,0 +1,481 @@
+{
+  "request_hash": "487977e06cf699420d6f17a991a2cfda9d8020a212e664fac93f01cfc460aeb0",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "results": [
+      {
+        "passage_id": "verbatim_en_2026_FRA:12",
+        "classification": {
+          "themes": [
+            {
+              "code": "AI_GLOBAL_GOVERNANCE",
+              "value": "Yes",
+              "quote": "there are other areas where we must set new rules.",
+              "rationale": "New international AI rules."
+            },
+            {
+              "code": "AI_INCLUSIVE_GOVERNANCE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_GOVERNANCE_SKEPTICISM",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_UN_ROLE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_MILITARY_WEAPONS",
+              "value": "Yes",
+              "quote": "AI in outer space, AI and defense and cybersecurity.",
+              "rationale": "New rules for AI in defence."
+            },
+            {
+              "code": "AI_PEACE_APPLICATIONS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_SAFETY_EXISTENTIAL",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_HUMAN_CONTROL",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_HUMAN_RIGHTS_ETHICS",
+              "value": "Yes",
+              "quote": "we've built a coalition on children's rights in the era of AI.",
+              "rationale": "Children's rights in AI era."
+            },
+            {
+              "code": "AI_BIAS_CULTURAL_DIVERSITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DISINFORMATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CYBER_SECURITY",
+              "value": "Yes",
+              "quote": "AI and defense and cybersecurity. This has very serious consequences which affect the very heart of our national security.",
+              "rationale": "AI and cybersecurity."
+            },
+            {
+              "code": "AI_DIGITAL_DIVIDE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CAPACITY_BUILDING",
+              "value": "Uncertain",
+              "quote": "our investment capabilities must be pooled to build a cutting edge open source AI model, which we will share.",
+              "rationale": "Pooled compute and shared model."
+            },
+            {
+              "code": "AI_DEVELOPMENT_SDGS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_RESOURCE_FOOTPRINT",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_ECONOMY_LABOR",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_YOUTH_EDUCATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CHILD_PROTECTION",
+              "value": "Yes",
+              "quote": "We must act now to protect our children and our young people. Look at the impact chatbots have on our children.",
+              "rationale": "Children harmed by chatbots."
+            },
+            {
+              "code": "AI_NATIONAL_STRATEGY",
+              "value": "Yes",
+              "quote": "France is proud to have a competitive frontier model.",
+              "rationale": "National frontier model support."
+            },
+            {
+              "code": "AI_SOVEREIGNTY_CONCENTRATION",
+              "value": "Yes",
+              "quote": "I don't want anyone to become the vassal of one of the great powers.",
+              "rationale": "Technological independence of sovereign states."
+            },
+            {
+              "code": "AI_GEOPOLITICAL_RIVALRY",
+              "value": "Yes",
+              "quote": "we can clearly see the race that is underway in cutting edge models.",
+              "rationale": "Frontier model race and great-power vassalage."
+            },
+            {
+              "code": "AI_OPPORTUNITY_RISK_DUALITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_TRANSFORMATIVE_ERA",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_TECH_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_THREAT_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            }
+          ],
+          "institutions": [
+            {
+              "commitment_detail": "France co-leads a coalition on children's rights in the era of AI.",
+              "rationale": "State built and leads coalition.",
+              "mechanism": "Other model",
+              "reference_type": "name variant",
+              "stances": {
+                "mention": true,
+                "welcome": false,
+                "support": true,
+                "request": false,
+                "concern": false,
+                "opposition": false,
+                "commitment": true
+              },
+              "requested_functions": [
+                "norms/rules/standards"
+              ],
+              "un_role": "generic",
+              "quote": "This is why, together with Kenya, Spain, Australia, we've built a coalition on children's rights in the era of AI."
+            },
+            {
+              "commitment_detail": "France will convene actors at the Paris Peace Forum on 10-11 November.",
+              "rationale": "State hosts convening on AI and children.",
+              "mechanism": "Dialogue",
+              "reference_type": "explicit name",
+              "stances": {
+                "mention": true,
+                "welcome": false,
+                "support": true,
+                "request": false,
+                "concern": false,
+                "opposition": false,
+                "commitment": true
+              },
+              "requested_functions": [
+                "dialogue/convening"
+              ],
+              "un_role": "generic",
+              "quote": "We are mobilizing already this afternoon and also at the Paris Peace Forum, at the Paris Peace Forum on the 10th and 11th of November of this year."
+            },
+            {
+              "commitment_detail": "France proposes pooling compute and investment to build a shared open-source frontier model.",
+              "rationale": "Pooled international compute for a shared model.",
+              "mechanism": "CERN-like",
+              "reference_type": "inferred description",
+              "stances": {
+                "mention": true,
+                "welcome": false,
+                "support": true,
+                "request": true,
+                "concern": false,
+                "opposition": false,
+                "commitment": true
+              },
+              "requested_functions": [
+                "capacity building"
+              ],
+              "un_role": "generic",
+              "quote": "we must come together to build an open source frontier model, a cutting edge model using all of the calculation capabilities you have pooling them, our investment capabilities must be pooled to build a cutting edge open source AI model, which we will share."
+            }
+          ],
+          "keywords": [
+            {
+              "normalized_term": "chatbots",
+              "original_term": "chatbots",
+              "quote": "Look at the impact chatbots have on our children."
+            },
+            {
+              "normalized_term": "frontier model",
+              "original_term": "frontier model",
+              "quote": "France is proud to have a competitive frontier model."
+            },
+            {
+              "normalized_term": "open source ai",
+              "original_term": "open source AI model",
+              "quote": "build a cutting edge open source AI model, which we will share."
+            },
+            {
+              "normalized_term": "ai in outer space",
+              "original_term": "AI in outer space",
+              "quote": "AI in outer space, AI and defense and cybersecurity."
+            }
+          ],
+          "uncovered_concept": "AI in outer space"
+        }
+      },
+      {
+        "passage_id": "verbatim_en_2026_FRA:13",
+        "classification": {
+          "themes": [
+            {
+              "code": "AI_GLOBAL_GOVERNANCE",
+              "value": "Yes",
+              "quote": "We are coming to an agreement to build a new international architecture",
+              "rationale": "New international architecture."
+            },
+            {
+              "code": "AI_INCLUSIVE_GOVERNANCE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_GOVERNANCE_SKEPTICISM",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_UN_ROLE",
+              "value": "Uncertain",
+              "quote": "Today, more than ever, we need the United Nations.",
+              "rationale": "General UN support including technology agenda."
+            },
+            {
+              "code": "AI_MILITARY_WEAPONS",
+              "value": "Yes",
+              "quote": "we must do the same when it comes to outer space, defence, cybersecurity, issues on which we must take control",
+              "rationale": "Framework for AI in defence."
+            },
+            {
+              "code": "AI_PEACE_APPLICATIONS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_SAFETY_EXISTENTIAL",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_HUMAN_CONTROL",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_HUMAN_RIGHTS_ETHICS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_BIAS_CULTURAL_DIVERSITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DISINFORMATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CYBER_SECURITY",
+              "value": "Yes",
+              "quote": "We want to set a cooperation agenda on AI so as to protect the most sensitive components thereof, which affect our national security.",
+              "rationale": "AI security cooperation."
+            },
+            {
+              "code": "AI_DIGITAL_DIVIDE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CAPACITY_BUILDING",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DEVELOPMENT_SDGS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_RESOURCE_FOOTPRINT",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_ECONOMY_LABOR",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_YOUTH_EDUCATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CHILD_PROTECTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_NATIONAL_STRATEGY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_SOVEREIGNTY_CONCENTRATION",
+              "value": "Yes",
+              "quote": "those who are monopolizing the ability to make calculations abuses of power by those who wish to concentrate wealth in their own hands.",
+              "rationale": "Compute monopolization."
+            },
+            {
+              "code": "AI_GEOPOLITICAL_RIVALRY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_OPPORTUNITY_RISK_DUALITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_TRANSFORMATIVE_ERA",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_TECH_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_THREAT_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            }
+          ],
+          "institutions": [
+            {
+              "commitment_detail": "",
+              "rationale": "Calls for new AI security architecture modelled on chemical weapons regime.",
+              "mechanism": "New body/verification regime",
+              "reference_type": "inferred description",
+              "stances": {
+                "mention": true,
+                "welcome": false,
+                "support": true,
+                "request": true,
+                "concern": false,
+                "opposition": false,
+                "commitment": false
+              },
+              "requested_functions": [
+                "norms/rules/standards",
+                "monitoring/oversight/verification"
+              ],
+              "un_role": "generic",
+              "quote": "We are coming to an agreement to build a new international architecture We did this on chemical weapons, we did this when it came to other risks"
+            },
+            {
+              "commitment_detail": "France will continue AI security work in the G7 and with the G20 chair.",
+              "rationale": "State commits to G7/G20 cooperation.",
+              "mechanism": "Dialogue",
+              "reference_type": "explicit name",
+              "stances": {
+                "mention": true,
+                "welcome": false,
+                "support": true,
+                "request": false,
+                "concern": false,
+                "opposition": false,
+                "commitment": true
+              },
+              "requested_functions": [
+                "coordination"
+              ],
+              "un_role": "generic",
+              "quote": "we want to continue within the framework of the G7, but also working closely with our UK colleagues who will hold the chairmanship of the G20 next year."
+            }
+          ],
+          "keywords": [
+            {
+              "normalized_term": "international architecture",
+              "original_term": "new international architecture",
+              "quote": "build a new international architecture"
+            },
+            {
+              "normalized_term": "compute monopolization",
+              "original_term": "monopolizing the ability to make calculations",
+              "quote": "those who are monopolizing the ability to make calculations"
+            }
+          ],
+          "uncovered_concept": ""
+        }
+      }
+    ]
+  }
+}

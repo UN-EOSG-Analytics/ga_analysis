@@ -1,0 +1,61 @@
+{
+  "request_hash": "e46688dc002593defbe51b8e3fe13e4ecd35ec1721493491b578792002874ff8",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_HUMAN_RIGHTS_ETHICS",
+        "label": "Regulating AI to protect rights and freedoms",
+        "definition": "AI and new technologies must be regulated democratically and aligned with human dignity, privacy, personal freedoms and democratic values.",
+        "inclusion": "Passages calling for regulation of AI in the name of rights, privacy, dignity or freedom of conscience and expression.",
+        "exclusion": "Calls for regulation framed around safety, military use or development without rights content.",
+        "boundary_cases": "Calls for 'democratic regulation' of platforms and AI count here when tied to rights and dignity.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2019_BEL:12",
+            "quote": "artificial intelligence and the data economy must, however, be better regulated and aligned with personal freedoms, respect for our private lives"
+          },
+          {
+            "passage_id": "verbatim_en_2023_SVK:10",
+            "quote": "Any technology must be used with one goal in mind — ensuring the dignity and rights of every individual."
+          }
+        ]
+      },
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "Disruptive technology cuts both ways",
+        "definition": "Recognition that AI and other disruptive technologies work for both good and bad, rejecting naive techno-optimism.",
+        "inclusion": "Passages stating that AI and related technologies are not automatically a force for good and can cut both ways.",
+        "exclusion": "Passages naming only harms.",
+        "boundary_cases": "Statements that technology outpaces human adaptation lean here when benefits are also acknowledged.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_FIN:10",
+            "quote": "We forgot that all disruptive technologies work in both directions, good and bad."
+          }
+        ]
+      },
+      {
+        "code": "AI_DISINFORMATION",
+        "label": "AI and platforms amplifying crises",
+        "definition": "AI grouped with social media platforms as amplifiers of disinformation, hate speech and existing crises.",
+        "inclusion": "Passages linking AI or platforms to disinformation or hate speech acting as accelerants of crises.",
+        "exclusion": "Passages that discuss social media without AI.",
+        "boundary_cases": "Where AI is only mentioned in a list with platforms, code here if the harm is information-related.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_SVK:10",
+            "quote": "social media platforms, artificial intelligence and other emerging technologies can act like steroids on our current crises"
+          }
+        ]
+      }
+    ],
+    "rationale": "European passages treating AI as part of a broader set of emerging technologies that need rights-based regulation; Finland stresses dual use, Slovakia links AI with platform disinformation, and Belgium links AI regulation to privacy and freedoms."
+  }
+}

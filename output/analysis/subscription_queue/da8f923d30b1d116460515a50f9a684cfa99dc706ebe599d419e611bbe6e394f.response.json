@@ -1,0 +1,28 @@
+{
+  "request_hash": "da8f923d30b1d116460515a50f9a684cfa99dc706ebe599d419e611bbe6e394f",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_c"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_CHN:1",
+      "verbatim_en_2026_CHN:2",
+      "verbatim_en_2026_CHN:3",
+      "verbatim_en_2026_CHN:4"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_CHN:2",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Facing a new scientific and technological revolution and industrial transformation, especially the dynamic development of artificial intelligence, we should take a people-centered approach and develop AI for the positive and for good.",
+        "rationale": "Calls for people-centered AI development that narrows the digital divide and shares development benefits."
+      }
+    ]
+  }
+}

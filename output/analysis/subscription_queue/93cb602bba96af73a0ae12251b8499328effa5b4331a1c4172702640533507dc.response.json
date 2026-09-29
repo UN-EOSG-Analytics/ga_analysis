@@ -1,0 +1,32 @@
+{
+  "request_hash": "93cb602bba96af73a0ae12251b8499328effa5b4331a1c4172702640533507dc",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_b"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_BHR:1",
+      "verbatim_en_2026_BHR:2",
+      "verbatim_en_2026_BHR:3",
+      "verbatim_en_2026_BHR:4",
+      "verbatim_en_2026_BHR:5",
+      "verbatim_en_2026_BHR:6",
+      "verbatim_en_2026_BHR:7",
+      "verbatim_en_2026_BHR:8"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_BHR:6",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "His Royal Highness, the Crown Prince and Prime Minister, called for the adoption of an international treaty governing the development of artificial intelligence.",
+        "rationale": "Renews the call for binding international AI safeguards to support innovation and peace."
+      }
+    ]
+  }
+}

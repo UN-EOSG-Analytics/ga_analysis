@@ -1,0 +1,31 @@
+{
+  "request_hash": "ba7117cb94020081d54837fcbd3cbb1ff7596422ea8d4337157dd7736c91c687",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_c"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_NLD:1",
+      "verbatim_en_2026_NLD:2",
+      "verbatim_en_2026_NLD:3",
+      "verbatim_en_2026_NLD:4",
+      "verbatim_en_2026_NLD:5",
+      "verbatim_en_2026_NLD:6",
+      "verbatim_en_2026_NLD:7"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_NLD:3",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Take the question of how we handle AI. We face a choice. Do we let a small group of companies and countries take all the decisions while the rest of us simply look on? Or do we decide together, within the logical setting of the United Nations, what our future should look like?",
+        "rationale": "Advocates collective UN governance of AI rather than concentrated corporate and state control."
+      }
+    ]
+  }
+}

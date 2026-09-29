@@ -1,0 +1,29 @@
+{
+  "request_hash": "db87d03274cc32c6f60fe495062a21295958883cd4783ddf56ecbdff10a27ce4",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_TECH_LIST_MENTION",
+        "label": "AI listed in multilateral agenda",
+        "definition": "AI named only as one item on the shared global agenda requiring multilateralism, with no further discussion of AI.",
+        "inclusion": "Include passages where AI appears only in a list of global agenda items (conflicts, climate, development).",
+        "exclusion": "Exclude passages that discuss AI governance, risks or benefits specifically.",
+        "boundary_cases": "Generic references to 'technology' coalitions without AI naming are not AI mentions.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_FIN:3",
+            "quote": "ranging from conflicts and climate change to sustainable development and artificial intelligence"
+          }
+        ]
+      }
+    ],
+    "rationale": "Finland's passage is about multilateralism versus a multipolar order; AI appears only once as an item on the shared agenda, a passing list mention."
+  }
+}

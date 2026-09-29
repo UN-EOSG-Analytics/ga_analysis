@@ -1,0 +1,31 @@
+{
+  "request_hash": "da8669da464ff4add1015dc2aa4fb0af93df89eeba8860429d3c12a72afd134e",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_c"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_COM:1",
+      "verbatim_en_2026_COM:2",
+      "verbatim_en_2026_COM:3",
+      "verbatim_en_2026_COM:4",
+      "verbatim_en_2026_COM:5",
+      "verbatim_en_2026_COM:6",
+      "verbatim_en_2026_COM:7"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_COM:4",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "This is a prerequisite for addressing climate change. The risks of artificial intelligence and the imperative of sustainable development.",
+        "rationale": "Identifies AI risks among global challenges whose response depends on restoring international credibility and peace."
+      }
+    ]
+  }
+}

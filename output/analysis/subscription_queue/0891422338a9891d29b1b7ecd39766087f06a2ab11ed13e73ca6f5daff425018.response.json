@@ -1,0 +1,31 @@
+{
+  "request_hash": "0891422338a9891d29b1b7ecd39766087f06a2ab11ed13e73ca6f5daff425018",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_a"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_SLE:1",
+      "verbatim_en_2026_SLE:2",
+      "verbatim_en_2026_SLE:3",
+      "verbatim_en_2026_SLE:4",
+      "verbatim_en_2026_SLE:5",
+      "verbatim_en_2026_SLE:6",
+      "verbatim_en_2026_SLE:7"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_SLE:5",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Artificial intelligence can improve, of course, education, health, agriculture, and public administration. It can also widen the inequality if infrastructure, knowledge, and rule-making remains concentrated in a few countries. Developing nations must help shape the standards that will govern technologies affecting their people.",
+        "rationale": "Advocates developing-country participation in AI standards to distribute benefits and avoid concentrated power."
+      }
+    ]
+  }
+}

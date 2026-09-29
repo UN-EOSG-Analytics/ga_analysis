@@ -1,0 +1,28 @@
+{
+  "request_hash": "1d8eb911f5503f6734016a5eb9c9092f9357b37082e2e20834ebdbc9516d6c32",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "root"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_CRI:1",
+      "verbatim_en_2026_CRI:2",
+      "verbatim_en_2026_CRI:3",
+      "verbatim_en_2026_CRI:4"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_CRI:2",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Artificial intelligence can boost cyber terrorism and other crimes that we cannot yet envisage.",
+        "rationale": "Warns of AI-enabled crime, cites high domestic AI uptake, and calls for international cooperation, information exchange and stronger legal institutions; uptake figures remain attributed speech claims."
+      }
+    ]
+  }
+}

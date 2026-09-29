@@ -1,0 +1,30 @@
+{
+  "request_hash": "2d585764938777a35439fe8f74fe0ac0daaca049121b39b53faf9f68be71d33a",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "root"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_GRD:1",
+      "verbatim_en_2026_GRD:2",
+      "verbatim_en_2026_GRD:3",
+      "verbatim_en_2026_GRD:4",
+      "verbatim_en_2026_GRD:5",
+      "verbatim_en_2026_GRD:6"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_GRD:5",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "we must develop credible AI governance frameworks that encourage innovation while protecting people, privacy, security, democratic values, and public trust.",
+        "rationale": "Balances AI applications and equitable access with rights, privacy, security, human responsibility and youth education for ethical AI governance."
+      }
+    ]
+  }
+}

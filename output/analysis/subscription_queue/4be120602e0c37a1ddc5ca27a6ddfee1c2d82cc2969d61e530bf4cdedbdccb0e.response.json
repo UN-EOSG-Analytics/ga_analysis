@@ -1,0 +1,44 @@
+{
+  "request_hash": "4be120602e0c37a1ddc5ca27a6ddfee1c2d82cc2969d61e530bf4cdedbdccb0e",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_c"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_BTN:1",
+      "verbatim_en_2026_BTN:2",
+      "verbatim_en_2026_BTN:3",
+      "verbatim_en_2026_BTN:4",
+      "verbatim_en_2026_BTN:5",
+      "verbatim_en_2026_BTN:6"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_BTN:1",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "How would we use technology and especially artificial intelligence?",
+        "rationale": "Includes deliberate AI use among institutional design questions for the new city, which the speaker says have been answered."
+      },
+      {
+        "passage_id": "verbatim_en_2026_BTN:3",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "That electricity will power GMC and the industries of the future. advanced manufacturing, scientific research, artificial intelligence and data centers, clean renewable power.",
+        "rationale": "Plans to power AI and data center industries with renewable energy."
+      },
+      {
+        "passage_id": "verbatim_en_2026_BTN:4",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Artificial intelligence and data center projects are moving forward, and nearly $5 billion in projects are under active negotiation.",
+        "rationale": "Describes active AI and data center investment projects within the new city's development."
+      }
+    ]
+  }
+}

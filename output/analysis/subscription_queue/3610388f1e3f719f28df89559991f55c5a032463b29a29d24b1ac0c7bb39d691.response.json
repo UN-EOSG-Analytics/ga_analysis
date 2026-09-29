@@ -1,0 +1,57 @@
+{
+  "request_hash": "3610388f1e3f719f28df89559991f55c5a032463b29a29d24b1ac0c7bb39d691",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_CLIMATE_ENVIRONMENT",
+        "label": "AI for emissions reduction and climate",
+        "definition": "AI applied to big data and IoT is framed as enabling emissions reduction, efficient logistics, renewables and circular economy.",
+        "inclusion": "Include passages linking AI to climate mitigation or environmental efficiency.",
+        "exclusion": "Exclude general digitalization-for-climate claims that do not name AI.",
+        "boundary_cases": "If AI is only one item in a list of climate-helpful technologies without explanation, also code AI_TECH_LIST_MENTION.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2020_ESP:21",
+            "quote": "Artificial intelligence applied to big data and the internet of things facilitate more efficient logistics and transportation, emissions reduction"
+          }
+        ]
+      },
+      {
+        "code": "AI_HUMAN_RIGHTS_ETHICS",
+        "label": "Ethical, human-centred digital technologies including AI",
+        "definition": "Development and use of digital technologies including AI must be ethical and human-centred, with rights protected online and offline.",
+        "inclusion": "Include passages requiring ethical principles or human-centredness in AI.",
+        "exclusion": "Exclude passages about digital access alone.",
+        "boundary_cases": "Calls for UN digital cooperation in the same passage may also be coded AI_UN_ROLE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2020_ROU:27",
+            "quote": "The development and use of Digital technologies, including Artificial Intelligence, based on ethical principles, must be human-centred."
+          }
+        ]
+      },
+      {
+        "code": "AI_PANDEMIC_DIGITAL_ACCELERATION",
+        "label": "COVID-19 accelerating AI and digital deployment",
+        "definition": "AI is mentioned as part of a pandemic-accelerated digital revolution (with robotics, e-government, remote work), to be harnessed while mitigating negative impacts.",
+        "inclusion": "Include passages tying AI deployment to COVID-19 or broad digital revolution alongside other digital tools.",
+        "exclusion": "Exclude substantive AI-specific governance or risk discussion.",
+        "boundary_cases": "This is close to AI_TECH_LIST_MENTION; code both when AI is merely listed.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2020_SGP:24",
+            "quote": "COVID-19 has accelerated the deployment of artificial intelligence, robotics, digital payments, e-government services, and remote work."
+          }
+        ]
+      }
+    ],
+    "rationale": "These 2020 passages embed AI in the wider digital transformation during COVID-19: as a climate-mitigation tool (Spain), under ethical human-centred principles (Romania), and as part of pandemic-accelerated digital deployment (Singapore)."
+  }
+}

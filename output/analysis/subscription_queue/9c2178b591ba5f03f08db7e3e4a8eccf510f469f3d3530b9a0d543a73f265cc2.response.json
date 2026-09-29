@@ -1,0 +1,33 @@
+{
+  "request_hash": "9c2178b591ba5f03f08db7e3e4a8eccf510f469f3d3530b9a0d543a73f265cc2",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_HUMAN_RIGHTS_ETHICS",
+        "label": "AI should serve, not hinder, humanity",
+        "definition": "Aspirational statement that AI should serve humanity rather than hinder it, embedded in a vision of freedom and non-oppression.",
+        "inclusion": "Passages expressing that AI should serve humanity, freedom or human dignity, even in brief aspirational form.",
+        "exclusion": "Passages that make concrete regulatory proposals or name specific AI harms.",
+        "boundary_cases": "A passage split mid-sentence ('serves rather than' / 'hinders humanity') counts when the clause about AI is visible in either part.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_EST:1",
+            "quote": "I want to live in a world where everybody can feel free, where artificial intelligence serves rather than"
+          },
+          {
+            "passage_id": "verbatim_en_2024_EST:2",
+            "quote": "hinders humanity and where nobody has to fear oppression based on gender, race, nation, beliefs or one’s thoughts"
+          }
+        ]
+      }
+    ],
+    "rationale": "Two consecutive fragments of Estonia's 2024 speech containing a brief aspirational clause that AI should serve rather than hinder humanity, within a broader vision of freedom."
+  }
+}

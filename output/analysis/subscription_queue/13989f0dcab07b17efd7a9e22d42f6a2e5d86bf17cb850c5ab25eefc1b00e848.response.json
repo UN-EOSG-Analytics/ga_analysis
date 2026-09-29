@@ -1,0 +1,37 @@
+{
+  "request_hash": "13989f0dcab07b17efd7a9e22d42f6a2e5d86bf17cb850c5ab25eefc1b00e848",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_a"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2025_EST:1",
+      "verbatim_en_2025_EST:2",
+      "verbatim_en_2025_EST:3",
+      "verbatim_en_2025_EST:4",
+      "verbatim_en_2025_EST:5",
+      "verbatim_en_2025_EST:6"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2025_EST:5",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Therefore, Estonia is making a new leap, the artificial intelligence leap. We are again providing the best technological tools available to our students and teachers, so that we keep comparative edge in education for years to come.",
+        "rationale": "Describes a national AI education initiative supplying tools to students and teachers."
+      },
+      {
+        "passage_id": "verbatim_en_2025_EST:6",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Equipping citizens with the skills to use AI wisely and responsibly is essential. They must serve dignity, development, and human rights, not the other way around.",
+        "rationale": "Calls for AI skills and responsible use that serves human rights and development."
+      }
+    ]
+  }
+}

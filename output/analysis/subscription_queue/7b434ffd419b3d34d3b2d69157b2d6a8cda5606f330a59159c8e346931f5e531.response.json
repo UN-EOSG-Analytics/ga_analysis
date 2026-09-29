@@ -1,0 +1,38 @@
+{
+  "request_hash": "7b434ffd419b3d34d3b2d69157b2d6a8cda5606f330a59159c8e346931f5e531",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "root"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_BEN:1",
+      "verbatim_en_2026_BEN:2",
+      "verbatim_en_2026_BEN:3",
+      "verbatim_en_2026_BEN:4",
+      "verbatim_en_2026_BEN:5",
+      "verbatim_en_2026_BEN:6",
+      "verbatim_en_2026_BEN:7"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_BEN:2",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "AI is already transforming knowledge, work, our economies, education and information.",
+        "rationale": "Frames AI transformation as requiring collective decisions for the common good and anticipatory governance."
+      },
+      {
+        "passage_id": "verbatim_en_2026_BEN:5",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Therefore, Benin is in favor of international AI governance that's inclusive, responsible, and development-oriented.",
+        "rationale": "Calls for inclusive AI governance and African design and production capacity, balancing development applications against dependency on external data, compute and technology."
+      }
+    ]
+  }
+}

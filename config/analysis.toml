@@ -8,7 +8,7 @@ additional_paid_api_allowed = false
 [scope]
 years = [2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]
 awaiting_user_sources = []
-partial_years = [2026]
+partial_years = []
 coverage_file = "output/corpus_preparation/country_year_coverage.csv"
 unit = "one Member State main General Debate address per country-year"
 position_attribution = "The main address delivered on behalf of a Member State represents that country's position for the given year"
@@ -20,7 +20,7 @@ policy = "English verbatim primary; 2025 and 2026 automatic transcripts accepted
 accepted_automatic_transcript_years = [2025, 2026]
 acceptance_basis = "user instruction: supplied transcripts are the original corpus; PDF counterparts are not required"
 preserve_automatic_transcription_quality_flags = true
-minimum_expected_speeches = { "2017" = 193, "2018" = 193, "2019" = 192, "2020" = 190, "2021" = 191, "2022" = 190, "2023" = 189, "2024" = 190, "2025" = 189, "2026" = 171 }
+minimum_expected_speeches = { "2017" = 193, "2018" = 193, "2019" = 192, "2020" = 190, "2021" = 191, "2022" = 190, "2023" = 189, "2024" = 190, "2025" = 189, "2026" = 191 }
 
 [preprocessing]
 passage_max_words = 350

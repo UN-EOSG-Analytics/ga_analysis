@@ -1,0 +1,57 @@
+{
+  "request_hash": "afb40d841901044c7baf8f8d4ba0165532e84dbb0b9f98b280ac1be9e2d6d7ee",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "New international rules for 4IR technologies",
+        "definition": "The fourth industrial revolution, including AI and robotization, is said to demand new international rules of conduct and multilateral solutions.",
+        "inclusion": "Include calls for new international rules or normative arrangements for AI and related technologies.",
+        "exclusion": "Exclude passages mentioning AI only as a technology trend without rule-making demands.",
+        "boundary_cases": "Where the UN is named as central rule-definer, also code AI_UN_ROLE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2020_PRT:9",
+            "quote": "the impact of new technologies — on the economy, the work world and relations among States — will demand new rules of conduct at the international level"
+          }
+        ]
+      },
+      {
+        "code": "AI_UN_ROLE",
+        "label": "UN central in defining technology rules",
+        "definition": "The UN should play a central role in defining rules for new technologies by providing compromise solutions safeguarding the public interest.",
+        "inclusion": "Include statements assigning the UN a central role in AI or tech governance.",
+        "exclusion": "Exclude governance calls not referencing the UN.",
+        "boundary_cases": "Generic UN centrality without technology context is not coded.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2020_PRT:9",
+            "quote": "The UN must play a central role in defining them by providing compromise solutions capable of safeguard the public interest."
+          }
+        ]
+      },
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "Fourth industrial revolution as challenge and opportunity",
+        "definition": "The fourth industrial revolution including AI is framed as both a challenge and an opportunity, with effects on economy and work.",
+        "inclusion": "Include explicit challenge-and-opportunity framings of AI or 4IR.",
+        "exclusion": "Exclude one-sided framings.",
+        "boundary_cases": "Mention of impacts on the 'work world' may also support AI_ECONOMY_LABOR.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2020_PRT:9",
+            "quote": "What is know called the fourth industrial revolution presents both a challenge and an opportunity."
+          }
+        ]
+      }
+    ],
+    "rationale": "A single Portuguese passage frames AI within the fourth industrial revolution as challenge and opportunity, and calls for new international rules with the UN at the centre."
+  }
+}

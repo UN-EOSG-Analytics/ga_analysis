@@ -1,0 +1,111 @@
+{
+  "request_hash": "86e1fb3ec5f3e08751582015ac60ae808dfebe09bd9ccfe5a470d009dcd309cb",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Common rules for AI before the strongest impose",
+        "definition": "Calls for international rules, oversight and governance mechanisms for AI so technology does not operate in a rule-free zone or under the rules of the most powerful.",
+        "inclusion": "Include passages calling for global governance mechanisms, common rules, or mutual oversight of AI/technology.",
+        "exclusion": "Exclude calls for UN reform (e.g. Security Council) that do not concern technology.",
+        "boundary_cases": "Passages framing the UN as the venue for AI rules may also be coded AI_UN_ROLE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_ITA:6",
+            "quote": "This is precisely the task of the United Nations, to establish common rules before events or the strongest actors impose their own."
+          },
+          {
+            "passage_id": "verbatim_en_2023_ITA:21",
+            "quote": "We need global governance mechanisms that ensure that such technologies respect ethical boundaries"
+          }
+        ]
+      },
+      {
+        "code": "AI_HUMAN_RIGHTS_ETHICS",
+        "label": "Algorethics and human conscience over algorithms",
+        "definition": "Ethical framing of AI: technology must serve humankind, respect ethical limits, and never replace human conscience or oversight.",
+        "inclusion": "Include references to algorethics, human-centred technology, and warnings that algorithms cannot replace human conscience.",
+        "exclusion": "Exclude purely institutional governance calls without ethical content.",
+        "boundary_cases": "Moral arguments about technology 'capable of striking' lean toward AI_MILITARY_WEAPONS if weapons are the focus; code both when ethics is the frame.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_ITA:21",
+            "quote": "We must guarantee the practical application of the concept of “algorethics”, that is, ethics for algorithms."
+          },
+          {
+            "passage_id": "verbatim_en_2026_ITA:5",
+            "quote": "no algorithm can take the place of human conscience"
+          }
+        ]
+      },
+      {
+        "code": "AI_SOVEREIGNTY_CONCENTRATION",
+        "label": "AI control creating new domination",
+        "definition": "Concern that those controlling AI gain enormous advantage, producing new inequalities, dependencies, concentrations of power or domination.",
+        "inclusion": "Include passages warning of power concentration, dependence or domination arising from control of AI.",
+        "exclusion": "Exclude generic inequality statements without reference to control of technology.",
+        "boundary_cases": "Mentions of 'AI competition' among states without dependence or domination language go to AI_GEOPOLITICAL_COMPETITION.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_ITA:5",
+            "quote": "Those who control these technologies will enjoy an enormous advantage over those who are left behind."
+          }
+        ]
+      },
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "Govern AI without demonizing it",
+        "definition": "Balanced framing that AI brings serious risks (job loss, manipulation, unsupervised decisions) yet unimaginable opportunities, so it should be governed rather than rejected.",
+        "inclusion": "Include passages that explicitly weigh AI's risks against its benefits and reject both fear and unregulated adoption.",
+        "exclusion": "Exclude passages mentioning only benefits or only risks.",
+        "boundary_cases": "A long passage enumerating risks followed by benefits counts here, with specific risks also codable separately.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_ITA:5",
+            "quote": "But governing innovation does not mean demonizing it."
+          },
+          {
+            "passage_id": "verbatim_en_2026_ITA:5",
+            "quote": "Turning back is neither possible nor desirable, but neither can we hand over our future to technology without rules."
+          }
+        ]
+      },
+      {
+        "code": "AI_GEOPOLITICAL_COMPETITION",
+        "label": "AI competition as front of global fragmentation",
+        "definition": "AI rivalry among powers presented as one front of a broader breakdown of world order alongside wars, trade wars and hybrid attacks.",
+        "inclusion": "Include passages naming AI competition or race between states as part of geopolitical fragmentation.",
+        "exclusion": "Exclude passages on AI dependence of small states (AI_SOVEREIGNTY_CONCENTRATION).",
+        "boundary_cases": "If AI competition is only listed with no link to geopolitics, consider AI_CRISIS_LIST_MENTION.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_ITA:1",
+            "quote": "nor are trade wars, AI competition, hybrid attacks, and their economic and social repercussions"
+          }
+        ]
+      },
+      {
+        "code": "AI_CAPACITY_BUILDING",
+        "label": "AI hub for African startups",
+        "definition": "Donor-country initiatives providing AI infrastructure, hubs or partnerships to build AI capacity in developing regions.",
+        "inclusion": "Include descriptions of AI hubs, partnerships or programmes supporting developing-country AI ecosystems.",
+        "exclusion": "Exclude domestic national AI strategies of the speaker's own country.",
+        "boundary_cases": "An AI hub described as serving sustainable development may also be coded AI_DEVELOPMENT_SDGS.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_ITA:5",
+            "quote": "the opening of the AI hub for sustainable development, involving hundreds of African startups in the development of artificial intelligence"
+          }
+        ]
+      }
+    ],
+    "rationale": "Italy's speeches consistently frame AI as requiring politics and common rules, with ethical (algorethics) grounding; they vary between risk enumeration, geopolitical competition, and development cooperation in Africa. One sample (2023_ITA:22) concerns Security Council reform with no AI content."
+  }
+}

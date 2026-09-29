@@ -1,0 +1,43 @@
+{
+  "request_hash": "d12ad4c316fea83e827cc043f51aba95152e3f8d96d9868a9cdf8db8e914e52a",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_REPRESENTATION_KNOWLEDGE",
+        "label": "AI shaping digital representations of world",
+        "definition": "AI discussed as a system through which the world is interpreted via digital and cartographic data, making fair representation in AI-mediated knowledge important.",
+        "inclusion": "Include passages concerned with how AI systems interpret, represent or transmit knowledge of the world (maps, data, images).",
+        "exclusion": "Exclude passages about AI disinformation or election manipulation (AI_DISINFORMATION).",
+        "boundary_cases": "Mentions of AI innovators as partners in a knowledge initiative fall here only if linked to representation; otherwise AI_TECH_LIST_MENTION.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_TGO:6",
+            "quote": "artificial intelligence system increasingly interpret our planet through digital data and cartographic representation"
+          }
+        ]
+      },
+      {
+        "code": "AI_TECH_LIST_MENTION",
+        "label": "AI innovators listed as cooperation partners",
+        "definition": "AI named in passing among actors or technologies to be enlisted in a broader cooperation initiative.",
+        "inclusion": "Include passages where AI appears only as one item in a list of stakeholders or technologies without elaboration.",
+        "exclusion": "Exclude passages that explain AI's role or impact.",
+        "boundary_cases": "If the same passage explains AI's effect on the issue, code the substantive theme.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_TGO:5",
+            "quote": "the innovators shaping the technologies of tomorrow, including artificial intelligence"
+          }
+        ]
+      }
+    ],
+    "rationale": "Both passages come from Togo's 'Correct the Map' appeal: one lists AI innovators among partners, the other notes that AI systems increasingly interpret the planet via digital cartographic data, making representation a concern."
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "request_hash": "efa15b52c30584f6a72fd5eac011fef58b9d57dfb6334d2351d51c47e0ec6594",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_SUPPLY_CHAIN_GEOPOLITICS",
+        "label": "Chip supply chains and geopolitical conflict",
+        "definition": "AI mentioned as dependent on microchip supply chains threatened by geopolitical conflict (e.g. Taiwan Strait).",
+        "inclusion": "Include passages linking AI to semiconductor supply, chip production, or geopolitical risks to AI hardware.",
+        "exclusion": "Exclude passages about AI governance, ethics or applications.",
+        "boundary_cases": "If AI is merely one item in a list of chip-dependent sectors, also code AI_TECH_LIST_MENTION.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_PRY:4",
+            "quote": "It affects the microchips that power industry, defense, and artificial intelligence."
+          }
+        ]
+      },
+      {
+        "code": "AI_TECH_LIST_MENTION",
+        "label": "AI named in list of chip-powered sectors",
+        "definition": "AI appears only as one item in a list of sectors, without discussion of AI itself.",
+        "inclusion": "Include passages where AI is incidental to an argument about another topic.",
+        "exclusion": "Exclude passages developing a claim about AI.",
+        "boundary_cases": "Passing mention in a geopolitical argument counts here even if the argument is substantive about something else.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_PRY:4",
+            "quote": "If oil was the fuel of the 20th century, microchips are the fuel of the 21st."
+          }
+        ]
+      }
+    ],
+    "rationale": "Single Paraguayan passage about Taiwan and geopolitical risk; AI is mentioned only incidentally as a sector dependent on microchips threatened by conflict."
+  }
+}

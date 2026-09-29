@@ -1,0 +1,400 @@
+{
+  "request_hash": "e8ce4bba4a6fa511f908ab44f03d1f851080c172919fd96de88bb4139f5b6d7b",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "results": [
+      {
+        "passage_id": "verbatim_en_2026_ALB:7",
+        "classification": {
+          "themes": [
+            {
+              "code": "AI_GLOBAL_GOVERNANCE",
+              "value": "Yes",
+              "quote": "Those attacking our countries already cooperate across jurisdictions. Our countries, our democracies, first and foremost, must learn to do the same.",
+              "rationale": "Calls for cross-border cooperative mechanisms among democracies against AI manipulation."
+            },
+            {
+              "code": "AI_INCLUSIVE_GOVERNANCE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_GOVERNANCE_SKEPTICISM",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_UN_ROLE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_MILITARY_WEAPONS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_PEACE_APPLICATIONS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_SAFETY_EXISTENTIAL",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_HUMAN_CONTROL",
+              "value": "Yes",
+              "quote": "must preserve a clear chain of human and legal accountability.",
+              "rationale": "Public AI use must keep human and legal accountability; warns humans become invisible behind machines."
+            },
+            {
+              "code": "AI_HUMAN_RIGHTS_ETHICS",
+              "value": "Yes",
+              "quote": "Let us ensure that no democracy wakes up after an election to discover that its people exercise their freedom of choice inside the world secretly designed for them",
+              "rationale": "AI manipulation framed as a threat to freedom and democracy."
+            },
+            {
+              "code": "AI_BIAS_CULTURAL_DIVERSITY",
+              "value": "Uncertain",
+              "quote": "And smaller nations and smaller languages must not be abandoned outside this protective architecture.",
+              "rationale": "Concern for smaller languages within AI protection architecture."
+            },
+            {
+              "code": "AI_DISINFORMATION",
+              "value": "Yes",
+              "quote": "democracies must create a shared early warning system so that evidence of artificial intelligence driven manipulation can travel between all like minded nations as quickly as the manipulation itself.",
+              "rationale": "AI-driven manipulation of information and elections."
+            },
+            {
+              "code": "AI_CYBER_SECURITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DIGITAL_DIVIDE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CAPACITY_BUILDING",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DEVELOPMENT_SDGS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_RESOURCE_FOOTPRINT",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_ECONOMY_LABOR",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_YOUTH_EDUCATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CHILD_PROTECTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_NATIONAL_STRATEGY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_SOVEREIGNTY_CONCENTRATION",
+              "value": "Yes",
+              "quote": "Digital sovereignty cannot become a privilege, again, reserved for the richest states.",
+              "rationale": "Digital sovereignty and dependence on others for understanding reality."
+            },
+            {
+              "code": "AI_GEOPOLITICAL_RIVALRY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_OPPORTUNITY_RISK_DUALITY",
+              "value": "Yes",
+              "quote": "between those who use artificial intelligence to enlighten and those who use it to obscure, between those who use it to empower their own people and those who use it to manipulate them",
+              "rationale": "AI as a neutral amplifier whose effects depend on human purposes."
+            },
+            {
+              "code": "AI_TRANSFORMATIVE_ERA",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_TECH_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_THREAT_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            }
+          ],
+          "institutions": [
+            {
+              "commitment_detail": "",
+              "rationale": "Proposes a new shared early-warning mechanism among democracies for AI-driven manipulation.",
+              "mechanism": "New body/verification regime",
+              "reference_type": "inferred description",
+              "stances": {
+                "mention": true,
+                "welcome": false,
+                "support": false,
+                "request": true,
+                "concern": false,
+                "opposition": false,
+                "commitment": false
+              },
+              "requested_functions": [
+                "monitoring/oversight/verification",
+                "coordination"
+              ],
+              "un_role": "generic",
+              "quote": "democracies must create a shared early warning system so that evidence of artificial intelligence driven manipulation can travel between all like minded nations as quickly as the manipulation itself."
+            }
+          ],
+          "keywords": [
+            {
+              "normalized_term": "human and legal accountability",
+              "original_term": "human and legal accountability",
+              "quote": "must preserve a clear chain of human and legal accountability."
+            },
+            {
+              "normalized_term": "ai-driven manipulation",
+              "original_term": "artificial intelligence driven manipulation",
+              "quote": "evidence of artificial intelligence driven manipulation"
+            },
+            {
+              "normalized_term": "digital sovereignty",
+              "original_term": "Digital sovereignty",
+              "quote": "Digital sovereignty cannot become a privilege, again, reserved for the richest states."
+            },
+            {
+              "normalized_term": "algorithmic army",
+              "original_term": "algorithmic army",
+              "quote": "Let us ensure that no citizen is left alone before an increasingly terrifying algorithmic army."
+            }
+          ],
+          "uncovered_concept": ""
+        }
+      },
+      {
+        "passage_id": "verbatim_en_2026_ALB:8",
+        "classification": {
+          "themes": [
+            {
+              "code": "AI_GLOBAL_GOVERNANCE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_INCLUSIVE_GOVERNANCE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_GOVERNANCE_SKEPTICISM",
+              "value": "Uncertain",
+              "quote": "We choose acceleration, no surrender.",
+              "rationale": "Pro-acceleration stance (against pauses), though combined with disclosure rules."
+            },
+            {
+              "code": "AI_UN_ROLE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_MILITARY_WEAPONS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_PEACE_APPLICATIONS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_SAFETY_EXISTENTIAL",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_HUMAN_CONTROL",
+              "value": "Yes",
+              "quote": "The question is whom it will obey. Under what law and in the service of what purpose?",
+              "rationale": "AI must obey accountable humans under law; augmentation not atrophy of human capacity."
+            },
+            {
+              "code": "AI_HUMAN_RIGHTS_ETHICS",
+              "value": "Yes",
+              "quote": "We choose freedom of speech, We know what it is to live without it.",
+              "rationale": "Freedom of speech framing of AI governance choices."
+            },
+            {
+              "code": "AI_BIAS_CULTURAL_DIVERSITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DISINFORMATION",
+              "value": "Yes",
+              "quote": "we refuse to confuse it with the unchecked freedom of machines, money, and foreign powers to reach everyone everywhere without disclosure. We choose the truth",
+              "rationale": "Undisclosed machine amplification versus shared commitment to reality."
+            },
+            {
+              "code": "AI_CYBER_SECURITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DIGITAL_DIVIDE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CAPACITY_BUILDING",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DEVELOPMENT_SDGS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_RESOURCE_FOOTPRINT",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_ECONOMY_LABOR",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_YOUTH_EDUCATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CHILD_PROTECTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_NATIONAL_STRATEGY",
+              "value": "Yes",
+              "quote": "Albania has made its own modest choice. We choose acceleration, no surrender. We choose innovation, no abdication. We choose augmentation, no atrophy of human capacity.",
+              "rationale": "National AI policy stance."
+            },
+            {
+              "code": "AI_SOVEREIGNTY_CONCENTRATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_GEOPOLITICAL_RIVALRY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_OPPORTUNITY_RISK_DUALITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_TRANSFORMATIVE_ERA",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_TECH_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_THREAT_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            }
+          ],
+          "institutions": [],
+          "keywords": [
+            {
+              "normalized_term": "acceleration",
+              "original_term": "acceleration",
+              "quote": "We choose acceleration, no surrender."
+            },
+            {
+              "normalized_term": "human augmentation",
+              "original_term": "augmentation",
+              "quote": "We choose augmentation, no atrophy of human capacity."
+            }
+          ],
+          "uncovered_concept": ""
+        }
+      }
+    ]
+  }
+}

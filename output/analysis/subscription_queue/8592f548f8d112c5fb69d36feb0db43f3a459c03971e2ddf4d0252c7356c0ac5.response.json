@@ -1,0 +1,44 @@
+{
+  "request_hash": "8592f548f8d112c5fb69d36feb0db43f3a459c03971e2ddf4d0252c7356c0ac5",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "root"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2025_CRI:1",
+      "verbatim_en_2025_CRI:2",
+      "verbatim_en_2025_CRI:3",
+      "verbatim_en_2025_CRI:4",
+      "verbatim_en_2025_CRI:5",
+      "verbatim_en_2025_CRI:6"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2025_CRI:1",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Today, however, the mission faces three significant global challenges: nuclear weapons, the triple planetary crisis, and the governance of artificial intelligence.",
+        "rationale": "Frames AI governance as one of three major challenges facing the United Nations."
+      },
+      {
+        "passage_id": "verbatim_en_2025_CRI:4",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "No algorithm should ever make life or death decisions.",
+        "rationale": "Discusses AI development benefits and access divides alongside disinformation, cyberattacks and autonomous weapons, demanding binding rules and meaningful human control."
+      },
+      {
+        "passage_id": "verbatim_en_2025_CRI:5",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Costa Rica, together with Spain, has led the process that established the independent international scientific panel and the global dialogue on AI governance to be launched tomorrow.",
+        "rationale": "Reports leadership establishing UN AI science and governance institutions in response to AI risks and opportunities."
+      }
+    ]
+  }
+}

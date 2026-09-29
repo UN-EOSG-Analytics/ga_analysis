@@ -1,0 +1,87 @@
+{
+  "request_hash": "f8c90197969c3bc20fd58f20bc56ee39d29ecf72e59c0a70a2aa2e5e983e0d8b",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_MILITARY_WEAPONS",
+        "label": "Binding ban on lethal autonomous weapons",
+        "definition": "Concern over weapons with increasing autonomy and calls for a legally binding instrument with prohibitions and restrictions ensuring meaningful human control over the use of force.",
+        "inclusion": "Passages on killer robots, lethal autonomous weapons systems, machines deciding who lives and dies, or calls for binding rules/bans on them.",
+        "exclusion": "General human control of AI outside weapons contexts (use AI_HUMAN_CONTROL_OVERSIGHT).",
+        "boundary_cases": "Rhetorical questions like whether a human or a machine pulls the trigger count here when tied to weapons.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_AUT:4",
+            "quote": "calling for a legally binding instrument with clear prohibitions and restrictions on autonomous weapons"
+          },
+          {
+            "passage_id": "verbatim_en_2021_AUT:20",
+            "quote": "stepping back from creating killing machines — lethal autonomous weapons systems — where an algorithm decides in a split second who lives and who dies"
+          },
+          {
+            "passage_id": "verbatim_en_2026_AUT:3",
+            "quote": "One of the most urgent threats today is the loss of human control over weapons."
+          },
+          {
+            "passage_id": "verbatim_en_2026_AUT:1",
+            "quote": "Who decides whether a human being or a machine pulls the trigger?"
+          }
+        ]
+      },
+      {
+        "code": "AI_HUMAN_CONTROL_OVERSIGHT",
+        "label": "Technology must remain under human control",
+        "definition": "General principle that technology and algorithms must remain under human control and responsibility, beyond specific weapons rules.",
+        "inclusion": "Passages asserting that algorithms must not decide alone and humans must own responsibility for technology.",
+        "exclusion": "Weapons-specific human control claims (use AI_MILITARY_WEAPONS).",
+        "boundary_cases": "A closing statement mixing weapons and general technology control can take both codes.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_AUT:5",
+            "quote": "Technology must remain under human control. Responsibility must always be owned by us, by humans."
+          }
+        ]
+      },
+      {
+        "code": "AI_HUMAN_RIGHTS_ETHICS",
+        "label": "Human-centric approach and red lines",
+        "definition": "New technologies including AI must respect human rights, with a human-centric approach online and offline and ethical red lines.",
+        "inclusion": "Passages stating human rights apply to new technologies or calling for a human-centric approach to AI.",
+        "exclusion": "Weapons-specific bans (use AI_MILITARY_WEAPONS).",
+        "boundary_cases": "Red-line language introducing an autonomous weapons ban takes both codes.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2021_AUT:20",
+            "quote": "New technologies are not a new frontier where human rights do not exist."
+          },
+          {
+            "passage_id": "verbatim_en_2021_AUT:19",
+            "quote": "We have to make sure that our human-centric approach applies online and offline."
+          }
+        ]
+      },
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "Technologies racing ahead, leaving many behind",
+        "definition": "Concern that fast-moving technologies such as AI leave many countries or people behind.",
+        "inclusion": "Passages saying AI and emerging technologies are racing ahead and leaving many behind.",
+        "exclusion": "Passages focused only on rights or weapons.",
+        "boundary_cases": "Brief phrasing about being left behind still counts if AI is named.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2021_AUT:19",
+            "quote": "New and emerging technologies like artificial intelligence and quantum computing are racing ahead, leaving many of us behind."
+          }
+        ]
+      }
+    ],
+    "rationale": "All passages are Austrian speeches centred on the question of who decides, with autonomous weapons and a binding instrument for human control as the dominant theme; the 2021 passages add human-rights red lines and a human-centric approach, and one notes technology leaving many behind."
+  }
+}

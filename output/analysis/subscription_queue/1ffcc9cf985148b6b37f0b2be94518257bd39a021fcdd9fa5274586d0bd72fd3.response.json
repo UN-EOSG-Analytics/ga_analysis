@@ -1,0 +1,46 @@
+{
+  "request_hash": "1ffcc9cf985148b6b37f0b2be94518257bd39a021fcdd9fa5274586d0bd72fd3",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_b"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_EST:1",
+      "verbatim_en_2026_EST:2",
+      "verbatim_en_2026_EST:3",
+      "verbatim_en_2026_EST:4",
+      "verbatim_en_2026_EST:5",
+      "verbatim_en_2026_EST:6",
+      "verbatim_en_2026_EST:7",
+      "verbatim_en_2026_EST:8"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_EST:6",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Like any new technology, AI poses risks and brings challenges. But with knowledge, wisdom and unity, we can put it to use in the service of humanity.",
+        "rationale": "Frames AI as a lasting technology requiring cooperative management of risks and benefits."
+      },
+      {
+        "passage_id": "verbatim_en_2026_EST:7",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Artificial intelligence should empower teaching and learning rather than replace them.",
+        "rationale": "Describes leadership in UN AI governance, equitable benefits and the AI Leap education programme."
+      },
+      {
+        "passage_id": "verbatim_en_2026_EST:8",
+        "status": "Yes",
+        "mention_type": "contextual",
+        "quote": "experience with around 150 other countries worldwide.",
+        "rationale": "Completes the preceding sentence about internationally sharing Estonia's experience of digitalization reinforced by AI."
+      }
+    ]
+  }
+}

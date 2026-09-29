@@ -1,0 +1,61 @@
+{
+  "request_hash": "2b17f214632d60c31da1950a0456d715711de4af2332ad41816e647314e912f3",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_DISINFORMATION",
+        "label": "AI-driven disinformation undermining free speech",
+        "definition": "AI used to mass-produce lies and convincing falsehoods, manipulate public debate and democratic processes, framed as a betrayal of freedom of expression.",
+        "inclusion": "Passages on AI-driven disinformation, propaganda, manipulation of democratic processes, or deception at scale.",
+        "exclusion": "Disinformation discussions that do not reference AI or automated tools.",
+        "boundary_cases": "Online conspiracy theories without AI mention are context only; code when AI is named as enabler.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_ISL:4",
+            "quote": "To distort free speech into the mass production of lies, propaganda, or AI-driven disinformation is not the exercise of freedom. It is its betrayal."
+          },
+          {
+            "passage_id": "verbatim_en_2026_ISL:6",
+            "quote": "It is also making it easier to produce convincing falsehoods and manipulate public debate."
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Faster international cooperation on AI",
+        "definition": "Calls for governments, scientists and businesses to cooperate internationally, and quickly, to harness AI benefits while confronting risks.",
+        "inclusion": "Passages urging international multi-stakeholder cooperation on AI.",
+        "exclusion": "Passages only describing AI harms.",
+        "boundary_cases": "'Harness benefits while confronting risks' also signals duality; code governance when a cooperative call is made.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_ISL:6",
+            "quote": "Governments, scientists, businesses must cooperate internationally to harness the benefits of AI while confronting its risks, and we need to move faster."
+          }
+        ]
+      },
+      {
+        "code": "AI_ECONOMY_LABOR",
+        "label": "AI changing work and communication",
+        "definition": "AI described as a transformation changing how people work, communicate and receive information.",
+        "inclusion": "Passages describing AI's broad societal transformation of work and communication.",
+        "exclusion": "Passages focusing solely on disinformation.",
+        "boundary_cases": "If work is mentioned only as part of a broad transformation list, still code here briefly.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_ISL:6",
+            "quote": "This revolution is changing how we work, communicate, and receive information."
+          }
+        ]
+      }
+    ],
+    "rationale": "Both Iceland passages embed AI within defence of democracy and free speech, framing AI mainly as an enabler of disinformation; 2026 adds a call for faster international cooperation and notes AI's broad societal transformation."
+  }
+}

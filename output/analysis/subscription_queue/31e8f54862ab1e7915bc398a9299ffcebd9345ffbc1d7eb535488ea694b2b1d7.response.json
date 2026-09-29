@@ -1,0 +1,388 @@
+{
+  "request_hash": "31e8f54862ab1e7915bc398a9299ffcebd9345ffbc1d7eb535488ea694b2b1d7",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "results": [
+      {
+        "passage_id": "verbatim_en_2025_KEN:6",
+        "classification": {
+          "themes": [
+            {
+              "code": "AI_GLOBAL_GOVERNANCE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_INCLUSIVE_GOVERNANCE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_GOVERNANCE_SKEPTICISM",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_UN_ROLE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_MILITARY_WEAPONS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_PEACE_APPLICATIONS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_SAFETY_EXISTENTIAL",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_HUMAN_CONTROL",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_HUMAN_RIGHTS_ETHICS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_BIAS_CULTURAL_DIVERSITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DISINFORMATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CYBER_SECURITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DIGITAL_DIVIDE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CAPACITY_BUILDING",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DEVELOPMENT_SDGS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_RESOURCE_FOOTPRINT",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_ECONOMY_LABOR",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_YOUTH_EDUCATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CHILD_PROTECTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_NATIONAL_STRATEGY",
+              "value": "Uncertain",
+              "quote": "We are building a climate-resilient society by embedding adaptation into every sector, from agriculture and energy to infrastructure and livelihoods, to sustainable mining and artificial intelligence.",
+              "rationale": "National climate policy includes AI sector, but no AI programme described."
+            },
+            {
+              "code": "AI_SOVEREIGNTY_CONCENTRATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_GEOPOLITICAL_RIVALRY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_OPPORTUNITY_RISK_DUALITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_TRANSFORMATIVE_ERA",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_TECH_LIST_MENTION",
+              "value": "Yes",
+              "quote": "We are building a climate-resilient society by embedding adaptation into every sector, from agriculture and energy to infrastructure and livelihoods, to sustainable mining and artificial intelligence.",
+              "rationale": "AI named briefly in a list of sectors without further discussion."
+            },
+            {
+              "code": "AI_THREAT_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            }
+          ],
+          "institutions": [],
+          "keywords": [],
+          "uncovered_concept": ""
+        }
+      },
+      {
+        "passage_id": "verbatim_en_2025_KOR:5",
+        "classification": {
+          "themes": [
+            {
+              "code": "AI_GLOBAL_GOVERNANCE",
+              "value": "Yes",
+              "quote": "We intend to share our vision for the future of AI through the APEC AI Initiative at the APEC Economic Leaders Meeting",
+              "rationale": "International efforts for responsible AI use, including APEC initiative."
+            },
+            {
+              "code": "AI_INCLUSIVE_GOVERNANCE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_GOVERNANCE_SKEPTICISM",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_UN_ROLE",
+              "value": "Yes",
+              "quote": "I hope the open debate that I will preside over as UN Security Council President tomorrow will significantly contribute to the international community's efforts to promote the responsible use of AI.",
+              "rationale": "Security Council open debate on AI."
+            },
+            {
+              "code": "AI_MILITARY_WEAPONS",
+              "value": "Uncertain",
+              "quote": "In an era where artificial intelligence technology is critical to security capabilities and cyber attacks threaten national security, we must confront not only visible enemies, but also invisible enemies.",
+              "rationale": "AI tied to security capabilities, military use not explicit."
+            },
+            {
+              "code": "AI_PEACE_APPLICATIONS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_SAFETY_EXISTENTIAL",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_HUMAN_CONTROL",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_HUMAN_RIGHTS_ETHICS",
+              "value": "Yes",
+              "quote": "unable to shake off the dark shadows of human rights abuses caused by the misuse of technology.",
+              "rationale": "Human rights abuses from AI misuse and AI for strengthening democracy."
+            },
+            {
+              "code": "AI_BIAS_CULTURAL_DIVERSITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DISINFORMATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CYBER_SECURITY",
+              "value": "Uncertain",
+              "quote": "In an era where artificial intelligence technology is critical to security capabilities and cyber attacks threaten national security",
+              "rationale": "AI mentioned alongside cyber attacks as invisible security threats."
+            },
+            {
+              "code": "AI_DIGITAL_DIVIDE",
+              "value": "Yes",
+              "quote": "We will strive to ensure that the vision of AI for all, where advances in cutting-edge technology contribute to the universal values of humanity, becomes a new normal for the international community.",
+              "rationale": "AI for all; warns of deepening inequality."
+            },
+            {
+              "code": "AI_CAPACITY_BUILDING",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DEVELOPMENT_SDGS",
+              "value": "Yes",
+              "quote": "AI-driven technological innovations will be an important new tool for solving global challenges like the climate crisis.",
+              "rationale": "AI as tool for climate crisis."
+            },
+            {
+              "code": "AI_RESOURCE_FOOTPRINT",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_ECONOMY_LABOR",
+              "value": "Yes",
+              "quote": "we can use the high productivity as a driving force to build a foundation for innovation and prosperity",
+              "rationale": "AI productivity as economic driver."
+            },
+            {
+              "code": "AI_YOUTH_EDUCATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CHILD_PROTECTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_NATIONAL_STRATEGY",
+              "value": "Uncertain",
+              "quote": "APEC Economic Leaders Meeting, which will be held in Gyeongju, Korea, next month.",
+              "rationale": "Hosting AI initiative event."
+            },
+            {
+              "code": "AI_SOVEREIGNTY_CONCENTRATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_GEOPOLITICAL_RIVALRY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_OPPORTUNITY_RISK_DUALITY",
+              "value": "Yes",
+              "quote": "If we passively let ourselves be dragged along by the changes of the AI era, we will meet a dystopia of deepening polarization and inequality",
+              "rationale": "Contrasts dystopia under passivity with prosperity under proactive response; outcome depends on choices."
+            },
+            {
+              "code": "AI_TRANSFORMATIVE_ERA",
+              "value": "Uncertain",
+              "quote": "If we passively let ourselves be dragged along by the changes of the AI era",
+              "rationale": "Refers to an AI era, briefly."
+            },
+            {
+              "code": "AI_TECH_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_THREAT_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            }
+          ],
+          "institutions": [
+            {
+              "commitment_detail": "Republic of Korea presiding over a UN Security Council open debate on responsible AI use; and presenting the APEC AI Initiative at the APEC Leaders Meeting it hosts.",
+              "rationale": "Other models combined: UN Security Council open debate on AI (UN) and APEC AI Initiative (non-UN).",
+              "mechanism": "Other model",
+              "reference_type": "explicit name",
+              "stances": {
+                "mention": true,
+                "welcome": false,
+                "support": true,
+                "request": false,
+                "concern": false,
+                "opposition": false,
+                "commitment": true
+              },
+              "requested_functions": [
+                "dialogue/convening"
+              ],
+              "un_role": "explicit",
+              "quote": "I hope the open debate that I will preside over as UN Security Council President tomorrow will significantly contribute to the international community's efforts to promote the responsible use of AI."
+            }
+          ],
+          "keywords": [
+            {
+              "normalized_term": "ai era",
+              "original_term": "AI era",
+              "quote": "If we passively let ourselves be dragged along by the changes of the AI era"
+            },
+            {
+              "normalized_term": "responsible use of ai",
+              "original_term": "responsible use of AI",
+              "quote": "efforts to promote the responsible use of AI."
+            },
+            {
+              "normalized_term": "apec ai initiative",
+              "original_term": "APEC AI Initiative",
+              "quote": "We intend to share our vision for the future of AI through the APEC AI Initiative at the APEC Economic Leaders Meeting"
+            },
+            {
+              "normalized_term": "ai for all",
+              "original_term": "AI for all",
+              "quote": "We will strive to ensure that the vision of AI for all, where advances in cutting-edge technology contribute to the universal values of humanity, becomes a new normal for the international community."
+            }
+          ],
+          "uncovered_concept": ""
+        }
+      }
+    ]
+  }
+}

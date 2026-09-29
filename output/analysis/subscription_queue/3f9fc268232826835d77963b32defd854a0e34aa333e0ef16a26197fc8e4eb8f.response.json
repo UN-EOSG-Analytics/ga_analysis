@@ -1,0 +1,75 @@
+{
+  "request_hash": "3f9fc268232826835d77963b32defd854a0e34aa333e0ef16a26197fc8e4eb8f",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_SOVEREIGNTY_CONCENTRATION",
+        "label": "AI power concentrated in few actors",
+        "definition": "Concern that AI and digital technology create a new hierarchy where a few corporations and powerful states control systems others depend on, or hoard benefits.",
+        "inclusion": "Include passages warning that AI/digital power is owned, controlled or hoarded by a few corporations or states.",
+        "exclusion": "Exclude general calls for access without reference to concentration of control.",
+        "boundary_cases": "Statements that AI benefits should be 'shared rather than hoarded' fit here and may also be AI_DIGITAL_DIVIDE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_LCA:5",
+            "quote": "a small number of corporations and powerful states control the systems on which the rest of humanity depends"
+          },
+          {
+            "passage_id": "verbatim_en_2026_VCT:7",
+            "quote": "when the benefits of new technology, such as artificial intelligence, is shared rather than hoarded and priced out of reach"
+          }
+        ]
+      },
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "AI widening gap for small states",
+        "definition": "AI must not widen the gap between powerful and vulnerable states; small states need equitable access and technology transfer.",
+        "inclusion": "Include passages about AI widening inequality or small states' lack of affordable access.",
+        "exclusion": "Exclude passages only about ownership/control by corporations without inequality framing.",
+        "boundary_cases": "Calls for fair technology transfer may also be AI_CAPACITY_BUILDING.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_LCA:5",
+            "quote": "We must ensure that artificial intelligence does not widen the gap between the powerful and the vulnerable."
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Global standards and small-state participation",
+        "definition": "Calls for strong global standards on AI, data protection and privacy, with meaningful participation of small states in digital rules.",
+        "inclusion": "Include calls for global AI/digital standards or inclusive rule-making.",
+        "exclusion": "Exclude national programs.",
+        "boundary_cases": "Lists of protections (surveillance, disinformation) within a governance call can also be coded AI_DISINFORMATION or AI_CYBER_SECURITY.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_LCA:5",
+            "quote": "Saint Lucia therefore calls for strong global standards on data protection, privacy and artificial intelligence"
+          }
+        ]
+      },
+      {
+        "code": "AI_ECONOMY_LABOR",
+        "label": "AI reshaping youth jobs",
+        "definition": "AI presented as reshaping future jobs, requiring preparation of young people.",
+        "inclusion": "Include passages linking AI to changes in employment and the need to prepare workers or youth.",
+        "exclusion": "Exclude youth programs unrelated to AI.",
+        "boundary_cases": "If AI is only named with green transition as job drivers, still include; also consider AI_YOUTH_EDUCATION.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_KNA:7",
+            "quote": "AI, the green transition, and climate change are reshaping their future jobs. We must prepare them."
+          }
+        ]
+      }
+    ],
+    "rationale": "Eastern Caribbean states frame AI through fairness: Saint Lucia and Saint Vincent stress concentration of AI power and equitable sharing with global standards, while Saint Kitts briefly links AI to youth jobs."
+  }
+}

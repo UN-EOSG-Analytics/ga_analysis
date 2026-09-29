@@ -1,0 +1,43 @@
+{
+  "request_hash": "8b310da4b0ff3c8133a107836357551ee70793e797929b998e6f4969c674fa12",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_TECH_LIST_MENTION",
+        "label": "AI among new challenges alongside fake news",
+        "definition": "AI named among new challenges (with fake news and cyberthreats) as causing major changes, without further elaboration.",
+        "inclusion": "Include passages briefly listing AI among emerging challenges without substantive discussion.",
+        "exclusion": "Exclude passages developing specific AI risks or policies.",
+        "boundary_cases": "A follow-on generic call for a joint pact does not make it substantive governance unless AI rules are discussed.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_MKD:22",
+            "quote": "Some others, although of newer date, such as artificial intelligence, are already causing major changes in our lives."
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Joint pact needed for new challenges",
+        "definition": "General assertion that no country can respond alone to new challenges including AI, requiring a joint pact for the future.",
+        "inclusion": "Include passages stating AI-related challenges require collective/multilateral responses.",
+        "exclusion": "Exclude passages with no collective-response claim.",
+        "boundary_cases": "Reference to the Pact for the Future could also fit AI_UN_ROLE if the UN instrument is explicit.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_MKD:22",
+            "quote": "without a joint pact for the future, no country or group of countries will have the potential to offer or implement responses to those challenges alone"
+          }
+        ]
+      }
+    ],
+    "rationale": "Single North Macedonian passage mentions AI briefly among new challenges like fake news and cyberthreats, then makes a generic multilateralism appeal."
+  }
+}

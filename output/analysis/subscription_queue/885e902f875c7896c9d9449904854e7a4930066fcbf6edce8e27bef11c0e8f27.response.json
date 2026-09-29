@@ -1,0 +1,57 @@
+{
+  "request_hash": "885e902f875c7896c9d9449904854e7a4930066fcbf6edce8e27bef11c0e8f27",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_NATIONAL_STRATEGY",
+        "label": "National AI scientific leadership",
+        "definition": "Speaker cites own country's scientists as leaders in AI as a national strength.",
+        "inclusion": "Passages boasting national AI research or talent leadership.",
+        "exclusion": "International governance or rights positions.",
+        "boundary_cases": "If AI appears only in a list of national strengths without claims of leadership, use AI_TECH_LIST_MENTION.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_CAN:3",
+            "quote": "Our scientists are leaders in artificial intelligence and clean technology."
+          }
+        ]
+      },
+      {
+        "code": "AI_PUBLIC_CONCERN",
+        "label": "AI as a citizen worry",
+        "definition": "AI mentioned as something ordinary citizens are worried about, alongside cost of living, foreign interference and disinformation, without elaboration.",
+        "inclusion": "Passages reporting public anxiety or concern about AI.",
+        "exclusion": "Passages that specify what the AI risk is (use the specific risk code).",
+        "boundary_cases": "When disinformation is listed next to AI but not linked causally, keep this code rather than AI_DISINFORMATION.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_CAN:8",
+            "quote": "They are also concerned about artificial intelligence, foreign interference, misinformation and disinformation."
+          }
+        ]
+      },
+      {
+        "code": "AI_RESPONSIBLE_DEVELOPMENT_ADVOCACY",
+        "label": "Championing responsible AI development",
+        "definition": "Brief commitment to be a trusted voice defending responsible AI development internationally, without specifying mechanisms.",
+        "inclusion": "Passages pledging to promote responsible development of AI as a foreign policy priority.",
+        "exclusion": "Concrete rules or institutional proposals (use AI_GLOBAL_GOVERNANCE).",
+        "boundary_cases": "If a specific international framework is named, use AI_GLOBAL_GOVERNANCE instead.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_CAN:9",
+            "quote": "Canada will remain a voice that can be trusted, to defend maritime security, international law, and the responsible development of artificial intelligence"
+          }
+        ]
+      }
+    ],
+    "rationale": "All three Canadian passages mention AI only briefly: as a national scientific strength, as a public worry listed with disinformation, and as a foreign-policy commitment to responsible development."
+  }
+}

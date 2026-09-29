@@ -1,0 +1,43 @@
+{
+  "request_hash": "9ed5303a42e4d1f9133c6218b267ccd12310c232dcdf6acb957b44c6a165bedd",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_THREAT_LIST_MENTION",
+        "label": "AI listed among global challenges",
+        "definition": "AI is named only briefly in a catalogue of global challenges (war, hunger, climate, democracy at risk) without further discussion.",
+        "inclusion": "Include passages where AI appears as one item in a list of crises or challenges facing the world.",
+        "exclusion": "Exclude passages that elaborate AI risks, governance, or uses.",
+        "boundary_cases": "A list item that itself pairs promise and risk (e.g. 'promises and significant risks') stays a list mention but may also be coded AI_OPPORTUNITY_RISK_DUALITY.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_USA:8",
+            "quote": "a climate crisis, democracy at risk, strains within our societies, the promises and significant risks of artificial intelligence (AI). The list goes on."
+          }
+        ]
+      },
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "Promises and significant risks of AI",
+        "definition": "AI is characterized in a single phrase as carrying both promise and significant risk.",
+        "inclusion": "Include explicit phrasing that pairs AI's promise with its risks, even when brief.",
+        "exclusion": "Exclude lists that mention AI only as a threat.",
+        "boundary_cases": "When the duality appears only as a list item, code alongside AI_THREAT_LIST_MENTION.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_USA:8",
+            "quote": "the promises and significant risks of artificial intelligence (AI)"
+          }
+        ]
+      }
+    ],
+    "rationale": "The single US 2024 passage mentions AI only in passing within a list of global challenges, characterizing it briefly as both promising and risky; the passage's focus is on hope and past achievements."
+  }
+}

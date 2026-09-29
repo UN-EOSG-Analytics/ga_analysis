@@ -1,0 +1,57 @@
+{
+  "request_hash": "06996d99db620417f564100dc191b5704a2652e8c65a3b97b8697fdc6a181523",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "Responsible AI accelerates development, carries systemic risks",
+        "definition": "AI is framed as able to accelerate sustainable development and bridge divides if harnessed responsibly, yet presenting profound systemic risks.",
+        "inclusion": "Include passages explicitly pairing AI's development potential with its systemic risks.",
+        "exclusion": "Exclude one-sided statements.",
+        "boundary_cases": "Development benefits alone go to AI_DEVELOPMENT_SDGS.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_PHL:2",
+            "quote": "Harnessed responsibly, Frontier technologies and AI can accelerate sustainable development, optimize resources, and bridge deep global divides. But AI also presents profound and systemic risks."
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Urgent enforceable AI standards and guardrails",
+        "definition": "Call for robust AI governance with enforceable ethical standards and legal guardrails, urgently.",
+        "inclusion": "Include calls for enforceable, binding or robust AI governance standards.",
+        "exclusion": "Exclude vague references to responsible use without governance demands.",
+        "boundary_cases": "Enforceable 'ethical standards' also relate to AI_HUMAN_RIGHTS_ETHICS but governance is primary.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_PHL:2",
+            "quote": "we need robust AI governance with enforceable standards, and we need it now"
+          }
+        ]
+      },
+      {
+        "code": "AI_SAFETY_EXISTENTIAL",
+        "label": "Ungoverned AI as existential challenge",
+        "definition": "Without governance, AI could become an existential challenge and deepen inequalities.",
+        "inclusion": "Include passages describing AI as an existential, catastrophic or systemic risk.",
+        "exclusion": "Exclude military-only risk framings.",
+        "boundary_cases": "Inequality-deepening consequences alone go to AI_DIGITAL_DIVIDE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_PHL:2",
+            "quote": "it could deepen inequalities and become an existential challenge"
+          }
+        ]
+      }
+    ],
+    "rationale": "A single Philippine passage that pairs AI's development potential with systemic and existential risk, and urgently calls for enforceable AI governance standards."
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "request_hash": "1935300a706976693bab389cfc5b718c11e73296f55a66c78bfcaefb4a4d14cd",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_NATIONAL_STRATEGY",
+        "label": "India's AI summit and responsible-use approach",
+        "definition": "The speaker's country presents its own AI leadership, summit hosting, or national approach to harnessing AI.",
+        "inclusion": "Passages citing hosting of AI summits, G20 AI initiatives, or a national approach to AI deployment.",
+        "exclusion": "Passages about other national achievements (digital public infrastructure, startups) that do not mention AI.",
+        "boundary_cases": "A G20 outcome on responsible AI listed among many initiatives can be coded both here and as a list mention.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_IND:4",
+            "quote": "India hosted the AI Impact Summit this February, gathering together the best minds on that subject."
+          },
+          {
+            "passage_id": "verbatim_en_2025_IND:4",
+            "quote": "India's approach is to harness it responsibly for human welfare. Inclusion and impact will be the watchwords for the summit that India will host in 2026."
+          }
+        ]
+      },
+      {
+        "code": "AI_DEVELOPMENT_SDGS",
+        "label": "AI for development and human empowerment",
+        "definition": "AI framed as a driver of development, human welfare, economic prosperity and large-scale problem solving.",
+        "inclusion": "Passages describing AI's promise for development, human empowerment or population-scale problem solving.",
+        "exclusion": "Passages about AI risk or misuse.",
+        "boundary_cases": "Statements about harnessing AI 'responsibly' still count here when the focus is development benefit.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_IND:4",
+            "quote": "Artificial intelligence as a horizontal and cross-cutting technology has a particular promise for development."
+          },
+          {
+            "passage_id": "verbatim_en_2026_IND:4",
+            "quote": "We view AI as a transformational driver for human empowerment, economic prosperity, and population-scale problem solving."
+          }
+        ]
+      },
+      {
+        "code": "AI_SOVEREIGNTY_CONCENTRATION",
+        "label": "Right to national AI models",
+        "definition": "Each nation's right to shape its own AI ecosystem and models, set against technology withholding and choke points.",
+        "inclusion": "Passages asserting national rights to develop own AI models or objecting to technology denial and choke points.",
+        "exclusion": "Passages about national AI achievements with no sovereignty or dependence argument.",
+        "boundary_cases": "Complaints about 'withholding technology' without naming AI can be coded here only when adjacent to AI discussion.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_IND:4",
+            "quote": "We believe in the right of each nation to shape its ecosystem with the development of its own models and deployment strategies"
+          }
+        ]
+      },
+      {
+        "code": "AI_CAPACITY_BUILDING",
+        "label": "AI partnership with the Global South",
+        "definition": "AI as part of partnership, sharing and democratization agendas with developing countries.",
+        "inclusion": "Passages promising AI cooperation, sharing tools, or democratizing technology for the Global South.",
+        "exclusion": "General development assistance not tied to AI or technology.",
+        "boundary_cases": "Sharing digital public infrastructure without AI mention does not count.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_IND:4",
+            "quote": "AI will be very much part of a partnership agenda with the global South."
+          }
+        ]
+      },
+      {
+        "code": "AI_MISUSE_BIAS",
+        "label": "AI misuse sharpening bias",
+        "definition": "Brief warnings that misuse of AI sharpens bias and erodes mutual respect, turning technology from hope into anxiety.",
+        "inclusion": "Passages stating AI misuse increases bias, division or anxiety.",
+        "exclusion": "Detailed disinformation/election-interference discussions (use AI_DISINFORMATION).",
+        "boundary_cases": "Could overlap with ethics; code here when the harm is framed as misuse sharpening social or international bias.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_IND:2",
+            "quote": "Misuse of AI is sharpening bias and diluting mutual respect."
+          }
+        ]
+      },
+      {
+        "code": "AI_TECH_LIST_MENTION",
+        "label": "Responsible AI listed among G20 outcomes",
+        "definition": "AI named as one item in a list of policy initiatives or concerns without elaboration.",
+        "inclusion": "Passages where responsible AI is one entry in a list of summit outcomes or initiatives.",
+        "exclusion": "Passages elaborating AI's effects or governance.",
+        "boundary_cases": "If the list item is later elaborated in the same passage, code the substantive theme.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_IND:9",
+            "quote": "Others focus on new concerns, such as the responsible harnessing of artificial intelligence."
+          }
+        ]
+      }
+    ],
+    "rationale": "All Indian passages; AI is mainly framed as a development and empowerment tool tied to India's summit leadership and Global South partnership, with a sovereignty claim to national models, a brief warning about misuse sharpening bias, and a 2023 list-style G20 mention."
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "request_hash": "f8eab24a651db0eb38d9f23423efc036a784e856648c73e32c0b8fe10f90fabe",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_HUMAN_RIGHTS_ETHICS",
+        "label": "Human-centred AI grounded in rights and democracy",
+        "definition": "AI and the digital future should follow a human-centred approach based on human rights, democracy and the rule of law.",
+        "inclusion": "Include passages demanding human-centred or rights-based AI development.",
+        "exclusion": "Exclude passages on digital governance that do not reference rights or human-centredness.",
+        "boundary_cases": "Rights protection mentioned generally for digital technologies alongside AI counts here when AI is named in the same sentence or passage.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_BGR:17",
+            "quote": "Our digital future and artificial intelligence should be guided by a humancentred approach based on human rights, democracy and the rule of law."
+          }
+        ]
+      },
+      {
+        "code": "AI_UN_ROLE",
+        "label": "Global Digital Compact and multistakeholder governance",
+        "definition": "Support for the Global Digital Compact and inclusive, multi-stakeholder global digital and AI governance oriented toward the SDGs.",
+        "inclusion": "Include references to the Global Digital Compact or multi-stakeholder global governance of AI and digital technologies.",
+        "exclusion": "Exclude national digital policies.",
+        "boundary_cases": "Where AI is only one of several governed technologies (digital, space), code here if a global governance process is named; otherwise AI_GLOBAL_GOVERNANCE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_BGR:17",
+            "quote": "The Global Digital Compact should harness the potential of digital technologies to accelerate the achievement of the SDGs."
+          },
+          {
+            "passage_id": "verbatim_en_2025_BGR:5",
+            "quote": "Bulgaria supports inclusive, multi-stakeholder approaches to global digital governance, artificial intelligence, and space technologies"
+          }
+        ]
+      }
+    ],
+    "rationale": "Bulgaria's passages treat AI within broader digital governance, calling for human-centred, rights-based approaches and inclusive multi-stakeholder governance linked to the Global Digital Compact and SDGs."
+  }
+}

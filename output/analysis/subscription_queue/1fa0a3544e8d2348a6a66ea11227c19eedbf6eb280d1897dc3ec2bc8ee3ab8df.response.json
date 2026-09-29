@@ -1,0 +1,47 @@
+{
+  "request_hash": "1fa0a3544e8d2348a6a66ea11227c19eedbf6eb280d1897dc3ec2bc8ee3ab8df",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_CLIMATE_ENVIRONMENT",
+        "label": "AI-powered disaster early warning",
+        "definition": "Speaker describes a national system linking Earth observation, supercomputing and AI to predict floods and droughts, offered for global sharing under Early Warnings for All.",
+        "inclusion": "Include passages on AI applied to climate hazard prediction, early warning or disaster resilience.",
+        "exclusion": "Exclude early-warning passages that do not mention AI.",
+        "boundary_cases": "Offers to share the AI solution internationally may also be coded AI_CAPACITY_BUILDING; the adjacent passage on global early-warning partnership without AI is context only.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_SVN:15",
+            "quote": "we initiated the development of an advanced digital solution linking Earth observation with supercomputing and artificial intelligence"
+          }
+        ]
+      },
+      {
+        "code": "AI_CAPACITY_BUILDING",
+        "label": "Sharing AI solutions and monitoring capacity",
+        "definition": "Offer to share an AI-enabled hazard system with partners and call for a global partnership to address countries' lack of monitoring capacity.",
+        "inclusion": "Include offers to share AI tools or build other countries' capacity through partnerships.",
+        "exclusion": "Exclude purely domestic AI deployment without an international sharing element.",
+        "boundary_cases": "The follow-on call for an early-warning partnership does not name AI and should be coded only in the context of the preceding AI passage.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_SVN:15",
+            "quote": "We are ready to share that solution with our partners globally."
+          },
+          {
+            "passage_id": "verbatim_en_2024_SVN:16",
+            "quote": "many countries lack the capacity to monitor all hazards and are restricted in their access"
+          }
+        ]
+      }
+    ],
+    "rationale": "Both Slovenian passages concern an AI-enabled flood and drought prediction system and the call to share early-warning capacity globally; AI appears as an applied climate-resilience tool."
+  }
+}

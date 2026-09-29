@@ -1,64 +1,60 @@
-# UNGA 영어 속기록 분석
+# UNGA General Debate AI analysis (2017–2026)
 
-**분석 입력:** `output/pipeline/speeches.jsonl`. 모든 연도를 같은 국가–연도·구절 구조로 읽는다. 2019년 공식 속기록과 2025·2026년 자동전사를 원문으로 확정했으며, 별도 국가별 PDF 확보를 기다리지 않는다. 2026년 마지막 날은 아직 미수집이다.
+This repository analyses how Member States discuss artificial intelligence in their UN General Assembly General Debate main addresses, from UNGA72 (2017) to UNGA81 (2026). It produces the SPMU briefing **UNGA81 AI Strategic Review**.
 
-- [현재 자료 범위와 상태](output/corpus_preparation/README.md)
-- [분석 방법·보고서 요구사항](ANALYSIS_PROTOCOL.md)
-- [구조와 실행 흐름](ARCHITECTURE.md)
-- [분석 시작부터 Word/PDF까지 실행 안내](docs/ANALYSIS_WORKFLOW.md)
-- [원본 형식과 근거 위치](docs/transcript_input_contract.md)
+## Latest result
 
-## 실행
+Run `982ee8fb3de51100` completed on 29 September 2026.
 
-### OpenAI API 키
+- Report: [deliverables/982ee8fb3de51100/UNGA81_AI_Strategic_Review.pdf](deliverables/982ee8fb3de51100/UNGA81_AI_Strategic_Review.pdf) (and `.docx`). It is 5 pages with four sections: Key Facts and Figures, Themes, Role of UN, Implications. Numbered citations are resolved in [Report_Sources.md](deliverables/982ee8fb3de51100/Report_Sources.md).
+- Corpus: 1,908 country–year main addresses and 50,055 passages. 2026 has 191 addresses, covering all six days.
+- AI mentions in 2026: at least 131 of 191 obtained addresses (68.6%). This is a verified detection lower bound, not a prevalence estimate.
+- Supporting tables and the methods memo are in [output/analysis/runs/982ee8fb3de51100/](output/analysis/runs/982ee8fb3de51100/). Start with [methodology_and_cost.md](output/analysis/runs/982ee8fb3de51100/methodology_and_cost.md), `evidence_register.csv`, `theme_taxonomy.md` and `theme_prevalence.csv`.
+- Direct API cost: $0.0394 cumulative, for embeddings only.
+- Reading, classification and drafting were automated AI reviews with source-quote validation. Nothing was human-reviewed (`human_reviewed=false`). Who performed each stage is recorded in [handoff_provenance.md](output/analysis/runs/982ee8fb3de51100/handoff_provenance.md).
 
-프로젝트 루트의 `.env` 파일에서 `OPENAI_API_KEY=` 뒤에 실제 키를 넣고 저장한다. `.env`는 Git에서 제외된다. 연결 확인 스크립트는 이 파일을 자동으로 읽으며, 같은 이름의 터미널 환경변수보다 `.env` 값을 우선한다.
+## Documentation
 
-```dotenv
-OPENAI_API_KEY=여기에_실제_API_키
-```
+- [ANALYSIS_PROTOCOL.md](ANALYSIS_PROTOCOL.md): analytical rules, denominators, the original brief and the required deliverables.
+- [ARCHITECTURE.md](ARCHITECTURE.md): source policy, data flow and modules.
+- [docs/ANALYSIS_WORKFLOW.md](docs/ANALYSIS_WORKFLOW.md): how to run or resume the analysis, the agent file-handoff loop, cost controls and outputs.
+- [docs/transcript_input_contract.md](docs/transcript_input_contract.md): source formats and evidence locators.
+- [output/corpus_preparation/README.md](output/corpus_preparation/README.md): corpus coverage and preparation checks.
 
-**API는 임베딩에만 사용한다.** 문맥 검토·주제 해석·분류·보고서는 구독으로 로그인한 Codex(Astra High 선택 가능 시)에서 처리하고, 군집·집계·파일 생성은 로컬 Python에서 수행한다. 현재 후보 기준 직접 API 비용은 약 $0.05이며 기본 누적 상한은 $1이다.
+## Quick start
 
-준비 확인: `python -m unga_analysis analyze`. 시작 지시 후 Codex가 `python -m unga_analysis analyze --execute --max-cost-usd 1`을 사용한다. Python이 검토 요청을 파일로 넘기면 Codex 세션이 읽고 답을 저장한 뒤 재개한다. 생성 API로 자동 전환하지 않는다. Day 6 제공·구독 인증·재개 절차는 [분석 워크플로우](docs/ANALYSIS_WORKFLOW.md)를 따른다.
-
-### 데이터 준비
-
-Python 3.11 이상, 프로젝트 루트에서:
-
-```powershell
-python -m unga_analysis status
-```
-
-현재 분석 입력은 생성되어 있다. 원문을 추가하거나 전처리 규칙을 바꾼 경우에만 다음 명령으로 다시 준비한다. PDF 추출에는 `requirements.txt`의 PyMuPDF가 필요하다.
+Python 3.11+, from the project root:
 
 ```powershell
-python -m unga_analysis prepare
+pip install -r requirements.txt -r requirements-analysis.txt
+python -m unga_analysis status        # corpus and registry status
+python -m unga_analysis analyze       # free readiness check (no API calls)
 ```
 
-`prepare`는 국가별 분리 → 대표본 선택 → 공통 구절 생성 → 해시·위치·본문 보존 확인 → 로컬 AI 후보 검색을 수행한다. 실패 시 오류를 남긴다. 분석에서는 `data/`를 재귀 검색하지 않고 활성 등록부와 위 JSONL만 사용한다. 검색만 갱신하려면 `python -m unga_analysis screen`을 사용한다.
+Rebuild the corpus only after adding sources or changing preprocessing rules. PDF extraction needs PyMuPDF from `requirements.txt`.
 
-## 폴더
+```powershell
+python -m unga_analysis prepare       # segment, register, normalize, integrity-check, screen
+python -m unga_analysis screen        # refresh local AI-term screening only
+```
 
-| 경로 | 용도 |
+To run or resume the analysis, use `python -m unga_analysis analyze --execute --max-cost-usd 1` and follow [docs/ANALYSIS_WORKFLOW.md](docs/ANALYSIS_WORKFLOW.md). The OpenAI key goes in a git-ignored `.env` file as `OPENAI_API_KEY=...` and is used only for embeddings. Tests: `python -m pytest tests -q`.
+
+## Folders
+
+| Path | Contents |
 |---|---|
-| `data/unga_general_debate_verbatim_en/` | 보존하는 원본 PDF·JSON·TXT |
-| `data/analysis_ready_en/` | 원본 위치를 가진 국가별 영어 발언 |
-| `config/` | 활성 등록부·원문 선택 정책·지역 매핑·분석 설정 |
-| `unga_analysis/` | 전처리·입력·분류 계약·집계 규칙 |
-| `output/pipeline/` | 분석에 사용하는 공통 입력 |
-| `output/corpus_preparation/` | 현재 자료 범위와 준비 결과 |
-| `output/screening/` | 원문 위치를 가진 AI 표현·관련 개념 후보와 미검토 상태 |
-| `output/analysis/` | 실행별 분석 결과·API 캐시·사용량·검토 근거 |
-| `reference/` | 보고서의 제도적 배경 문서 |
-| `cache/` | 현재 원문 추출 및 참고문서 캐시 |
-| `archive/` | 이전 제출 PDF·캐시·수집 스크립트·감사 기록의 복구용 보관본 |
-| `deliverables/` | 향후 최종 보고서 |
+| `data/unga_general_debate_verbatim_en/` | Preserved original PDF, JSON and TXT sources |
+| `data/analysis_ready_en/` | Per-country English addresses with source locators |
+| `config/` | Active source registry, source-selection policy, regional mapping, analysis settings |
+| `unga_analysis/` | Preparation, screening, analysis and reporting code |
+| `output/pipeline/` | Canonical analysis input (`speeches.jsonl`) |
+| `output/corpus_preparation/` | Coverage and preparation evidence |
+| `output/screening/` | Local AI-term screening candidates (not reviewed labels) |
+| `output/analysis/` | Per-run results, API cache and usage ledger, handoff queue |
+| `reference/` | Institutional background documents used for Role of UN |
+| `cache/` | Current extraction and reference caches |
+| `archive/` | Recovery-only backups of retired materials |
+| `deliverables/` | Final Word/PDF reports |
 
-자동전사는 분석에 포함하지만 출처·정확성 미검토 표시를 유지한다. 정규화 DB의 AI·주제 판정은 `Pending`이며 실행 결과는 별도 분석 폴더에 저장한다. 분석 워크플로우는 구현·오프라인 검증했고 실제 코퍼스 임베딩·분류·최종 보고서는 아직 실행하지 않았다. 현재 자료 조건은 2026년 Day 6 대기다.
-
-## 실행 준비 상태 (2026-09-29)
-
-요청 일괄 생성, 후보 연설·음성 표본 검토, 묶음 분류와 4–6페이지 보고서 흐름을 수정했다. 실제 코퍼스의 최초 검토 요청은 768개이며 단계별 요청 전체를 한 번에 생성한다. API는 임베딩만 사용한다. 미검토는 Pending으로 남고, 전체 자료 대비 언급 비율은 최소 확인 비율로 표시한다.
-
-**남은 자료 조건은 진짜 2026년 Day 6다.** 최근 첨부 JSON은 내부적으로 2025-09-29/UNGA80 자료라 확인 대기 폴더에 보관했다. 준비 확인은 `python -m unga_analysis analyze`; `blockers`와 `ready_for_execution`을 확인한다. 수정·검증 내역은 [실행 준비 검증](output/workflow_readiness_validation/README.md) 참조.
+Automatic transcripts (2025–2026) are included as canonical sources. They remain flagged as unofficial, and their audio accuracy has not been verified. Missing or unreviewed speeches are never counted as "no AI mention".

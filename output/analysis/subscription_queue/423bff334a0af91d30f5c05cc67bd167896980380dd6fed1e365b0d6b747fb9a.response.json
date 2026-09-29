@@ -1,0 +1,39 @@
+{
+  "request_hash": "423bff334a0af91d30f5c05cc67bd167896980380dd6fed1e365b0d6b747fb9a",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "root"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_AND:1",
+      "verbatim_en_2026_AND:2",
+      "verbatim_en_2026_AND:3",
+      "verbatim_en_2026_AND:4",
+      "verbatim_en_2026_AND:5",
+      "verbatim_en_2026_AND:6",
+      "verbatim_en_2026_AND:7",
+      "verbatim_en_2026_AND:8"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_AND:5",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Ladies and gentlemen, artificial intelligence represents one of the most profound transformations humanity has ever known. It opens extraordinary opportunities for scientific progress, medicine, education, and the fight against climate change.",
+        "rationale": "Identifies substantive AI benefits across science, health, education and climate."
+      },
+      {
+        "passage_id": "verbatim_en_2026_AND:6",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "We must ensure that artificial intelligence expands opportunities rather than inequalities, that it protects human rights rather than putting them at risk, that it strengthens our democracies rather than weakening them, and that it preserves the cultural and linguistic diversity that is one of humanity's most valuable heritages.",
+        "rationale": "Calls for rights-respecting, equitable AI governance and protection of smaller languages and cultural diversity through multilateral cooperation."
+      }
+    ]
+  }
+}

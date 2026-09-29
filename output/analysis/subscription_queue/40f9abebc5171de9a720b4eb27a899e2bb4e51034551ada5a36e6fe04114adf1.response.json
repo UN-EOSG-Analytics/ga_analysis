@@ -1,0 +1,29 @@
+{
+  "request_hash": "40f9abebc5171de9a720b4eb27a899e2bb4e51034551ada5a36e6fe04114adf1",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_c"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_CAF:1",
+      "verbatim_en_2026_CAF:2",
+      "verbatim_en_2026_CAF:3",
+      "verbatim_en_2026_CAF:4",
+      "verbatim_en_2026_CAF:5"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_CAF:5",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Affordable connectivity, skills transfer, data protection, and a governance of AI in which developing countries decide instead of simply being users.",
+        "rationale": "Calls for developing countries to participate in AI governance and receive the capabilities needed to benefit from it."
+      }
+    ]
+  }
+}

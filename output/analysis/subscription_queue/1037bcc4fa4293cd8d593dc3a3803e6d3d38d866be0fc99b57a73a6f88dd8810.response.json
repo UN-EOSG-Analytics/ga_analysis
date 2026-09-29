@@ -1,0 +1,123 @@
+{
+  "request_hash": "1037bcc4fa4293cd8d593dc3a3803e6d3d38d866be0fc99b57a73a6f88dd8810",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_CYBER_SECURITY",
+        "label": "AI misuse as hybrid security threat",
+        "definition": "AI treated as an emerging security threat alongside hybrid attacks, cyber attacks and sabotage, especially misuse by hostile or malign actors.",
+        "inclusion": "Include passages listing AI misuse among emerging or hybrid threats, or warning that AI in the wrong hands becomes a tool of disruption and conflict.",
+        "exclusion": "Exclude passages about autonomous weapons or AI in military command systems, which belong to AI_MILITARY_WEAPONS.",
+        "boundary_cases": "Where the harm is specifically disinformation/information manipulation, also code AI_DISINFORMATION.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_LVA:3",
+            "quote": "Emerging threats like climate change, cyber attacks, hybrid attacks, and the misuse of artificial intelligence are testing us on a daily basis."
+          },
+          {
+            "passage_id": "verbatim_en_2026_LVA:1",
+            "quote": "But in the wrong hands, it can also become a powerful tool for deception, disruption, and conflict."
+          },
+          {
+            "passage_id": "verbatim_en_2026_LTU:3",
+            "quote": "As any instrument, AI is also increasingly used by those seeking to cause harm and destruction."
+          }
+        ]
+      },
+      {
+        "code": "AI_SAFETY_EXISTENTIAL",
+        "label": "AI safety and loss of control",
+        "definition": "Concern with the safety of AI systems, including warnings that control of AI could slip out of human hands.",
+        "inclusion": "Include passages naming AI safety as a security priority or warning of loss of human control over AI.",
+        "exclusion": "Exclude general misuse-by-bad-actors framing without a safety or control concern.",
+        "boundary_cases": "'Make it safer' in a pro-innovation passage counts only if safety is an explicit goal rather than a passing adjective.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_LTU:4",
+            "quote": "With even major technology companies sending warning signals that control of AI might slip out of humanity's hands, the time is ripe for collective action."
+          },
+          {
+            "passage_id": "verbatim_en_2025_LVA:1",
+            "quote": "These include climate change, hybrid threats, the challenges related to the safety of artificial intelligence."
+          }
+        ]
+      },
+      {
+        "code": "AI_DISINFORMATION",
+        "label": "AI amplifying disinformation and manipulation",
+        "definition": "AI linked to disinformation, foreign information manipulation, and attacks on information integrity.",
+        "inclusion": "Include passages stating AI enhances disinformation or manipulation risks, or linking AI misuse concerns with media literacy and disinformation resilience.",
+        "exclusion": "Exclude disinformation passages that never connect to AI.",
+        "boundary_cases": "A passage on disinformation resilience followed by a generic AI misuse concern counts when adjacent sentences connect them.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_LTU:3",
+            "quote": "This risk is further enhanced by the development of artificial intelligence."
+          },
+          {
+            "passage_id": "verbatim_en_2024_LVA:16",
+            "quote": "Latvia has meaningful experience in building resilience to disinformation and promoting media literacy."
+          }
+        ]
+      },
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "Maximize AI benefits while managing risks",
+        "definition": "AI framed as both a source of growth/innovation and of risk, often with a pro-innovation caveat not to halt progress.",
+        "inclusion": "Include passages that explicitly balance AI's benefits (growth, health, education) against its misuse risks.",
+        "exclusion": "Exclude one-sided risk warnings.",
+        "boundary_cases": "Calls for swift but responsible regulation that 'should not halt the progress' fit here and in AI_GLOBAL_GOVERNANCE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_LVA:4",
+            "quote": "We share the United Nations view that we need to develop artificial intelligence responsibly, but we should not halt the progress."
+          },
+          {
+            "passage_id": "verbatim_en_2024_LVA:16",
+            "quote": "The rising capabilities of artificial intelligence provide a lot of opportunities for growth and development, but the potential for their misuse is a concern."
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Binding legal rules for AI",
+        "definition": "Advocacy of legally binding or swift regulatory frameworks for AI, such as the Vilnius Convention, contributing to UN governance dialogue.",
+        "inclusion": "Include passages promoting AI treaties, legally binding commitments, or calling governments to regulate AI quickly.",
+        "exclusion": "Exclude generic calls for multilateralism without AI regulation content.",
+        "boundary_cases": "Reference to the UN global dialogue on AI governance also fits AI_UN_ROLE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_LTU:3",
+            "quote": "advancing the Vilnius Convention, the world's first legally binding international treaty on artificial intelligence"
+          },
+          {
+            "passage_id": "verbatim_en_2025_LVA:4",
+            "quote": "The governments should not take years to create regulations. We should act swiftly and do it right."
+          }
+        ]
+      },
+      {
+        "code": "AI_SOVEREIGNTY_CONCENTRATION",
+        "label": "Rejecting authoritarian control of AI",
+        "definition": "Concern that AI's future could be shaped by authoritarian control, technological coercion, or malicious use of data.",
+        "inclusion": "Include passages opposing authoritarian or coercive control over AI development.",
+        "exclusion": "Exclude passages only about developing-country access gaps.",
+        "boundary_cases": "Mentions of 'trusted AI capabilities' in contrast to authoritarian models count here.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_LTU:3",
+            "quote": "the future of AI must not be determined by authoritarian control, technological coercion, or the malicious use of data"
+          }
+        ]
+      }
+    ],
+    "rationale": "Baltic speeches embed AI in a security narrative about Russia's hybrid warfare, treating AI misuse, safety and disinformation as emerging threats. They pair this with pro-innovation duality framing and, for Lithuania, advocacy of a binding AI convention."
+  }
+}

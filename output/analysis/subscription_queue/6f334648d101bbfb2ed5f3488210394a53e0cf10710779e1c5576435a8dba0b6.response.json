@@ -1,0 +1,93 @@
+{
+  "request_hash": "6f334648d101bbfb2ed5f3488210394a53e0cf10710779e1c5576435a8dba0b6",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Need for AI rules and regulation",
+        "definition": "Calls for regulation of AI and lament that AI is developing without agreed rules and boundaries.",
+        "inclusion": "Passages supporting AI regulation or criticizing the absence of international rules for AI.",
+        "exclusion": "Passages about the UN's institutional weakness that do not mention AI regulation.",
+        "boundary_cases": "Complaints that the UN is sidelined on AI regulation should also be coded AI_UN_ROLE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_LIE:3",
+            "quote": "Artificial intelligence is developing with lightning speed, largely unchecked, with obvious risks to our social fabric, but without any agreement on rules and boundaries."
+          },
+          {
+            "passage_id": "verbatim_en_2026_LIE:6",
+            "quote": "Liechtenstein supports the regulation of artificial intelligence."
+          }
+        ]
+      },
+      {
+        "code": "AI_UN_ROLE",
+        "label": "UN sidelined on AI regulation",
+        "definition": "The UN as the proper forum for AI regulation, and concern that it is ignored or sidelined on this issue.",
+        "inclusion": "Passages linking AI regulation to the UN's role, relevance or marginalization.",
+        "exclusion": "General UN reform discussion with no AI link.",
+        "boundary_cases": "If AI is only one example of UN marginalization, still code here.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_LIE:1",
+            "quote": "It is increasingly ignored or sidelined in efforts to address both the traditional and new challenges, such as the regulation of artificial intelligence."
+          }
+        ]
+      },
+      {
+        "code": "AI_SAFETY_EXISTENTIAL",
+        "label": "Utopia or apocalypse and species-level risk",
+        "definition": "Concern about catastrophic or species-level consequences of AI and a race that deprioritizes safety.",
+        "inclusion": "Passages warning about AI apocalypse, the future of the human species, or an AI race neglecting safety.",
+        "exclusion": "Military targeting uses of AI (code AI_MILITARY_WEAPONS).",
+        "boundary_cases": "Utopia/apocalypse framing may also be coded duality, but here the emphasis is on risk and the race.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_LIE:6",
+            "quote": "we are on a precipice either of a technology-fueled utopia or an apocalypse"
+          },
+          {
+            "passage_id": "verbatim_en_2026_LIE:6",
+            "quote": "how can we risk the consequences to human rights, to our environment, to the long term capacities for our critical thinking and ultimately to the future of the human species?"
+          }
+        ]
+      },
+      {
+        "code": "AI_MILITARY_WEAPONS",
+        "label": "AI in military targeting",
+        "definition": "Harms to civilians from integration of AI into military targeting and warfare.",
+        "inclusion": "Passages referencing AI in targeting systems, warfare or armed forces.",
+        "exclusion": "Non-military AI risks.",
+        "boundary_cases": "The phrase 'victims in its crosshairs' counts when tied to military targeting.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_LIE:6",
+            "quote": "We are already seeing the impacts on civilians as armed forces increasingly integrate AI capabilities into their targeting systems in warfare."
+          }
+        ]
+      },
+      {
+        "code": "AI_HUMAN_RIGHTS_ETHICS",
+        "label": "AI made for humanity",
+        "definition": "AI must serve humanity and protect human rights, social fabric and critical thinking.",
+        "inclusion": "Passages insisting AI be human-centred or warning of risks to rights and the social fabric.",
+        "exclusion": "Purely technical safety or military passages.",
+        "boundary_cases": "Mentions of risks to 'social fabric' without detail lean here.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_LIE:6",
+            "quote": "AI tools have to be made for humanity, lest we become the source material for AI systems to use"
+          }
+        ]
+      }
+    ],
+    "rationale": "Liechtenstein passages consistently call for AI regulation and link it to UN relevance; 2026 adds substantive risk framing spanning species-level risk, rights, and military targeting."
+  }
+}

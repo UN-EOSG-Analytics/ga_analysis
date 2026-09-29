@@ -1,0 +1,127 @@
+{
+  "request_hash": "3e596155e607eea799f2eb48859dc12a9e7a0fb8ce37564b178b7e0b314fd5a3",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_CHILD_PROTECTION",
+        "label": "AI algorithms harming children's mental health",
+        "definition": "AI-driven algorithms, social media and chatbots framed as harming children's and teenagers' mental health, with calls for health-and-safety style regulation and age limits.",
+        "inclusion": "Include passages on AI-optimized social media, chatbots or algorithms harming minors, and on age verification, phone bans or platform duty of care for children.",
+        "exclusion": "Exclude general youth education or AI skills passages that do not concern harm to children.",
+        "boundary_cases": "Passages about social media harms without explicit AI mention count when they continue an argument where AI-driven algorithms were named.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_GRC:20",
+            "quote": "Social media algorithms are constantly improved by AI to keep children online for the maximum amount of time"
+          },
+          {
+            "passage_id": "verbatim_en_2025_GRC:10",
+            "quote": "We don't want our kids to share their intimate thoughts and feelings with an AI chatbot."
+          },
+          {
+            "passage_id": "verbatim_en_2024_GRC:22",
+            "quote": "Digital technology is no different than any other industry that needs to operate under health and safety regulations."
+          },
+          {
+            "passage_id": "verbatim_en_2024_GRC:21",
+            "quote": "The brains of our children are being rewired, and their development changed on an almost unimaginable scale."
+          }
+        ]
+      },
+      {
+        "code": "AI_SOVEREIGNTY_CONCENTRATION",
+        "label": "Unaccountable power of big tech companies",
+        "definition": "Concern that a few large technology companies wield more power than states and are not accountable.",
+        "inclusion": "Include passages about tech companies' outsized economic power, lack of accountability, or AI concentrating power in few corporations.",
+        "exclusion": "Exclude passages about state-level digital divides without corporate power framing.",
+        "boundary_cases": "Calls for tech companies to join governance processes fit here and in AI_GLOBAL_GOVERNANCE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_GRC:18",
+            "quote": "a few very large technology companies, with more economic muscle than most of the countries represented here"
+          },
+          {
+            "passage_id": "verbatim_en_2025_GRC:9",
+            "quote": "concentrate immense power in the hands of a few multinational corporations"
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Global framework like a COP for AI",
+        "definition": "Calls to put AI regulation on a global footing, e.g. a conference of the parties for AI modeled on climate governance.",
+        "inclusion": "Include passages proposing global regimes, COP-style frameworks or agile global governance for AI.",
+        "exclusion": "Exclude national regulatory measures only (e.g. school phone bans).",
+        "boundary_cases": "Praise of UN advisory body reports fits here and in AI_UN_ROLE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_GRC:19",
+            "quote": "Eventually, what we may need is a conference of the parties for AI, with the participation not just of countries but also of the global technology companies."
+          },
+          {
+            "passage_id": "verbatim_en_2024_GRC:18",
+            "quote": "with AI there is no such framework"
+          }
+        ]
+      },
+      {
+        "code": "AI_UN_ROLE",
+        "label": "Support for UN AI bodies and reports",
+        "definition": "Endorsement of UN AI institutions: SG High-Level Advisory Body report, Scientific Panel, Global Dialogue, Global Digital Compact.",
+        "inclusion": "Include explicit praise or welcome of named UN AI bodies, reports or compacts.",
+        "exclusion": "Exclude generic references to multilateralism.",
+        "boundary_cases": "If the UN mention is only a conditional ('if the GDC is to have effect') it still counts.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_GRC:9",
+            "quote": "I welcome the United Nations establishment of the independent international scientific panel on AI and the global dialogue on artificial intelligence governance."
+          },
+          {
+            "passage_id": "verbatim_en_2024_GRC:18",
+            "quote": "presented just a few days ago by the High-Level Advisory Body on Artificial Intelligence, established by the Secretary- General"
+          }
+        ]
+      },
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "Transformative promise versus extraordinary harm",
+        "definition": "AI presented as a game-changing general-purpose technology with great benefits but also capacity for extraordinary harm (deepfakes, control, job displacement).",
+        "inclusion": "Include passages explicitly weighing AI's transformative benefits against its dangers.",
+        "exclusion": "Exclude passages that only describe harms to children.",
+        "boundary_cases": "Deepfake/disinformation mentions within the duality framing can also be coded AI_DISINFORMATION.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_GRC:17",
+            "quote": "However, AI also has the potential to do extraordinary harm."
+          },
+          {
+            "passage_id": "verbatim_en_2024_GRC:17",
+            "quote": "generative AI is used to create more and more convincing deepfakes, designed to spread misinformation and disinformation"
+          }
+        ]
+      },
+      {
+        "code": "AI_NATIONAL_STRATEGY",
+        "label": "Greek AI pilots in public services",
+        "definition": "Description of the country's own AI strategy and pilots in education, health, and disaster prevention.",
+        "inclusion": "Include passages describing national AI programmes or deployments.",
+        "exclusion": "Exclude hypothetical benefits not tied to national action.",
+        "boundary_cases": "National child-safety tools (Kids Wallet) belong to AI_CHILD_PROTECTION rather than here.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_GRC:9",
+            "quote": "Greece is pursuing a visionary yet practical AI strategy through pilot programs in areas such as education, healthcare, and natural disaster prevention."
+          }
+        ]
+      }
+    ],
+    "rationale": "All Greek passages; the dominant thread is AI-driven platforms harming children's mental health and the need for safety regulation. They also discuss big-tech power, global/UN governance, the promise-peril of AI, and Greece's national AI pilots."
+  }
+}

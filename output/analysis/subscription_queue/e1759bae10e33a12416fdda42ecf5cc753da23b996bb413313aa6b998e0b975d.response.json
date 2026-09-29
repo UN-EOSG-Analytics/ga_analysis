@@ -1,0 +1,87 @@
+{
+  "request_hash": "e1759bae10e33a12416fdda42ecf5cc753da23b996bb413313aa6b998e0b975d",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_SAFETY_EXISTENTIAL",
+        "label": "Superintelligence and limits on AI development",
+        "definition": "Concern that thinking machines or superintelligence may seek to surpass humans, requiring enforced limits defining where innovation becomes a threat to humanity.",
+        "inclusion": "Passages invoking superintelligence, machine ambitions, or limits on AI development due to threats to humanity.",
+        "exclusion": "Manipulation or disinformation uses (use AI_DISINFORMATION).",
+        "boundary_cases": "Literary warnings (e.g., Lem) about machines surpassing humans count here.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_POL:10",
+            "quote": "we need a serious conversation about the limits of artificial intelligence development"
+          },
+          {
+            "passage_id": "verbatim_en_2026_POL:10",
+            "quote": "if they begin to imitate humans in their thinking, a natural consequence may be the drive to surpass them"
+          }
+        ]
+      },
+      {
+        "code": "AI_HUMAN_CONTROL_OVERSIGHT",
+        "label": "Humans as subjects, not algorithmic objects",
+        "definition": "Technology must serve humanity, and humans must remain subjects rather than objects of algorithmic influence; humanity must stay more important than its tools.",
+        "inclusion": "Passages about AI serving humanity rather than exploiting people, or humans remaining primary over AI.",
+        "exclusion": "Frontier-model safety requirements (use AI_SAFETY_EXISTENTIAL).",
+        "boundary_cases": "Human dignity in the digital realm may also take AI_HUMAN_RIGHTS_ETHICS.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_POL:10",
+            "quote": "humans will remain subjects or become merely objects of algorithmic influence"
+          },
+          {
+            "passage_id": "verbatim_en_2026_POL:11",
+            "quote": "whether humanity will remain more important than the tools it has created"
+          }
+        ]
+      },
+      {
+        "code": "AI_DISINFORMATION",
+        "label": "AI for manipulation and destabilization",
+        "definition": "AI must not be used for destabilization, manipulation or undermining the international order; technology should serve truth.",
+        "inclusion": "Passages opposing AI use for manipulation, chaos or destabilization.",
+        "exclusion": "Loss-of-control concerns (use AI_SAFETY_EXISTENTIAL).",
+        "boundary_cases": "State destabilization framed as sovereignty violation may also take AI_SOVEREIGNTY_CONCENTRATION.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_POL:10",
+            "quote": "Artificial intelligence must not be used as a tool for destabilization, manipulation, or undermining the international order."
+          },
+          {
+            "passage_id": "verbatim_en_2026_POL:11",
+            "quote": "Technology must serve humanity and the truth, not chaos and manipulation."
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Enforced rules as AI outpaces law",
+        "definition": "AI outpaces existing rules; enforceable rules and an effective, accountable UN are needed.",
+        "inclusion": "Passages calling for enforced AI rules or UN reform to handle AI.",
+        "exclusion": "Passages only about limits for safety reasons (use AI_SAFETY_EXISTENTIAL).",
+        "boundary_cases": "UN reform demands citing AI also take AI_UN_ROLE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_POL:10",
+            "quote": "We need rules that will actually be enforced"
+          },
+          {
+            "passage_id": "verbatim_en_2026_POL:11",
+            "quote": "the development of artificial intelligence, which is outpacing existing rules and testing the limits of our responsibility"
+          }
+        ]
+      }
+    ],
+    "rationale": "Both Polish passages frame AI as a civilizational turning point: fears of superintelligence and machines surpassing humans, human primacy over algorithms, AI misuse for manipulation, and enforceable rules through a reformed UN."
+  }
+}

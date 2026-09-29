@@ -1,0 +1,47 @@
+{
+  "request_hash": "0a0b64f456fc85c588b25925712dd1b9d28a1fdcb0b41ed98fd3afed825caf7e",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_ADAPTIVE_REGULATION",
+        "label": "New regulatory schemes: sandboxes, co-regulation",
+        "definition": "Argument that exponential technological change requires new, agile regulatory techniques (sandboxes, co-regulation) to protect people and ensure responsible, equitable use; not specifically international.",
+        "inclusion": "Include passages proposing specific regulatory methods or new regulatory schemes to keep pace with AI.",
+        "exclusion": "Exclude calls for international treaties or global bodies (AI_GLOBAL_GOVERNANCE).",
+        "boundary_cases": "If the regulatory innovation is proposed for global adoption, code both this and AI_GLOBAL_GOVERNANCE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_PRY:22",
+            "quote": "require us to create new regulatory schemes to protect people"
+          },
+          {
+            "passage_id": "verbatim_en_2024_PRY:22",
+            "quote": "Those new techniques, such as sandboxes and co-regulation, must have as their ultimate goal the responsible use of emerging technologies"
+          }
+        ]
+      },
+      {
+        "code": "AI_HUMAN_RIGHTS_ETHICS",
+        "label": "Ethical application of AI",
+        "definition": "Highlighting the ethical application of AI as a standout challenge.",
+        "inclusion": "Include passages foregrounding ethical use of AI.",
+        "exclusion": "Exclude regulatory-technique discussion without ethical framing.",
+        "boundary_cases": "'Equitable application' can overlap with AI_DIGITAL_DIVIDE if between-country access is meant.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_PRY:22",
+            "quote": "the question of the ethical application of artificial intelligence and of advances in technology in general stands out here"
+          }
+        ]
+      }
+    ],
+    "rationale": "A single Paraguay 2024 passage links technology to development and highlights ethical AI, proposing agile regulatory techniques to match exponential change."
+  }
+}

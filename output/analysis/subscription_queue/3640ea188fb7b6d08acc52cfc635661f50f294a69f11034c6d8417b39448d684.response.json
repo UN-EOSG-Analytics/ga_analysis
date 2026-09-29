@@ -1,0 +1,32 @@
+{
+  "request_hash": "3640ea188fb7b6d08acc52cfc635661f50f294a69f11034c6d8417b39448d684",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_a"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2023_SRB:41",
+      "verbatim_en_2023_SRB:42",
+      "verbatim_en_2023_SRB:43",
+      "verbatim_en_2023_SRB:44",
+      "verbatim_en_2023_SRB:45",
+      "verbatim_en_2023_SRB:46",
+      "verbatim_en_2023_SRB:47",
+      "verbatim_en_2023_SRB:48"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2023_SRB:42",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Serbia is the first country in the South-East Europe region that joined the Global Partnership on Artificial Intelligence and adopted a development strategy in that area back in 2019.",
+        "rationale": "Reports AI partnership membership and adoption of an AI development strategy."
+      }
+    ]
+  }
+}

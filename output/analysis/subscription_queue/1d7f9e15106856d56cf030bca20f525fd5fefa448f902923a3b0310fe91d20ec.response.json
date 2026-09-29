@@ -1,0 +1,43 @@
+{
+  "request_hash": "1d7f9e15106856d56cf030bca20f525fd5fefa448f902923a3b0310fe91d20ec",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_CRISIS_LIST_MENTION",
+        "label": "Unregulated AI among global threats",
+        "definition": "Unregulated AI named briefly alongside climate, pandemics and other crises as threats that a rules-based system must help face.",
+        "inclusion": "Include passages listing 'unregulated AI' among global challenges without further elaboration.",
+        "exclusion": "Exclude passages that detail specific AI harms or governance proposals.",
+        "boundary_cases": "A list item that adds a promise/risk qualifier is also coded AI_OPPORTUNITY_RISK_DUALITY.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_BRB:5",
+            "quote": "to allow us to better face challenges from climate to pandemics to unregulated AI"
+          }
+        ]
+      },
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "Tremendous promise, significant unregulated risk",
+        "definition": "Brief framing of unregulated AI as holding tremendous promise but posing significant risk.",
+        "inclusion": "Include explicit promise-and-risk statements about AI, even when brief.",
+        "exclusion": "Exclude bare list mentions with no promise/risk framing.",
+        "boundary_cases": "Where the risk is tied to lack of regulation, also consider AI_GLOBAL_GOVERNANCE if rules are demanded for AI specifically.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_BRB:4",
+            "quote": "unregulated AI, which while it has tremendous promise, poses unregulated significant risk"
+          }
+        ]
+      }
+    ],
+    "rationale": "Both Barbados passages mention unregulated AI only briefly within a list of threats justifying a rules-based order; one adds a promise-versus-risk qualifier."
+  }
+}

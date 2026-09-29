@@ -1,0 +1,29 @@
+{
+  "request_hash": "37933bccb427f9f9ab0702ab40096fcaa93300f318f4565bbcc544e18a2c03a2",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_MILITARY_WEAPONS",
+        "label": "Military AI deployed without agreed rules",
+        "definition": "Concern that AI is being deployed for military use in the absence of agreed international rules, as part of a deteriorating security environment.",
+        "inclusion": "Include passages noting military deployment of AI and the lack of rules governing it.",
+        "exclusion": "Exclude civilian AI governance concerns and general nuclear proliferation without AI.",
+        "boundary_cases": "Linking the gap to the Pact for the Future could also support AI_UN_ROLE if the Pact is cited as addressing AI.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_GBR:8",
+            "quote": "Incredible new technologies like artificial intelligence are being deployed for military use without agreed rules."
+          }
+        ]
+      }
+    ],
+    "rationale": "A single UK 2024 passage mentions AI only in its military use without agreed rules, among international security threats that motivate the Pact for the Future."
+  }
+}

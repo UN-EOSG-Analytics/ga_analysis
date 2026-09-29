@@ -1,0 +1,75 @@
+{
+  "request_hash": "c02ce899cd1904e2aebe15a27082e4c6cf64e8530985c3fbf44ae7d70c324654",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_GLOBAL_CHALLENGES_LIST",
+        "label": "AI as defining imperative of the era",
+        "definition": "AI is named alongside climate and inequality as one of the defining global challenges facing humanity, without further elaboration in that passage.",
+        "inclusion": "Include passages that rank AI among the era's top global challenges or imperatives.",
+        "exclusion": "Exclude passages with substantive discussion of specific AI risks or policies.",
+        "boundary_cases": "If the naming is purely a list of technologies rather than challenges, code AI_TECH_LIST_MENTION instead.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_ETH:1",
+            "quote": "the defining imperatives of our era, namely artificial intelligence, the climate crisis, and deepening global inequalities"
+          }
+        ]
+      },
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "AI as instrument of inequality or growth",
+        "definition": "Speaker questions whether AI will entrench global inequality or catalyse growth, insisting the Global South lead rather than spectate.",
+        "inclusion": "Include passages framing AI in terms of Global South exclusion or leadership in the technological revolution.",
+        "exclusion": "Exclude passages that only list AI's benefits.",
+        "boundary_cases": "Assertions of Global South leadership backed by domestic AI initiatives are also coded AI_NATIONAL_STRATEGY.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_ETH:2",
+            "quote": "Will the age of the AI become another instrument of global inequality, or will it be a catalyst for our collective growth?"
+          },
+          {
+            "passage_id": "verbatim_en_2026_ETH:2",
+            "quote": "We must ensure that the Global South leads this technological revolution rather than remain a helpless spectator."
+          }
+        ]
+      },
+      {
+        "code": "AI_NATIONAL_STRATEGY",
+        "label": "National AI initiatives and university",
+        "definition": "Speaker cites its own AI initiatives such as a coders programme and an AI university as proof of readiness.",
+        "inclusion": "Include references to national AI programmes, institutions or investments.",
+        "exclusion": "Exclude calls for international action without domestic initiatives.",
+        "boundary_cases": "Skills programmes may also be coded AI_YOUTH_EDUCATION.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_ETH:2",
+            "quote": "the soon to be commissioned University of Artificial Intelligence reaffirms that our continent is ready to build the future"
+          }
+        ]
+      },
+      {
+        "code": "AI_RESPONSIBLE_USE",
+        "label": "Brief call for responsible AI use",
+        "definition": "A brief, general call to use AI responsibly for the benefit of humankind, without specific mechanisms.",
+        "inclusion": "Include short statements urging responsible or beneficial use of AI without detailing rules or institutions.",
+        "exclusion": "Exclude calls specifying treaties, frameworks or UN bodies (AI_GLOBAL_GOVERNANCE).",
+        "boundary_cases": "If placed next to nuclear weapons without explicit military AI mention, do not code AI_MILITARY_WEAPONS.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_ETH:6",
+            "quote": "We should also ensure that new technologies such as artificial intelligence are used responsibly, in a manner that benefits humankind."
+          }
+        ]
+      }
+    ],
+    "rationale": "Ethiopia's passages move from a brief 2023 call for responsible AI use to 2026 framing AI as a defining global imperative and an inequality question for Africa, backed by national AI initiatives."
+  }
+}

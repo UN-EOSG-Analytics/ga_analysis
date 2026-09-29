@@ -1,0 +1,93 @@
+{
+  "request_hash": "45c526ac9185d00773bf8f608712539909733c1bf7f61a27907860141f86fd68",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_MILITARY_WEAPONS",
+        "label": "Militarization through autonomous weapons",
+        "definition": "AI risks framed in terms of militarization, including autonomous weapons.",
+        "inclusion": "Include passages naming autonomous weapons or militarization as an AI risk.",
+        "exclusion": "Exclude general safety concerns about opaque models not linked to military use.",
+        "boundary_cases": "Lists that include militarization among several AI risks count here as well as in other risk codes.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_MOZ:3",
+            "quote": "even militarization throughout autonomous weapons"
+          }
+        ]
+      },
+      {
+        "code": "AI_SAFETY_EXISTENTIAL",
+        "label": "Opaque models need safeguards before critical tasks",
+        "definition": "Concern that poorly understood AI models should not be entrusted with critical tasks without robust safeguards, with catastrophic framing.",
+        "inclusion": "Include passages about AI interpretability, safeguards for critical uses, or catastrophic outcomes from unsafe AI.",
+        "exclusion": "Exclude military-only framing, which goes to AI_MILITARY_WEAPONS.",
+        "boundary_cases": "Hyperbolic 'destroy the world' language tied to unsafe deployment counts here.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_MOZ:3",
+            "quote": "As long as we do not fully understand how these models work, we cannot entrust them critical tasks without robust safeguards in place."
+          }
+        ]
+      },
+      {
+        "code": "AI_CAPACITY_BUILDING",
+        "label": "Technology transfer and African AI capacity",
+        "definition": "Calls for technology and knowledge transfer, investment in connectivity, compute, research and youth training so Africa is more than a supplier of minerals.",
+        "inclusion": "Include passages requesting technology transfer, compute, training or partnerships to build AI capacity in developing/African states.",
+        "exclusion": "Exclude climate finance requests without technology content.",
+        "boundary_cases": "Framing about Africa not only supplying minerals for innovation hubs fits here and in AI_SOVEREIGNTY_CONCENTRATION.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_MOZ:7",
+            "quote": "We need to have investment in connectivity, computing capacity, scientific research, training of young people in Africa, technology transfer, governance, ethics for AI"
+          },
+          {
+            "passage_id": "verbatim_en_2025_MOZ:3",
+            "quote": "through genuine transfer and sharing of knowledge, of technology"
+          }
+        ]
+      },
+      {
+        "code": "AI_SOVEREIGNTY_CONCENTRATION",
+        "label": "Africa beyond supplying minerals",
+        "definition": "Concern that Africa remains a raw-material supplier to foreign innovation hubs, with calls for autonomy and African role in setting AI rules.",
+        "inclusion": "Include passages asserting African agency in setting AI standards or rejecting a supplier-only role.",
+        "exclusion": "Exclude general Security Council representation claims.",
+        "boundary_cases": "Calls for Africa to define international AI rules also fit AI_GLOBAL_GOVERNANCE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_MOZ:7",
+            "quote": "Africa must not limit itself to supplying the minerals that fuels the world innovation hubs"
+          },
+          {
+            "passage_id": "verbatim_en_2025_MOZ:3",
+            "quote": "our continent, Africa, can and must play an active role in defining international roles and standards"
+          }
+        ]
+      },
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "Extraordinary opportunities, serious risks",
+        "definition": "AI framed as offering extraordinary opportunities alongside exclusion, manipulation and other risks.",
+        "inclusion": "Include passages pairing AI opportunities with explicit risks.",
+        "exclusion": "Exclude one-sided statements.",
+        "boundary_cases": "If specific risks (weapons, safety) are named, code those too.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_MOZ:3",
+            "quote": "Artificial intelligence and other emerging technologies offer extraordinary opportunities, but also serious risks of exclusion, manipulation of the society"
+          }
+        ]
+      }
+    ],
+    "rationale": "Two Mozambique passages: 2025 gives a broad risk inventory (autonomous weapons, opaque models, manipulation) balanced against opportunity, while 2026 focuses on African capacity, technology transfer and sovereignty."
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "request_hash": "07a1ee461caebff60f76d93fc45eed49c8ae8dbb2a629e908afbee8c3446c833",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_c"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_PRT:1",
+      "verbatim_en_2026_PRT:2",
+      "verbatim_en_2026_PRT:3",
+      "verbatim_en_2026_PRT:4",
+      "verbatim_en_2026_PRT:5"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_PRT:2",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "And in the face of the new challenge posed by artificial intelligence, we must find together the right balance between innovation and regulation.",
+        "rationale": "Calls for a balance between AI innovation and regulation to benefit humanity while limiting harm."
+      }
+    ]
+  }
+}

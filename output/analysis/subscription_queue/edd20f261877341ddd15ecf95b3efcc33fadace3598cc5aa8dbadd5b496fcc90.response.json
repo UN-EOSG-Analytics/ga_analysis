@@ -1,0 +1,56 @@
+{
+  "request_hash": "edd20f261877341ddd15ecf95b3efcc33fadace3598cc5aa8dbadd5b496fcc90",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_a"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_PRY:1",
+      "verbatim_en_2026_PRY:2",
+      "verbatim_en_2026_PRY:3",
+      "verbatim_en_2026_PRY:4",
+      "verbatim_en_2026_PRY:5",
+      "verbatim_en_2026_PRY:6",
+      "verbatim_en_2026_PRY:7",
+      "verbatim_en_2026_PRY:8",
+      "verbatim_en_2026_PRY:9",
+      "verbatim_en_2026_PRY:10",
+      "verbatim_en_2026_PRY:11"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_PRY:4",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "It affects the microchips that power industry, defense, and artificial intelligence.",
+        "rationale": "Links Taiwan Strait security to the supply of chips powering AI."
+      },
+      {
+        "passage_id": "verbatim_en_2026_PRY:6",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "No force in our time is as profound as artificial intelligence. We can already see its power in warfare, in the economy, and in our everyday lives.",
+        "rationale": "Discusses AI transformation, decision-making and agricultural development benefits."
+      },
+      {
+        "passage_id": "verbatim_en_2026_PRY:7",
+        "status": "Yes",
+        "mention_type": "contextual",
+        "quote": "However, we're not blind to the risks, but we",
+        "rationale": "This sentence fragment explicitly continues the AI transformation discussion and introduces the AI risks detailed in the following passage."
+      },
+      {
+        "passage_id": "verbatim_en_2026_PRY:8",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Artificial intelligence must serve human dignity and not replace it.",
+        "rationale": "Discusses learned values in AI, democratic accountability and protection of human dignity."
+      }
+    ]
+  }
+}

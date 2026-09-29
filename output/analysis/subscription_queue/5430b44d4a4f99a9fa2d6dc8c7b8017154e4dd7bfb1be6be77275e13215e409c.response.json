@@ -1,0 +1,79 @@
+{
+  "request_hash": "5430b44d4a4f99a9fa2d6dc8c7b8017154e4dd7bfb1be6be77275e13215e409c",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "AI widening North-South digital divide",
+        "definition": "AI's evolution risks widening the digital divide between the global South and North, with calls on the UN to remove barriers to Africa's digital economy.",
+        "inclusion": "Include passages warning that AI deepens the North-South divide or demanding removal of barriers (costs, IP rights) for developing regions.",
+        "exclusion": "Exclude passages about crypto regulation or generic finance without a divide framing.",
+        "boundary_cases": "Continuation passages listing digital-economy barriers without naming AI are coded here only when they continue an explicit AI-divide argument.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_NGA:21",
+            "quote": "With the evolution of artificial intelligence, that divide risks becoming wider still."
+          },
+          {
+            "passage_id": "verbatim_en_2024_NGA:22",
+            "quote": "eliminating barriers to the digital economy in Africa, such as the high costs of Internet services and intellectual property rights"
+          }
+        ]
+      },
+      {
+        "code": "AI_NEW_TECH_REGULATION_CRIME",
+        "label": "Unregulated new technologies enabling crime",
+        "definition": "New technologies such as cryptocurrency, when unregulated, facilitate crime, extremism and trafficking, motivating common global standards; AI is not named directly.",
+        "inclusion": "Include passages on regulating emerging technologies against crime and instability where AI is part of the surrounding discussion.",
+        "exclusion": "Exclude passages specifically about AI misuse (AI_CYBER_SECURITY).",
+        "boundary_cases": "This is adjacent to AI discussion; classifiers should not treat crypto regulation alone as AI discourse.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_NGA:22",
+            "quote": "new technologies, when not properly regulated, can facilitate organized crime, violent extremism and human trafficking"
+          }
+        ]
+      },
+      {
+        "code": "AI_DUAL_USE_ANTI_PARANOIA",
+        "label": "AI as neutral tool, rejecting paranoia",
+        "definition": "AI is framed as a neutral dual-use tool whose effect depends on users, with anxiety attributed to distrust and a refusal to surrender to paranoia.",
+        "inclusion": "Include passages rejecting AI alarmism and framing AI as a neutral tool usable for war or for development.",
+        "exclusion": "Exclude passages that primarily warn of AI dangers.",
+        "boundary_cases": "Balanced opportunity/risk statements without rejecting fear are AI_OPPORTUNITY_RISK_DUALITY.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_NGA:3",
+            "quote": "we refuse to surrender our technological future to paranoia"
+          },
+          {
+            "passage_id": "verbatim_en_2026_NGA:3",
+            "quote": "We can deploy artificial intelligence to wage war or use it to transform healthcare, education, agriculture, governance, and economic productivity."
+          }
+        ]
+      },
+      {
+        "code": "AI_NATIONAL_STRATEGY",
+        "label": "National digital investment and youth AI",
+        "definition": "Speaker cites national investment in digital infrastructure, research and technology ownership and invites support for young people to direct AI.",
+        "inclusion": "Include passages on national AI-enabling investments and youth AI talent.",
+        "exclusion": "Exclude global governance calls.",
+        "boundary_cases": "Youth invitation may also be coded AI_YOUTH_EDUCATION.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_NGA:3",
+            "quote": "We invite the world to augment resourceful and enterprising young people to direct AI towards humanity's advancement rather than its destruction."
+          }
+        ]
+      }
+    ],
+    "rationale": "Nigeria 2024 frames AI as widening the North-South divide and pairs this with regulation of new technologies like crypto; 2026 instead adopts an optimistic dual-use framing that rejects AI paranoia and highlights national investment and youth."
+  }
+}

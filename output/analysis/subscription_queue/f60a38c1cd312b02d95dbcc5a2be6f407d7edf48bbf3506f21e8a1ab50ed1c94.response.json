@@ -1,0 +1,36 @@
+{
+  "request_hash": "f60a38c1cd312b02d95dbcc5a2be6f407d7edf48bbf3506f21e8a1ab50ed1c94",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_b"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2025_TJK:1",
+      "verbatim_en_2025_TJK:2",
+      "verbatim_en_2025_TJK:3",
+      "verbatim_en_2025_TJK:4",
+      "verbatim_en_2025_TJK:5"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2025_TJK:3",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "We, in this context, considered the establishment of a regional center for artificial intelligence in Dushanbe to be favorable.",
+        "rationale": "Discusses AI for SDGs, a UN resolution on Central Asian AI and a regional centre."
+      },
+      {
+        "passage_id": "verbatim_en_2025_TJK:4",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "This center would undoubtedly facilitate an implementation of joint initiatives and projects among Central Asian countries in the field of artificial intelligence.",
+        "rationale": "Explains the proposed centre's role in regional AI cooperation."
+      }
+    ]
+  }
+}

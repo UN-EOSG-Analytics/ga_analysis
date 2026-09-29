@@ -1,0 +1,29 @@
+{
+  "request_hash": "d72aa451199970413d565d34ac45475d3a736bdf2a53cca023645c2ba3810d89",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_b"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_LAO:1",
+      "verbatim_en_2026_LAO:2",
+      "verbatim_en_2026_LAO:3",
+      "verbatim_en_2026_LAO:4",
+      "verbatim_en_2026_LAO:5"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_LAO:2",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Artificial intelligence and digital technologies must serve human development, strengthen local technical capacities, and respect national development priorities.",
+        "rationale": "Sets development, capacity and national priority principles for AI under the Global Digital Compact."
+      }
+    ]
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "request_hash": "1be17f4941a2cd396f9ef10b786503779e9fa2c4524f7a445b507116fb33f96f",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "Best or worst thing for humankind",
+        "definition": "AI framed as both immense potential for SDGs and unprecedented risk for peace and security; could be the best or worst thing for humanity.",
+        "inclusion": "Passages explicitly pairing AI's potential with its dangers.",
+        "exclusion": "One-sided statements.",
+        "boundary_cases": "Framing AI as an existential threat alongside SDG benefits counts here and in AI_SAFETY_EXISTENTIAL if loss-of-control is implied.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_MCO:21",
+            "quote": "immense potential for accelerating the achievement of the Sustainable Development Goals and unprecedented risks for global peace and security"
+          },
+          {
+            "passage_id": "verbatim_en_2023_MCO:21",
+            "quote": "it may be either the best or the worst thing to happen to humankind"
+          }
+        ]
+      },
+      {
+        "code": "AI_CYBER_SECURITY",
+        "label": "AI cyberattacks on critical infrastructure",
+        "definition": "AI-enabled cyberattacks targeting critical infrastructure such as hospitals and humanitarian operations.",
+        "inclusion": "Passages on AI used in cyberattacks or against infrastructure.",
+        "exclusion": "Autonomous weapons (use AI_MILITARY_WEAPONS).",
+        "boundary_cases": "Security industry exploitation of AI is coded here if not about lethal decisions.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_MCO:22",
+            "quote": "Cyberattacks using artificial intelligence are already targeting critical infrastructure such as hospitals and United Nations humanitarian aid operations."
+          }
+        ]
+      },
+      {
+        "code": "AI_MILITARY_WEAPONS",
+        "label": "Machines deciding life or death",
+        "definition": "Ethical concern about the arms industry exploiting AI and machines deciding life or death.",
+        "inclusion": "Passages on AI in weapons or lethal decision-making.",
+        "exclusion": "Cyber misuse (use AI_CYBER_SECURITY).",
+        "boundary_cases": "Rhetorical questions about machines deciding life and death count here.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_MCO:22",
+            "quote": "Can we let a machine decide the life or death of a human being?"
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Global framework and ethical limits",
+        "definition": "Obligation to establish a global governance framework and ethical standards limiting AI use.",
+        "inclusion": "Passages urging global frameworks or ethical standards that limit AI.",
+        "exclusion": "UN-specific bodies alone (use AI_UN_ROLE).",
+        "boundary_cases": "Welcoming the UN advisory body takes AI_UN_ROLE too.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_MCO:22",
+            "quote": "establish a global governance framework and ethical standards that impose limits on the use of artificial intelligence"
+          }
+        ]
+      },
+      {
+        "code": "AI_UN_ROLE",
+        "label": "UN high-level advisory body on AI",
+        "definition": "Support for the UN high-level consultative body on AI governance.",
+        "inclusion": "Passages welcoming the SG's advisory body or UN AI governance work.",
+        "exclusion": "Non-UN governance calls.",
+        "boundary_cases": "Mentions of ongoing work without naming the UN go to AI_GLOBAL_GOVERNANCE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_MCO:22",
+            "quote": "developing a high-level consultative body within the United Nations to work on the international governance of artificial intelligence"
+          }
+        ]
+      }
+    ],
+    "rationale": "Both Monaco passages treat AI substantively as an existential-scale question with SDG potential and security risks, citing AI cyberattacks and lethal machine decisions to argue for global ethical limits and the UN advisory body."
+  }
+}

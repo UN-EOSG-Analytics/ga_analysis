@@ -1,0 +1,35 @@
+{
+  "request_hash": "60e52c781ef852cee4648b26dc609c62d19e463e58cbd8de12a219c144d8db5d",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_c"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2024_CIV:1",
+      "verbatim_en_2024_CIV:2",
+      "verbatim_en_2024_CIV:3",
+      "verbatim_en_2024_CIV:4",
+      "verbatim_en_2024_CIV:5",
+      "verbatim_en_2024_CIV:6",
+      "verbatim_en_2024_CIV:7",
+      "verbatim_en_2024_CIV:8",
+      "verbatim_en_2024_CIV:9",
+      "verbatim_en_2024_CIV:10",
+      "verbatim_en_2024_CIV:11"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2024_CIV:7",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Artificial intelligence holds great promise for our societies, but it can also pose a number of threats and lead to abuses, owing to the lack of international regulations governing its use.",
+        "rationale": "Discusses AI benefits and harms, inequality risks, and international governance through the Global Digital Compact."
+      }
+    ]
+  }
+}

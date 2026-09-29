@@ -1,0 +1,47 @@
+{
+  "request_hash": "efec6c1a55500ded37e0b0d1142b2bfb7650174b78714b0a34154d8c5d6e69ff",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "Technology's promise and risk",
+        "definition": "AI and digital innovation framed as accelerating development while their misuse deepens inequality, insecurity and crime.",
+        "inclusion": "Include passages explicitly pairing AI's development promise with risks of misuse.",
+        "exclusion": "Exclude passages discussing only crime enforcement without AI framing.",
+        "boundary_cases": "If the risk emphasized is crime, also code AI_CYBER_SECURITY.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_KHM:4",
+            "quote": "Technology illustrate both the promise and the risk."
+          },
+          {
+            "passage_id": "verbatim_en_2026_KHM:4",
+            "quote": "Artificial intelligence and digital innovation can accelerate development and expand opportunities"
+          }
+        ]
+      },
+      {
+        "code": "AI_CYBER_SECURITY",
+        "label": "Misuse enabling transnational online crime",
+        "definition": "Misuse of AI and digital tech linked to transnational crime such as online scams, requiring international cooperation against criminal networks.",
+        "inclusion": "Include passages linking AI/digital misuse to transnational crime, scams or insecurity.",
+        "exclusion": "Exclude military uses of AI.",
+        "boundary_cases": "Anti-scam enforcement passages without any AI/technology link should not be coded.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_KHM:4",
+            "quote": "their misuse can also deepen inequality, insecurity, and transnational crime"
+          }
+        ]
+      }
+    ],
+    "rationale": "Cambodia's passage frames AI as promise and risk and connects its misuse to transnational online scam crime, calling for international cooperation."
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "request_hash": "3280f0004b38ad618b171cd1eba96658827d2fb16d74494a724a0bbb5168a9bc",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "AI as both opportunity and risk",
+        "definition": "Speaker explicitly frames AI as offering development opportunities while carrying risks that must be managed.",
+        "inclusion": "Include passages that pair AI benefits (development, services, economy) with explicit risks or harms in the same statement.",
+        "exclusion": "Exclude passages that mention only benefits or only risks of AI.",
+        "boundary_cases": "If the risk is only the digital divide, code AI_DIGITAL_DIVIDE as well; code duality only if benefit and risk are both explicit.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_SLB:4",
+            "quote": "artificial intelligence and emerging technologies present both unprecedented opportunities and serious risks"
+          },
+          {
+            "passage_id": "verbatim_en_2025_FSM:5",
+            "quote": "While AI holds great promise for economic development, it also carries the risk that must be carefully managed."
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Inclusive international AI governance framework",
+        "definition": "Calls for international, inclusive governance frameworks, guardrails or cooperation to manage AI.",
+        "inclusion": "Include explicit calls for international or global governance frameworks, rules or cooperation on AI.",
+        "exclusion": "Exclude purely national AI policies or general calls for digital infrastructure without governance.",
+        "boundary_cases": "Calls placing the UN at the centre of AI governance should also receive AI_UN_ROLE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_SLB:4",
+            "quote": "Solomon Islands therefore recognizes the need for an inclusive and transparent international governance framework on AI."
+          },
+          {
+            "passage_id": "verbatim_en_2026_SYC:3",
+            "quote": "We call for global digital governance anchored in human rights, ethical standards, and international law"
+          }
+        ]
+      },
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "AI widening divide for small states",
+        "definition": "Concern that AI benefits will be concentrated and widen inequalities for developing and small island states.",
+        "inclusion": "Include statements that AI may widen the digital or global divide or increase inequalities, or that its benefits must be shared by all.",
+        "exclusion": "Exclude generic connectivity efforts without reference to AI inequality.",
+        "boundary_cases": "Statements about AI benefits 'concentrated among a few' may also fit AI_SOVEREIGNTY_CONCENTRATION when focused on state/corporate power.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_SLB:4",
+            "quote": "The benefits of AI must be shared by all, Mr. President, not concentrated among a few."
+          },
+          {
+            "passage_id": "verbatim_en_2026_SYC:3",
+            "quote": "They also risk widening the global divide and enabling new forms of warfare and cybercrime."
+          }
+        ]
+      },
+      {
+        "code": "AI_DEVELOPMENT_SDGS",
+        "label": "AI for island development and climate",
+        "definition": "AI presented as a tool for sustainable development, energy transition, public services, and climate-resilient development.",
+        "inclusion": "Include passages naming concrete development uses of AI such as energy planning, public services, health, education, disaster preparedness or ocean management.",
+        "exclusion": "Exclude mentions of AI as a general transformation without a development application.",
+        "boundary_cases": "A bare wish for 'the benefits of AI' alongside other transitions is closer to AI_TECH_LIST_MENTION.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_WSM:3",
+            "quote": "The digital transformation, including AI and data analytics, offers real opportunities to drive an inclusive, just energy transition"
+          },
+          {
+            "passage_id": "verbatim_en_2026_FSM:5",
+            "quote": "digital transformation and artificial intelligence offer significant opportunities to improve public service delivery, diversify economies"
+          }
+        ]
+      },
+      {
+        "code": "AI_CYBER_SECURITY",
+        "label": "AI-linked cyber, misinformation and privacy risks",
+        "definition": "AI associated with cybersecurity threats, misinformation, data privacy risks, cybercrime or non-peaceful uses.",
+        "inclusion": "Include passages linking AI to cyber threats, cybercrime, misinformation, data privacy or malicious attacks.",
+        "exclusion": "Exclude passages where security refers only to climate or maritime security.",
+        "boundary_cases": "Explicit military use of AI or AI-enabled warfare should additionally be coded AI_MILITARY_WEAPONS.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_FSM:5",
+            "quote": "further heighten exposure to cybersecurity threats, information, misinformation, and risk to data privacy"
+          },
+          {
+            "passage_id": "verbatim_en_2025_SLB:7",
+            "quote": "responsible use of artificial intelligence for development, combat misinformation, cybersecurity challenges, protection of data and privacy"
+          }
+        ]
+      },
+      {
+        "code": "AI_TECH_LIST_MENTION",
+        "label": "AI listed among transformations",
+        "definition": "AI named only in a list of global changes or needs without further discussion.",
+        "inclusion": "Include passages where AI appears in a list of transformations or needs (energy, trade, demography) with no elaboration.",
+        "exclusion": "Exclude passages that go on to discuss AI benefits, risks or governance.",
+        "boundary_cases": "If a list mention is followed by a sentence on AI specifically, code the substantive theme instead.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_VUT:6",
+            "quote": "Artificial intelligence is changing economies and societies. Digital technologies are changing the way governments operate."
+          },
+          {
+            "passage_id": "verbatim_en_2026_FSM:1",
+            "quote": "We need the benefits of digital innovation, artificial intelligence, energy transition, and institutional reforms."
+          }
+        ]
+      }
+    ],
+    "rationale": "Pacific and Indian Ocean small island states place AI within development and climate agendas; most pair opportunities with risks and call for inclusive international governance, while some (Vanuatu, Micronesia opening) mention AI only in lists of transformations."
+  }
+}

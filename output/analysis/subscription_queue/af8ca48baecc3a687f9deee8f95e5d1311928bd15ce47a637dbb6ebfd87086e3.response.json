@@ -1,0 +1,89 @@
+{
+  "request_hash": "af8ca48baecc3a687f9deee8f95e5d1311928bd15ce47a637dbb6ebfd87086e3",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_DEVELOPMENT_SDGS",
+        "label": "AI as revolution for health and development",
+        "definition": "AI described as a genuine technological revolution that, properly used, brings unprecedented development in healthcare, environment and production, and must benefit citizens.",
+        "inclusion": "Passages framing AI as transformative and beneficial for health, environment, productivity or citizens' lives.",
+        "exclusion": "Passages only listing AI among issues (use AI_TECH_LIST_MENTION).",
+        "boundary_cases": "Conditional benefit statements ('if employed properly') count here and may also take AI_OPPORTUNITY_RISK_DUALITY.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_VEN:2",
+            "quote": "it will bring about unprecedented development in healthcare, the environment, productive processes, and in the lives of human beings in general"
+          }
+        ]
+      },
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "Avoid widening digital inequality",
+        "definition": "Warning that AI must not widen the digital divide and global digital inequality.",
+        "inclusion": "Passages urging that AI not widen digital divides or inequality between countries.",
+        "exclusion": "Concrete capacity-building requests (use AI_CAPACITY_BUILDING).",
+        "boundary_cases": "Fair regulation so AI does not serve a few may take AI_SOVEREIGNTY_CONCENTRATION instead.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_VEN:2",
+            "quote": "we must not widen the digital divide and digital inequality throughout the world"
+          }
+        ]
+      },
+      {
+        "code": "AI_UN_ROLE",
+        "label": "AI regulation as UN strategic priority",
+        "definition": "Calls for the UN to make regulation of AI and new information technologies a strategic priority.",
+        "inclusion": "Passages asking the UN to prioritize AI/ICT regulation.",
+        "exclusion": "International regulation calls not tied to the UN (use AI_GLOBAL_GOVERNANCE).",
+        "boundary_cases": "Bundling AI with cybercrime and social media regulation still counts when the UN is named.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_VEN:18",
+            "quote": "the regulation of new information technologies, social media and artificial intelligence must become a strategic priority for the United Nations"
+          }
+        ]
+      },
+      {
+        "code": "AI_SOVEREIGNTY_CONCENTRATION",
+        "label": "Against control by few and destabilization",
+        "definition": "Fair regulation must prevent new technologies including AI from serving the interests and control of a few or being used to destabilize legitimate governments.",
+        "inclusion": "Passages opposing AI serving the control of a few or its use to destabilize governments and social harmony.",
+        "exclusion": "Disinformation concerns framed without state sovereignty (use AI_DISINFORMATION).",
+        "boundary_cases": "Use for regime destabilization framing can also take AI_DISINFORMATION if information manipulation is explicit.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_VEN:18",
+            "quote": "we must promote fair and equitable regulation that does not allow the focus of those new tools to be for the interests and control of a few"
+          },
+          {
+            "passage_id": "verbatim_en_2023_VEN:18",
+            "quote": "Neither can we accept the use of those new technologies to destabilize legitimate Governments"
+          }
+        ]
+      },
+      {
+        "code": "AI_TECH_LIST_MENTION",
+        "label": "AI listed among humanity's major issues",
+        "definition": "AI named in a list of major global issues without elaboration.",
+        "inclusion": "Passages listing AI alongside peace, development, climate or energy.",
+        "exclusion": "Passages elaborating on AI.",
+        "boundary_cases": "An introductory list previewing a later AI section is still a list mention for that passage.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_VEN:1",
+            "quote": "free trade, energy security and, more recently, artificial intelligence"
+          }
+        ]
+      }
+    ],
+    "rationale": "All passages are Venezuelan: 2026 lists AI among core issues and then frames it as a beneficial revolution that must not widen the digital divide, while 2023 calls for UN-prioritized fair regulation against control by a few and destabilization of governments."
+  }
+}

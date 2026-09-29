@@ -188,10 +188,10 @@ def run(root,execute=False,budget=None,allow_partial=False,final_day=None,stop_a
             memo=out/'methodology_and_cost.md'
             if memo.exists():
                 with memo.open('a',encoding='utf-8') as handle:
-                    handle.write(f"\n\n## 실행 비용\n\n현재 실행 경로의 직접 API 추정: US${readiness['cost_estimate']['lower_usd']:.2f}–${readiness['cost_estimate']['upper_usd']:.2f}. 구독 경로는 임베딩만 API 비용에 포함하며 상세 가정은 cost_estimate.json을 따른다. 보장 상한이 아니다. "
-                        f"이번 실행의 정산/예약 증가분: US${costs['new_run_charged_or_reserved_usd']:.4f}. "
-                        f"워크스페이스 누적 정산/예약: US${costs['cumulative_charged_or_reserved_usd']:.4f}. "
-                        "실제 사용 토큰과 미확정 예약분은 cost_summary.json 및 usage.jsonl 참조. 청구서 금액으로 확정한 값은 아니다.\n")
+                    handle.write(f"\n\n## Run cost\n\nEstimated direct API cost for the current execution path: US${readiness['cost_estimate']['lower_usd']:.2f}–${readiness['cost_estimate']['upper_usd']:.2f}. On the subscription path only embeddings incur API cost; assumptions are in cost_estimate.json. This is not a guaranteed ceiling. "
+                        f"Charged/reserved increase in this run: US${costs['new_run_charged_or_reserved_usd']:.4f}. "
+                        f"Cumulative workspace charged/reserved: US${costs['cumulative_charged_or_reserved_usd']:.4f}. "
+                        "Actual token usage and unresolved reservations are in cost_summary.json and usage.jsonl. These are not invoiced amounts.\n")
             result=dict(run_id=fingerprint,completed_stage=stage,state='complete' if stage=='report' else 'stage_complete',
                         output=str(out),usage_ledger=str(base/'api_cache/usage.jsonl'),costs=costs,human_reviewed=False,**(extra or {}))
             save(out/'run.json',result);save(base/'latest.json',result)
@@ -270,16 +270,16 @@ def ancillary(root,out,speeches,reviewed,classified,taxonomy,stats,readiness,cfg
     for code,t in taxonomy['codes'].items():
         lines += [f"## {code}: {t['label']}",t['definition'],'Include: '+t['inclusion'],'Exclude: '+t['exclusion'],'Boundary cases: '+t['boundary_cases'],json.dumps(t['examples'],ensure_ascii=False)]
     (out/'theme_taxonomy.md').write_text('\n\n'.join(lines)+'\n',encoding='utf-8')
-    memo=['# 방법과 비용', '',
-        '전사 DB를 변경하지 않고 국가–연도 단위로 분석했다. 검색 후보가 있는 연설의 전체 문맥과 연도·지역·출처별 검색 미적중 표본을 검토했다. 기본 1회, 음성 점검 표본 및 고정 해시로 선정한 10%는 2회 자동 검토한다. 표본에서 Yes/Uncertain이 발견되면 해당 집단으로 검토를 확대한다. 실제 선정 내역·횟수·확대는 review_selection.json에 기록한다. 미검토는 Pending, 불일치는 Uncertain이다.',
-        '미검토 연설이 있으면 연도·지역별 n/N은 확인된 AI 양성 국가 / 확보한 국가 연설의 최소 확인 비율이다. 모집단 언급률 추정치가 아니며 미검토를 No로 간주하지 않는다. resolved_N과 fully_reviewed를 별도로 제공한다. 검색·표본 선택의 편향과 연도별 검토 범위 차이 때문에 비율 변화를 정책적 변화로 단정하지 않는다. 주제별 비율도 발견·검토된 AI 양성 연설 내 결과이며 미발견 AI 발언에 일반화하지 않는다.',
-        f"문맥·분류·보고서 실행 경로: {cfg['execution'].get('text_backend','openai_api')}. 구독 경로의 실제 모델은 subscription_queue 응답별 reviewer 메타데이터에 기록한다. 임베딩: {cfg['discovery']['model']}, {cfg['discovery']['dimensions']}차원.",
-        '임베딩은 AI Yes 구절과 필요한 문맥에만 적용한다. 로컬 평균 중심화·cosine 거리·average linkage를 사용하고 여러 절단과 군집별 대표/경계 구절을 검토해 공통 taxonomy를 만든다. 군집 ID를 최종 주제값으로 쓰지 않는다.',
-        '분류는 구절별 복수 판정이며 국가–연도·코드별 OR로 집계한다. 해당 코드에 Yes가 있으면 1, AI 검토가 완료되고 모든 AI 구절에서 해당 코드가 No이면 0, 그 밖에는 NA이다. 주제별 N은 AI 양성 국가 중 해당 코드가 확정된 국가 수이며 공동 언급은 두 코드가 모두 확정된 국가를 분모로 한다. 같은 국가의 연도 비교도 코드별 공통 표본을 사용한다. 미검토·미확보를 0으로 바꾸지 않는다. 새 개념은 검토 대기표에 남기며 기존 코드의 분류 완료를 막지 않는다. 지역은 고정 UN 매핑을 사용한다.',
-        '동일 모델의 별도 호출은 자동 재검토이며 사람 간 일치도가 아니다. 원음 검증과 인간 검토 완료를 주장하지 않는다. 자동 검토 보고서는 이 한계를 표시한다.',
-        f"사용량·비용 원장: {cfg['execution']['output_directory']}/api_cache/usage.jsonl. 실제 응답 토큰 사용량에 기록된 단가를 적용한다. 불명확한 전송 실패는 비용 예약분을 유지한다. 단가 확인일: {cfg['execution']['pricing_checked']}.",
-        '무임베딩 방식은 가능하나 별도 주제 발견 절차가 필요하며, 이전 MiniLM 결과는 재사용하지 않는다. 이번 경로는 사용자가 지정한 OpenAI 임베딩과 근거 검토를 연결한다.',
-        '원문·프롬프트·모델·taxonomy가 바뀌면 관련 캐시 키가 바뀐다. Word와 PDF는 같은 내용으로 생성하며 PDF 페이지 경계와 섹션을 검사한다. Word의 실제 렌더링 검증 여부는 publication_checks.json을 따른다.']
+    memo=['# Methods and cost', '',
+        'The analysis uses the country–year as the unit and does not modify the transcript database. Reviewers read the full context of every speech with a search candidate, plus a sample of search-negative speeches stratified by year, region and source. Each selected speech is reviewed automatically once; the negative-audit sample and a fixed hash-selected 10% are reviewed twice. If a sample finds Yes/Uncertain, review expands to that stratum. The actual selection, pass counts and expansions are recorded in review_selection.json. Unreviewed passages stay Pending; disagreements become Uncertain.',
+        'While unreviewed speeches remain, the year/region n/N is a lower bound: confirmed AI-positive countries over obtained country speeches. It is not an estimate of the population mention rate and does not treat unreviewed text as No. resolved_N and fully_reviewed are reported separately. Because of search/sampling bias and different review coverage by year, changes in rates are not asserted as policy shifts. Theme shares are computed within detected and reviewed AI-positive speeches and are not generalised to undetected AI remarks.',
+        f"Execution path for context review, classification and report: {cfg['execution'].get('text_backend','openai_api')}. On the subscription path the actual model is recorded in the reviewer metadata of each subscription_queue response. Embeddings: {cfg['discovery']['model']}, {cfg['discovery']['dimensions']} dimensions.",
+        'Embeddings are applied only to AI-Yes passages and required context. Local mean-centring, cosine distance and average linkage are used; several cut levels and representative/boundary passages per cluster are reviewed to build a common taxonomy. Cluster IDs are never used as final theme values.',
+        'Classification is multi-label per passage and aggregated per country–year and code with OR. A code is 1 if any passage is Yes; 0 if AI review is complete and every AI passage is No for that code; otherwise NA. The theme N is the number of AI-positive countries with a resolved value for that code; co-occurrence uses countries resolved on both codes as denominator. Same-country year comparisons use the per-code common sample. Unreviewed or unobtained data are never converted to 0. New concepts go to the review queue and do not block completion of existing codes. Regions use the fixed UN mapping.',
+        'Separate calls to the same model are automated re-review, not inter-human agreement. No audio verification or completed human review is claimed. Reports produced from automated review state this limitation.',
+        f"Usage and cost ledger: {cfg['execution']['output_directory']}/api_cache/usage.jsonl. Recorded rates are applied to API-reported token usage. Ambiguous transport failures keep their cost reservation. Rates checked: {cfg['execution']['pricing_checked']}.",
+        'An embedding-free approach is possible but would need a separate theme-discovery procedure; earlier MiniLM results are not reused. This path links the user-specified OpenAI embeddings to source-grounded review.',
+        'Cache keys change when sources, prompts, models or the taxonomy change. Word and PDF are generated from the same content; PDF page boundaries and sections are checked. Whether the Word rendering was verified is recorded in publication_checks.json.']
     (out/'methodology_and_cost.md').write_text('\n\n'.join(memo)+'\n',encoding='utf-8')
     save(out/'environment.json',readiness['dependencies'])
     if 'cost_estimate' in readiness:save(out/'cost_estimate.json',readiness['cost_estimate'])

@@ -1,0 +1,43 @@
+{
+  "request_hash": "0ba4586a628d2c03ffc43d6213fc4852ca0c69676dca374c97ad27e6da371c02",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_DEVELOPMENT_SDGS",
+        "label": "AI curing patients, improving well-being",
+        "definition": "AI cited as an example of technology improving health and well-being, with hope that its benefits reach all people.",
+        "inclusion": "Include passages crediting AI with health or well-being improvements.",
+        "exclusion": "Exclude passages where AI is only listed among technologies.",
+        "boundary_cases": "An appeal that benefits reach 'all people, not only some' could also be coded AI_DIGITAL_DIVIDE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2019_ESP:70",
+            "quote": "In the past few minutes, a patient has been cured thanks to artificial intelligence."
+          }
+        ]
+      },
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "Technology benefits for all, not some",
+        "definition": "Hope that technological progress, including AI, benefits all people rather than a few.",
+        "inclusion": "Include statements that AI/technology benefits should reach everyone.",
+        "exclusion": "Exclude statements about concentration of control by states or companies (AI_SOVEREIGNTY_CONCENTRATION).",
+        "boundary_cases": "Adjacent references to platform workers' conditions are labour issues, not AI divide.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2019_ESP:70",
+            "quote": "I hope that technology continues progressing to improve the lives and well-being of all people — not only of some but of all people."
+          }
+        ]
+      }
+    ],
+    "rationale": "Spain's rhetorical passage uses AI curing a patient as an illustration of technology's promise and hopes its benefits reach all people; the adjacent gig-worker remark is not tied to AI."
+  }
+}

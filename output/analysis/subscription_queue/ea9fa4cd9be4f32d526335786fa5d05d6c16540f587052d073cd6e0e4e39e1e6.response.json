@@ -1,0 +1,111 @@
+{
+  "request_hash": "ea9fa4cd9be4f32d526335786fa5d05d6c16540f587052d073cd6e0e4e39e1e6",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_SAFETY_EXISTENTIAL",
+        "label": "Safety requirements for most capable models",
+        "definition": "Proposals for common safety requirements for frontier AI models, including pre-release testing and reporting of serious safety failures, and capacity to assess capable systems.",
+        "inclusion": "Passages calling for testing, safety standards or incident reporting for the most capable AI models.",
+        "exclusion": "Weaponization of AI (use AI_MILITARY_WEAPONS).",
+        "boundary_cases": "Common standards proposed via the UN take this and AI_GLOBAL_GOVERNANCE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_DEU:5",
+            "quote": "Germany calls on UN member states to work towards common safety requirements for the most capable AI models"
+          },
+          {
+            "passage_id": "verbatim_en_2026_DEU:5",
+            "quote": "Providers should be required to test these models before release and report serious safety failures."
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Inclusive common rules and accountability",
+        "definition": "Calls for a shared framework, common standards, oversight and accountability for AI with participation of all regions, moving beyond voluntary commitments.",
+        "inclusion": "Passages on who sets AI rules, accountability, participation of all regions, oversight and common rules.",
+        "exclusion": "Model-level safety testing detail (use AI_SAFETY_EXISTENTIAL).",
+        "boundary_cases": "Statements that addressing AI is a test for the UN also take AI_UN_ROLE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_DEU:5",
+            "quote": "We need to ensure that technological progress is guided by a framework that we all have a say in shaping."
+          },
+          {
+            "passage_id": "verbatim_en_2026_DEU:6",
+            "quote": "we need to ensure accountability, in particular when global peace and security are potentially affected"
+          }
+        ]
+      },
+      {
+        "code": "AI_SOVEREIGNTY_CONCENTRATION",
+        "label": "Compute access and avoiding dependencies",
+        "definition": "Access to compute, data, expertise and infrastructure determines who innovates versus who accepts others' rules; cooperation should build capabilities, not dependencies.",
+        "inclusion": "Passages on unequal access to AI inputs creating dependency or rule-taking.",
+        "exclusion": "General digital divide statements without dependency framing (use AI_DIGITAL_DIVIDE).",
+        "boundary_cases": "Concern that AI cements world division if few benefit may take AI_DIGITAL_DIVIDE as well.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_DEU:5",
+            "quote": "Cooperation must therefore create capabilities, not new dependencies."
+          }
+        ]
+      },
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "AI cementing global division",
+        "definition": "AI could cement world divisions if only a few benefit, algorithms are partial, or access is limited to rich countries.",
+        "inclusion": "Passages warning that AI benefits or access are limited to rich countries or few actors.",
+        "exclusion": "Capacity-building programmes (use AI_CAPACITY_BUILDING).",
+        "boundary_cases": "Mentions of biased algorithms in this context may also take AI_HUMAN_RIGHTS_ETHICS.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_DEU:25",
+            "quote": "it can cement the division of the world if only a few benefit from it"
+          }
+        ]
+      },
+      {
+        "code": "AI_MILITARY_WEAPONS",
+        "label": "Rules on generative AI as weapon",
+        "definition": "Calls for common rules on the possible use of generative AI as a weapon.",
+        "inclusion": "Passages on weaponization of AI and rules against it.",
+        "exclusion": "Frontier safety testing (use AI_SAFETY_EXISTENTIAL).",
+        "boundary_cases": "Accountability where global peace and security is affected may also count if weapons are implied.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_DEU:25",
+            "quote": "We should also talk about common rules for the possible use of generative artificial intelligence as a weapon."
+          }
+        ]
+      },
+      {
+        "code": "AI_UN_ROLE",
+        "label": "AI as test for UN renewal",
+        "definition": "Addressing AI together is framed as a test for building a UN for today's world; institutions must catch up with AI; Global Digital Compact engagement.",
+        "inclusion": "Passages linking AI governance to UN renewal or UN processes like the Global Digital Compact.",
+        "exclusion": "Governance calls not tied to the UN.",
+        "boundary_cases": "Statements that institutions must catch up with AI count when the UN context is explicit.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_DEU:6",
+            "quote": "How we address AI together is one of the clearest tests whether we have the strength and the will to build a United Nations for today's world."
+          },
+          {
+            "passage_id": "verbatim_en_2026_DEU:5",
+            "quote": "AI is not waiting for our institutions to catch up. Our institutions have to catch up with AI."
+          }
+        ]
+      }
+    ],
+    "rationale": "German passages share a focus on common rules and accountability for AI; 2026 adds concrete frontier-model safety requirements and compute-dependency concerns, while 2023 stresses AI deepening global divisions and rules on AI as a weapon."
+  }
+}

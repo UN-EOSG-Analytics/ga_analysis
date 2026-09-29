@@ -1,0 +1,123 @@
+{
+  "request_hash": "1287520ea057ea19df4de97c15a8b0ae2501462e9ced1af9ef50d1e9449e80d8",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Calls for binding international AI regulation",
+        "definition": "Speaker calls for international rules, binding standards, charters or global governance of AI.",
+        "inclusion": "Include passages demanding binding universal standards, a global charter, or international governance of AI use.",
+        "exclusion": "Exclude passages that only list AI as an investment area without any governance or regulation claim.",
+        "boundary_cases": "Support for UN-led governance counts here and also in AI_UN_ROLE if a specific UN instrument is named.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_CIV:5",
+            "quote": "We call for the adoption of binding universal standards so as to regulate the use of AI and digital technologies"
+          },
+          {
+            "passage_id": "verbatim_en_2025_CAF:8",
+            "quote": "We propose also the establishment of a global charter for digital governance and ethical artificial intelligence so that human rights are protected in the digital sphere."
+          },
+          {
+            "passage_id": "verbatim_en_2026_COG:7",
+            "quote": "We also call for international governance of artificial intelligence in outer space."
+          }
+        ]
+      },
+      {
+        "code": "AI_UN_ROLE",
+        "label": "Global Digital Compact and UN AI efforts",
+        "definition": "Speaker welcomes or urges implementation of UN instruments on AI, especially the Global Digital Compact and Pact for the Future, or UN efforts on AI governance.",
+        "inclusion": "Include explicit references to the Global Digital Compact, Pact for the Future or UN efforts to govern AI.",
+        "exclusion": "Exclude generic support for multilateralism that does not connect to AI.",
+        "boundary_cases": "A passage welcoming the GDC as regulating AI counts even when the main claim is about regulation generally.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_CIV:7",
+            "quote": "my country welcomes the adoption of the Global Digital Compact (see resolution 79/1), which should enable better use of that technological advance"
+          },
+          {
+            "passage_id": "verbatim_en_2026_CAF:5",
+            "quote": "The Global Digital Compact must become a reality."
+          }
+        ]
+      },
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "AI risks deepening inequality for Africa",
+        "definition": "Concern that AI may exacerbate inequalities or leave developing/African countries as mere users rather than decision makers, with calls for inclusion.",
+        "inclusion": "Include passages warning that AI could widen divides, or demanding developing countries shape AI governance rather than only consume it.",
+        "exclusion": "Exclude passages about economic inequality with no link to AI or digital technology.",
+        "boundary_cases": "Mentions of 'digital sovereignty' or technology as 'instrument of domination' may also fit AI_SOVEREIGNTY_CONCENTRATION.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_CIV:5",
+            "quote": "these technological advances can also exacerbate existing divides if their development as well as access to them remain unevenly distributed"
+          },
+          {
+            "passage_id": "verbatim_en_2026_CAF:5",
+            "quote": "a governance of AI in which developing countries decide instead of simply being users"
+          }
+        ]
+      },
+      {
+        "code": "AI_SOVEREIGNTY_CONCENTRATION",
+        "label": "Technology as instrument of domination",
+        "definition": "Concern that AI and technological progress could become a tool of domination, with calls for African digital sovereignty.",
+        "inclusion": "Include passages warning against technological domination or asserting digital sovereignty in the context of AI.",
+        "exclusion": "Exclude general sovereignty claims about sanctions or politics without technology link.",
+        "boundary_cases": "If the passage only speaks of unequal access without domination/sovereignty language, code AI_DIGITAL_DIVIDE instead.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_COG:7",
+            "quote": "Technological progress must not become a new instrument of domination. Africa must also be a center of creativity, innovation, and digital sovereignty."
+          }
+        ]
+      },
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "AI as source of hopes and fears",
+        "definition": "AI explicitly framed as both promising and threatening.",
+        "inclusion": "Include passages that pair AI's promise with its threats or abuses in the same breath.",
+        "exclusion": "Exclude purely positive or purely negative mentions.",
+        "boundary_cases": "Mild hedges ('opportunities ... however divides') count if both sides are explicit.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_CIV:7",
+            "quote": "Artificial intelligence holds great promise for our societies, but it can also pose a number of threats and lead to abuses"
+          },
+          {
+            "passage_id": "verbatim_en_2025_CIV:5",
+            "quote": "a source of many hopes and fears"
+          }
+        ]
+      },
+      {
+        "code": "AI_TECH_LIST_MENTION",
+        "label": "AI listed among transformations or investment areas",
+        "definition": "AI is named in a list of sectors, challenges or transformations without substantive discussion.",
+        "inclusion": "Include passages where AI appears only as an item in a list (e.g., invest in education, health, AI) or as a brief contextual remark about transformation.",
+        "exclusion": "Exclude passages that develop an argument about AI governance, risk or inclusion.",
+        "boundary_cases": "A one-sentence descriptive remark that AI is transforming work and education, with no further claim, counts here.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_COG:3",
+            "quote": "we need to invest massively in education, in health, agriculture, infrastructure, new technologies, artificial intelligence, inter alia."
+          },
+          {
+            "passage_id": "verbatim_en_2026_BEN:2",
+            "quote": "AI is already transforming knowledge, work, our economies, education and information."
+          }
+        ]
+      }
+    ],
+    "rationale": "Mostly Francophone African speeches that fold AI into a broader multilateralism/UN reform agenda, typically calling for global or UN-led AI governance and inclusion of developing countries. A minority only list AI among investment areas or transformations."
+  }
+}

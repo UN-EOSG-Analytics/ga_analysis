@@ -1,0 +1,47 @@
+{
+  "request_hash": "dca1cf545323b186e4b4d59ac404cb580cb5ec1400d2a2eb346dbb778eb9c6bd",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_DISINFORMATION",
+        "label": "Bots and AI misinformation lack free-speech rights",
+        "definition": "Artificially generated misinformation and programmed bots spreading hate and lies are argued not to be protected by freedom of expression, which belongs to humans.",
+        "inclusion": "Include passages on AI-generated misinformation, bots, propaganda or information integrity.",
+        "exclusion": "Exclude general human rights references to AI without information/speech content.",
+        "boundary_cases": "Arguments about rights applying only to humans also touch AI_HUMAN_RIGHTS_ETHICS, but the disinformation focus is primary.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_ISL:15",
+            "quote": "Freedom of expression is for human beings — not for programmed bots that spread hate, lies and fear"
+          },
+          {
+            "passage_id": "verbatim_en_2023_ISL:15",
+            "quote": "State-sponsored propaganda or artificially generated misinformation that is intended to sow discord and disunity"
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Multilateral cooperation against destructive AI",
+        "definition": "AI raises serious questions demanding close multilateral cooperation to prevent it becoming a tool of destruction.",
+        "inclusion": "Include calls for multilateral cooperation to manage AI risks.",
+        "exclusion": "Exclude passages on AI benefits only.",
+        "boundary_cases": "'Destruction rather than creation' framing may also be read as AI_OPPORTUNITY_RISK_DUALITY.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_ISL:15",
+            "quote": "will demand close multilateral cooperation to avoid the very real risk of this technology becoming a tool of destruction rather than creation"
+          }
+        ]
+      }
+    ],
+    "rationale": "A single Icelandic passage calling for multilateral cooperation on AI's destructive risk and focusing specifically on AI-generated misinformation and bots, arguing free-speech rights belong only to humans."
+  }
+}

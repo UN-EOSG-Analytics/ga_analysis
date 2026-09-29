@@ -1,0 +1,43 @@
+{
+  "request_hash": "555262a5ba52d0dd424cfa8d90ade0d7727eba4eb500d991d5bc2157a7bafb26",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Filling the AI governance vacuum",
+        "definition": "The absence of international governance on cyberspace and AI demands multilateral regulation and cooperation.",
+        "inclusion": "Passages noting a governance vacuum for AI and calling for multilateral regulation.",
+        "exclusion": "Misuse concerns without governance calls (use AI_CYBER_SECURITY).",
+        "boundary_cases": "Calls for deliberation on preventing misuse also count here when framed as international cooperation.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_NPL:23",
+            "quote": "The vacuum in international governance on cyberspace and artificial intelligence demands multilateral regulation."
+          }
+        ]
+      },
+      {
+        "code": "AI_DUAL_USE_MISUSE",
+        "label": "Preventing misuse of dual-use AI",
+        "definition": "AI's potential dual uses require deliberation on preventing misuse, without specifying military or criminal domains.",
+        "inclusion": "Passages referencing AI's dual-use nature and preventing its misuse generally.",
+        "exclusion": "Specific military use (use AI_MILITARY_WEAPONS) or cybercrime/terrorism (use AI_CYBER_SECURITY).",
+        "boundary_cases": "If terrorism is linked explicitly to AI misuse, also code AI_CYBER_SECURITY; adjacent but separate terrorism statements do not qualify.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_NPL:23",
+            "quote": "The potential dual uses of artificial intelligence call for urgent, informed deliberations on preventing its potential misuse"
+          }
+        ]
+      }
+    ],
+    "rationale": "The Nepal passage identifies a governance vacuum on AI requiring multilateral regulation and flags AI's dual-use potential for misuse; the subsequent terrorism sentence is a separate topic."
+  }
+}

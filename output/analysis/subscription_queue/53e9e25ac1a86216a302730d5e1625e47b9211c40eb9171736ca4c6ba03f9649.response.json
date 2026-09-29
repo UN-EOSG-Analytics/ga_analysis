@@ -1,0 +1,47 @@
+{
+  "request_hash": "53e9e25ac1a86216a302730d5e1625e47b9211c40eb9171736ca4c6ba03f9649",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Multi-stakeholder partnerships incl. GPAI",
+        "definition": "AI appears via international partnership initiatives (e.g. Global Partnership on Artificial Intelligence) championed as part of a new governance of the digital common good.",
+        "inclusion": "Include references to international AI partnerships or coalitions as governance instruments.",
+        "exclusion": "Exclude generic digital governance with no AI reference (DIGITAL_PUBLIC_ORDER_ONLINE).",
+        "boundary_cases": "When AI is only named as one partnership among digital initiatives, code here with low salience and also the digital theme.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2020_FRA:34",
+            "quote": "the International Partnership on Information and Democracy of the Christchurch Appeal and the Global Partnership on Artificial Intelligence"
+          }
+        ]
+      },
+      {
+        "code": "DIGITAL_PUBLIC_ORDER_ONLINE",
+        "label": "Digital commons governance against hate, terrorism",
+        "definition": "Generic digital-space governance: treating the internet as a common good and regulating platforms against terrorism and hate speech; not AI-specific.",
+        "inclusion": "Include passages on internet public order, platform accountability, online terrorism and hate speech regulation.",
+        "exclusion": "Exclude passages specifically about AI systems or AI-generated content (e.g. AI_DISINFORMATION).",
+        "boundary_cases": "Platform regulation mentioned alongside an AI partnership is coded here for the platform content and under AI_GLOBAL_GOVERNANCE for the AI reference.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2020_FRA:34",
+            "quote": "requires a new type of governance so that it is not captured, pirated and exploited"
+          },
+          {
+            "passage_id": "verbatim_en_2020_FRA:35",
+            "quote": "the creation of a common public order on the Internet are as important as technological innovation and freedom"
+          }
+        ]
+      }
+    ],
+    "rationale": "France 2020 discusses governance of the digital space broadly (hate, terrorism, platforms); AI appears only through naming the Global Partnership on AI, so the AI mention is peripheral to a generic digital-governance argument."
+  }
+}

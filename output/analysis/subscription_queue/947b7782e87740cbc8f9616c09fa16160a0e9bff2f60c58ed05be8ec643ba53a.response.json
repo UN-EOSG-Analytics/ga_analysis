@@ -1,0 +1,97 @@
+{
+  "request_hash": "947b7782e87740cbc8f9616c09fa16160a0e9bff2f60c58ed05be8ec643ba53a",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_SOVEREIGNTY_CONCENTRATION",
+        "label": "Who controls AI and data sovereignty",
+        "definition": "Concern that AI development, rules and data value are controlled by powerful states or the global North, leaving small/developing states as consumers or data suppliers.",
+        "inclusion": "Include passages asking who controls or shapes AI, objecting to technologies designed and governed elsewhere, or demanding data sovereignty and local AI building.",
+        "exclusion": "Exclude general calls for inclusive governance that do not raise control, dependence or data ownership.",
+        "boundary_cases": "A passage on the AI divide in compute and skills that also asks who decides AI's future counts here and may also be coded AI_DIGITAL_DIVIDE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_ATG:2",
+            "quote": "it also raises profound concerns about who will control its development and share in its benefit"
+          },
+          {
+            "passage_id": "verbatim_en_2026_BHS:5",
+            "quote": "building artificial intelligence that understands our languages and our lives, and not only the lives of those in the wealthy North"
+          },
+          {
+            "passage_id": "verbatim_en_2026_KNA:5",
+            "quote": "developing countries cannot simply consume technologies designed and governed elsewhere"
+          }
+        ]
+      },
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "AI as extraordinary promise and risk",
+        "definition": "Framing AI as offering extraordinary possibilities while posing risks or concerns, usually in a survey of global challenges.",
+        "inclusion": "Include sentences explicitly pairing AI's promise with risks or concerns.",
+        "exclusion": "Exclude passages that discuss only benefits or only specific harms.",
+        "boundary_cases": "If the duality is followed by a specific concern (e.g. control), code both this and the specific theme.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_JAM:1",
+            "quote": "New technologies, including artificial intelligence, offer extraordinary promise while presenting risks we have not yet fully understood."
+          }
+        ]
+      },
+      {
+        "code": "AI_PEACE_SECURITY_AGENDA",
+        "label": "AI as international peace and security issue",
+        "definition": "Treating AI/superintelligence as an item for the Security Council or international peace and security agenda, spanning cyberattacks, disinformation, autonomous weapons and criminal misuse.",
+        "inclusion": "Include passages placing AI on a security-council or global-security agenda with a broad bundle of security implications.",
+        "exclusion": "Exclude passages focused solely on autonomous weapons (AI_MILITARY_WEAPONS) or solely on cybercrime (AI_CYBER_SECURITY).",
+        "boundary_cases": "A passing tribute to the SG for putting superintelligence on the agenda is closer to AI_UN_ROLE unless security implications are elaborated.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_TTO:3",
+            "quote": "encourage a greater consideration of the implications of SI and emerging technologies for international peace and security"
+          }
+        ]
+      },
+      {
+        "code": "AI_UN_ROLE",
+        "label": "UN AI bodies and Secretary-General initiatives",
+        "definition": "References to UN-specific AI processes such as the Scientific Panel, Global Dialogue on AI Governance, or the Secretary-General's agenda on superintelligence.",
+        "inclusion": "Include welcomes of the UN Scientific Panel or Global Dialogue and praise for UN leadership bringing AI onto the agenda.",
+        "exclusion": "Exclude generic multilateralism statements that do not tie the UN to AI.",
+        "boundary_cases": "Nominations for posts in technical UN agencies motivated by data sovereignty are coded under sovereignty rather than here.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_KNA:5",
+            "quote": "St. Kitts and Nevis welcomes the Independent International Scientific Panel on Artificial Intelligence and the Global Dialogue on AI Governance."
+          },
+          {
+            "passage_id": "verbatim_en_2026_TTO:5",
+            "quote": "his efforts to bring superintelligence and the risks posed by nuclear weapons more firmly into the international agenda"
+          }
+        ]
+      },
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "AI divide and developing-country capabilities",
+        "definition": "The gap in access to connectivity, compute, data, skills and capital that excludes developing and small states from AI, and calls to close it.",
+        "inclusion": "Include passages describing an AI divide or listing capabilities (computing power, infrastructure, skills) developing countries lack.",
+        "exclusion": "Exclude passages on control/ownership without reference to access gaps.",
+        "boundary_cases": "Calls for developing countries to have 'capacity to help in shaping' change are borderline; code here only when capacity gaps are named.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_KNA:5",
+            "quote": "the AI divide also concern computing power, data research, skills, energy, cybersecurity, and capital"
+          }
+        ]
+      }
+    ],
+    "rationale": "Caribbean small-state speeches frame AI mainly through who shapes and benefits from it, with sovereignty, divide and UN-process references; Trinidad and Tobago uniquely frames superintelligence as a Security Council peace-and-security priority."
+  }
+}

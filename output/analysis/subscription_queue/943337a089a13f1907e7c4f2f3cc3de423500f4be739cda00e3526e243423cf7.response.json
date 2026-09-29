@@ -1,0 +1,89 @@
+{
+  "request_hash": "943337a089a13f1907e7c4f2f3cc3de423500f4be739cda00e3526e243423cf7",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_SOVEREIGNTY_CONCENTRATION",
+        "label": "Who governs AI: few companies or countries",
+        "definition": "Concern that a handful of private actors and a few countries control AI and set rules for everyone, and that the Global South becomes merely a data-centre destination.",
+        "inclusion": "Include passages about private actors' control over communication and AI, or objections to a few companies/countries deciding AI rules.",
+        "exclusion": "Exclude generic Security Council veto critiques without technology content.",
+        "boundary_cases": "Complaints about data centres being placed in the Global South without decision power fit here and in AI_DIGITAL_DIVIDE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_MYS:4",
+            "quote": "the answer cannot be that small number of companies or countries decide the rules for everyone else"
+          },
+          {
+            "passage_id": "verbatim_en_2026_MYS:4",
+            "quote": "The global South cannot simply become a destination for data centers while decisions about AI are made elsewhere."
+          }
+        ]
+      },
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "Global South participation in AI decisions",
+        "definition": "Calls for the UN to empower Global South countries to participate in AI governance and share benefits equitably.",
+        "inclusion": "Include passages demanding Global South participation, partnership rather than customer status, or equitable AI development.",
+        "exclusion": "Exclude passages only about corporate power.",
+        "boundary_cases": "Mentions of UN empowering the South also fit AI_UN_ROLE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_MYS:4",
+            "quote": "We must be partners in innovation, not merely customers and market, and not merely destinations for investment."
+          }
+        ]
+      },
+      {
+        "code": "AI_ENVIRONMENTAL_FOOTPRINT",
+        "label": "AI infrastructure demands on water and energy",
+        "definition": "Concern about the resource demands (water, energy, land) of AI and tech infrastructure.",
+        "inclusion": "Include passages discussing environmental or resource burdens of data centres/AI infrastructure.",
+        "exclusion": "Exclude AI-for-climate solution claims (AI_DEVELOPMENT_SDGS).",
+        "boundary_cases": "Energy supply for AI discussed purely as investment opportunity belongs to AI_NATIONAL_STRATEGY.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_MYS:4",
+            "quote": "managing the enormous demands that tech infrastructure places on water, energy, land, and other resources"
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Governments failing to regulate AI abuse",
+        "definition": "Criticism that governments choose not to regulate AI despite abuses, with calls for proactive governance and multilateralism.",
+        "inclusion": "Include passages criticizing regulatory inaction on AI or calling for proactive governance.",
+        "exclusion": "Exclude pure power-concentration arguments.",
+        "boundary_cases": "Rhetorical questions such as 'who governs the transformation?' count here when followed by governance demands.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_MYS:3",
+            "quote": "they are seeing their government choose not to regulate AI and the many ways it is being abused, but instead give it more power"
+          }
+        ]
+      },
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "Enormous opportunities and risks",
+        "definition": "AI described as transforming economies and governance with both enormous opportunities and risks.",
+        "inclusion": "Include explicit opportunity-risk pairings.",
+        "exclusion": "Exclude one-sided statements.",
+        "boundary_cases": "Short duality statements preceding a governance argument still count.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_MYS:4",
+            "quote": "The opportunities are enormous. but also are the risks."
+          }
+        ]
+      }
+    ],
+    "rationale": "Two Malaysian passages link a critique of great-power and veto politics to AI: few companies and countries control AI, the Global South is sidelined as a data-centre destination, governments fail to regulate abuses, and AI infrastructure strains resources."
+  }
+}

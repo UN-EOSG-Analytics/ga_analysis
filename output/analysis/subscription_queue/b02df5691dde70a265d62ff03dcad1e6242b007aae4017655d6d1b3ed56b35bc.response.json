@@ -1,0 +1,32 @@
+{
+  "request_hash": "b02df5691dde70a265d62ff03dcad1e6242b007aae4017655d6d1b3ed56b35bc",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "root"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_ATG:1",
+      "verbatim_en_2026_ATG:2",
+      "verbatim_en_2026_ATG:3",
+      "verbatim_en_2026_ATG:4",
+      "verbatim_en_2026_ATG:5",
+      "verbatim_en_2026_ATG:6",
+      "verbatim_en_2026_ATG:7",
+      "verbatim_en_2026_ATG:8"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_ATG:2",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Artificial intelligence offers extraordinary possibilities but it also raises profound concerns about who will control its development and share in its benefit. Small island developing states must not be left out as spectators.",
+        "rationale": "Demands SIDS participation in AI development and benefit sharing, warning that governance lags technology and control may be unequal."
+      }
+    ]
+  }
+}

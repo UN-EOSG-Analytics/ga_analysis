@@ -1,0 +1,101 @@
+{
+  "request_hash": "b2304db36d21a78f535c33d4417195a601b6793beb27bc292613b0fe70d73515",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "AI as both opportunity and threat",
+        "definition": "Speaker explicitly frames AI as presenting both opportunities and challenges or threats.",
+        "inclusion": "Include passages that pair AI's benefits with its risks in an explicit dual framing.",
+        "exclusion": "Exclude passages that mention only benefits or only risks.",
+        "boundary_cases": "If the duality framing leads into a governance demand, also code AI_GLOBAL_GOVERNANCE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_MWI:4",
+            "quote": "artificial intelligence presents both unprecedented opportunities and profound challenges"
+          },
+          {
+            "passage_id": "verbatim_en_2026_MWI:5",
+            "quote": "the emergence of artificial intelligence, which presents both opportunities and threats to humanity"
+          }
+        ]
+      },
+      {
+        "code": "AI_DEVELOPMENT_SDGS",
+        "label": "AI for development, productivity and SDGs",
+        "definition": "AI is presented as a tool for accelerating development, productivity, agriculture, health, education and SDG achievement in developing countries.",
+        "inclusion": "Include passages listing concrete development benefits of AI or linking AI to national development trajectory.",
+        "exclusion": "Exclude passages in which AI is framed only as a risk.",
+        "boundary_cases": "Brief mentions of harnessing 'science, technology, artificial intelligence' for development count here, possibly with AI_TECH_LIST_MENTION.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_MWI:5",
+            "quote": "AI offers opportunities to strengthen agricultural productivity and food security, improve healthcare and education, enhance climate resilience"
+          },
+          {
+            "passage_id": "verbatim_en_2025_MWI:5",
+            "quote": "AI will usher in a new era of enhanced productivity for its citizens, helping to propel the country's development trajectory"
+          },
+          {
+            "passage_id": "verbatim_en_2025_MWI:3",
+            "quote": "harness the transformative potential of science, technology, artificial intelligence, and private sector development for national and global development"
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Inclusive, ethical global AI framework",
+        "definition": "Speaker calls for a global framework for AI governance that is ethical, inclusive, development-oriented and accessible to all nations.",
+        "inclusion": "Include explicit calls for a global or UN-promoted AI governance framework.",
+        "exclusion": "Exclude general statements about AI benefits without a governance demand.",
+        "boundary_cases": "Calls addressed specifically to the UN may also be coded AI_UN_ROLE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_MWI:4",
+            "quote": "We therefore call for a global framework that ensures AI is ethical, inclusive, and accessible to all nations"
+          },
+          {
+            "passage_id": "verbatim_en_2026_MWI:6",
+            "quote": "calls upon the United Nations to continue promoting an inclusive, ethical, and development-oriented global framework for AI governance"
+          }
+        ]
+      },
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "AI risks widening divides and job loss",
+        "definition": "Speaker warns that unequal access to compute, data, infrastructure and skills, and automation-driven job disruption, may create a new technological divide for developing economies.",
+        "inclusion": "Include warnings about AI deepening inequality between or within countries, including through labour disruption in fragile economies.",
+        "exclusion": "Exclude generic references to inequality without an AI link.",
+        "boundary_cases": "Passages focused only on employment effects without inequality should be coded AI_ECONOMY_LABOR.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_MWI:6",
+            "quote": "Automation could disrupt employment and widen existing inequalities, while unequal access to computing capacity, data, digital infrastructure, skills, and financing risks creating a new technological divide"
+          }
+        ]
+      },
+      {
+        "code": "AI_HUMAN_RIGHTS_ETHICS",
+        "label": "Human-centred AI complementing people",
+        "definition": "AI should remain human-centred and complement rather than diminish human roles and dignity.",
+        "inclusion": "Include statements that AI must be human-centred, safeguard human dignity, or complement human capabilities.",
+        "exclusion": "Exclude passages that mention ethics only as an adjective in a governance call without elaboration.",
+        "boundary_cases": "Calls for an 'ethical' framework alone lean to AI_GLOBAL_GOVERNANCE unless human-centredness is elaborated.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_MWI:5",
+            "quote": "Artificial intelligence should complement and enhance human capabilities rather than diminish the indispensable role of people"
+          }
+        ]
+      }
+    ],
+    "rationale": "All passages are from Malawi and consistently frame AI from a developing-country standpoint: optimism about productivity and SDG gains, paired with warnings about inequality, job disruption and the need for an inclusive global governance framework."
+  }
+}

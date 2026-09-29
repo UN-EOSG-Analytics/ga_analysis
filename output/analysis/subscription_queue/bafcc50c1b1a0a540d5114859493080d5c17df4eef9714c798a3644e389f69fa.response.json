@@ -1,0 +1,79 @@
+{
+  "request_hash": "bafcc50c1b1a0a540d5114859493080d5c17df4eef9714c798a3644e389f69fa",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_HUMAN_RIGHTS_ETHICS",
+        "label": "Human-centred, rights-based technology",
+        "definition": "AI and technology must remain human-centred, rights-based and at the service of humanity, guided by social responsibility.",
+        "inclusion": "Include statements that AI must serve humanity, be human-centred, rights-based, or guided by social responsibility.",
+        "exclusion": "Exclude human-rights passages (e.g. gender equality) that do not reference AI or technology.",
+        "boundary_cases": "A sentence pairing opportunity with responsibility to keep AI human-centred also qualifies for AI_OPPORTUNITY_RISK_DUALITY.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_MNE:7",
+            "quote": "it also creates a responsibility to ensure that technological transformation remains human-centered and rights-based"
+          },
+          {
+            "passage_id": "verbatim_en_2025_MNE:5",
+            "quote": "Technology should be an evolutionary gift to humanity, developed, founded, and guided with social responsibility, serving the greater good."
+          }
+        ]
+      },
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "AI as opportunity and responsibility",
+        "definition": "AI is explicitly framed as both an extraordinary opportunity and a source of risk or responsibility.",
+        "inclusion": "Include passages explicitly contrasting AI's promise with its risks or duties.",
+        "exclusion": "Exclude passages mentioning only risks or only benefits.",
+        "boundary_cases": "'Safe, responsible, and inclusive' harnessing implies both sides but without explicit contrast; code only if opportunity is stated.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_MNE:7",
+            "quote": "But AI presents not only an extraordinary opportunity, it also creates a responsibility"
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "AI risks require multilateral response",
+        "definition": "AI risks are presented as outpacing national frameworks, justifying stronger multilateralism and safe, responsible harnessing.",
+        "inclusion": "Include statements that AI risks cannot be addressed by national frameworks alone or that AI must be harnessed safely and responsibly through collective action.",
+        "exclusion": "Exclude general UN reform arguments that do not cite AI.",
+        "boundary_cases": "AI listed among global challenges (conflict, climate) as a reason for multilateralism counts here if risk speed is noted.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_MNE:4",
+            "quote": "artificial intelligence and other emerging technologies are creating risks at a speed that national frameworks alone cannot adequately address"
+          },
+          {
+            "passage_id": "verbatim_en_2025_MNE:4",
+            "quote": "the rise of the artificial intelligence, must be harnessed in a safe, responsible, and inclusive manner"
+          }
+        ]
+      },
+      {
+        "code": "AI_YOUTH_EDUCATION",
+        "label": "AI shaping young people's future",
+        "definition": "AI is linked to education and future opportunities for young people and future generations.",
+        "inclusion": "Include passages where AI is said to shape the opportunities of youth, students, or future generations.",
+        "exclusion": "Exclude education passages with no AI reference.",
+        "boundary_cases": "Brief mention of 'technology' choices affecting future generations without naming AI is borderline and should not be coded.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_MNE:6",
+            "quote": "And artificial intelligence will increasingly shape those possibilities."
+          }
+        ]
+      }
+    ],
+    "rationale": "Montenegro's speeches treat AI briefly and normatively: it should be human-centred and responsibly harnessed, its risks justify multilateralism, and it will shape youth opportunities. Mentions are short and embedded in broader passages on UN reform, climate, and education."
+  }
+}

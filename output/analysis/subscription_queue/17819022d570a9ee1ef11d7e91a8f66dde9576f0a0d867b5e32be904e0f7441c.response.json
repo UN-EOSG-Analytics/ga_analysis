@@ -1,0 +1,93 @@
+{
+  "request_hash": "17819022d570a9ee1ef11d7e91a8f66dde9576f0a0d867b5e32be904e0f7441c",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_SOVEREIGNTY_CONCENTRATION",
+        "label": "Pooled sovereign AI against great-power dominance",
+        "definition": "Rejection of AI decisions being monopolised by two powers or a few private actors, with proposals for states to have their own model and compute capabilities and to pool resources for a shared open-source frontier model.",
+        "inclusion": "Include passages about avoiding dependence on dominant AI powers/companies, sovereign compute or model capacity, or pooled open-source models.",
+        "exclusion": "Exclude general calls for regulation without a dependence or concentration framing.",
+        "boundary_cases": "Mention of a national frontier model framed as independence counts here; framed as national pride only, code AI_NATIONAL_STRATEGY.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_FRA:11",
+            "quote": "There are some who wish to make us believe that only two powers, the US and China, will be taking the decisions."
+          },
+          {
+            "passage_id": "verbatim_en_2026_FRA:12",
+            "quote": "we must come together to build an open source frontier model, a cutting edge model using all of the calculation capabilities you have pooling them"
+          }
+        ]
+      },
+      {
+        "code": "AI_CHILD_PROTECTION",
+        "label": "Protecting children from chatbots and platforms",
+        "definition": "Concern about harms of AI chatbots and digital platforms to children and adolescents, and coalitions for children's rights in the AI era.",
+        "inclusion": "Include passages on AI or chatbot harms to children, youth mental health, or children's rights in the AI era.",
+        "exclusion": "Exclude youth skills and education opportunities in AI (AI_YOUTH_EDUCATION).",
+        "boundary_cases": "Social media age limits without AI mention are borderline; code only when discussed in the AI context of the passage.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_FRA:12",
+            "quote": "Look at the impact chatbots have on our children. This is why, together with Kenya, Spain, Australia, we've built a coalition on children's rights in the era of AI."
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "AI regulation, summits and auditing",
+        "definition": "Advocacy for AI regulation through international initiatives (GPAI, AI summits, the EU AI Act) and the ability to audit models.",
+        "inclusion": "Include references to international AI regulation processes, summits, or regulatory acts and model auditing.",
+        "exclusion": "Exclude security-specific rulemaking on AI in defence or space (AI_SECURITY_ARMS_CONTROL).",
+        "boundary_cases": "A general exhortation 'not yield on artificial intelligence' without specifics is borderline and may be coded here as a rhetorical governance stance.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_FRA:11",
+            "quote": "we launched the Global Partnership for Artificial Intelligence under the auspices of the OECD to kickstart discussions on the need for regulation"
+          },
+          {
+            "passage_id": "verbatim_en_2026_FRA:10",
+            "quote": "we must hold fast and not yield on artificial intelligence"
+          }
+        ]
+      },
+      {
+        "code": "AI_SECURITY_ARMS_CONTROL",
+        "label": "New rules for AI in defence and space",
+        "definition": "Calls for new rules on AI in outer space, defence and cybersecurity because of national-security consequences.",
+        "inclusion": "Include calls for rules on AI in defence, space, or security domains.",
+        "exclusion": "Exclude civilian AI regulation.",
+        "boundary_cases": "Explicit autonomous weapons or targeting discussion should be coded AI_MILITARY_WEAPONS.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_FRA:12",
+            "quote": "there are other areas where we must set new rules. AI in outer space, AI and defense and cybersecurity."
+          }
+        ]
+      },
+      {
+        "code": "AI_NATIONAL_STRATEGY",
+        "label": "National frontier model investment",
+        "definition": "The speaker highlights its own competitive frontier AI model and continued national investment.",
+        "inclusion": "Include references to the speaker's national AI models, companies, or investment.",
+        "exclusion": "Exclude pooled multinational model proposals (AI_SOVEREIGNTY_CONCENTRATION).",
+        "boundary_cases": "National investment framed as a race among states may also be coded AI_SOVEREIGNTY_CONCENTRATION.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_FRA:12",
+            "quote": "France is proud to have a competitive frontier model"
+          }
+        ]
+      }
+    ],
+    "rationale": "All three passages come from France 2026 and treat AI as a strategic arena: resisting concentration by the US, China and private firms, pooling sovereign compute, regulating and auditing models, protecting children from chatbots, and setting security rules. The ocean/climate passage only closes with a brief AI pivot."
+  }
+}

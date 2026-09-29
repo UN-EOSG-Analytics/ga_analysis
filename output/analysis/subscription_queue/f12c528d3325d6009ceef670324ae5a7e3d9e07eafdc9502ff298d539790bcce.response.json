@@ -1,0 +1,79 @@
+{
+  "request_hash": "f12c528d3325d6009ceef670324ae5a7e3d9e07eafdc9502ff298d539790bcce",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_SOVEREIGNTY_CONCENTRATION",
+        "label": "Regulating big tech oligarchs",
+        "definition": "Critique of a handful of tech oligarchs and big techs pursuing unregulated digital ultra-liberalism, bypassing the UN, and pressure from multinationals on national sovereignty.",
+        "inclusion": "Passages calling to regulate big techs, criticising tech oligarchs, or resisting multinational pressure on digital infrastructure.",
+        "exclusion": "General AI regulation calls without concentration critique (use AI_GLOBAL_GOVERNANCE).",
+        "boundary_cases": "Bypassing the UN Scientific Panel also takes AI_UN_ROLE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_BRA:5",
+            "quote": "A handful of technical oligarchs want to resurrect a version of digital ultra liberalism without rules or transparency."
+          },
+          {
+            "passage_id": "verbatim_en_2026_BRA:5",
+            "quote": "it would be an unforgivable historical omission not to address the challenge of regulating the big techs and artificial intelligence"
+          }
+        ]
+      },
+      {
+        "code": "AI_UN_ROLE",
+        "label": "Tech race bypassing UN scientific panel",
+        "definition": "Concern that tech companies bypass the UN and its Scientific Panel on AI.",
+        "inclusion": "Passages referencing the UN or the Scientific Panel on AI as bypassed or central.",
+        "exclusion": "Passages without UN references.",
+        "boundary_cases": "Combined with oligarch critique, code both.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_BRA:5",
+            "quote": "bypassing the United Nations and the scientific panel on artificial intelligence"
+          }
+        ]
+      },
+      {
+        "code": "AI_CHILD_PROTECTION",
+        "label": "Protecting children and families from algorithms",
+        "definition": "Companies shift algorithmic harms onto families; national legislation protects children, adolescents and women in the digital environment.",
+        "inclusion": "Passages on protecting children/families from algorithmic or platform harms.",
+        "exclusion": "General rights language (use AI_HUMAN_RIGHTS_ETHICS).",
+        "boundary_cases": "Gambling platform harms count only when framed as algorithmic harm to families.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_BRA:5",
+            "quote": "Companies that are aware of the risk of their products are transferring the impossible task of confronting algorithm to the families."
+          },
+          {
+            "passage_id": "verbatim_en_2026_BRA:5",
+            "quote": "protect children, adolescents, and women in the digital environment"
+          }
+        ]
+      },
+      {
+        "code": "AI_TECH_LIST_MENTION",
+        "label": "AI listed among technologies for partnership",
+        "definition": "AI named in a list of cutting-edge technologies (Industry 4.0, nanotechnology, 5G) open for partnership, without further discussion.",
+        "inclusion": "Passages listing AI among technologies for development or partnership.",
+        "exclusion": "Passages elaborating AI risks or regulation.",
+        "boundary_cases": "Conditioning partnership on sovereignty and data protection does not make it substantive AI discussion.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2020_BRA:17",
+            "quote": "4.0 Industry, artificial intelligence, nanotechnology and 5G technology"
+          }
+        ]
+      }
+    ],
+    "rationale": "Brazil 2026 substantively attacks unregulated big tech and AI oligarchs, defends the UN AI panel and child protection, while Brazil 2020 only lists AI among technologies open for sovereign partnerships."
+  }
+}

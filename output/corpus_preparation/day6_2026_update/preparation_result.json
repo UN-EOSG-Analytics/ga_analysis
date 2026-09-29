@@ -1,0 +1,193 @@
+{
+  "prepared_at_utc": "2026-09-29T15:45:47.312299+00:00",
+  "ingestion": {
+    "selected": 1908,
+    "normalized": 1908,
+    "cache_hits": 1888,
+    "unresolved": 0,
+    "output": "C:\\Users\\JPARK143\\Desktop\\MyPython\\ga_analysis\\ga_analysis\\output\\pipeline\\speeches.jsonl"
+  },
+  "status": {
+    "years": [
+      {
+        "year": 2017,
+        "state": "registered",
+        "accepted_representatives": 193,
+        "quarantined": 0,
+        "pending_sources": 0,
+        "provisional_sources": 0,
+        "accepted_automatic_transcripts": 0,
+        "coverage_status": "see_country_year_coverage"
+      },
+      {
+        "year": 2018,
+        "state": "registered",
+        "accepted_representatives": 193,
+        "quarantined": 0,
+        "pending_sources": 0,
+        "provisional_sources": 0,
+        "accepted_automatic_transcripts": 0,
+        "coverage_status": "see_country_year_coverage"
+      },
+      {
+        "year": 2019,
+        "state": "registered",
+        "accepted_representatives": 192,
+        "quarantined": 0,
+        "pending_sources": 0,
+        "provisional_sources": 0,
+        "accepted_automatic_transcripts": 0,
+        "coverage_status": "see_country_year_coverage"
+      },
+      {
+        "year": 2020,
+        "state": "registered",
+        "accepted_representatives": 190,
+        "quarantined": 0,
+        "pending_sources": 0,
+        "provisional_sources": 0,
+        "accepted_automatic_transcripts": 0,
+        "coverage_status": "see_country_year_coverage"
+      },
+      {
+        "year": 2021,
+        "state": "registered",
+        "accepted_representatives": 191,
+        "quarantined": 0,
+        "pending_sources": 0,
+        "provisional_sources": 0,
+        "accepted_automatic_transcripts": 0,
+        "coverage_status": "see_country_year_coverage"
+      },
+      {
+        "year": 2022,
+        "state": "registered",
+        "accepted_representatives": 190,
+        "quarantined": 0,
+        "pending_sources": 0,
+        "provisional_sources": 0,
+        "accepted_automatic_transcripts": 0,
+        "coverage_status": "see_country_year_coverage"
+      },
+      {
+        "year": 2023,
+        "state": "registered",
+        "accepted_representatives": 189,
+        "quarantined": 0,
+        "pending_sources": 0,
+        "provisional_sources": 0,
+        "accepted_automatic_transcripts": 0,
+        "coverage_status": "see_country_year_coverage"
+      },
+      {
+        "year": 2024,
+        "state": "registered",
+        "accepted_representatives": 190,
+        "quarantined": 0,
+        "pending_sources": 0,
+        "provisional_sources": 0,
+        "accepted_automatic_transcripts": 0,
+        "coverage_status": "see_country_year_coverage"
+      },
+      {
+        "year": 2025,
+        "state": "registered",
+        "accepted_representatives": 189,
+        "quarantined": 0,
+        "pending_sources": 0,
+        "provisional_sources": 0,
+        "accepted_automatic_transcripts": 189,
+        "coverage_status": "see_country_year_coverage"
+      },
+      {
+        "year": 2026,
+        "state": "registered",
+        "accepted_representatives": 191,
+        "quarantined": 0,
+        "pending_sources": 0,
+        "provisional_sources": 0,
+        "accepted_automatic_transcripts": 191,
+        "coverage_status": "all_six_day_sources_received; participation_roster_not_reconciled"
+      }
+    ],
+    "external_provisional_enabled": false,
+    "regional_system": "UN regional groups",
+    "mapping_as_of": "2026-09-25",
+    "report_status": "Analysis workflow implemented; run analyze for readiness or analyze --execute for authorized execution. Output/analysis/latest.json records actual completion."
+  },
+  "manifest": "config/source_manifest.jsonl",
+  "analysis_input": "output/pipeline/speeches.jsonl",
+  "counts_by_year": {
+    "2017": 193,
+    "2018": 193,
+    "2019": 192,
+    "2020": 190,
+    "2021": 191,
+    "2022": 190,
+    "2023": 189,
+    "2024": 190,
+    "2025": 189,
+    "2026": 191
+  },
+  "source_counts": {
+    "official_transcript": 1528,
+    "automatic_transcript": 380
+  },
+  "source_policy": "All selected English transcripts are canonical originals; retain official/automatic source identity.",
+  "partial_years": [
+    2026
+  ],
+  "integrity_issues": 0,
+  "candidate_screening": {
+    "screened_at_utc": "2026-09-29T15:45:47.198831+00:00",
+    "input_sha256": "5e5fcd5658bda710154ecfde9544a4a3e3b78ca4541079ff40910f8ab2d1345b",
+    "manifest_sha256": "2e08f485588d5146bc3bec0899fb119ac59a081d16f7f24dd32f6cf21757d394",
+    "lexicon_sha256": "17936dea435bc9bd11436a8ff9ad0b384b5b75320fe2aad8b68ecd0862ad8ef9",
+    "code_sha256": "06565f64720af182bec790d7e8495c99ac5f35567bb1a239387f990fb606493b",
+    "lexicon_version": "1.1",
+    "speeches": 1908,
+    "passages": 50055,
+    "candidate_matches": 1397,
+    "candidate_speeches": 452,
+    "candidate_speeches_by_tier": {
+      "context_only": 230,
+      "explicit_ai": 359,
+      "context_required": 7,
+      "ai_related": 13
+    },
+    "matches_by_rule": {
+      "indirect_context": 343,
+      "artificial_intelligence": 545,
+      "ai_abbreviation": 452,
+      "related_abbreviations": 9,
+      "named_systems": 2,
+      "generative_ai": 12,
+      "ai_applications": 10,
+      "superintelligence": 17,
+      "language_foundation_models": 6,
+      "machine_learning": 1
+    },
+    "counts_by_year": {
+      "2017": 193,
+      "2018": 193,
+      "2019": 192,
+      "2020": 190,
+      "2021": 191,
+      "2022": 190,
+      "2023": 189,
+      "2024": 190,
+      "2025": 189,
+      "2026": 191
+    },
+    "no_match_is_not_negative": true,
+    "labels_changed": false,
+    "paid_api_calls": 0,
+    "limitations": [
+      "Finite lexicon cannot guarantee recall of every paraphrase or ASR error.",
+      "Overlapping rules may match one phrase; match counts are not country counts.",
+      "Review contextual matches and screened negatives before final statistics."
+    ]
+  },
+  "paid_api_calls": 0,
+  "classification_performed": false
+}

@@ -1,0 +1,33 @@
+{
+  "request_hash": "4f4356d031f1fc271fc63bd0ac3d58d4fefdd003a4f90addd2bb767d3be64bb1",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_DISINFORMATION",
+        "label": "Algorithmic isolation and manipulated content",
+        "definition": "AI and platforms reinforce isolation via algorithms and enable manipulated images, alternative facts and disinformation that divide communities.",
+        "inclusion": "Include passages linking AI or algorithms to disinformation, manipulated media, echo chambers or social division.",
+        "exclusion": "Exclude cyber-crime or military concerns without an information dimension.",
+        "boundary_cases": "Social-media-only criticisms without AI mention are excluded unless AI is named in the same argument.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_GHA:6",
+            "quote": "The internet, social media platforms, and artificial intelligence offer us the illusion of connectivity"
+          },
+          {
+            "passage_id": "verbatim_en_2025_GHA:6",
+            "quote": "We are served alternative facts and manipulated images, making it easy to disseminate disinformation and sow seeds of division amongst communities."
+          }
+        ]
+      }
+    ],
+    "rationale": "Ghana's single passage treats AI, together with social media and the internet, as eroding community through algorithmic isolation and disinformation, contrasting it with the UN as a global town square."
+  }
+}

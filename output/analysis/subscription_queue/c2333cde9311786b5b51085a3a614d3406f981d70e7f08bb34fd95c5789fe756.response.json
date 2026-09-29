@@ -1,0 +1,43 @@
+{
+  "request_hash": "c2333cde9311786b5b51085a3a614d3406f981d70e7f08bb34fd95c5789fe756",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_b"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2024_LVA:1",
+      "verbatim_en_2024_LVA:2",
+      "verbatim_en_2024_LVA:3",
+      "verbatim_en_2024_LVA:4",
+      "verbatim_en_2024_LVA:5",
+      "verbatim_en_2024_LVA:6",
+      "verbatim_en_2024_LVA:7",
+      "verbatim_en_2024_LVA:8",
+      "verbatim_en_2024_LVA:9",
+      "verbatim_en_2024_LVA:10",
+      "verbatim_en_2024_LVA:11",
+      "verbatim_en_2024_LVA:12",
+      "verbatim_en_2024_LVA:13",
+      "verbatim_en_2024_LVA:14",
+      "verbatim_en_2024_LVA:15",
+      "verbatim_en_2024_LVA:16",
+      "verbatim_en_2024_LVA:17",
+      "verbatim_en_2024_LVA:18",
+      "verbatim_en_2024_LVA:19"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2024_LVA:16",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "The rising capabilities of artificial intelligence provide a lot of opportunities for growth and development, but the potential for their misuse is a concern.",
+        "rationale": "Recognizes growing AI opportunities and misuse risks in an information-integrity discussion."
+      }
+    ]
+  }
+}

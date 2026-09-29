@@ -1,0 +1,36 @@
+{
+  "request_hash": "389df2ec6061db52b21103553355752d61b1d6696d1fcec09f61afc76c0d8e7b",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "root"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_LTU:1",
+      "verbatim_en_2026_LTU:2",
+      "verbatim_en_2026_LTU:3",
+      "verbatim_en_2026_LTU:4",
+      "verbatim_en_2026_LTU:5"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_LTU:3",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "My country, Lithuania, strongly believes that the future of AI must not be determined by authoritarian control, technological coercion, or the malicious use of data.",
+        "rationale": "Discusses AI-enabled information manipulation, economic disruption and malicious uses, and supports trusted deployment, binding governance and contribution to the UN dialogue."
+      },
+      {
+        "passage_id": "verbatim_en_2026_LTU:4",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Together, we must ensure that AI serves human dignity, sustainable development, and international security, rather than becoming a new instrument of inequality, manipulation, or conflict.",
+        "rationale": "Calls for collective action on loss-of-control risk, human accountability and a UN-coordinated response to AI growth."
+      }
+    ]
+  }
+}

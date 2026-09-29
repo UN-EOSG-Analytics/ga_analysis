@@ -1,0 +1,43 @@
+{
+  "request_hash": "884c17b22481ae0e5dafabb51a5d5e4aa5514ad41285598391321f824024f561",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_CRITICAL_MINERALS",
+        "label": "AI infrastructure driving critical mineral demand",
+        "definition": "AI and digital infrastructure expansion are linked to rising demand for critical minerals, with producer countries demanding local value addition and an end to extractive dependence.",
+        "inclusion": "Include passages linking AI or data infrastructure to demand for minerals such as cobalt, copper or lithium, or to resource-producer value chains.",
+        "exclusion": "Exclude mineral or energy transition passages that do not mention AI.",
+        "boundary_cases": "If the passage stresses concentration of value and technology abroad, it may also be coded AI_SOVEREIGNTY_CONCENTRATION.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_COD:6",
+            "quote": "the expansion of digital and AI infrastructure are accelerating demand for copper, cobalt, lithium, nickel, and other critical minerals"
+          }
+        ]
+      },
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "Prodigious tools if used wisely",
+        "definition": "AI and digital technology are presented as powerful tools whose benefits for humanity depend on wise use.",
+        "inclusion": "Include statements that AI is a powerful tool conditional on wise or responsible use.",
+        "exclusion": "Exclude passages naming specific risks in detail (code the specific risk).",
+        "boundary_cases": "A brief conditional endorsement without explicit risks is borderline; code here when 'if used wisely' or similar conditionality is explicit.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_CMR:22",
+            "quote": "In this era of digital technology and artificial intelligence, we have prodigious tools at our disposal. If used wisely, they can enable us to achieve the desired results"
+          }
+        ]
+      }
+    ],
+    "rationale": "Both passages refer to AI briefly. Cameroon offers a generic conditional endorsement of AI as a prodigious tool, while DRC links AI infrastructure to critical-mineral demand and argues for local value addition."
+  }
+}

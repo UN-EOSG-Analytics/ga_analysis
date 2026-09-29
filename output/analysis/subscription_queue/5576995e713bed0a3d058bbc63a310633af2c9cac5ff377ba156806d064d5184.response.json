@@ -1,0 +1,43 @@
+{
+  "request_hash": "5576995e713bed0a3d058bbc63a310633af2c9cac5ff377ba156806d064d5184",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_MILITARY_WEAPONS",
+        "label": "AI incorporated into weapons systems",
+        "definition": "Risks and threats from incorporating AI and emerging technologies into weapons and weapons systems, requiring international response.",
+        "inclusion": "Passages on AI in weapons systems or new weapon technologies.",
+        "exclusion": "Non-military AI risks.",
+        "boundary_cases": "Criticism of arms sales counts only when linked to AI-enabled weapons.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2019_IRL:48",
+            "quote": "the risks and threats posed by the incorporation of these new and emerging technologies into weapons and weapons systems"
+          }
+        ]
+      },
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "Societal benefits versus weapon risks",
+        "definition": "AI recognised as having countless societal benefits while posing risks when weaponized.",
+        "inclusion": "Passages pairing AI benefits with its risks.",
+        "exclusion": "One-sided statements.",
+        "boundary_cases": "If benefits are merely a preface to a weapons argument, code both.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2019_IRL:48",
+            "quote": "artificial intelligence are progressing rapidly, with countless potential benefits to society"
+          }
+        ]
+      }
+    ],
+    "rationale": "The Irish passage acknowledges AI's societal benefits but focuses on risks from incorporating AI into weapons systems and criticises states' arms-sales ambitions."
+  }
+}

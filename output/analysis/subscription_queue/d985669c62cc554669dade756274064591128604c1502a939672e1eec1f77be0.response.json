@@ -1,0 +1,31 @@
+{
+  "request_hash": "d985669c62cc554669dade756274064591128604c1502a939672e1eec1f77be0",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "root"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_SLV:1",
+      "verbatim_en_2026_SLV:2",
+      "verbatim_en_2026_SLV:3",
+      "verbatim_en_2026_SLV:4",
+      "verbatim_en_2026_SLV:5",
+      "verbatim_en_2026_SLV:6",
+      "verbatim_en_2026_SLV:7"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_SLV:6",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Heading up alongside Estonia, the Global Dialogue on Artificial Intelligence Governance, El Salvador reaffirmed that this technology must expand capacities and create opportunities to build environments that can be competitive in the future.",
+        "rationale": "Reports co-leadership of the Global Dialogue with Estonia and advocates AI as a source of capacity and economic opportunity."
+      }
+    ]
+  }
+}

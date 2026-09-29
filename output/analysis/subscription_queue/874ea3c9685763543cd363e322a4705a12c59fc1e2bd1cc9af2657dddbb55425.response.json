@@ -1,0 +1,43 @@
+{
+  "request_hash": "874ea3c9685763543cd363e322a4705a12c59fc1e2bd1cc9af2657dddbb55425",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "AI as opportunity and risk",
+        "definition": "AI briefly framed as both an opportunity and a source of risks, within a human rights context.",
+        "inclusion": "Include passages explicitly stating AI is both opportunity and risk.",
+        "exclusion": "Exclude passages that name AI only in a list without evaluative framing.",
+        "boundary_cases": "Placement within a human rights paragraph suggests AI_HUMAN_RIGHTS_ETHICS only if rights impacts of AI are explicit.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_PRT:12",
+            "quote": "New technologies, such as artificial intelligence, are an opportunity, but they also create risks."
+          }
+        ]
+      },
+      {
+        "code": "AI_UN_ROLE",
+        "label": "Pact for the Future guiding balance",
+        "definition": "UN outcome documents (Pact for the Future) cited as guiding a balanced approach to AI.",
+        "inclusion": "Include references to UN pacts, compacts or processes as frameworks for AI.",
+        "exclusion": "Exclude general multilateralism with no AI link.",
+        "boundary_cases": "If the Global Digital Compact is named, code here as well.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_PRT:12",
+            "quote": "The Pact for the Future points the way to a virtuous balance in that area."
+          }
+        ]
+      }
+    ],
+    "rationale": "Portugal's short passage, set in a human rights paragraph, frames AI as opportunity and risk and points to the Pact for the Future as the balancing framework."
+  }
+}

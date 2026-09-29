@@ -1,0 +1,83 @@
+{
+  "request_hash": "acc3dd348c0b47df57eeb173e00bfd481433fc1506fb08d2a0ec74c0d4980882",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_UN_ROLE",
+        "label": "Global Digital Compact co-facilitation",
+        "definition": "Speaker highlights role in co-facilitating the UN Global Digital Compact as the framework for digital and AI governance and closing divides.",
+        "inclusion": "Passages referencing the Global Digital Compact or UN General Assembly processes on digital/AI governance.",
+        "exclusion": "General cooperation calls without UN processes (use AI_GLOBAL_GOVERNANCE).",
+        "boundary_cases": "Compact commitments to close digital divides also take AI_DIGITAL_DIVIDE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_SWE:15",
+            "quote": "to establish the governance required for a sustainable digital future, including with respect to artificial intelligence"
+          },
+          {
+            "passage_id": "verbatim_en_2023_SWE:13",
+            "quote": "Sweden is co-facilitating the process in the General Assembly of developing a global digital compact"
+          }
+        ]
+      },
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "Harness promise while mitigating risks",
+        "definition": "AI framed as holding immense promise while entailing risks that must be addressed and mitigated.",
+        "inclusion": "Passages urging support for AI innovation while addressing risks, or harnessing potential and mitigating risks.",
+        "exclusion": "One-sided benefit statements.",
+        "boundary_cases": "Mentions of security and human rights challenges alongside opportunities count here.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_SWE:5",
+            "quote": "The global community must support innovation while addressing risks."
+          },
+          {
+            "passage_id": "verbatim_en_2023_SWE:13",
+            "quote": "This fast-moving development also entails challenges for international security and human rights."
+          }
+        ]
+      },
+      {
+        "code": "AI_DEVELOPMENT_SDGS",
+        "label": "AI for climate, health and SDGs",
+        "definition": "AI presented as a tool to accelerate climate action, global health and the SDGs, or address pressing common challenges.",
+        "inclusion": "Passages linking AI to climate, health, SDGs or common global challenges.",
+        "exclusion": "Economic jobs framing alone (use AI_ECONOMY_LABOR).",
+        "boundary_cases": "Generic 'immense promise' statements count when tied to common challenges.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_SWE:13",
+            "quote": "accelerate our efforts on climate change, global health and the Sustainable Development Goals"
+          },
+          {
+            "passage_id": "verbatim_en_2025_SWE:5",
+            "quote": "Emerging technologies such as AI hold immense promise in addressing some of our most pressing common challenges."
+          }
+        ]
+      },
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "Closing digital divides",
+        "definition": "Commitment to close digital divides among and within countries in the context of AI and digital governance.",
+        "inclusion": "Passages about closing digital divides.",
+        "exclusion": "Capacity programmes (use AI_CAPACITY_BUILDING).",
+        "boundary_cases": "When framed only as a Compact commitment, also code AI_UN_ROLE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_SWE:15",
+            "quote": "close digital divides among and within countries"
+          }
+        ]
+      }
+    ],
+    "rationale": "Swedish passages consistently frame AI through UN multilateralism, especially the Global Digital Compact Sweden co-facilitated, pairing AI's promise for climate, health and SDGs with the need to mitigate risks and close digital divides."
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "request_hash": "2dd89408e1a49bf5d5a891a540668132389a61c863e4f0714b214f39d3756537",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Shared global rules of the road",
+        "definition": "Calls for common international rules, safeguards, norms and possibly new institutions or a framework convention to govern AI.",
+        "inclusion": "Include passages calling for common rules, safeguards, global guardrails, a framework convention, or IAEA/ITU-like institutions for AI.",
+        "exclusion": "Exclude passages that only describe UN bodies without calling for rules.",
+        "boundary_cases": "Proposals for a UN framework convention count here and in AI_UN_ROLE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_SGP:6",
+            "quote": "We must urgently establish common rules and safeguards for AI."
+          },
+          {
+            "passage_id": "verbatim_en_2026_SGP:4",
+            "quote": "we must collectively formulate new rules and be prepared to create new institutions if necessary for new technologies"
+          }
+        ]
+      },
+      {
+        "code": "AI_UN_ROLE",
+        "label": "UN AI bodies as convergence venue",
+        "definition": "Support for UN-specific AI processes (High-Level Advisory Body, Scientific Panel, Global Dialogue, Global Digital Compact, OEWG) and the UN as the universal venue for AI norms.",
+        "inclusion": "Include welcomes of UN AI bodies/reports and claims that the UN has a critical role in AI governance.",
+        "exclusion": "Exclude calls for rules that name no UN body or role.",
+        "boundary_cases": "Lessons from the ICT OEWG applied to AI count here.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_SGP:22",
+            "quote": "Singapore welcomes the report of the High-Level Advisory Body on AI"
+          },
+          {
+            "passage_id": "verbatim_en_2026_SGP:6",
+            "quote": "The UN, the United Nations, has a critical role to play in building convergence"
+          }
+        ]
+      },
+      {
+        "code": "AI_SAFETY_EXISTENTIAL",
+        "label": "Loss of control and frontier AI safeguards",
+        "definition": "Technical AI safety concerns: loss of control of autonomous systems, WMD misuse by rogue actors, testing and evaluation, incident reporting, human control.",
+        "inclusion": "Include passages on loss of control, testing/evaluation before deployment, frontier model safety, or keeping humans in control.",
+        "exclusion": "Exclude battlefield or nuclear command uses of AI (AI_MILITARY_WEAPONS) unless framed as general safety.",
+        "boundary_cases": "The 'nuclear button' thought experiment is used to illustrate human control generally; code here and AI_MILITARY_WEAPONS.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_SGP:4",
+            "quote": "First, the loss of control of autonomous systems."
+          },
+          {
+            "passage_id": "verbatim_en_2026_SGP:5",
+            "quote": "We need rigorous testing and evaluation before deployment."
+          }
+        ]
+      },
+      {
+        "code": "AI_MILITARY_WEAPONS",
+        "label": "AI in conflict and nuclear escalation",
+        "definition": "Risks of AI in conflict situations and nuclear decision-making, raising miscalculation and escalation risk.",
+        "inclusion": "Include passages on AI in conflict, military systems, or control of nuclear weapons.",
+        "exclusion": "Exclude general loss-of-control safety concerns not tied to conflict.",
+        "boundary_cases": "Rogue actors using AI for bioweapons is closer to AI_SAFETY_EXISTENTIAL/misuse than state military use.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_SGP:16",
+            "quote": "the advent of artificial intelligence in conflict situations has actually increased the risks exponentially"
+          },
+          {
+            "passage_id": "verbatim_en_2026_SGP:5",
+            "quote": "Do you want the nuclear button to be in the hands of a human being or an AI?"
+          }
+        ]
+      },
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "Powerful engine needs good brakes",
+        "definition": "Framing AI as both extraordinary potential and peril, requiring innovation and safeguards together.",
+        "inclusion": "Include explicit promise/peril pairings or engine-and-brakes metaphors.",
+        "exclusion": "Exclude one-sided benefit or risk statements.",
+        "boundary_cases": "Where the duality leads to a governance call, code both.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_SGP:22",
+            "quote": "By now, the promises and the perils of AI are well known to all of us."
+          },
+          {
+            "passage_id": "verbatim_en_2026_SGP:5",
+            "quote": "every powerful engine needs good brakes, safeguards"
+          }
+        ]
+      },
+      {
+        "code": "AI_ECONOMY_LABOR",
+        "label": "Skills-driven AI productivity gains",
+        "definition": "AI as a productivity engine requiring investment in skills, talent and infrastructure so workers and businesses can redesign work.",
+        "inclusion": "Include passages on productivity gains from AI and equipping workers with AI skills.",
+        "exclusion": "Exclude capacity support to other countries (AI_CAPACITY_BUILDING).",
+        "boundary_cases": "Domestic skills investment for small states may also be AI_NATIONAL_STRATEGY.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_SGP:5",
+            "quote": "The real productivity gains from AI comes not from the IT department, but from our businesses and workers having the skills"
+          }
+        ]
+      }
+    ],
+    "rationale": "Singapore's speeches consistently pair AI's potential with safety risks and call for global rules centred on UN processes; 2026 adds detailed technical safety (testing, loss of control), strategic competition and productivity/skills, while 2023 emphasises AI in conflict."
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "request_hash": "353fef447c48b83be85b83e3410b8b1af09116d5b8e230b5a573fdd7637c0695",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_b"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2025_UZB:1",
+      "verbatim_en_2025_UZB:2",
+      "verbatim_en_2025_UZB:3",
+      "verbatim_en_2025_UZB:4",
+      "verbatim_en_2025_UZB:5"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2025_UZB:5",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "We propose to create an international cooperation mechanism aimed at the greatest exchange of practical solutions and models of artificial intelligence in healthcare, education, and culture.",
+        "rationale": "Proposes international AI cooperation and equitable access to applied models."
+      }
+    ]
+  }
+}

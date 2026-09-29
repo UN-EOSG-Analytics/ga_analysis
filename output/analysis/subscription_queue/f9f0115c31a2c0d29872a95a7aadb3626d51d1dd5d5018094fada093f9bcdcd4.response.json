@@ -1,0 +1,46 @@
+{
+  "request_hash": "f9f0115c31a2c0d29872a95a7aadb3626d51d1dd5d5018094fada093f9bcdcd4",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "root"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_AUS:1",
+      "verbatim_en_2026_AUS:2",
+      "verbatim_en_2026_AUS:3",
+      "verbatim_en_2026_AUS:4",
+      "verbatim_en_2026_AUS:5",
+      "verbatim_en_2026_AUS:6",
+      "verbatim_en_2026_AUS:7",
+      "verbatim_en_2026_AUS:8"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_AUS:2",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Whether it is climate change or artificial intelligence, there is always the temptation to say that our generation is being confronted by issues that our predecessors could not possibly have imagined while dealing with the world they would not recognise.",
+        "rationale": "Explicitly frames AI as a challenge for collective UN action, with inclusive participation rather than exclusive great-power or corporate control."
+      },
+      {
+        "passage_id": "verbatim_en_2026_AUS:3",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "emerging technology, including artificial intelligence, which is evolving at a furious pace, and the breakdown of trust, civility, and social cohesion, which is promoting conflict within and between countries.",
+        "rationale": "Identifies rapid AI development among new international challenges requiring multilateral reform and additional partnerships."
+      },
+      {
+        "passage_id": "verbatim_en_2026_AUS:5",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "AI can improve lives, boost growth and productivity, provide revolutionary breakthroughs in healthcare and other fields.",
+        "rationale": "Discusses AI opportunities, frontier development risks, an alleged agent intrusion, and national standards and international action to shape development."
+      }
+    ]
+  }
+}

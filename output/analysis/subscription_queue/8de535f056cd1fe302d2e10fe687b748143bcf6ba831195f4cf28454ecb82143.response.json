@@ -1,0 +1,28 @@
+{
+  "request_hash": "8de535f056cd1fe302d2e10fe687b748143bcf6ba831195f4cf28454ecb82143",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_c"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_SYC:1",
+      "verbatim_en_2026_SYC:2",
+      "verbatim_en_2026_SYC:3",
+      "verbatim_en_2026_SYC:4"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_SYC:3",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Looking ahead, we must also address the rapid rise of artificial intelligence and emerging technologies. Whilst these tools offer immense opportunities for development and ocean management, They also risk widening the global divide and enabling new forms of warfare and cybercrime.",
+        "rationale": "Discusses AI applications, inequality and security risks, and calls for UN-centered ethical governance."
+      }
+    ]
+  }
+}

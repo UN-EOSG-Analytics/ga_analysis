@@ -1,0 +1,47 @@
+{
+  "request_hash": "8ff1061323c5abb4985a220254869d14c5486097fa561ba6a1910a18a3075807",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "root"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2019_LVA:1",
+      "verbatim_en_2019_LVA:2",
+      "verbatim_en_2019_LVA:3",
+      "verbatim_en_2019_LVA:4",
+      "verbatim_en_2019_LVA:5",
+      "verbatim_en_2019_LVA:6",
+      "verbatim_en_2019_LVA:7",
+      "verbatim_en_2019_LVA:8",
+      "verbatim_en_2019_LVA:9",
+      "verbatim_en_2019_LVA:10",
+      "verbatim_en_2019_LVA:11",
+      "verbatim_en_2019_LVA:12",
+      "verbatim_en_2019_LVA:13",
+      "verbatim_en_2019_LVA:14",
+      "verbatim_en_2019_LVA:15",
+      "verbatim_en_2019_LVA:16"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2019_LVA:9",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "We must not allow artificial intelligence rather than humans to take legally binding decisions. Humans must retain control.",
+        "rationale": "Warns of AI surveillance and privacy risks and insists on human control of legally binding decisions."
+      },
+      {
+        "passage_id": "verbatim_en_2019_LVA:10",
+        "status": "Yes",
+        "mention_type": "contextual",
+        "quote": "The United Nations must therefore actively promote the discussion of personal data protection in cyberspace, especially the ethical and legal standards for the collection and use of personal data.",
+        "rationale": "The explicit therefore continues the preceding AI, surveillance and personal-data argument into a request for UN ethical and legal discussion."
+      }
+    ]
+  }
+}

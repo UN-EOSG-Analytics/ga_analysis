@@ -1,13 +1,13 @@
-# 이전 자료 보관
+# Archive
 
-현재 분석에는 이 폴더를 읽지 않는다. 원문 선택을 속기록으로 확정하면서 작업 폴더에서 제거한 자료를 복구할 때만 사용한다.
+The current analysis does not read this folder. It holds materials removed from the working folders when the canonical sources were fixed, and is used only for recovery.
 
-| 파일 | 내용 |
+| File | Content |
 |---|---|
-| `before_canonical_transcripts.zip` | 변경 전 코드·설정·문서·국가별 추출본·전처리 기록. 이전 중복 원본 ZIP도 포함 |
-| `retired_materials.zip` | 이전 제출 PDF·사용하지 않는 추출/OCR 캐시·검토 기록·일회성 스크립트 등 추가 보관 자료 |
-| `cleanup_manifest.json` | 각 정리 파일의 원래 경로, SHA-256, 보관 ZIP과 내부 경로, 제거 완료 상태 |
+| `before_canonical_transcripts.zip` | Backup of code, configuration, documents, per-country extracts and preprocessing records from before the canonical-source change; also contains the earlier duplicate source ZIP |
+| `retired_materials.zip` | Backup of former submitted PDFs, unused extraction/OCR caches, review records, one-off scripts and other retired material |
+| `cleanup_manifest.json` | For each archived file: original path, SHA-256, archive ZIP and internal path, removal status |
 
-정리 전에 보관된 모든 파일의 SHA-256을 원본과 대조한다. 원문 속기록과 활성 등록부가 참조하는 파일은 정리 대상에서 제외한다.
+Every archived file's SHA-256 was checked against the original before removal. Original verbatim records and files referenced by the active manifest were not archived.
 
-복구가 필요하면 `cleanup_manifest.json`에서 파일의 `archive`와 `member`를 찾아 별도 폴더에 추출한다. 이전 상태를 현재 입력 위에 일괄 덮어쓰지 않는다. 보관본의 옛 상태표·스크립트는 당시 경로와 정책을 기준으로 작성되어 있다.
+To recover a file, look up its `archive` and `member` in `cleanup_manifest.json` and extract it into a separate folder. Do not bulk-restore over the current input. Old status tables and scripts in the archive reflect the paths and policies of their time.

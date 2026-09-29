@@ -1,0 +1,30 @@
+{
+  "request_hash": "c30cd3d2db8974ccd1a1a75bb9cd6208f71d94881ccc073bd47e0babe251b39b",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_a"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_TON:1",
+      "verbatim_en_2026_TON:2",
+      "verbatim_en_2026_TON:3",
+      "verbatim_en_2026_TON:4",
+      "verbatim_en_2026_TON:5",
+      "verbatim_en_2026_TON:6"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_TON:6",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Tonga does not need to be first in artificial intelligence, quantum computing, or every technology that follows. but Tonga will not simply endure global transformations. It will exercise sovereignty by helping shape the rules and norms around it.",
+        "rationale": "Asserts participation in AI and technology governance to preserve sovereignty and share benefits."
+      }
+    ]
+  }
+}

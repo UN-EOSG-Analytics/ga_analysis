@@ -1,0 +1,61 @@
+{
+  "request_hash": "ae0e75965fc751cd7679c19953491d8c78f997985f0ccdfc9e47e7f5bd0523ba",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_UN_ROLE",
+        "label": "Co-facilitating the UN Global Dialogue",
+        "definition": "The speaker country's role in leading or co-facilitating the UN Global Dialogue on AI Governance and the message it promoted there.",
+        "inclusion": "Include references to leading, co-chairing or participating in UN AI governance processes.",
+        "exclusion": "Exclude general UN reform demands without AI content.",
+        "boundary_cases": "Statements on what AI 'must' do made within the Dialogue context may also be coded with the substantive theme (e.g. AI_DEVELOPMENT_SDGS).",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_SLV:6",
+            "quote": "Heading up alongside Estonia, the Global Dialogue on Artificial Intelligence Governance"
+          }
+        ]
+      },
+      {
+        "code": "AI_DEVELOPMENT_SDGS",
+        "label": "AI expanding capacities and competitiveness",
+        "definition": "AI framed as a tool to expand capacities, create opportunities and build competitive economies.",
+        "inclusion": "Include statements that AI should expand capacities, create opportunities or competitiveness.",
+        "exclusion": "Exclude workforce training plans (AI_YOUTH_EDUCATION).",
+        "boundary_cases": "Competitiveness framed nationally may overlap with AI_NATIONAL_STRATEGY.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_SLV:6",
+            "quote": "this technology must expand capacities and create opportunities to build environments that can be competitive in the future"
+          }
+        ]
+      },
+      {
+        "code": "AI_YOUTH_EDUCATION",
+        "label": "Training youth for superintelligence economy",
+        "definition": "National ambition to join the technological transformation by training young people in superintelligence, robotics and data science.",
+        "inclusion": "Include plans or aims to train youth or workforce for AI and related technologies.",
+        "exclusion": "Exclude general education reform without technology link.",
+        "boundary_cases": "Investment-attraction pitches naming technology are coded here only if skills/training is explicit.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_COL:4",
+            "quote": "We want to train young people for super intelligence, for robotics, for data science"
+          },
+          {
+            "passage_id": "verbatim_en_2026_COL:4",
+            "quote": "Colombia does not want to watch the technological transformation of our time from the sidelines."
+          }
+        ]
+      }
+    ],
+    "rationale": "Both 2026 Latin American passages give AI brief, opportunity-oriented treatment: El Salvador via its co-leadership of the UN Global Dialogue, Colombia via training youth for a superintelligence-era economy."
+  }
+}

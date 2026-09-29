@@ -1,0 +1,61 @@
+{
+  "request_hash": "e2804db45043a0d531e273fe8c25412b7c5d5ea9cb459a531f8b9f6c85a74970",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_SOVEREIGNTY_CONCENTRATION",
+        "label": "Few companies and countries deciding AI",
+        "definition": "Concern that a small group of companies and countries could take all decisions about AI while others look on.",
+        "inclusion": "Include passages objecting to concentration of AI decision-making among a few firms or states.",
+        "exclusion": "Exclude access-gap framings without a power/decision element (AI_DIGITAL_DIVIDE).",
+        "boundary_cases": "When the proposed remedy is deciding within the UN, also code AI_UN_ROLE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_NLD:3",
+            "quote": "Do we let a small group of companies and countries take all the decisions while the rest of us simply look on?"
+          }
+        ]
+      },
+      {
+        "code": "AI_UN_ROLE",
+        "label": "UN as forum for collective AI decisions",
+        "definition": "The United Nations is presented as the setting in which states should jointly decide the future of AI.",
+        "inclusion": "Include statements that AI decisions should be made within the UN or UN processes.",
+        "exclusion": "Exclude using AI to reform UN operations (AI_UN_EFFICIENCY).",
+        "boundary_cases": "General multilateral governance calls without naming the UN go to AI_GLOBAL_GOVERNANCE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_NLD:3",
+            "quote": "do we decide together, within the logical setting of the United Nations, what our future should look like?"
+          }
+        ]
+      },
+      {
+        "code": "AI_UN_EFFICIENCY",
+        "label": "Using AI to improve multilateral institutions",
+        "definition": "AI presented as a tool to boost the efficiency and effectiveness of the UN and multilateral institutions as part of reform efforts like UN80.",
+        "inclusion": "Include passages proposing the use of AI within the UN system or multilateral institutions to improve operations.",
+        "exclusion": "Exclude governance of AI by the UN (AI_UN_ROLE).",
+        "boundary_cases": "Generic 'use technology in UN reform' without AI is not coded.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_NLD:2",
+            "quote": "we must work together by using AI and other technologies wherever possible"
+          },
+          {
+            "passage_id": "verbatim_en_2025_NLD:2",
+            "quote": "explore new ways of boosting the efficiency and effectiveness of multilateral institutions"
+          }
+        ]
+      }
+    ],
+    "rationale": "Both Netherlands passages tie AI to the future of the UN, but differently: 2026 frames AI as a power-concentration choice to be settled collectively at the UN, while 2025 treats AI as a tool for making multilateral institutions more efficient under UN80."
+  }
+}

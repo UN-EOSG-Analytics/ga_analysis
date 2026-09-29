@@ -1,0 +1,29 @@
+{
+  "request_hash": "4ecb3d81792c50191f5b8036d138f7969555a9e0025ab5e0915e8e8ca25453e9",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "root"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2025_IND:1",
+      "verbatim_en_2025_IND:2",
+      "verbatim_en_2025_IND:3",
+      "verbatim_en_2025_IND:4",
+      "verbatim_en_2025_IND:5"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2025_IND:4",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Artificial intelligence as a horizontal and cross-cutting technology has a particular promise for development.",
+        "rationale": "Describes responsible AI for human welfare, development, inclusion and impact, and announces the Indian 2026 summit."
+      }
+    ]
+  }
+}

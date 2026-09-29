@@ -1,0 +1,51 @@
+{
+  "request_hash": "f8d3d8fe245c46cf7cd2454100720f5484f00d0ef2db8a3ef7323bc7faa4d55e",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_NATIONAL_STRATEGY",
+        "label": "AI and data centres in national investment pitch",
+        "definition": "AI and data centre projects presented as part of a national flagship development/investment project (Gelephu Mindfulness City) powered by renewable energy and designed to attract investors.",
+        "inclusion": "Include passages promoting national AI/data centre projects, investment deals, or clean-energy-powered AI industries as national economic strategy.",
+        "exclusion": "Exclude passages calling for international AI governance.",
+        "boundary_cases": "Brief listing of AI among 'industries of the future' in an investment pitch counts here if tied to a concrete national project; otherwise AI_TECH_LIST_MENTION.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_BTN:4",
+            "quote": "Artificial intelligence and data center projects are moving forward, and nearly $5 billion in projects are under active negotiation."
+          },
+          {
+            "passage_id": "verbatim_en_2026_BTN:3",
+            "quote": "That electricity will power GMC and the industries of the future. advanced manufacturing, scientific research, artificial intelligence and data centers"
+          }
+        ]
+      },
+      {
+        "code": "AI_TECHNOLOGY_AND_WELLBEING",
+        "label": "AI alongside human consciousness and values",
+        "definition": "AI juxtaposed with spiritual, contemplative traditions and quality of life, presenting technology and human values as complementary rather than contradictory.",
+        "inclusion": "Include passages pairing AI with mindfulness, spirituality or human wellbeing as a deliberate design principle.",
+        "exclusion": "Exclude ethics-regulation passages focused on rights or bias.",
+        "boundary_cases": "Rhetorical questions about how to use AI in governance design fit here when framed around values; plain investment claims go to AI_NATIONAL_STRATEGY.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_BTN:4",
+            "quote": "Artificial intelligence and human consciousness. Data centers and meditation centers."
+          },
+          {
+            "passage_id": "verbatim_en_2026_BTN:1",
+            "quote": "How would we use technology and especially artificial intelligence?"
+          }
+        ]
+      }
+    ],
+    "rationale": "All three passages come from Bhutan's 'sales pitch' for Gelephu Mindfulness City, where AI appears as an investment sector (data centres, clean energy) and as a symbol paired with Buddhist contemplative traditions. There is no governance or risk discussion."
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "request_hash": "bf8ec381fe6f28d4f9ee8cdaa8a557cca949ae7cee9b720205d80d27fa0c4548",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_BIAS_CULTURAL_DIVERSITY",
+        "label": "Bias, stereotypes and cultural diversity",
+        "definition": "AI reproducing bias, prejudice, hate or stereotypes, distorting or censoring history, misrepresenting peoples, and threatening or protecting linguistic and cultural diversity.",
+        "inclusion": "Passages on biased training data, discrimination, AI spreading hatred or stereotypes, digital erasure of non-hegemonic cultures, fair representation in AI-mediated knowledge, preserving small languages or multilingualism.",
+        "exclusion": "General human rights or ethics language without bias or cultural content (AI_HUMAN_RIGHTS_ETHICS); disinformation campaigns (AI_DISINFORMATION).",
+        "boundary_cases": "AI used to protect small languages (a positive application) is coded here because the concern is cultural diversity.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_IND:2",
+            "quote": "Misuse of AI is sharpening bias and diluting mutual respect."
+          }
+        ]
+      },
+      {
+        "code": "AI_CAPACITY_BUILDING",
+        "label": "Capacity building and AI cooperation",
+        "definition": "Concrete cooperation to build AI capabilities: skills, training, technology transfer, financing, infrastructure, regional AI centres and bilateral or South-South AI partnerships.",
+        "inclusion": "Passages offering or requesting AI training, funds, compute, infrastructure, knowledge sharing, regional centres or partnerships.",
+        "exclusion": "Statements of inequality without a support measure (AI_DIGITAL_DIVIDE); a country's own domestic programmes (AI_NATIONAL_STRATEGY).",
+        "boundary_cases": "A country offering its national AI experience to others takes this code and AI_NATIONAL_STRATEGY.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_IND:4",
+            "quote": "AI will be very much part of a partnership agenda with the global South."
+          }
+        ]
+      },
+      {
+        "code": "AI_TECH_LIST_MENTION",
+        "label": "AI listed among technologies",
+        "definition": "AI named only briefly in a neutral or positive list of technologies, trends or national strengths, without further discussion of AI itself.",
+        "inclusion": "Passages where 'artificial intelligence' appears alongside other technologies (robotics, big data, quantum, biotech) with no AI-specific claim.",
+        "exclusion": "AI listed among threats or crises (AI_THREAT_LIST_MENTION); any passage with an AI-specific claim (use the substantive code).",
+        "boundary_cases": "A list plus one AI-specific sentence should receive the substantive code instead of, or in addition to, this code.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_IND:9",
+            "quote": "Others focus on new concerns, such as the responsible harnessing of artificial intelligence."
+          }
+        ]
+      }
+    ],
+    "rationale": "Consolidated 3 proposals into 3 codes of a shared multilabel codebook. Merged: AI_MISUSE_BIAS -> AI_BIAS_CULTURAL_DIVERSITY (1). Distinct minority concepts are kept as separate codes (e.g. governance scepticism, inclusive rule-making, resource footprint, bias and cultural diversity, peace applications). Mention is not endorsement."
+  }
+}

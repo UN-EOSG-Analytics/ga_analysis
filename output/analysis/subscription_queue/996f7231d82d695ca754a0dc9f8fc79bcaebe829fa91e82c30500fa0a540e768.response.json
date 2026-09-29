@@ -1,0 +1,47 @@
+{
+  "request_hash": "996f7231d82d695ca754a0dc9f8fc79bcaebe829fa91e82c30500fa0a540e768",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Smart global governance of emerging technologies",
+        "definition": "Call to urgently create global governance frameworks for science and emerging technologies such as AI, balancing benefits and prevention of threats.",
+        "inclusion": "Include calls for global AI governance frameworks.",
+        "exclusion": "Exclude mere references to adopted resolutions without a governance call.",
+        "boundary_cases": "Welcoming the Global Digital Compact as a basis for governance is also AI_UN_ROLE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_VNM:11",
+            "quote": "we should urgently create smart global governance frameworks with a long-term vision for science and technology, especially emerging technologies such as artificial intelligence"
+          }
+        ]
+      },
+      {
+        "code": "AI_UN_ROLE",
+        "label": "Welcoming UN AI resolutions and Compact",
+        "definition": "Speakers welcome specific UN instruments on AI, such as the Global Digital Compact and General Assembly resolution 78/265 on safe, secure and trustworthy AI.",
+        "inclusion": "Include references to UN AI resolutions, the Global Digital Compact or Summit of the Future outcomes on AI.",
+        "exclusion": "Exclude governance calls that do not reference a UN instrument.",
+        "boundary_cases": "Fragmentary passages citing a resolution number still count here.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_MNG:13",
+            "quote": "States to ensure the reliability and security of artificial intelligence (resolution 78/265), in a significant step forward."
+          },
+          {
+            "passage_id": "verbatim_en_2024_VNM:11",
+            "quote": "I welcome the documents adopted at the Summit for the Future, especially the Global Digital Compact"
+          }
+        ]
+      }
+    ],
+    "rationale": "Both 2024 passages welcome UN instruments on AI (resolution 78/265, Global Digital Compact); Viet Nam additionally calls for smart global governance frameworks for emerging technologies."
+  }
+}

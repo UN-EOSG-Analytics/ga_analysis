@@ -1,0 +1,237 @@
+{
+  "stages": {
+    "review": {
+      "requests_lower": 786,
+      "requests_upper": 786,
+      "input_characters_lower": 12009577,
+      "input_characters_upper": 12009577,
+      "input_tokens_lower": 3103002,
+      "input_tokens_upper": 3103002,
+      "scenarios": {
+        "900": {
+          "lower_usd": 0.0,
+          "upper_usd": 0.0
+        },
+        "2000": {
+          "lower_usd": 0.0,
+          "upper_usd": 0.0
+        },
+        "3000": {
+          "lower_usd": 0.0,
+          "upper_usd": 0.0
+        }
+      },
+      "billing": "codex_subscription",
+      "direct_api_requests_lower": 0,
+      "direct_api_requests_upper": 0
+    },
+    "embeddings": {
+      "requests_lower": 22,
+      "requests_upper": 22,
+      "input_characters_lower": 1567807,
+      "input_characters_upper": 1567807,
+      "input_tokens_lower": 391952,
+      "input_tokens_upper": 391952,
+      "scenarios": {
+        "900": {
+          "lower_usd": 0.050954,
+          "upper_usd": 0.050954
+        },
+        "2000": {
+          "lower_usd": 0.050954,
+          "upper_usd": 0.050954
+        },
+        "3000": {
+          "lower_usd": 0.050954,
+          "upper_usd": 0.050954
+        }
+      },
+      "billing": "direct_api",
+      "direct_api_requests_lower": 22,
+      "direct_api_requests_upper": 22
+    },
+    "discovery": {
+      "requests_lower": 16,
+      "requests_upper": 29,
+      "input_characters_lower": 394591,
+      "input_characters_upper": 1913492,
+      "input_tokens_lower": 100696,
+      "input_tokens_upper": 482085,
+      "scenarios": {
+        "900": {
+          "lower_usd": 0.0,
+          "upper_usd": 0.0
+        },
+        "2000": {
+          "lower_usd": 0.0,
+          "upper_usd": 0.0
+        },
+        "3000": {
+          "lower_usd": 0.0,
+          "upper_usd": 0.0
+        }
+      },
+      "billing": "codex_subscription",
+      "direct_api_requests_lower": 0,
+      "direct_api_requests_upper": 0
+    },
+    "taxonomy": {
+      "requests_lower": 2,
+      "requests_upper": 4,
+      "input_characters_lower": 94486,
+      "input_characters_upper": 494000,
+      "input_tokens_lower": 23877,
+      "input_tokens_upper": 124012,
+      "scenarios": {
+        "900": {
+          "lower_usd": 0.0,
+          "upper_usd": 0.0
+        },
+        "2000": {
+          "lower_usd": 0.0,
+          "upper_usd": 0.0
+        },
+        "3000": {
+          "lower_usd": 0.0,
+          "upper_usd": 0.0
+        }
+      },
+      "billing": "codex_subscription",
+      "direct_api_requests_lower": 0,
+      "direct_api_requests_upper": 0
+    },
+    "classification": {
+      "requests_lower": 252,
+      "requests_upper": 252,
+      "input_characters_lower": 7592356,
+      "input_characters_upper": 7592356,
+      "input_tokens_lower": 1930345,
+      "input_tokens_upper": 1930345,
+      "scenarios": {
+        "900": {
+          "lower_usd": 0.0,
+          "upper_usd": 0.0
+        },
+        "2000": {
+          "lower_usd": 0.0,
+          "upper_usd": 0.0
+        },
+        "3000": {
+          "lower_usd": 0.0,
+          "upper_usd": 0.0
+        }
+      },
+      "billing": "codex_subscription",
+      "direct_api_requests_lower": 0,
+      "direct_api_requests_upper": 0
+    },
+    "references": {
+      "requests_lower": 12,
+      "requests_upper": 15,
+      "input_characters_lower": 300781,
+      "input_characters_upper": 377281,
+      "input_tokens_lower": 76731,
+      "input_tokens_upper": 96240,
+      "scenarios": {
+        "900": {
+          "lower_usd": 0.0,
+          "upper_usd": 0.0
+        },
+        "2000": {
+          "lower_usd": 0.0,
+          "upper_usd": 0.0
+        },
+        "3000": {
+          "lower_usd": 0.0,
+          "upper_usd": 0.0
+        }
+      },
+      "billing": "codex_subscription",
+      "direct_api_requests_lower": 0,
+      "direct_api_requests_upper": 0
+    },
+    "report": {
+      "requests_lower": 2,
+      "requests_upper": 2,
+      "input_characters_lower": 247000,
+      "input_characters_upper": 247000,
+      "input_tokens_lower": 62006,
+      "input_tokens_upper": 62006,
+      "scenarios": {
+        "900": {
+          "lower_usd": 0.0,
+          "upper_usd": 0.0
+        },
+        "2000": {
+          "lower_usd": 0.0,
+          "upper_usd": 0.0
+        },
+        "3000": {
+          "lower_usd": 0.0,
+          "upper_usd": 0.0
+        }
+      },
+      "billing": "codex_subscription",
+      "direct_api_requests_lower": 0,
+      "direct_api_requests_upper": 0
+    }
+  },
+  "total_scenarios": {
+    "900": {
+      "lower_usd": 0.051,
+      "upper_usd": 0.051
+    },
+    "2000": {
+      "lower_usd": 0.051,
+      "upper_usd": 0.051
+    },
+    "3000": {
+      "lower_usd": 0.051,
+      "upper_usd": 0.051
+    }
+  },
+  "lower_usd": 0.051,
+  "upper_usd": 0.051,
+  "measured": {
+    "speeches": 1908,
+    "passages": 50055,
+    "review_requests": 786,
+    "review_input_characters": 12009577,
+    "max_reviewed_id_list_characters": 1080,
+    "candidate_matches": 1397,
+    "candidate_unique_passages": 685,
+    "candidate_status": "unique_screening_evidence_passage_ids",
+    "candidate_text_characters": 905996,
+    "reference_status": "local_documents_measured_no_network",
+    "local_reference_requests": 12,
+    "review_selected_speeches": 557,
+    "review_unselected_speeches": 1351,
+    "review_scope": "screened_speeches"
+  },
+  "assumptions": {
+    "chars_per_token": 4.0,
+    "output_tokens_per_request": [
+      900,
+      2000,
+      3000
+    ],
+    "assumed_theme_codes": 12,
+    "assumed_taxonomy_chars": 12000,
+    "classification_instruction_chars": 2200,
+    "other_instruction_schema_chars": 3500,
+    "protocol_overhead_tokens_per_request": 128,
+    "assumed_report_input_chars": 120000,
+    "assumed_web_reference_chunks": 3,
+    "output_tokens_include_reasoning": true,
+    "screening_candidates_are_proxy_not_verified_AI": true,
+    "cache_savings_assumed": false,
+    "semantic_or_transport_retries_included": false,
+    "batch_splitting_included": false,
+    "negative_audit_expansion_included": false,
+    "classification_batch_passages": 8,
+    "discovery_request_range": "Largest configured cluster cut versus all-source batches of 24; later splits can add calls",
+    "taxonomy_request_range": "2-4 synthesis/audit calls; nonconvergence and extra hierarchy rounds are not a guaranteed bound"
+  },
+  "pricing_checked": "2026-09-28",
+  "scope": "Direct API spending only: embeddings. Text review, classification and reporting consume Codex subscription usage; they are not unlimited and are not Python API calls. Candidate passage counts remain estimates."
+}

@@ -1,0 +1,75 @@
+{
+  "request_hash": "be225a52cec7011981f80a20354bfa6d2aa5dc101e37a817b32ade15e2c928c4",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_SAFETY_EXISTENTIAL",
+        "label": "Unchecked AI risks outweighing benefits",
+        "definition": "AI framed as an unprecedented technology challenging human supremacy whose unregulated advance may carry risks greater than its benefits.",
+        "inclusion": "Passages claiming AI challenges the supremacy of the human mind or that risks of unchecked AI could outweigh benefits.",
+        "exclusion": "Passages on AI's harms to children specifically or military uses.",
+        "boundary_cases": "Benefits acknowledged in passing before a risk-dominant conclusion still fit here rather than duality.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_GRC:7",
+            "quote": "we have created a technology that openly challenges the supremacy of the human mind as the pinnacle of our evolutionary development"
+          },
+          {
+            "passage_id": "verbatim_en_2026_GRC:7",
+            "quote": "the risks of an unchecked and unregulated advance in artificial intelligence could greatly outweigh its potential benefits"
+          }
+        ]
+      },
+      {
+        "code": "AI_AS_INFRASTRUCTURE",
+        "label": "AI as present-day strategic infrastructure",
+        "definition": "AI framed as current infrastructure and a factor shaping the future international order alongside energy grids, data centres and connectivity.",
+        "inclusion": "Passages describing AI as present infrastructure or as a site where geopolitical order is shaped.",
+        "exclusion": "Passages naming AI only as a future challenge in a list.",
+        "boundary_cases": "Data centres or grids mentioned without AI do not qualify.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_MKD:7",
+            "quote": "Artificial intelligence is not longer a subject of the future. It is infrastructure for today, for the present."
+          }
+        ]
+      },
+      {
+        "code": "AI_CHILD_PROTECTION",
+        "label": "Digital technology harms to children",
+        "definition": "AI introduced together with adverse effects of digital technology on children and teenagers.",
+        "inclusion": "Passages flagging AI or digital technology harms to children and adolescents.",
+        "exclusion": "Youth education and skills framing (use AI_YOUTH_EDUCATION).",
+        "boundary_cases": "A transition sentence announcing AI and child harms as topics counts as a brief mention of this theme.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_GRC:16",
+            "quote": "the advent of artificial intelligence (AI) and the adverse effects of digital technology, especially on our children and our teenagers"
+          }
+        ]
+      },
+      {
+        "code": "AI_TECH_LIST_MENTION",
+        "label": "AI listed among complex global issues",
+        "definition": "AI named in a list of complex challenges (climate, geopolitics) without elaboration.",
+        "inclusion": "Passages naming AI as one item among issues populists or others avoid or that the world faces.",
+        "exclusion": "Passages developing AI risks, benefits or policy.",
+        "boundary_cases": "Labelling AI a 'disruptive technology' in a list is still a list mention.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_AUT:4",
+            "quote": "be it on climate change, disruptive technologies like artificial intelligence, mutual political and economic dependencies"
+          }
+        ]
+      }
+    ],
+    "rationale": "European passages that mostly introduce AI at the close of a speech; Greece 2026 gives a risk-dominant, human-supremacy framing, North Macedonia treats AI as present infrastructure, Greece 2024 links AI to harms to children, and Austria merely lists AI."
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "request_hash": "2c878e072966cf81ff095828ff9a5525b45663830d70c469d2777122624ab10c",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_b"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2024_MCO:1",
+      "verbatim_en_2024_MCO:2",
+      "verbatim_en_2024_MCO:3",
+      "verbatim_en_2024_MCO:4",
+      "verbatim_en_2024_MCO:5",
+      "verbatim_en_2024_MCO:6",
+      "verbatim_en_2024_MCO:7",
+      "verbatim_en_2024_MCO:8",
+      "verbatim_en_2024_MCO:9",
+      "verbatim_en_2024_MCO:10",
+      "verbatim_en_2024_MCO:11",
+      "verbatim_en_2024_MCO:12",
+      "verbatim_en_2024_MCO:13"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2024_MCO:10",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "The Principality of Monaco is committed to capitalizing on the opportunities provided by safe, secure and trustworthy artificial intelligence systems for sustainable development.",
+        "rationale": "Discusses AI development benefits, standards, rights and military or terrorist misuse."
+      }
+    ]
+  }
+}

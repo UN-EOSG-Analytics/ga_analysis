@@ -1,0 +1,93 @@
+{
+  "request_hash": "dcf98a67ab626116ae4c7f5083f5eb01386e28ff9737206166602ca5f3f853cb",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_MILITARY_WEAPONS",
+        "label": "Military AI, autonomy and nuclear escalation",
+        "definition": "AI in the military domain: autonomous target selection and life-or-death decisions, the need for meaningful human control, and AI raising the risk of nuclear escalation.",
+        "inclusion": "Include passages on AI used in conflict or weapons, human control over lethal decisions, or AI increasing nuclear/escalation risk.",
+        "exclusion": "Exclude civilian AI safety concerns with no military or weapons context (AI_SAFETY_EXISTENTIAL).",
+        "boundary_cases": "AI listed with cyber capabilities as factors raising nuclear risk is coded here even if brief.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_SMR:7",
+            "quote": "Artificial intelligence has been used in conflict to select target and make decision over life or death."
+          },
+          {
+            "passage_id": "verbatim_en_2024_SMR:10",
+            "quote": "the use of new emerging technologies, including artificial intelligence, and the possibilities of cyberattacks, the risk of nuclear weapons use, either deliberately or by accident, is higher"
+          },
+          {
+            "passage_id": "verbatim_en_2026_SMR:6",
+            "quote": "the rapid development of artificial intelligences and cyber capabilities, increase the risk of escalation"
+          }
+        ]
+      },
+      {
+        "code": "AI_UN_ROLE",
+        "label": "Support for UN AI panel and dialogue",
+        "definition": "Support for UN AI processes such as the Global Digital Compact, the independent international scientific panel on AI, and the Global Dialogue on AI Governance.",
+        "inclusion": "Include passages naming or endorsing specific UN AI bodies or processes.",
+        "exclusion": "Exclude generic references to multilateralism without a specific UN AI mechanism.",
+        "boundary_cases": "Mentions of the Global Digital Compact without AI still count only if linked to AI or digital technology governance.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_SMR:7",
+            "quote": "the establishment of an independent international science panel on AI and on the global dialogue on artificial intelligence governance are fundamental to promote scientific understanding of AI"
+          }
+        ]
+      },
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "AI's enormous opportunity and new risks",
+        "definition": "AI is explicitly framed as offering enormous opportunity while creating new risks that must be governed.",
+        "inclusion": "Include passages explicitly pairing AI opportunity with AI risk.",
+        "exclusion": "Exclude risk-only military passages.",
+        "boundary_cases": "If the passage moves from duality to a call for regulation, also code AI_GLOBAL_GOVERNANCE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_SMR:7",
+            "quote": "Artificial intelligence and emerging technology offer enormous opportunity, but they also create new risks."
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Rules must keep pace with innovation",
+        "definition": "Calls to govern AI risks multilaterally, arguing no country can regulate global technology alone.",
+        "inclusion": "Include calls to govern or regulate AI/technology through multilateral rules.",
+        "exclusion": "Exclude UN-specific AI body endorsements without a general governance call (AI_UN_ROLE).",
+        "boundary_cases": "Statements that technology must not undermine IHL can be coded here and AI_HUMAN_RIGHTS_ETHICS.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_SMR:7",
+            "quote": "where new technology creates new risks, our responsibility is not to look away, but to govern them"
+          }
+        ]
+      },
+      {
+        "code": "AI_HUMAN_RIGHTS_ETHICS",
+        "label": "Technology must not undermine rights",
+        "definition": "AI and technology must serve humanity and not be used to undermine human rights or humanitarian law; human rights must be safeguarded in the digital age.",
+        "inclusion": "Include statements that AI must respect human rights, ethics, or IHL.",
+        "exclusion": "Exclude human rights content unrelated to technology.",
+        "boundary_cases": "Meaningful human control over lethal AI decisions is coded AI_MILITARY_WEAPONS primarily.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_SMR:7",
+            "quote": "It must not be used to undermine human rights. international peace or international humanitarian law."
+          }
+        ]
+      }
+    ],
+    "rationale": "San Marino's passages consistently place AI within disarmament and multilateralism: AI raises nuclear escalation risk and autonomous targeting concerns, while UN AI mechanisms and multilateral rules are endorsed. The 2026 speech adds a balanced opportunity-risk framing."
+  }
+}

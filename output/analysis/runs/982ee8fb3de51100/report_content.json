@@ -1,0 +1,348 @@
+{
+  "sections": [
+    {
+      "title": "Key Facts and Figures",
+      "paragraphs": [
+        {
+          "text": "Automated review verified an artificial intelligence reference in 131 of 191 obtained 2026 General Debate addresses (68.6%), with 45 addresses still unresolved. This is a verified minimum, not an estimate of prevalence: unreviewed addresses are unknown, not negative. The verified minimum rose from 2 of 193 addresses in 2017 to 43 of 189 in 2023, 58 of 190 in 2024 and 74 of 189 in 2025. The 2025 and 2026 sources are unverified automatic transcripts rather than official English records, and 2026 has fewer unresolved addresses (45 against 97 in 2025), so part of the rise may reflect source type and review depth rather than speech content.",
+          "evidence_ids": [],
+          "reference_ids": [],
+          "metric_keys": [
+            "annual:1",
+            "annual:7",
+            "annual:8",
+            "annual:9",
+            "annual:10"
+          ]
+        },
+        {
+          "text": "Verified minimums were highest among Western European and other States (24 of 28, 85.7%, none unresolved) and Eastern European States (17 of 23, 73.9%). Latin American and Caribbean States followed with 23 of 33 (69.7%), Asia-Pacific States with 33 of 52 (63.5%) and African States with 33 of 54 (61.1%). The lower African and Asia-Pacific figures coincide with more unresolved addresses (18 and 16), so regional gaps partly reflect review coverage rather than confirmed silence.",
+          "evidence_ids": [],
+          "reference_ids": [],
+          "metric_keys": [
+            "regional:55",
+            "regional:56",
+            "regional:57",
+            "regional:58",
+            "regional:60"
+          ]
+        },
+        {
+          "text": "Method: automated full-speech review, a second review of an identified sample and two classification passes; there was no human verification. Theme shares use code-specific denominators, namely AI-positive 2026 addresses with a resolved value for that code, so denominators differ across themes and unresolved codes are excluded rather than counted as No.",
+          "evidence_ids": [],
+          "reference_ids": [],
+          "metric_keys": [
+            "annual:10",
+            "theme_prevalence:235"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Themes",
+      "paragraphs": [
+        {
+          "text": "International rules and governance was the most frequent theme, verified in 65 of 105 resolved AI-positive addresses (61.9%); among 41 countries resolved in both 2025 and 2026 it rose from 18 to 23. Proposals ranged from Germany's call for common safety requirements, under which providers would “test these models before release and report serious safety failures”, to Bahrain's renewed call for “a binding international framework” and Singapore's appeal to “establish common rules and safeguards for AI”. Governance and the UN role were closely linked: of 37 UN-role addresses resolved for both codes, 32 also raised international governance.",
+          "evidence_ids": [
+            "E00412",
+            "E00374",
+            "E00516"
+          ],
+          "reference_ids": [],
+          "metric_keys": [
+            "theme_prevalence:235",
+            "matched_panel:209",
+            "cooccurrence:2928"
+          ]
+        },
+        {
+          "text": "The digital divide was raised in 50 of 114 resolved addresses (43.9%), development applications in 32 of 112 and capacity building in 27 of 119. The themes cluster: of 23 capacity-building addresses resolved for both codes, 20 also raised the divide. The Democratic Republic of the Congo warned that the “digital divide must not become an intelligence divide”, Bangladesh made a similar point, and Malawi cited unequal access to computing, data, skills and financing. Egypt asked that Arab and African languages be fairly represented in data and models, and the Bahamas sought AI that understands “our languages and our lives”.",
+          "evidence_ids": [
+            "E00399",
+            "E00372",
+            "E00492",
+            "E00417",
+            "E00375"
+          ],
+          "reference_ids": [],
+          "metric_keys": [
+            "theme_prevalence:247",
+            "theme_prevalence:249",
+            "theme_prevalence:248",
+            "cooccurrence:3160"
+          ]
+        },
+        {
+          "text": "Human rights and ethics appeared in 37 of 109 resolved addresses (33.9%) and explicit human control in 16 of 111. Both grew among countries matched across 2025 and 2026: human rights from 6 to 16 of 40, human control from 0 to 7 of 51. Barbados asked for rules that “protect human dignity” and “preserve meaningful human oversight”, and Norway said AI “must remain under human direction, oversight, and control”. Egypt cited privacy, transparency, accountability and non-discrimination. Bias and cultural diversity remained a minority theme (5 of 126).",
+          "evidence_ids": [
+            "E00383",
+            "E00498",
+            "E00417"
+          ],
+          "reference_ids": [],
+          "metric_keys": [
+            "theme_prevalence:243",
+            "theme_prevalence:242",
+            "matched_panel:217",
+            "matched_panel:216",
+            "theme_prevalence:244"
+          ]
+        },
+        {
+          "text": "Security risks were raised by fewer countries. Military AI and autonomous weapons appeared in 13 of 119 resolved addresses (10.9%), safety and catastrophic risk in 12 of 118, cybersecurity in 10 of 115 and disinformation in 8 of 120. Austria backed a legally binding instrument on autonomous weapons, stating “No machine may decide to take a human life”, and Slovakia said machines should never make life-or-death decisions on their own. Trinidad and Tobago listed deepfakes, autonomous weapons and threats to critical infrastructure. Military concerns fall outside the Panel and Dialogue, whose activities are limited to the non-military domain.",
+          "evidence_ids": [
+            "E00367",
+            "E00528",
+            "E00540"
+          ],
+          "reference_ids": [
+            "R03_0045"
+          ],
+          "metric_keys": [
+            "theme_prevalence:239",
+            "theme_prevalence:241",
+            "theme_prevalence:246",
+            "theme_prevalence:245"
+          ]
+        },
+        {
+          "text": "Concentration of power was raised in 26 of 112 resolved addresses (23.2%) and inclusive rule-making in 23 of 121 (19.0%). Germany noted that “Only two major countries are home to the companies holding the vast majority of all global AI patents”, Brazil criticised “technical oligarchs”, and Malaysia rejected rules set by a small number of companies or countries. Barbados argued that a technology affecting every state “must be governed by the rules that every state has had the opportunity to shape”. Botswana, the Democratic Republic of the Congo and Malaysia linked AI to demand for minerals, energy or water (3 of 122).",
+          "evidence_ids": [
+            "E00410",
+            "E00380",
+            "E00494",
+            "E00383",
+            "E00387",
+            "E00400"
+          ],
+          "reference_ids": [],
+          "metric_keys": [
+            "theme_prevalence:255",
+            "theme_prevalence:236",
+            "theme_prevalence:250"
+          ]
+        },
+        {
+          "text": "A small minority questioned regulation or global approaches: scepticism was verified in 4 of 129 resolved addresses, including Albania, Argentina and the United States. The United States “totally rejects any attempt to construct a globalist scheme to control” AI and said it was “leading now over China”; Argentina cited “a commitment not to regulate preemptively”; Albania warned “We cannot regulate ourselves into helplessness” while calling for “an international compact for sovereign and democratic artificial intelligence”. Geopolitical rivalry appeared in 8 of 122 addresses, and three countries (Colombia, Trinidad and Tobago, the United States) used the term superintelligence.",
+          "evidence_ids": [
+            "E00549",
+            "E00360",
+            "E00349",
+            "E00402",
+            "E00540"
+          ],
+          "reference_ids": [],
+          "metric_keys": [
+            "theme_prevalence:237",
+            "theme_prevalence:256",
+            "keywords:77"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Role of UN",
+      "paragraphs": [
+        {
+          "text": "A UN role in AI was verified in 45 of 120 resolved addresses (37.5%); among 55 countries matched across 2025 and 2026 it was stable (21 and 20). Singapore called the UN “the only apex international institution with universal membership” and proposed exploring “a UN framework convention on AI safeguards”. Seven countries made explicit requests to the UN outside the named mechanisms (Botswana, Central African Republic, Malawi, Monaco, Singapore, Turkmenistan, Türkiye), including inclusive or development-oriented frameworks, Turkmenistan's code for the peaceful use of AI in diplomacy and Türkiye's call to accelerate work on a UN convention on AI.",
+          "evidence_ids": [
+            "E00516",
+            "E00387",
+            "E00388",
+            "E00492",
+            "E00477",
+            "E00537",
+            "E00544"
+          ],
+          "reference_ids": [],
+          "metric_keys": [
+            "theme_prevalence:238",
+            "matched_panel:212",
+            "institution_stance_counts:51"
+          ]
+        },
+        {
+          "text": "The Global Dialogue on AI Governance was mentioned by 10 countries and supported by 8. Estonia and El Salvador described co-chairing the Dialogue, whose first session was held in Geneva on 6 and 7 July 2026, and Turkmenistan proposed an expert dialogue in Ashgabat. Chile asked the UN to bring humankind together on AI. Bahrain was more cautious, noting that dialogue can bring positions closer but does not create obligations, while renewing its call for binding rules.",
+          "evidence_ids": [
+            "E00420",
+            "E00520",
+            "E00537",
+            "E00394",
+            "E00374"
+          ],
+          "reference_ids": [
+            "UN_WEB_DIALOGUE"
+          ],
+          "metric_keys": [
+            "institution_stance_counts:32",
+            "institution_stance_counts:33",
+            "institution_stance_counts:35"
+          ]
+        },
+        {
+          "text": "The Independent International Scientific Panel on AI was mentioned by 6 countries and supported by 4 (Barbados, Brazil, Germany, Singapore). Barbados will host its second in-person meeting in November. Brazil, while supportive, warned of a race “bypassing the United Nations and the scientific panel on artificial intelligence”. The Panel released its preliminary report on 1 July 2026 under a scientific mandate that is policy-relevant but not policy-prescriptive. Verified support for a global capacity-building fund came only from the Democratic Republic of the Congo. The fund remains a proposal; a draft Secretary-General report proposes initial funding commitments of about $3 billion over four years but does not establish or fund it.",
+          "evidence_ids": [
+            "E00383",
+            "E00380",
+            "E00399"
+          ],
+          "reference_ids": [
+            "UN_WEB_PANEL",
+            "R03_0006",
+            "R01_0023",
+            "R01_0018",
+            "UN_WEB_FUND"
+          ],
+          "metric_keys": [
+            "institution_stance_counts:36",
+            "institution_stance_counts:38",
+            "institution_stance_counts:42"
+          ]
+        },
+        {
+          "text": "Several speeches pointed to initiatives alongside or outside the UN. Russia supported China's proposed global AI cooperation organization while welcoming the Dialogue and Panel; Belarus cited that project as evidence that the UN is failing to recognize new trends. The United Kingdom recalled the G20 response to the 2008 financial crisis and plans to put AI at the heart of its G20 presidency, Lithuania promoted the Vilnius Convention, and Japan and India cited the Hiroshima AI Process and India's AI Impact Summit. Norway and Finland called on companies, governments and the UN to develop mechanisms to control frontier AI models.",
+          "evidence_ids": [
+            "E00511",
+            "E00376",
+            "E00436",
+            "E00473",
+            "E00455",
+            "E00447",
+            "E00425"
+          ],
+          "reference_ids": [],
+          "metric_keys": [
+            "institution_stance_counts:46",
+            "institution_stance_counts:47"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Implications",
+      "paragraphs": [
+        {
+          "text": "AI has become a mainstream General Debate topic: at least two thirds of obtained 2026 addresses referred to it, with verified references in every regional group. International rules and governance is the most frequent theme, and many speakers name the UN as a venue. Yet a small minority, including the United States, rejects global control schemes, so the Dialogue and Panel operate between broad demand for common rules and open resistance from some Member States.",
+          "evidence_ids": [
+            "E00549",
+            "E00516"
+          ],
+          "reference_ids": [],
+          "metric_keys": [
+            "annual:10",
+            "regional:55",
+            "regional:56",
+            "regional:57",
+            "regional:58",
+            "regional:60",
+            "theme_prevalence:235",
+            "theme_prevalence:238",
+            "theme_prevalence:237"
+          ]
+        },
+        {
+          "text": "Stated demand exceeds current mechanisms. Calls for binding instruments, pre-release safety testing and a framework convention go beyond dialogue, which Bahrain noted does not create obligations, and military AI concerns fall outside the non-military scope of the Panel and Dialogue. Parallel venues, including the G20, national summits, China's proposed organization and the Vilnius Convention, may compete for relevance unless UN processes show concrete outputs.",
+          "evidence_ids": [
+            "E00374",
+            "E00412",
+            "E00516",
+            "E00367",
+            "E00511",
+            "E00473",
+            "E00436"
+          ],
+          "reference_ids": [
+            "R03_0045"
+          ],
+          "metric_keys": []
+        },
+        {
+          "text": "For many developing countries access and capacity matter alongside risk. With divide and capacity concerns clustered and the capacity fund still only a proposal, progress on it is likely to shape perceptions of UN relevance. Because 2025-2026 findings rest on unverified automatic transcripts and 45 addresses remain unresolved, conclusions should be confirmed against official records.",
+          "evidence_ids": [
+            "E00399",
+            "E00492"
+          ],
+          "reference_ids": [
+            "R01_0018",
+            "UN_WEB_FUND"
+          ],
+          "metric_keys": [
+            "cooccurrence:3160",
+            "annual:10"
+          ]
+        }
+      ]
+    }
+  ],
+  "recommendations": [
+    {
+      "addressee": "UN/SPMU",
+      "action": "Frame Secretary-General AI messaging around universal participation in rule-making and practical capacity, and engage sceptical delegations directly rather than presuming consensus.",
+      "rationale": "A UN role appeared in 45 of 120 resolved addresses and equal voice in rule-making in 23 of 121, while four addresses questioned regulation or global approaches.",
+      "evidence_ids": [
+        "E00383",
+        "E00549",
+        "E00360"
+      ],
+      "metric_keys": [
+        "theme_prevalence:238",
+        "theme_prevalence:236",
+        "theme_prevalence:237"
+      ]
+    },
+    {
+      "addressee": "Global Dialogue on AI Governance",
+      "action": "Prepare concrete deliverables for the next session, such as shared testing and incident-reporting practices.",
+      "rationale": "Eight countries supported the Dialogue, but Bahrain noted that dialogue creates no obligations, and Germany and Singapore sought common safety requirements, testing and incident reporting.",
+      "evidence_ids": [
+        "E00374",
+        "E00412",
+        "E00516"
+      ],
+      "metric_keys": [
+        "institution_stance_counts:33"
+      ]
+    },
+    {
+      "addressee": "Tech Envoy",
+      "action": "Advance the proposed Global Fund for AI Capacity-Building with a clear financing path linked to national AI strategy support.",
+      "rationale": "Divide and capacity concerns cluster (20 of 23 capacity-building addresses resolved for both codes also raised the divide), yet verified fund support came from one country.",
+      "evidence_ids": [
+        "E00399",
+        "E00492"
+      ],
+      "metric_keys": [
+        "cooccurrence:3160",
+        "institution_stance_counts:42"
+      ]
+    },
+    {
+      "addressee": "Independent International Scientific Panel on AI",
+      "action": "Consider language representation, resource footprint and concentration of computing, data and patents in forthcoming assessments.",
+      "rationale": "Egypt, the Bahamas, Malaysia, Botswana and Germany raised these gaps; only four countries voiced explicit Panel support.",
+      "evidence_ids": [
+        "E00417",
+        "E00375",
+        "E00494",
+        "E00387",
+        "E00410",
+        "E00412"
+      ],
+      "metric_keys": [
+        "institution_stance_counts:38"
+      ]
+    },
+    {
+      "addressee": "UN/SPMU",
+      "action": "Route military AI and autonomous weapons demands to the appropriate disarmament processes and reference them in Secretary-General messaging.",
+      "rationale": "Thirteen countries raised military AI, which lies outside the non-military Panel and Dialogue.",
+      "evidence_ids": [
+        "E00367",
+        "E00528"
+      ],
+      "metric_keys": [
+        "theme_prevalence:239"
+      ]
+    }
+  ]
+}

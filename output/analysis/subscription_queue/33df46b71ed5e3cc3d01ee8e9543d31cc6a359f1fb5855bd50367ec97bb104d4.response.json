@@ -1,0 +1,83 @@
+{
+  "request_hash": "33df46b71ed5e3cc3d01ee8e9543d31cc6a359f1fb5855bd50367ec97bb104d4",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_HUMAN_RIGHTS_ETHICS",
+        "label": "Ethical, human-centred AI preserving human judgment",
+        "definition": "Speaker insists AI must respect ethical boundaries, be transparent and human-centred, and complement rather than replace human judgment.",
+        "inclusion": "Include calls for ethical, responsible, transparent or human-centred AI, or statements that AI must not substitute for human judgment.",
+        "exclusion": "Exclude calls for global rules that do not reference ethics, human dignity or human roles.",
+        "boundary_cases": "A call for a 'global standard' justified by ethics is coded both here and AI_GLOBAL_GOVERNANCE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_NAM:3",
+            "quote": "artificial intelligence must not be a substitute for human judgment or responsibility"
+          },
+          {
+            "passage_id": "verbatim_en_2026_NAM:4",
+            "quote": "We call for ethical, responsible, inclusive, and human-centered development and use of artificial intelligence with appropriate safeguard"
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Inclusive global standards for AI",
+        "definition": "Speaker calls for global standards or an inclusive international framework governing AI and emerging technologies.",
+        "inclusion": "Include calls for a global standard, international framework, or rules governing AI development and deployment.",
+        "exclusion": "Exclude passages only praising AI's potential without any governance demand.",
+        "boundary_cases": "If the emphasis is on who sets the rules (Africa, developing countries), also code AI_GLOBAL_SOUTH_VOICE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_NAM:3",
+            "quote": "We therefore call for a global standard that ensure that the usage of artificial intelligence remain transparent, fair for humanity."
+          },
+          {
+            "passage_id": "verbatim_en_2026_BWA:5",
+            "quote": "We also call on the United Nations to continue to explore the creation of an inclusive international framework on emerging technologies, including artificial intelligence."
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_SOUTH_VOICE",
+        "label": "Developing countries shaping AI rules",
+        "definition": "Speaker demands that Africa or developing countries have a stake and meaningful voice in setting AI rules and standards, often linking this to their supply of critical minerals.",
+        "inclusion": "Include demands for African or developing-country participation in AI rule-making, including arguments based on critical minerals that power the technology.",
+        "exclusion": "Exclude complaints about unequal access to AI without reference to rule-setting participation (code AI_DIGITAL_DIVIDE).",
+        "boundary_cases": "Passages combining access inequality and rule-setting voice may take both this code and AI_DIGITAL_DIVIDE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_ZAF:5",
+            "quote": "Africa must have a stake in shaping the rules that govern the development and the deployment of artificial intelligence"
+          },
+          {
+            "passage_id": "verbatim_en_2026_BWA:5",
+            "quote": "Developing countries must have a meaningful voice in setting the standards and safeguards that will govern these technologies"
+          }
+        ]
+      },
+      {
+        "code": "AI_YOUTH_EDUCATION",
+        "label": "Youth as AI research and innovation force",
+        "definition": "Speaker presents the country's or continent's young population as ready to contribute to AI research and innovation.",
+        "inclusion": "Include passages linking youth or education to participation in AI research, innovation or skills.",
+        "exclusion": "Exclude youth policy passages that do not mention AI.",
+        "boundary_cases": "Youth training for other emerging industries without AI mention is excluded.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_ZAF:5",
+            "quote": "We have a youthful population ready to play a key role in the beneficiation at source of critical minerals and research and innovations for artificial intelligence."
+          }
+        ]
+      }
+    ],
+    "rationale": "Southern African passages share an ethics-and-inclusion framing of AI: human-centred, transparent AI governed by global standards, with a distinct 2026 emphasis on Africa and developing countries (as critical-mineral suppliers) having a voice in AI rule-making."
+  }
+}

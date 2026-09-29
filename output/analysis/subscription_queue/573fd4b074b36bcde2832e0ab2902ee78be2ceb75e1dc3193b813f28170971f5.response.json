@@ -1,0 +1,89 @@
+{
+  "request_hash": "573fd4b074b36bcde2832e0ab2902ee78be2ceb75e1dc3193b813f28170971f5",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_DISINFORMATION",
+        "label": "Reality falsification and deception",
+        "definition": "Emerging technologies worsen risks of reality falsification, disinformation and deceptive ploys.",
+        "inclusion": "Include passages on technology-enabled falsification of reality, disinformation or deception.",
+        "exclusion": "Exclude privacy or plagiarism risks absent an information-integrity element.",
+        "boundary_cases": "Lists of several risks can be coded here and to other themes simultaneously.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_QAT:8",
+            "quote": "the worsening risks in terms of reality falsification"
+          },
+          {
+            "passage_id": "verbatim_en_2023_QAT:8",
+            "quote": "the spiralling effect of disinformation and ploys aimed at deception"
+          }
+        ]
+      },
+      {
+        "code": "AI_HUMAN_RIGHTS_ETHICS",
+        "label": "Invasion of personal privacy",
+        "definition": "Technology risks to personal privacy.",
+        "inclusion": "Include passages on privacy invasion by emerging technologies.",
+        "exclusion": "Exclude disinformation-only concerns.",
+        "boundary_cases": "Data protection in cyberspace regulation calls may also be AI_GLOBAL_GOVERNANCE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_QAT:8",
+            "quote": "invasion of personal privacy"
+          }
+        ]
+      },
+      {
+        "code": "AI_EDUCATION_DISRUPTION",
+        "label": "Plagiarism disrupting education",
+        "definition": "Generative technologies disrupting the educational process by facilitating plagiarism.",
+        "inclusion": "Include passages on AI undermining education integrity, e.g., plagiarism or cheating.",
+        "exclusion": "Exclude positive AI-in-education initiatives (AI_YOUTH_EDUCATION).",
+        "boundary_cases": "Mixed statements on AI education benefits and cheating risks get both codes.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_QAT:8",
+            "quote": "educational process disruption through the facilitation of plagiarism"
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Regulating cyberspace under international law",
+        "definition": "Calls to unify efforts to prevent misuse and regulate technology/cyberspace based on international law, alongside cooperation and investment.",
+        "inclusion": "Include calls for international regulation of technology misuse based on international law.",
+        "exclusion": "Exclude calls only to encourage technological development.",
+        "boundary_cases": "Cyberspace regulation framed around crime may also be AI_CYBER_SECURITY.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_QAT:9",
+            "quote": "we reiterate the call for unifying efforts to prevent the misuse of cyberspace and regulate this vital aspect, based on the provisions of international law"
+          }
+        ]
+      },
+      {
+        "code": "AI_CAPACITY_BUILDING",
+        "label": "Encouraging tech development and removing barriers",
+        "definition": "Encouraging scientific development, cooperation and investment, and removing barriers between countries in technology.",
+        "inclusion": "Include calls for cooperation, investment, or removal of cross-country barriers in technology development.",
+        "exclusion": "Exclude risk-only passages.",
+        "boundary_cases": "Calls to 'keep pace' with technology without cooperation framing are borderline; include when barriers or investment are mentioned.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_QAT:8",
+            "quote": "encourage barriers between countries in this field to be removed"
+          }
+        ]
+      }
+    ],
+    "rationale": "Qatar's 2023 passages balance encouraging technological development and cooperation with a list of generative-technology risks (falsification, privacy, plagiarism, disinformation) and a call to regulate misuse under international law; AI is implicit from context rather than named."
+  }
+}

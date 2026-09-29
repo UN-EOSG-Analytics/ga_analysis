@@ -1,0 +1,61 @@
+{
+  "request_hash": "d8aa5a15d503e6c6652c64a1a88551d2cdc4a1b55e02523cfa1217f336d0fc58",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_UN_ROLE",
+        "label": "Welcoming UN AI resolutions and Pact",
+        "definition": "Welcoming UN outcomes on AI and digital cooperation: the Pact for the Future, Global Digital Compact, and the first GA resolution on AI.",
+        "inclusion": "Include passages welcoming UN agreements, resolutions or compacts that address AI.",
+        "exclusion": "Exclude UN reform or Secretary-General selection remarks without AI content.",
+        "boundary_cases": "A summary of a UN summit agenda naming AI as one item counts here if the UN outcome is the focus.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_DJI:10",
+            "quote": "the first-ever resolution on artificial intelligence, to promote safe, secure and trustworthy artificial intelligence systems for sustainable development"
+          },
+          {
+            "passage_id": "verbatim_en_2025_DJI:2",
+            "quote": "ensuring that we make artificial intelligence, a technology that benefits all"
+          }
+        ]
+      },
+      {
+        "code": "AI_DEVELOPMENT_SDGS",
+        "label": "AI accelerating development and state capacity",
+        "definition": "AI and digital transition as opportunities to accelerate development and improve state capacities.",
+        "inclusion": "Include claims that AI can accelerate development or serve sustainable development.",
+        "exclusion": "Exclude passages focused only on access gaps.",
+        "boundary_cases": "Conditional benefit statements ('only if we bridge the divide') are coded here and AI_DIGITAL_DIVIDE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_DJI:5",
+            "quote": "The digital transition and artificial intelligence also offer new opportunities to accelerate development and improve the capacities of our states."
+          }
+        ]
+      },
+      {
+        "code": "AI_CAPACITY_BUILDING",
+        "label": "Bridge divide via technology sharing",
+        "definition": "Conditioning AI's benefits on bridging the digital divide, technology sharing and building developing-country capacities.",
+        "inclusion": "Include calls for technology sharing, capacity-building or bridging the digital divide in connection with AI.",
+        "exclusion": "Exclude general development finance calls unrelated to technology.",
+        "boundary_cases": "If only the gap is described without a remedy, prefer AI_DIGITAL_DIVIDE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_DJI:5",
+            "quote": "bridge the digital divide, facilitate technology sharing, and build the capacities of developing countries"
+          }
+        ]
+      }
+    ],
+    "rationale": "Djibouti's AI references are brief and multilateral: welcoming UN AI outcomes and framing AI as a development opportunity conditional on bridging the divide; most of each passage concerns other topics."
+  }
+}

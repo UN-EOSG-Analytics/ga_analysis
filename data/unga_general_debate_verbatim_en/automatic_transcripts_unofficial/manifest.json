@@ -201,10 +201,19 @@
     {
       "year": 2026,
       "day": 6,
-      "url": "https://transcripts.un.org/en/asset/k1k/k1kfcwu5kc.txt",
-      "status": "transcript_not_available_yet",
-      "resolved_url": "https://transcripts.un.org/en/asset/k1k/k1kfcwu5kc.txt",
-      "response_chars": 482
+      "url": "https://transcripts.un.org/en/asset/k1k/k1kfcwu5kc",
+      "status": "user_supplied_unofficial_asr",
+      "resolved_url": "https://transcripts.un.org/en/asset/k1k/k1kfcwu5kc",
+      "canonical_files": [
+        "data/unga_general_debate_verbatim_en/automatic_transcripts_unofficial/UNGA2026_day6_EN_ASR.json"
+      ],
+      "preprocessing_status": "segmented_and_ingested",
+      "source_acceptance": "user_confirmed_primary",
+      "review_status": "unverified_ASR",
+      "file": "UNGA2026_day6_EN_ASR.json",
+      "format": "json",
+      "sha256": "00ded7b1b2b5d8831cda241976809e06923b67ea74125c9bcb3a31cb258c3d7c",
+      "received_at_utc": "2026-09-29"
     }
   ]
 }

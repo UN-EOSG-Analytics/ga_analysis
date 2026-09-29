@@ -1,0 +1,29 @@
+{
+  "request_hash": "c05d679b7173cc2523b2a6843aa23202d7c54f7528c5155807c6cd869d087dfe",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "root"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_SEN:1",
+      "verbatim_en_2026_SEN:2",
+      "verbatim_en_2026_SEN:3",
+      "verbatim_en_2026_SEN:4",
+      "verbatim_en_2026_SEN:5"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_SEN:3",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Senegal also believes in the transformative potential of new technologies, including the development of AI that is based on robust morals and ethical code based on the principle of responsibility and inclusion.",
+        "rationale": "Supports ethical, responsible and inclusive AI development to serve human development."
+      }
+    ]
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "request_hash": "c29734a3c6c27e32154687e8d032d828ade08bd5289de618919a3d62f6152efc",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_HUMAN_AUTONOMY_CONTROL",
+        "label": "Protecting human autonomy and decision control",
+        "definition": "AI threatens the autonomy of human thought and free will through manipulation, and humans must retain control over (legally binding) decisions.",
+        "inclusion": "Include passages warning that AI manipulates human thought or that humans, not AI, must control decisions.",
+        "exclusion": "Exclude military human-control debates (AI_MILITARY_WEAPONS) and catastrophic loss-of-control risk (AI_SAFETY_EXISTENTIAL).",
+        "boundary_cases": "Manipulation via social platforms tied to democracy may also be coded AI_DISINFORMATION.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2021_LVA:9",
+            "quote": "The main challenge for the democratic world in the coming decades will be whether artificial intelligence or humans control decisions."
+          },
+          {
+            "passage_id": "verbatim_en_2019_LVA:9",
+            "quote": "We must not allow artificial intelligence rather than humans to take legally binding decisions. Humans must retain control."
+          },
+          {
+            "passage_id": "verbatim_en_2021_LVA:12",
+            "quote": "protecting the autonomy of human thought to be the most important task for legal policy in the coming decades"
+          }
+        ]
+      },
+      {
+        "code": "AI_HUMAN_RIGHTS_ETHICS",
+        "label": "Privacy, surveillance and data rights",
+        "definition": "AI and data collection threaten privacy and freedom via surveillance and facial recognition; new legal and ethical principles are needed to protect rights.",
+        "inclusion": "Include passages on personal data, surveillance, privacy or legal principles to protect rights from AI risks.",
+        "exclusion": "Exclude generic cyber security threats without a rights dimension.",
+        "boundary_cases": "Calls on the UN to lead data-protection standards also get AI_UN_ROLE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2019_LVA:9",
+            "quote": "In recent times the use of facial recognition has been increasing, and we are coming under constant surveillance."
+          },
+          {
+            "passage_id": "verbatim_en_2021_LVA:8",
+            "quote": "avoid risks and damage to human rights and freedoms"
+          }
+        ]
+      },
+      {
+        "code": "AI_UN_ROLE",
+        "label": "UN promoting data and ethics standards",
+        "definition": "The UN should actively promote discussion of ethical and legal standards on data, referencing SG digital cooperation reports.",
+        "inclusion": "Include calls for the UN or SG processes to lead AI/digital standard-setting.",
+        "exclusion": "Exclude national initiatives.",
+        "boundary_cases": "References to SG's High-level Panel on Digital Cooperation count.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2019_LVA:10",
+            "quote": "The United Nations must therefore actively promote the discussion of personal data protection in cyberspace"
+          }
+        ]
+      },
+      {
+        "code": "AI_LINGUISTIC_DIVERSITY",
+        "label": "AI preserving small languages",
+        "definition": "AI used to develop machine translation that safeguards small languages and linguistic diversity.",
+        "inclusion": "Include passages on AI for language preservation or linguistic diversity.",
+        "exclusion": "Exclude general cultural diversity statements without AI.",
+        "boundary_cases": "National AI companies' language projects also fit AI_NATIONAL_STRATEGY.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2021_LVA:13",
+            "quote": "developing a high-quality machine translation programme for small languages using artificial intelligence"
+          }
+        ]
+      },
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "Inclusive digital transformation",
+        "definition": "Digital transformation must include all countries and people, bridging the digital divide.",
+        "inclusion": "Include calls to bridge the digital divide in AI/digital transformation contexts.",
+        "exclusion": "Exclude passages without an inclusion element.",
+        "boundary_cases": "Generic digital divide statements adjacent to AI discussion are included.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2021_LVA:12",
+            "quote": "We must also ensure that the digital transformation is inclusive of all countries and all people, while bridging the current digital divide."
+          }
+        ]
+      }
+    ],
+    "rationale": "Latvia's passages focus on AI's threat to human autonomy and privacy (manipulation, surveillance, AI decision-making) and call for legal principles and UN leadership, with a positive minority theme on AI translation for small languages."
+  }
+}

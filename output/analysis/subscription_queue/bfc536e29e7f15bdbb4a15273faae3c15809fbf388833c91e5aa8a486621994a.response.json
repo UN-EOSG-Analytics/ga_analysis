@@ -1,0 +1,79 @@
+{
+  "request_hash": "bfc536e29e7f15bdbb4a15273faae3c15809fbf388833c91e5aa8a486621994a",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "Enormous potential and enormous peril",
+        "definition": "Explicit framing of AI as both enormous potential and peril, to be harnessed for good while protecting against its most profound risks.",
+        "inclusion": "Include passages pairing AI's potential with peril or harnessing power for good while guarding against risk.",
+        "exclusion": "Exclude one-sided statements.",
+        "boundary_cases": "Duality followed by safety testing pledges is coded here and AI_SAFETY_EXISTENTIAL.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_USA:13",
+            "quote": "Emerging technologies, such as artificial intelligence, hold both enormous potential and enormous peril."
+          },
+          {
+            "passage_id": "verbatim_en_2023_USA:14",
+            "quote": "we harness the power of artificial intelligence for good while protecting our citizens from its most profound risk"
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Govern AI with leaders and competitors",
+        "definition": "Working internationally, including with competitors and through the UN, to strengthen rules so humans govern AI rather than the reverse.",
+        "inclusion": "Include pledges to strengthen AI rules and policies with other states or through international bodies.",
+        "exclusion": "Exclude purely domestic policies.",
+        "boundary_cases": "Pre-release safety rules are also coded AI_SAFETY_EXISTENTIAL.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_USA:13",
+            "quote": "to make sure we govern the technology, not the other way around — having it govern us"
+          }
+        ]
+      },
+      {
+        "code": "AI_SAFETY_EXISTENTIAL",
+        "label": "AI safe before public release",
+        "definition": "Ensuring AI technologies are safe before release to the public.",
+        "inclusion": "Include references to pre-deployment safety of AI systems.",
+        "exclusion": "Exclude repression/human-rights risks (AI_HUMAN_RIGHTS_ETHICS).",
+        "boundary_cases": "Generic 'profound risk' language without safety specifics is coded only under duality.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_USA:13",
+            "quote": "artificial intelligence technologies are safe before they are released to the public"
+          }
+        ]
+      },
+      {
+        "code": "AI_HUMAN_RIGHTS_ETHICS",
+        "label": "Technology for freedom, not repression",
+        "definition": "Democratic-values framing: AI and new technologies must empower people and advance freedom rather than enable oppression, suppress dissent or target minorities.",
+        "inclusion": "Include passages contrasting empowerment/freedom with repression or oppression via AI.",
+        "exclusion": "Exclude military uses of AI.",
+        "boundary_cases": "Lists of technologies (biotech, quantum, 5G, AI) count here when the passage carries the freedom-vs-repression argument rather than a mere list.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2021_USA:32",
+            "quote": "advance human freedom, not to suppress dissent or target minority communities"
+          },
+          {
+            "passage_id": "verbatim_en_2023_USA:13",
+            "quote": "We need to be sure they are used as tools of opportunity, not as weapons of oppression."
+          }
+        ]
+      }
+    ],
+    "rationale": "US passages (2021, 2023) frame AI through a promise/peril lens and democratic values, emphasising international rule-making and pre-release safety."
+  }
+}

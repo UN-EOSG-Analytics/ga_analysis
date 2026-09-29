@@ -1,0 +1,47 @@
+{
+  "request_hash": "14454b12bc3560e373378e23be94fd48728b70a3a92cef786e9fde8887448c4d",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_TECH_LIST_MENTION",
+        "label": "AI listed among global challenges",
+        "definition": "AI named in a list of interconnected global challenges requiring multilateralism, without further elaboration.",
+        "inclusion": "Include passages where AI appears only as one item in a list of global challenges or issues.",
+        "exclusion": "Exclude passages that elaborate AI's role, risks or governance.",
+        "boundary_cases": "If the list is followed by specific AI discussion, code the substantive theme instead.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_ALB:1",
+            "quote": "global challenges from conflicts and terrorism to climate change, artificial intelligence and economic insecurity are not only complex, but also deeply interconnected"
+          }
+        ]
+      },
+      {
+        "code": "AI_HUMAN_RIGHTS_ETHICS",
+        "label": "Technology at service of humanity",
+        "definition": "Technology and AI must serve humanity, guided by ethical standards and human rights, with human intelligence and compassion prioritized over AI.",
+        "inclusion": "Include passages stressing human values, ethics and rights over or alongside AI.",
+        "exclusion": "Exclude national digitization achievements without ethical framing.",
+        "boundary_cases": "Calls for international cooperation on the digital age may also be AI_GLOBAL_GOVERNANCE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_ALB:4",
+            "quote": "The problems of this world cannot be solved by artificial intelligence alone. but by human intelligence and compassion."
+          },
+          {
+            "passage_id": "verbatim_en_2025_ALB:4",
+            "quote": "The digital age must be guided by international cooperation, ethical standards, and respect for human rights."
+          }
+        ]
+      }
+    ],
+    "rationale": "Albania's first passage only lists AI among global challenges, while the second offers a human-centred, ethics- and rights-based view of technology, alongside national digitization (generic digitalization rather than AI)."
+  }
+}

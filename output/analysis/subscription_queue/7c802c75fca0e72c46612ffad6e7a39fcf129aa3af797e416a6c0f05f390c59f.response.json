@@ -1,0 +1,79 @@
+{
+  "request_hash": "7c802c75fca0e72c46612ffad6e7a39fcf129aa3af797e416a6c0f05f390c59f",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "Well-governed versus poorly governed AI",
+        "definition": "AI is framed conditionally: well-governed it widens access to knowledge and public services, poorly governed it deepens inequality and dependence.",
+        "inclusion": "Include passages explicitly contrasting AI's benefits and harms depending on governance.",
+        "exclusion": "Exclude passages mentioning AI only as a technology sector of another state.",
+        "boundary_cases": "Where the harms listed include dependence on foreign rules, also code AI_SOVEREIGNTY_CONCENTRATION.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_BLZ:1",
+            "quote": "Artificial intelligence adds a further layer. Well-governed, it can widen access to knowledge and improve public services."
+          },
+          {
+            "passage_id": "verbatim_en_2026_BLZ:2",
+            "quote": "Poorly governed, it can deepen inequality, expose critical systems, displace workers"
+          }
+        ]
+      },
+      {
+        "code": "AI_SOVEREIGNTY_CONCENTRATION",
+        "label": "Dependence on externally designed AI",
+        "definition": "Concern that developing countries become dependent on AI technologies and rules designed elsewhere.",
+        "inclusion": "Include warnings about technological dependence or rules imposed by other states or companies.",
+        "exclusion": "Exclude general access-gap statements without a dependence framing.",
+        "boundary_cases": "Statements on inequality alone are AI_DIGITAL_DIVIDE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_BLZ:2",
+            "quote": "leave developing countries dependent on technologies and rules designed elsewhere"
+          }
+        ]
+      },
+      {
+        "code": "AI_UN_ROLE",
+        "label": "UN Global Dialogue as governance tool",
+        "definition": "The UN's global dialogue on AI governance is cited as an existing tool, alongside the argument that national legislation alone cannot govern AI.",
+        "inclusion": "Include references to the UN Global Dialogue or other UN AI mechanisms as answers to AI risk.",
+        "exclusion": "Exclude calls for governance with no reference to the UN.",
+        "boundary_cases": "The statement that national law cannot govern a borderless technology also supports AI_GLOBAL_GOVERNANCE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_BLZ:2",
+            "quote": "we have a global dialogue under this organization on the governance of artificial intelligence"
+          }
+        ]
+      },
+      {
+        "code": "AI_TAIWAN_TECH_ADVOCACY",
+        "label": "Taiwan's AI leadership cited for UN inclusion",
+        "definition": "AI is mentioned as one of Taiwan's high-tech strengths to argue for Taiwan's participation in the UN system.",
+        "inclusion": "Include passages citing a third party's AI capability as an argument for its inclusion in international bodies.",
+        "exclusion": "Exclude passages discussing the speaker's own AI policy or AI governance.",
+        "boundary_cases": "This is essentially a listed mention; it may also be coded AI_TECH_LIST_MENTION.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_BLZ:4",
+            "quote": "Taiwan is a thriving democracy with global leadership in high-tech innovation, semiconductors, AI, biotechnology, renewable energy"
+          },
+          {
+            "passage_id": "verbatim_en_2026_BLZ:6",
+            "quote": "She's a serious presence in artificial intelligence and the other technologies that will shape this century"
+          }
+        ]
+      }
+    ],
+    "rationale": "Belize's 2026 speech offers a substantive conditional framing of AI (benefits if well-governed; inequality, worker displacement and dependence if not) and points to the UN AI dialogue, whereas other passages mention AI only as part of Taiwan's technological credentials in a UN-participation argument."
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "request_hash": "b3f37bea0ca3daf6bfdcb425c515205e2530569bacd8010619cc1e5a55f4928a",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_TRUST_PACE_DISRUPTION",
+        "label": "AI eroding trust, outpacing governance",
+        "definition": "AI framed as a monumental, fast-moving disruption that outpaces existing governance and makes building trust in technology the central challenge.",
+        "inclusion": "Include passages emphasizing the speed/scale of AI disruption, lost trust in technology, or inadequacy of existing rules.",
+        "exclusion": "Exclude passages focused only on specific harms like weapons or disinformation.",
+        "boundary_cases": "If the passage moves to calls for global rules, also code AI_GLOBAL_GOVERNANCE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_MLT:5",
+            "quote": "It appears to be moving far too fast for anybody, let alone governments, to manage to keep pace."
+          },
+          {
+            "passage_id": "verbatim_en_2023_SVN:11",
+            "quote": "I am afraid that in our digital age, part of the problem of losing trust lies with science and technology."
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Collective global rules for AI",
+        "definition": "Calls for collectively set global rules on AI, since no state can manage it alone, including governance that balances opportunity and risk with private sector commitment.",
+        "inclusion": "Include calls for global/international AI rules or collective governance involving all actors.",
+        "exclusion": "Exclude statements that only describe AI's speed without a governance call.",
+        "boundary_cases": "References to the Global Digital Compact or SG advisory body also get AI_UN_ROLE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_MLT:5",
+            "quote": "acknowledging that the rules need to be set globally and they need to be stuck to even as they develop"
+          },
+          {
+            "passage_id": "verbatim_en_2023_SVN:12",
+            "quote": "We need to find a way to govern the development of new technologies, including artificial intelligence"
+          }
+        ]
+      },
+      {
+        "code": "AI_HUMAN_RIGHTS_ETHICS",
+        "label": "Human-centric, rights-based lifecycle approach",
+        "definition": "A human-centric and human rights-based approach across the full technology life cycle.",
+        "inclusion": "Include calls for human-centric or rights-based AI approaches.",
+        "exclusion": "Exclude general trust concerns without a rights/values framing.",
+        "boundary_cases": "Appeals to 'the right values' underpinning action are borderline; include only when values are human-centred.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_SVN:12",
+            "quote": "The answer should be a humancentric and human rights-based approach to the full life cycle of technologies"
+          }
+        ]
+      },
+      {
+        "code": "AI_UN_ROLE",
+        "label": "SG advisory body and Global Digital Compact",
+        "definition": "Support for UN AI processes such as the SG's high-level advisory body on AI and the Global Digital Compact.",
+        "inclusion": "Include mentions of UN AI bodies or the Global Digital Compact.",
+        "exclusion": "Exclude non-UN governance calls.",
+        "boundary_cases": "Split passages that complete a sentence about the SG advisory body count.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_SVN:11",
+            "quote": "I applaud the Secretary- General’s resolve to form a high-level advisory body on"
+          },
+          {
+            "passage_id": "verbatim_en_2023_SVN:12",
+            "quote": "The Global Digital Compact should be centred on that notion."
+          }
+        ]
+      },
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "AI useful but dangerous",
+        "definition": "AI explicitly framed as both useful and dangerous.",
+        "inclusion": "Include explicit dual framings of AI.",
+        "exclusion": "Exclude one-sided framings.",
+        "boundary_cases": "Governance that 'does not impede opportunities and does not put us at risk' also qualifies.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_SVN:11",
+            "quote": "Artificial intelligence can be useful, but it can also be dangerous."
+          }
+        ]
+      }
+    ],
+    "rationale": "Slovenia and Malta both tie AI to a crisis of trust; Malta stresses AI's unprecedented speed outrunning governance and the need for global rules, while Slovenia calls for human-rights-based governance through the SG advisory body and Global Digital Compact."
+  }
+}

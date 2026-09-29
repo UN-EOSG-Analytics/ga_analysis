@@ -1,0 +1,36 @@
+{
+  "request_hash": "5da42bce129c3954232ed3f845e5233426349a256c4885afd8368ed5f0f8386b",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_b"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_ETH:1",
+      "verbatim_en_2026_ETH:2",
+      "verbatim_en_2026_ETH:3",
+      "verbatim_en_2026_ETH:4",
+      "verbatim_en_2026_ETH:5"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_ETH:1",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "I would like to thank the Secretary-General for placing before us the defining imperatives of our era, namely artificial intelligence, the climate crisis, and deepening global inequalities.",
+        "rationale": "Identifies AI as a defining UN policy challenge."
+      },
+      {
+        "passage_id": "verbatim_en_2026_ETH:2",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Will the age of the AI become another instrument of global inequality, or will it be a catalyst for our collective growth?",
+        "rationale": "Addresses Global South leadership, AI inequality and Ethiopia's AI university initiative."
+      }
+    ]
+  }
+}

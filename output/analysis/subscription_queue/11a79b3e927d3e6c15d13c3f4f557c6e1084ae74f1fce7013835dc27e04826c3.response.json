@@ -1,0 +1,129 @@
+{
+  "request_hash": "11a79b3e927d3e6c15d13c3f4f557c6e1084ae74f1fce7013835dc27e04826c3",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_HUMAN_RIGHTS_ETHICS",
+        "label": "Rights-based ethical framework for AI",
+        "definition": "Calls for ethical, transparent, responsible AI regulation grounded in human rights, dignity, privacy and data protection.",
+        "inclusion": "Passages demanding an ethical framework or regulation for AI respecting human rights, personal data, dignity and freedom.",
+        "exclusion": "Passages mainly about disinformation (use AI_DISINFORMATION) or bias/cultural erasure (use AI_BIAS_CULTURAL_EXCLUSION).",
+        "boundary_cases": "Calls for multilateral ethical frameworks take this and AI_GLOBAL_GOVERNANCE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_CHL:24",
+            "quote": "guiding the progress of artificial intelligence in an ethical, transparent and responsible manner, respecting human rights, protecting personal data"
+          },
+          {
+            "passage_id": "verbatim_en_2023_CHL:23",
+            "quote": "We need a framework that takes the human rights perspective into account in technological research and development,"
+          },
+          {
+            "passage_id": "verbatim_en_2023_CHL:24",
+            "quote": "with a view to protecting and promoting the dignity and the rights of peoples and individuals"
+          }
+        ]
+      },
+      {
+        "code": "AI_BIAS_CULTURAL_EXCLUSION",
+        "label": "Algorithmic bias and digital erasure of cultures",
+        "definition": "AI reproduces prejudices and stereotypes from biased training data and risks the digital extermination of non-hegemonic cultures, requiring traceability, audits and human correction.",
+        "inclusion": "Passages on AI bias, stereotypes, algorithm traceability, data audits or loss of cultural diversity.",
+        "exclusion": "General rights language without bias or cultural exclusion (use AI_HUMAN_RIGHTS_ETHICS).",
+        "boundary_cases": "Exclusion of the weakest from the AI world may also take AI_DIGITAL_DIVIDE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_CHL:24",
+            "quote": "today artificial intelligence reproduces prejudices and stereotypes resulting from the reinforcement of existing biases in the databases with which they are trained"
+          },
+          {
+            "passage_id": "verbatim_en_2024_CHL:25",
+            "quote": "the digital extermination of non-hegemonic cultures and, along with it, the loss of humankind’s valuable diversity"
+          }
+        ]
+      },
+      {
+        "code": "AI_CORPORATE_SELF_REGULATION_DOUBT",
+        "label": "Distrust of corporate self-regulation",
+        "definition": "Scepticism that large technology companies can be trusted to regulate AI themselves.",
+        "inclusion": "Passages questioning or rejecting industry self-regulation of AI.",
+        "exclusion": "Concentration of AI power among states (use AI_SOVEREIGNTY_CONCENTRATION).",
+        "boundary_cases": "If the passage stresses dominance of few companies rather than regulation, use AI_SOVEREIGNTY_CONCENTRATION.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_CHL:24",
+            "quote": "Are we going to trust the large companies to regulate themselves in this area? History teaches us that that does not work."
+          }
+        ]
+      },
+      {
+        "code": "AI_DISINFORMATION",
+        "label": "AI disinformation and election manipulation",
+        "definition": "AI facilitates disinformation campaigns manipulating public opinion, especially during elections, destabilizing democracies.",
+        "inclusion": "Passages on AI-driven disinformation, information integrity, or election manipulation.",
+        "exclusion": "Privacy harms like deepfake nudes (use AI_CHILD_PROTECTION or AI_HUMAN_RIGHTS_ETHICS).",
+        "boundary_cases": "A brief mention that technology should address disinformation counts here.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_PER:18",
+            "quote": "also facilitates the spread of disinformation campaigns aimed at manipulating public opinion, especially in election periods"
+          }
+        ]
+      },
+      {
+        "code": "AI_CHILD_PROTECTION",
+        "label": "AI abuse harming minors' privacy",
+        "definition": "Concrete harms where AI is used to violate the privacy and integrity of children, e.g., AI-generated nude images of schoolgirls.",
+        "inclusion": "Passages describing AI misuse against children or classmates, such as image manipulation.",
+        "exclusion": "Generic privacy or data protection statements (use AI_HUMAN_RIGHTS_ETHICS).",
+        "boundary_cases": "Anecdotes used to motivate an ethical framework take both codes.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_CHL:23",
+            "quote": "used artificial intelligence to remove the clothing of their female classmates"
+          }
+        ]
+      },
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "Technology as opportunity or new injustice",
+        "definition": "AI and technological change framed as comparable to the industrial revolution, able to create fairer societies or new injustices and inequalities.",
+        "inclusion": "Passages framing AI as both a major opportunity and potential source of harm or inequality.",
+        "exclusion": "One-sided statements.",
+        "boundary_cases": "Invoking Asimov's law to pair AI's contribution with harm prevention counts here.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_CHL:23",
+            "quote": "if we get it wrong, they can also be the source of new injustices"
+          },
+          {
+            "passage_id": "verbatim_en_2024_CHL:26",
+            "quote": "Artificial intelligence and new technologies can be a significant contribution to the world."
+          }
+        ]
+      },
+      {
+        "code": "AI_NATIONAL_STRATEGY",
+        "label": "Chile as regional AI benchmark",
+        "definition": "Speaker highlights national initiatives and leadership in AI.",
+        "inclusion": "Passages citing national AI initiatives or claiming regional leadership.",
+        "exclusion": "International proposals.",
+        "boundary_cases": "National regulatory commitments may also take AI_HUMAN_RIGHTS_ETHICS.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_CHL:25",
+            "quote": "my country today serves as a Latin American benchmark for the future of artificial intelligence"
+          }
+        ]
+      }
+    ],
+    "rationale": "Chilean and Peruvian passages converge on a human-rights and ethics framing of AI, with Chile uniquely stressing algorithmic bias, cultural erasure, distrust of corporate self-regulation and a concrete child-abuse case, and Peru focusing on election disinformation and the Global Digital Compact."
+  }
+}

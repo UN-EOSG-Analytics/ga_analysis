@@ -1,0 +1,71 @@
+{
+  "request_hash": "168295fd176ec8511acfbedd64c6a798d24b5b33f4cb96e6887a40799f25c73f",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Regulatory framework so AI serves good",
+        "definition": "Call for an appropriate regulatory framework to ensure AI and generative AI serve good rather than evil purposes.",
+        "inclusion": "Include calls for regulatory frameworks for AI to steer it toward beneficial use.",
+        "exclusion": "Exclude statements about AI being neglected without a regulatory call.",
+        "boundary_cases": "Support for the Secretary-General's actions alongside regulatory calls is also coded AI_UN_ROLE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_BRB:6",
+            "quote": "then an appropriate framework for regulatory action must be put in place"
+          }
+        ]
+      },
+      {
+        "code": "AI_UN_ROLE",
+        "label": "Support for Secretary-General's AI actions",
+        "definition": "Endorsement of the UN Secretary-General's actions on AI.",
+        "inclusion": "Include expressions of support for SG or UN initiatives on AI.",
+        "exclusion": "Exclude non-UN governance calls.",
+        "boundary_cases": "Implicit reference to SG actions following an AI regulation sentence counts here.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_BRB:6",
+            "quote": "We therefore support the actions of the Secretary- General"
+          }
+        ]
+      },
+      {
+        "code": "AI_DEMOCRACY_ACCOUNTABILITY",
+        "label": "AI and preserving democracy",
+        "definition": "Framing AI governance as a test of whether democracy is preserved or allowed to crumble.",
+        "inclusion": "Include passages linking AI to the survival or erosion of democracy.",
+        "exclusion": "Exclude election-specific disinformation claims (AI_DISINFORMATION) unless democracy's survival is the frame.",
+        "boundary_cases": "Rhetorical questions about future judgement on democracy count when tied to AI.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_BRB:6",
+            "quote": "whether we sought to preserve our democracy or whether we allowed it to crumble"
+          }
+        ]
+      },
+      {
+        "code": "AI_AGENDA_NEGLECT",
+        "label": "AI overshadowed by climate crisis",
+        "definition": "Observation that AI receives insufficient attention because other crises (climate) dominate the agenda.",
+        "inclusion": "Include statements that AI is not a focal point or is crowded out by other priorities.",
+        "exclusion": "Exclude lists of crises that merely include AI.",
+        "boundary_cases": "If the speaker uses neglect to argue for urgent regulation, code both this and AI_GLOBAL_GOVERNANCE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_BRB:6",
+            "quote": "AI is not in the immediate focal point of many because the drama and the crises that surround climate are taking up all of the oxygen"
+          }
+        ]
+      }
+    ],
+    "rationale": "A single Barbados 2023 passage calls for AI regulation for good purposes, supports the SG, links AI to democracy's survival, and notes AI is neglected relative to climate."
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "request_hash": "4fbc32984bad81a3bff7c8cae1bff0d4cb21ef00c6ab731acb19030a07d6e88b",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_c"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_SUR:1",
+      "verbatim_en_2026_SUR:2",
+      "verbatim_en_2026_SUR:3",
+      "verbatim_en_2026_SUR:4",
+      "verbatim_en_2026_SUR:5"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_SUR:4",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "we must also prepare for the transformation driven by artificial intelligence. But only if we can implement AI responsibly and controlled, Suriname will be able to benefit from the opportunities of this technology and mitigate its risks.",
+        "rationale": "Calls for responsible, controlled AI adoption to realize benefits and mitigate risks."
+      },
+      {
+        "passage_id": "verbatim_en_2026_SUR:5",
+        "status": "Yes",
+        "mention_type": "contextual",
+        "quote": "So we are preparing for that.",
+        "rationale": "Directly confirms national preparation for responsible AI implementation discussed at the end of the preceding passage."
+      }
+    ]
+  }
+}

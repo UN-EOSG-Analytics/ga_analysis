@@ -1,0 +1,89 @@
+{
+  "request_hash": "31f89db364d58521a10f8396a0649c5cd06166cc80acbb491089348c5e72663d",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_MILITARY_WEAPONS",
+        "label": "Lethal autonomous weapons and treaty ban",
+        "definition": "Concern about lethal autonomous weapons, including their potential acquisition by organized criminals, and support for a legally binding instrument to prohibit them.",
+        "inclusion": "Include passages on lethal autonomous weapons, AI-targeting drones, or calls for a treaty banning them.",
+        "exclusion": "Exclude generic organized-crime or firearms passages that do not mention autonomous or AI-enabled weapons.",
+        "boundary_cases": "Autonomous weapons in the hands of non-state criminals are still coded here, and may also be coded AI_CYBER_SECURITY for criminal misuse.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_ATG:31",
+            "quote": "we are even more alarmed at the potential for autonomous weapons to fall into the hands of organized criminals"
+          },
+          {
+            "passage_id": "verbatim_en_2023_ATG:31",
+            "quote": "He has urged nations to formulate a legally binding instrument by 2026 to prohibit lethal autonomous weapon systems."
+          }
+        ]
+      },
+      {
+        "code": "AI_DEVELOPMENT_SDGS",
+        "label": "Responsible AI as equalizing development tool",
+        "definition": "Responsible AI and digital transformation framed as tools for productivity, innovation and sustainable development that can equalize opportunity.",
+        "inclusion": "Include statements presenting AI as a driver of productivity, innovation, or sustainable development.",
+        "exclusion": "Exclude financing-system arguments without AI.",
+        "boundary_cases": "The 'equalizing force' framing, if followed by warnings about a divide, is also coded AI_DIGITAL_DIVIDE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_JAM:5",
+            "quote": "They can enhance productivity, innovation, and sustainable development for our people. Indeed, they can be an equalizing force for the world."
+          }
+        ]
+      },
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "AI must not create new global divide",
+        "definition": "Warning that AI could deepen old inequalities and create a new global divide.",
+        "inclusion": "Include warnings about AI-driven inequality between countries.",
+        "exclusion": "Exclude requests for infrastructure and skills support without inequality framing (AI_CAPACITY_BUILDING).",
+        "boundary_cases": "A single passage can carry both this code and AI_CAPACITY_BUILDING when the divide warning is followed by a support request.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_JAM:5",
+            "quote": "We must therefore not allow AI to deepen old inequalities and create an entirely new global divide."
+          }
+        ]
+      },
+      {
+        "code": "AI_CAPACITY_BUILDING",
+        "label": "Infrastructure, skills and capacity investment",
+        "definition": "Developing countries need investment in infrastructure, skills and capacity to benefit from AI.",
+        "inclusion": "Include calls for AI-related infrastructure, skills or capacity support for developing countries.",
+        "exclusion": "Exclude law-enforcement capacity building unrelated to AI.",
+        "boundary_cases": "Generic capacity requests are coded only when tied to AI or digital transformation in the passage.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_JAM:5",
+            "quote": "Developing countries require investment in infrastructure, skills and capacity."
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Governance safeguarding privacy and data integrity",
+        "definition": "Calls for governance frameworks that protect privacy, intellectual property and data integrity and promote ethical AI use without stifling innovation, building on the Global Digital Compact.",
+        "inclusion": "Include calls for AI governance frameworks including specific safeguards.",
+        "exclusion": "Exclude weapons treaty calls (AI_MILITARY_WEAPONS).",
+        "boundary_cases": "References to the Pact for the Future and Global Digital Compact also qualify for AI_UN_ROLE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_JAM:5",
+            "quote": "all countries require governance frameworks that safeguard privacy and intellectual property, ensure data integrity, and promote the ethical and responsible use of emerging technologies without stifling innovation"
+          }
+        ]
+      }
+    ],
+    "rationale": "The two Caribbean passages share a security/crime context but differ: Antigua and Barbuda focuses on lethal autonomous weapons reaching criminals and supports a ban treaty, while Jamaica frames AI as a development equalizer requiring capacity support and governance safeguards."
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "request_hash": "0b54baf460e54acbd891cee1f9c3de94818fe6c70583219e76563ec18c79247d",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "Equal access to AI benefits",
+        "definition": "All nations and societies should benefit equally from AI's transformative power, with efforts to close the technological gap for LDCs.",
+        "inclusion": "Include passages insisting no society be deprived of AI benefits or that all nations benefit equally.",
+        "exclusion": "Exclude passages about AI legal frameworks without an equity element.",
+        "boundary_cases": "Hosting the UN Technology Bank for LDCs fits here and also AI_UN_ROLE / AI_CAPACITY_BUILDING.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_TUR:11",
+            "quote": "no society should be deprived of these benefits"
+          },
+          {
+            "passage_id": "verbatim_en_2024_TUR:46",
+            "quote": "we believe that all nations should benefit equally from the transformative power of such breakthrough technologies"
+          }
+        ]
+      },
+      {
+        "code": "AI_SOVEREIGNTY_CONCENTRATION",
+        "label": "AI as tool of domination",
+        "definition": "Warning that AI should not become a new instrument of domination or source of injustice and conflict.",
+        "inclusion": "Include passages warning against AI used for domination or power asymmetries.",
+        "exclusion": "Exclude general benefit-sharing statements without a domination framing.",
+        "boundary_cases": "Mentions of technology weaponized in attacks belong to AI_CYBER_SECURITY instead.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_TUR:11",
+            "quote": "AI technologies should be used for the benefit of humanity, not as a new tool of domination."
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Binding international legal framework on AI",
+        "definition": "Calls for a common international legal framework and a UN convention on AI, citing loss of control.",
+        "inclusion": "Include calls for binding international law, treaties or conventions on AI.",
+        "exclusion": "Exclude non-AI legal calls.",
+        "boundary_cases": "Reference to a UN convention also warrants AI_UN_ROLE; 'difficult to control' framing may be AI_SAFETY_EXISTENTIAL.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_TUR:11",
+            "quote": "It is long overdue now to establish a common international legal framework for AI."
+          }
+        ]
+      },
+      {
+        "code": "AI_SAFETY_EXISTENTIAL",
+        "label": "AI becoming difficult to control",
+        "definition": "AI described as increasingly difficult to control, posing a risk comparable to other global threats.",
+        "inclusion": "Include statements that AI is becoming uncontrollable or poses loss-of-control risk.",
+        "exclusion": "Exclude risks limited to misuse by criminals or states.",
+        "boundary_cases": "If the uncontrollability claim is used only to justify governance, code both this and AI_GLOBAL_GOVERNANCE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_TUR:11",
+            "quote": "We are also facing the same risk with artificial intelligence, AI, which is becoming increasingly difficult to control."
+          }
+        ]
+      },
+      {
+        "code": "AI_CHILD_PROTECTION",
+        "label": "Children's rights in digital world",
+        "definition": "Initiatives to protect children's rights in digital environments in the context of AI.",
+        "inclusion": "Include passages proposing child protection instruments or rules in digital/AI contexts.",
+        "exclusion": "Exclude children's rights content unrelated to digital technology.",
+        "boundary_cases": "AI in education for children is AI_YOUTH_EDUCATION rather than protection.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_TUR:11",
+            "quote": "We have prepared a children's rights convention in the digital world, and we will soon open this up for ratification."
+          }
+        ]
+      },
+      {
+        "code": "AI_CYBER_SECURITY",
+        "label": "Technology weaponized in cyberterror",
+        "definition": "Technologies like AI can be turned into deadly weapons through cyberterror attacks.",
+        "inclusion": "Include passages linking AI or breakthrough technology to cyberterror or weaponized attacks outside formal military AI.",
+        "exclusion": "Exclude autonomous weapons discussion (AI_MILITARY_WEAPONS).",
+        "boundary_cases": "Attacks involving compromised devices framed as technology misuse fit here.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_TUR:46",
+            "quote": "last week’s cyberterror attacks in Lebanon showed once again how those technologies can be turned into deadly weapons"
+          }
+        ]
+      }
+    ],
+    "rationale": "Turkish passages emphasize equitable AI benefits and against AI domination (with the UN Technology Bank), later shifting to AI as hard to control and calling for a UN convention; they also note child digital rights and weaponized technology."
+  }
+}

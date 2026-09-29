@@ -1,0 +1,35 @@
+{
+  "request_hash": "e2da0748c936010327885c32cfe2a9da1388d6ff292e838e632d64511064a7cc",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "root"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_SVK:1",
+      "verbatim_en_2026_SVK:2",
+      "verbatim_en_2026_SVK:3",
+      "verbatim_en_2026_SVK:4"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_SVK:2",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "The growing use of AI-powered weapons and autonomous systems also requires urgent attention. One principle must remain clear: machines should never be allowed to make life-or-death decisions on their own.",
+        "rationale": "Discusses equitable AI access, UN-led international rules and human control over weapons, education harms, and beneficial use for peace and prevention."
+      },
+      {
+        "passage_id": "verbatim_en_2026_SVK:3",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "With responsible use, proper human oversight, and good governance, we can move this technology away from the battlefield and towards diplomacy, mediation, and conflict prevention.",
+        "rationale": "Continues the preceding AI discussion by advocating responsible deployment for diplomacy and conflict prevention under human oversight."
+      }
+    ]
+  }
+}

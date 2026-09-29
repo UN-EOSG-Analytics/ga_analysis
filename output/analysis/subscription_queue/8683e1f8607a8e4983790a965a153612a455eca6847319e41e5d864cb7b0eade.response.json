@@ -1,0 +1,47 @@
+{
+  "request_hash": "8683e1f8607a8e4983790a965a153612a455eca6847319e41e5d864cb7b0eade",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_NATIONAL_STRATEGY",
+        "label": "National AI strategy and partnership membership",
+        "definition": "Speaker cites national AI achievements such as adopting an AI development strategy, joining the Global Partnership on AI, or AI becoming a national priority topic.",
+        "inclusion": "Include passages reporting national AI strategies, memberships or the rising importance of AI domestically.",
+        "exclusion": "Exclude passages where AI is only a list item of skills without national policy content.",
+        "boundary_cases": "Statements that AI is 'becoming an important topic' domestically with youth investment may also be coded AI_YOUTH_EDUCATION.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_SRB:42",
+            "quote": "joined the Global Partnership on Artificial Intelligence and adopted a development strategy in that area back in 2019"
+          },
+          {
+            "passage_id": "verbatim_en_2017_SRB:10",
+            "quote": "digitalization and artificial intelligence are becoming important topics in Serbia, not just in the most developed countries of the world"
+          }
+        ]
+      },
+      {
+        "code": "AI_TECH_LIST_MENTION",
+        "label": "AI listed among national youth talents",
+        "definition": "AI appears in a long list of fields in which the country's young people excel, without further discussion.",
+        "inclusion": "Include passages where AI is one item in a list of technologies, skills or sectors.",
+        "exclusion": "Exclude passages describing AI policy or AI impacts.",
+        "boundary_cases": "If the list is followed by a specific AI policy, code AI_NATIONAL_STRATEGY as well.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2018_SRB:21",
+            "quote": "blockchain, artificial intelligence, big-data analytics, biology, software development and programming"
+          }
+        ]
+      }
+    ],
+    "rationale": "Serbian passages mention AI as a national point of pride: listed among youth talents, framed as a rising domestic priority, and via an AI strategy and GPAI membership, with no discussion of risks or global governance."
+  }
+}

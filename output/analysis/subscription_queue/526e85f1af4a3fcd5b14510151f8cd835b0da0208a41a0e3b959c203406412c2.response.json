@@ -1,0 +1,29 @@
+{
+  "request_hash": "526e85f1af4a3fcd5b14510151f8cd835b0da0208a41a0e3b959c203406412c2",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "root"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_WSM:1",
+      "verbatim_en_2026_WSM:2",
+      "verbatim_en_2026_WSM:3",
+      "verbatim_en_2026_WSM:4",
+      "verbatim_en_2026_WSM:5"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_WSM:3",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "The digital transformation, including AI and data analytics, offers real opportunities to drive an inclusive, just energy transition, particularly through off-grid solution and smarter energy planning.",
+        "rationale": "Identifies AI and data analytics as tools for inclusive clean-energy transition, off-grid solutions and energy planning in Samoa."
+      }
+    ]
+  }
+}

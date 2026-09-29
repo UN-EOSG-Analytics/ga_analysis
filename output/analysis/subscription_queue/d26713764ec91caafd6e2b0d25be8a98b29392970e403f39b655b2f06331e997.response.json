@@ -1,0 +1,36 @@
+{
+  "request_hash": "d26713764ec91caafd6e2b0d25be8a98b29392970e403f39b655b2f06331e997",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_b"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_PHL:1",
+      "verbatim_en_2026_PHL:2",
+      "verbatim_en_2026_PHL:3",
+      "verbatim_en_2026_PHL:4",
+      "verbatim_en_2026_PHL:5"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_PHL:2",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "We echo the growing call across industries that we need robust AI governance with enforceable standards, and we need it now.",
+        "rationale": "Discusses AI development benefits, systemic and existential risks, and enforceable governance."
+      },
+      {
+        "passage_id": "verbatim_en_2026_PHL:3",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "We need AI systems that uplift the vulnerable, strengthen national resilience, promote gender equality, and foster human-centered partnerships, not exclusion and fragmentation.",
+        "rationale": "Calls for inclusive AI capabilities and governance protecting lives, rights and democracy."
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "request_hash": "9d65aa2d0b993f4db7193326a32878c65806ce17b70b943bc10ada4dcca82674",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_b"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_ECU:1",
+      "verbatim_en_2026_ECU:2",
+      "verbatim_en_2026_ECU:3",
+      "verbatim_en_2026_ECU:4"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_ECU:3",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "One of the greatest challenges of the future is artificial intelligence. It can transform education, multiply productivity and close historic gaps, but also entrench inequalities and serve those that seek to weaken our institutions.",
+        "rationale": "Discusses AI opportunities, inequality and institutional risks, and inclusive international governance."
+      }
+    ]
+  }
+}

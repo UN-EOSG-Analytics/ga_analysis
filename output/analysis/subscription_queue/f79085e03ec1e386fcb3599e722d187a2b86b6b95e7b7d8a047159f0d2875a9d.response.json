@@ -1,0 +1,89 @@
+{
+  "request_hash": "f79085e03ec1e386fcb3599e722d187a2b86b6b95e7b7d8a047159f0d2875a9d",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_TECH_LIST_MENTION",
+        "label": "AI listed among revolutions Africa joins",
+        "definition": "AI named in a list of current technological and energy revolutions that a region aspires to join, with no further discussion.",
+        "inclusion": "Include single-sentence mentions listing AI alongside digitalization, renewables or other trends.",
+        "exclusion": "Exclude passages that elaborate AI's risks, benefits or governance.",
+        "boundary_cases": "If the aspiration to 'join' is linked to explicit capacity or divide arguments, code AI_DIGITAL_DIVIDE instead.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_DZA:10",
+            "quote": "joining the revolutions currently taking place in the fields of artificial intelligence, digitalization and renewable energy"
+          }
+        ]
+      },
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "Africa not a marginal AI consumer",
+        "definition": "Refusal that Africa remain marginal or a mere consumer of AI, and concern AI becomes a new North-South development gap.",
+        "inclusion": "Include passages warning of AI creating North-South gaps or relegating regions to consumers.",
+        "exclusion": "Exclude generic development statements without AI/technology.",
+        "boundary_cases": "Investment in scientific and digital capacities in the same passage also counts under AI_CAPACITY_BUILDING.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_DZA:8",
+            "quote": "not a new label for another development gap between the North and the South"
+          },
+          {
+            "passage_id": "verbatim_en_2026_DZA:8",
+            "quote": "we cannot accept that Africa would remain on the margins or simply become a consumer of its outputs"
+          }
+        ]
+      },
+      {
+        "code": "AI_CAPACITY_BUILDING",
+        "label": "Investing in African scientific and digital capacities",
+        "definition": "Building human, scientific and digital capacities so AI becomes a tool for development.",
+        "inclusion": "Include calls to invest in people and skills/capacities for AI in developing regions.",
+        "exclusion": "Exclude requests for regulation.",
+        "boundary_cases": "Where framed as 'tool for development', also code AI_DEVELOPMENT_SDGS.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_DZA:8",
+            "quote": "invest in the African person to build scientific and digital capacities so that artificial intelligence becomes a tool for development"
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Balanced international AI regulation",
+        "definition": "Call for balanced and responsible international regulation of AI guaranteeing equitable access.",
+        "inclusion": "Include calls for international regulation of AI.",
+        "exclusion": "Exclude national regulation.",
+        "boundary_cases": "Regulation justified by preventing monopoly is also coded AI_SOVEREIGNTY_CONCENTRATION.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_DZA:8",
+            "quote": "We call for a balanced and responsible international regulation of artificial intelligence"
+          }
+        ]
+      },
+      {
+        "code": "AI_SOVEREIGNTY_CONCENTRATION",
+        "label": "Against AI monopoly by a few",
+        "definition": "Concern that AI becomes an exclusive privilege or monopoly of a few and that state sovereignty must be preserved.",
+        "inclusion": "Include passages opposing AI monopoly/concentration or invoking state sovereignty in AI.",
+        "exclusion": "Exclude access-gap statements without concentration/sovereignty language.",
+        "boundary_cases": "'Shared opportunity' language alone without monopoly framing belongs to AI_DIGITAL_DIVIDE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_DZA:8",
+            "quote": "rather than an exclusive privilege or monopoly in the hands of a few"
+          }
+        ]
+      }
+    ],
+    "rationale": "Algeria's 2024 passage is a one-line list mention of AI; the 2026 passage substantively argues against an AI North-South gap and monopoly, calling for capacity investment and balanced international regulation."
+  }
+}

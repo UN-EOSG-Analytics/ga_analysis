@@ -1,0 +1,56 @@
+{
+  "request_hash": "028559cd624d1bdca24d48294b498eda1bd3067add33170bc3e85571113e9f9a",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_b"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2021_AUT:1",
+      "verbatim_en_2021_AUT:2",
+      "verbatim_en_2021_AUT:3",
+      "verbatim_en_2021_AUT:4",
+      "verbatim_en_2021_AUT:5",
+      "verbatim_en_2021_AUT:6",
+      "verbatim_en_2021_AUT:7",
+      "verbatim_en_2021_AUT:8",
+      "verbatim_en_2021_AUT:9",
+      "verbatim_en_2021_AUT:10",
+      "verbatim_en_2021_AUT:11",
+      "verbatim_en_2021_AUT:12",
+      "verbatim_en_2021_AUT:13",
+      "verbatim_en_2021_AUT:14",
+      "verbatim_en_2021_AUT:15",
+      "verbatim_en_2021_AUT:16",
+      "verbatim_en_2021_AUT:17",
+      "verbatim_en_2021_AUT:18",
+      "verbatim_en_2021_AUT:19",
+      "verbatim_en_2021_AUT:20",
+      "verbatim_en_2021_AUT:21",
+      "verbatim_en_2021_AUT:22",
+      "verbatim_en_2021_AUT:23",
+      "verbatim_en_2021_AUT:24",
+      "verbatim_en_2021_AUT:25"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2021_AUT:19",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "New and emerging technologies like artificial intelligence and quantum computing are racing ahead, leaving many of us behind.",
+        "rationale": "Discusses rapid AI progress and a human-centred approach."
+      },
+      {
+        "passage_id": "verbatim_en_2021_AUT:20",
+        "status": "Yes",
+        "mention_type": "contextual",
+        "quote": "This includes stepping back from creating killing machines — lethal autonomous weapons systems — where an algorithm decides in a split second who lives and who dies.",
+        "rationale": "Continues the preceding AI technology discussion with rights safeguards, human control and a proposed killer robot ban."
+      }
+    ]
+  }
+}

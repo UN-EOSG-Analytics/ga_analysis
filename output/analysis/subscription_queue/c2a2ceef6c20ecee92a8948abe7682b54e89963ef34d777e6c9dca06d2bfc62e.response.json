@@ -1,0 +1,65 @@
+{
+  "request_hash": "c2a2ceef6c20ecee92a8948abe7682b54e89963ef34d777e6c9dca06d2bfc62e",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_YOUTH_EDUCATION",
+        "label": "Fourth Industrial Revolution opportunities for youth",
+        "definition": "AI and automation discussed in terms of youth prospects, skills and job certainty, with hope that technology becomes opportunity rather than threat for young people.",
+        "inclusion": "Include passages linking AI/robotics to youth employment, skills or empowerment.",
+        "exclusion": "Exclude generic development-access passages without a youth focus.",
+        "boundary_cases": "Job-certainty concerns for youth also fit AI_ECONOMY_LABOR.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2018_NAM:15",
+            "quote": "A future characterized by the rapid advancement of technology, advanced robotics, artificial intelligence and mechanization should present more opportunities, rather than problems, for our youth"
+          }
+        ]
+      },
+      {
+        "code": "AI_CAPACITY_BUILDING",
+        "label": "Technology transfer and skills for developing countries",
+        "definition": "Calls for technology transfer, adoption, skills development and collaboration so developing countries are not left behind in the AI/digital revolution.",
+        "inclusion": "Include passages demanding technology transfer, skills or enabling environments for developing countries.",
+        "exclusion": "Exclude passages only describing AI's transformation without calls to action.",
+        "boundary_cases": "'Not left behind' language without capacity measures fits AI_DIGITAL_DIVIDE instead.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_NAM:10",
+            "quote": "fostering an environment that is conducive to technology transfer, technology adoption, skills development and collaboration"
+          },
+          {
+            "passage_id": "verbatim_en_2023_NAM:10",
+            "quote": "developing countries should not be left behind in the digital revolution"
+          }
+        ]
+      },
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "Challenges and opportunities for growth",
+        "definition": "AI and related technologies framed as bringing both challenges/problems and opportunities for growth and development.",
+        "inclusion": "Include passages pairing AI's opportunities with challenges to be mitigated.",
+        "exclusion": "Exclude one-sided mentions.",
+        "boundary_cases": "Mild 'challenges and opportunities' phrasing counts.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_NAM:10",
+            "quote": "offering unprecedented challenges and opportunities for growth and development"
+          },
+          {
+            "passage_id": "verbatim_en_2018_NAM:15",
+            "quote": "The onus is on us to mitigate the potential problems that might accompany those technologies"
+          }
+        ]
+      }
+    ],
+    "rationale": "Two Namibian passages frame AI developmentally: 2018 through youth prospects in the Fourth Industrial Revolution, 2023 through technology transfer and skills so developing countries are not left behind; both pair opportunities with challenges."
+  }
+}

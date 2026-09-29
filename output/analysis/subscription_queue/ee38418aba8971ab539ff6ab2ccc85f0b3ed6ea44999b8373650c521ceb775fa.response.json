@@ -1,0 +1,71 @@
+{
+  "request_hash": "ee38418aba8971ab539ff6ab2ccc85f0b3ed6ea44999b8373650c521ceb775fa",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_ECONOMY_LABOR",
+        "label": "Generative AI superseding human skills",
+        "definition": "Generative AI as progress that supersedes rather than optimizes human skills, with potentially tragic labour-market consequences.",
+        "inclusion": "Include passages on AI replacing human skills or jobs and consequences for the labour market.",
+        "exclusion": "Exclude productivity-gain framings without displacement concern.",
+        "boundary_cases": "Displacement tied to wealth concentration is also coded AI_SOVEREIGNTY_CONCENTRATION.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_ITA:2",
+            "quote": "progress no longer optimizes human skills but supersedes them, with potentially tragic consequences, especially for the labour market"
+          }
+        ]
+      },
+      {
+        "code": "AI_SOVEREIGNTY_CONCENTRATION",
+        "label": "Wealth concentrating at the top",
+        "definition": "AI-driven change concentrating wealth among a few.",
+        "inclusion": "Include claims that AI will concentrate wealth or power.",
+        "exclusion": "Exclude between-country access gaps without concentration language.",
+        "boundary_cases": "Brief concentration clauses in labour arguments are coded both themes.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_ITA:2",
+            "quote": "with wealth becoming even more concentrated at the top"
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "G7 push for balanced global AI governance",
+        "definition": "Using a G7 presidency to help define global AI governance balancing innovation, rights, labour, IP, free expression and democracy.",
+        "inclusion": "Include pledges to shape global AI governance through G7 or other forums.",
+        "exclusion": "Exclude national regulation.",
+        "boundary_cases": "Balance lists naming rights and democracy also support AI_HUMAN_RIGHTS_ETHICS.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_ITA:2",
+            "quote": "defining a global governance for artificial intelligence that is able to strike a balance among innovation, rights, labour, intellectual property, freedom of expression and democracy"
+          }
+        ]
+      },
+      {
+        "code": "AI_NATURE_OF_INTELLIGENCE",
+        "label": "Questioning whether AI is intelligence",
+        "definition": "Philosophical scepticism about calling data-processing systems 'intelligence', since intelligence entails asking questions.",
+        "inclusion": "Include passages reflecting on the nature of machine intelligence versus human intelligence.",
+        "exclusion": "Exclude ethics or rights claims that do not discuss what intelligence is.",
+        "boundary_cases": "Claims that 'no algorithm can replace human conscience' are ethics (AI_HUMAN_RIGHTS_ETHICS) unless they define intelligence.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_ITA:2",
+            "quote": "Intelligence entails asking questions, not answering them through data-processing."
+          }
+        ]
+      }
+    ],
+    "rationale": "A single Italy 2024 passage treats generative AI as a revolution displacing human skills and concentrating wealth, questions its status as intelligence, and presents G7 leadership on balanced global governance."
+  }
+}

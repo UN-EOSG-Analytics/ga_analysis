@@ -1,0 +1,43 @@
+{
+  "request_hash": "37e07aa6b6ac4ac98aa4d17caa9d43954497224c136d3da662eabc6c1ee43749",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "root"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2025_LVA:1",
+      "verbatim_en_2025_LVA:2",
+      "verbatim_en_2025_LVA:3",
+      "verbatim_en_2025_LVA:4",
+      "verbatim_en_2025_LVA:5"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2025_LVA:1",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "These include climate change, hybrid threats, the challenges related to the safety of artificial intelligence.",
+        "rationale": "Makes AI safety an emerging-security priority for Latvia's Security Council term."
+      },
+      {
+        "passage_id": "verbatim_en_2025_LVA:3",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Emerging threats like climate change, cyber attacks, hybrid attacks, and the misuse of artificial intelligence are testing us on a daily basis.",
+        "rationale": "Identifies misuse of AI among threats to peace, security and stability."
+      },
+      {
+        "passage_id": "verbatim_en_2025_LVA:4",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "We share the United Nations view that we need to develop artificial intelligence responsibly, but we should not halt the progress.",
+        "rationale": "Supports responsible AI development without halting innovation, highlights growth, science, healthcare and education benefits, and calls for swift appropriate regulation and partnership."
+      }
+    ]
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "request_hash": "6829f85d41cb669e22cd4a34723814b00671b824135018bc27c61c43205e0ebf",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_SURVEILLANCE_CONTROL",
+        "label": "AI as tool of surveillance and oppression",
+        "definition": "Concern that AI and digital technologies can serve surveillance, oppression and control, clashing with personal freedoms.",
+        "inclusion": "Include passages framing AI as a potential instrument of surveillance, oppression or control, or in tension with personal freedoms.",
+        "exclusion": "Exclude general human-rights-standards language with no surveillance/control dimension.",
+        "boundary_cases": "Health-sector AI introduced in a surveillance-vs-freedom framing counts here.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2021_CZE:12",
+            "quote": "remain an enabler of human progress, rather than a tool for surveillance, oppression and control"
+          },
+          {
+            "passage_id": "verbatim_en_2020_CZE:14",
+            "quote": "a clash between personal freedoms and technological surveillance, including the tendency for a faster introduction of artificial intelligence into the health sector"
+          }
+        ]
+      },
+      {
+        "code": "AI_HUMAN_RIGHTS_ETHICS",
+        "label": "Innovations conforming to human rights standards",
+        "definition": "Calls for AI and emerging technologies to conform to ethical and human rights standards, including UN resolutions on human rights and digital technologies.",
+        "inclusion": "Include passages requiring AI to meet ethical/human rights standards or citing human-rights-in-digital-technology initiatives.",
+        "exclusion": "Exclude surveillance-specific framing (AI_SURVEILLANCE_CONTROL).",
+        "boundary_cases": "Mention of AI's influence on future conflicts within a rights framing may also be AI_MILITARY_WEAPONS if autonomous systems are stressed.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_CZE:8",
+            "quote": "It is our duty to ensure that innovations — including artificial intelligence, autonomous systems, biotechnology and quantum computing — fully conform to our ethical and human rights standards."
+          }
+        ]
+      },
+      {
+        "code": "AI_NATIONAL_STRATEGY",
+        "label": "Ambition to lead in AI innovation",
+        "definition": "National innovation strategy aiming to implement AI across sectors and become a leader in AI.",
+        "inclusion": "Include passages on national AI/innovation strategies and leadership ambitions.",
+        "exclusion": "Exclude international governance calls.",
+        "boundary_cases": "Cultural pride references (e.g. origin of the word robot) count when part of a national AI ambition.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2019_CZE:6",
+            "quote": "Our goal is to become a European leader in innovation and artificial intelligence and a country that can serve as an example to the rest of the world."
+          }
+        ]
+      },
+      {
+        "code": "AI_DISINFORMATION",
+        "label": "Disinformation and geopolitics of technology",
+        "definition": "Disinformation and foreign interference discussed adjacent to AI and technology geopolitics.",
+        "inclusion": "Include passages linking disinformation or foreign interference with new technologies including AI.",
+        "exclusion": "Exclude disinformation passages lacking any technology link.",
+        "boundary_cases": "Adjacent-sentence linkage (disinformation then AI) counts only if presented as part of the same technology challenge.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2021_CZE:12",
+            "quote": "The geopolitics of technology continues to pose an ever-greater challenge to the established norms."
+          }
+        ]
+      }
+    ],
+    "rationale": "Czech passages (2019-2024) shift from a national AI leadership ambition to concerns about surveillance, disinformation and ensuring AI conforms to human rights standards."
+  }
+}

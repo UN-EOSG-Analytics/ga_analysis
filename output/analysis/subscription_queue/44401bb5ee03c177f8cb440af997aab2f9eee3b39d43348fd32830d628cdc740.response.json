@@ -1,0 +1,47 @@
+{
+  "request_hash": "44401bb5ee03c177f8cb440af997aab2f9eee3b39d43348fd32830d628cdc740",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_UN_ROLE",
+        "label": "Support for Global Digital Compact and GA resolutions",
+        "definition": "Endorsement of UN instruments on ICT and AI, such as the Global Digital Compact and General Assembly AI resolutions, and commitment to participate in them.",
+        "inclusion": "Passages welcoming the Global Digital Compact or the GA's AI resolution, or pledging to follow UN AI frameworks.",
+        "exclusion": "Generic references to ICT development without UN instruments.",
+        "boundary_cases": "Mentions of 'international legal frameworks' on ICT alongside UN documents count here.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_MNG:12",
+            "quote": "the recently adopted Global Digital Compact is a timely and essential step"
+          },
+          {
+            "passage_id": "verbatim_en_2024_MNG:12",
+            "quote": "placing great importance on United Nations resolutions, documents and other international legal frameworks related to that issue"
+          }
+        ]
+      },
+      {
+        "code": "AI_DIGITAL_TRANSFORMATION_CONTEXT",
+        "label": "AI within broader ICT transformation",
+        "definition": "AI discussed as part of the broader rise of information and communications technologies reshaping daily life and civilization, without AI-specific claims.",
+        "inclusion": "Passages treating AI together with ICT as a civilizational transformation or national effort to keep pace with IT.",
+        "exclusion": "Passages making specific claims about AI benefits, risks or policies.",
+        "boundary_cases": "If the passage singles out AI-specific risks or uses, code the specific theme instead.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_MNG:12",
+            "quote": "is seen as a factor that may fundamentally reshape the development of civilization in the future"
+          }
+        ]
+      }
+    ],
+    "rationale": "Single Mongolian 2024 passage that folds AI into the broader ICT transformation and mainly expresses support for the Global Digital Compact and UN AI resolutions."
+  }
+}

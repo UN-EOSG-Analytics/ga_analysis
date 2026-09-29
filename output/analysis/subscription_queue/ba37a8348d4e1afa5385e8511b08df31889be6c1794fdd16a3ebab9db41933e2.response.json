@@ -1,0 +1,426 @@
+{
+  "request_hash": "ba37a8348d4e1afa5385e8511b08df31889be6c1794fdd16a3ebab9db41933e2",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "results": [
+      {
+        "passage_id": "verbatim_en_2026_LKA:6",
+        "classification": {
+          "themes": [
+            {
+              "code": "AI_GLOBAL_GOVERNANCE",
+              "value": "Yes",
+              "quote": "We must ensure that emerging technologies and artificial intelligence are developed and used responsibly and consistently with international law, including the well-established principles of international humanitarian law.",
+              "rationale": "AI must be governed consistently with international law."
+            },
+            {
+              "code": "AI_INCLUSIVE_GOVERNANCE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_GOVERNANCE_SKEPTICISM",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_UN_ROLE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_MILITARY_WEAPONS",
+              "value": "Uncertain",
+              "quote": "including the well-established principles of international humanitarian law",
+              "rationale": "IHL reference implies military use of AI but not stated."
+            },
+            {
+              "code": "AI_PEACE_APPLICATIONS",
+              "value": "Uncertain",
+              "quote": "Their development and use must contribute to international peace and security while advancing humanity's collective interests.",
+              "rationale": "Insists AI serve peace, though briefly."
+            },
+            {
+              "code": "AI_SAFETY_EXISTENTIAL",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_HUMAN_CONTROL",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_HUMAN_RIGHTS_ETHICS",
+              "value": "Yes",
+              "quote": "We have developed national AI ethical guidelines in line with international frameworks.",
+              "rationale": "Ethical framing of AI and humanity's interest guiding it."
+            },
+            {
+              "code": "AI_BIAS_CULTURAL_DIVERSITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DISINFORMATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CYBER_SECURITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DIGITAL_DIVIDE",
+              "value": "Yes",
+              "quote": "ensure equitable access for developing nations, bridge the digital divide, and build safe, secure, and trustworthy systems that leave no one behind",
+              "rationale": "Calls for equitable access and bridging the digital divide in the AI/digital context."
+            },
+            {
+              "code": "AI_CAPACITY_BUILDING",
+              "value": "Yes",
+              "quote": "we reiterate our call on the global community to promote meaningful technology transfers",
+              "rationale": "Requests technology transfer as part of the AI/digital paragraph."
+            },
+            {
+              "code": "AI_DEVELOPMENT_SDGS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_RESOURCE_FOOTPRINT",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_ECONOMY_LABOR",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_YOUTH_EDUCATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CHILD_PROTECTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_NATIONAL_STRATEGY",
+              "value": "Yes",
+              "quote": "We have developed national AI ethical guidelines in line with international frameworks.",
+              "rationale": "National AI ethical guidelines."
+            },
+            {
+              "code": "AI_SOVEREIGNTY_CONCENTRATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_GEOPOLITICAL_RIVALRY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_OPPORTUNITY_RISK_DUALITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_TRANSFORMATIVE_ERA",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_TECH_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_THREAT_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            }
+          ],
+          "institutions": [],
+          "keywords": [
+            {
+              "normalized_term": "digital divide",
+              "original_term": "digital divide",
+              "quote": "bridge the digital divide"
+            },
+            {
+              "normalized_term": "technology transfer",
+              "original_term": "technology transfers",
+              "quote": "promote meaningful technology transfers"
+            },
+            {
+              "normalized_term": "national ai ethical guidelines",
+              "original_term": "national AI ethical guidelines",
+              "quote": "We have developed national AI ethical guidelines in line with international frameworks."
+            },
+            {
+              "normalized_term": "international humanitarian law",
+              "original_term": "international humanitarian law",
+              "quote": "the well-established principles of international humanitarian law"
+            }
+          ],
+          "uncovered_concept": ""
+        }
+      },
+      {
+        "passage_id": "verbatim_en_2026_LSO:3",
+        "classification": {
+          "themes": [
+            {
+              "code": "AI_GLOBAL_GOVERNANCE",
+              "value": "Uncertain",
+              "quote": "so that the compromise of artificial intelligence may be governed responsibly",
+              "rationale": "Brief reference to responsible governance of AI."
+            },
+            {
+              "code": "AI_INCLUSIVE_GOVERNANCE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_GOVERNANCE_SKEPTICISM",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_UN_ROLE",
+              "value": "Yes",
+              "quote": "central to that experience has been the value of the United Nations system acting as one, coordinated around priorities that we ourselves defined.",
+              "rationale": "UN system support on national AI strategy and proposed Global Fund for AI."
+            },
+            {
+              "code": "AI_MILITARY_WEAPONS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_PEACE_APPLICATIONS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_SAFETY_EXISTENTIAL",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_HUMAN_CONTROL",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_HUMAN_RIGHTS_ETHICS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_BIAS_CULTURAL_DIVERSITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DISINFORMATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CYBER_SECURITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DIGITAL_DIVIDE",
+              "value": "Yes",
+              "quote": "so that the compromise of artificial intelligence may be governed responsibly and shared equitably among all nations",
+              "rationale": "Equitable sharing of AI among all nations."
+            },
+            {
+              "code": "AI_CAPACITY_BUILDING",
+              "value": "Yes",
+              "quote": "Lesotho stands ready to share the lessons of that journey with fellow developing countries, particularly across Africa and among least developed and landlocked developing countries.",
+              "rationale": "Offers to share AI strategy experience and supports Global Fund for AI capacity building."
+            },
+            {
+              "code": "AI_DEVELOPMENT_SDGS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_RESOURCE_FOOTPRINT",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_ECONOMY_LABOR",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_YOUTH_EDUCATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CHILD_PROTECTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_NATIONAL_STRATEGY",
+              "value": "Yes",
+              "quote": "As the first member state to pilot the UN Blueprint for National AI and Data Strategies from design into national implementation",
+              "rationale": "National AI and data strategy pilot."
+            },
+            {
+              "code": "AI_SOVEREIGNTY_CONCENTRATION",
+              "value": "Yes",
+              "quote": "Charting similar paths towards digital sovereignty",
+              "rationale": "Digital sovereignty claim linked to AI strategies."
+            },
+            {
+              "code": "AI_GEOPOLITICAL_RIVALRY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_OPPORTUNITY_RISK_DUALITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_TRANSFORMATIVE_ERA",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_TECH_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_THREAT_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            }
+          ],
+          "institutions": [
+            {
+              "commitment_detail": "Lesotho stands ready to contribute its national AI strategy experience to the proposed Global Fund for AI.",
+              "rationale": "Supports and offers to contribute to the Global Fund for AI.",
+              "mechanism": "Fund",
+              "reference_type": "name variant",
+              "stances": {
+                "mention": true,
+                "welcome": false,
+                "support": true,
+                "request": false,
+                "concern": false,
+                "opposition": false,
+                "commitment": true
+              },
+              "requested_functions": [
+                "capacity building",
+                "financing"
+              ],
+              "un_role": "explicit",
+              "quote": "We further stand ready to contribute our experience to emerging instruments such as the proposed Global Fund for AI capacity building"
+            },
+            {
+              "commitment_detail": "",
+              "rationale": "Piloted and commends the UN Blueprint model.",
+              "mechanism": "Other model",
+              "reference_type": "explicit name",
+              "stances": {
+                "mention": true,
+                "welcome": true,
+                "support": true,
+                "request": false,
+                "concern": false,
+                "opposition": false,
+                "commitment": false
+              },
+              "requested_functions": [
+                "capacity building",
+                "coordination"
+              ],
+              "un_role": "explicit",
+              "quote": "As the first member state to pilot the UN Blueprint for National AI and Data Strategies from design into national implementation"
+            }
+          ],
+          "keywords": [
+            {
+              "normalized_term": "un blueprint for national ai and data strategies",
+              "original_term": "UN Blueprint for National AI and Data Strategies",
+              "quote": "pilot the UN Blueprint for National AI and Data Strategies"
+            },
+            {
+              "normalized_term": "digital sovereignty",
+              "original_term": "digital sovereignty",
+              "quote": "Charting similar paths towards digital sovereignty"
+            },
+            {
+              "normalized_term": "global fund for ai",
+              "original_term": "Global Fund for AI capacity building",
+              "quote": "the proposed Global Fund for AI capacity building"
+            }
+          ],
+          "uncovered_concept": ""
+        }
+      }
+    ]
+  }
+}

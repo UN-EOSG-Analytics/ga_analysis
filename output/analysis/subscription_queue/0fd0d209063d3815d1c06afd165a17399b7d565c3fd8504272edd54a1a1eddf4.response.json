@@ -1,0 +1,28 @@
+{
+  "request_hash": "0fd0d209063d3815d1c06afd165a17399b7d565c3fd8504272edd54a1a1eddf4",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_a"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_GAB:1",
+      "verbatim_en_2026_GAB:2",
+      "verbatim_en_2026_GAB:3",
+      "verbatim_en_2026_GAB:4"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_GAB:3",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Gabon has had to introduce more appropriate and secure regulation of the digital and artificial intelligence sectors through temporary and proportionate measures motivated solely by the imperative of protecting our citizens.",
+        "rationale": "Describes AI regulation to address harms and protect citizens in the digital environment."
+      }
+    ]
+  }
+}

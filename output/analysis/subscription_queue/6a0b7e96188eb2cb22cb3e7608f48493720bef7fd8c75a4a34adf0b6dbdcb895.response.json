@@ -1,0 +1,61 @@
+{
+  "request_hash": "6a0b7e96188eb2cb22cb3e7608f48493720bef7fd8c75a4a34adf0b6dbdcb895",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_DEVELOPMENT_SDGS",
+        "label": "AI for green growth and human development",
+        "definition": "AI, within science, technology and innovation, as a lever to accelerate national development, green growth and human development.",
+        "inclusion": "Include statements that AI should accelerate or serve development, green growth or human development.",
+        "exclusion": "Exclude requests for technology transfer that do not state a development purpose.",
+        "boundary_cases": "Statements that AI must 'respect national development priorities' also touch AI_SOVEREIGNTY_CONCENTRATION; code both if sovereignty is emphasised.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_LAO:16",
+            "quote": "including artificial intelligence, in facilitating green growth and digitalization that are environmentally friendly"
+          },
+          {
+            "passage_id": "verbatim_en_2026_LAO:2",
+            "quote": "Artificial intelligence and digital technologies must serve human development, strengthen local technical capacities, and respect national development priorities."
+          }
+        ]
+      },
+      {
+        "code": "AI_CAPACITY_BUILDING",
+        "label": "Technology transfer for digital economy",
+        "definition": "Requests for international facilitation of access to and transfer of technology, and support for national digital economy plans.",
+        "inclusion": "Include calls for technology transfer, access to innovation, or support for developing-country digital strategies.",
+        "exclusion": "Exclude climate-finance technology transfer not linked to digital/AI.",
+        "boundary_cases": "Strengthening 'local technical capacities' counts here and AI_DEVELOPMENT_SDGS.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_LAO:16",
+            "quote": "calls on the international community to facilitate access to and transfer of appropriate technology and innovation to help jumpstart development"
+          }
+        ]
+      },
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "Global Digital Compact narrowing the divide",
+        "definition": "Demand that the Pact for the Future and Global Digital Compact focus on narrowing the digital divide.",
+        "inclusion": "Include calls to narrow the digital divide in connection with AI or UN digital agreements.",
+        "exclusion": "Exclude divide statements unrelated to technology.",
+        "boundary_cases": "Reference to the Global Digital Compact also qualifies for AI_UN_ROLE if the UN process is the focus.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_LAO:2",
+            "quote": "The implementation of the Pact of the Future and the Global Digital Compact must focus on narrowing the digital divide."
+          }
+        ]
+      }
+    ],
+    "rationale": "Lao PDR treats AI as a development instrument, requesting technology transfer and insisting UN digital commitments narrow the divide and respect national priorities."
+  }
+}

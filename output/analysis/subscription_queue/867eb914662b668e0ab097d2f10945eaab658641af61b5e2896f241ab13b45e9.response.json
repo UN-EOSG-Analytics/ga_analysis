@@ -1,0 +1,103 @@
+{
+  "request_hash": "867eb914662b668e0ab097d2f10945eaab658641af61b5e2896f241ab13b45e9",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Hiroshima AI Process and trustworthy AI rules",
+        "definition": "The speaker promotes international governance of AI, especially its own Hiroshima AI Process principles and code of conduct for safe, secure and trustworthy (generative) AI.",
+        "inclusion": "Include references to international AI principles, codes of conduct, or governance initiatives such as the Hiroshima AI Process.",
+        "exclusion": "Exclude purely domestic digital policy without international rule-making.",
+        "boundary_cases": "Commitment to contribute to AI discussions at the UN also qualifies for AI_UN_ROLE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_JPN:7",
+            "quote": "Japan took the initiative to launch the Hiroshima AI Process, establishing the world's first international world's first international principles and code of conduct to govern generative AI."
+          },
+          {
+            "passage_id": "verbatim_en_2024_JPN:27",
+            "quote": "there is an urgent need to establish international governance on artificial intelligence (AI) in order to maximize the opportunities brought by AI while mitigating its risks"
+          }
+        ]
+      },
+      {
+        "code": "AI_SAFETY_EXISTENTIAL",
+        "label": "Safety cooperation on frontier AI",
+        "definition": "Cooperation on AI safety to respond to risks of highly capable frontier AI, including hosting AI summits for this purpose.",
+        "inclusion": "Include references to frontier AI risks, AI safety cooperation, or safety institutes/summits.",
+        "exclusion": "Exclude generic 'safe, secure and trustworthy' slogans without a frontier/safety-risk element (AI_GLOBAL_GOVERNANCE).",
+        "boundary_cases": "'Safe, secure and trustworthy AI ecosystem' combined with frontier-risk cooperation is coded here.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_JPN:8",
+            "quote": "will enhance cooperation on safety to respond to the risks of highly capable frontier AI"
+          }
+        ]
+      },
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "AI's tremendous opportunities and challenges",
+        "definition": "AI framed as bringing tremendous opportunities alongside risks, including national security challenges.",
+        "inclusion": "Include explicit statements pairing AI benefits with AI risks or challenges.",
+        "exclusion": "Exclude risk-only statements.",
+        "boundary_cases": "If the national-security challenge is elaborated as military use, also code AI_MILITARY_WEAPONS.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_JPN:7",
+            "quote": "While advances in AI bring tremendous opportunities for humanity, they also pose challenges, including those related to national security."
+          }
+        ]
+      },
+      {
+        "code": "AI_HUMAN_RIGHTS_ETHICS",
+        "label": "Digitalization balanced with human dignity",
+        "definition": "Balancing digitalization and AI with human dignity, privacy and human rights through compatible international rules.",
+        "inclusion": "Include passages linking AI or digital rules to privacy, human rights, or dignity.",
+        "exclusion": "Exclude digitalization support to developing countries without rights framing.",
+        "boundary_cases": "Generic digitalization risks count only when AI is referenced in the same argument, as here via the Hiroshima AI Process.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_JPN:13",
+            "quote": "there are risks of privacy and human rights violations. We need a digital ecosystem and international rules that are compatible with human dignity."
+          }
+        ]
+      },
+      {
+        "code": "AI_DISINFORMATION",
+        "label": "Tackling non-factual information and propaganda",
+        "definition": "Urgent measures against the spread of information not based on facts and propaganda, raised in the context of AI and technological innovation.",
+        "inclusion": "Include mentions of disinformation or propaganda raised alongside AI challenges.",
+        "exclusion": "Exclude disinformation discussions with no technology context.",
+        "boundary_cases": "When disinformation is mentioned adjacent to AI but not explicitly caused by AI, code with lower confidence.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_JPN:7",
+            "quote": "We also urgently need measures to tackle the spread of information not based on facts, as well as the spread of propaganda."
+          }
+        ]
+      },
+      {
+        "code": "AI_UN_ROLE",
+        "label": "Contributing to UN AI discussions",
+        "definition": "Commitment to contribute to AI discussions at the United Nations.",
+        "inclusion": "Include explicit commitments to UN AI deliberations or processes.",
+        "exclusion": "Exclude general UN reform discussion without AI.",
+        "boundary_cases": "Calls for the UN to build 'new rules' generally, adjacent to AI, are borderline.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_JPN:27",
+            "quote": "We will continue to actively contribute to the discussions on AI at the United Nations."
+          }
+        ]
+      }
+    ],
+    "rationale": "Japan's passages consistently promote the Hiroshima AI Process and trustworthy AI governance, framing AI as opportunity plus risk. Later speeches add frontier-AI safety cooperation and disinformation; the 2023 speech emphasises privacy and human dignity."
+  }
+}

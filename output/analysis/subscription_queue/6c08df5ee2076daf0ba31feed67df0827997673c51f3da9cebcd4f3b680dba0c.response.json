@@ -1,0 +1,107 @@
+{
+  "request_hash": "6c08df5ee2076daf0ba31feed67df0827997673c51f3da9cebcd4f3b680dba0c",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Globally agreed, inclusive AI rules",
+        "definition": "Calls for binding or globally agreed rules to regulate AI, shaped by all states rather than voluntary corporate practice.",
+        "inclusion": "Passages urging international regulation instruments or globally agreed AI rules.",
+        "exclusion": "Passages describing AI benefits or harms without a call for rules.",
+        "boundary_cases": "References to specific UN instruments or panels should also be coded AI_UN_ROLE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_BRB:6",
+            "quote": "We need globally agreed rules that protect human dignity, preserve meaningful human oversight, and ensure that the benefits of AI are shared widely and equitably."
+          },
+          {
+            "passage_id": "verbatim_en_2025_BRB:6",
+            "quote": "The two instruments mentioned on Tuesday morning by our Secretary General for regulating AI must now be our priority"
+          }
+        ]
+      },
+      {
+        "code": "AI_UN_ROLE",
+        "label": "UN scientific panel and SG instruments",
+        "definition": "Support for UN-specific AI processes, such as the Independent International Scientific Panel on AI or instruments proposed by the Secretary-General.",
+        "inclusion": "Passages naming UN AI bodies, hosting their meetings, or endorsing SG-proposed AI instruments or Security Council discussion of AI.",
+        "exclusion": "General calls for global rules without reference to UN bodies.",
+        "boundary_cases": "Mention of a Security Council meeting on AI counts here.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_BRB:6",
+            "quote": "Barbados is so honoured to host the second in-person meeting of the independent international scientific panel on artificial intelligence"
+          }
+        ]
+      },
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "AI's extraordinary potential and harms",
+        "definition": "AI framed as having extraordinary benefits for health, disasters, agriculture and education while also reproducing discrimination, surveillance and falsehoods.",
+        "inclusion": "Passages that explicitly pair AI promise with AI harms.",
+        "exclusion": "Passages about only governance or only harms.",
+        "boundary_cases": "'Welcome its promise' while warning about existential peril counts here and in ethics.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_BRB:6",
+            "quote": "these same extraordinary systems can just as quickly reproduce discrimination, widen surveillance, and spread falsehoods faster than institutions can respond"
+          }
+        ]
+      },
+      {
+        "code": "AI_SOVEREIGNTY_CONCENTRATION",
+        "label": "AI reproducing hierarchies of power",
+        "definition": "Concern that AI governance and benefits are controlled by a few advanced states or corporations, reproducing hierarchies of access and power.",
+        "inclusion": "Passages objecting to AI governance left to corporations or a few technologically advanced states, or to AI entrenching power hierarchies.",
+        "exclusion": "General inequality language unrelated to control of AI.",
+        "boundary_cases": "Warnings about deepening inequality from AI may overlap with digital divide; code here when power/control is emphasized.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_BRB:6",
+            "quote": "governance cannot be left to voluntary corporate practices or to a small number of technologically advanced states"
+          }
+        ]
+      },
+      {
+        "code": "AI_HUMAN_RIGHTS_ETHICS",
+        "label": "Humanizing framework for AI development",
+        "definition": "AI development must be anchored in a human-centred, humanizing framework that protects human dignity and existence.",
+        "inclusion": "Passages calling for human-centred, dignity-protecting or human-oversight frameworks for AI.",
+        "exclusion": "Passages only about international procedures without values content.",
+        "boundary_cases": "The phrase 'does not imperil our existence' borders on existential safety; code here when framed as a humanizing values framework.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_BRB:2",
+            "quote": "we must anchor its development in a universal humanizing framework that does not imperil our existence as human beings"
+          }
+        ]
+      },
+      {
+        "code": "AI_HISTORICAL_CENSORSHIP",
+        "label": "Commercial AI censoring history",
+        "definition": "Complaints that commercial AI platforms censor or distort historical facts, such as the history of slavery in the Caribbean.",
+        "inclusion": "Passages reporting AI platforms denying access to historical details or distorting facts about a region's history.",
+        "exclusion": "General disinformation or election-manipulation concerns.",
+        "boundary_cases": "Adjacent passages referencing slave codes without AI count only as context for this theme.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_BRB:6",
+            "quote": "examples of censorship that seek to deny access to the details of our history in this hemisphere"
+          },
+          {
+            "passage_id": "verbatim_en_2025_BRB:7",
+            "quote": "In terms of the Barbados slave code, in terms of the South Carolina slave code."
+          }
+        ]
+      }
+    ],
+    "rationale": "All Barbados passages; the 2026 speech gives a substantive dual framing with calls for inclusive global rules and UN scientific panel support, while the 2025 speech prioritizes SG regulatory instruments and complains of commercial AI censoring Caribbean slavery history (passage 7 is context without AI)."
+  }
+}

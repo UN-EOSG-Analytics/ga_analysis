@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-09-29T15:08:47.562760+00:00",
+  "checked_at_utc": "2026-09-29T18:42:11.591310+00:00",
   "workflow_implemented": true,
   "dependencies": {
     "openai": "2.36.0",
@@ -24,9 +24,7 @@
   "ready_after_final_day": true,
   "readiness_scope": "Offline implementation/dependency checks; source ingestion and actual subscription execution remain required",
   "blockers": [],
-  "partial_years": [
-    2026
-  ],
+  "partial_years": [],
   "coverage": {
     "2017": {
       "obtained_speeches": 193,
@@ -126,25 +124,26 @@
       }
     },
     "2026": {
-      "obtained_speeches": 171,
+      "obtained_speeches": 191,
       "days_received": [
         1,
         2,
         3,
         4,
-        5
+        5,
+        6
       ],
-      "partial": true,
+      "partial": false,
       "participation_roster": "not_independently_reconciled",
-      "collection_status": "partial",
+      "collection_status": "available_session_records",
       "source_types": {
-        "automatic_transcript": 171
+        "automatic_transcript": 191
       }
     }
   },
   "day6_files_awaiting_preparation": [],
-  "speeches": 1888,
-  "passages": 49912,
+  "speeches": 1908,
+  "passages": 50055,
   "stages": [
     "review",
     "discover",
@@ -152,7 +151,7 @@
     "aggregate",
     "report"
   ],
-  "corpus_sha256": "e78fc96b4666cdd5125d640ec814a736301f530d89bba91491695734f60c2eb0",
+  "corpus_sha256": "5e5fcd5658bda710154ecfde9544a4a3e3b78ca4541079ff40910f8ab2d1345b",
   "review_all_speeches": false,
   "review_scope": {
     "scope": "screened_speeches",
@@ -166,12 +165,12 @@
   "cost_estimate": {
     "stages": {
       "review": {
-        "requests_lower": 768,
-        "requests_upper": 768,
-        "input_characters_lower": 11711464,
-        "input_characters_upper": 11711464,
-        "input_tokens_lower": 3026170,
-        "input_tokens_upper": 3026170,
+        "requests_lower": 786,
+        "requests_upper": 786,
+        "input_characters_lower": 12009577,
+        "input_characters_upper": 12009577,
+        "input_tokens_lower": 3103002,
+        "input_tokens_upper": 3103002,
         "scenarios": {
           "900": {
             "lower_usd": 0.0,
@@ -191,37 +190,37 @@
         "direct_api_requests_upper": 0
       },
       "embeddings": {
-        "requests_lower": 21,
-        "requests_upper": 21,
-        "input_characters_lower": 1504205,
-        "input_characters_upper": 1504205,
-        "input_tokens_lower": 376051,
-        "input_tokens_upper": 376051,
+        "requests_lower": 22,
+        "requests_upper": 22,
+        "input_characters_lower": 1567807,
+        "input_characters_upper": 1567807,
+        "input_tokens_lower": 391952,
+        "input_tokens_upper": 391952,
         "scenarios": {
           "900": {
-            "lower_usd": 0.048887,
-            "upper_usd": 0.048887
+            "lower_usd": 0.050954,
+            "upper_usd": 0.050954
           },
           "2000": {
-            "lower_usd": 0.048887,
-            "upper_usd": 0.048887
+            "lower_usd": 0.050954,
+            "upper_usd": 0.050954
           },
           "3000": {
-            "lower_usd": 0.048887,
-            "upper_usd": 0.048887
+            "lower_usd": 0.050954,
+            "upper_usd": 0.050954
           }
         },
         "billing": "direct_api",
-        "direct_api_requests_lower": 21,
-        "direct_api_requests_upper": 21
+        "direct_api_requests_lower": 22,
+        "direct_api_requests_upper": 22
       },
       "discovery": {
         "requests_lower": 16,
-        "requests_upper": 28,
-        "input_characters_lower": 388117,
-        "input_characters_upper": 1826046,
-        "input_tokens_lower": 99077,
-        "input_tokens_upper": 460096,
+        "requests_upper": 29,
+        "input_characters_lower": 394591,
+        "input_characters_upper": 1913492,
+        "input_tokens_lower": 100696,
+        "input_tokens_upper": 482085,
         "scenarios": {
           "900": {
             "lower_usd": 0.0,
@@ -243,9 +242,9 @@
       "taxonomy": {
         "requests_lower": 2,
         "requests_upper": 4,
-        "input_characters_lower": 93272,
+        "input_characters_lower": 94486,
         "input_characters_upper": 494000,
-        "input_tokens_lower": 23574,
+        "input_tokens_lower": 23877,
         "input_tokens_upper": 124012,
         "scenarios": {
           "900": {
@@ -266,12 +265,12 @@
         "direct_api_requests_upper": 0
       },
       "classification": {
-        "requests_lower": 242,
-        "requests_upper": 242,
-        "input_characters_lower": 7291914,
-        "input_characters_upper": 7291914,
-        "input_tokens_lower": 1853954,
-        "input_tokens_upper": 1853954,
+        "requests_lower": 252,
+        "requests_upper": 252,
+        "input_characters_lower": 7592356,
+        "input_characters_upper": 7592356,
+        "input_tokens_lower": 1930345,
+        "input_tokens_upper": 1930345,
         "scenarios": {
           "900": {
             "lower_usd": 0.0,
@@ -343,34 +342,34 @@
     },
     "total_scenarios": {
       "900": {
-        "lower_usd": 0.0489,
-        "upper_usd": 0.0489
+        "lower_usd": 0.051,
+        "upper_usd": 0.051
       },
       "2000": {
-        "lower_usd": 0.0489,
-        "upper_usd": 0.0489
+        "lower_usd": 0.051,
+        "upper_usd": 0.051
       },
       "3000": {
-        "lower_usd": 0.0489,
-        "upper_usd": 0.0489
+        "lower_usd": 0.051,
+        "upper_usd": 0.051
       }
     },
-    "lower_usd": 0.0489,
-    "upper_usd": 0.0489,
+    "lower_usd": 0.051,
+    "upper_usd": 0.051,
     "measured": {
-      "speeches": 1888,
-      "passages": 49912,
-      "review_requests": 768,
-      "review_input_characters": 11711464,
+      "speeches": 1908,
+      "passages": 50055,
+      "review_requests": 786,
+      "review_input_characters": 12009577,
       "max_reviewed_id_list_characters": 1080,
-      "candidate_matches": 1349,
-      "candidate_unique_passages": 666,
+      "candidate_matches": 1397,
+      "candidate_unique_passages": 685,
       "candidate_status": "unique_screening_evidence_passage_ids",
-      "candidate_text_characters": 864023,
+      "candidate_text_characters": 905996,
       "reference_status": "local_documents_measured_no_network",
       "local_reference_requests": 12,
-      "review_selected_speeches": 541,
-      "review_unselected_speeches": 1347,
+      "review_selected_speeches": 557,
+      "review_unselected_speeches": 1351,
       "review_scope": "screened_speeches"
     },
     "assumptions": {

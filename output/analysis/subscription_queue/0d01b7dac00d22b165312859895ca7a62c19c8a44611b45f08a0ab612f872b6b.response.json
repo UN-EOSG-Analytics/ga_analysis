@@ -1,0 +1,43 @@
+{
+  "request_hash": "0d01b7dac00d22b165312859895ca7a62c19c8a44611b45f08a0ab612f872b6b",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_MILITARY_WEAPONS",
+        "label": "Legal rules against AI weaponization",
+        "definition": "Calls for legal rules to prevent the weaponization of AI as part of new governance structures for emerging domains.",
+        "inclusion": "Passages calling for legal rules or norms preventing AI weaponization.",
+        "exclusion": "Cyberspace or outer space norms without AI (not AI themes).",
+        "boundary_cases": "When AI weaponization is one item among cyber and space norms, code this plus AI_GLOBAL_GOVERNANCE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2022_PHL:30",
+            "quote": "forming legal rules that will prevent the weaponization of artificial intelligence"
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "New structures for emerging technologies",
+        "definition": "Need for new international structures and norms to govern rapid advances in emerging domains, including AI.",
+        "inclusion": "Passages calling for new global structures/norms covering AI among other domains.",
+        "exclusion": "National governance frameworks alone (use AI_NATIONAL_STRATEGY).",
+        "boundary_cases": "National preparation paired with global structures counts here for the global part.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2022_PHL:30",
+            "quote": "we need new structures to govern rapid advances in other areas"
+          }
+        ]
+      }
+    ],
+    "rationale": "The single Philippine passage places AI among emerging domains needing new international governance structures, specifically legal rules against AI weaponization."
+  }
+}

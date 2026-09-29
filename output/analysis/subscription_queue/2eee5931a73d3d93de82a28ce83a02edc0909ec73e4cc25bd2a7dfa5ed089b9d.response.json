@@ -1,0 +1,43 @@
+{
+  "request_hash": "2eee5931a73d3d93de82a28ce83a02edc0909ec73e4cc25bd2a7dfa5ed089b9d",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_TECH_LIST_MENTION",
+        "label": "AI named among green-startup innovations",
+        "definition": "AI is mentioned in passing as one of several technologies used by green startups, within a narrative about the green industrial revolution, without further AI discussion.",
+        "inclusion": "Include passages where AI appears only as an illustrative item in a list of innovations or breakthroughs.",
+        "exclusion": "Exclude passages that develop an argument specifically about AI's climate or economic role.",
+        "boundary_cases": "If the passage explained how AI specifically improves climate outcomes, code AI_DEVELOPMENT_SDGS instead.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2021_GBR:32",
+            "quote": "using artificial intelligence and robotics to enhance food production, capture carbon dioxide"
+          }
+        ]
+      },
+      {
+        "code": "AI_DEVELOPMENT_SDGS",
+        "label": "AI for food production and climate",
+        "definition": "AI presented as an enabling technology for climate solutions and food production within green growth.",
+        "inclusion": "Include mentions of AI applied to climate, agriculture, or green economic transformation.",
+        "exclusion": "Exclude green-growth passages without AI.",
+        "boundary_cases": "When the mention is a single list item, code both this and AI_TECH_LIST_MENTION.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2021_GBR:32",
+            "quote": "artificial intelligence and robotics to enhance food production"
+          }
+        ]
+      }
+    ],
+    "rationale": "The single UK 2021 passage is about green investment and jobs; AI appears only as a passing example of green-startup innovation in food production and carbon capture."
+  }
+}

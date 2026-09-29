@@ -1,0 +1,133 @@
+{
+  "request_hash": "93907bb4f90a5aa87921007669c33c1aa528343f03f7acfc666df7498e8774ff",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_UNIVERSAL_BASIC_SOCIETY",
+        "label": "AI universal basic society for all",
+        "definition": "Vision that everyone and every country should share in the basic benefits of AI, framed as an 'AI universal basic society' or 'AI for all' tied to rights and leaving no one behind.",
+        "inclusion": "Include passages proposing universal access to AI benefits as a social or rights-based goal (e.g. AI universal basic health, AI for all).",
+        "exclusion": "Exclude passages that only describe access gaps for developing countries without a universal-benefit vision; code those AI_DIGITAL_DIVIDE.",
+        "boundary_cases": "Global AI hub platforms offered to share this vision fit here and may also fit AI_CAPACITY_BUILDING.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_KOR:2",
+            "quote": "It is the AI universal basic society where everyone can benefit from technological progress."
+          },
+          {
+            "passage_id": "verbatim_en_2026_KOR:3",
+            "quote": "a global AI universal basic society where no country or individual is left out from access to the basic benefits of AI development"
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Leading global AI norms and summits",
+        "definition": "Speaker's country positions itself as leading international AI norm-setting through summits, declarations, forums and proposed international organizations.",
+        "inclusion": "Include passages on hosting AI summits/forums, adopting declarations (e.g. Seoul Declaration) or proposing international rule-making bodies for AI or digital ethics.",
+        "exclusion": "Exclude purely domestic AI programmes without international norm-setting.",
+        "boundary_cases": "Proposals for a UN-based organization fit here and AI_UN_ROLE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_KOR:14",
+            "quote": "The Seoul Declaration for safe, innovative and inclusive AI, adopted at the AI Seoul Summit in May, marked a significant milestone in building the norms for civilian AI."
+          },
+          {
+            "passage_id": "verbatim_en_2023_KOR:11",
+            "quote": "Korean Government plans to host a global AI forum."
+          }
+        ]
+      },
+      {
+        "code": "AI_UN_ROLE",
+        "label": "Collaboration with UN AI bodies",
+        "definition": "Engagement with UN AI processes: SG high-level advisory body, Security Council open debate, proposed UN organization on digital ethics.",
+        "inclusion": "Include explicit references to UN AI bodies or using UN fora for AI.",
+        "exclusion": "Exclude non-UN summits (APEC, AI Seoul Summit) unless a UN link is made.",
+        "boundary_cases": "Presiding over a UNSC debate on AI counts here.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_KOR:11",
+            "quote": "collaborate closely with the high-level advisory body on AI being established by the United Nations"
+          },
+          {
+            "passage_id": "verbatim_en_2023_KOR:10",
+            "quote": "I have also proposed the establishment of an international organization under the United Nations to discuss and set forth rules regarding digital ethics."
+          }
+        ]
+      },
+      {
+        "code": "AI_MILITARY_WEAPONS",
+        "label": "Norms for military use of AI",
+        "definition": "References to responsible AI in the military domain and AI as a security capability.",
+        "inclusion": "Include passages on REAIM, military AI norms, or AI as critical to security capabilities.",
+        "exclusion": "Exclude civilian AI safety and cyber crime passages without military framing.",
+        "boundary_cases": "AI as critical to 'security capabilities' alongside cyber attacks may also be AI_CYBER_SECURITY.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_KOR:14",
+            "quote": "further laid the groundwork for norms for the military use of AI"
+          },
+          {
+            "passage_id": "verbatim_en_2025_KOR:5",
+            "quote": "In an era where artificial intelligence technology is critical to security capabilities and cyber attacks threaten national security"
+          }
+        ]
+      },
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "AI revolution as opportunity and crisis",
+        "definition": "AI explicitly framed as both opportunity and crisis, with outcomes (dystopia vs prosperity) depending on proactive response.",
+        "inclusion": "Include passages contrasting AI-driven prosperity with inequality, dystopia or rights abuses.",
+        "exclusion": "Exclude one-sided optimistic or pessimistic mentions.",
+        "boundary_cases": "Youth employment anxiety within such framing also fits AI_ECONOMY_LABOR.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_KOR:2",
+            "quote": "The artificial intelligence revolution is both a massive opportunity and a crisis for humanity."
+          },
+          {
+            "passage_id": "verbatim_en_2025_KOR:5",
+            "quote": "If we passively let ourselves be dragged along by the changes of the AI era, we will meet a dystopia of deepening polarization and inequality"
+          }
+        ]
+      },
+      {
+        "code": "AI_DISINFORMATION",
+        "label": "AI-driven fake news threatening democracy",
+        "definition": "Misuse of AI spreading fake news that endangers freedom and liberal democracy.",
+        "inclusion": "Include passages linking AI misuse to fake news or threats to democratic order.",
+        "exclusion": "Exclude generic rights risk statements without information-integrity content.",
+        "boundary_cases": "A digital bill of rights proposal may also be coded AI_HUMAN_RIGHTS_ETHICS.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_KOR:10",
+            "quote": "If we fail to curb the spread of fake news resulting from the misuse of AI and digital technologies, our freedom will be at risk"
+          }
+        ]
+      },
+      {
+        "code": "AI_HUMAN_RIGHTS_ETHICS",
+        "label": "AI risks to human rights and dignity",
+        "definition": "AI framed in terms of human rights and dignity, both as a risk and as a means to realize rights.",
+        "inclusion": "Include passages on AI risks to human rights/dignity, digital ethics rules, or AI to realize economic and social rights.",
+        "exclusion": "Exclude passages about access alone without rights language.",
+        "boundary_cases": "AI 'accelerating realization of economic, social and cultural rights' counts here and in AI_UNIVERSAL_BASIC_SOCIETY.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_KOR:14",
+            "quote": "also poses potential risks to human rights and dignity"
+          }
+        ]
+      }
+    ],
+    "rationale": "All passages are from Korea, which presents itself as a leader in AI norm-setting (summits, Seoul Declaration, REAIM, UN collaboration) and, from 2026, promotes an 'AI universal basic society'. Risk framings vary: fake news, human rights, military/security use and opportunity-crisis duality."
+  }
+}

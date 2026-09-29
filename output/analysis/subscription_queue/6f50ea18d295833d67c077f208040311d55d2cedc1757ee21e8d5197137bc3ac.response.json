@@ -1,0 +1,135 @@
+{
+  "request_hash": "6f50ea18d295833d67c077f208040311d55d2cedc1757ee21e8d5197137bc3ac",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_YOUTH_EDUCATION",
+        "label": "Youth skills and aspirations in AI",
+        "definition": "AI discussed in relation to young people: investing in youth AI skills, youth enthusiasm for generative AI, and ensuring youth are not left behind.",
+        "inclusion": "Include passages where young people, students, or youth skills are the explicit subject of the AI mention.",
+        "exclusion": "Exclude youth passages that do not mention AI or related technologies.",
+        "boundary_cases": "If youth exclusion is framed as a global digital divide, also code AI_DIGITAL_DIVIDE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_BGD:6",
+            "quote": "We are investing in their skills in information technology, artificial intelligence, renewable energy, and green innovation."
+          },
+          {
+            "passage_id": "verbatim_en_2024_BGD:29",
+            "quote": "Our young people are excited about the prospect of fast-unfolding generative AI."
+          }
+        ]
+      },
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "Unequal access and an AI divide",
+        "definition": "Concern that AI benefits are not equally accessible and that developing countries and their youth will be excluded, creating an AI divide.",
+        "inclusion": "Include statements that AI benefits must be shared fairly or warnings of a digital/AI divide between countries or generations.",
+        "exclusion": "Exclude calls for technology transfer mechanisms without an inequality framing (code AI_CAPACITY_BUILDING).",
+        "boundary_cases": "A passage warning of an excluded generation is coded here even if framed around youth.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_BGD:6",
+            "quote": "We do not want today's digital divide to become tomorrow's artificial intelligence divide."
+          },
+          {
+            "passage_id": "verbatim_en_2025_BGD:7",
+            "quote": "one of our deepest concerns is the widening digital divide facing youth in developing world"
+          }
+        ]
+      },
+      {
+        "code": "AI_CAPACITY_BUILDING",
+        "label": "Technology transfer and affordable access",
+        "definition": "Calls for technology transfer, skills development and affordable access to AI and modern technologies for developing countries.",
+        "inclusion": "Include explicit requests for technology transfer, skills, or affordable access tied to AI or advanced technology.",
+        "exclusion": "Exclude generic LDC graduation support lists not connected to AI.",
+        "boundary_cases": "Calls for international cooperation creating 'space for developing countries' in AI applications can be coded here.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_BGD:6",
+            "quote": "it is essential to ensure technology transfer, skills development, and affordable access to modern technologies for developing countries"
+          }
+        ]
+      },
+      {
+        "code": "AI_ECONOMY_LABOR",
+        "label": "Protecting human labour from AI",
+        "definition": "Concern that AI development could diminish demand for human labour, alongside hopes AI can create jobs and livelihoods.",
+        "inclusion": "Include statements on AI's effects on jobs, labour demand, or livelihoods.",
+        "exclusion": "Exclude migration and labour passages without AI.",
+        "boundary_cases": "Mentions of youth as 'job creators' through AI skills lean to AI_YOUTH_EDUCATION unless labour impact is discussed.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_BGD:29",
+            "quote": "the world needs to ensure that the development of artificial intelligence does not diminish the scope of or demand for human labour"
+          }
+        ]
+      },
+      {
+        "code": "AI_SAFETY_EXISTENTIAL",
+        "label": "Autonomous intelligence as existential threat",
+        "definition": "Warnings that self-propagating autonomous AI developed irresponsibly could threaten human existence.",
+        "inclusion": "Include references to AI operating without human intervention posing existential or catastrophic risk.",
+        "exclusion": "Exclude military autonomous weapons discussions (code AI_MILITARY_WEAPONS).",
+        "boundary_cases": "General calls for 'caution' about AI impacts without an existential claim are borderline and should be coded only if loss of human control is mentioned.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_BGD:30",
+            "quote": "unless autonomous intelligence develops in a responsible manner, it could pose existential threats to human existence"
+          }
+        ]
+      },
+      {
+        "code": "AI_DISINFORMATION",
+        "label": "AI deepfakes and disinformation",
+        "definition": "AI-driven deepfakes and fake news amplifying disinformation and hate speech that erode social trust.",
+        "inclusion": "Include passages linking AI to deepfakes, fake news, or false narratives.",
+        "exclusion": "Exclude disinformation passages with no AI reference.",
+        "boundary_cases": "A continuation passage about 'distortions' that does not itself mention AI should not be coded.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_BGD:11",
+            "quote": "compounded by the deliberate use of fake news and artificial intelligence-driven deepfakes, which make the situation even more dangerous"
+          }
+        ]
+      },
+      {
+        "code": "AI_UN_ROLE",
+        "label": "UN policy framework for AI benefits",
+        "definition": "Calls for the United Nations to adopt a policy framework so AI benefits are harnessed across countries.",
+        "inclusion": "Include explicit calls on the UN to create AI policy or frameworks.",
+        "exclusion": "Exclude generic partnership with the UN on youth platforms not about AI.",
+        "boundary_cases": "Calls for fair, unbiased AI without naming the UN go to AI_HUMAN_RIGHTS_ETHICS or AI_DIGITAL_DIVIDE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_BGD:6",
+            "quote": "It is now time for the United Nations to adopt an effective policy framework so that the benefits of the development and rapid expansion of artificial intelligence and social media can be harnessed positively"
+          }
+        ]
+      },
+      {
+        "code": "AI_HUMAN_RIGHTS_ETHICS",
+        "label": "Unbiased and fair AI",
+        "definition": "Demands that AI and related technologies not be biased.",
+        "inclusion": "Include explicit statements that AI systems must not be biased or must be fair.",
+        "exclusion": "Exclude fairness framed purely as access between countries (AI_DIGITAL_DIVIDE).",
+        "boundary_cases": "A single sentence combining bias and fair sharing can be coded both here and AI_DIGITAL_DIVIDE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_BGD:7",
+            "quote": "these must not be biased, and their benefits must be shared fairly with all"
+          }
+        ]
+      }
+    ],
+    "rationale": "All passages are from Bangladesh speeches; the dominant framing is youth and developing-country inclusion in AI benefits, with minority strands on labour displacement, existential risk from autonomous intelligence, and AI deepfakes. One sample (2025_BGD:12) contains no AI content and was not used."
+  }
+}

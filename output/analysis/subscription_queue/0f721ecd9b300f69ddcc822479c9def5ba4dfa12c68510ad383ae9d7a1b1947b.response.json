@@ -1,0 +1,119 @@
+{
+  "request_hash": "0f721ecd9b300f69ddcc822479c9def5ba4dfa12c68510ad383ae9d7a1b1947b",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_DISINFORMATION",
+        "label": "AI-driven manipulation and election interference",
+        "definition": "AI and algorithms used to fabricate, personalize and amplify false narratives that manipulate citizens and elections.",
+        "inclusion": "Passages describing AI-generated or algorithmically amplified lies, micro-targeted propaganda, or election interference.",
+        "exclusion": "General complaints about state fear-mongering or media without reference to AI or algorithmic amplification.",
+        "boundary_cases": "Discussion of 'reach' and platform amplification counts when automation or machines are named as the amplifier.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_ALB:3",
+            "quote": "The algorithm did not invent the objective. A human actor did. The algorithm did not develop hatred. It discovered how to activate ours."
+          },
+          {
+            "passage_id": "verbatim_en_2026_ALB:4",
+            "quote": "Reach can be purchased. automated, manipulated, and secretly assigned by platforms, corporations, criminal networks, and foreign states."
+          }
+        ]
+      },
+      {
+        "code": "AI_HUMAN_ACCOUNTABILITY",
+        "label": "Human agency and accountability over AI",
+        "definition": "Insistence that humans retain judgment, responsibility and legal accountability for decisions assisted by AI, and warnings against cognitive outsourcing to machines.",
+        "inclusion": "Passages arguing that AI must strengthen rather than replace human judgment, or that a named human must answer for AI-assisted decisions.",
+        "exclusion": "Generic human-rights or ethics language about AI without the accountability/agency focus.",
+        "boundary_cases": "Rhetoric that 'the machine will obey' counts when it frames humans as responsible for AI outcomes.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_ALB:2",
+            "quote": "No machine possesses democratic legitimacy. No algorithm inherits constitutional responsibility."
+          },
+          {
+            "passage_id": "verbatim_en_2026_ALB:7",
+            "quote": "We should not fear that machines will become too human. We should fear that human beings will become invisible behind machines."
+          }
+        ]
+      },
+      {
+        "code": "AI_SOVEREIGNTY_CONCENTRATION",
+        "label": "Sovereign AI capability for small nations",
+        "definition": "Concern that nations, especially small ones, depend on foreign or commercial AI systems they cannot inspect, and calls for sovereign AI capacity.",
+        "inclusion": "Passages calling for national or allied AI capability so countries are not dependent on distant commercial operators.",
+        "exclusion": "Passages only describing domestic AI projects without the dependence/sovereignty argument.",
+        "boundary_cases": "Calls for an international compact on sovereign AI also fit governance; code both if dependence is explicit.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_ALB:5",
+            "quote": "Sovereign artificial intelligence does not mean isolation. It means that no nation should be helpless before systems it cannot understand"
+          },
+          {
+            "passage_id": "verbatim_en_2026_ALB:7",
+            "quote": "Let us ensure that no small nation is forced to rent its understanding of reality from beyond its borders."
+          }
+        ]
+      },
+      {
+        "code": "AI_ANTI_REGULATION_ACCELERATION",
+        "label": "Rejecting AI pauses and preemptive regulation",
+        "definition": "Arguments against moratoria or preemptive AI regulation, favouring acceleration, light-touch legal frameworks and Western/allied leadership.",
+        "inclusion": "Passages opposing slowing or regulating AI in advance, or promoting deregulation and incentives to attract AI development.",
+        "exclusion": "Passages calling for binding international rules or safety regulation of AI.",
+        "boundary_cases": "Speakers who reject a pause but still demand accountability rules (e.g. accelerate with direction) fit here and may also fit governance themes.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_ARG:8",
+            "quote": "a commitment not to regulate preemptively, limited liability for companies operating with AI agents and tax incentives"
+          },
+          {
+            "passage_id": "verbatim_en_2026_ALB:5",
+            "quote": "We cannot regulate ourselves into helplessness."
+          }
+        ]
+      },
+      {
+        "code": "AI_NATIONAL_STRATEGY",
+        "label": "National AI initiatives and ambitions",
+        "definition": "Speaker's own country's AI deployments, tools or ambitions to become an AI hub.",
+        "inclusion": "Passages naming national AI projects (e.g. AI minister, AI detection tools) or national plans to attract AI investment.",
+        "exclusion": "Abstract discussion of AI without reference to the speaker's own country's actions.",
+        "boundary_cases": "A national tool described mainly as a counter-disinformation measure can be coded with both this and disinformation.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_ALB:2",
+            "quote": "Albania became the first country to bring an artificial intelligence instrument into the architecture of government through Diella"
+          },
+          {
+            "passage_id": "verbatim_en_2026_ARG:8",
+            "quote": "we want to become the most competitive place in the world in which to develop it"
+          }
+        ]
+      },
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "AI as utopian or dystopian future",
+        "definition": "Framing AI as an uncertain technology that could bring great benefits or great harms.",
+        "inclusion": "Passages contrasting beneficial and catastrophic visions of AI or emerging technologies.",
+        "exclusion": "Passages that discuss only harms or only benefits.",
+        "boundary_cases": "Rhetorical questions posing AI as helper vs. terminator count here even without policy prescriptions.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2019_GBR:10",
+            "quote": "Helpful robots washing and caring for an ageing population? Or pink-eyed terminators sent back from the future to cull the human race?"
+          }
+        ]
+      }
+    ],
+    "rationale": "Mostly one Albanian 2026 speech that treats AI substantively as a tool of disinformation and a threat to human judgment and sovereignty, while rejecting moratoria; Argentina adds a deregulatory, pro-innovation stance and the UK 2019 passage frames AI as utopia versus dystopia."
+  }
+}

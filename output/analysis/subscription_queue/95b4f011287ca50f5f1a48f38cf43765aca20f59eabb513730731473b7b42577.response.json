@@ -1,0 +1,97 @@
+{
+  "request_hash": "95b4f011287ca50f5f1a48f38cf43765aca20f59eabb513730731473b7b42577",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_SOVEREIGNTY_CONCENTRATION",
+        "label": "Power over AI concentrated in few hands",
+        "definition": "Concern that a few states or private players concentrate power over AI and computing, deciding the future for others and threatening peoples' sovereignty.",
+        "inclusion": "Include passages objecting to a few actors, companies, or powers monopolising AI or computational capacity or deciding AI's direction for everyone.",
+        "exclusion": "Exclude general anti-imperialism statements without reference to AI or computation.",
+        "boundary_cases": "'Monopolizing the ability to make calculations' is an oblique compute reference and counts when in a technology context.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_FRA:33",
+            "quote": "We cannot let a few people — let alone private players, who are currently at the forefront of such innovations — think up their future for us and our peoples."
+          },
+          {
+            "passage_id": "verbatim_en_2026_FRA:1",
+            "quote": "people who believe that they can decide the fate of the planet, whether that be as regards the climate or AI"
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Common ethical democratic AI framework",
+        "definition": "Calls for coordinated international frameworks for AI, including a united ethical and democratic framework and summit diplomacy to build it.",
+        "inclusion": "Include calls for Member States to coordinate on AI and build common AI frameworks, including hosting AI summits for that purpose.",
+        "exclusion": "Exclude security-only cooperation on sensitive AI components (AI_SECURITY_ARMS_CONTROL).",
+        "boundary_cases": "Praise for the Global Digital Compact alongside a framework call also qualifies for AI_UN_ROLE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_FRA:33",
+            "quote": "we need all of that to develop within a united ethical and democratic framework, designed by the peoples of the planet"
+          },
+          {
+            "passage_id": "verbatim_en_2024_FRA:33",
+            "quote": "France will be hosting the next Artificial Intelligence Action Summit in February 2025"
+          }
+        ]
+      },
+      {
+        "code": "AI_SECURITY_ARMS_CONTROL",
+        "label": "AI in arms-control and security frameworks",
+        "definition": "AI treated as a new strategic risk alongside nuclear, chemical, cyber, space and quantum threats, requiring arms-control-style frameworks and security cooperation to protect sensitive AI components.",
+        "inclusion": "Include passages placing AI among proliferation or strategic security risks needing verification or cooperation frameworks, or protecting AI components affecting national security.",
+        "exclusion": "Exclude explicit autonomous weapons discussions (AI_MILITARY_WEAPONS) and civil governance calls.",
+        "boundary_cases": "If the passage explicitly discusses AI-enabled weapons or targeting, code AI_MILITARY_WEAPONS instead.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_FRA:9",
+            "quote": "I'm not forgetting bacteriological, chemical threats or the new risks that posed by AI."
+          },
+          {
+            "passage_id": "verbatim_en_2026_FRA:13",
+            "quote": "We want to set a cooperation agenda on AI so as to protect the most sensitive components thereof, which affect our national security."
+          }
+        ]
+      },
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "AI innovation accessible to all",
+        "definition": "AI innovation must be accessible to all countries and not fuel new divides and inequalities.",
+        "inclusion": "Include statements that AI access must be universal or that AI must not create new divides.",
+        "exclusion": "Exclude concentration-of-power framings focused on who controls AI (AI_SOVEREIGNTY_CONCENTRATION).",
+        "boundary_cases": "Statements on North-South unity on technology without AI access are borderline and not coded.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_FRA:33",
+            "quote": "ensure that innovation in artificial intelligence is accessible to all the countries and peoples of the planet and that it does not fuel new divides and inequalities"
+          }
+        ]
+      },
+      {
+        "code": "AI_UN_ROLE",
+        "label": "Endorsing Secretary-General's digital work",
+        "definition": "Praise for the UN Secretary-General's AI-related work, including the Global Digital Compact.",
+        "inclusion": "Include endorsements of specific UN AI or digital processes.",
+        "exclusion": "Exclude general support for the UN without AI linkage.",
+        "boundary_cases": "Calls for UN multilateralism on 'technology' generally are coded only if AI is the subject nearby.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_FRA:33",
+            "quote": "I am delighted with the work that has been carried out and coordinated by the Secretary-General, including on the Global Digital Compact"
+          }
+        ]
+      }
+    ],
+    "rationale": "France's passages frame AI as a question of power and multilateral order: concentrated control by a few, the need for common ethical frameworks and summitry, and AI as a strategic security risk alongside WMD and cyber. Accessibility for all countries is a secondary strand."
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "request_hash": "ba0b4156e6cf0c77764e208b48d9453428607f96aa864097c976d11b0a4f4347",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_b"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2017_GRC:1",
+      "verbatim_en_2017_GRC:2",
+      "verbatim_en_2017_GRC:3",
+      "verbatim_en_2017_GRC:4",
+      "verbatim_en_2017_GRC:5",
+      "verbatim_en_2017_GRC:6",
+      "verbatim_en_2017_GRC:7",
+      "verbatim_en_2017_GRC:8",
+      "verbatim_en_2017_GRC:9",
+      "verbatim_en_2017_GRC:10",
+      "verbatim_en_2017_GRC:11",
+      "verbatim_en_2017_GRC:12",
+      "verbatim_en_2017_GRC:13",
+      "verbatim_en_2017_GRC:14",
+      "verbatim_en_2017_GRC:15",
+      "verbatim_en_2017_GRC:16",
+      "verbatim_en_2017_GRC:17",
+      "verbatim_en_2017_GRC:18",
+      "verbatim_en_2017_GRC:19",
+      "verbatim_en_2017_GRC:20",
+      "verbatim_en_2017_GRC:21",
+      "verbatim_en_2017_GRC:22",
+      "verbatim_en_2017_GRC:23",
+      "verbatim_en_2017_GRC:24",
+      "verbatim_en_2017_GRC:25"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2017_GRC:3",
+        "status": "Uncertain",
+        "mention_type": "uncertain",
+        "quote": "We are going through a second era of machines — an era in which machines are no longer an extension of physical strength but provide spiritual wealth and knowledge.",
+        "rationale": "Describes machines extending beyond physical work into knowledge, suggesting cognitive automation, but does not establish whether this means AI or broader computing and access to information."
+      },
+      {
+        "passage_id": "verbatim_en_2017_GRC:4",
+        "status": "Uncertain",
+        "mention_type": "uncertain",
+        "quote": "today they are faster and smaller, they have an immense impact on our daily lives, affecting the way we work, produce, communicate and interact.",
+        "rationale": "Continues the preceding description of knowledge-providing machines and a fourth Industrial Revolution; the impacts could include AI, but the passage does not distinguish it from broader technological change."
+      }
+    ]
+  }
+}

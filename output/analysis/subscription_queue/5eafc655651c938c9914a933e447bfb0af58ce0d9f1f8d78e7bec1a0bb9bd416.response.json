@@ -1,0 +1,89 @@
+{
+  "request_hash": "5eafc655651c938c9914a933e447bfb0af58ce0d9f1f8d78e7bec1a0bb9bd416",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_SOVEREIGNTY_CONCENTRATION",
+        "label": "Digital sovereignty: master, not consume AI",
+        "definition": "AI framed through technological sovereignty: countries must master and adapt AI rather than merely consume it, as part of national sovereignty.",
+        "inclusion": "Include passages asserting digital/technological sovereignty over AI or rejecting mere consumption of foreign AI.",
+        "exclusion": "Exclude general access-gap statements without a sovereignty or control framing.",
+        "boundary_cases": "National AI centres created explicitly to promote sovereignty also fit AI_NATIONAL_STRATEGY.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_MLI:7",
+            "quote": "We must not simply consume AI technology. We must master it, adapt it to our realities, and contribute to its development."
+          },
+          {
+            "passage_id": "verbatim_en_2026_MLI:7",
+            "quote": "digital and technological sovereignty has become an essential dimension of national sovereignty"
+          }
+        ]
+      },
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "Generative AI's opportunities and risks",
+        "definition": "AI acknowledged as offering enormous opportunities but also significant risks.",
+        "inclusion": "Include explicit framings of AI as both opportunity and risk.",
+        "exclusion": "Exclude one-sided framings.",
+        "boundary_cases": "Brief duality statements introducing sovereignty arguments still count.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_MLI:7",
+            "quote": "AI offers enormous opportunities, and we acknowledge that, but also significant risks."
+          }
+        ]
+      },
+      {
+        "code": "AI_CAPACITY_BUILDING",
+        "label": "Investing in AI skills and infrastructure",
+        "definition": "Need to invest in skills, research, innovation and infrastructure so youth can participate in AI transformation.",
+        "inclusion": "Include calls to invest in AI skills, research, or infrastructure.",
+        "exclusion": "Exclude generic education without AI.",
+        "boundary_cases": "If investment is framed as youth participation, also consider AI_YOUTH_EDUCATION.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_MLI:7",
+            "quote": "We must invest in skills, in research, in innovation, and infrastructure so that young people can participate fully in this transformation."
+          }
+        ]
+      },
+      {
+        "code": "AI_NATIONAL_STRATEGY",
+        "label": "National AI and robotics centre",
+        "definition": "The country cites establishing a national AI institution.",
+        "inclusion": "Include references to national AI centres, strategies or investments.",
+        "exclusion": "Exclude global calls.",
+        "boundary_cases": "Also code sovereignty when explicitly linked.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_MLI:7",
+            "quote": "has established Mali's Center for Artificial Intelligence Robotics to promote our country's digital sovereignty"
+          }
+        ]
+      },
+      {
+        "code": "AI_HUMAN_RIGHTS_ETHICS",
+        "label": "Legal and ethical AI frameworks",
+        "definition": "Call to define appropriate legal and ethical frameworks for AI.",
+        "inclusion": "Include calls for legal/ethical frameworks for AI where not explicitly international.",
+        "exclusion": "Exclude explicit international governance calls (AI_GLOBAL_GOVERNANCE).",
+        "boundary_cases": "Ambiguous-level frameworks are coded here and may also get AI_GLOBAL_GOVERNANCE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_MLI:7",
+            "quote": "This requires defining and creating appropriate legal and ethical frameworks."
+          }
+        ]
+      }
+    ],
+    "rationale": "Mali's single passage frames AI within strategic and digital sovereignty, acknowledging opportunities and risks and stressing mastery, skills investment, ethical frameworks and a national AI centre."
+  }
+}

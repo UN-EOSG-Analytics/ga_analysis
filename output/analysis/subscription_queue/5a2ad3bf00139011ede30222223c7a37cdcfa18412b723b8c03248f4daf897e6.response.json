@@ -1,0 +1,43 @@
+{
+  "request_hash": "5a2ad3bf00139011ede30222223c7a37cdcfa18412b723b8c03248f4daf897e6",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_SOVEREIGNTY_CONCENTRATION",
+        "label": "Regulating tech oligarchs controlling AI",
+        "definition": "Speaker attacks the concentration of power in 'tech oligarchs' controlling social networks and AI development and calls for strict regulation of them.",
+        "inclusion": "Include calls to regulate or curb powerful tech companies or individuals controlling AI.",
+        "exclusion": "Exclude general governance calls not targeting corporate or state concentration of power.",
+        "boundary_cases": "Calls for strict regulation of AI firms also warrant AI_GLOBAL_GOVERNANCE if framed internationally.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_ESP:4",
+            "quote": "We must impose strict regulations on the tech oligarchs who control the functioning of social networks and the development of artificial intelligence."
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_SOUTH_VOICE",
+        "label": "Developing countries participating in AI governance",
+        "definition": "Developing countries must actively participate in the governance and development of AI and emerging technologies.",
+        "inclusion": "Include demands that developing countries take part in AI governance or development.",
+        "exclusion": "Exclude access-only complaints without participation demands.",
+        "boundary_cases": "A brief one-line demand in a list of reform priorities still counts here.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_TLS:7",
+            "quote": "Developing countries must actively participate in their governance and development."
+          }
+        ]
+      }
+    ],
+    "rationale": "Both 2026 passages mention AI briefly within broader UN-reform speeches: Spain targets tech oligarchs controlling AI for strict regulation, while Timor-Leste demands developing-country participation in AI governance."
+  }
+}

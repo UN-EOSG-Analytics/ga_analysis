@@ -1,0 +1,43 @@
+{
+  "request_hash": "a58322786e51e345b5c05e0fa850555c9a876afcf5d4f152d3d771d7557f6ed5",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "Fears and uncertainties but new opportunities",
+        "definition": "The AI revolution acknowledged as bringing fears and uncertainties but framed primarily as an opportunity for a better world if designed to serve everyone.",
+        "inclusion": "Include passages pairing AI-related fears with opportunities, especially with an optimistic, conditional emphasis.",
+        "exclusion": "Exclude passages that specify concrete risks or governance mechanisms.",
+        "boundary_cases": "The 'designed to serve everyone' condition may also indicate AI_DIGITAL_DIVIDE if inequality is elaborated; here it is not.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2018_BEL:17",
+            "quote": "The digital economy and the artificial-intelligence revolution bring with them fears and uncertainties, but above all they offer new opportunities for a better world"
+          }
+        ]
+      },
+      {
+        "code": "AI_ECONOMY_LABOR",
+        "label": "AI within prosperity and innovation agenda",
+        "definition": "AI situated in a pro-market narrative of prosperity, entrepreneurship, innovation and trade.",
+        "inclusion": "Include passages linking AI to economic prosperity, entrepreneurship and the digital economy.",
+        "exclusion": "Exclude labour-disruption warnings without an economic-growth frame.",
+        "boundary_cases": "Brief digital economy mentions count only when AI is explicitly named.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2018_BEL:17",
+            "quote": "We want a more prosperous world, with more shared development and the freedom to be entrepreneurial and to innovate, create and trade."
+          }
+        ]
+      }
+    ],
+    "rationale": "Single 2018 Belgian passage placing the AI revolution in an optimistic prosperity and innovation narrative while briefly acknowledging fears and uncertainties."
+  }
+}

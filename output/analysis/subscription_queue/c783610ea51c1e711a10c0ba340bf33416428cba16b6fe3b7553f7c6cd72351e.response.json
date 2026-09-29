@@ -1,0 +1,75 @@
+{
+  "request_hash": "c783610ea51c1e711a10c0ba340bf33416428cba16b6fe3b7553f7c6cd72351e",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_DEVELOPMENT_SDGS",
+        "label": "AI as accelerator of human development",
+        "definition": "AI presented as a potential accelerator of development through knowledge access, health, agriculture and efficient administration.",
+        "inclusion": "Include passages describing AI's development benefits in sectors like health, agriculture, education or public administration.",
+        "exclusion": "Exclude passages that only discuss dependence or divides.",
+        "boundary_cases": "When benefits are immediately qualified by risks, also code AI_OPPORTUNITY_RISK_DUALITY.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_BEN:5",
+            "quote": "AI can broaden access to knowledge, improve health systems, support agricultural workers, and make state administrations more efficient"
+          }
+        ]
+      },
+      {
+        "code": "AI_SOVEREIGNTY_CONCENTRATION",
+        "label": "Avoiding African technological dependence",
+        "definition": "Concern that Africa could become dependent on AI technologies, data infrastructure and computing controlled outside the continent, and should instead become a producer.",
+        "inclusion": "Include passages on dependence on foreign-controlled AI, compute or data infrastructure, or aspirations to be AI producers rather than consumers.",
+        "exclusion": "Exclude general access gaps without a dependence or control framing (AI_DIGITAL_DIVIDE).",
+        "boundary_cases": "Statements that AI may exacerbate divides without mentioning control fit AI_DIGITAL_DIVIDE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_BEN:5",
+            "quote": "If Africa was to solely consume technologies designed and controlled outside the continent, a new form of dependence could emerge"
+          },
+          {
+            "passage_id": "verbatim_en_2026_BEN:5",
+            "quote": "Africa should not just be a market for frontier technologies. It should also be a platform for design, innovation, and production."
+          }
+        ]
+      },
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "AI exacerbating existing divides",
+        "definition": "AI may amplify existing inequalities between regions.",
+        "inclusion": "Include statements that AI may widen or amplify divides.",
+        "exclusion": "Exclude statements on dependence/control only.",
+        "boundary_cases": "Aspirations that AI not become a 'driver of divisions' also fit.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_BEN:5",
+            "quote": "AI can also amplify or exacerbate existing divides"
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Inclusive development-oriented AI governance",
+        "definition": "Support for international AI governance that is inclusive, responsible and development-oriented.",
+        "inclusion": "Include calls for international AI governance.",
+        "exclusion": "Exclude national institution-building unrelated to AI.",
+        "boundary_cases": "If UN bodies are named, add AI_UN_ROLE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_BEN:5",
+            "quote": "Benin is in favor of international AI governance that's inclusive, responsible, and development-oriented"
+          }
+        ]
+      }
+    ],
+    "rationale": "A single Beninese passage frames AI as a major development accelerator while warning of divides and African dependence on externally controlled technologies, and calls for inclusive international governance."
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "request_hash": "1474d8f8aefb21c86d01ef272c6e56f56e51013e00217ab867fac0be11765a57",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "North-South digital divide including AI access",
+        "definition": "Unequal access to the internet and AI between rich and developing (especially African) countries, with calls to bridge the digital divide.",
+        "inclusion": "Include passages demanding universal, affordable access to internet/AI or describing a widening North-South gap.",
+        "exclusion": "Exclude passages about AI governance or risks without access content.",
+        "boundary_cases": "If AI is mentioned only as part of internet access, still code here when the argument concerns the divide.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_BDI:29",
+            "quote": "it is becoming imperative for all countries to have access to the Internet, including artificial intelligence, which is revolutionizing the world as we speak"
+          },
+          {
+            "passage_id": "verbatim_en_2024_BDI:29",
+            "quote": "the so-called spider web favours rich countries while developing countries are still poorly connected, particularly in Africa"
+          }
+        ]
+      }
+    ],
+    "rationale": "Single Burundi passage about the digital divide; AI is folded into internet access as something developing countries must also access, with no separate governance or risk discussion."
+  }
+}

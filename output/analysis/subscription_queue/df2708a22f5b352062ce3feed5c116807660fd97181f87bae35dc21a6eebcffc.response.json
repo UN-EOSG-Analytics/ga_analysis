@@ -1,0 +1,30 @@
+{
+  "request_hash": "df2708a22f5b352062ce3feed5c116807660fd97181f87bae35dc21a6eebcffc",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "root"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_MCO:1",
+      "verbatim_en_2026_MCO:2",
+      "verbatim_en_2026_MCO:3",
+      "verbatim_en_2026_MCO:4",
+      "verbatim_en_2026_MCO:5",
+      "verbatim_en_2026_MCO:6"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_MCO:5",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Monaco supports the implementation of the Global Digital Compact and a new normative framework on AI. based on law and shared ethical principles, respecting human rights and being accessible to all states.",
+        "rationale": "Discusses AI opportunities and risks and calls for UN engagement and a rights-based, accessible normative framework."
+      }
+    ]
+  }
+}

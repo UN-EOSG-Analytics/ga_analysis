@@ -1,0 +1,71 @@
+{
+  "request_hash": "06b962f5b9fe1808bb67e8f4660db096ecea951a425b6d9214b1d1cb3014dcd1",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_YOUTH_EDUCATION",
+        "label": "Preparing youth through critical-thinking education",
+        "definition": "AI transformation calls for education that equips young people with critical thinking and creativity, and for listening to youth.",
+        "inclusion": "Passages linking AI to youth, education, critical thinking or intergenerational responsibility.",
+        "exclusion": "Workforce reskilling without youth/education focus (use AI_ECONOMY_LABOR).",
+        "boundary_cases": "Youth mentioned only as future generations without education content go to other codes.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_LUX:3",
+            "quote": "we should endow our young people with the means to develop their critical thinking skills and their creativity"
+          }
+        ]
+      },
+      {
+        "code": "AI_SAFETY_EXISTENTIAL",
+        "label": "Extreme AI risks require responsibility",
+        "definition": "Reference to debates on the most extreme risks of AI as a reminder that progress cannot be divorced from responsibility.",
+        "inclusion": "Passages referencing extreme, catastrophic or frontier AI risks.",
+        "exclusion": "Everyday harms such as jobs or bias.",
+        "boundary_cases": "A brief nod to extreme-risk debates still counts here.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_LUX:3",
+            "quote": "The current debates about the most extreme risks of AI remind us that technological progress cannot be divorced from responsibility."
+          }
+        ]
+      },
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "Enthusiasm alongside real concerns",
+        "definition": "AI transforming life and work with enthusiasm paired with very real concerns.",
+        "inclusion": "Passages pairing AI's possibilities with concerns.",
+        "exclusion": "One-sided mentions.",
+        "boundary_cases": "Mentions of transformation of work may also take AI_ECONOMY_LABOR.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_LUX:3",
+            "quote": "The enthusiasm they give rise to also goes hand in hand with the very real concerns."
+          }
+        ]
+      },
+      {
+        "code": "AI_HUMAN_RIGHTS_ETHICS",
+        "label": "Human beings at the heart of decisions",
+        "definition": "Human-centred principle: people at the heart of decision-making on AI, protecting rights, security and well-being.",
+        "inclusion": "Passages advocating a human-centred approach and protection of rights in the face of AI.",
+        "exclusion": "Explicit human control over AI systems (use AI_HUMAN_CONTROL_OVERSIGHT).",
+        "boundary_cases": "Generic humanist principles count when stated in response to AI transformation.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_LUX:3",
+            "quote": "Human beings should be at the heart of all of our decision making."
+          }
+        ]
+      }
+    ],
+    "rationale": "The Luxembourg passage frames AI through youth and education: AI brings enthusiasm and concern including extreme risks, so young people need critical-thinking education under a human-centred guiding principle."
+  }
+}

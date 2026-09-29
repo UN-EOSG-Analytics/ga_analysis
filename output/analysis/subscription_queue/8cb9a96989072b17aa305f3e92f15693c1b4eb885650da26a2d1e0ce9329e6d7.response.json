@@ -1,0 +1,43 @@
+{
+  "request_hash": "8cb9a96989072b17aa305f3e92f15693c1b4eb885650da26a2d1e0ce9329e6d7",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_DEVELOPMENT_SDGS",
+        "label": "AI as integration and development tool",
+        "definition": "Optimistic framing of AI, alongside globalization and IT, as a tool for integration and development of peoples, conditional on good use.",
+        "inclusion": "Passages describing AI as a tool helping integration or development, including with a 'if used well' caveat.",
+        "exclusion": "Passages where risk is the dominant framing.",
+        "boundary_cases": "A brief caveat about good use does not make the passage a duality passage unless harms are named.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_URY:4",
+            "quote": "artificial intelligence and real-time communication are tools that help the integration and development of our peoples — of course, if they are used well"
+          }
+        ]
+      },
+      {
+        "code": "AI_TECH_LIST_MENTION",
+        "label": "AI listed with globalization and IT",
+        "definition": "AI named within a list of modern trends and tools without specific discussion.",
+        "inclusion": "Passages naming AI among globalization, information technology and communications.",
+        "exclusion": "Passages elaborating AI-specific impacts.",
+        "boundary_cases": "Code alongside the development theme when the list carries an evaluative claim.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_URY:4",
+            "quote": "We are convinced that globalization, information technology, artificial intelligence and real-time communication are tools"
+          }
+        ]
+      }
+    ],
+    "rationale": "Single Uruguayan 2023 passage with an optimistic, list-style mention of AI as a tool for integration and development if used well."
+  }
+}

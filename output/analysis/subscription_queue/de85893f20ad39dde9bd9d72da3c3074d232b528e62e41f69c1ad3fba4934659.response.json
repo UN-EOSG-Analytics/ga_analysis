@@ -1,0 +1,119 @@
+{
+  "request_hash": "de85893f20ad39dde9bd9d72da3c3074d232b528e62e41f69c1ad3fba4934659",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_HUMAN_CONTROL_OVERSIGHT",
+        "label": "Keeping AI under human control",
+        "definition": "Speaker insists AI, especially frontier models, must remain under human direction, oversight and control, and calls for mechanisms to control it.",
+        "inclusion": "Passages stating humans must stay 'in the driver's seat' or that AI must remain under human oversight/control, or calling for mechanisms to control frontier AI models.",
+        "exclusion": "General calls for AI regulation without the human-control framing (use AI_GLOBAL_GOVERNANCE); autonomous weapons human-control debates (use AI_MILITARY_WEAPONS).",
+        "boundary_cases": "If the passage calls for international mechanisms to control frontier models, code both this and AI_GLOBAL_GOVERNANCE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_NOR:6",
+            "quote": "Artificial intelligence is developed by humans and must remain under human direction, oversight, and control."
+          },
+          {
+            "passage_id": "verbatim_en_2026_FIN:8",
+            "quote": "Humans can and should be in the driver's seat."
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Cooperative international governance of AI",
+        "definition": "Calls for international cooperation, guardrails or joint initiatives among governments, companies and organizations to manage AI.",
+        "inclusion": "Passages advocating multilateral cooperation, guardrails, or multi-stakeholder initiatives for responsible AI management.",
+        "exclusion": "Mentions of UN internal modernization using AI (use AI_UN_ROLE) or generic multilateralism with no AI governance content.",
+        "boundary_cases": "A national initiative launched jointly with other states to govern AI counts here, not as AI_NATIONAL_STRATEGY.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_FIN:8",
+            "quote": "launched a call for companies, governments, regional organizations, and the UN to develop mechanisms to control frontier AI models"
+          },
+          {
+            "passage_id": "verbatim_en_2025_SGP:6",
+            "quote": "it requires guardrails so that it can be harnessed responsibly"
+          }
+        ]
+      },
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "AI as both promise and peril",
+        "definition": "Explicit framing of AI as a transformative technology bringing both large opportunities and serious risks, often as civilization-scale change.",
+        "inclusion": "Passages pairing AI's benefits with its dangers or describing it as the most consequential/transformative technology with major risks.",
+        "exclusion": "Passages mentioning only benefits or only risks.",
+        "boundary_cases": "Statements that AI's impact exceeds the industrial revolution count if paired with risk language.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_MKD:5",
+            "quote": "Artificial intelligence brings enormous opportunities, but also incalculable risks for our civilization."
+          },
+          {
+            "passage_id": "verbatim_en_2026_NOR:6",
+            "quote": "we must maximize the positive benefits of emerging technologies while curbing its darker potentials"
+          }
+        ]
+      },
+      {
+        "code": "AI_UN_ROLE",
+        "label": "UN role and modernization in AI",
+        "definition": "The UN is positioned as the forum for AI, is asked to prioritize AI, or is urged to modernize itself and use AI (e.g., in peacekeeping, digital diplomacy).",
+        "inclusion": "Passages urging the UN to be future-ready with AI, adopt AI in its work, or make AI a session priority.",
+        "exclusion": "General international governance calls not tied to the UN (use AI_GLOBAL_GOVERNANCE).",
+        "boundary_cases": "AI aiding UN peacekeeping and conflict prevention counts here; AI in national militaries does not.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_MLT:4",
+            "quote": "The United Nations must embrace digital diplomacy for the artificial intelligence age."
+          },
+          {
+            "passage_id": "verbatim_en_2025_SGP:6",
+            "quote": "AI's transformative force can aid conflict prevention, peacekeeping and humanitarian options"
+          },
+          {
+            "passage_id": "verbatim_en_2025_MKD:5",
+            "quote": "support the proposal to make artificial intelligence a priority of the 80th session"
+          }
+        ]
+      },
+      {
+        "code": "AI_TECH_LIST_MENTION",
+        "label": "AI listed among modern technologies",
+        "definition": "AI named alongside other technologies or trends as a marker of modernity or threat, without further discussion.",
+        "inclusion": "Passages where AI appears in a list (e.g., cryptocurrency, social media, internet) with no elaboration.",
+        "exclusion": "Passages that go on to discuss AI specifically.",
+        "boundary_cases": "A list that attributes a shared threat to all items remains a list mention unless AI is singled out.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_GHA:4",
+            "quote": "We live in a world of cryptocurrency, artificial intelligence, social media, the internet and its dark hidden dungeon of the dark web"
+          }
+        ]
+      },
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "Africa's inclusion in AI",
+        "definition": "Concern that the digital divide must close so that Africa and developing regions are included in AI.",
+        "inclusion": "Passages calling for closing the digital divide or including Africa/Global South in AI.",
+        "exclusion": "Generic development benefits of AI without inclusion concerns.",
+        "boundary_cases": "Brief quoting of the Secretary-General on AI for Africa counts here.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_NGA:2",
+            "quote": "the digital divide must close. As our friend, the Secretary General, has said, AI must turn for Africa, included."
+          }
+        ]
+      }
+    ],
+    "rationale": "Passages sit within UN reform and multilateralism discussions; Finland and Norway substantively call for human control of frontier AI, Singapore and North Macedonia frame AI as dual-edged for the UN, while Ghana, Malta and Nigeria mention AI briefly as a technology list item, UN modernization cue, or digital divide issue."
+  }
+}

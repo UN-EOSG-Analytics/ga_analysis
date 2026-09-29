@@ -1,0 +1,101 @@
+{
+  "request_hash": "2d5aa96b5a2273f635ba8ffb35c5eb9a14ec944046927b28425b83abd1dd10cd",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_UN_ROLE",
+        "label": "Sponsoring UN resolutions and observances on AI",
+        "definition": "The speaker presents its own initiatives in the UN General Assembly on AI, such as sponsored resolutions, proclaimed international days, or proposed UN-auspiced codes and dialogues.",
+        "inclusion": "Include passages that report or propose a UNGA resolution, international day, or UN-auspiced instrument specifically about AI.",
+        "exclusion": "Exclude UN initiatives on unrelated topics (water, transport, peace decades) that do not mention AI.",
+        "boundary_cases": "A proposal for a UN-auspiced AI code for diplomacy counts here and also under AI_GLOBAL_GOVERNANCE when it calls for rules.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_TJK:4",
+            "quote": "On August 31st, the General Assembly proclaimed the International Day of Safe, Secure and Trustworthy Artificial Intelligence, also at the initiative of Tajikistan."
+          },
+          {
+            "passage_id": "verbatim_en_2024_TJK:6",
+            "quote": "I propose that the General Assembly adopt a special draft resolution on the role of artificial intelligence in creating new opportunities for socioeconomic development"
+          }
+        ]
+      },
+      {
+        "code": "AI_DEVELOPMENT_SDGS",
+        "label": "AI as driver of sustainable development",
+        "definition": "AI is framed as a tool that can accelerate the Sustainable Development Goals and socioeconomic development.",
+        "inclusion": "Include statements that AI or AI plus digital technologies contribute to SDGs, development, or compressing decades of development.",
+        "exclusion": "Exclude mentions of digitalization for development that do not reference AI.",
+        "boundary_cases": "If AI is linked to development but the main point is reducing inequality between countries, also code AI_DIGITAL_DIVIDE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_TJK:3",
+            "quote": "the rapid adoption of digital technologies and the effective use of artificial intelligence can noticeably contribute to the achievement of the Sustainable Development Goals"
+          },
+          {
+            "passage_id": "verbatim_en_2026_TJK:3",
+            "quote": "used well and shared widely, AI could compress decades of development into years"
+          }
+        ]
+      },
+      {
+        "code": "AI_REGIONAL_COOPERATION",
+        "label": "Regional AI centres and cooperation",
+        "definition": "Proposals for regional AI institutions, centres, or expert dialogues hosted by the speaker to coordinate AI projects among neighbouring countries.",
+        "inclusion": "Include proposals to host a regional AI centre or regional/international AI expert dialogue in the speaker's capital.",
+        "exclusion": "Exclude purely national AI strategies with no regional or multilateral hosting dimension.",
+        "boundary_cases": "An expert dialogue hosted nationally but framed as international on responsible AI can be coded here and AI_GLOBAL_GOVERNANCE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_TJK:4",
+            "quote": "This center would undoubtedly facilitate an implementation of joint initiatives and projects among Central Asian countries in the field of artificial intelligence."
+          },
+          {
+            "passage_id": "verbatim_en_2026_TKM:3",
+            "quote": "we propose convening in Ashgabat an international expert dialogue on digital trust and the responsible use of AI"
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Responsible international governance of AI",
+        "definition": "Calls for responsible international rules or codes for AI to prevent its use against peace, security and trust.",
+        "inclusion": "Include calls for international governance, codes of conduct, or safe/secure/trustworthy AI norms.",
+        "exclusion": "Exclude statements only praising AI opportunities without any governance element.",
+        "boundary_cases": "The phrase 'safe and equitable use' of AI tied to a resolution counts when framed as a governing instrument.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_TKM:2",
+            "quote": "Artificial intelligence offers broad opportunities while also requiring responsible international governance to prevent its use and to detriment of peace, security, and trust."
+          },
+          {
+            "passage_id": "verbatim_en_2026_TKM:3",
+            "quote": "an international code for the peaceful use of AI in international relations and diplomacy"
+          }
+        ]
+      },
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "AI must reduce, not deepen, division",
+        "definition": "Concern that AI could become a new source of division and inequality, with calls for it to reduce inequality instead.",
+        "inclusion": "Include statements that AI should not divide societies or countries and should reduce inequality.",
+        "exclusion": "Exclude general development claims about AI without an inequality or division frame.",
+        "boundary_cases": "Statements on 'equitable use' of AI in a region are borderline; code here only if inequality is explicit.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_TJK:3",
+            "quote": "AI should not become another source of division. It should become a force for development, opportunity, and reducing inequality."
+          }
+        ]
+      }
+    ],
+    "rationale": "All passages come from Central Asian speeches that promote the speaker's own UN initiatives on AI (resolutions, an international day, a code, regional centres) and frame AI mainly as a development opportunity. Turkmenistan adds a governance-for-peace framing, while Tajikistan 2026 adds an inequality concern."
+  }
+}

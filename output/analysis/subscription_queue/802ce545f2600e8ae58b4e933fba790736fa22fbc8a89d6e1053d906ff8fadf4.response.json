@@ -1,0 +1,57 @@
+{
+  "request_hash": "802ce545f2600e8ae58b4e933fba790736fa22fbc8a89d6e1053d906ff8fadf4",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "AI frontier as marker of global inequality",
+        "definition": "Being at the frontier of AI is presented as a privilege of rich nations, contrasted with poverty and crisis elsewhere.",
+        "inclusion": "Passages using AI access or leadership as a marker of the divide between advantaged and disadvantaged nations.",
+        "exclusion": "Passages naming AI only as a challenge without an inequality contrast.",
+        "boundary_cases": "Brief AI references inside a 'two worlds' inequality narrative count here even without policy proposals.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_DMA:1",
+            "quote": "They are at the frontier of the artificial intelligence and other emerging technologies with expanding digital infrastructure and rising standards of living."
+          }
+        ]
+      },
+      {
+        "code": "AI_TECH_LIST_MENTION",
+        "label": "AI listed among multilateral challenges",
+        "definition": "AI named in a list of global challenges requiring multilateralism, without elaboration.",
+        "inclusion": "Passages listing AI challenges alongside climate, nuclear weapons and SDGs.",
+        "exclusion": "Passages that develop specific AI risks or proposals.",
+        "boundary_cases": "A reference to the Global Digital Compact in the same list may additionally be coded AI_UN_ROLE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_VCT:1",
+            "quote": "To tackle successfully the growing challenges of artificial intelligence."
+          }
+        ]
+      },
+      {
+        "code": "AI_UN_ROLE",
+        "label": "Global Digital Compact as guide",
+        "definition": "UN frameworks such as the Global Digital Compact and Pact for the Future cited as guides for technology challenges.",
+        "inclusion": "Passages invoking the Global Digital Compact or Pact for the Future in connection with AI.",
+        "exclusion": "UN references unrelated to technology.",
+        "boundary_cases": "When cited only within a long list, code together with list mention.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_VCT:1",
+            "quote": "be guided by the global digital compact and the pact for the future"
+          }
+        ]
+      }
+    ],
+    "rationale": "Two Caribbean opening passages mention AI only briefly: Dominica uses AI frontier status to illustrate global inequality, while Saint Vincent lists AI among challenges for multilateralism with reference to the Global Digital Compact."
+  }
+}

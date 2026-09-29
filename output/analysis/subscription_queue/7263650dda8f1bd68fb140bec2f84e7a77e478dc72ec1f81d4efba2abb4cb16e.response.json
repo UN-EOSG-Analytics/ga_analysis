@@ -1,0 +1,121 @@
+{
+  "request_hash": "7263650dda8f1bd68fb140bec2f84e7a77e478dc72ec1f81d4efba2abb4cb16e",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_DEVELOPMENT_SDGS",
+        "label": "AI for SDGs, health and agriculture",
+        "definition": "AI presented as a tool to accelerate development and the SDGs, e.g., delivering medicines, precision agriculture, health and energy efficiencies.",
+        "inclusion": "Include passages describing AI applications for health, agriculture, energy, infrastructure or quality of life in development contexts.",
+        "exclusion": "Exclude passages that only name AI in a list of financing sectors without describing its development use.",
+        "boundary_cases": "Statements that AI 'must narrow development gaps' fit here and may also be AI_DIGITAL_DIVIDE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_ZMB:12",
+            "quote": "We need only imagine using AI to deliver lifesaving medicines to a seemingly forgotten grandmother in a village in Africa"
+          },
+          {
+            "passage_id": "verbatim_en_2025_ZWE:4",
+            "quote": "The role of ICT and AI in transforming lives and accelerating development is indisputable."
+          }
+        ]
+      },
+      {
+        "code": "AI_CAPACITY_BUILDING",
+        "label": "Bridging technology gap through transfer",
+        "definition": "Developing countries' lack of access to AI and calls for capacity-building, technology transfer, and R&D investment to close the gap.",
+        "inclusion": "Include calls for international support via capacity-building, technology transfer, information exchange or investment for AI.",
+        "exclusion": "Exclude national achievements without a request for external support.",
+        "boundary_cases": "Statements only describing the gap without calling for support are AI_DIGITAL_DIVIDE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_ZMB:14",
+            "quote": "there is a need to bridge the gap in digital technologies, including artificial intelligence"
+          },
+          {
+            "passage_id": "verbatim_en_2024_ZMB:14",
+            "quote": "support developing countries in integrating technology through capacity-building, technology transfer on mutually agreed terms"
+          }
+        ]
+      },
+      {
+        "code": "AI_NATIONAL_STRATEGY",
+        "label": "National AI strategy for industrialization",
+        "definition": "Speaker cites the country's national AI strategy and priorities.",
+        "inclusion": "Include references to named national AI strategies or national AI priorities.",
+        "exclusion": "Exclude global policy calls without national reference.",
+        "boundary_cases": "If the strategy's principles (ethical, human-centred) are stressed, also code AI_HUMAN_RIGHTS_ETHICS.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_ZWE:4",
+            "quote": "Zimbabwe's National Artificial Intelligence Strategy 2026-2030 promotes human-centered, ethical, and responsible innovation."
+          }
+        ]
+      },
+      {
+        "code": "AI_MILITARY_WEAPONS",
+        "label": "Human control of military and nuclear AI",
+        "definition": "Military uses of AI, including nuclear command and control, must remain under human judgment and international law.",
+        "inclusion": "Include passages on AI in military or nuclear command and control and human accountability.",
+        "exclusion": "Exclude criminal misuse of ICT not tied to military use.",
+        "boundary_cases": "Brief clauses within a development-focused passage still count if they explicitly mention military AI.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_ZWE:4",
+            "quote": "its military use, including in nuclear command and control must remain subject to human judgment, accountability, and international law"
+          }
+        ]
+      },
+      {
+        "code": "AI_CYBER_SECURITY",
+        "label": "Criminal misuse of ICT and AI",
+        "definition": "Concern about criminals using ICT/technology harmfully and support for frameworks to combat it.",
+        "inclusion": "Include passages on criminal or malicious use of technology in an AI context.",
+        "exclusion": "Exclude military AI.",
+        "boundary_cases": "If criminality refers to ICT generally but appears alongside AI, include.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_ZWE:4",
+            "quote": "criminals are using ICT for harmful behavior with serious destabilizing consequences to society"
+          }
+        ]
+      },
+      {
+        "code": "AI_UN_ROLE",
+        "label": "UN Global Dialogue should serve all",
+        "definition": "Support for UN AI processes such as the global dialogue on AI governance and the Secretary-General's efforts.",
+        "inclusion": "Include references to UN AI governance processes or SG initiatives on technology.",
+        "exclusion": "Exclude financing initiatives not about AI.",
+        "boundary_cases": "The SDG Stimulus listing AI as a sector is AI_TECH_LIST_MENTION, not UN role.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_ZWE:4",
+            "quote": "The global dialogue on AI governance should assist all countries."
+          }
+        ]
+      },
+      {
+        "code": "AI_TECH_LIST_MENTION",
+        "label": "AI listed among investment sectors",
+        "definition": "AI named in a list of priority sectors without further elaboration.",
+        "inclusion": "Include passages where AI appears only within a list of sectors or technologies.",
+        "exclusion": "Exclude passages that elaborate on AI.",
+        "boundary_cases": "If the same passage later discusses AI, code the substantive theme.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_ZMB:7",
+            "quote": "resilient infrastructure, artificial intelligence (AI) and information technology"
+          }
+        ]
+      }
+    ],
+    "rationale": "Zambia and Zimbabwe frame AI mainly as a development enabler needing technology transfer and capacity support; Zimbabwe adds a national AI strategy, criminal misuse concerns, and human control over military/nuclear AI, while one Zambian passage only lists AI among financing sectors."
+  }
+}

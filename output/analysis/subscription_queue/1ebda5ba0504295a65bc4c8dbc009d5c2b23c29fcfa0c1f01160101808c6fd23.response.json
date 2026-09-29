@@ -1,0 +1,36 @@
+{
+  "request_hash": "1ebda5ba0504295a65bc4c8dbc009d5c2b23c29fcfa0c1f01160101808c6fd23",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_b"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_IND:1",
+      "verbatim_en_2026_IND:2",
+      "verbatim_en_2026_IND:3",
+      "verbatim_en_2026_IND:4",
+      "verbatim_en_2026_IND:5"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_IND:2",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Misuse of AI is sharpening bias and diluting mutual respect.",
+        "rationale": "Identifies AI misuse as worsening bias and international respect."
+      },
+      {
+        "passage_id": "verbatim_en_2026_IND:4",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "We view AI as a transformational driver for human empowerment, economic prosperity, and population-scale problem solving.",
+        "rationale": "Discusses AI summit, national models and Global South AI partnerships."
+      }
+    ]
+  }
+}

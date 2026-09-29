@@ -1,0 +1,69 @@
+{
+  "request_hash": "30968cc701e4334cc8712ec1937bce1b118507c3c1142f1b51afd4e5f7bdb3af",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_TECH_LIST_MENTION",
+        "label": "AI listed among emerging global challenges",
+        "definition": "AI named alongside cybersecurity, terrorism, cybercrime or genetic engineering as a frontier or emerging issue, without further argument about AI itself.",
+        "inclusion": "Include passages where AI is an item in a list of new challenges the UN or multilateralism must address.",
+        "exclusion": "Exclude passages that describe specific AI governance tools, programmes or policy positions.",
+        "boundary_cases": "Mention of 'economic disruption' from AI within such a list stays here unless the passage develops labour or economic effects.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2017_SGP:11",
+            "quote": "the economic disruption caused by the emergence of digital technologies, including artificial intelligence and the potential for genetic engineering"
+          },
+          {
+            "passage_id": "verbatim_en_2018_SGP:3",
+            "quote": "Frontier issues such as artificial intelligence and cybercrime have leapt from the pages of science fiction into our daily lives."
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "AI as global commons needing common rules",
+        "definition": "AI treated as a domain of the global commons requiring multilateral cooperation, common rules and trust-building, with rules framed as enabling rather than slowing progress.",
+        "inclusion": "Include passages calling for multilateral commitment on AI as global commons or arguing that common rules and safeguards enable faster AI progress.",
+        "exclusion": "Exclude passages only listing AI as a challenge without calling for cooperation or rules.",
+        "boundary_cases": "Offering national governance frameworks and testing tools to others fits here and in AI_CAPACITY_BUILDING.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_SGP:21",
+            "quote": "We need to bring the same constructive spirit to other areas of the global commons — AI, cybersecurity, digital technology and even outer space."
+          },
+          {
+            "passage_id": "verbatim_en_2026_SGP:7",
+            "quote": "powerful engines and good brakes and common rules do not stop us or slow us down"
+          }
+        ]
+      },
+      {
+        "code": "AI_CAPACITY_BUILDING",
+        "label": "Small-state AI capacity-building programmes",
+        "definition": "Singapore offering capacity-building, governance frameworks and testing tools to small states and SIDS on digital technologies and AI.",
+        "inclusion": "Include passages announcing training programmes, technical assistance, or sharing of AI governance tools with other states.",
+        "exclusion": "Exclude domestic-only AI initiatives.",
+        "boundary_cases": "Forum of Small States digital pillar activities count here when AI is explicitly or contextually included.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_SGP:18",
+            "quote": "including Leadership and Governance in the Age of Digital Technologies and Artificial Intelligence"
+          },
+          {
+            "passage_id": "verbatim_en_2026_SGP:7",
+            "quote": "making our governance frameworks and testing tools available to all"
+          }
+        ]
+      }
+    ],
+    "rationale": "Singapore passages across years embed AI in a small-state multilateralism narrative: early speeches only list AI among emerging challenges, later ones treat AI as a global commons needing common rules and offer capacity-building and testing tools to small states."
+  }
+}

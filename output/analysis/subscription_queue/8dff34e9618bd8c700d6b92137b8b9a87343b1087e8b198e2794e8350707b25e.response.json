@@ -1,0 +1,29 @@
+{
+  "request_hash": "8dff34e9618bd8c700d6b92137b8b9a87343b1087e8b198e2794e8350707b25e",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_c"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2025_BGR:1",
+      "verbatim_en_2025_BGR:2",
+      "verbatim_en_2025_BGR:3",
+      "verbatim_en_2025_BGR:4",
+      "verbatim_en_2025_BGR:5"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2025_BGR:5",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Bulgaria supports inclusive, multi-stakeholder approaches to global digital governance, artificial intelligence, and space technologies, ensuring they advance the sustainable development goals.",
+        "rationale": "Supports inclusive AI governance to advance sustainable development."
+      }
+    ]
+  }
+}

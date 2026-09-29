@@ -1,0 +1,69 @@
+{
+  "request_hash": "4eb2c2b9bbccbe0d86224122ec76b837d15323b333d9610d3cc7542ed49a4643",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "Unprecedented opportunities and significant risks",
+        "definition": "AI is explicitly framed as offering transformative opportunities while posing risks to security, equity, human rights and institutions.",
+        "inclusion": "Include passages that explicitly pair AI benefits (progress, education, productivity) with AI risks.",
+        "exclusion": "Exclude passages that mention only benefits or only risks of AI.",
+        "boundary_cases": "If risks named include inequality, also code AI_DIGITAL_DIVIDE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_ECU:4",
+            "quote": "offer up unprecedented opportunities for human progress. However, they also offer up significant risks for security, equity and human rights"
+          },
+          {
+            "passage_id": "verbatim_en_2026_ECU:3",
+            "quote": "It can transform education, multiply productivity and close historic gaps, but also entrench inequalities and serve those that seek to weaken our institutions."
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Multilateral, ethical, values-based AI governance",
+        "definition": "Calls for multilateral and ethical international governance of AI guided by the common good and shared values.",
+        "inclusion": "Include calls for international or multilateral governance frameworks for AI.",
+        "exclusion": "Exclude national AI regulation without an international dimension.",
+        "boundary_cases": "Governance calls that emphasise inclusive access are coded here and AI_DIGITAL_DIVIDE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_ECU:4",
+            "quote": "it's essential to move towards multilateral and ethical governance of these tools"
+          },
+          {
+            "passage_id": "verbatim_en_2026_ECU:3",
+            "quote": "We need international governance that enables us to innovate without renouncing our values"
+          }
+        ]
+      },
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "Inclusive access, avoiding new digital gaps",
+        "definition": "Concern that AI must be accessible inclusively and must not create new digital gaps or leave those with fewer resources behind.",
+        "inclusion": "Include statements about guaranteeing access to AI and avoiding new gaps or leaving the poor behind.",
+        "exclusion": "Exclude generic development financing requests without AI.",
+        "boundary_cases": "'Close historic gaps' as an AI benefit alone is AI_DEVELOPMENT_SDGS rather than this code.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_ECU:4",
+            "quote": "would guarantee their inclusive access to them, that would avoid new digital gaps"
+          },
+          {
+            "passage_id": "verbatim_en_2026_ECU:3",
+            "quote": "does not leave those that have the least resources behind. They also need to be able to access this technology"
+          }
+        ]
+      }
+    ],
+    "rationale": "Both Ecuador passages use the same compact structure: AI's opportunities versus risks, followed by a call for multilateral, value-based governance that ensures inclusive access. The 2026 version adds institutional-weakening risk."
+  }
+}

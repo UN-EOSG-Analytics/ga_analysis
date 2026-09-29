@@ -1,0 +1,42 @@
+{
+  "request_hash": "2bdba17843484b493114d4ae3c081395d979070c35c2a89ded8c8134e35e326b",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_b"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2023_SWE:1",
+      "verbatim_en_2023_SWE:2",
+      "verbatim_en_2023_SWE:3",
+      "verbatim_en_2023_SWE:4",
+      "verbatim_en_2023_SWE:5",
+      "verbatim_en_2023_SWE:6",
+      "verbatim_en_2023_SWE:7",
+      "verbatim_en_2023_SWE:8",
+      "verbatim_en_2023_SWE:9",
+      "verbatim_en_2023_SWE:10",
+      "verbatim_en_2023_SWE:11",
+      "verbatim_en_2023_SWE:12",
+      "verbatim_en_2023_SWE:13",
+      "verbatim_en_2023_SWE:14",
+      "verbatim_en_2023_SWE:15",
+      "verbatim_en_2023_SWE:16",
+      "verbatim_en_2023_SWE:17",
+      "verbatim_en_2023_SWE:18"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2023_SWE:13",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Emerging technologies, including artificial intelligence, are transforming our world.",
+        "rationale": "Identifies AI opportunities for climate, health and sustainable development alongside security and human rights risks requiring shared principles."
+      }
+    ]
+  }
+}

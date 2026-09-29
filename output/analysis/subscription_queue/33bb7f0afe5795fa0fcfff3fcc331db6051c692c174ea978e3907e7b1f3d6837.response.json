@@ -1,0 +1,57 @@
+{
+  "request_hash": "33bb7f0afe5795fa0fcfff3fcc331db6051c692c174ea978e3907e7b1f3d6837",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_DEVELOPMENT_SDGS",
+        "label": "AI benefits revealed by the pandemic",
+        "definition": "AI and digital technologies presented as having helped during COVID-19, e.g., in medical diagnosis, and as opportunities for human development.",
+        "inclusion": "Include passages crediting AI with health, education or development gains, especially in pandemic contexts.",
+        "exclusion": "Exclude passages on AI regulation or threats.",
+        "boundary_cases": "When AI appears only in a list of pandemic-era technologies, also code AI_TECH_LIST_MENTION.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2020_RUS:19",
+            "quote": "Artificial intelligence has assisted doctors in making more accurate and timely diagnoses and finding the best treatment."
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Balanced international AI regulation consensus",
+        "definition": "Call to balance encouraging AI development with justified restrictions and build consensus on regulation averting military, technological and moral threats.",
+        "inclusion": "Include calls for international consensus on AI regulation balancing development and restriction.",
+        "exclusion": "Exclude passages only praising AI benefits.",
+        "boundary_cases": "Mentions of military security threats within a regulation call may also get AI_MILITARY_WEAPONS.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2020_RUS:22",
+            "quote": "seek for a right balance between encouraging the development of artificial intelligence and justifiable restrictions to limit it"
+          }
+        ]
+      },
+      {
+        "code": "AI_TECH_LIST_MENTION",
+        "label": "AI listed among pandemic-era technologies",
+        "definition": "AI named alongside IoT, cybersecurity and cloud computing as technologies offering opportunities, without further elaboration.",
+        "inclusion": "Include passages listing AI among multiple technologies without AI-specific discussion.",
+        "exclusion": "Exclude passages describing an AI-specific use.",
+        "boundary_cases": "If the list is framed as development opportunity, AI_DEVELOPMENT_SDGS can be added.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2021_COL:3",
+            "quote": "the Internet of Things, artificial intelligence, cybersecurity, cloud computing and other applications"
+          }
+        ]
+      }
+    ],
+    "rationale": "Passages from the pandemic years present AI positively (medical diagnosis, development opportunity), with Colombia only listing it among technologies, while Russia also calls for balanced international regulation against military, technological and moral threats."
+  }
+}

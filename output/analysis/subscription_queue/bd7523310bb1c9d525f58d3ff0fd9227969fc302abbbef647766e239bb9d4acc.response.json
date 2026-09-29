@@ -1,0 +1,29 @@
+{
+  "request_hash": "bd7523310bb1c9d525f58d3ff0fd9227969fc302abbbef647766e239bb9d4acc",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_MILITARY_WEAPONS",
+        "label": "Military AI under international law, human control",
+        "definition": "AI is discussed within arms control: control over military applications of new technologies, with AI developed under international law and effective human control.",
+        "inclusion": "Include passages placing AI within arms control, military applications of new technologies, or human control requirements.",
+        "exclusion": "Exclude passages about AI's civilian economic or social effects.",
+        "boundary_cases": "A general 'international law' call for AI embedded in an arms-control paragraph is coded here rather than only AI_GLOBAL_GOVERNANCE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_BGR:4",
+            "quote": "effective control over arms proliferation and the military applications of new technologies. Artificial intelligence must be developed in keeping with international law and under effective human control"
+          }
+        ]
+      }
+    ],
+    "rationale": "The single Bulgarian passage treats AI as a security and arms-control issue alongside WMD nonproliferation and outer space, stressing international law and effective human control."
+  }
+}

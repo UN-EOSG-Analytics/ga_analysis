@@ -1,0 +1,57 @@
+{
+  "request_hash": "8295a85a4186c5a9dc214f8eb54428c7636ef48b6ae84a57621bb52dbacac0d2",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Universally agreed legal frameworks for AI",
+        "definition": "Calls for universally agreed legal frameworks covering AI alongside cybersecurity, lethal autonomous weapons and outer space.",
+        "inclusion": "Include calls for universal or multilateral legal frameworks that explicitly cover AI.",
+        "exclusion": "Exclude framework calls limited to cybersecurity or space without AI.",
+        "boundary_cases": "Where lethal autonomous weapons are listed in the same call, also code AI_MILITARY_WEAPONS.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2018_PAK:40",
+            "quote": "It is essential to develop universally agreed legal frameworks in the area of cybersecurity, lethal autonomous weapons systems, artificial intelligence and the weaponization of outer space."
+          }
+        ]
+      },
+      {
+        "code": "AI_MILITARY_WEAPONS",
+        "label": "Lethal autonomous weapons regulation",
+        "definition": "Lethal autonomous weapons systems named as an area requiring legal frameworks.",
+        "inclusion": "Include mentions of LAWS or military AI as subjects for regulation.",
+        "exclusion": "Exclude civilian AI governance without military reference.",
+        "boundary_cases": "A brief list item naming LAWS still counts here because the military application is explicit.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2018_PAK:40",
+            "quote": "lethal autonomous weapons systems"
+          }
+        ]
+      },
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "Balancing misuse prevention with developing-country access",
+        "definition": "A balance is sought between guarding against misuse of emerging technologies and facilitating developing countries' access to them.",
+        "inclusion": "Include passages insisting that technology controls must not block developing-country access.",
+        "exclusion": "Exclude pure misuse or security concerns without an access dimension.",
+        "boundary_cases": "The passage refers to 'emerging technologies' generally; code as AI-related because AI is named in the same argument.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2018_PAK:40",
+            "quote": "strike a prudent balance between guarding against the misuse of emerging technologies and facilitating access to them on the part of developing countries"
+          }
+        ]
+      }
+    ],
+    "rationale": "The single Pakistan 2018 passage treats AI within a security-governance list, calling for universal legal frameworks covering AI and lethal autonomous weapons while preserving developing-country access to emerging technologies."
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "request_hash": "016ea5ab79d369072e2df6c1c233278a64615a5886490905814a1384d60068c9",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "AI as blessing or curse",
+        "definition": "AI framed as a pivotal development that can become either a utopian blessing or a dystopian curse depending on choices made.",
+        "inclusion": "Include passages explicitly contrasting AI's promise with its perils (utopia/dystopia, blessing/curse).",
+        "exclusion": "Exclude passages that list AI only as a field of cooperation or achievement.",
+        "boundary_cases": "Visionary lists of AI benefits that follow a dystopia warning may be coded both here and AI_DEVELOPMENT_SDGS.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_ISR:30",
+            "quote": "We must ensure that the promise of an AI utopia does not turn into an AI dystopia."
+          },
+          {
+            "passage_id": "verbatim_en_2023_ISR:27",
+            "quote": "Whether our future will prove to be a blessing or a curse will also depend on how we address perhaps the most consequential development of our time"
+          }
+        ]
+      },
+      {
+        "code": "AI_DEVELOPMENT_SDGS",
+        "label": "Visionary AI benefits for humanity",
+        "definition": "Speaker envisions AI delivering transformative benefits: longer healthier lives, personalized medicine and education, abundance, clean energy, ending scarcity.",
+        "inclusion": "Include passages describing concrete human benefits AI could bring in health, food, energy, education or prosperity.",
+        "exclusion": "Exclude passages mentioning AI only as a national sector or cooperation field.",
+        "boundary_cases": "Short fragments continuing a benefit list (e.g., 'healthier, more productive') count if clearly about AI outcomes.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_ISR:30",
+            "quote": "Let us imagine that we can achieve the end of scarcity, something that has eluded humankind for all history."
+          },
+          {
+            "passage_id": "verbatim_en_2023_ISR:32",
+            "quote": "healthier, more productive and peaceful lives. That is in our reach."
+          }
+        ]
+      },
+      {
+        "code": "AI_NATIONAL_STRATEGY",
+        "label": "Israel as leading AI nation",
+        "definition": "Speaker presents the own country as among the few nations spearheading AI and innovations benefiting humanity.",
+        "inclusion": "Include claims of national AI leadership, pioneering, or national AI contributions to the world.",
+        "exclusion": "Exclude general statements on global AI development without national claims.",
+        "boundary_cases": "Statements that AI will be led by a handful of nations may also relate to AI_SOVEREIGNTY_CONCENTRATION, but here are framed approvingly.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_ISR:31",
+            "quote": "For good or bad, the developments of AI will be spearheaded by a handful of nations. And my country, Israel, is already among them."
+          },
+          {
+            "passage_id": "verbatim_en_2026_ISR:10",
+            "quote": "We pioneer incredible developments in health, agriculture, artificial intelligence, superior intelligence"
+          }
+        ]
+      },
+      {
+        "code": "AI_HUMAN_RIGHTS_ETHICS",
+        "label": "Responsible, ethical, human-centred AI",
+        "definition": "Calls for AI to be shaped responsibly and ethically, preserving human freedom, intuition and empathy.",
+        "inclusion": "Include passages urging responsible/ethical AI or stressing irreplaceable human values alongside machines.",
+        "exclusion": "Exclude passages focused only on AI benefits or national leadership.",
+        "boundary_cases": "A call for leaders to jointly shape AI may also be coded AI_GLOBAL_GOVERNANCE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_ISR:33",
+            "quote": "Let us cherish and preserve the human capacity for empathy, which no machine can replace."
+          },
+          {
+            "passage_id": "verbatim_en_2023_ISR:31",
+            "quote": "to shape the great changes before us, but to do so in a responsible and ethical way"
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Leading nations jointly addressing AI dangers",
+        "definition": "Calls for leading nations to act together and quickly to address AI dangers.",
+        "inclusion": "Include calls for international collective action to manage AI risks.",
+        "exclusion": "Exclude national-only AI claims.",
+        "boundary_cases": "If the call names UN mechanisms, also code AI_UN_ROLE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_ISR:30",
+            "quote": "The world’s leading nations, however competitive, must address those dangers. We must do so quickly, and we must do so together."
+          }
+        ]
+      },
+      {
+        "code": "AI_TECH_COOPERATION_DIPLOMACY",
+        "label": "AI as field of diplomatic cooperation",
+        "definition": "AI listed among sectors offered for bilateral or regional cooperation as a benefit of peace or normalization.",
+        "inclusion": "Include passages listing AI as a cooperation field or technology benefit of diplomatic partnerships.",
+        "exclusion": "Exclude passages that discuss AI's nature, risks or governance.",
+        "boundary_cases": "If only a list of technologies without cooperation framing, use AI_TECH_LIST_MENTION.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_ISR:25",
+            "quote": "Our two countries could cooperate on energy, water, agriculture, artificial intelligence and many, many other fields."
+          },
+          {
+            "passage_id": "verbatim_en_2025_ISR:13",
+            "quote": "cooperating with Israel will provide them with groundbreaking Israeli technologies, including in medicine and science, in agriculture and water, in defense and AI"
+          }
+        ]
+      }
+    ],
+    "rationale": "Israel's 2023 speech offers an extended AI segment framing AI as blessing or curse with visionary benefits and a call for responsible joint action; later speeches mention AI only as a national achievement or a field of cooperation offered to peace partners."
+  }
+}

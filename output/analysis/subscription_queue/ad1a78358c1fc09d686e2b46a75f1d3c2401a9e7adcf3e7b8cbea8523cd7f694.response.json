@@ -1,0 +1,115 @@
+{
+  "request_hash": "ad1a78358c1fc09d686e2b46a75f1d3c2401a9e7adcf3e7b8cbea8523cd7f694",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_UN_ROLE",
+        "label": "Welcoming UN Scientific Panel and Global Dialogue",
+        "definition": "Support for UN AI governance processes, notably the Independent International Scientific Panel on AI and the Global Dialogue on AI Governance.",
+        "inclusion": "Include passages welcoming or supporting named UN AI bodies or GA resolutions on AI.",
+        "exclusion": "Exclude general UN reform passages without AI content.",
+        "boundary_cases": "If the passage also calls for a new negotiated architecture, code AI_GLOBAL_GOVERNANCE too.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_MUS:3",
+            "quote": "We support the General Assembly resolution establishing the global dialogue on AI governance"
+          },
+          {
+            "passage_id": "verbatim_en_2025_MUS:5",
+            "quote": "We welcome the recent establishment of the UN Independent International Scientific Panel on AI and the global dialogue on AI governance."
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "AI governance anchored in international law",
+        "definition": "Calls for a multilateral, law-based global governance architecture for safe, ethical and inclusive AI.",
+        "inclusion": "Include passages demanding AI governance anchored in international law or built through multilateral negotiations.",
+        "exclusion": "Exclude mere welcoming of UN bodies without normative calls.",
+        "boundary_cases": "Calls for an 'open, inclusive dialogue' on governance of new technologies count if collective risk management is stated.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_MUS:6",
+            "quote": "AI governance should be anchored in international law."
+          },
+          {
+            "passage_id": "verbatim_en_2025_MUS:5",
+            "quote": "There is need to build a global governance architecture through multilateral negotiations that will ensure safe, secure, ethical, and inclusive use of AI."
+          }
+        ]
+      },
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "Developing economies' constraints and equitable benefits",
+        "definition": "Concern that developing countries' resource and capacity constraints must be addressed and AI benefits shared equitably so the digital divide does not widen.",
+        "inclusion": "Include passages on the digital divide, equitable benefit sharing or developing-country constraints regarding AI.",
+        "exclusion": "Exclude development financing passages not linked to technology.",
+        "boundary_cases": "Pooling of regulatory resources in developing countries could also fit AI_CAPACITY_BUILDING.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_MUS:5",
+            "quote": "Resource and capacity constraints of developing economies have to be acknowledged and addressed. The digital divide should not be allowed to widen further."
+          },
+          {
+            "passage_id": "verbatim_en_2026_MUS:4",
+            "quote": "ensures that the benefits of technological progress are shared equitably and that the risks are managed collectively"
+          }
+        ]
+      },
+      {
+        "code": "AI_NATIONAL_STRATEGY",
+        "label": "National AI strategy as development imperative",
+        "definition": "Speaker describes own national AI strategy or frames digital innovation as a national development priority.",
+        "inclusion": "Include passages announcing national AI/fintech strategies or stating digital innovation is a national imperative.",
+        "exclusion": "Exclude international governance calls.",
+        "boundary_cases": "A national strategy launched 'with UN support' counts here, possibly also AI_CAPACITY_BUILDING.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_MUS:4",
+            "quote": "We have launched, with UN support, a national artificial intelligence strategy and a national fintech strategy."
+          },
+          {
+            "passage_id": "verbatim_en_2026_MUS:3",
+            "quote": "For Mauritius, digital innovation is a developmental imperative."
+          }
+        ]
+      },
+      {
+        "code": "AI_CYBER_SECURITY",
+        "label": "Cybercrime exacerbated by AI",
+        "definition": "AI named as aggravating cyber criminality within a list of global crises.",
+        "inclusion": "Include passages linking AI to cybercrime or criminal misuse.",
+        "exclusion": "Exclude military AI.",
+        "boundary_cases": "A brief listing of AI-exacerbated cybercrime among polycrisis items counts here rather than as a pure list mention.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_MUS:2",
+            "quote": "cyber criminality exacerbated by artificial intelligence"
+          }
+        ]
+      },
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "Transformative potential with real challenges",
+        "definition": "AI's transformative potential acknowledged together with its societal challenges.",
+        "inclusion": "Include passages pairing AI's transformative power with challenges or risks.",
+        "exclusion": "Exclude one-sided mentions.",
+        "boundary_cases": "Generic 'rapid evolution' descriptions without risk are not duality.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_MUS:5",
+            "quote": "the transformative potential of AI and digital technologies are undeniable. but they also represent real challenges for contemporary society"
+          }
+        ]
+      }
+    ],
+    "rationale": "All from Mauritius: consistent support for law-based, multilateral AI governance and UN AI bodies, with a developing-country lens on the digital divide and national AI strategy. One passage mentions AI only as exacerbating cybercrime in a polycrisis list."
+  }
+}

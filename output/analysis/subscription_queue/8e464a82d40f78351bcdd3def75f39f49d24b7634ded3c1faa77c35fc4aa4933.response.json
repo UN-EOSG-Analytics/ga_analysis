@@ -1,0 +1,29 @@
+{
+  "request_hash": "8e464a82d40f78351bcdd3def75f39f49d24b7634ded3c1faa77c35fc4aa4933",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "root"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2025_SWE:1",
+      "verbatim_en_2025_SWE:2",
+      "verbatim_en_2025_SWE:3",
+      "verbatim_en_2025_SWE:4",
+      "verbatim_en_2025_SWE:5"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2025_SWE:5",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Emerging technologies such as AI hold immense promise in addressing some of our most pressing common challenges. The global community must support innovation while addressing risks.",
+        "rationale": "Calls for balancing support for AI innovation and common-challenge solutions with risk management."
+      }
+    ]
+  }
+}

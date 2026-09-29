@@ -1,0 +1,57 @@
+{
+  "request_hash": "b8c43c734bad4e3007f821549f6bfff46ab0e84b0b3a930b3299de0970abc3c8",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Legal tools for equitable AI use",
+        "definition": "Calls for international collaboration on guidelines and legal instruments ensuring equitable, development-oriented use of AI.",
+        "inclusion": "Passages calling for international guidelines or legal tools governing AI development and equitable use.",
+        "exclusion": "Passages naming AI risk only in a list without a governance call.",
+        "boundary_cases": "Support for the Summit of the Future resolution tied to AI may also be coded AI_UN_ROLE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_COM:10",
+            "quote": "We call for genuine international collaboration to establish guidelines that will lead to legal tools guaranteeing the development and equitable use of artificial intelligence"
+          }
+        ]
+      },
+      {
+        "code": "AI_DEVELOPMENT_SDGS",
+        "label": "AI for growth and development",
+        "definition": "AI framed as conducive to development, growth, productivity and knowledge worldwide.",
+        "inclusion": "Passages linking AI to global development, growth or productivity.",
+        "exclusion": "Passages only mentioning AI risks.",
+        "boundary_cases": "Development framing embedded in a governance call can be coded with both themes.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_COM:10",
+            "quote": "conducive to development, growth, productivity and knowledge throughout the world"
+          }
+        ]
+      },
+      {
+        "code": "AI_TECH_LIST_MENTION",
+        "label": "AI risks listed among global priorities",
+        "definition": "AI risks named briefly in a list of global priorities (climate, sustainable development) without elaboration.",
+        "inclusion": "Passages naming 'the risks of AI' as one item among broader priorities.",
+        "exclusion": "Passages that specify which AI risks or propose responses.",
+        "boundary_cases": "A fragmentary sentence listing AI risks after a conflict discussion remains a list mention.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_COM:4",
+            "quote": "The risks of artificial intelligence and the imperative of sustainable development."
+          }
+        ]
+      }
+    ],
+    "rationale": "Comoros 2024 calls for international legal tools for equitable, development-oriented AI, while 2026 only lists AI risks among global priorities in a passage dominated by Palestine and the Mayotte dispute."
+  }
+}

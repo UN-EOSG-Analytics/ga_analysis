@@ -1,0 +1,30 @@
+{
+  "request_hash": "e751e7b9a77a14a7f9be3f609918b33ec1269e54ba0b561bc79e1a5213c81f74",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "root"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_MDA:1",
+      "verbatim_en_2026_MDA:2",
+      "verbatim_en_2026_MDA:3",
+      "verbatim_en_2026_MDA:4",
+      "verbatim_en_2026_MDA:5",
+      "verbatim_en_2026_MDA:6"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_MDA:2",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Technology is moving faster than regulation almost everywhere, and artificial intelligence is widening that gap.",
+        "rationale": "Advocates responsible testing through regulatory sandboxes and adaptive evidence-based rules, positioning regulatory agility as a small-state advantage despite limited compute and capital."
+      }
+    ]
+  }
+}

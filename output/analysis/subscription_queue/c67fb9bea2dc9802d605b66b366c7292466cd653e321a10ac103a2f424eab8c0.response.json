@@ -1,0 +1,83 @@
+{
+  "request_hash": "c67fb9bea2dc9802d605b66b366c7292466cd653e321a10ac103a2f424eab8c0",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "Seize opportunities, guard against dangers",
+        "definition": "AI is framed as bringing hope and opportunity along with risks that must be guarded against.",
+        "inclusion": "Include passages explicitly pairing AI opportunities with risks or dangers.",
+        "exclusion": "Exclude passages that mention only one side.",
+        "boundary_cases": "If specific risks (crime, terrorism, military misuse) are named, also code those themes.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2019_MCO:13",
+            "quote": "Artificial intelligence brings hope, but also poses risks that must be comprehensively addressed."
+          },
+          {
+            "passage_id": "verbatim_en_2024_MCO:10",
+            "quote": "come with opportunities that we must seize, as well as dangers that we must guard against"
+          },
+          {
+            "passage_id": "verbatim_en_2026_MCO:5",
+            "quote": "Artificial intelligence is creating enormous opportunities for human development, But it also entails genuine risks."
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Normative framework grounded in law and ethics",
+        "definition": "Call for international standards or a new normative framework on AI based on law, shared ethics and human rights, accessible to all states.",
+        "inclusion": "Include calls for international AI standards, norms or frameworks.",
+        "exclusion": "Exclude calls for dialogue without normative content, unless tied to a governance process.",
+        "boundary_cases": "References to the Global Digital Compact or Global Dialogue are also AI_UN_ROLE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_MCO:10",
+            "quote": "It is now up to the international community to establish appropriate standards to ensure that the technology is used ethically"
+          },
+          {
+            "passage_id": "verbatim_en_2026_MCO:5",
+            "quote": "a new normative framework on AI. based on law and shared ethical principles, respecting human rights and being accessible to all states"
+          }
+        ]
+      },
+      {
+        "code": "AI_UN_ROLE",
+        "label": "UN must not remain a spectator",
+        "definition": "The UN is urged to act on AI through the Global Dialogue on AI Governance and the Global Digital Compact.",
+        "inclusion": "Include references to UN AI processes or calls for UN action on AI.",
+        "exclusion": "Exclude generic multilateralism without UN AI reference.",
+        "boundary_cases": "A call for 'dialogue' without naming the UN is AI_GLOBAL_GOVERNANCE only.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_MCO:5",
+            "quote": "These technologies must remain at the service of humanity, and the United Nations cannot remain a spectator."
+          }
+        ]
+      },
+      {
+        "code": "AI_CYBER_SECURITY",
+        "label": "Misuse by organized crime, terrorism, military",
+        "definition": "Rapid technological advances including AI may provide fertile ground for organized crime and terrorism and be misused for military or terrorist purposes.",
+        "inclusion": "Include passages naming crime, terrorism or malicious misuse of AI.",
+        "exclusion": "Exclude passages focused on autonomous weapons regimes (AI_MILITARY_WEAPONS).",
+        "boundary_cases": "A brief mention of military misuse within a crime/terrorism framing is coded here; substantive military AI discussion goes to AI_MILITARY_WEAPONS.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_MCO:10",
+            "quote": "provide fertile ground for organized crime and terrorism"
+          }
+        ]
+      }
+    ],
+    "rationale": "Monaco's passages across 2019, 2024 and 2026 consistently use an opportunity-versus-risk framing and call for international, ethics- and rights-based AI norms, increasingly via UN processes; 2024 specifically flags crime and terrorism misuse."
+  }
+}

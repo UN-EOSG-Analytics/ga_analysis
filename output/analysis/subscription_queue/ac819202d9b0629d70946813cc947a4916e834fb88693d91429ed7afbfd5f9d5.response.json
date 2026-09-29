@@ -1,0 +1,93 @@
+{
+  "request_hash": "ac819202d9b0629d70946813cc947a4916e834fb88693d91429ed7afbfd5f9d5",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_TECH_LIST_MENTION",
+        "label": "AI named among new global challenges",
+        "definition": "AI cited alongside climate change as an example of new international issues, without substantive elaboration.",
+        "inclusion": "Passages where AI appears as one of several new challenges facing multilateralism.",
+        "exclusion": "Passages that discuss AI benefits, risks or standards specifically.",
+        "boundary_cases": "A short clause that AI is evolving at a furious pace remains a list mention if nothing further follows.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_AUS:3",
+            "quote": "emerging technology, including artificial intelligence, which is evolving at a furious pace"
+          },
+          {
+            "passage_id": "verbatim_en_2026_AUS:2",
+            "quote": "Whether it is climate change or artificial intelligence"
+          }
+        ]
+      },
+      {
+        "code": "AI_SOVEREIGNTY_CONCENTRATION",
+        "label": "World not dictated by tech companies",
+        "definition": "Assertion that global order must not be subcontracted to the richest companies or dictated by the pace of technology.",
+        "inclusion": "Passages rejecting control of global affairs by tech companies or technology pace.",
+        "exclusion": "Specific AI regulation proposals (use AI_GLOBAL_GOVERNANCE or AI_NATIONAL_STRATEGY).",
+        "boundary_cases": "Implicit references to tech companies without naming AI count only in AI-focused context.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_AUS:2",
+            "quote": "Nor can it be subcontracted to the world's richest companies or dictated by the pace of technology."
+          }
+        ]
+      },
+      {
+        "code": "AI_NATIONAL_STRATEGY",
+        "label": "National AI standards after security incident",
+        "definition": "Speaker describes national AI standards and regulation, prompted by incidents such as an AI agent infiltrating a government website.",
+        "inclusion": "Passages on domestic AI standards, digital duty of care or national regulatory leadership on AI.",
+        "exclusion": "International calls for action (use AI_GLOBAL_GOVERNANCE).",
+        "boundary_cases": "Joining other nations in a call for action takes AI_GLOBAL_GOVERNANCE as well.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_AUS:5",
+            "quote": "Australia has been leading the way in establishing Australian standards for AI"
+          },
+          {
+            "passage_id": "verbatim_en_2026_AUS:5",
+            "quote": "Recently, an artificial intelligence agent infiltrated an Australian government website."
+          }
+        ]
+      },
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "AI benefits versus frontier risks",
+        "definition": "AI framed as improving lives and productivity while carrying frontier risks if developed too fast without guardrails.",
+        "inclusion": "Passages pairing AI benefits (health, growth) with warnings about frontier AI risks.",
+        "exclusion": "One-sided statements.",
+        "boundary_cases": "Citing AI company leaders' warnings alongside benefits counts here and may take AI_SAFETY_EXISTENTIAL.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_AUS:5",
+            "quote": "leaders of AI companies themselves have warned of the potential risks to allow frontier AI to develop too fast without guardrails"
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Joint call to shape AI development",
+        "definition": "Joining with other nations to call for action to shape AI development proactively.",
+        "inclusion": "Passages on multilateral calls to shape or govern AI development.",
+        "exclusion": "Purely domestic standards.",
+        "boundary_cases": "If the call is specifically about frontier-model control mechanisms, also code AI_HUMAN_CONTROL_OVERSIGHT.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_AUS:5",
+            "quote": "we joined with other nations this week to call for action to shape artificial intelligence development rather than be passively shaped by it"
+          }
+        ]
+      }
+    ],
+    "rationale": "All passages are from Australia 2026: two mention AI in passing among new challenges and warn against rule by tech companies, while the third substantively discusses AI benefits and frontier risks, a security incident, national standards and a joint international call."
+  }
+}

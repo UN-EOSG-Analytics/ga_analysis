@@ -1,0 +1,29 @@
+{
+  "request_hash": "3e7dc8f48fb99ed6572e7f9116a63eee1118f6db6fdbfa7936b48b736f1b1e91",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_SOVEREIGNTY_CONCENTRATION",
+        "label": "Strategic dependence threatening sovereignty",
+        "definition": "Dependence on others in strategic sectors including AI is framed as a threat to the free exercise of sovereignty, requiring rethinking of value chains.",
+        "inclusion": "Include passages treating reliance on foreign AI or digital supply chains as a sovereignty or strategic-autonomy risk.",
+        "exclusion": "Exclude general access-gap concerns without a dependence framing.",
+        "boundary_cases": "When AI is one of several strategic sectors (health, food) in a dependence argument, still code here rather than AI_TECH_LIST_MENTION.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2020_FRA:43",
+            "quote": "dependence on such strategic sectors as health, digital technology, artificial intelligence as well as food can call into question the free exercise of sovereignty"
+          }
+        ]
+      }
+    ],
+    "rationale": "France's passage places AI among strategic sectors where dependence exposed by the pandemic threatens sovereignty, while arguing for cooperative 'just dependencies' rather than full reshoring."
+  }
+}

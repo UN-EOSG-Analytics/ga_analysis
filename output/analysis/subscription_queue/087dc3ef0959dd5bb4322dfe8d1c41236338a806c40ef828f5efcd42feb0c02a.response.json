@@ -1,0 +1,75 @@
+{
+  "request_hash": "087dc3ef0959dd5bb4322dfe8d1c41236338a806c40ef828f5efcd42feb0c02a",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "Risk of a new AI divide",
+        "definition": "Concern that AI creates a new divide between those with skills and infrastructure to participate and those who only feel its effects; progress must not widen gaps.",
+        "inclusion": "Passages warning that AI could widen gaps between countries or societies with and without capacity.",
+        "exclusion": "Concrete skills or infrastructure programmes (use AI_CAPACITY_BUILDING).",
+        "boundary_cases": "Calls for all countries to benefit and contribute to AI rules take this and AI_GLOBAL_GOVERNANCE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_CHE:3",
+            "quote": "it also highlights the risk of a new divide between those who have the skills and infrastructure needed to participate in this transformation"
+          }
+        ]
+      },
+      {
+        "code": "AI_DEVELOPMENT_SDGS",
+        "label": "AI possibilities in science, medicine, education",
+        "definition": "AI presented as offering new possibilities in science, economy, medicine, education and resource management.",
+        "inclusion": "Passages listing AI's beneficial applications across sectors.",
+        "exclusion": "Mentions of benefits only as a list of technologies (use AI_TECH_LIST_MENTION).",
+        "boundary_cases": "When benefits are immediately paired with risks, also code AI_OPPORTUNITY_RISK_DUALITY.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_CHE:3",
+            "quote": "It offers considerable new possibilities in science, the economy, medicine, education, and the management of resources."
+          }
+        ]
+      },
+      {
+        "code": "AI_INNOVATION_TRUST_BALANCE",
+        "label": "Balancing innovation and trust in AI rules",
+        "definition": "AI governance framed as balancing innovation and public trust: rules should enable progress without stifling it while ensuring reliable, responsible development.",
+        "inclusion": "Passages arguing rules must neither block innovation nor allow untrusted innovation, e.g., 'Bridging Innovation and Trust'.",
+        "exclusion": "Calls for strict limits or bans without balance framing.",
+        "boundary_cases": "Hosting a summit on this balance counts here and in AI_GLOBAL_GOVERNANCE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_CHE:4",
+            "quote": "Innovation in which societies no longer have confidence risks being rejected. Conversely, rules that would prevent all innovation would deprive us of enormous potential."
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Multilateral, inclusive AI rule-making",
+        "definition": "AI shows that no single state can manage its consequences; multilateral institutions and inclusive participation in AI rules are needed, e.g., via a Geneva AI Summit.",
+        "inclusion": "Passages calling for multilateral AI rules, inclusive participation in rule debates, or international summits on AI.",
+        "exclusion": "UN internal reform unrelated to AI.",
+        "boundary_cases": "Using AI as an argument for multilateralism generally still counts here.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_CHE:4",
+            "quote": "no single state can manage all of their consequences by itself"
+          },
+          {
+            "passage_id": "verbatim_en_2026_CHE:4",
+            "quote": "contribute to the debate on the rules that will govern its development and use"
+          }
+        ]
+      }
+    ],
+    "rationale": "Both Swiss passages treat AI as a cross-border transformation requiring inclusive multilateral governance, stressing a new divide, sectoral benefits and a balance between innovation and trust via the Geneva AI Summit."
+  }
+}

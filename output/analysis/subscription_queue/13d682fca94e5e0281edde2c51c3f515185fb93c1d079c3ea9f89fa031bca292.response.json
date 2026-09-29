@@ -1,0 +1,57 @@
+{
+  "request_hash": "13d682fca94e5e0281edde2c51c3f515185fb93c1d079c3ea9f89fa031bca292",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_HUMAN_RIGHTS_ETHICS",
+        "label": "Human-centred governance protecting freedom, privacy",
+        "definition": "AI's challenges to human rights and freedoms, calling for international governance centred on the human being, freedom and privacy.",
+        "inclusion": "Include passages demanding AI governance that protects human rights, freedoms and privacy.",
+        "exclusion": "Exclude governance calls without rights or human-centred content.",
+        "boundary_cases": "'International governance' phrasing also qualifies for AI_GLOBAL_GOVERNANCE; code both.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_LBN:3",
+            "quote": "This calls for international governance that places the human being with his or her freedom and privacy at the heart of this transformation."
+          }
+        ]
+      },
+      {
+        "code": "AI_ECONOMY_LABOR",
+        "label": "Challenges for the future of work",
+        "definition": "AI raising challenges for the future of work.",
+        "inclusion": "Include mentions of AI's effects on work or employment.",
+        "exclusion": "Exclude general economic statements without labour.",
+        "boundary_cases": "A brief clause pairing work with rights is coded under both themes.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_LBN:3",
+            "quote": "Yet it also raises challenges for the future of work and for human rights and fundamental freedoms."
+          }
+        ]
+      },
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "Preventing an AI divide atop existing gaps",
+        "definition": "Warning against an AI divide layered on existing wealth and development gaps.",
+        "inclusion": "Include statements warning of an AI divide compounding inequality.",
+        "exclusion": "Exclude domestic trust/rule-of-law content without AI.",
+        "boundary_cases": "'Progress leaves no one behind' without AI reference is not coded.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_LBN:3",
+            "quote": "we must not allow an artificial intelligence divide to emerge on top of the existing gaps in wealth and development"
+          }
+        ]
+      }
+    ],
+    "rationale": "A single Lebanese passage briefly frames AI's challenges (work, rights, divide) and calls for human-centred international governance before shifting to national sovereignty issues."
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "request_hash": "bf6b5b0ad39799bb32d9ef3bf8e05b65e8496c542c696d62327f67d822a68b3d",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "root"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_MUS:1",
+      "verbatim_en_2026_MUS:2",
+      "verbatim_en_2026_MUS:3",
+      "verbatim_en_2026_MUS:4",
+      "verbatim_en_2026_MUS:5",
+      "verbatim_en_2026_MUS:6",
+      "verbatim_en_2026_MUS:7",
+      "verbatim_en_2026_MUS:8",
+      "verbatim_en_2026_MUS:9"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_MUS:3",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "We support the General Assembly resolution establishing the global dialogue on AI governance and welcome the work being done by the independent international scientific panel on AI.",
+        "rationale": "Supports UN AI governance institutions in response to technological transformation."
+      },
+      {
+        "passage_id": "verbatim_en_2026_MUS:4",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "We have launched, with UN support, a national artificial intelligence strategy and a national fintech strategy.",
+        "rationale": "Connects a UN-supported national AI strategy to inclusive governance, equitable benefits and collective risk management."
+      }
+    ]
+  }
+}

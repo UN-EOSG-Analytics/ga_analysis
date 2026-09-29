@@ -1,0 +1,107 @@
+{
+  "request_hash": "e01958d2d104f1692e6d2debd0d495d0ca6977c0cf9658afb99a5d49e14a7ecf",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_NATIONAL_STRATEGY",
+        "label": "National AI infrastructure investment",
+        "definition": "The speaker describes its own national AI investment, such as building an AI hyperscale data centre, and its expected economic benefits.",
+        "inclusion": "Include descriptions of the speaker country's own AI projects, data centres, or preparation plans for AI transformation.",
+        "exclusion": "Exclude general statements about AI's global potential without reference to national action.",
+        "boundary_cases": "A statement that the country 'must prepare' for AI transformation counts here if it concerns national policy, and also AI_OPPORTUNITY_RISK_DUALITY if risks are mentioned.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_GUY:6",
+            "quote": "taking advantage of our strategic geographic location to establish an AI hyperscale data center"
+          }
+        ]
+      },
+      {
+        "code": "AI_ENERGY_DEMAND",
+        "label": "AI driving energy demand",
+        "definition": "AI and digitization are framed as accelerating global energy demand, linking AI to energy production and resource strategy.",
+        "inclusion": "Include passages linking AI to energy consumption, power demand, or energy resources for data centres.",
+        "exclusion": "Exclude energy-transition passages that do not mention AI.",
+        "boundary_cases": "If AI appears only as an item in a list of transitions next to energy, code AI_TECH_LIST_MENTION instead.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_GUY:6",
+            "quote": "AI and digitization are accelerating this demand at an extraordinary pace."
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Need for AI regulation and ethics standards",
+        "definition": "Calls for urgent regulations, ethical standards and governance mechanisms for AI, including welcoming UN AI governance mechanisms.",
+        "inclusion": "Include explicit calls for AI regulation, governance mechanisms, or welcoming new global AI governance bodies.",
+        "exclusion": "Exclude calls for responsible national implementation only.",
+        "boundary_cases": "Welcoming the UNGA decision on two AI mechanisms also qualifies for AI_UN_ROLE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_GUY:6",
+            "quote": "regulations, ethical standards, and governance mechanisms are urgently needed"
+          },
+          {
+            "passage_id": "verbatim_en_2025_GUY:6",
+            "quote": "we welcome the recent UN General Assembly decision to establish two global AI governance mechanism"
+          }
+        ]
+      },
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "Benefiting from AI while mitigating risks",
+        "definition": "AI is framed as offering opportunities that can only be realized with responsible, controlled implementation that mitigates its risks.",
+        "inclusion": "Include passages explicitly pairing AI benefits with risks or conditions.",
+        "exclusion": "Exclude purely positive or purely negative AI statements.",
+        "boundary_cases": "'Immense benefits' paired with lack of clarity on equity also fits AI_DIGITAL_DIVIDE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_SUR:4",
+            "quote": "only if we can implement AI responsibly and controlled, Suriname will be able to benefit from the opportunities of this technology and mitigate its risks"
+          }
+        ]
+      },
+      {
+        "code": "AI_DEVELOPMENT_SDGS",
+        "label": "AI transforming health, education, agriculture",
+        "definition": "AI and other breakthroughs are framed as transforming sectors like health, education, agriculture and public services, advancing sustainable development.",
+        "inclusion": "Include passages naming sectoral development gains from AI.",
+        "exclusion": "Exclude sector lists without AI mention.",
+        "boundary_cases": "When AI is one of several technologies transforming sectors, code here rather than AI_TECH_LIST_MENTION if sectoral benefits are specified.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_GUY:4",
+            "quote": "offer the prospect of transforming health, education, agriculture, productivity, and public services on a scale scarcely imaginable a generation ago"
+          }
+        ]
+      },
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "Technology must not be privilege of few",
+        "definition": "Concern about equity and access in AI benefits, insisting technology serve all rather than a few.",
+        "inclusion": "Include statements that AI benefits lack equity or access, or must not be a privilege of a few.",
+        "exclusion": "Exclude sovereignty/concentration claims about specific companies or states (AI_SOVEREIGNTY_CONCENTRATION).",
+        "boundary_cases": "'Privilege of the few' could indicate concentration; code here when the framing is about people's access.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_GUY:4",
+            "quote": "Technology must not become the privilege of the few. It must become the servant of all humanity."
+          },
+          {
+            "passage_id": "verbatim_en_2025_GUY:6",
+            "quote": "there is no clarity on equity, access, and applicability"
+          }
+        ]
+      }
+    ],
+    "rationale": "Guyana and Suriname link AI to resource-driven development: Guyana ties gas-based energy to an AI data centre and calls for governance, while Suriname frames AI as a coming transformation requiring controlled implementation. 2026_SUR:5 contains no AI content."
+  }
+}

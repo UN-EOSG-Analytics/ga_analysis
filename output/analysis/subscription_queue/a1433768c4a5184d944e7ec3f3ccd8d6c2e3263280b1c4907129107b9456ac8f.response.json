@@ -1,0 +1,36 @@
+{
+  "request_hash": "a1433768c4a5184d944e7ec3f3ccd8d6c2e3263280b1c4907129107b9456ac8f",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "root"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_TKM:1",
+      "verbatim_en_2026_TKM:2",
+      "verbatim_en_2026_TKM:3",
+      "verbatim_en_2026_TKM:4",
+      "verbatim_en_2026_TKM:5"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_TKM:2",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Artificial intelligence offers broad opportunities while also requiring responsible international governance to prevent its use and to detriment of peace, security, and trust.",
+        "rationale": "Calls for responsible international AI governance to realize opportunities while protecting peace, security and trust."
+      },
+      {
+        "passage_id": "verbatim_en_2026_TKM:3",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Turkmenistan proposes the development under the auspices of the United Nations of an international code for the peaceful use of AI in international relations and diplomacy.",
+        "rationale": "Proposes a UN-backed code for peaceful diplomatic AI use and an Ashgabat expert dialogue on digital trust and responsible AI."
+      }
+    ]
+  }
+}

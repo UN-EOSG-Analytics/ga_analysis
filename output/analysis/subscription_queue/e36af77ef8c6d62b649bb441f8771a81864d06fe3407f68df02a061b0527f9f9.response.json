@@ -1,0 +1,79 @@
+{
+  "request_hash": "e36af77ef8c6d62b649bb441f8771a81864d06fe3407f68df02a061b0527f9f9",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_MILITARY_WEAPONS",
+        "label": "AI-driven autonomous warfare and drones",
+        "definition": "AI discussed as transforming warfare, including autonomous drones, AI deciding on the battlefield, and an AI arms race.",
+        "inclusion": "Include passages describing AI in weapons, autonomous drones, battlefield decision-making, or calls for rules on AI in weapons.",
+        "exclusion": "Exclude drone warfare discussion that makes no link to AI or autonomy.",
+        "boundary_cases": "Calls for global rules on AI weapons should also be coded AI_GLOBAL_GOVERNANCE; speculative claims about AI 'shaping atoms' tied to war fit here.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_UKR:4",
+            "quote": "We need global rules now for how AI can be used in weapons, and this is just as urgent as preventing the spread of nuclear weapons."
+          },
+          {
+            "passage_id": "verbatim_en_2026_UKR:8",
+            "quote": "there is already a real possibility that AI, not only people, will begin will begin decide what happens on the battlefield"
+          },
+          {
+            "passage_id": "verbatim_en_2023_UKR:12",
+            "quote": "Artificial intelligence could be trained to fight well before it would learn to help humankind."
+          }
+        ]
+      },
+      {
+        "code": "AI_SAFETY_EXISTENTIAL",
+        "label": "AI escalation as looming global threat",
+        "definition": "AI framed as an approaching threshold of danger for humanity requiring peace before AI capabilities advance further.",
+        "inclusion": "Include passages warning that advancing AI capability creates a civilizational-level threat or deadline for action.",
+        "exclusion": "Exclude narrowly tactical descriptions of AI weapons without broader warning.",
+        "boundary_cases": "Where the threat is purely battlefield-specific, prefer AI_MILITARY_WEAPONS alone.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_UKR:9",
+            "quote": "one day AI will move from the digital world to shaping atoms. And when that happens, we had better be at peace."
+          }
+        ]
+      },
+      {
+        "code": "AI_REGULATORY_INNOVATION",
+        "label": "Agile regulation and sandboxes for AI",
+        "definition": "AI as outpacing regulation, with the speaker promoting agile national rules such as regulatory sandboxes.",
+        "inclusion": "Include passages about national regulatory approaches to keep pace with AI, e.g., sandboxes and adaptive rules.",
+        "exclusion": "Exclude calls for international AI governance frameworks.",
+        "boundary_cases": "National AI investment claims without regulatory focus belong to AI_NATIONAL_STRATEGY.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_MDA:2",
+            "quote": "Technology is moving faster than regulation almost everywhere, and artificial intelligence is widening that gap."
+          }
+        ]
+      },
+      {
+        "code": "AI_NATIONAL_STRATEGY",
+        "label": "National AI talent and industries",
+        "definition": "Speaker presents national capabilities or workforce in AI as an asset for investment.",
+        "inclusion": "Include passages showcasing national specialists, industries or investment in AI.",
+        "exclusion": "Exclude passages discussing AI only as a global risk.",
+        "boundary_cases": "If AI appears only in a list of industries, also consider AI_TECH_LIST_MENTION.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_ROU:2",
+            "quote": "are shaping the industries of the future, artificial intelligence, cybersecurity, defense technologies, advanced manufacturing and robotics"
+          }
+        ]
+      }
+    ],
+    "rationale": "Ukrainian passages focus on AI-enabled autonomous drones and an AI arms race, with calls for global rules; Moldova and Romania instead mention AI in terms of national regulatory agility and national tech talent."
+  }
+}

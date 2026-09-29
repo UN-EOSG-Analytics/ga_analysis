@@ -1,0 +1,33 @@
+{
+  "request_hash": "f6ba08908639e0968e84446480aabbf3612ffd10436bcacfb2c13b763ae95259",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_GLOBAL_CHALLENGES_LIST",
+        "label": "AI listed among multiplying global challenges",
+        "definition": "AI is named briefly in a list of global challenges or threats (conflict, climate, migration, inequality) without further discussion of AI itself.",
+        "inclusion": "Include passages where AI appears only as one item in an enumeration of global challenges or threats.",
+        "exclusion": "Exclude passages that go on to discuss AI's specific risks, uses or governance.",
+        "boundary_cases": "Lists of technologies (rather than challenges) go to AI_TECH_LIST_MENTION; the phrase 'unchecked rise' signals mild concern but not substantive discussion.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_GRC:2",
+            "quote": "rising inequality or even the unchecked rise of artificial intelligence, those challenges jeopardize our present and our future"
+          },
+          {
+            "passage_id": "verbatim_en_2025_GRC:2",
+            "quote": "Climate change, migration, the advent of artificial intelligence. Our world is changing."
+          }
+        ]
+      }
+    ],
+    "rationale": "Both Greek passages mention AI only in passing as one of several global challenges framing a call for multilateral cooperation and respect for international law; there is no substantive AI discussion."
+  }
+}

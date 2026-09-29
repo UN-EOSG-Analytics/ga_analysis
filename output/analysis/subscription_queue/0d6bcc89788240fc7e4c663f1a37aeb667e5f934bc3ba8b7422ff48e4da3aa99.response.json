@@ -1,0 +1,43 @@
+{
+  "request_hash": "0d6bcc89788240fc7e4c663f1a37aeb667e5f934bc3ba8b7422ff48e4da3aa99",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_ECONOMY_LABOR",
+        "label": "AI as product of collective creative labour",
+        "definition": "AI framed as an outcome of human creative work and productivity that can generate free time and a new basis of wealth.",
+        "inclusion": "Passages presenting AI as part of productivity gains from human labour and as a basis for a post-oil economy or more free time.",
+        "exclusion": "Passages about AI-driven job losses without the productivity/wealth framing.",
+        "boundary_cases": "Ideological framings of AI within socialism or post-capitalist visions count here when productivity is central.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_COL:13",
+            "quote": "the deep, creative and freely performed work that has made possible the high levels of productivity achieved today, including artificial intelligence"
+          }
+        ]
+      },
+      {
+        "code": "AI_PUBLIC_CONTROL",
+        "label": "Global public authority controlling AI",
+        "definition": "Demand that AI and productive capacity be controlled by a global public authority rather than a global oligarchy.",
+        "inclusion": "Passages calling for public, collective or global-authority control over AI, set against oligarchic or private control.",
+        "exclusion": "Standard intergovernmental regulation calls without the public-ownership/control framing.",
+        "boundary_cases": "Also relates to concentration; code here when a global public authority is explicitly proposed.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_COL:13",
+            "quote": "that must be controlled by a global public authority"
+          }
+        ]
+      }
+    ],
+    "rationale": "Single Colombian 2024 passage with a socialist framing: AI is a product of collective human labour and productivity that should be controlled by a global public authority against a global oligarchy."
+  }
+}

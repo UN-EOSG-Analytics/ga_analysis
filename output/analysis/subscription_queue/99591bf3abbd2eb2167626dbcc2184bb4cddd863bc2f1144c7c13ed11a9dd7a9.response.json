@@ -1,0 +1,46 @@
+{
+  "request_hash": "99591bf3abbd2eb2167626dbcc2184bb4cddd863bc2f1144c7c13ed11a9dd7a9",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_a"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_AGO:1",
+      "verbatim_en_2026_AGO:2",
+      "verbatim_en_2026_AGO:3",
+      "verbatim_en_2026_AGO:4",
+      "verbatim_en_2026_AGO:5",
+      "verbatim_en_2026_AGO:6",
+      "verbatim_en_2026_AGO:7",
+      "verbatim_en_2026_AGO:8"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_AGO:1",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "a champion of the global debate on global governance of artificial intelligence.",
+        "rationale": "Commends the Secretary-General for advancing global AI governance."
+      },
+      {
+        "passage_id": "verbatim_en_2026_AGO:6",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "The voice of Africans must be heard in all circumstances, at all times, in strategic decision-making processes on issues of peace, global security, financing for development as well as climate issues and global governance of artificial intelligence.",
+        "rationale": "Calls for African participation in global AI governance decisions."
+      },
+      {
+        "passage_id": "verbatim_en_2026_AGO:7",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "tools provided by artificial intelligence in order to improve education, health, agriculture, public service, scientific research and economic productivity.",
+        "rationale": "Discusses AI development applications and inclusive human-centered governance through the Global Digital Compact."
+      }
+    ]
+  }
+}

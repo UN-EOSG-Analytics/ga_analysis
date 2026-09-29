@@ -1,0 +1,89 @@
+{
+  "request_hash": "904b79887f554c359cff4c18eb9ec7b1ff09567a04c8a9d16df2b60826388a9b",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_HUMAN_RIGHTS_ETHICS",
+        "label": "Human-centred AI inseparable from rights",
+        "definition": "AI must serve humankind and be inseparable from human rights, security, equal opportunity and accountability.",
+        "inclusion": "Passages insisting humanity must be at the heart of AI or that AI must respect rights and accountability.",
+        "exclusion": "Passages about AI inequality between countries only.",
+        "boundary_cases": "Rhetorical questions about whether technology serves people count here when followed by a human-centred principle.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_UZB:3",
+            "quote": "Artificial intelligence must be inseparable from human rights, security, equal opportunity, and accountability."
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "International dialogue and cooperation on AI",
+        "definition": "Advocacy of international dialogue, cooperation mechanisms and co-sponsored GA resolutions on safe AI.",
+        "inclusion": "Passages calling for international dialogue, cooperation mechanisms or resolutions on AI.",
+        "exclusion": "Domestic AI initiatives without an international cooperation element.",
+        "boundary_cases": "Co-sponsoring UN General Assembly AI resolutions may also be coded AI_UN_ROLE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_UZB:7",
+            "quote": "Uzbekistan supported and co-sponsored General Assembly resolutions on utilizing safe artificial intelligence for sustainable development and strengthening international cooperation"
+          },
+          {
+            "passage_id": "verbatim_en_2025_UZB:5",
+            "quote": "We propose to create an international cooperation mechanism aimed at the greatest exchange of practical solutions and models of artificial intelligence in healthcare, education, and culture."
+          }
+        ]
+      },
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "Preventing AI inequalities between countries",
+        "definition": "Concern about inequalities between countries in digital development and AI use.",
+        "inclusion": "Passages calling to prevent unequal access to or use of AI across countries.",
+        "exclusion": "Human rights concerns within countries.",
+        "boundary_cases": "Proposals for sharing AI models to reduce inequality also fit capacity building.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_UZB:5",
+            "quote": "It is of great importance to prevent inequalities in digital development and the use of artificial intelligence between countries."
+          }
+        ]
+      },
+      {
+        "code": "AI_HATE_STEREOTYPES",
+        "label": "AI spreading hatred and stereotypes",
+        "definition": "AI, together with social networks, spreading hatred, stereotypes and intolerance between cultures and religions.",
+        "inclusion": "Passages linking AI to the spread of hatred, stereotypes or intolerance.",
+        "exclusion": "Election interference or fabricated news (use AI_DISINFORMATION).",
+        "boundary_cases": "If the passage frames it as false information rather than hatred, prefer AI_DISINFORMATION.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_UZB:4",
+            "quote": "in an era when social networks and artificial intelligence are spreading hatred and stereotypes at a rapid pace"
+          }
+        ]
+      },
+      {
+        "code": "AI_UNCONTROLLED_USE_RISK",
+        "label": "Uncontrolled use of AI as challenge",
+        "definition": "General warning about uncontrolled use of AI as the downside of digital technologies.",
+        "inclusion": "Passages naming uncontrolled or unsafe AI use as a new challenge, without specifying catastrophic or military risk.",
+        "exclusion": "Explicit existential, catastrophic or weapons-related risks.",
+        "boundary_cases": "'Safe AI' language in resolutions pairs this with governance.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_UZB:7",
+            "quote": "The rise of digital technologies presents new challenges, particularly concerning the uncontrolled use of artificial intelligence."
+          }
+        ]
+      }
+    ],
+    "rationale": "Uzbekistan passages across 2024-2026 frame AI through human-centred values and international cooperation, with specific concerns about uncontrolled use, inequality between countries, and AI spreading hatred."
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "request_hash": "2b73e576c32626aa09a637c0d369e92a27ac92e46741238c656da7f280967e4b",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_YOUTH_EDUCATION",
+        "label": "AI in education and learning",
+        "definition": "AI discussed as transforming teaching and learning, including national education programs and responsible child-centred learning.",
+        "inclusion": "Include passages on AI in schools, teacher/student support, AI education programs or skills to use AI.",
+        "exclusion": "Exclude general education references without AI.",
+        "boundary_cases": "National AI education programs (e.g., AI Leap) are coded here and also AI_NATIONAL_STRATEGY.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_EST:7",
+            "quote": "Artificial intelligence should empower teaching and learning rather than replace them."
+          },
+          {
+            "passage_id": "verbatim_en_2025_EST:5",
+            "quote": "Therefore, Estonia is making a new leap, the artificial intelligence leap."
+          }
+        ]
+      },
+      {
+        "code": "AI_NATIONAL_STRATEGY",
+        "label": "National AI programs and experience sharing",
+        "definition": "Speaker showcases own national AI/digital initiatives and offers them as best practice to others.",
+        "inclusion": "Include descriptions of national AI programs or national digital success reinforced by AI, and offers to share this experience.",
+        "exclusion": "Exclude purely global calls without national reference.",
+        "boundary_cases": "Sharing experience via UN bodies may also be AI_UN_ROLE or AI_CAPACITY_BUILDING.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_EST:7",
+            "quote": "digitalization which has now been reinforced by AI, has enabled our small country to grow, innovate, and connect globally"
+          }
+        ]
+      },
+      {
+        "code": "AI_UN_ROLE",
+        "label": "Leadership in UN AI processes",
+        "definition": "References to UN AI processes and bodies, such as co-chairing the Global Dialogue on AI Governance or AI for Good, and working through UNICEF/ITU.",
+        "inclusion": "Include mentions of UN-specific AI bodies, dialogues, commissions or agencies as venues for AI work.",
+        "exclusion": "Exclude generic multilateralism without an AI link.",
+        "boundary_cases": "Candidacies for UN tech posts framed around digital transformation count only if linked to AI or digital inclusion.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_EST:7",
+            "quote": "As a co-chair of the first UN Global Dialogue on AI Governance, alongside with El Salvador"
+          }
+        ]
+      },
+      {
+        "code": "AI_HUMAN_RIGHTS_ETHICS",
+        "label": "AI serving dignity and human rights",
+        "definition": "AI must be used wisely and responsibly in service of dignity, development, human rights and humanity.",
+        "inclusion": "Include passages insisting AI serve human rights, dignity or humanity, or be used responsibly.",
+        "exclusion": "Exclude human rights content that makes no reference to AI or digital rights.",
+        "boundary_cases": "Statements acknowledging AI risks but expressing confidence it can serve humanity may also be AI_OPPORTUNITY_RISK_DUALITY.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_EST:6",
+            "quote": "They must serve dignity, development, and human rights, not the other way around."
+          },
+          {
+            "passage_id": "verbatim_en_2026_EST:6",
+            "quote": "Like any new technology, AI poses risks and brings challenges. But with knowledge, wisdom and unity, we can put it to use in the service of humanity."
+          }
+        ]
+      },
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "No country left behind digitally",
+        "definition": "Ensuring AI and digital benefits reach all countries and communities equally.",
+        "inclusion": "Include statements aiming for AI benefits to reach many countries or ensure equal opportunities and no one left behind.",
+        "exclusion": "Exclude national-only achievements.",
+        "boundary_cases": "Connectivity-only statements without AI are borderline; include when in an AI-context passage.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_EST:8",
+            "quote": "assure that no country is left behind in the digital transformation"
+          },
+          {
+            "passage_id": "verbatim_en_2026_EST:7",
+            "quote": "ensuring that AI creates equal opportunities for all humanity"
+          }
+        ]
+      }
+    ],
+    "rationale": "Estonia's passages center on AI in education (AI Leap), national digital experience shared via UN bodies, and human-rights-anchored, inclusive AI; the 2026 closing passage is general digital multilateralism."
+  }
+}

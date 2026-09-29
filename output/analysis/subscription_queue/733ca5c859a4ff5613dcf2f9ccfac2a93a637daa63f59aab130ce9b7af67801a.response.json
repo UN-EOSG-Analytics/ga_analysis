@@ -1,0 +1,31 @@
+{
+  "request_hash": "733ca5c859a4ff5613dcf2f9ccfac2a93a637daa63f59aab130ce9b7af67801a",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_b"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2025_LIE:1",
+      "verbatim_en_2025_LIE:2",
+      "verbatim_en_2025_LIE:3",
+      "verbatim_en_2025_LIE:4",
+      "verbatim_en_2025_LIE:5",
+      "verbatim_en_2025_LIE:6",
+      "verbatim_en_2025_LIE:7"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2025_LIE:3",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Artificial intelligence is developing with lightning speed, largely unchecked, with obvious risks to our social fabric, but without any agreement on rules and boundaries.",
+        "rationale": "Highlights fast AI development, societal risks and absent agreed safeguards."
+      }
+    ]
+  }
+}

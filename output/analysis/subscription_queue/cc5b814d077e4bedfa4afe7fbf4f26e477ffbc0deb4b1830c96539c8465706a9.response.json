@@ -1,0 +1,31 @@
+{
+  "request_hash": "cc5b814d077e4bedfa4afe7fbf4f26e477ffbc0deb4b1830c96539c8465706a9",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "root"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_LKA:1",
+      "verbatim_en_2026_LKA:2",
+      "verbatim_en_2026_LKA:3",
+      "verbatim_en_2026_LKA:4",
+      "verbatim_en_2026_LKA:5",
+      "verbatim_en_2026_LKA:6",
+      "verbatim_en_2026_LKA:7"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_LKA:6",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "We have developed national AI ethical guidelines in line with international frameworks.",
+        "rationale": "Reports national AI ethics guidance and calls for equitable technology transfer, responsible use under international and humanitarian law, and AI serving peace and humanity."
+      }
+    ]
+  }
+}

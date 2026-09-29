@@ -1,0 +1,29 @@
+{
+  "request_hash": "52549f5153162f877d757c00c57baa280a540c60618def02e323b2323bb72194",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "root"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_LVA:1",
+      "verbatim_en_2026_LVA:2",
+      "verbatim_en_2026_LVA:3",
+      "verbatim_en_2026_LVA:4",
+      "verbatim_en_2026_LVA:5"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_LVA:1",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Artificial intelligence offers enormous opportunities. But in the wrong hands, it can also become a powerful tool for deception, disruption, and conflict.",
+        "rationale": "Recognizes AI opportunities alongside malicious-use risks and places these among transboundary threats requiring collective action under UN principles."
+      }
+    ]
+  }
+}

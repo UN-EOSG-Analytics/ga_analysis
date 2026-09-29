@@ -1,0 +1,93 @@
+{
+  "request_hash": "b61b729f19aef563430a07efe7cac5191bc36aaa2ad4cb7dad4a4f35f1d028e2",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Groundwork for AI regulation and agency",
+        "definition": "Calls to lay the groundwork for AI regulation and multilateral governance, including a future international AI agency.",
+        "inclusion": "Include calls for AI regulation, multilateral AI governance, or new international AI institutions.",
+        "exclusion": "Exclude general statements about harnessing progress with ethics that do not call for rules or institutions.",
+        "boundary_cases": "Offers to host an international AI agency count here and, where linked to UN officials, AI_UN_ROLE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_ESP:40",
+            "quote": "We need to lay the groundwork for the regulation of artificial intelligence"
+          },
+          {
+            "passage_id": "verbatim_en_2023_ESP:40",
+            "quote": "We would like to host the headquarters of a future international artificial intelligence agency."
+          }
+        ]
+      },
+      {
+        "code": "AI_UN_ROLE",
+        "label": "Supporting the SG's Envoy on Technology",
+        "definition": "Support for UN Secretariat AI/technology functions such as the Secretary-General's Envoy on Technology.",
+        "inclusion": "Include pledges of resources or support to UN technology offices or envoys on AI.",
+        "exclusion": "Exclude non-UN governance calls.",
+        "boundary_cases": "Support framed as 'developing multilateral governance' is coded both here and AI_GLOBAL_GOVERNANCE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_ESP:40",
+            "quote": "Spain is committed to supporting the Secretary-General’s Envoy on Technology with resources and know-how"
+          }
+        ]
+      },
+      {
+        "code": "AI_HUMAN_RIGHTS_ETHICS",
+        "label": "Human-centric, ethical AI progress",
+        "definition": "AI and digital transformation should be human-centric, rights-oriented and combined with ethics.",
+        "inclusion": "Include calls for human-centric, rights-oriented, or ethically guided AI progress.",
+        "exclusion": "Exclude governance calls without ethical/rights content.",
+        "boundary_cases": "Historical analogies about fear of new technology followed by an ethics call count here and AI_OPPORTUNITY_RISK_DUALITY.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_ESP:40",
+            "quote": "a more human-centric and rights-oriented digital transformation"
+          },
+          {
+            "passage_id": "verbatim_en_2024_ESP:29",
+            "quote": "to combine progress with an ethic that is essential in that great leap"
+          }
+        ]
+      },
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "Disruption breeds fear; harness progress",
+        "definition": "Framing AI as a disruptive advance that, like writing or electricity, generates fear but can be harnessed; possibilities weighed against hidden risks.",
+        "inclusion": "Include passages weighing AI's possibilities against risks or placing fears of AI in historical perspective.",
+        "exclusion": "Exclude purely risk-focused or purely benefit-focused statements.",
+        "boundary_cases": "Statements that possibilities 'do not outweigh hidden risks' lean risk-ward but still count as explicit weighing.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_ESP:29",
+            "quote": "the emergence of a disruptive advance generates fear and mistrust. This is not the first time."
+          }
+        ]
+      },
+      {
+        "code": "AI_DEVELOPMENT_SDGS",
+        "label": "AI accelerating the 2030 Agenda",
+        "definition": "AI as a transformative revolution that can accelerate the 2030 Agenda if directed toward fair and equitable digital transformation.",
+        "inclusion": "Include claims that AI can advance the SDGs/2030 Agenda.",
+        "exclusion": "Exclude listing of AI among challenges without development link.",
+        "boundary_cases": "Conditional framing ('if we know how to direct it') still counts here.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_ESP:5",
+            "quote": "artificial intelligence which can accelerate progress on the 2030 agenda if we know how to direct it towards a fair and equitable digital transformation"
+          }
+        ]
+      }
+    ],
+    "rationale": "Spain's passages consistently frame AI as a transformative force to be harnessed ethically and governed multilaterally; they differ in emphasis between regulation and institutions (2023), historical perspective on fear (2024), and SDG acceleration (2025)."
+  }
+}

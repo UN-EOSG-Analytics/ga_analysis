@@ -1,0 +1,31 @@
+{
+  "request_hash": "14e31efee67b401334a402f078060d06147c7a64093cd6b4a403c520bc337be7",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_a"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2025_MOZ:1",
+      "verbatim_en_2025_MOZ:2",
+      "verbatim_en_2025_MOZ:3",
+      "verbatim_en_2025_MOZ:4",
+      "verbatim_en_2025_MOZ:5",
+      "verbatim_en_2025_MOZ:6",
+      "verbatim_en_2025_MOZ:7"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2025_MOZ:3",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Artificial intelligence and other emerging technologies offer extraordinary opportunities, but also serious risks of exclusion, manipulation of the society, and even militarization throughout autonomous weapons.",
+        "rationale": "Discusses AI opportunities, exclusion and military risks, model safeguards and equitable international governance."
+      }
+    ]
+  }
+}

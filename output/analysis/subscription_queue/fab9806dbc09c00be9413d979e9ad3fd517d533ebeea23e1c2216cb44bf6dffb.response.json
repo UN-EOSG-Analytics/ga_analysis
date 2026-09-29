@@ -1,0 +1,29 @@
+{
+  "request_hash": "fab9806dbc09c00be9413d979e9ad3fd517d533ebeea23e1c2216cb44bf6dffb",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_MILITARY_WEAPONS",
+        "label": "Battlefield AI challenging humanitarian law",
+        "definition": "Use of AI on the battlefield is presented as challenging international humanitarian law, within a broader narrative of militarization and weaponization of new domains.",
+        "inclusion": "Include passages stating that military or battlefield AI strains or violates international humanitarian law or is part of weaponization trends.",
+        "exclusion": "Exclude weaponization of space or cyberspace passages that do not mention AI.",
+        "boundary_cases": "A single-sentence mention of battlefield AI is still coded here because the military use is explicit, not as a generic list mention.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_LKA:6",
+            "quote": "the use of artificial intelligence is challenging international humanitarian law on the battlefield"
+          }
+        ]
+      }
+    ],
+    "rationale": "The single Sri Lanka 2024 passage mentions AI once, specifically as a battlefield technology challenging international humanitarian law, amid concerns about rising weapons spending, nuclear discourse and weaponized domains."
+  }
+}

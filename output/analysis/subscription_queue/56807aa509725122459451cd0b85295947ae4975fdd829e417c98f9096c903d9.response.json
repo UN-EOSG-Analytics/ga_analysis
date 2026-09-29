@@ -1,0 +1,97 @@
+{
+  "request_hash": "56807aa509725122459451cd0b85295947ae4975fdd829e417c98f9096c903d9",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_SAFETY_EXISTENTIAL",
+        "label": "Human control and safety amid racing",
+        "definition": "Concern that AI governance is not keeping pace with capabilities, that humans must remain in control, and that a race for dominance could push safety aside; includes severe risks like novel pathogens and bioweapons.",
+        "inclusion": "Include passages on loss of human control, safety being sidelined by competitive races, governance lagging capability, or catastrophic misuse such as bioweapons.",
+        "exclusion": "Exclude military-use norms (AI_MILITARY_WEAPONS) and deepfake/disinformation harms (AI_DISINFORMATION).",
+        "boundary_cases": "Citing warnings from the UN scientific panel about governance lag fits here and in AI_UN_ROLE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_CZE:3",
+            "quote": "Human beings must remain in control of technology, not become a subject to it."
+          },
+          {
+            "passage_id": "verbatim_en_2026_CZE:3",
+            "quote": "Nor we can allow an unchecked race for technological dominance to determine the future of AI with the pressure to move first, pushing safety, oversight, and responsibility aside."
+          },
+          {
+            "passage_id": "verbatim_en_2024_USA:23",
+            "quote": "from novel pathogens to bioweapons"
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Global rules of the road for AI",
+        "definition": "Efforts to define international norms and standards for AI, including GA resolutions, and the view that governance lags development.",
+        "inclusion": "Include passages on developing global AI rules, norms and standards or noting governance failing to keep pace.",
+        "exclusion": "Exclude purely national measures.",
+        "boundary_cases": "Mention of GA resolutions on AI also fits AI_UN_ROLE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_USA:23",
+            "quote": "with a view to starting to develop global rules of the road"
+          },
+          {
+            "passage_id": "verbatim_en_2026_CZE:3",
+            "quote": "Our ability to govern this technology is not keeping pace with its development."
+          }
+        ]
+      },
+      {
+        "code": "AI_MILITARY_WEAPONS",
+        "label": "Responsible military use of AI declaration",
+        "definition": "AI's effect on warfare and political declarations on responsible military use of AI and autonomy.",
+        "inclusion": "Include references to AI changing war or to military AI norms and declarations.",
+        "exclusion": "Exclude bioweapon misuse, which is coded AI_SAFETY_EXISTENTIAL.",
+        "boundary_cases": "A generic 'life, work and war' phrase counts only alongside military-specific content.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_USA:23",
+            "quote": "the Political Declaration on Responsible Military Use of Artificial Intelligence and Autonomy"
+          }
+        ]
+      },
+      {
+        "code": "AI_DISINFORMATION",
+        "label": "Deepfakes and disinformation risks",
+        "definition": "AI risks in the information space such as deepfakes and disinformation.",
+        "inclusion": "Include passages naming deepfakes or disinformation as AI risks.",
+        "exclusion": "Exclude disinformation not linked to AI.",
+        "boundary_cases": "Lists mixing deepfakes with other risks count here as well.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_USA:23",
+            "quote": "But AI also brings profound risks, from deep fakes to disinformation"
+          }
+        ]
+      },
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "Enormous benefits versus immense harm",
+        "definition": "AI framed as capable of great benefit and great harm.",
+        "inclusion": "Include explicit benefit-harm pairings.",
+        "exclusion": "Exclude one-sided statements.",
+        "boundary_cases": "Conditional framing ('without safeguards, it can cause harm') counts.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_CZE:3",
+            "quote": "AI can bring enormous benefits to humanity, but without effective safeguards, it can also cause immense harm."
+          }
+        ]
+      }
+    ],
+    "rationale": "US (2024) and Czech (2026) passages both give substantive treatment of AI risk and governance: global rules, military-use norms and disinformation (US), and human control, safety versus racing and governance lag (Czechia)."
+  }
+}

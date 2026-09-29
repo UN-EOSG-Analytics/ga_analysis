@@ -1,0 +1,442 @@
+{
+  "request_hash": "ad8ed328aa180d1e2a2f7b5a296b3db5c3c1757ee36c603148777ac853325ddc",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "results": [
+      {
+        "passage_id": "verbatim_en_2025_GBR:5",
+        "classification": {
+          "themes": [
+            {
+              "code": "AI_GLOBAL_GOVERNANCE",
+              "value": "Uncertain",
+              "quote": "Only by cooperation together can we set artificial intelligence on the right millennia-defining course.",
+              "rationale": "Cooperation on AI without governance mechanism."
+            },
+            {
+              "code": "AI_INCLUSIVE_GOVERNANCE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_GOVERNANCE_SKEPTICISM",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_UN_ROLE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_MILITARY_WEAPONS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_PEACE_APPLICATIONS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_SAFETY_EXISTENTIAL",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_HUMAN_CONTROL",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_HUMAN_RIGHTS_ETHICS",
+              "value": "Yes",
+              "quote": "AI is being used to consolidate repression",
+              "rationale": "AI repression."
+            },
+            {
+              "code": "AI_BIAS_CULTURAL_DIVERSITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DISINFORMATION",
+              "value": "Yes",
+              "quote": "Authoritarian states, notably Russia, are manipulating large-scale, large model language models so that chatbots answer in the voice of their propaganda across the world.",
+              "rationale": "LLM manipulation for propaganda."
+            },
+            {
+              "code": "AI_CYBER_SECURITY",
+              "value": "Yes",
+              "quote": "Organised crime is using AI to supercharge their scams, deceiving victims on an unprecedented scale.",
+              "rationale": "AI-enabled crime."
+            },
+            {
+              "code": "AI_DIGITAL_DIVIDE",
+              "value": "Yes",
+              "quote": "without a concerted effort, we risk a world of ever deeper inequality, where the benefits of this technology fail to reach those who need it most",
+              "rationale": "Unequal benefits."
+            },
+            {
+              "code": "AI_CAPACITY_BUILDING",
+              "value": "Yes",
+              "quote": "We must invest, invest, invest. We must partner, partner, partner.",
+              "rationale": "Investment and partnership to share AI benefits."
+            },
+            {
+              "code": "AI_DEVELOPMENT_SDGS",
+              "value": "Yes",
+              "quote": "AI research tools are unlocking new drug combos to fight cancer",
+              "rationale": "AI in health."
+            },
+            {
+              "code": "AI_RESOURCE_FOOTPRINT",
+              "value": "Uncertain",
+              "quote": "the promise of fusion power, powering limitless servers through quantum computing, enabling ever stronger AI",
+              "rationale": "Energy for AI servers, framed as promise not footprint."
+            },
+            {
+              "code": "AI_ECONOMY_LABOR",
+              "value": "Yes",
+              "quote": "This investment promises outstanding productivity gains and with it, growth of historic proportions.",
+              "rationale": "Productivity and growth."
+            },
+            {
+              "code": "AI_YOUTH_EDUCATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CHILD_PROTECTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_NATIONAL_STRATEGY",
+              "value": "Yes",
+              "quote": "In our National Health Service, AI mammogram trials double the speed of diagnosis.",
+              "rationale": "National AI pilots."
+            },
+            {
+              "code": "AI_SOVEREIGNTY_CONCENTRATION",
+              "value": "Uncertain",
+              "quote": "Yet while this promise may well be diffuse, for now it remains concentrated.",
+              "rationale": "Concentration of AI benefits noted."
+            },
+            {
+              "code": "AI_GEOPOLITICAL_RIVALRY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_OPPORTUNITY_RISK_DUALITY",
+              "value": "Yes",
+              "quote": "AI can empower freedom or it can entrench repression. AI can empower truth or it can entrench lies. AI can empower law or it can empower crime.",
+              "rationale": "Double-edged framing."
+            },
+            {
+              "code": "AI_TRANSFORMATIVE_ERA",
+              "value": "Yes",
+              "quote": "This is the defining opportunity of our generation, and we must run towards it with hope.",
+              "rationale": "Defining opportunity of the generation."
+            },
+            {
+              "code": "AI_TECH_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_THREAT_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            }
+          ],
+          "institutions": [],
+          "keywords": [
+            {
+              "normalized_term": "large language models",
+              "original_term": "large model language models",
+              "quote": "manipulating large-scale, large model language models"
+            },
+            {
+              "normalized_term": "chatbots",
+              "original_term": "chatbots",
+              "quote": "so that chatbots answer in the voice of their propaganda"
+            },
+            {
+              "normalized_term": "ai scams",
+              "original_term": "supercharge their scams",
+              "quote": "Organised crime is using AI to supercharge their scams"
+            }
+          ],
+          "uncovered_concept": ""
+        }
+      },
+      {
+        "passage_id": "verbatim_en_2025_GBR:6",
+        "classification": {
+          "themes": [
+            {
+              "code": "AI_GLOBAL_GOVERNANCE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_INCLUSIVE_GOVERNANCE",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_GOVERNANCE_SKEPTICISM",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_UN_ROLE",
+              "value": "Yes",
+              "quote": "I salute the Secretary-General for championing the Global Digital Compact, which embodies both progress and realism.",
+              "rationale": "Supports GDC, Panel and Dialogue."
+            },
+            {
+              "code": "AI_MILITARY_WEAPONS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_PEACE_APPLICATIONS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_SAFETY_EXISTENTIAL",
+              "value": "Uncertain",
+              "quote": "we invest so heavily in the AI Security Institute",
+              "rationale": "AI safety institute named without risk content."
+            },
+            {
+              "code": "AI_HUMAN_CONTROL",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_HUMAN_RIGHTS_ETHICS",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_BIAS_CULTURAL_DIVERSITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DISINFORMATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_CYBER_SECURITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_DIGITAL_DIVIDE",
+              "value": "Yes",
+              "quote": "this drives our digital access programs, which seek to narrow the technological divide for millions",
+              "rationale": "Narrowing technological divide."
+            },
+            {
+              "code": "AI_CAPACITY_BUILDING",
+              "value": "Yes",
+              "quote": "working with 10 African partners creating AI ecosystems that empower thousands of communities to meet the sustainable development goals",
+              "rationale": "AI partnerships with African countries."
+            },
+            {
+              "code": "AI_DEVELOPMENT_SDGS",
+              "value": "Yes",
+              "quote": "And this is why we champion AI for development",
+              "rationale": "AI for development and SDGs."
+            },
+            {
+              "code": "AI_RESOURCE_FOOTPRINT",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_ECONOMY_LABOR",
+              "value": "Uncertain",
+              "quote": "the young entrepreneurs using artificial intelligence to launch and scale so many businesses",
+              "rationale": "AI for entrepreneurship."
+            },
+            {
+              "code": "AI_YOUTH_EDUCATION",
+              "value": "Uncertain",
+              "quote": "its AI powered app to help thousands of blind Nigerian students read, learn and live more independently",
+              "rationale": "AI assisting students' learning."
+            },
+            {
+              "code": "AI_CHILD_PROTECTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_NATIONAL_STRATEGY",
+              "value": "Yes",
+              "quote": "This is why we invest so heavily in the AI Security Institute, with more dedicated researchers than anywhere else in the world.",
+              "rationale": "National AI investments and leadership."
+            },
+            {
+              "code": "AI_SOVEREIGNTY_CONCENTRATION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_GEOPOLITICAL_RIVALRY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_OPPORTUNITY_RISK_DUALITY",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_TRANSFORMATIVE_ERA",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_TECH_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            },
+            {
+              "code": "AI_THREAT_LIST_MENTION",
+              "value": "No",
+              "quote": "",
+              "rationale": ""
+            }
+          ],
+          "institutions": [
+            {
+              "commitment_detail": "",
+              "rationale": "Commends UN Scientific Panel.",
+              "mechanism": "Panel",
+              "reference_type": "explicit name",
+              "stances": {
+                "mention": true,
+                "welcome": true,
+                "support": true,
+                "request": false,
+                "concern": false,
+                "opposition": false,
+                "commitment": false
+              },
+              "requested_functions": [
+                "scientific assessment"
+              ],
+              "un_role": "explicit",
+              "quote": "I commend the new independent international scientific panel on AI, which will provide evidence-based assessments to all"
+            },
+            {
+              "commitment_detail": "",
+              "rationale": "Welcomes Global Dialogue.",
+              "mechanism": "Dialogue",
+              "reference_type": "explicit name",
+              "stances": {
+                "mention": true,
+                "welcome": true,
+                "support": false,
+                "request": false,
+                "concern": false,
+                "opposition": false,
+                "commitment": false
+              },
+              "requested_functions": [
+                "dialogue/convening"
+              ],
+              "un_role": "explicit",
+              "quote": "And I welcome the new global dialogue on AI governance."
+            },
+            {
+              "commitment_detail": "",
+              "rationale": "Supports Global Digital Compact; AI Security Institute also cited.",
+              "mechanism": "Other model",
+              "reference_type": "explicit name",
+              "stances": {
+                "mention": true,
+                "welcome": true,
+                "support": true,
+                "request": false,
+                "concern": false,
+                "opposition": false,
+                "commitment": false
+              },
+              "requested_functions": [],
+              "un_role": "explicit",
+              "quote": "I salute the Secretary-General for championing the Global Digital Compact, which embodies both progress and realism."
+            }
+          ],
+          "keywords": [
+            {
+              "normalized_term": "global digital compact",
+              "original_term": "Global Digital Compact",
+              "quote": "championing the Global Digital Compact"
+            },
+            {
+              "normalized_term": "ai security institute",
+              "original_term": "AI Security Institute",
+              "quote": "we invest so heavily in the AI Security Institute"
+            },
+            {
+              "normalized_term": "ai for development",
+              "original_term": "AI for development",
+              "quote": "we champion AI for development"
+            },
+            {
+              "normalized_term": "ai ecosystems",
+              "original_term": "AI ecosystems",
+              "quote": "creating AI ecosystems that empower thousands of communities"
+            }
+          ],
+          "uncovered_concept": ""
+        }
+      }
+    ]
+  }
+}

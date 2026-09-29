@@ -1,0 +1,41 @@
+{
+  "request_hash": "0ad5cf3fab48774391c33eb58c4241622b2639e9d1dce2f2331a69178705bd16",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "root"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_SRB:1",
+      "verbatim_en_2026_SRB:2",
+      "verbatim_en_2026_SRB:3",
+      "verbatim_en_2026_SRB:4",
+      "verbatim_en_2026_SRB:5",
+      "verbatim_en_2026_SRB:6",
+      "verbatim_en_2026_SRB:7",
+      "verbatim_en_2026_SRB:8",
+      "verbatim_en_2026_SRB:9",
+      "verbatim_en_2026_SRB:10"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_SRB:8",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Artificial intelligence is already changing the economy, education, medicine, security, the labor market, and the way states function.",
+        "rationale": "Identifies AI benefits, inequality, manipulation and security risks."
+      },
+      {
+        "passage_id": "verbatim_en_2026_SRB:9",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "The Belgrade Ministerial Declaration received the support of 44 member states in the European Union and affirmed the need for safe, sustainable, and human-centered artificial intelligence.",
+        "rationale": "Describes AI governance priorities concerning security, rights, accountability and the digital divide, and connects responsible transformation to international law."
+      }
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "request_hash": "8c3fcfdab2deafaada257afa4130a0545d2d69c5468c86efea96e3fe2008f462",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_TECH_LIST_MENTION",
+        "label": "AI listed among global transformations",
+        "definition": "AI named alongside climate change, geopolitical shifts and other transformations testing the international order, without substantive discussion.",
+        "inclusion": "Passages where AI appears in a list of changes or challenges (climate, conflict, technology) framing a broader argument about multilateralism.",
+        "exclusion": "Passages that elaborate specific AI benefits, risks or policies.",
+        "boundary_cases": "A single clause adding a brief qualifier (e.g. 'advancing at rapid speed') remains a list mention unless a specific harm or benefit is developed.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_CYP:1",
+            "quote": "Technology, including artificial intelligence, is advancing at rapid speed. Climate change is reshaping our societies."
+          },
+          {
+            "passage_id": "verbatim_en_2026_CHE:1",
+            "quote": "climate change and the increase in the number of disasters, humanitarian crises, inequalities, and also technological upheavals, notably artificial intelligence"
+          }
+        ]
+      },
+      {
+        "code": "AI_PACE_OUTRUNS_GOVERNANCE",
+        "label": "AI advancing faster than collective control",
+        "definition": "Concern that AI's speed or uncontrolled expansion outpaces societies' and institutions' ability to assess or manage it.",
+        "inclusion": "Passages describing AI as advancing faster than collective assessment capacity or as expanding uncontrolled and threatening security or well-being.",
+        "exclusion": "Passages merely noting rapid technological change with no concern about control or governance lag.",
+        "boundary_cases": "Vague 'AI threatening our security' without mention of weapons or catastrophic loss of control fits here rather than military or existential-safety themes.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_CHE:1",
+            "quote": "which are often advancing faster than our collective ability to assess their implications"
+          },
+          {
+            "passage_id": "verbatim_en_2025_CYP:1",
+            "quote": "the challenge of the uncontrolled expansion of technology and AI threatening our security and the well-being of our children"
+          }
+        ]
+      },
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "AI possibilities alongside exclusion and surveillance",
+        "definition": "AI framed explicitly as offering extraordinary possibilities while creating new risks.",
+        "inclusion": "Passages pairing AI benefits (health, education, productivity) with named risks (exclusion, exploitation, surveillance, distortion of truth).",
+        "exclusion": "Passages naming only benefits or only risks.",
+        "boundary_cases": "If only one side is developed and the other is a word, code the dominant side.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_BRB:1",
+            "quote": "Artificial intelligence is opening extraordinary possibilities in health, education, science, and productivity, while also creating new risk of exclusion, exploitation, surveillance, and the distortion of truth."
+          }
+        ]
+      },
+      {
+        "code": "AI_DEVELOPMENT_SDGS",
+        "label": "AI as a horizon for progress",
+        "definition": "AI presented as a driver of progress and development across sectors.",
+        "inclusion": "Passages describing AI as opening horizons for progress or development.",
+        "exclusion": "Passages that frame AI primarily as a threat.",
+        "boundary_cases": "A progress statement that immediately introduces risks should also be coded with duality.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_LBN:2",
+            "quote": "the artificial intelligence revolution is opening unprecedented horizons for progress across every sphere of life"
+          }
+        ]
+      }
+    ],
+    "rationale": "Opening passages of 2025-2026 speeches that invoke the session theme of trust and transformation; AI mostly appears briefly as one of several transformations, with variation between optimistic progress framing, dual framing, and concern that AI outpaces collective control."
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "request_hash": "6a4effa0c701b9883c1a47c4535c1c4f816d3acfdcc9d889d18ede947b0c5c1c",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Modern rules reconciling AI with ethics",
+        "definition": "Call for states to build modern common rules reconciling AI development with ethical rules as part of digital transformation.",
+        "inclusion": "Include calls for joint international rule-building on AI grounded in ethics.",
+        "exclusion": "Exclude passages mentioning digital transformation without AI rules.",
+        "boundary_cases": "The ethics component may also warrant AI_HUMAN_RIGHTS_ETHICS.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2018_FRA:22",
+            "quote": "build modern rules that will allow us to reconcile the development of artificial intelligence with our ethical rules"
+          }
+        ]
+      }
+    ],
+    "rationale": "A single French 2018 passage calling for common modern rules to reconcile AI development with ethics within the wider digital transformation."
+  }
+}

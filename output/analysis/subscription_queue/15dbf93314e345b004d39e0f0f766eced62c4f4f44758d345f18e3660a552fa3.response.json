@@ -1,0 +1,29 @@
+{
+  "request_hash": "15dbf93314e345b004d39e0f0f766eced62c4f4f44758d345f18e3660a552fa3",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_TECH_LIST_MENTION",
+        "label": "AI as means for collective problem-solving",
+        "definition": "AI is named alongside science and technology as available means to meet global challenges, without discussion of AI specifically.",
+        "inclusion": "Include passages where AI appears only as part of 'science, technology and AI' or similar lists of resources or achievements.",
+        "exclusion": "Exclude passages that discuss specific AI uses, risks or governance.",
+        "boundary_cases": "Calls to use these means wisely for planetary survival remain a passing mention unless AI-specific risks are named.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_CMR:21",
+            "quote": "We have at our disposal the necessary means thanks to the prodigious growth of science, technology and artificial intelligence."
+          }
+        ]
+      }
+    ],
+    "rationale": "The single Cameroon passage (a quoted statement) mentions AI only in passing as part of the growth of science and technology offering means to address shared challenges."
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "request_hash": "af4ce149abf2510e6f8a00059527a424aa6c29637bb3e795db73bd0216f1ed39",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_MILITARY_WEAPONS",
+        "label": "Rules and limits on autonomous weapons",
+        "definition": "Calls for international rules and limits on autonomous weapon systems, given catastrophic harm if military use of new technologies is unchecked.",
+        "inclusion": "Include calls for rules, limits or bans on autonomous weapons or unchecked military use of emerging technologies.",
+        "exclusion": "Exclude civilian responsible-use norms for AI (AI_GLOBAL_GOVERNANCE).",
+        "boundary_cases": "The phrase 'catastrophic harm' tied to military use is coded here, not AI_SAFETY_EXISTENTIAL.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_NZL:14",
+            "quote": "We must commit to international rules and limits on autonomous weapon systems"
+          },
+          {
+            "passage_id": "verbatim_en_2023_NZL:14",
+            "quote": "the threat of catastrophic harm if their development and military use is left unchecked"
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Norms for responsible use of AI",
+        "definition": "Calls for clear international norms on the responsible use of new and emerging technologies including AI.",
+        "inclusion": "Include calls for norms or rules on responsible AI use.",
+        "exclusion": "Exclude generic cyber or online extremism coalitions not linked to AI.",
+        "boundary_cases": "Multistakeholder coalitions on cyberthreats in the same passage are digital, not AI, and are not coded here.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_NZL:15",
+            "quote": "technologies, including artificial intelligence, as well as the continued peaceful use of outer space"
+          },
+          {
+            "passage_id": "verbatim_en_2023_NZL:14",
+            "quote": "establish clear norms to address responsible use of other new and emerging"
+          }
+        ]
+      }
+    ],
+    "rationale": "Two consecutive New Zealand 2023 fragments form one sentence: limits on autonomous weapons and norms for responsible AI use, balancing peaceful potential against catastrophic military harm. Cyber and online extremism are mentioned as separate digital challenges."
+  }
+}

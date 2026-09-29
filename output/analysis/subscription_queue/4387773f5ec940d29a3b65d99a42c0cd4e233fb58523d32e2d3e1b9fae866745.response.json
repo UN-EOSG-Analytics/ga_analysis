@@ -1,0 +1,43 @@
+{
+  "request_hash": "4387773f5ec940d29a3b65d99a42c0cd4e233fb58523d32e2d3e1b9fae866745",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "root"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_VUT:1",
+      "verbatim_en_2026_VUT:2",
+      "verbatim_en_2026_VUT:3",
+      "verbatim_en_2026_VUT:4",
+      "verbatim_en_2026_VUT:5",
+      "verbatim_en_2026_VUT:6",
+      "verbatim_en_2026_VUT:7",
+      "verbatim_en_2026_VUT:8",
+      "verbatim_en_2026_VUT:9",
+      "verbatim_en_2026_VUT:10",
+      "verbatim_en_2026_VUT:11",
+      "verbatim_en_2026_VUT:12"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_VUT:6",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Artificial intelligence is changing economies and societies.",
+        "rationale": "Identifies AI as a driver of broad social and economic transformation introducing the subsequent governance discussion."
+      },
+      {
+        "passage_id": "verbatim_en_2026_VUT:7",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Small states need access to technology. We need digital infrastructure. We need skills and capacity. We need access to data and computing.",
+        "rationale": "Calls for AI governance, resources and a meaningful small-state voice so beneficial applications do not deepen inequalities or create technological dependency."
+      }
+    ]
+  }
+}

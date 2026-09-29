@@ -1,0 +1,43 @@
+{
+  "request_hash": "fac5d3d8d341268bbfcc9b85310d207224e767c9ee08d55151706e35e736a244",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_DISINFORMATION",
+        "label": "AI manipulation, hate speech, disinformation",
+        "definition": "Concern that AI and cyberspace enable disinformation, hate speech and manipulation of human behaviour and thought, threatening democracies.",
+        "inclusion": "Include passages on AI manipulating behaviour or thoughts, or AI-linked disinformation and hate speech threatening democracy.",
+        "exclusion": "Exclude hate-speech concerns with no AI or technology link.",
+        "boundary_cases": "'AI must serve humans' phrasing is also coded AI_HUMAN_RIGHTS_ETHICS.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2022_MCO:22",
+            "quote": "Artificial intelligence must serve humans and not manipulate their behaviour and thoughts."
+          }
+        ]
+      },
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Common rules for cyberspace",
+        "definition": "Call for common international rules so cyberspace (including AI) does not get out of hand and destroy democracies.",
+        "inclusion": "Include calls for common rules governing AI or cyberspace.",
+        "exclusion": "Exclude national measures.",
+        "boundary_cases": "Rules framed for cyberspace generally are coded here only when AI is discussed in the same passage.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2022_MCO:22",
+            "quote": "It is high time that we manage to set common rules so that cyberspace does not get out of hand"
+          }
+        ]
+      }
+    ],
+    "rationale": "A short Monaco 2022 passage links AI to manipulation, disinformation and democratic harm and calls for common rules for cyberspace."
+  }
+}

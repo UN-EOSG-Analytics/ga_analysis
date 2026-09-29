@@ -1,0 +1,29 @@
+{
+  "request_hash": "96c86b36838d4e3079cf3ce7c286f92d3aef9660c604ab825e297cbe97c280a2",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_THREAT_LIST_MENTION",
+        "label": "AI as terrifying new threat in passing",
+        "definition": "AI is briefly named as a new and terrifying threat within a broader narrative about rising violence and conflict, without specifying the nature of the threat.",
+        "inclusion": "Include passages that label AI as a threat in a single sentence among other global dangers, with no elaboration.",
+        "exclusion": "Exclude passages that specify military, safety, or disinformation mechanisms (code the specific theme).",
+        "boundary_cases": "An unspecified 'terrifying threat' framing is not AI_SAFETY_EXISTENTIAL unless loss of control or catastrophe is described.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_SOM:7",
+            "quote": "We see that new technologies, such as artificial intelligence, pose new and terrifying threats to all of us."
+          }
+        ]
+      }
+    ],
+    "rationale": "The single Somalia 2023 passage mentions AI in one sentence as a new, terrifying but unspecified threat, embedded in a discussion of rising violence, coups and displacement."
+  }
+}

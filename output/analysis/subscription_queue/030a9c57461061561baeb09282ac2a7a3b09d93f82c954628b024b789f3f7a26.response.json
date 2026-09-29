@@ -1,0 +1,29 @@
+{
+  "request_hash": "030a9c57461061561baeb09282ac2a7a3b09d93f82c954628b024b789f3f7a26",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_c"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2025_SVK:1",
+      "verbatim_en_2025_SVK:2",
+      "verbatim_en_2025_SVK:3",
+      "verbatim_en_2025_SVK:4",
+      "verbatim_en_2025_SVK:5"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2025_SVK:4",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "My country wants to contribute and to steer the debates and find solution by hosting all the actors at the Summit on Education and AI in Bratislava, in our capital, in November this year.",
+        "rationale": "Calls for responsible responses to rapid AI development and announces a summit on education and AI."
+      }
+    ]
+  }
+}

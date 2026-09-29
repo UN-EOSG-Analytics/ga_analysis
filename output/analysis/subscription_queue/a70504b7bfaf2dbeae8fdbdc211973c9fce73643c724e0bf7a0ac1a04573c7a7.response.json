@@ -1,0 +1,28 @@
+{
+  "request_hash": "a70504b7bfaf2dbeae8fdbdc211973c9fce73643c724e0bf7a0ac1a04573c7a7",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_c"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_CMR:1",
+      "verbatim_en_2026_CMR:2",
+      "verbatim_en_2026_CMR:3",
+      "verbatim_en_2026_CMR:4"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_CMR:2",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "We are living in a time where the progress of science and technology have allowed for useful knowledge to flourish, such as the emergence of artificial intelligence in order to overcome the multiple challenges that humanity is facing.",
+        "rationale": "Presents AI as a means to address humanity's challenges in a call for technological progress to benefit everyone."
+      }
+    ]
+  }
+}

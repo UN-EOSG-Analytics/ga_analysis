@@ -1,0 +1,29 @@
+{
+  "request_hash": "aec0bacfa24f157cc1100b40158a0d99e611f4958036a5bf1d1133c5aaf5d3cd",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_b"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2025_COG:1",
+      "verbatim_en_2025_COG:2",
+      "verbatim_en_2025_COG:3",
+      "verbatim_en_2025_COG:4",
+      "verbatim_en_2025_COG:5"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2025_COG:3",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "This is the reason why we need to invest massively in education, in health, agriculture, infrastructure, new technologies, artificial intelligence, inter alia.",
+        "rationale": "Calls for investment in AI as part of developing-country prosperity and SDG progress."
+      }
+    ]
+  }
+}

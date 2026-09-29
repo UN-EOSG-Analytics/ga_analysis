@@ -1,0 +1,43 @@
+{
+  "request_hash": "450132253924ce3503aa4f26b379ac47dadc9eb132706a1a8a2a35d423b0a4f2",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_UN_ROLE",
+        "label": "Promoting UN assessment of AI's SDG impact",
+        "definition": "Diplomatic initiative within the UN to institutionalize assessment of AI and rapid technological change on the 2030 Agenda.",
+        "inclusion": "Include references to sponsoring or promoting UN resolutions, reviews or assessments concerning AI.",
+        "exclusion": "Exclude national SDG institutional arrangements without an AI element.",
+        "boundary_cases": "Where the initiative is framed mainly around SDG outcomes, also code AI_DEVELOPMENT_SDGS.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2018_MEX:5",
+            "quote": "promoted the annual assessment of the impact of rapid technological change, especially artificial intelligence, on the achievement of the 2030 Agenda"
+          }
+        ]
+      },
+      {
+        "code": "AI_DEVELOPMENT_SDGS",
+        "label": "AI's impact on the 2030 Agenda",
+        "definition": "Linking AI to the achievement of the Sustainable Development Goals.",
+        "inclusion": "Include passages connecting AI to the 2030 Agenda or SDG achievement.",
+        "exclusion": "Exclude generic sustainable-development commitments that do not mention AI.",
+        "boundary_cases": "The preceding sentence about national 2030 Agenda architecture has no AI content and is not coded on its own.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2018_MEX:5",
+            "quote": "especially artificial intelligence, on the achievement of the 2030 Agenda"
+          }
+        ]
+      }
+    ],
+    "rationale": "Mexico 2018 (split across two short passages) mentions AI only as the subject of a UN assessment initiative it promoted on technology's impact on the 2030 Agenda; the other passage has no AI content."
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "request_hash": "585a862e84effd543709dfb85d9af1bbbaf24eab4bb9531997665252ec64c148",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_MILITARY_WEAPONS",
+        "label": "Rejecting AI research for warfare",
+        "definition": "Rejection of AI research or development for warfare purposes, framed within opposition to the arms race and militarization.",
+        "inclusion": "Passages opposing military AI, AI for warfare, or AI as part of an arms race.",
+        "exclusion": "Non-military AI risks or general disarmament passages without AI.",
+        "boundary_cases": "Arms-race resource arguments count only when AI for warfare is explicitly named.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2018_SUR:20",
+            "quote": "rejecting the militarization of outer space and research in the area of artificial intelligence for warfare purposes"
+          }
+        ]
+      }
+    ],
+    "rationale": "Single Suriname 2018 passage in which AI appears only as military AI research, rejected as part of opposition to the arms race and militarization."
+  }
+}

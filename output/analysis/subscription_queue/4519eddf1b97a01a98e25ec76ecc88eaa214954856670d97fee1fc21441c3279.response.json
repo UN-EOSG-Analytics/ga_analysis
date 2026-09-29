@@ -1,0 +1,83 @@
+{
+  "request_hash": "4519eddf1b97a01a98e25ec76ecc88eaa214954856670d97fee1fc21441c3279",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "Call for binding international AI treaty",
+        "definition": "Speaker calls for an international treaty, convention or binding framework to govern AI development, often likening it to nuclear safeguards.",
+        "inclusion": "Include passages explicitly calling for a treaty, convention, binding framework or international laws regulating AI.",
+        "exclusion": "Exclude general praise of cooperation on AI without any call for rules or regulation.",
+        "boundary_cases": "Calls for international laws specifically on military AI are coded AI_MILITARY_WEAPONS and may also be coded here if general regulation is urged.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_BHR:14",
+            "quote": "today we call for an international treaty governing the development of artificial intelligence"
+          },
+          {
+            "passage_id": "verbatim_en_2026_BHR:6",
+            "quote": "we renew our call for a binding international framework to ensure that this technology becomes a driver of innovation rather than division"
+          }
+        ]
+      },
+      {
+        "code": "AI_MILITARY_WEAPONS",
+        "label": "Warning on military AI and autonomous weapons",
+        "definition": "Speaker warns about military applications of AI and autonomous weapons and seeks legal regulation of them.",
+        "inclusion": "Include explicit references to military uses of AI, autonomous weapons, or AI exacerbating armed conflict.",
+        "exclusion": "Exclude general references to peace or security without a military-use dimension.",
+        "boundary_cases": "Statements that AI should contribute to peace rather than conflict, without naming weapons, are primarily AI_GLOBAL_GOVERNANCE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_SAU:4",
+            "quote": "The Kingdom also warns of the dangers of the military uses of artificial intelligence applications and autonomous weapons."
+          }
+        ]
+      },
+      {
+        "code": "AI_NATIONAL_STRATEGY",
+        "label": "AI within national development and diversification",
+        "definition": "AI is named as part of the country's own economic vision, digital transformation, or modernization agenda, usually briefly and among other sectors.",
+        "inclusion": "Include passages where AI is listed as a national priority or sector the government supports or promotes.",
+        "exclusion": "Exclude passages where AI is discussed mainly as a global governance problem.",
+        "boundary_cases": "Very brief listings of AI among many domestic priorities may also warrant AI_TECH_LIST_MENTION.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2022_BHR:20",
+            "quote": "with support for the digital economy and artificial-intelligence technologies, tourism, logistics and financial sectors"
+          },
+          {
+            "passage_id": "verbatim_en_2025_OMN:3",
+            "quote": "We also place high importance on digital transformation, artificial intelligence applications, innovation, industrial development"
+          },
+          {
+            "passage_id": "verbatim_en_2025_BHR:4",
+            "quote": "We also seek to promote digital innovation and artificial intelligence with the aim of providing a safe, stable, prosperous, and sustainable environment."
+          }
+        ]
+      },
+      {
+        "code": "AI_CAPACITY_BUILDING",
+        "label": "International AI capacity-building and ethics centres",
+        "definition": "Speaker highlights hosting or leading international networks and centres for AI capacity building, research and ethics, linked to UN/UNESCO processes.",
+        "inclusion": "Include references to AI capacity-building centres, research networks, or institutions supporting other countries' AI capacity.",
+        "exclusion": "Exclude domestic-only AI investments with no international capacity-building role.",
+        "boundary_cases": "Mentions of the Pact for the Future or UNESCO as auspices may also be coded AI_UN_ROLE; ethics centres may also be AI_HUMAN_RIGHTS_ETHICS.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_SAU:5",
+            "quote": "The Kingdom has taken a leading role in establishing the International Network of Artificial Intelligence Capacity Building Centres"
+          }
+        ]
+      }
+    ],
+    "rationale": "Gulf state passages mix brief listings of AI within national development visions with more substantive Bahraini calls for a binding AI treaty and a Saudi warning on military AI. Saudi Arabia 2026 adds an international capacity-building and ethics angle."
+  }
+}

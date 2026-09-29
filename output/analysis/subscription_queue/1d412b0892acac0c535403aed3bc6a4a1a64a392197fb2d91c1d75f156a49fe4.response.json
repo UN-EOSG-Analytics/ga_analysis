@@ -1,0 +1,47 @@
+{
+  "request_hash": "1d412b0892acac0c535403aed3bc6a4a1a64a392197fb2d91c1d75f156a49fe4",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_SOVEREIGNTY_CONCENTRATION",
+        "label": "Anti-colonial claim to AI's benefits",
+        "definition": "AI framed as a product of human intelligence built on colonized peoples' resources, with demands that those peoples share in its benefits and warnings that AI in the hands of 'malevolent actors' becomes a weapon against peoples.",
+        "inclusion": "Include passages invoking colonial extraction, imperial actors or domination in relation to AI and demanding participation or restitution of benefits.",
+        "exclusion": "Exclude neutral access requests without a domination or anti-imperial framing (AI_DIGITAL_DIVIDE).",
+        "boundary_cases": "Rhetoric describing AI as 'weapons of mass destruction' in the hands of hegemonic actors belongs here rather than AI_MILITARY_WEAPONS unless actual weapons systems are discussed.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_NIC:27",
+            "quote": "Nicaragua demands the full participation of the peoples who have made those advances of the conquistadors possible with our blood and resources."
+          },
+          {
+            "passage_id": "verbatim_en_2023_NIC:27",
+            "quote": "in the hands of the same malevolent actors as always, constitute weapons of mass destruction against countries, peoples and communities"
+          }
+        ]
+      },
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "Right to enjoy AI development",
+        "definition": "Demand for inclusion and the right of peoples to enjoy the benefits of AI and technological development to improve work, study and life.",
+        "inclusion": "Include passages asserting a right to share AI benefits for living and working conditions.",
+        "exclusion": "Exclude passages only criticizing power concentration without a benefit-sharing claim.",
+        "boundary_cases": "Skepticism about the term 'artificial intelligence' itself does not change coding if benefit-sharing is demanded.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_NIC:27",
+            "quote": "We demand what is ours — the right to fully enjoy this development, improving the conditions of work, study and life of our peoples"
+          }
+        ]
+      }
+    ],
+    "rationale": "Single Nicaraguan passage with an anti-colonial framing of AI: it questions the term, claims AI's benefits for peoples whose resources enabled it, and warns of AI as a weapon in hegemonic hands."
+  }
+}

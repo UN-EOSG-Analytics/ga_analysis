@@ -1,0 +1,93 @@
+{
+  "request_hash": "01b7b1eb0c205fc68d1f72859f8678a5411706da24d9f29c6bd0e8df9370f26a",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_NATIONAL_STRATEGY",
+        "label": "Piloting UN national AI strategy blueprint",
+        "definition": "Speaker reports its own national AI and data strategy, here as first pilot of a UN blueprint, and offers to share lessons toward digital sovereignty.",
+        "inclusion": "Include passages describing the country's national AI strategy design or implementation.",
+        "exclusion": "Exclude generic support for AI innovation without a national policy or programme.",
+        "boundary_cases": "Where the strategy is UN-supported, also code AI_UN_ROLE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_LSO:3",
+            "quote": "As the first member state to pilot the UN Blueprint for National AI and Data Strategies from design into national implementation"
+          }
+        ]
+      },
+      {
+        "code": "AI_CAPACITY_BUILDING",
+        "label": "Global Fund for AI capacity building",
+        "definition": "Support for international instruments that fund AI capacity building so AI is shared equitably among nations.",
+        "inclusion": "Include references to AI capacity-building funds, technology sharing or support to developing countries.",
+        "exclusion": "Exclude domestic digital infrastructure without international support framing.",
+        "boundary_cases": "Equitable sharing framed as an access gap may also be AI_DIGITAL_DIVIDE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_LSO:3",
+            "quote": "contribute our experience to emerging instruments such as the proposed Global Fund for AI capacity building"
+          }
+        ]
+      },
+      {
+        "code": "AI_HUMAN_RIGHTS_ETHICS",
+        "label": "Safety, privacy and accountability concerns",
+        "definition": "While welcoming AI, speakers raise threats to safety, privacy, accountability and retained human agency and control.",
+        "inclusion": "Include passages flagging rights, privacy, safety or accountability concerns about AI.",
+        "exclusion": "Exclude passages framing risk solely as military or cyber threats.",
+        "boundary_cases": "Concern that AI outpaces governance capacity while retaining human control could also be AI_SAFETY_EXISTENTIAL if catastrophic risk is invoked; here it is framed as accountability.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_LSO:19",
+            "quote": "we should not lose sight of the need to address clear threats to people’s rights to safety and privacy"
+          },
+          {
+            "passage_id": "verbatim_en_2026_SWZ:4",
+            "quote": "This raises critical questions regarding accountability, safety, environmental, impact"
+          }
+        ]
+      },
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "Opportunities outpacing governance capacity",
+        "definition": "AI is framed as offering enormous opportunities yet advancing faster than the capacity to govern it, including risk of a widening divide.",
+        "inclusion": "Include explicit pairings of AI opportunities with governance or equity risks.",
+        "exclusion": "Exclude one-sided statements.",
+        "boundary_cases": "The widening divide element may also be coded AI_DIGITAL_DIVIDE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_SWZ:4",
+            "quote": "artificial intelligence, are advancing faster than our current capacity to govern them while retaining human agency and control"
+          },
+          {
+            "passage_id": "verbatim_en_2026_SWZ:4",
+            "quote": "The transformation brought about by digitalization and artificial intelligence presents enormous opportunities for humanity."
+          }
+        ]
+      },
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "Exclusion from shaping and benefiting from AI",
+        "definition": "Concern about a digital divide between those who shape AI and those excluded, and rural lack of digital access.",
+        "inclusion": "Include passages on unequal access to or influence over AI and digital tools.",
+        "exclusion": "Exclude passages on generic poverty without technology link.",
+        "boundary_cases": "Rural digital access gaps without AI mention are generic digitalization and should be coded only when tied to AI in the same passage.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_SWZ:4",
+            "quote": "the risk of a widening digital divide between those who can shape these technologies and those who are excluded from their benefits"
+          }
+        ]
+      }
+    ],
+    "rationale": "Southern African passages welcome AI but stress accountability, privacy and equity; Lesotho 2026 is distinctive in reporting national AI strategy implementation under a UN blueprint and backing an AI capacity-building fund."
+  }
+}

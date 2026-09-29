@@ -1,0 +1,129 @@
+{
+  "request_hash": "a44f740c1cee4fb8dc6394331816219a5524fedccd26a856b0ffe3459fc61c05",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_NATIONAL_STRATEGY",
+        "label": "Domestic AI integration and investment",
+        "definition": "Descriptions of the speaker country's own AI plans: sector-wide integration, supercomputers, AI laws, compute, skills and digital-power goals.",
+        "inclusion": "Include passages reporting national AI investment, laws, infrastructure or strategic goals.",
+        "exclusion": "Exclude support offered to other countries or regional centres (AI_CAPACITY_BUILDING).",
+        "boundary_cases": "E-government and general digitalization statistics count only when tied to an AI plan in the same passage.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_KAZ:6",
+            "quote": "In Kazakhstan, artificial intelligence will be integrated across all sectors of economy and public services."
+          },
+          {
+            "passage_id": "verbatim_en_2026_KAZ:6",
+            "quote": "we have recently adopted law on artificial intelligence and new digital code"
+          }
+        ]
+      },
+      {
+        "code": "AI_UN_ROLE",
+        "label": "UN leadership, AI office and Global Dialogue",
+        "definition": "Support for the UN leading on AI, including proposals for a UN AI office and backing for the Global Dialogue on AI Governance and ICT security mechanisms.",
+        "inclusion": "Include passages welcoming or proposing UN AI bodies or asserting the UN's leading role on AI.",
+        "exclusion": "Exclude generic multilateralism statements not tied to AI.",
+        "boundary_cases": "Regional UN digital centres mentioned as cooperation platforms may be coded here or AI_CAPACITY_BUILDING.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_KAZ:12",
+            "quote": "The establishment of a United Nations AI office would be a welcome step in that direction."
+          },
+          {
+            "passage_id": "verbatim_en_2025_KAZ:6",
+            "quote": "Kazakhstan welcomes the establishment under UN auspices of the Global Dialogue on AI Governance."
+          }
+        ]
+      },
+      {
+        "code": "AI_HUMAN_RIGHTS_ETHICS",
+        "label": "Ethical norms keeping pace with AI",
+        "definition": "Insistence that ethical norms, fairness, accountability, individual rights and human oversight keep up with rapid AI evolution.",
+        "inclusion": "Include calls for ethics, rights, human-centred AI and meaningful human oversight.",
+        "exclusion": "Exclude purely security or institutional governance statements.",
+        "boundary_cases": "'Common ethics and standards' calls fit here and AI_GLOBAL_GOVERNANCE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_KAZ:5",
+            "quote": "Pressing questions of fairness, accountability, and individual rights must be addressed with clarity and urgency."
+          },
+          {
+            "passage_id": "verbatim_en_2026_KAZ:6",
+            "quote": "AI must remain human-centered, safe, and subject to meaningful human oversight."
+          }
+        ]
+      },
+      {
+        "code": "AI_MILITARY_WEAPONS",
+        "label": "AI in warfare and cyber operations",
+        "definition": "Risks from military uses of AI in warfare and cyber operations for international stability.",
+        "inclusion": "Include mentions of AI's use in warfare or the military domain as a risk.",
+        "exclusion": "Exclude civilian cybercrime or disinformation risks unless tied to military use.",
+        "boundary_cases": "A list of AI risks including warfare alongside deepfakes counts here and in the relevant other themes.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_KAZ:6",
+            "quote": "These risks are particularly serious in the military domain, where the use of AI in warfare, and cyber operations could have far-reaching consequences"
+          }
+        ]
+      },
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "AI deepening divides between countries",
+        "definition": "Concern that AI deepens technological, economic and geopolitical divides and the call for every nation to have equitable access and benefit.",
+        "inclusion": "Include passages about AI widening divides or ensuring every country benefits/has access.",
+        "exclusion": "Exclude domestic inequality without international dimension.",
+        "boundary_cases": "'Digital transformation' access statements count only when linked to AI or cutting-edge technology access.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_KAZ:5",
+            "quote": "specifically deepening technological, economic, and geopolitical divides"
+          },
+          {
+            "passage_id": "verbatim_en_2025_KAZ:5",
+            "quote": "We must act collectively to ensure that every country can benefit from AI."
+          }
+        ]
+      },
+      {
+        "code": "AI_ECONOMY_LABOR",
+        "label": "Automation threatening jobs",
+        "definition": "AI and automation threatening employment, requiring professional and technical education.",
+        "inclusion": "Include passages about job losses from AI and responses via education or valuing technical professions.",
+        "exclusion": "Exclude general productivity claims without labour content.",
+        "boundary_cases": "Youth readiness for AI without job-threat framing goes to AI_YOUTH_EDUCATION.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_KAZ:6",
+            "quote": "But AI and automation are expected to threaten jobs in many countries."
+          }
+        ]
+      },
+      {
+        "code": "AI_DISINFORMATION",
+        "label": "Information wars and deepfakes",
+        "definition": "AI misuse for information wars, deepfakes and related cyberthreats and privacy harms.",
+        "inclusion": "Include references to deepfakes, information wars or AI-enabled manipulation.",
+        "exclusion": "Exclude military AI use.",
+        "boundary_cases": "Cyberthreats listed with deepfakes may also be coded AI_CYBER_SECURITY.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_KAZ:12",
+            "quote": "the risks of misuse for information wars, deepfakes and more"
+          }
+        ]
+      }
+    ],
+    "rationale": "Kazakhstan's passages combine domestic AI ambitions with calls for UN-led, ethical, human-centred AI governance, listing risks such as divides, job loss, warfare and deepfakes."
+  }
+}

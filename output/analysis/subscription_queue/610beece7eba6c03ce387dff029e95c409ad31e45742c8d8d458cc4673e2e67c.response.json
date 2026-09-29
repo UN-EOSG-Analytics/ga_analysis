@@ -1,0 +1,43 @@
+{
+  "request_hash": "610beece7eba6c03ce387dff029e95c409ad31e45742c8d8d458cc4673e2e67c",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "Equitable investment to share AI benefits",
+        "definition": "Calls for equitable investment in emerging technologies like AI so benefits are equally shared between high- and low-income countries.",
+        "inclusion": "Passages urging equitable investment or sharing of AI benefits across income levels.",
+        "exclusion": "General digital jobs statements without AI (generic digitalization).",
+        "boundary_cases": "Investment calls with concrete programmes may also take AI_CAPACITY_BUILDING.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2022_RWA:9",
+            "quote": "To ensure that the benefits are equally shared, we must continue to invest equitably in emerging technologies, such as artificial intelligence."
+          }
+        ]
+      },
+      {
+        "code": "AI_ECONOMY_LABOR",
+        "label": "Digital jobs addressing migration drivers",
+        "definition": "Digital transformation and high-quality digital jobs framed as a practical response to drivers of irregular migration by closing human-capital gaps.",
+        "inclusion": "Passages linking digital/AI jobs to economic opportunity and migration.",
+        "exclusion": "Job displacement concerns (still this code but note framing).",
+        "boundary_cases": "This is mostly generic digitalization; code only when AI is present in the same passage.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2022_RWA:9",
+            "quote": "Highquality digital jobs are a practical response to the underlying drivers of irregular migration"
+          }
+        ]
+      }
+    ],
+    "rationale": "The Rwandan passage is mainly about digital transformation and jobs, with AI appearing as an example of emerging technologies requiring equitable investment so benefits are shared."
+  }
+}

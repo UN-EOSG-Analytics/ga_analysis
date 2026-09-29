@@ -1,0 +1,69 @@
+{
+  "request_hash": "7cb8cf08f189bbb32c44189a54a828b3f778e576d9b4a4e43fab44564b0737cf",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_UN_ROLE",
+        "label": "UN centrality and lag on AI",
+        "definition": "The UN as the central forum for AI rules and cooperation, or criticism that the UN is failing to keep pace with AI and technological change.",
+        "inclusion": "Passages asserting the UN's special responsibility for AI, welcoming the Global Dialogue/Scientific Panel, or saying new AI initiatives outside the UN show it is lagging.",
+        "exclusion": "Generic calls for rules without reference to the UN (use AI_GLOBAL_GOVERNANCE).",
+        "boundary_cases": "Citing China's global AI cooperation organization as evidence of UN failure counts here.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_RUS:6",
+            "quote": "The UN shoulders a special responsibility given the fast-paced development of AI technologies."
+          },
+          {
+            "passage_id": "verbatim_en_2026_BLR:5",
+            "quote": "the World Artificial Intelligence Cooperation Organization, China's project, this confirms that the UN is failing to recognize new trends"
+          },
+          {
+            "passage_id": "verbatim_en_2026_DEU:3",
+            "quote": "How do we enable our international institutions to keep pace with the technologies that are reshaping our world?"
+          }
+        ]
+      },
+      {
+        "code": "AI_INFORMATION_SECURITY_REGULATION",
+        "label": "AI within international information security regime",
+        "definition": "AI regulation framed within the state-centric international information security agenda, alongside cybercrime conventions and responsible state behaviour rules, with equal participation of all countries.",
+        "inclusion": "Passages linking AI rules to international information security, cybercrime conventions or legally binding digital-arena agreements.",
+        "exclusion": "AI governance calls not framed through information security (use AI_GLOBAL_GOVERNANCE).",
+        "boundary_cases": "Calls for generally recognized AI rules with equal participation in an information-security context take this and AI_GLOBAL_GOVERNANCE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2019_RUS:21",
+            "quote": "developing generally acceptable approaches to regulating the digital arena and understanding the processes related to the development of artificial intelligence"
+          },
+          {
+            "passage_id": "verbatim_en_2026_RUS:6",
+            "quote": "Generally recognized rules for the use of AI should be underpinned on an equal foundation with the participation of all countries."
+          }
+        ]
+      },
+      {
+        "code": "AI_TECH_LIST_MENTION",
+        "label": "AI listed among global challenges",
+        "definition": "AI named in a list of global challenges or pressures on the order without further elaboration.",
+        "inclusion": "Passages where AI appears alongside climate, inequality or peace as a list item, or as a vague technological revolution.",
+        "exclusion": "Passages that develop an argument about AI specifically.",
+        "boundary_cases": "A generic reference to forces of technological revolution with no AI term is only included if the cluster context is AI.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_MKD:1",
+            "quote": "peace and security, climate change and environmental destruction, artificial intelligence and growing inequalities"
+          }
+        ]
+      }
+    ],
+    "rationale": "Passages situate AI within debates on the international order and UN reform: Russia frames AI rules through information security and UN centrality, Belarus and Germany question whether the UN keeps pace, and North Macedonia lists AI among global challenges."
+  }
+}

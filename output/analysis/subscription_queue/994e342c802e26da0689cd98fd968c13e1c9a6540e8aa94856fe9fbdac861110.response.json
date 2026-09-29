@@ -1,0 +1,85 @@
+{
+  "request_hash": "994e342c802e26da0689cd98fd968c13e1c9a6540e8aa94856fe9fbdac861110",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "AI's great opportunities and challenges",
+        "definition": "AI framed as bringing both great opportunities and great challenges, and it should not lead to marginalization.",
+        "inclusion": "Include passages explicitly acknowledging both AI opportunities and challenges/risks.",
+        "exclusion": "Exclude passages that only list AI among changes.",
+        "boundary_cases": "A warning that AI should not lead to marginalization also fits AI_DIGITAL_DIVIDE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_MAR:5",
+            "quote": "We are aware of the great opportunities it provides. However, we also recognize the great challenges it poses."
+          }
+        ]
+      },
+      {
+        "code": "AI_ECONOMY_LABOR",
+        "label": "Adopting AI to reshape economy and labour",
+        "definition": "AI presented as reshaping economies and labour markets, with adoption necessary to avoid wasting economic opportunities.",
+        "inclusion": "Include passages linking AI to economic transformation, labour markets or economic opportunity.",
+        "exclusion": "Exclude AI health or agriculture uses without economic framing (AI_DEVELOPMENT_SDGS).",
+        "boundary_cases": "National digital strategies framed around AI adoption also qualify for AI_NATIONAL_STRATEGY.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_MAR:5",
+            "quote": "Turning a blind eye to artificial intelligence and not taking advantage of it means wasting economic opportunities."
+          }
+        ]
+      },
+      {
+        "code": "AI_NATIONAL_STRATEGY",
+        "label": "National digital strategy betting on AI",
+        "definition": "The country describes its own strategy for adopting AI responsibly.",
+        "inclusion": "Include references to national strategies or bets on AI.",
+        "exclusion": "Exclude global calls without national reference.",
+        "boundary_cases": "Generic digital strategies without AI mention are excluded.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_MAR:5",
+            "quote": "This is what the Kingdom of Morocco is working on right now through its digital strategy 2030."
+          }
+        ]
+      },
+      {
+        "code": "AI_DEVELOPMENT_SDGS",
+        "label": "Sharing AI benefits for priority sectors",
+        "definition": "International cooperation on AI research and sharing its benefits in health, energy, food and water security and disaster mitigation.",
+        "inclusion": "Include passages on AI benefits for development sectors or calls to share them through cooperation.",
+        "exclusion": "Exclude passages only listing AI among societal changes.",
+        "boundary_cases": "Calls to share benefits emphasizing access gaps may also be AI_DIGITAL_DIVIDE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_MAR:7",
+            "quote": "encourage sharing its benefits in strategic priority areas such as health security, energy transformation, food and water security"
+          }
+        ]
+      },
+      {
+        "code": "AI_TECH_LIST_MENTION",
+        "label": "AI among rapid technological changes",
+        "definition": "AI named alongside social media and IT as part of rapid change, without elaboration.",
+        "inclusion": "Include passages listing AI among technological changes with no further discussion.",
+        "exclusion": "Exclude passages that discuss AI's specific effects.",
+        "boundary_cases": "If later sentences discuss AI specifically, use substantive codes.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_MAR:2",
+            "quote": "the rapidly occurring changes at the level of social media, information technology and artificial intelligence are significant and interconnected"
+          }
+        ]
+      }
+    ],
+    "rationale": "Morocco's 2025 passage gives a substantive account of AI's opportunities and challenges, economic adoption and its national strategy; 2023 frames AI benefits for development via cooperation, while 2024 only lists AI among rapid changes."
+  }
+}

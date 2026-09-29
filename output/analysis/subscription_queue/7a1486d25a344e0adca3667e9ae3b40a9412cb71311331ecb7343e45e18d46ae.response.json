@@ -1,0 +1,89 @@
+{
+  "request_hash": "7a1486d25a344e0adca3667e9ae3b40a9412cb71311331ecb7343e45e18d46ae",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_ECONOMY_LABOR",
+        "label": "Robotization forcing rethink of work",
+        "definition": "AI and robotization transforming production and threatening work, requiring rethinking of education, production processes and job preservation.",
+        "inclusion": "Include passages linking AI/automation to changes in work, production or employment.",
+        "exclusion": "Exclude generic technological-revolution statements without labour/production content.",
+        "boundary_cases": "Mentions of rethinking education alongside work can also be coded AI_YOUTH_EDUCATION.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_ARG:2",
+            "quote": "Robotization and the accelerated process of installation of artificial intelligence force us to rethink education, production processes and the preservation of work."
+          }
+        ]
+      },
+      {
+        "code": "AI_CRISIS_LIST_MENTION",
+        "label": "AI misuse listed among global crises",
+        "definition": "AI's inappropriate application named briefly within a catalogue of global problems without elaboration.",
+        "inclusion": "Include passages listing AI among crises such as conflict, inequality, climate change or cyberwarfare with no further discussion.",
+        "exclusion": "Exclude passages that elaborate AI's specific risks or benefits.",
+        "boundary_cases": "If the list item is accompanied by a specific policy proposal on AI, code the relevant substantive theme.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_PRY:1",
+            "quote": "risks of cyberwarfare and the inappropriate application of artificial intelligence"
+          }
+        ]
+      },
+      {
+        "code": "AI_DEMOCRACY_ACCOUNTABILITY",
+        "label": "Embedded AI values threatening democratic will",
+        "definition": "Concern that values trained into AI systems silently shape decisions, severing democratic accountability; the choice of values must be freedom and democracy with trainers held accountable.",
+        "inclusion": "Include passages arguing AI embeds its trainers' values, can covertly displace democratic decision-making, or that those training AI must be accountable.",
+        "exclusion": "Exclude election disinformation and deepfakes (AI_DISINFORMATION).",
+        "boundary_cases": "Statements that AI must serve human dignity without the democracy argument go to AI_HUMAN_RIGHTS_ETHICS.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_PRY:8",
+            "quote": "Like a child, artificial intelligence repeats what it has learned from those who trained it."
+          },
+          {
+            "passage_id": "verbatim_en_2026_PRY:8",
+            "quote": "the will of the people risks being replaced without ever having been defeated"
+          }
+        ]
+      },
+      {
+        "code": "AI_HUMAN_RIGHTS_ETHICS",
+        "label": "AI serving human dignity",
+        "definition": "Ethical principle that AI must serve rather than replace human dignity.",
+        "inclusion": "Include statements that AI must serve human dignity or human values, including religious ethical references.",
+        "exclusion": "Exclude governance calls lacking an ethical principle.",
+        "boundary_cases": "Where dignity is invoked in a democracy-accountability argument, code both.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_PRY:8",
+            "quote": "Artificial intelligence must serve human dignity and not replace it."
+          }
+        ]
+      },
+      {
+        "code": "AI_UN_ROLE_CRITIQUE",
+        "label": "Critique of UN stance on AI",
+        "definition": "AI's advent announced as an agenda item in a speech critical of the UN, signalling scepticism of the organisation's role on AI.",
+        "inclusion": "Include passages that question or criticise the UN's position or competence regarding AI.",
+        "exclusion": "Exclude supportive statements about UN AI bodies (AI_UN_ROLE).",
+        "boundary_cases": "A mere agenda preview naming AI within a UN critique is coded here with low confidence.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_ARG:1",
+            "quote": "third, its position in the face of the advent of artificial intelligence"
+          }
+        ]
+      }
+    ],
+    "rationale": "Paraguay and Argentina passages share an 'honest diagnosis of problems' framing; AI appears as a listed crisis, a labour/production disruption, a democracy/values risk, and (Argentina 2026) as a topic in a critique of the UN."
+  }
+}

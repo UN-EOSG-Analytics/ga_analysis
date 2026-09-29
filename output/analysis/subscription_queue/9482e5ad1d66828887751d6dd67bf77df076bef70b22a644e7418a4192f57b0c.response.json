@@ -1,0 +1,267 @@
+{
+  "request_hash": "9482e5ad1d66828887751d6dd67bf77df076bef70b22a644e7418a4192f57b0c",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_GLOBAL_GOVERNANCE",
+        "label": "International AI rules and governance",
+        "definition": "Calls for, or discussion of, international rules, norms, legal frameworks, standards, treaties or cooperative mechanisms to govern AI, including arguments that governance must keep pace with AI and must balance innovation with protection.",
+        "inclusion": "Passages urging common/binding/global rules, regulation, guardrails, norms, principles or multilateral cooperation on AI; references to non-UN governance initiatives (G7 Hiroshima Process, G20, AI safety summits, GPAI) as governance.",
+        "exclusion": "Purely national regulation (AI_NATIONAL_STRATEGY); UN-specific bodies and processes (AI_UN_ROLE); demands centred on developing countries' voice in rule-making (AI_INCLUSIVE_GOVERNANCE); rejection of international governance (AI_GOVERNANCE_SKEPTICISM); weapons-specific rules (AI_MILITARY_WEAPONS).",
+        "boundary_cases": "A passage calling for global rules through the UN can take both AI_GLOBAL_GOVERNANCE and AI_UN_ROLE. Generic 'responsible AI' wording without any governance mechanism or call for rules is coded here only if it addresses how AI should be governed collectively.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_MUS:6",
+            "quote": "AI governance should be anchored in international law."
+          }
+        ]
+      },
+      {
+        "code": "AI_INCLUSIVE_GOVERNANCE",
+        "label": "Equal voice in AI rule-making",
+        "definition": "Demands that developing, African, small or all states have a meaningful, equal say in setting AI rules and standards, and objections to AI rules being written by a few states or in exclusive formats outside the UN.",
+        "inclusion": "Passages insisting that the Global South, Africa, small states or every country participate in shaping AI governance; criticism that AI rules are made by narrow clubs or favour some nations.",
+        "exclusion": "Unequal access to AI technology or benefits without a rule-making claim (AI_DIGITAL_DIVIDE); general calls for 'inclusive' governance with no claim about who sets the rules (AI_GLOBAL_GOVERNANCE).",
+        "boundary_cases": "When a passage links mineral supply or market size to a demand for a seat at the AI rule-making table, code here (and AI_RESOURCE_FOOTPRINT only if resource demand is discussed).",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_LCA:5",
+            "quote": "Saint Lucia therefore calls for strong global standards on data protection, privacy and artificial intelligence"
+          }
+        ]
+      },
+      {
+        "code": "AI_UN_ROLE",
+        "label": "UN bodies and processes on AI",
+        "definition": "References to the UN system's role on AI: the Secretary-General's advisory body, Tech Envoy, Global Digital Compact, Pact for the Future, Independent International Scientific Panel on AI, Global Dialogue on AI Governance, GA/Security Council agenda items, UNESCO initiatives, or the UN using AI for its own work.",
+        "inclusion": "Passages supporting, criticising, leading or proposing UN AI bodies, resolutions, processes or agenda items; the UN as the central forum for AI decisions; AI to make the UN more efficient.",
+        "exclusion": "International governance calls that do not mention the UN system or its instruments (AI_GLOBAL_GOVERNANCE).",
+        "boundary_cases": "Criticism that the UN lags or is bypassed counts here when it calls for a UN role; outright rejection of a UN role is AI_GOVERNANCE_SKEPTICISM.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_MUS:5",
+            "quote": "We welcome the recent establishment of the UN Independent International Scientific Panel on AI and the global dialogue on AI governance."
+          }
+        ]
+      },
+      {
+        "code": "AI_MILITARY_WEAPONS",
+        "label": "Military AI and autonomous weapons",
+        "definition": "AI in warfare, weapons and strategic security: lethal autonomous weapons systems, military targeting, AI in nuclear command and escalation, and calls for rules, bans or human control over military AI.",
+        "inclusion": "Passages on autonomous weapons, machines deciding life and death, AI on the battlefield, military AI norms or treaties, AI as a strategic/arms-control risk alongside nuclear, cyber and space.",
+        "exclusion": "Non-military AI safety or loss-of-control risks (AI_SAFETY_EXISTENTIAL); criminal or terrorist misuse and cyberattacks (AI_CYBER_SECURITY); AI used to support arms-control verification or peace (AI_PEACE_APPLICATIONS).",
+        "boundary_cases": "Human control of weapons is coded here, not AI_HUMAN_CONTROL. A list of threats merely naming 'AI' next to war is AI_THREAT_LIST_MENTION unless military use of AI is stated.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_ATG:31",
+            "quote": "we are even more alarmed at the potential for autonomous weapons to fall into the hands of organized criminals"
+          }
+        ]
+      },
+      {
+        "code": "AI_HUMAN_CONTROL",
+        "label": "Human agency, control and accountability",
+        "definition": "Normative insistence that humans remain in control of AI and responsible for AI-assisted decisions, that people stay subjects rather than objects of algorithms, and that human judgment, autonomy and legal accountability be preserved.",
+        "inclusion": "Passages saying technology must remain under human control, humans must be masters of AI, decisions must stay with accountable people, or warning against outsourcing human thought and free will to machines.",
+        "exclusion": "Human control of weapons (AI_MILITARY_WEAPONS); catastrophic loss-of-control risk (AI_SAFETY_EXISTENTIAL); broad human rights and ethics language without the control/agency claim (AI_HUMAN_RIGHTS_ETHICS).",
+        "boundary_cases": "'Human-centred AI' alone is AI_HUMAN_RIGHTS_ETHICS; it is coded here only when human control, decision authority or accountability is explicit.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_HTI:3",
+            "quote": "We need to be the masters of technology and never its subjects"
+          }
+        ]
+      },
+      {
+        "code": "AI_HUMAN_RIGHTS_ETHICS",
+        "label": "Human rights, ethics and democracy",
+        "definition": "AI framed through human rights, dignity, ethics, privacy, surveillance, human-centred design and democratic values, including risks of repression, algorithmic control of citizens and erosion of democratic accountability.",
+        "inclusion": "Passages calling for human-centred, rights-based or ethical AI, protection of privacy and freedoms, warning of AI surveillance or repression, or tying AI to democracy and accountability.",
+        "exclusion": "Discrimination, stereotypes and cultural/linguistic exclusion (AI_BIAS_CULTURAL_DIVERSITY); children specifically (AI_CHILD_PROTECTION); disinformation (AI_DISINFORMATION).",
+        "boundary_cases": "Ethics invoked as part of a call for international rules takes both this code and AI_GLOBAL_GOVERNANCE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_STP:4",
+            "quote": "We advocate responsible technology governance centered on human dignity, transparency, and fundamental rights."
+          }
+        ]
+      },
+      {
+        "code": "AI_DISINFORMATION",
+        "label": "Disinformation and information integrity",
+        "definition": "AI-enabled misinformation, disinformation, deepfakes, manipulation of public opinion, election interference and threats to information integrity.",
+        "inclusion": "Passages linking AI to fake content, deepfakes, propaganda, manipulated elections or the erosion of shared facts.",
+        "exclusion": "Hate speech and stereotypes without a falsehood claim (AI_BIAS_CULTURAL_DIVERSITY); cybercrime (AI_CYBER_SECURITY).",
+        "boundary_cases": "A list naming 'artificial intelligence' and 'disinformation' as separate items does not link them; code AI_THREAT_LIST_MENTION unless the text connects AI to disinformation.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_HTI:19",
+            "quote": "The acceleration of the development of artificial intelligence, the proliferation of cyberattacks and disinformation endanger the stability of democracies around the world."
+          }
+        ]
+      },
+      {
+        "code": "AI_CYBER_SECURITY",
+        "label": "Cyber threats, crime and terrorist misuse",
+        "definition": "AI misuse by criminals, terrorists or hostile actors: cyberattacks, cybercrime, attacks on critical infrastructure, online crime, and AI within international information-security frameworks.",
+        "inclusion": "Passages on AI-enabled cyberattacks, fraud, trafficking, terrorism or hybrid threats, and on cybercrime cooperation covering AI.",
+        "exclusion": "State military use of AI in warfare (AI_MILITARY_WEAPONS); disinformation (AI_DISINFORMATION).",
+        "boundary_cases": "Passages that discuss only cyberspace or new technologies without naming AI are not AI evidence.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_MUS:2",
+            "quote": "cyber criminality exacerbated by artificial intelligence"
+          }
+        ]
+      },
+      {
+        "code": "AI_DIGITAL_DIVIDE",
+        "label": "AI divide and equitable access",
+        "definition": "Inequality in access to AI and its benefits between and within countries: risks of a new AI divide, North-South gaps, developing countries as passive consumers, and calls to share AI benefits with all.",
+        "inclusion": "Passages warning AI will widen gaps or leave countries behind, demanding equitable access or benefit-sharing, or envisioning AI for all.",
+        "exclusion": "Concrete support measures such as training, funding or technology transfer (AI_CAPACITY_BUILDING); rule-making voice (AI_INCLUSIVE_GOVERNANCE); concentration of power in firms or states (AI_SOVEREIGNTY_CONCENTRATION).",
+        "boundary_cases": "When a passage states both the divide and a remedy (e.g. capacity building), apply both codes.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_HTI:19",
+            "quote": "Haiti, as one of the least connected countries, must imperatively receive support to bridge the digital divide"
+          }
+        ]
+      },
+      {
+        "code": "AI_CAPACITY_BUILDING",
+        "label": "Capacity building and AI cooperation",
+        "definition": "Concrete cooperation to build AI capabilities: skills, training, technology transfer, financing, infrastructure, regional AI centres and bilateral or South-South AI partnerships.",
+        "inclusion": "Passages offering or requesting AI training, funds, compute, infrastructure, knowledge sharing, regional centres or partnerships.",
+        "exclusion": "Statements of inequality without a support measure (AI_DIGITAL_DIVIDE); a country's own domestic programmes (AI_NATIONAL_STRATEGY).",
+        "boundary_cases": "A country offering its national AI experience to others takes this code and AI_NATIONAL_STRATEGY.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_TLS:5",
+            "quote": "It is also imperative to advance AI and digital capabilities in LDCs while concurrently safeguarding cybersecurity."
+          }
+        ]
+      },
+      {
+        "code": "AI_DEVELOPMENT_SDGS",
+        "label": "AI for development and the SDGs",
+        "definition": "AI as a means to advance sustainable development, growth, health, agriculture, education systems, public services, climate action and disaster early warning, including particular value for small and island states.",
+        "inclusion": "Passages presenting AI as a tool for the SDGs, poverty reduction, health, food security, climate mitigation or adaptation, disaster prediction or better services.",
+        "exclusion": "Jobs and labour-market effects (AI_ECONOMY_LABOR); environmental costs of AI (AI_RESOURCE_FOOTPRINT); a country describing its own AI investments (AI_NATIONAL_STRATEGY).",
+        "boundary_cases": "If AI is only listed among technologies that could help development without elaboration, prefer AI_TECH_LIST_MENTION.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_COM:10",
+            "quote": "conducive to development, growth, productivity and knowledge throughout the world"
+          }
+        ]
+      },
+      {
+        "code": "AI_ECONOMY_LABOR",
+        "label": "Jobs, labour and economic transformation",
+        "definition": "Effects of AI on employment, work, productivity, wages and the economy, including job displacement and workforce transition.",
+        "inclusion": "Passages on AI replacing or transforming jobs, making people economically unnecessary, raising productivity or reshaping economies.",
+        "exclusion": "Wealth or power concentration among firms/states (AI_SOVEREIGNTY_CONCENTRATION); national investment showcases (AI_NATIONAL_STRATEGY).",
+        "boundary_cases": "Skills training responding to job disruption takes this code and AI_YOUTH_EDUCATION or AI_CAPACITY_BUILDING as applicable.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_KNA:7",
+            "quote": "AI, the green transition, and climate change are reshaping their future jobs. We must prepare them."
+          }
+        ]
+      },
+      {
+        "code": "AI_YOUTH_EDUCATION",
+        "label": "Youth, education and skills",
+        "definition": "AI in relation to young people, schools and education: preparing youth for AI, AI literacy, AI in teaching, and disruptions such as plagiarism.",
+        "inclusion": "Passages about equipping youth with AI skills, AI's effect on learning or schools, or generative AI disrupting education.",
+        "exclusion": "Child online safety and exploitation (AI_CHILD_PROTECTION); international capacity-building programmes (AI_CAPACITY_BUILDING).",
+        "boundary_cases": "Youth employment effects of AI can take this code and AI_ECONOMY_LABOR.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_GRD:3",
+            "quote": "we are considering the teaching, understanding, and use of AI and AI related skills to enhance education access, delivery, and outcome"
+          }
+        ]
+      },
+      {
+        "code": "AI_NATIONAL_STRATEGY",
+        "label": "National AI strategy and achievements",
+        "definition": "A speaker's own country's AI strategies, investments, programmes, regulation, pilots, institutions, talent and leadership claims, including domestic regulatory approaches such as sandboxes.",
+        "inclusion": "Passages describing national AI plans, investments, data centres, public-service pilots, national AI laws or sandboxes, or claims of national AI leadership or hosting AI events and centres.",
+        "exclusion": "International cooperation offered to others (AI_CAPACITY_BUILDING); calls for international rules (AI_GLOBAL_GOVERNANCE).",
+        "boundary_cases": "Hosting a UN/UNESCO AI centre takes this code and AI_UN_ROLE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_MUS:4",
+            "quote": "We have launched, with UN support, a national artificial intelligence strategy and a national fintech strategy."
+          }
+        ]
+      },
+      {
+        "code": "AI_SOVEREIGNTY_CONCENTRATION",
+        "label": "Power concentration, dependence and sovereignty",
+        "definition": "Concern that AI power, data, compute and wealth are concentrated in a few companies or countries, creating dependence, domination or new hierarchies, and claims to digital sovereignty, national AI models or public rather than oligarchic control.",
+        "inclusion": "Passages about big tech or tech oligarchs, monopolies, distrust of corporate self-regulation, technological dependence, AI as a tool of domination or neo-colonialism, and sovereign AI capacity.",
+        "exclusion": "Access gaps without a power/control claim (AI_DIGITAL_DIVIDE); strategic competition between great powers (AI_GEOPOLITICAL_RIVALRY); rule-making exclusion (AI_INCLUSIVE_GOVERNANCE).",
+        "boundary_cases": "Anti-capitalist framing of AI as a systemic threat is coded here when it centres on concentrated control or wealth.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_VCT:7",
+            "quote": "when the benefits of new technology, such as artificial intelligence, is shared rather than hoarded and priced out of reach"
+          }
+        ]
+      },
+      {
+        "code": "AI_GEOPOLITICAL_RIVALRY",
+        "label": "Geopolitical competition and AI race",
+        "definition": "AI as an arena of strategic competition between powers: the AI race, technological leadership, great-power rivalry, supply-chain conflict over chips, and AI as strategic infrastructure shaping world order.",
+        "inclusion": "Passages framing AI as a race to win or lead, a driver of rivalry, fragmentation or a new arms race, or dependent on contested chip supply chains.",
+        "exclusion": "Concentration in companies or domination claims (AI_SOVEREIGNTY_CONCENTRATION); military uses (AI_MILITARY_WEAPONS).",
+        "boundary_cases": "A call for rules rather than a race takes this code and AI_GLOBAL_GOVERNANCE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_PRY:4",
+            "quote": "It affects the microchips that power industry, defense, and artificial intelligence."
+          }
+        ]
+      },
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "AI as both promise and peril",
+        "definition": "Explicit framing of AI as double-edged: great opportunity alongside serious risk, a neutral tool whose effects depend on use, or public fears to be answered with reassurance.",
+        "inclusion": "Passages that pair AI's benefits with its dangers, call it a double-edged sword, or state that its impact depends on human choices.",
+        "exclusion": "Passages that discuss only a specific risk or only a benefit (use the specific code).",
+        "boundary_cases": "Duality language that leads directly into a governance call takes both this code and AI_GLOBAL_GOVERNANCE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2024_HTI:19",
+            "quote": "technological advances bring new opportunities, but also new threats"
+          }
+        ]
+      },
+      {
+        "code": "AI_TECH_LIST_MENTION",
+        "label": "AI listed among technologies",
+        "definition": "AI named only briefly in a neutral or positive list of technologies, trends or national strengths, without further discussion of AI itself.",
+        "inclusion": "Passages where 'artificial intelligence' appears alongside other technologies (robotics, big data, quantum, biotech) with no AI-specific claim.",
+        "exclusion": "AI listed among threats or crises (AI_THREAT_LIST_MENTION); any passage with an AI-specific claim (use the substantive code).",
+        "boundary_cases": "A list plus one AI-specific sentence should receive the substantive code instead of, or in addition to, this code.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2023_URY:4",
+            "quote": "We are convinced that globalization, information technology, artificial intelligence and real-time communication are tools"
+          }
+        ]
+      }
+    ],
+    "rationale": "Consolidated 49 proposals into 18 codes of a shared multilabel codebook. Merged: AI_GLOBAL_GOVERNANCE -> AI_INCLUSIVE_GOVERNANCE (1); AI_HUMAN_CONTROL_OVERSIGHT -> AI_HUMAN_CONTROL (1); AI_PEACE_SECURITY_AGENDA -> AI_UN_ROLE (1); AI_SUPPLY_CHAIN_GEOPOLITICS -> AI_GEOPOLITICAL_RIVALRY (1). Distinct minority concepts are kept as separate codes (e.g. governance scepticism, inclusive rule-making, resource footprint, bias and cultural diversity, peace applications). Mention is not endorsement."
+  }
+}

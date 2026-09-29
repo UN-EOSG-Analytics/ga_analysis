@@ -1,0 +1,89 @@
+{
+  "request_hash": "32febc2a5e85c63bb3847ccba896f368835c8e79373ca7a302b8788ba835eb7a",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "Claude Code (file handoff; environment names the handoff channel)"
+  },
+  "value": {
+    "themes": [
+      {
+        "code": "AI_REJECT_GLOBAL_GOVERNANCE",
+        "label": "Rejection of international AI control",
+        "definition": "Explicit rejection of international or 'globalist' schemes to govern or control AI, preferring national oversight.",
+        "inclusion": "Include passages rejecting multilateral AI governance or control frameworks.",
+        "exclusion": "Exclude passages calling for international AI rules (AI_GLOBAL_GOVERNANCE).",
+        "boundary_cases": "Statements that national law enforcement will oversee AI instead of international bodies also fit here.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_USA:16",
+            "quote": "The United States also totally rejects any attempt to construct a globalist scheme to control for the artificial intelligence"
+          }
+        ]
+      },
+      {
+        "code": "AI_TECH_RACE_LEADERSHIP",
+        "label": "Winning the AI race for dominance",
+        "definition": "AI framed as a strategic race where whoever leads wins, with emphasis on national lead over rivals and not stifling growth.",
+        "inclusion": "Include passages claiming national AI leadership over rivals or that winning AI determines power.",
+        "exclusion": "Exclude national AI programs described without competitive framing (use AI_NATIONAL_STRATEGY).",
+        "boundary_cases": "Claims of leading 'safely and responsibly' while encouraging AI growth fit here.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_USA:16",
+            "quote": "whoever wins SI, whoever wins super intelligent, wins. That's the group that wins. And we're leading now over China by a lot"
+          },
+          {
+            "passage_id": "verbatim_en_2026_USA:17",
+            "quote": "We're going to encourage it, not rein it in."
+          }
+        ]
+      },
+      {
+        "code": "AI_RISK_SKEPTICISM",
+        "label": "Dismissal of AI doom warnings",
+        "definition": "Speaker dismisses warnings of catastrophic AI risk as alarmism, while acknowledging some challenges.",
+        "inclusion": "Include passages ridiculing or rejecting claims that AI poses existential or catastrophic risk.",
+        "exclusion": "Exclude passages that affirm catastrophic AI risk (AI_SAFETY_EXISTENTIAL).",
+        "boundary_cases": "A passing 'we have to be careful' alongside dismissal of doom still fits here.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2026_USA:16",
+            "quote": "These are the same people that are now saying that AI is going to kill us all, that robots are going to attack us"
+          }
+        ]
+      },
+      {
+        "code": "AI_ARMS_CONTROL_VERIFICATION",
+        "label": "AI for weapons treaty verification",
+        "definition": "AI proposed as a tool to verify compliance with arms control treaties such as the Biological Weapons Convention.",
+        "inclusion": "Include proposals to use AI for verification or enforcement of disarmament regimes.",
+        "exclusion": "Exclude AI used as weapons (AI_MILITARY_WEAPONS).",
+        "boundary_cases": "If the UN is invited to host the effort, also code AI_UN_ROLE.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_USA:10",
+            "quote": "by pioneering an AI verification system that everyone can trust"
+          }
+        ]
+      },
+      {
+        "code": "AI_OPPORTUNITY_RISK_DUALITY",
+        "label": "AI could be great or dangerous",
+        "definition": "AI described as potentially one of the great things ever but also dangerous.",
+        "inclusion": "Include explicit framings of AI as both beneficial and dangerous.",
+        "exclusion": "Exclude one-sided dismissals of risk.",
+        "boundary_cases": "Brief asides within other topics still count if both sides are explicit.",
+        "examples": [
+          {
+            "passage_id": "verbatim_en_2025_USA:10",
+            "quote": "it could be one of the great things ever, but it also can be dangerous, but it could be put to tremendous use and tremendous good"
+          }
+        ]
+      }
+    ],
+    "rationale": "US passages reject international AI control, frame AI ('superintelligence') as a race to win while dismissing doom warnings; the 2025 passage instead proposes an AI verification system for the BWC and notes AI's dual potential."
+  }
+}

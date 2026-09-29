@@ -1,0 +1,30 @@
+{
+  "request_hash": "3e89609fb253b6bbfc5d5e274548ad15b4929b6f96b834ca65cbc0cb6724c4b8",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_a"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2026_TZA:1",
+      "verbatim_en_2026_TZA:2",
+      "verbatim_en_2026_TZA:3",
+      "verbatim_en_2026_TZA:4",
+      "verbatim_en_2026_TZA:5",
+      "verbatim_en_2026_TZA:6"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2026_TZA:1",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "Today, war and insecurity are not only existential threats to our survival, but a range of challenges, including climate change, pandemics, un-governed artificial intelligence, and energy insecurity, just to mention a few.",
+        "rationale": "Identifies ungoverned AI as a shared challenge requiring a stronger coordinated United Nations."
+      }
+    ]
+  }
+}

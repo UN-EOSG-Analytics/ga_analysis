@@ -1,0 +1,37 @@
+{
+  "request_hash": "2400a59c7ede90049044ea4b2e03e50b8d343d563687158825525416ff9decde",
+  "reviewer": {
+    "environment": "codex_subscription",
+    "model": "not_reported",
+    "reasoning_effort": "not_reported",
+    "human_reviewed": false,
+    "agent": "review_c"
+  },
+  "value": {
+    "complete": true,
+    "reviewed_passage_ids": [
+      "verbatim_en_2025_LKA:1",
+      "verbatim_en_2025_LKA:2",
+      "verbatim_en_2025_LKA:3",
+      "verbatim_en_2025_LKA:4",
+      "verbatim_en_2025_LKA:5",
+      "verbatim_en_2025_LKA:6"
+    ],
+    "findings": [
+      {
+        "passage_id": "verbatim_en_2025_LKA:5",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "An even greater gap is being created in relation to artificial intelligence. Sri Lanka and many other developing nations in Asia and also many other nations are facing challenges in using AI as a development tool due to the inadequate infrastructure facilities.",
+        "rationale": "Identifies an AI divide and infrastructure barriers to developmental use."
+      },
+      {
+        "passage_id": "verbatim_en_2025_LKA:6",
+        "status": "Yes",
+        "mention_type": "explicit",
+        "quote": "I present this August Assembly a proposal to set up a neutral sovereign artificial intelligence zone.",
+        "rationale": "Proposes a neutral sovereign AI zone in response to development and access challenges."
+      }
+    ]
+  }
+}
